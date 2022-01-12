@@ -172,6 +172,7 @@ Generated files created while building Tracker Radar
 |---|---|
 |[api_fingerprint_scores](/build-data/generated/api_fingerprint_scores.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher score means that an API is more likely to be used for fingerprinting|
 
+|[tracking-parameters](/build-data/generated/tracking_params.json)|An object listing how prevalent a parameter is used in third party requests and cookies|
 ---
 
 ## Breakage data
