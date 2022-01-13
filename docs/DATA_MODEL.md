@@ -173,6 +173,22 @@ Generated files created while building Tracker Radar
 |[api_fingerprint_scores](/build-data/generated/api_fingerprint_scores.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher score means that an API is more likely to be used for fingerprinting|
 |[tracking-parameters](/build-data/generated/tracking_parameters.json)|An object listing how prevalent a parameter is used in third party requests and cookies.|
 
+### Tracking parameters
+
+Tracking parameters are found by generating parameter values, and adding these to the crawl site URLs. When crawl data is processed these generated values can be found in cookies and third party requests.
+
+- **totalSites** - total number of sites processed
+- **params** -  an object listing request and cookie tracking for each parameter. Keys in the params object are the parameter name.
+  - prevalence - percent of totalSites that this parameter was seen in cookies or third party requests
+  - exampleSites - list of example sites where either requests or cookies were found
+  - requests3p
+      - prevalence - percent of totalSites where this parameter was seen in a third party request
+      - entities - top 10 entities using this parameter in requests
+  - cookies
+      - prevalence - percent of totalSites where this parameter was seen in a cookie
+      - firstParty - count of first party cookies with this parameter
+      - thirdParty - count of third party cookies with this parameter
+
 ---
 
 ## Breakage data
