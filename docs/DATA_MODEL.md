@@ -190,7 +190,8 @@ Tracking parameters are found by generating parameter values, and adding these t
       - firstParty - count of first party cookies with this parameter
       - thirdParty - count of third party cookies with this parameter
       - entities - top 10 entities using this parameter in cookies
-      - domains - top 10 domainss using this parameter in cookies
+      - domains - top 10 domains using this parameter in cookies
+
 
 ---
 
