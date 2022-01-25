@@ -9,44 +9,133 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000903,
+    "sites": 9,
     "subdomains": [
-        "nslc-prod-app"
+        "rc-geoip",
+        "prod-client-logs",
+        "jabpc-publicservice-tfm-prod"
     ],
     "cnames": [
         {
-            "original": "login.norton.com",
-            "resolved": "nslc-prod-app.trafficmanager.net"
+            "original": "etorologsapi.etoro.com",
+            "resolved": "prod-client-logs.trafficmanager.net"
+        },
+        {
+            "original": "geoip.radio-canada.ca",
+            "resolved": "rc-geoip.trafficmanager.net"
+        },
+        {
+            "original": "productcatalogueapi.jabra.com",
+            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.0001,
+            "rule": "trafficmanager\\.net\\/geoip\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "nslc-prod-app"
+                "rc-geoip"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "login.norton.com",
-                    "resolved": "nslc-prod-app.trafficmanager.net"
+                    "original": "geoip.radio-canada.ca",
+                    "resolved": "rc-geoip.trafficmanager.net"
                 }
             ],
             "responseHashes": [
-                "166ea07551063352ae98c129d1ef697b5e094907151bdd705d996376235045b8"
+                "b9176371a9ba2664fd852c5707bcd00a9f0d164108e1af02299050d0c992c513"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "norton.com",
-                "support.norton.com"
+                "radio-canada.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/api\\/v2\\/monitoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-client-logs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "etorologsapi.etoro.com",
+                    "resolved": "prod-client-logs.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "etoro.com",
+                "www.etoro.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "5d6b5c602e2c8095961928a2a92145357a0e5f86d9b620b06ed5b092bf7277aa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
             ]
         }
     ],
@@ -56,7 +145,10 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Document": 2
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

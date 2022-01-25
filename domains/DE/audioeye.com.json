@@ -11,8 +11,9 @@
     "sites": 4,
     "subdomains": [
         "wsmcdn",
-        "ws",
-        "wsv3cdn"
+        "wsv3cdn",
+        "analytics",
+        "ws"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -31,7 +32,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8d43ca0b46630e1451cd51d0f54714d78aae145d23fec113f4afe3e4453af8e5"
+                "9e56bd6105d6e24d804d3db97049f580c26390f475a87f7535e066bdc815b2f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,30 +40,6 @@
             "exampleSites": [
                 "yamaha.com",
                 "www.fischersports.com"
-            ]
-        },
-        {
-            "rule": "audioeye\\.com\\/ae\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ws"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8d43ca0b46630e1451cd51d0f54714d78aae145d23fec113f4afe3e4453af8e5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "samsung.com",
-                "www.visitnorway.de"
             ]
         },
         {
@@ -82,26 +59,74 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "bc455e7858d4d82647d3749fcf77401338ae1622697860b6ebc1018be6fc4b66",
-                "7d3d1e70e5ebb664fb939a0f0f8e4872df2950cd61033276f9e22150b6c7d9f8"
+                "29147105374de37dc23aa45a4e1201104f4b7979d31950fcf95d60e9acd9890b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "samsung.com",
-                "www.fischersports.com",
+                "fischersports.com",
+                "www.poly.com",
+                "www.visitnorway.de"
+            ]
+        },
+        {
+            "rule": "audioeye\\.com\\/air\\/v0\\/send",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "264a9a3fa2fe11c43ece039b85e14387bd5a7a2b2275cc927ad4a4691d9c1986"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fischersports.com",
+                "www.poly.com"
+            ]
+        },
+        {
+            "rule": "audioeye\\.com\\/ae\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9e56bd6105d6e24d804d3db97049f580c26390f475a87f7535e066bdc815b2f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "poly.com",
                 "www.visitnorway.de"
             ]
         },
         {
             "rule": "audioeye\\.com\\/scripts\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "wsv3cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -112,16 +137,17 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "samsung.com",
+                "poly.com",
                 "www.visitnorway.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 9
+        "Script": 9,
+        "Ping": 2
     },
     "nameservers": [
         "ns-1086.awsdns-07.org",

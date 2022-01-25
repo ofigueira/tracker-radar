@@ -4,46 +4,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
-        "analytics"
+        "api",
+        "view"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "seekxr\\.com\\/analytics\\/",
+            "rule": "seekxr\\.com\\/v1\\/analytics\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "analytics"
+                "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "razor.com",
-                "www.bullfrogspas.com"
-            ]
-        },
-        {
-            "rule": "seekxr\\.com\\/analytics\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -51,7 +30,59 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "razor.com",
-                "www.bullfrogspas.com"
+                "www.bullfrogspas.com",
+                "www.nixon.com"
+            ]
+        },
+        {
+            "rule": "seekxr\\.com\\/v1\\/analytics\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "e54181fa7faf54caa49c428babf5b119a8cc05690932be01357f3f5e2cf42854",
+                "a11ab5bb9e7f3a0d0d9203554a5ba8c3da8d04b17b3714a387f282e7c3588167"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "razor.com",
+                "www.bullfrogspas.com",
+                "www.nixon.com"
+            ]
+        },
+        {
+            "rule": "seekxr\\.com\\/nixon\\/seek\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "view"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d5d6b50086e58e171fc6c84cfa4e398b5f7022bae4701fadedcb77a895bfa7c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nixon.com",
+                "www.nixon.com"
             ]
         }
     ],
@@ -59,8 +90,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "Preflight": 3,
+        "XHR": 3,
+        "Script": 2
     },
     "nameservers": [
         "ns-150.awsdns-18.com",

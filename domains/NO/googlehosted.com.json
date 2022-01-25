@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "ghs"
     ],
@@ -15,7 +15,15 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
+            "original": "a.nytimes.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "data.typeracer.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "purr.nytimes.com",
             "resolved": "ghs.googlehosted.com"
         },
         {
@@ -23,8 +31,88 @@
             "resolved": "ghs.googlehosted.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "a.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "04ea1f0103792705d74ee5c8fb6d8031319855f1d46c47bd964ab7be1650cc51"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "purr.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/track",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "a.et.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
         {
             "rule": "googlehosted\\.com\\/pit\\/featured_universes_sidebar",
             "cookies": 0,
@@ -42,7 +130,7 @@
                 }
             ],
             "responseHashes": [
-                "09b2ea1b8b2a6cd93f6acf814e3c555758ce0d94b8fba7787e15506061048cd4"
+                "bec8f34e1ad2444a85c34105bdbc690f7f065931427c738cde7a644ee58fc1f6"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -69,7 +157,7 @@
                 }
             ],
             "responseHashes": [
-                "03d258784f9bfd02b861f2aee278f600db8ab7b9172a2f1b0a1746d08f71d784"
+                "99c2023a1ef1a08adbda77470010c735a2b5a7d60ccb60c40c488d514c0ef360"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -188,7 +276,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/5a0d6c66-c8c7-49c5-bfb9-8ee5a18b90b3\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/206b7bf7-3411-4935-83b9-f690295ca1c0\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -213,45 +301,19 @@
                 "cbc.ca",
                 "www.cbc.ca"
             ]
-        },
-        {
-            "rule": "googlehosted\\.com\\/track",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ghs"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "a.et.nytimes.com",
-                    "resolved": "ghs.googlehosted.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nytimes.com",
-                "www.nytimes.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000301,
     "types": {
+        "XHR": 4,
+        "Fetch": 2,
+        "Ping": 3,
         "Document": 2,
         "Image": 6,
         "Stylesheet": 2,
-        "Script": 2,
-        "XHR": 2,
-        "Ping": 2
+        "Script": 2
     },
     "nameservers": []
 }

@@ -11,13 +11,14 @@
     "sites": 46,
     "subdomains": [
         "strike",
-        "b",
         "api3",
+        "b",
         "aff",
-        "static-media"
+        "static-media",
+        "player"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "fox\\.com\\/static\\/fbn\\/display\\/loader\\.js",
@@ -31,7 +32,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "487f8a66e90518abf3d5b7954f893d4a8ab6891075b2ad78e2607310b9c9a37e"
+                "8ba81ae9cc85915f3357e3ba4f42c9ad744627d8d2414ab842cb394a1d968655"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -42,7 +43,7 @@
             ]
         },
         {
-            "rule": "fox\\.com\\/static\\/fbn\\/display\\/ver\\/app\\.v31\\.2\\.js",
+            "rule": "fox\\.com\\/static\\/fbn\\/display\\/ver\\/app\\.v35\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 2,
             "subdomains": [
@@ -50,18 +51,18 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "window.devicePixelRatio": 2,
                 "Navigator.prototype.cookieEnabled": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 1,
+                "window.devicePixelRatio": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1bcb8aabad8af19920606a5c7cd613bf4bfe5c370decc70b8d8ea2449751275d"
+                "9796cff7503267df93ebf22ff27025c8575b6bd051062970db9507835e155d8c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -69,6 +70,55 @@
             "exampleSites": [
                 "foxbusiness.com",
                 "www.foxbusiness.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\/v2\\.0\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api3"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxbusiness.com",
+                "nation.foxnews.com",
+                "video.foxnews.com",
+                "www.fox9.com",
+                "www.foxweather.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\/v2\\.0\\/login",
+            "cookies": 0.0000277,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api3"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "a265bcc272e5d16f1992a31c95371651ec56b92a30f9870ae23c76fce1fa2fb5",
+                "54024680e648d42f18ed7a60329b17bf31c84616d6a9b8b14518f962b0cef736",
+                "48b7fdf82822a03f3a1eedc920adecb1c86bbf3b20f50d523765914bf7c6efa3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxbusiness.com",
+                "video.foxnews.com",
+                "www.fox9.com",
+                "www.foxweather.com"
             ]
         },
         {
@@ -83,25 +133,25 @@
             "prevalence": 0.000138,
             "cnames": [],
             "responseHashes": [
-                "1456cbe8a8ea708c6777c019cad6ea9d64312fe86676cfe6ddee3c1cada74525",
-                "e99715ce1755e8c9ed592f484a2611bfb740264b179cb7d138123a096e82376c",
-                "7bf5078959e9c63f1d6c527f5306b3365b4f10f6271bfc9b1d04c47da819a2eb",
-                "7b18d506506a505ffd1325b8463342e890fffa7923f3644d2c52769e6100436a",
-                "3f07ab0305d623f19ed0f88a810706726ebba3ec57c1652f73209a18cdd12a86",
-                "64aa3988009b35940b9e60d4c68ad7b8afa2d9308109e941973dcef1bd90d81a",
-                "9c809e5f8c5722f0954300dadf3fc6425551b6cc19abaf9abad12be71a97a35a",
-                "ac50cff720fec4351620cd8ec23d9c275fe1c15e86bd350254d9de7a025a03b8",
-                "52332728c93b580b7daef09e91e2e9701e1d7d5aaf095dd34fee133f7293f2ca",
-                "a9fdf726ee7290cf0a6f784695f8641d7a16cf2db1dcf68265c781dabfd12f00",
-                "a1f0b1a09437988eb168d1540ab608c1439cb448ebaec8d2a231e4939a8b1e9d",
-                "5f676e44f1b7898affbfb39fc947cde8c1ae5312f0e7628025d6295881b9597f",
-                "be3cdb5883291e2b79a8d36ba1b3f28920feed8df38e049f9447e98ff0a724f2",
-                "78dc15483a1d60ff121fd6744dc9e7e3c4d391799b3176c892a4141afa45c09b",
-                "f539233e78ab4fa8a48ffb1bfc4e6452b625785845d1281e00e17bf77cdc30c4",
-                "3eba190cf35f8503eb50ab5fe911ffa377bc66726d291d3ff0c8a1bf9254374d",
-                "c71d5d193c67d16de5fde0c52205c06e74c49c111d3b02e9c61ae9006b90c298",
-                "a9c6d46f5792a0cb17c834f4b99a1efcd31a5d991bf6557f01627222ee4ce7b3",
-                "3f01049d7854c7c1b0d66f1b1c7b662e5558980ad780ddcdee9e6deadfca3567"
+                "ae5c25992907499cdfa7057f0479152d6237bf09698c44b9d212e92e4b901fe3",
+                "731bc48784c6c8e48e915b93662fb1f28c32f30e365056f2b6f8357dfef8d104",
+                "acb4d5026f3c1bd90a779df8a81b4e02505b608ebd2c5a6d395bb55d035e8196",
+                "0c0e5a707af377a081e3c8e335196df5f63dde7d4e7d37547d036a1563205c06",
+                "a335a04afa3dba94a2612e33ff5981f459a1591b57616a5f27cd8d7a326fe494",
+                "39ea848f9b1370e65734aff67492fe9c8505bd6cae5926c375f0f6376182e74d",
+                "fd83682dacd29d451f0c11f3255c37ae1ec63de56df0bd3c6d6f3b179d4598d6",
+                "8da2a8ac6953857396d32d5e730c0e45b79d3fab4c7a0ad3e8196fc684092bdf",
+                "bc1c154d95937872c77b3b31e36e2ef1b74476ff59da3b1026c3382cdd779ef0",
+                "9c83074d9b094a8d02deb614af261f170f178370efd16c1d30328a07b04621cc",
+                "51f45f92f890814f58dcad250f0565f68d6ecc86c3e89bcc1be7612a54fcc46a",
+                "2319ab6a0d969d80b560a1c011288a3bb4e8907855faa9dac176853e3ce1f17b",
+                "1babed2615037097d7a9be00108f1d84cd2287fddf8b46dab4feb9c4559e0bc0",
+                "3769865ecf6a04896e674383794d8099001eaed4b42a91ea5129c7d028f8aac7",
+                "5e8c0e4df0be496c60cb22f72e4002c22750aef968e89e6a47837aa3585031a0",
+                "ceec01ebca8708314717f2e336e4171fa1471ff66012c53005a374debdce797e",
+                "69de88e4379fc23d057f0c32c899ea75f920d66a4d9b10eb2e3398ceeb4e8929",
+                "ad6b702cb27ca26755da2d1c7e6df1a739b29ba25c4f3810d4cd296a466ddaae",
+                "179bdefcf71e89dfc93c7426e3f877d7fe65f115016aa7787f8b5b3fcf7d7a41"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -127,56 +177,6 @@
                 "www.foxla.com",
                 "www.ktvu.com",
                 "www.q13fox.com"
-            ]
-        },
-        {
-            "rule": "fox\\.com\\/v2\\.0\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api3"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxnews.com",
-                "video.foxnews.com",
-                "www.fox9.com",
-                "www.foxbusiness.com",
-                "www.foxweather.com"
-            ]
-        },
-        {
-            "rule": "fox\\.com\\/v2\\.0\\/login",
-            "cookies": 0.0000346,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api3"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
-            "cnames": [],
-            "responseHashes": [
-                "fc86beebdc4fca4c1c70f7f8c9c5738f74e19741da565904e9d138e28e371efb",
-                "361cfba0ac9568e36570fbeabcbf8852be0285a1f9c37032f6d7a4cc4b6389a8",
-                "f30c0dbcb3ef8917c49ca9d48717aa0a79a3f30d5c0069734ba737599a3764f1"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxnews.com",
-                "video.foxnews.com",
-                "www.fox9.com",
-                "www.foxbusiness.com",
-                "www.foxweather.com"
             ]
         },
         {
@@ -325,10 +325,10 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -338,16 +338,10 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "uuidv4": {
-                    "ttl": 31536004,
-                    "length": 36,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
-                },
                 "FOXANONACCT": {
                     "ttl": 47304004,
                     "length": 1798,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013844087882269877,
                     "uniqueness": 0.5
                 }
             },
@@ -369,7 +363,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c842e697b57006d1f5fed8c1f0cfe095124953f99419caa26783c80340f26c67"
+                "5ecde0e1298596b4598d5a26bd46bf90b2c3894975dde5d59bbb9a945dd5ea5f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -380,7 +374,7 @@
             ]
         },
         {
-            "rule": "fox\\.com\\/dcg\\/img\\/Fox_Networks_DCG_-_FOX_Broadcasting\\/429\\/753\\/CLD101_First_Look_Social_Cutdown_Net_Streaming_Z100X0103CLD110_ent-bbtv-slateless_1981803075762_mp4_video_400x224_150000_primary_audio_und_1_1280x720_1981808195803\\.jpg",
+            "rule": "fox\\.com\\/dcg\\/img\\/Fox_Networks_DCG_-_FOX_Broadcasting\\/457\\/929\\/lone_302_20220106_clip_2_16x9_1990888003781_mp4_video_1280x720_4500000_primary_audio_eng_10_1280x720_1990898243937\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -391,7 +385,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "954e334ef91d4d831494f54b3a2a52e92d17f70bcdd0dbc92079a767f062b1af"
+                "88ef0f07dbdd105dae4a8df4844064cf7df0dbf102b6c9d80886da008ac130d2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -448,9 +442,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "FXN_flk": {
-                    "ttl": 86404,
+                    "ttl": 86402,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013844087882269877,
                     "uniqueness": 0.5
                 }
             },
@@ -461,7 +455,61 @@
             ]
         },
         {
-            "rule": "fox\\.com\\/v2\\.0\\/screens\\/foxweather-live",
+            "rule": "fox\\.com\\/v3\\/foxweather\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.plugins": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Screen.prototype.orientation": 2,
+                "Navigator.prototype.product": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.vendorSub": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "376c41110c8be7c074f94a8bfb23c9b098a78d956a5e68520799c2914f443f33"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxweather.com",
+                "www.foxweather.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\/v2\\.0\\/\\/watch",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -481,7 +529,7 @@
             ]
         },
         {
-            "rule": "fox\\.com\\/v2\\.0\\/screens\\/foxweather-live",
+            "rule": "fox\\.com\\/v2\\.0\\/\\/watch",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -492,9 +540,9 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9c9cf78d71f3f1c4297179d87eac792869fc5891f2bc3af50d97f50c679a9849"
+                "1f51bd40f613bca47f762d2677e2ba24f35f26b158ccaba947240f24c9cc1ab5"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -507,21 +555,22 @@
     "performance": {},
     "cookies": 0.000318,
     "types": {
-        "Script": 12,
-        "XHR": 29,
+        "Script": 14,
         "Preflight": 7,
+        "XHR": 26,
         "Document": 2,
         "Stylesheet": 6,
-        "Image": 4
+        "Image": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns02.dns.fox",
-        "ns03.dns.fox",
-        "ns04.dns.fox",
         "ns01.foxdoua.com",
         "ns02.foxdoua.com",
         "ns03.foxdoua.com",
         "ns04.foxdoua.com",
+        "ns04.dns.fox",
+        "ns03.dns.fox",
+        "ns02.dns.fox",
         "ns01.dns.fox"
     ]
 }

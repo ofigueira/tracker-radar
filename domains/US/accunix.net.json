@@ -7,18 +7,19 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "api",
-        "mapping"
+        "ping",
+        "mapping",
+        "kafka-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "accunix\\.net\\/magic\\/ping",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "ping"
             ],
             "apis": {},
             "sites": 2,
@@ -47,9 +48,84 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d96972898613e8ba35c9495db5dedc5e4027818a809d16f6d1da5e7dd971c28b"
+                "e830f87ce2f9f11f96a1051ae6aca18d419f74c2e3a0c7ed0d84462762fe639b"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thenewslens.com",
+                "www.thenewslens.com"
+            ]
+        },
+        {
+            "rule": "accunix\\.net\\/cdn-cgi\\/bm\\/cv\\/669835187\\/api\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "mapping"
+            ],
+            "apis": {
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.webdriver": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0d3118e306c6a26f1d2efcb698984e6922c5e7e155c94a84760e36e5592a3c11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thenewslens.com",
+                "www.thenewslens.com"
+            ]
+        },
+        {
+            "rule": "accunix\\.net\\/cdn-cgi\\/bm\\/cv\\/result",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mapping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thenewslens.com",
+                "www.thenewslens.com"
+            ]
+        },
+        {
+            "rule": "accunix\\.net\\/cdp-rawdata-mapping-link",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kafka-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -74,8 +150,8 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "fpc": 0.000013827051243051907,
-                "ad2udid": 0.000027654102486103815
+                "fpc": 0.000013844087882269877,
+                "ad2udid": 0.000027688175764539753
             },
             "exampleSites": [
                 "thenewslens.com",
@@ -85,10 +161,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "XHR": 2,
+        "XHR": 4,
         "Document": 2,
+        "Script": 2,
+        "Ping": 2,
         "Image": 2
     },
     "nameservers": [

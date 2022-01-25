@@ -10,24 +10,67 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "api.farecache"
+        "hermes",
+        "edge-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "travix\\.com\\/fare",
+            "rule": "travix\\.com\\/log",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "api.farecache"
+                "hermes"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b34dc47fa3baa1c110b6b43329b193144b55493570554ff9e20dd20ebe83d4ee"
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheaptickets.nl",
+                "www.cheaptickets.nl"
+            ]
+        },
+        {
+            "rule": "travix\\.com\\/edge\\/content\\/farecache",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheaptickets.nl",
+                "www.cheaptickets.nl"
+            ]
+        },
+        {
+            "rule": "travix\\.com\\/edge\\/content\\/farecache",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e5b84bb99b6ceffc9a282b554fb4f328843cb2efddfccc498ef8fd1249172473"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -42,7 +85,8 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "XHR": 2
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "adam.ns.cloudflare.com",

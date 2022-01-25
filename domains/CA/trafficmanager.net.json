@@ -9,40 +9,128 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
-        "bingshoppingtool-t2app-prod",
-        "naapimtm"
+        "rc-geoip",
+        "kaz-mtl1-tm-geoloc",
+        "transat-nginx",
+        "naapimtm",
+        "jabpc-publicservice-tfm-prod",
+        "realm"
     ],
     "cnames": [
         {
             "original": "api.mps.ford.com",
             "resolved": "naapimtm.trafficmanager.net"
+        },
+        {
+            "original": "apis.airtransat.com",
+            "resolved": "transat-nginx.trafficmanager.net"
+        },
+        {
+            "original": "geoip.radio-canada.ca",
+            "resolved": "rc-geoip.trafficmanager.net"
+        },
+        {
+            "original": "geoloc.kitco.com",
+            "resolved": "kaz-mtl1-tm-geoloc.trafficmanager.net"
+        },
+        {
+            "original": "productcatalogueapi.jabra.com",
+            "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+        },
+        {
+            "original": "realm.hearstnp.com",
+            "resolved": "realm.trafficmanager.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
+            "rule": "trafficmanager\\.net\\/geoip\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bingshoppingtool-t2app-prod"
+                "rc-geoip"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "geoip.radio-canada.ca",
+                    "resolved": "rc-geoip.trafficmanager.net"
+                }
+            ],
             "responseHashes": [
-                "bf99156e7e0693e75e0b7fccc13d5e61f146d028bf1887ba20cebe20b5fb792c"
+                "38146eafc82e1d1fab014e3257633b0541d95679e5e99ebe56671a3530ff46e8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fieldcompany.com",
-                "www.vitasave.ca"
+                "cbc.ca",
+                "ici.radio-canada.ca",
+                "newsinteractives.cbc.ca",
+                "www.cbc.ca"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kaz-mtl1-tm-geoloc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "geoloc.kitco.com",
+                    "resolved": "kaz-mtl1-tm-geoloc.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "065db44fc09e793d51fca8ee8076358e09b368b6c91e121b511f4f525d0009cb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kitco.com",
+                "online.kitco.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/client\\/Persistence\\/UpdateCookies\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "transat-nginx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "apis.airtransat.com",
+                    "resolved": "transat-nginx.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "bc80e6a07484b09e1acd641e2a1ea063babc5b4766a731b2c4944baecdeb6a88"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__utmzz": 0.00030147723846849563,
+                "_ga": 0.00030147723846849563
+            },
+            "exampleSites": [
+                "airtransat.com",
+                "www.transat.com"
             ]
         },
         {
@@ -87,7 +175,7 @@
                 }
             ],
             "responseHashes": [
-                "4a6de231f7a8c5c705b6f159cdc2da1475afa696e7778f29c920ea1ae0962d26"
+                "5ef71d22068384efc92714b2d8ec151fdf3cd01ea7a187fb93bb48d264f2d123"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -96,22 +184,125 @@
                 "ford.com",
                 "www.ford.ca"
             ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\/v1\\/family\\/filter",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jabpc-publicservice-tfm-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "productcatalogueapi.jabra.com",
+                    "resolved": "jabpc-publicservice-tfm-prod.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "5d6b5c602e2c8095961928a2a92145357a0e5f86d9b620b06ed5b092bf7277aa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jabra.com",
+                "www.jabra.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/\\.well-known\\/openid-configuration",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "realm.hearstnp.com",
+                    "resolved": "realm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "03bc90950a3cf3d2baae54d90e814b61d4066e0deec3a120d04f03b38c064f6b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sfchronicle.com",
+                "www.sfgate.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/connect\\/authorize",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "realm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "realm.hearstnp.com",
+                    "resolved": "realm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.00020098482564566376
+            },
+            "exampleSites": [
+                "sfchronicle.com",
+                "www.sfgate.com"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000703,
     "types": {
-        "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 4,
+        "XHR": 6,
+        "Document": 4,
+        "Preflight": 4,
+        "Fetch": 2
     },
-    "nameservers": [
-        "tm1.edgedns-tm.info",
-        "tm2.edgedns-tm.info",
-        "tm1.dns-tm.com",
-        "tm2.dns-tm.com"
-    ]
+    "nameservers": []
 }

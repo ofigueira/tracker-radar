@@ -9,12 +9,22 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
-        "nslc-prod-app"
+        "nslc-prod-app",
+        "prod-client-logs",
+        "idp.redbridge"
     ],
     "cnames": [
+        {
+            "original": "etorologsapi.etoro.com",
+            "resolved": "prod-client-logs.trafficmanager.net"
+        },
+        {
+            "original": "idp.redbridge.gov.uk",
+            "resolved": "idp.redbridge.trafficmanager.net"
+        },
         {
             "original": "login.norton.com",
             "resolved": "nslc-prod-app.trafficmanager.net"
@@ -39,7 +49,7 @@
                 }
             ],
             "responseHashes": [
-                "cef8cc52032a8fbc7109adb1f1d61ac27b12afb80867733e890c33a9f2274a0b"
+                "2a9206df6024ced962ef4e6379a82bff97a83978512d79a9d2b2c74f36d19caa"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -48,15 +58,68 @@
                 "norton.com",
                 "support.norton.com"
             ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/api\\/v2\\/monitoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-client-logs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "etorologsapi.etoro.com",
+                    "resolved": "prod-client-logs.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "etoro.com",
+                "www.etoro.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/connect\\/authorize",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "idp.redbridge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "idp.redbridge.gov.uk",
+                    "resolved": "idp.redbridge.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbridge.gov.uk",
+                "www.redbridge.gov.uk"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000703,
+    "cookies": 0.000602,
     "types": {
-        "Document": 2
+        "Document": 4,
+        "XHR": 2
     },
     "nameservers": []
 }

@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "i.w",
         "a.w"
     ],
     "cnames": [
@@ -17,35 +18,46 @@
         {
             "original": "cm.bilibili.com",
             "resolved": "a.w.bilicdn1.com"
+        },
+        {
+            "original": "data.bilibili.tv",
+            "resolved": "i.w.bilicdn1.com"
+        },
+        {
+            "original": "live-trace.bilibili.com",
+            "resolved": "a.w.bilicdn1.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "bilicdn1\\.com\\/cm\\/api\\/receive\\/content\\/pc",
+            "rule": "bilicdn1\\.com\\/log\\/web",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "a.w"
+                "i.w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "cm.bilibili.com",
-                    "resolved": "a.w.bilicdn1.com"
+                    "original": "data.bilibili.tv",
+                    "resolved": "i.w.bilicdn1.com"
                 }
             ],
             "responseHashes": [
-                "7a97b9b4d758a3929b8a2be53fbe189c9ba9378d6fbb8190d37f7cc14f5cf5d3"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_uuid": 0.00020098482564566376,
+                "fingerprint": 0.00010049241282283188
+            },
             "exampleSites": [
-                "bilibili.com",
-                "www.bilibili.com"
+                "bilibili.tv",
+                "www.bilibili.tv"
             ]
         },
         {
@@ -65,9 +77,9 @@
                 }
             ],
             "responseHashes": [
-                "ff7221c7d1127f42d1545b21b2b8ac0945de45f9a46249c131998eda19a0ebd8"
+                "492eab162c0f4cac19e5e9faaf962a7f79ad13b44fd2acc4772d07c0dabcbc7a"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -76,7 +88,7 @@
             ]
         },
         {
-            "rule": "bilicdn1\\.com\\/x\\/web-frontend\\/data\\/collector",
+            "rule": "bilicdn1\\.com\\/cm\\/api\\/receive\\/content\\/pc",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -87,7 +99,7 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.bilibili.com",
+                    "original": "cm.bilibili.com",
                     "resolved": "a.w.bilicdn1.com"
                 }
             ],
@@ -153,13 +165,42 @@
                 "bilibili.com",
                 "www.bilibili.com"
             ]
+        },
+        {
+            "rule": "bilicdn1\\.com\\/xlive\\/data-interface\\/v1\\/index\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a.w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "live-trace.bilibili.com",
+                    "resolved": "a.w.bilicdn1.com"
+                }
+            ],
+            "responseHashes": [
+                "c459c244b0d0918770f28f350b6f29512eb96c151dbf4cca38ede57616fcc689"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilibili.com",
+                "www.bilibili.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 8,
+        "Ping": 2,
+        "Fetch": 4,
+        "XHR": 4,
         "Preflight": 2
     },
     "nameservers": []

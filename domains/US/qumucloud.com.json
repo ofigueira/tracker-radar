@@ -11,6 +11,7 @@
     "sites": 4,
     "subdomains": [
         "kp",
+        "cdn",
         "cbre",
         "janushenderson"
     ],
@@ -20,7 +21,7 @@
             "resolved": "janushenderson.qumucloud.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "qumucloud\\.com\\/view\\/Get-Care-Virtual-Care-Covid-Southern-California%20",
@@ -30,13 +31,16 @@
                 "kp"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7732db02dba1c898831cef64d9eb1cbb8a31b1f58147bc3b991d182f0b0bf14d"
+                "0ed9122c496a13665c9d6745665fcbaa2bbff88f6934f1702547d504f2ecaaa2"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -58,9 +62,104 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7aefa154199ccc912b269870d4dd76b6fa24bfb8ad27d3c21421fe1040ff84ac"
+                "5c76f43cb86fe50261a34ebaf98b69fa6b90955f16b469dd2cb69c4afd001036"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaiserpermanente.org",
+                "hppb.kaiserpermanente.org"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/kp\\.qumucloud\\.com\\/staticcontent\\/498\\/client\\/application\\/player-v2\\.loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "15788bd2f35c47f56448dc39dad1b21e7bc429ba48144c1e830f55e603be399c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaiserpermanente.org",
+                "hppb.kaiserpermanente.org"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/kp\\.qumucloud\\.com\\/staticcontent\\/498\\/client\\/application\\/player-v2\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bf64f1e390571fcc4c86ee516f59b69a21f22109276e2cebfacd672a61fee0f8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaiserpermanente.org",
+                "hppb.kaiserpermanente.org"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/kp\\.qumucloud\\.com\\/staticcontent\\/498\\/client\\/player-themes\\/default\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b1a11fa0fd7a5ead9b41370f9922ff363fafeea29fe01cdd9df7c3c172466d49"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaiserpermanente.org",
+                "hppb.kaiserpermanente.org"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/kp\\.qumucloud\\.com\\/staticcontent\\/498\\/client\\/application\\/player-v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "68ff3bc12bd61709389e944f372e6c3b531161d7907ec2308e38e628f7bf948a"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -86,7 +185,7 @@
                 }
             ],
             "responseHashes": [
-                "adb7e5c288068991fa73c2d53642504d3285abdb8b4bc9bf059038f3252ec62d"
+                "726f954ddd68b6d5a86353c1f9f094cd713f82eb937a0e05217f52a7fca5c2c8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -99,11 +198,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000207,
+    "cookies": 0.0000208,
     "types": {
         "Document": 2,
         "XHR": 2,
-        "Script": 2
+        "Script": 6,
+        "Stylesheet": 4
     },
     "nameservers": [
         "ns-735.awsdns-27.net",

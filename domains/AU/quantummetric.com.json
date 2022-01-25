@@ -7,36 +7,30 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.00191,
+    "sites": 19,
     "subdomains": [
         "cdn",
+        "vistaprint-app",
         "norton-app",
         "stockx-app",
         "lenovosupport-app",
         "att-app",
-        "emirates-app",
+        "faa-app",
         "fiverr-app",
         "homedepot-app",
         "lululemoninternational-app",
-        "medicare-app",
         "nintendo-app",
         "telegraph-app",
-        "vistaprint-app",
         "ylo-app",
-        "ingest",
+        "rl",
         "vistaprint-sync"
     ],
-    "cnames": [
-        {
-            "original": "qm.emirates.com",
-            "resolved": "emirates-app.quantummetric.com"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "quantummetric\\.com\\/qscripts\\/quantum-norton\\.js",
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-vistaprint\\.js",
             "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
@@ -44,9 +38,9 @@
             ],
             "apis": {
                 "Navigator.prototype.vendor": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
@@ -54,105 +48,204 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.connection": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.webdriver": 2
+                "Navigator.prototype.doNotTrack": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "840ca3ab6351066b854e354cd6ce4f48186e5d78a7f669226caafe8fba11dd7b"
+                "953b164247e053e45e6fa5f0677fe2d87aa77adabd76501e2f25655f84f001e2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1639445990,
+                    "ttl": -1642638942,
                     "length": 4,
-                    "prevalence": 0.00020066218521119696,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00010031096398836393,
+                    "uniqueness": 1
+                },
+                "QuantumMetricSessionID": {
+                    "ttl": 1824,
+                    "length": 32,
+                    "prevalence": 0.00010031096398836393,
+                    "uniqueness": 1
+                },
+                "QuantumMetricUserID": {
+                    "ttl": 31536018,
+                    "length": 32,
+                    "prevalence": 0.00010031096398836393,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "99designs.com",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/",
+            "cookies": 0.0013,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vistaprint-app",
+                "norton-app",
+                "stockx-app",
+                "lenovosupport-app",
+                "att-app",
+                "faa-app",
+                "fiverr-app",
+                "homedepot-app",
+                "lululemoninternational-app",
+                "nintendo-app",
+                "telegraph-app",
+                "ylo-app"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.0016,
+            "cnames": [],
+            "responseHashes": [
+                "49037688c672fb3eb0f9dc9e36621ac75d994cd59543af0d27daacd95c750a0a",
+                "70d0bd5150d4a94e67ebfcfa3bbab77a8205d351d53865b01ec95cbafe97f848",
+                "6e1c373812bb105f70e90796e7b008e58e91c49e6fa51b9d506a5ff0561d16dc",
+                "d3bbeec0cfdda57e34b43fa8690fec7c428cbac9ddcc1e4e4ecb11acd757863a",
+                "5704f7cc02b9bcfb1533b367fde2aa91add91dbc13511e297b2c32d8710c421f",
+                "045dee9d37b37b9458c41a4a6ea8c55689aa768d38b0be11a931e932cd587a06",
+                "d36ea288b955de04564d1299558a180a573da1de002315268c57e0cd7a51252d",
+                "202e25c4270bdfa0c3d619d301335e8b6f68740fcee3f59bac201811f54a1b94",
+                "22228fbab41283970199a1f0abb2f1711bf29229780eafba72cde8a1bfabc8a8",
+                "768df1df6579817649402d5ca12bcb26af2974a0093be14db446c44af0e1317f",
+                "02030ab87bcf546b7217e18a30c8a189981fc9e04076bf8867506d3930426e6a",
+                "a1c2072c66c559d282faee46b382367bcd560f9e312d108acd08e2f54182be5f",
+                "bdb9136faeb1629c33d9f1486eb7b4f7a198f5a4f3e205efcd1582487bc88915"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.0005015548199418196
+            },
+            "exampleSites": [
+                "99designs.com",
+                "au.norton.com",
+                "community.norton.com",
+                "stockx.com",
+                "support.lenovo.com",
+                "support.norton.com",
+                "us.norton.com",
+                "www.directv.com",
+                "www.faa.gov",
+                "www.fiverr.com",
+                "www.homedepot.com",
+                "www.lululemon.com.au",
+                "www.nintendo.com",
+                "www.telegraph.co.uk",
+                "www.vistaprint.com.au",
+                "www.youngliving.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-norton\\.js",
+            "cookies": 0.000502,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 5,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "window.sessionStorage": 5,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "URL.createObjectURL": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Navigator.prototype.connection": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "Navigator.prototype.webdriver": 4
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "3cabb06168c2923276180fd91d4d33a044e2dc4c416a4b54076874c9b06fdee0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "qm-ssc": {
+                    "ttl": -1642640975,
+                    "length": 4,
+                    "prevalence": 0.0005015548199418196,
+                    "uniqueness": 0.2
                 },
                 "QuantumMetricSessionID": {
                     "ttl": 1821,
                     "length": 32,
-                    "prevalence": 0.00020066218521119696,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0004012438559534557,
+                    "uniqueness": 0.75
                 },
                 "QuantumMetricUserID": {
-                    "ttl": 31536020,
+                    "ttl": 31536019,
                     "length": 32,
-                    "prevalence": 0.00020066218521119696,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0004012438559534557,
+                    "uniqueness": 0.75
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "norton.com",
-                "au.norton.com"
+                "au.norton.com",
+                "community.norton.com",
+                "support.norton.com",
+                "us.norton.com"
             ]
         },
         {
-            "rule": "quantummetric\\.com\\/",
-            "cookies": 0.0012,
+            "rule": "quantummetric\\.com\\/norton\\/hash-check",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "norton-app",
-                "stockx-app",
-                "lenovosupport-app",
-                "att-app",
-                "emirates-app",
-                "fiverr-app",
-                "homedepot-app",
-                "lululemoninternational-app",
-                "medicare-app",
-                "nintendo-app",
-                "telegraph-app",
-                "vistaprint-app",
-                "ylo-app"
+                "rl"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.0014,
-            "cnames": [
-                {
-                    "original": "qm.emirates.com",
-                    "resolved": "emirates-app.quantummetric.com"
-                }
-            ],
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "b577ba3ea91791c22bfb41397d451accc951d6b977746502aa52f1c8f9619b1d",
-                "3ae566deae02e1b89125a5dce9e8fee53f1cf5f3cd38ac59da11349cd265c9ea",
-                "723adbdfedf8444f81c354eb5ec30a577ef3ec10c95f2bc0155a548d93edab34",
-                "c8ac2eee93558470bba4d7aee08d101a4c57de2afadd82a19f6345974ed11403",
-                "be14dde3cda30e259e899452ec6ea19c7388c59a7a7f70d0d396503da128b45a",
-                "1f81197e27d10ca98496eaacd41f1162113b99f7fdff88b95336533fcee96acd",
-                "e285d90583164add1a8b9ac3f5f4d3bb6801a79121bbf48f63b1e07095ae0bd9",
-                "ebac621094c388b067f1a80a78891bc0f73f1e7efe06678ef927518a40b41a20",
-                "fa6de877ac71f4495727703415e177527cf0cb17efa5a01418f4ad4484e0b358",
-                "fe41f9eb8210b125c6e167c2a17fd09d18a2d2f2cb5d6a6df9c1ea3cc000ce8c",
-                "44b85495ce81303d37bb1c1b17aecb8e674153ee8524019f35ef84563a72cf5f",
-                "f08c76ed2967e767a0d8c6b4e401df7844af34a5c2d48e88f14d35c7464cc522"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.00030099327781679544
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "norton.com",
                 "au.norton.com",
-                "stockx.com",
-                "support.lenovo.com",
-                "www.directv.com",
-                "www.emirates.com",
-                "www.fiverr.com",
-                "www.homedepot.com",
-                "www.lululemon.com.au",
-                "www.medicare.gov",
-                "www.nintendo.com",
-                "www.telegraph.co.uk",
-                "www.vistaprint.com.au",
-                "www.youngliving.com"
+                "support.norton.com",
+                "us.norton.com"
+            ]
+        },
+        {
+            "rule": "quantummetric\\.com\\/norton\\/hash-check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rl"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "norton.com",
+                "au.norton.com",
+                "support.norton.com",
+                "us.norton.com"
             ]
         },
         {
@@ -180,26 +273,26 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e6fb11f87472a6ce2f825e44e19d5ceb84952381baeaef9e3b24b34c79f838fc"
+                "8251bd9a4a1848c2f0abe752edf48ccc9ce5e8d9b580b88aefb4753c6ce55edb"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "qm-ssc": {
-                    "ttl": -1639449628,
+                    "ttl": -1642644937,
                     "length": 4,
-                    "prevalence": 0.00020066218521119696,
+                    "prevalence": 0.00020062192797672785,
                     "uniqueness": 0.5
                 },
                 "QuantumMetricSessionID": {
-                    "ttl": 1819,
+                    "ttl": 1815,
                     "length": 32,
-                    "prevalence": 0.00010033109260559848,
+                    "prevalence": 0.00010031096398836393,
                     "uniqueness": 1
                 },
                 "QuantumMetricUserID": {
-                    "ttl": 31536016,
+                    "ttl": 31536012,
                     "length": 32,
-                    "prevalence": 0.00010033109260559848,
+                    "prevalence": 0.00010031096398836393,
                     "uniqueness": 1
                 }
             },
@@ -210,25 +303,40 @@
             ]
         },
         {
-            "rule": "quantummetric\\.com\\/daz3d",
+            "rule": "quantummetric\\.com\\/qscripts\\/quantum-ua\\.js",
             "cookies": 0.0001,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "ingest"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.vendor": 2,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "window.sessionStorage": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "aa31d8015e514a2dfb33f66ae51c4e46fcf050dc643fb35911c2db6b924be336"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "qm-ssc": {
+                    "ttl": -1642642106,
+                    "length": 4,
+                    "prevalence": 0.00010031096398836393,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "daz3d.com",
-                "www.daz3d.com"
+                "underarmour.com.au",
+                "www.underarmour.com.au"
             ]
         },
         {
@@ -257,10 +365,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00181,
+    "cookies": 0.00191,
     "types": {
-        "Script": 4,
-        "XHR": 16,
+        "Script": 11,
+        "XHR": 20,
+        "Preflight": 4,
         "Fetch": 2
     },
     "nameservers": [

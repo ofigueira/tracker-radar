@@ -4,15 +4,110 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "direct-events-collector",
+        "api-2-0",
+        "static-cdn",
         "publisher-assets",
         "pix"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "direct-events-collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boatingmag.com",
+                "www.dailywire.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2106d7a3146f2be5e147f63790e0b7aef9738b27dc773a8c22e00e83ce9bab6f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boatingmag.com",
+                "www.dailywire.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/icons\\/sprites\\/sprite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "259cad56cc86718bd9d70590d183c297f8f7fdba650b9cd6ede9488fdbec9e84"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boatingmag.com",
+                "www.dailywire.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v18\\.6\\.0-1\\/ads\\/ads\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "817b9dccd22006722e439933ed024047a4b976756b2e439a8806c7285bf8065a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boatingmag.com",
+                "www.dailywire.com"
+            ]
+        },
         {
             "rule": "spot\\.im\\/ad\\/event-tracking\\/pixel-ads-google-adsense\\.html",
             "cookies": 0,
@@ -21,20 +116,21 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
+                "boatingmag.com",
+                "www.boatingmag.com",
                 "www.dailywire.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/pixel",
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -45,43 +141,25 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "707d4c7f44dd33e874b5a09b6dba4702b12bfd3e19e470d601fcfc1d7009286c"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Fetch",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
-                "www.dailywire.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/api\\/v1\\/pixel",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailywire.com",
+                "boatingmag.com",
                 "www.dailywire.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000301,
     "types": {
-        "Fetch": 4,
-        "Preflight": 2
+        "XHR": 2,
+        "Fetch": 7,
+        "Script": 2,
+        "Ping": 2
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

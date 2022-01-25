@@ -9,12 +9,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.00271,
+    "sites": 27,
     "subdomains": [
         "metrics",
         "sadmin",
-        "edge.api"
+        "edge.api",
+        "assets.map",
+        "map"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -27,27 +29,36 @@
                 "metrics"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000905,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0001005126143330988
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "childrenshealthdefense.org",
+                "people.com",
+                "www.thermo.com.cn",
+                "www.ey.com",
+                "www.premierleague.com",
+                "www.sonicwall.com",
+                "www.cisco.com",
+                "www.vmware.com",
+                "stomp.straitstimes.com",
+                "kreftlex.no",
+                "www.stokke.com",
+                "www.sothebysrealty.com",
+                "www.te.com",
+                "www.gamestop.com",
+                "www.nike.com",
                 "www.advocate.com",
-                "www.energinorge.no",
-                "www.federalreserve.gov",
                 "www.ford.no",
                 "www.out.com",
-                "www.premierleague.com",
-                "www.straitstimes.com",
-                "www.vmware.com"
+                "www.gaia.com",
+                "support.sas.com",
+                "www.energinorge.no"
             ]
         },
         {
@@ -58,12 +69,12 @@
                 "sadmin"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.plugins": 4,
-                "HTMLMediaElement.prototype.canPlayType": 4
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.plugins": 6,
+                "HTMLMediaElement.prototype.canPlayType": 6
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "c9408cf5d8e0d12fb2b1d5ad6b4489be392384a4687962a0fc2a2877a57775c8"
@@ -72,7 +83,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "advocate.com",
+                "straitstimes.com",
+                "www.advocate.com",
+                "www.autocar.co.uk",
                 "www.matprat.no",
                 "www.nikonusa.com",
                 "www.out.com"
@@ -121,45 +134,52 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/4800266888001\\/playlists\\/5235909154001",
+            "rule": "brightcove\\.com\\/plugin\\/dist\\/videojs-bc-map-core\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "edge.api"
+                "assets.map"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "straitstimes.com",
-                "www.straitstimes.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/4800266888001\\/playlists\\/5235909154001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6711a382ec0c696bbd08b42c43f346da34f1a6bf353132df4a764bb9f711b52f"
+                "8cec4a2e0135d513b5ab82470e26605974b687f4605cdf1fce6a9bb6c1c02b70"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "straitstimes.com",
-                "www.straitstimes.com"
+                "cisco.com",
+                "www.sonicwall.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/config",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "map"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "11867e2a162cf96318c02b7436fa5e800b83b5852c3d45bf67fa6c1ceed7eb2c",
+                "593b6daca9dccfeebada38275df52c3f45772a744ee20bcfb558a81d4285954f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cisco.com",
+                "www.cisco.com",
+                "www.sonicwall.com"
             ]
         }
     ],
@@ -170,12 +190,12 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "Image": 9,
-        "Script": 4,
-        "Preflight": 4,
-        "XHR": 4
+        "Image": 21,
+        "Script": 11,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1426.awsdns-50.org",

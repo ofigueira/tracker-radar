@@ -8,7 +8,12 @@
     "sites": 2,
     "subdomains": [
         "route",
-        "logging"
+        "logging",
+        "analytics",
+        "cdata",
+        "xtr",
+        "psa",
+        "media"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,8 +29,14 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "window.devicePixelRatio": 1,
-                "Element.prototype.getClientRects": 1
+                "window.devicePixelRatio": 2,
+                "Element.prototype.getClientRects": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.sessionStorage": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Date.prototype.getTimezoneOffset": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -50,7 +61,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -58,14 +71,169 @@
                 "allfreeknitting.com",
                 "www.thefreedictionary.com"
             ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetPageRequestGeo",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "178eaa5882bd6c01581e345858bf6abcb1920c083a5d1d6de595b30c76b9c045"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.33\\.5\\/css\\/fonts\\/cbolaIcons\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1c54e2e03c6f2167763fca37666a631a61f41d5b5a9b9f55ada1456ea3b7183f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetPageElementsRequestNew",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetAds",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xtr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7855afca4b516997e17c4c3878cdd003a4953b293b37f66dca26d310a344cfd4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/getPsa",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "psa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44642cb2fd4773d8482aa6dc045badbb3d7dfd6de917082a02248431c38c6bd4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/SetLastMile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/PSA2\\/adc_wfp_planes_728x90\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0df01c3cb71d02e60f875ede0f876c23b901598af94615f25c3861185da1c8bb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedictionary.com",
+                "www.thefreedictionary.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 6,
+        "XHR": 2,
+        "Fetch": 6,
+        "Font": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-1002.awsdns-61.net",
