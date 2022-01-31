@@ -4,17 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
+    "prevalence": 0.0000208,
     "sites": 3,
     "subdomains": [
         "bot",
-        "iapi",
         "anl",
+        "iapi",
         "res",
         "ia"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "leadoo\\.com\\/bot\\/dynamic\\/chat\\.js",
@@ -51,7 +51,34 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "edd7e452d673556e44ea26012130bf894bc691737c817f018c3bb1829e342b52"
+                "7f392cd0aa10ca4e29b81daf8c35714e08fb967fc72d282361168c91aa61ccde"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nowtv.com",
+                "www.tuontitukku.fi"
+            ]
+        },
+        {
+            "rule": "leadoo\\.com\\/i\\/al\\/lanlt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bot"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ba4fdb188ad5f7ec9f19ce2627360b692c49086178ecfa5791a7c17aea1b6305"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -84,29 +111,44 @@
             ]
         },
         {
-            "rule": "leadoo\\.com\\/i\\/al\\/lanlt\\.js",
+            "rule": "leadoo\\.com\\/t",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "bot"
+                "anl"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ac1f3ef3eebc690f0c538a3d892d11d74cdb4cacd3ae445db16169818a84667a"
+                "e47546aecf02f6598f8ea4978c3498524b0bdae6b0f0223ba66401198e192679"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tuontitukku.fi",
+                "nowtv.com",
+                "www.tuontitukku.fi"
+            ]
+        },
+        {
+            "rule": "leadoo\\.com\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "anl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nowtv.com",
                 "www.tuontitukku.fi"
             ]
         },
@@ -122,7 +164,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3d23d39a30bb7323f8ccfd64c52cf286138fba4f83e78f7edcf66703b7c23aaa"
+                "98c4922bb641c65c7a30b7bcafdf230b9b00b6693631c56146ab25b2786ee4a3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -148,51 +190,9 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5b1de9fc641436c221d9d41bb2ce695f7d2a2a2e7ac4de0df3772a7d1a593f15"
+                "409600c9197ddef9cf137b8e212a5abb8279751a4db7cd8ff60adffb674c4b79"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tuontitukku.fi",
-                "www.tuontitukku.fi"
-            ]
-        },
-        {
-            "rule": "leadoo\\.com\\/t",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "anl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b988d9ec46bf0104baa4d4e44534f60bca665571a68eae864d42bded88c4e609"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tuontitukku.fi",
-                "www.tuontitukku.fi"
-            ]
-        },
-        {
-            "rule": "leadoo\\.com\\/t",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "anl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -273,8 +273,8 @@
     "types": {
         "Script": 8,
         "XHR": 4,
-        "Fetch": 2,
         "Preflight": 2,
+        "Fetch": 2,
         "Stylesheet": 2,
         "Image": 2,
         "Font": 2

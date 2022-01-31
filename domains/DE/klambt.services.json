@@ -11,10 +11,17 @@
     "sites": 8,
     "subdomains": [
         "cdn",
-        "kia"
+        "kia",
+        "kc2",
+        "analytics"
     ],
-    "cnames": [],
-    "fingerprinting": 1,
+    "cnames": [
+        {
+            "original": "anly.grazia-magazin.de",
+            "resolved": "kc2.klambt.services"
+        }
+    ],
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "klambt\\.services\\/kas\\/202101141452\\.js",
@@ -24,11 +31,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "36668347f2696eb47a416eb8bbcb885a741a3582e239bd52f7736329c4f15776"
@@ -39,6 +46,7 @@
             "exampleSites": [
                 "fuersie.de",
                 "www.jolie.de",
+                "www.petra.de",
                 "www.vital.de"
             ]
         },
@@ -50,8 +58,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "3cbc8c616a3c5a347a4415499f00cc179f5eb5f6dac3604a21e67262ff6bb3c5"
@@ -63,65 +71,20 @@
                 "fuersie.de",
                 "www.jolie.de",
                 "www.maedchen.de",
+                "www.petra.de",
                 "www.vital.de"
             ]
         },
         {
-            "rule": "klambt\\.services\\/js\\/webfont\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "81016ac6be850b72df5d4faa0c3cec8e2c1b0ba0045712144a6766adfad40bee"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grazia-magazin.de",
-                "www.idee-fuer-mich.de"
-            ]
-        },
-        {
-            "rule": "klambt\\.services\\/js\\/advertisement\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "998194f5787b4dcb51d739b2e7c0e9a14cacedf4fcaf7f5bddbf51d14c386a15"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grazia-magazin.de",
-                "www.idee-fuer-mich.de"
-            ]
-        },
-        {
             "rule": "klambt\\.services\\/js\\/async\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "kia"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "56ab122adcce0b078de78707fdc6479bfc10cb69429bb13e99dbf3669b28bec1"
@@ -131,12 +94,128 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grazia-magazin.de",
-                "www.idee-fuer-mich.de",
                 "www.ok-magazin.de"
             ]
         },
         {
+            "rule": "klambt\\.services\\/matomo\\.js",
+            "cookies": 0.000301,
+            "fingerprinting": 2,
+            "subdomains": [
+                "kc2",
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "anly.grazia-magazin.de",
+                    "resolved": "kc2.klambt.services"
+                }
+            ],
+            "responseHashes": [
+                "43af579102b8c4adff968a3a00280fc2061cc33538c7bbad1d8d6ec775f0807b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.2.da7d": {
+                    "ttl": 33955204,
+                    "length": 28,
+                    "prevalence": 0.00010033109260559848,
+                    "uniqueness": 1
+                },
+                "_pk_ses.2.da7d": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00010033109260559848,
+                    "uniqueness": 1
+                },
+                "_pk_id.7.bdbc": {
+                    "ttl": 33955204,
+                    "length": 28,
+                    "prevalence": 0.00010033109260559848,
+                    "uniqueness": 1
+                },
+                "_pk_ses.7.bdbc": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.00010033109260559848,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grazia-magazin.de",
+                "www.maedchen.de",
+                "www.petra.de"
+            ]
+        },
+        {
             "rule": "klambt\\.services\\/delivery\\/asyncspc\\.php",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6f0644f7e719149eda15f5e8fa5160ebe7cc9d20301a711ea664cf665ec41c7b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grazia-magazin.de",
+                "www.ok-magazin.de"
+            ]
+        },
+        {
+            "rule": "klambt\\.services\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kc2",
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "anly.grazia-magazin.de",
+                    "resolved": "kc2.klambt.services"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grazia-magazin.de",
+                "www.maedchen.de",
+                "www.petra.de"
+            ]
+        },
+        {
+            "rule": "klambt\\.services\\/delivery\\/lg\\.php",
             "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
@@ -145,30 +224,6 @@
             "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "6c19ed0d65f4d1276d2956bf7f405df1c38fea82c972536d08fc7b0904ec54c1",
-                "da1a0d042141062b38d99b3019e9005f8e6bbadf8d2fcd404f1d767ca02cdd2a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grazia-magazin.de",
-                "www.idee-fuer-mich.de",
-                "www.ok-magazin.de"
-            ]
-        },
-        {
-            "rule": "klambt\\.services\\/delivery\\/lg\\.php",
-            "cookies": 0.000401,
-            "fingerprinting": 0,
-            "subdomains": [
-                "kia"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
@@ -179,23 +234,23 @@
             "exampleSites": [
                 "grazia-magazin.de",
                 "www.grazia-magazin.de",
-                "www.idee-fuer-mich.de",
                 "www.ok-magazin.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000502,
     "types": {
         "Script": 14,
-        "XHR": 3,
-        "Image": 4
+        "XHR": 2,
+        "Ping": 3,
+        "Image": 3
     },
     "nameservers": [
-        "ns-115.awsdns-14.com",
-        "ns-624.awsdns-14.net",
         "ns-1331.awsdns-38.org",
-        "ns-1993.awsdns-57.co.uk"
+        "ns-1993.awsdns-57.co.uk",
+        "ns-115.awsdns-14.com",
+        "ns-624.awsdns-14.net"
     ]
 }

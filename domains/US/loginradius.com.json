@@ -7,17 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000899,
-    "sites": 13,
+    "prevalence": 0.000104,
+    "sites": 15,
     "subdomains": [
-        "cdn",
-        "hub",
-        "share",
-        "reachplc.hub",
-        "monarte.hub",
+        "postmedia.hub",
         "cbc-login.hub",
         "hola-auth.hub",
-        "surrey.hub"
+        "surrey.hub",
+        "reachplc.hub",
+        "monarte.hub"
     ],
     "cnames": [
         {
@@ -37,78 +35,92 @@
             "resolved": "cbc-login.hub.loginradius.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
-            "rule": "loginradius\\.com\\/share\\/v1\\/LoginRadius\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0670fb16f841523dca4aab4633ca0f9ef4f0639e3ceeaad1e3f8cc46c1992923"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adw.org",
-                "blog.adw.org"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/include\\/js\\/LoginRadius\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "hub"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adw.org",
-                "blog.adw.org"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ApiData\\/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            "rule": "loginradius\\.com\\/ssologin\\/login",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "share"
+                "postmedia.hub",
+                "cbc-login.hub",
+                "hola-auth.hub",
+                "surrey.hub"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "sites": 8,
+            "prevalence": 0.0000554,
+            "cnames": [
+                {
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
+                },
+                {
+                    "original": "auth.hola.com",
+                    "resolved": "hola-auth.hub.loginradius.com"
+                },
+                {
+                    "original": "accounts.surrey.ca",
+                    "resolved": "surrey.hub.loginradius.com"
+                }
             ],
-            "type": "Script",
+            "responseHashes": [
+                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adw.org",
-                "blog.adw.org"
+                "edmontonjournal.com",
+                "financialpost.com",
+                "leaderpost.com",
+                "lfpress.com",
+                "winnipegsun.com",
+                "www.cbc.ca",
+                "www.hola.com",
+                "www.surrey.ca"
+            ]
+        },
+        {
+            "rule": "loginradius\\.com\\/ssologin\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "postmedia.hub",
+                "cbc-login.hub",
+                "hola-auth.hub",
+                "surrey.hub"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000554,
+            "cnames": [
+                {
+                    "original": "login.cbc.ca",
+                    "resolved": "cbc-login.hub.loginradius.com"
+                },
+                {
+                    "original": "auth.hola.com",
+                    "resolved": "hola-auth.hub.loginradius.com"
+                },
+                {
+                    "original": "accounts.surrey.ca",
+                    "resolved": "surrey.hub.loginradius.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edmontonjournal.com",
+                "financialpost.com",
+                "leaderpost.com",
+                "lfpress.com",
+                "winnipegsun.com",
+                "www.cbc.ca",
+                "www.hola.com",
+                "www.surrey.ca"
             ]
         },
         {
@@ -140,97 +152,20 @@
                 "www.arte.tv",
                 "www.express.co.uk"
             ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub",
-                "surrey.hub"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
-                {
-                    "original": "auth.hola.com",
-                    "resolved": "hola-auth.hub.loginradius.com"
-                },
-                {
-                    "original": "accounts.surrey.ca",
-                    "resolved": "surrey.hub.loginradius.com"
-                }
-            ],
-            "responseHashes": [
-                "f7a4a046540cd7b682afc0d129cbbdea16081d1a54dfd3385115725f960c54c9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca",
-                "www.hola.com",
-                "www.surrey.ca"
-            ]
-        },
-        {
-            "rule": "loginradius\\.com\\/ssologin\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cbc-login.hub",
-                "hola-auth.hub",
-                "surrey.hub"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [
-                {
-                    "original": "login.cbc.ca",
-                    "resolved": "cbc-login.hub.loginradius.com"
-                },
-                {
-                    "original": "auth.hola.com",
-                    "resolved": "hola-auth.hub.loginradius.com"
-                },
-                {
-                    "original": "accounts.surrey.ca",
-                    "resolved": "surrey.hub.loginradius.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbc.ca",
-                "www.cbc.ca",
-                "www.hola.com",
-                "www.surrey.ca"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6,
-        "Fetch": 4,
-        "XHR": 4,
-        "Preflight": 4
+        "XHR": 8,
+        "Preflight": 8,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns1.p14.dynect.net",
         "ns3.p14.dynect.net",
         "ns2.p14.dynect.net",
-        "ns4.p14.dynect.net"
+        "ns4.p14.dynect.net",
+        "ns1.p14.dynect.net"
     ]
 }

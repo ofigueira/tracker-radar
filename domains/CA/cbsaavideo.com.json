@@ -4,10 +4,15 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
-        "availability-cloudfront.syncbak-mediastore-cedexis"
+        "availability-cloudfront.syncbak-mediastore-cedexis",
+        "vod-gcs-fastly",
+        "vod-gcs-cloudfront",
+        "vod-gcs-google",
+        "vod-gcs-lumen",
+        "vod-gcs-cedexis"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -31,9 +36,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicbook.com",
-                "southpark.cc.com",
-                "www.mtv.com",
-                "www.paramountnetwork.com"
+                "popculture.com",
+                "www.cbs.com",
+                "www.mtv.com"
             ]
         },
         {
@@ -44,8 +49,8 @@
                 "availability-cloudfront.syncbak-mediastore-cedexis"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -55,9 +60,76 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicbook.com",
-                "southpark.cc.com",
-                "www.mtv.com",
-                "www.paramountnetwork.com"
+                "popculture.com",
+                "www.cbs.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-fastly",
+                "vod-gcs-cloudfront"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbs.com",
+                "www.cbs.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-google",
+                "vod-gcs-lumen"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbs.com",
+                "www.cbs.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/upsells\\/canada_1121_landscape_final\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-cedexis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1f7e50159bde98a0b112e5ddb0e837df78c8a2c93583119a911215d433aadb04"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "prevPageType": 0.00020098482564566376
+            },
+            "exampleSites": [
+                "paramountplus.com",
+                "www.paramountplus.com"
             ]
         }
     ],
@@ -65,7 +137,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 8
+        "Fetch": 7,
+        "Image": 2,
+        "XHR": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns-1404.awsdns-47.org",

@@ -9,9 +9,10 @@
     "subdomains": [
         "auth.api.aha",
         "image-resizer-cloud-cdn.api.aha",
-        "auth-gw.api.aha",
         "geo-loc.api.aha",
-        "device-register-service.api.aha"
+        "auth-gw.api.aha",
+        "catalog-service-cdn.api.aha",
+        "storefront-cdn.api.aha"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -28,7 +29,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c3cc7bc1c756c2250f29b647e92ad2866c2258d034d9af62900c8a15ba98a51c"
+                "d233535b0f9c7103590850fb4bb5d603eb7890d6fb8f109a990a1c7a70eb7cb9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -61,11 +62,11 @@
             ]
         },
         {
-            "rule": "firstlight\\.ai\\/platform\\/access\\/token",
+            "rule": "firstlight\\.ai\\/device\\/location\\/lookup",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "auth-gw.api.aha"
+                "geo-loc.api.aha"
             ],
             "apis": {},
             "sites": 2,
@@ -86,28 +87,6 @@
             "fingerprinting": 0,
             "subdomains": [
                 "auth-gw.api.aha"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8eb84fa5bc91319dd3309cce82f653261639a764168356bcc11bb0600d945a9e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aha.video",
-                "www.aha.video"
-            ]
-        },
-        {
-            "rule": "firstlight\\.ai\\/device\\/location\\/lookup",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "geo-loc.api.aha"
             ],
             "apis": {},
             "sites": 2,
@@ -134,7 +113,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "46d6b8ac29662ecc4e948b78042b51dd59a22ef3e7a3be1c87f5694cd88b2468"
+                "3fe0f529dee7862a8fb57753e3b5034d5b063be25d3b26f19976e668d1fb8577"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -145,18 +124,20 @@
             ]
         },
         {
-            "rule": "firstlight\\.ai\\/device\\/app\\/register",
+            "rule": "firstlight\\.ai\\/platform\\/access\\/token",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "device-register-service.api.aha"
+                "auth-gw.api.aha"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e8b27ddd49499db27f7c8f1e750739aa673ca9197056d6b8c8b66f8b6157022a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -165,20 +146,64 @@
             ]
         },
         {
-            "rule": "firstlight\\.ai\\/device\\/app\\/register",
+            "rule": "firstlight\\.ai\\/catalog\\/collection\\/BFF30861-3A8D-4847-8440-7580D828BB73\\/containers",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "device-register-service.api.aha"
+                "catalog-service-cdn.api.aha"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7b11ffb742912bf5967394068c65a7a670710210ccdadc2bd43fb9c49a9051ba"
+                "04804577a297ac54465d797f573d06ce060cc375c8051e4697cb6391af2acb79"
             ],
-            "type": "Fetch",
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aha.video",
+                "www.aha.video"
+            ]
+        },
+        {
+            "rule": "firstlight\\.ai\\/storefront\\/list",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storefront-cdn.api.aha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c6c1121ab5f896c1bdfe5b46b5c65b090c69cb81956576c48911ef6fde8fe2a9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aha.video",
+                "www.aha.video"
+            ]
+        },
+        {
+            "rule": "firstlight\\.ai\\/storefront\\/048CC689-2187-4552-921C-8311E53B0221\\/tabs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storefront-cdn.api.aha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "69f85b98af6ab3d268b98ceaf78c3b9fbf6a3bf7465da5aef7e0ae9753be2fdb"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -191,10 +216,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4,
+        "Fetch": 2,
         "Image": 2,
-        "Preflight": 6,
-        "XHR": 4
+        "Preflight": 4,
+        "XHR": 10
     },
     "nameservers": [
         "ns-423.awsdns-52.com",
