@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000222,
-    "sites": 32,
+    "prevalence": 0.000191,
+    "sites": 28,
     "subdomains": [
         "subscription-forms",
-        "web-tracker"
+        "web-tracker",
+        "sqs-webhooks"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,32 +22,28 @@
                 "subscription-forms"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000623,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
-                "8cdae217919b5c82eaa1800aef9cf3a3aa4797f03ca060054bb055e6feebc166",
-                "7321909835e461e737d213b5044a23168a1e7be50fab1105082e3773f25d334f",
-                "686951a1ab77180bdf732608ec6c6eba696318ae311e0597e7c43ff4325abc34",
-                "a3b5654f35bf07b23aeed5ce38b437773c7128c0e63156d87d3afc7218edd4d6",
-                "05fc1082aff5b324d46cb6f1bf554f9ef0e6cf8aabac6284e2fb5c5ab974f8f5",
-                "5d4a5c6dea00194ee5ebc58febb298075a98473eb44dccee443b9c4b05706633",
-                "aa3270588ac5e9bdd7204ac917077ac043204bb44b582b905d0e0f35e9116828",
-                "c175e5b2e3917e9981c2c65bd77acc14f5f8e0d30fb2056acac7a22bea6fd8d0"
+                "22a3a57ed36b8ec98c42276861f174b8685d24273414a63aad0adc455279a06a",
+                "a9f7fff286580616e4e64c22ce1ccaf111dd22564dce748d215eef7a681167f4",
+                "b481892267f823366c76b6909bd7c27792d5e50fef5ec6a1bb4ee1632033a557",
+                "18acc1787a2c06e8c3120cff8f4b34042e21d29fdbd420c7eeda0df4f57beab2",
+                "a9226c57d16ab6ede1fd758c9fbbe8f84fbb66ce78028efb58e63654f7ff1e70",
+                "5d4a5c6dea00194ee5ebc58febb298075a98473eb44dccee443b9c4b05706633"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "1stphorm.com",
-                "bicyclewarehouse.com",
-                "casadesante.com",
-                "heatonist.com",
-                "us.princesspolly.com",
-                "www.gnomonwatches.com",
-                "www.roccat.com",
-                "www.turtlebeach.com",
-                "www.urbanbodyjewelry.com"
+                "castore.com",
+                "vapeandjuice.co.uk",
+                "www.beginningboutique.com.au",
+                "www.cosabella.com",
+                "www.cygnett.com",
+                "www.rawliving.co.uk",
+                "www.roccat.com"
             ]
         },
         {
@@ -57,40 +54,44 @@
                 "web-tracker"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00009,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
-                "9733645923142530b23a2d005d7b26f77ac2ee85d865ff1b22a25bf72e3562d9",
-                "149470a76dcec4bbf0bbf1cf75a90fe0c7ab7a35650b9a68acd3eac316a9ebfa",
-                "39c097af8222310c510b279629d321af818db571094d71dad85918faaf7dc91b",
-                "e8d4a72ee6af8180af25a33e6ea0d3218b34193f7a22bff376c0a2162dd444a7",
-                "fd3d055255cbaa4d576c5a76af71f2bc908f157bec5845c279cf6dbc8c486489",
-                "7cf31141e4f4c0bbe136fd81b8412b3eecd7d8ce16c869400b986abca6ce91cd",
-                "9c171423d1a6a9de814b637f7c9fce20d760312308b1e94dc7ea59ce4f863bea",
-                "71cab61dd4ae6fdd1f7d44d1cfcef654d319fb1fb623f1f7c11539168ddd8bfe",
-                "455d7c79adf71065d91549d293ce94f8647adb0774dca763ee42bf10831eb518",
-                "c55f2ab424f8c222900ea3309cbcab32c6e2d15671a66b146f555a944f14d3b4",
-                "25d3476b6d4adbec3be52269a4553bcbd977a7ed417711bbd788411198d40312",
-                "4e97fe161f62cb600bb7c2ab430f83b7664a0ac7e13c5dc19dadf147fc9221f9"
+                "179d7520663a9cb77b39380c3761a2f20396d408254722559be309313c3d858c",
+                "a8902684edc74235269305c443b6e9efe90e87ff33b969f99e5701f99b64c3b6",
+                "75ea38fa7a24510785cf1d93d0dd08e3edcce7c3bb2de951cff1d5dfe5e1f490",
+                "9f6e23284c4828e944e8513928208b559c789d5bbe62a307ccc079551d14ddde",
+                "8a3e3c09a2aad63dd740873bbe1a243939fd96d338e1d9679d34e840653f5b8e",
+                "ed3ed18a1301905b576bf3ec06f55756efc844b16d2f756c2c566b47f3725815",
+                "1286f7bab5702b770361f9ed24085c6b42116dceb87044fa5536fbcddd085451",
+                "9b8b3953684706e4f49f483b11754fb174ea995d7ecf3dc540134d8dfe2e0ea4",
+                "d17c57b27cbcaf9088885078a4dee99e2ac011371754214830b8f48b25055873",
+                "b388dbfdc2f9bd55d566838d4233b75997b28afc464e09c1df44b8375741428f",
+                "4860f1fecbdb1b0e9ee92dfd675727a82f6b8c220824f57002d20b9377f6a5f4",
+                "a4f47305ba5f66782ac75bd0991b6c05a39c40a987b93f5f6418569c1281bd26",
+                "178acb0544bf678035a7ba747362a02de6b1da6d968e3458ec7754dd5d75ea38",
+                "3c010f55ebebd8bee5cd00a177b26b7c8371a9b354da600a6be2a406e4e524c7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bicyclewarehouse.com",
+                "castore.com",
                 "crazybulk.com",
-                "heatonist.com",
+                "frankie4.com",
+                "pipersfarm.com",
                 "steelsupplements.com",
-                "tonies.com",
-                "us.tonies.com",
-                "www.bulksupplements.com",
+                "thehealthychef.com",
+                "tropicskincare.com",
+                "www.beginningboutique.com.au",
+                "www.culturekings.co.nz",
                 "www.culturekings.com.au",
-                "www.dameproducts.com",
-                "www.gruntstyle.com",
-                "www.smokecartel.com",
-                "www.turtlebeach.com",
-                "www.volcom.com"
+                "www.cygnett.com",
+                "www.manieredevoir.com",
+                "www.princesspolly.com.au",
+                "www.rawliving.co.uk",
+                "www.roccat.com"
             ]
         },
         {
@@ -101,27 +102,71 @@
                 "web-tracker"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00009,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bicyclewarehouse.com",
+                "castore.com",
                 "crazybulk.com",
-                "heatonist.com",
+                "frankie4.com",
+                "pipersfarm.com",
                 "steelsupplements.com",
-                "tonies.com",
-                "us.tonies.com",
-                "www.bulksupplements.com",
+                "thehealthychef.com",
+                "tropicskincare.com",
+                "www.beginningboutique.com.au",
+                "www.culturekings.co.nz",
                 "www.culturekings.com.au",
-                "www.dameproducts.com",
-                "www.gruntstyle.com",
-                "www.smokecartel.com",
-                "www.turtlebeach.com",
-                "www.volcom.com"
+                "www.cygnett.com",
+                "www.manieredevoir.com",
+                "www.princesspolly.com.au",
+                "www.rawliving.co.uk",
+                "www.roccat.com"
+            ]
+        },
+        {
+            "rule": "smsbump\\.com\\/forms-analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sqs-webhooks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beginningboutique.com.au",
+                "www.beginningboutique.com.au"
+            ]
+        },
+        {
+            "rule": "smsbump\\.com\\/forms-analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sqs-webhooks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f4342f267ff55ba20ba3f75864e281f91814da87550bdebcb98916eee8a05d9c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beginningboutique.com.au",
+                "www.beginningboutique.com.au"
             ]
         }
     ],
@@ -129,8 +174,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 22,
-        "Preflight": 13
+        "Fetch": 24,
+        "Preflight": 17
     },
     "nameservers": [
         "ns-251.awsdns-31.com",

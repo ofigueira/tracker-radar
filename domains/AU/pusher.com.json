@@ -7,14 +7,36 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.0015,
+    "sites": 15,
     "subdomains": [
-        "stats"
+        "ws-mt1",
+        "stats",
+        "js"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "pusher\\.com\\/app\\/e9b08aea0c687233eb90",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-mt1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iherb.com",
+                "www.iherb.com"
+            ]
+        },
         {
             "rule": "pusher\\.com\\/timeline\\/v2\\/jsonp\\/1",
             "cookies": 0,
@@ -23,8 +45,8 @@
                 "stats"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 7,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,11 +55,37 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "iherb.com",
                 "ineosgrenadier.com",
+                "www.crucial.com",
                 "www.gemrockauctions.com",
-                "www.nonewnormal.com",
+                "www.iherb.com",
                 "www.walesonline.co.uk",
                 "www.weddingwire.com"
+            ]
+        },
+        {
+            "rule": "pusher\\.com\\/5\\.0\\/pusher\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bcec6f88a33f40170c631a18e7545b7e4d5e3ef01e1ff3cd4912efd5e81f86db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opera.org.au",
+                "www.crucial.com"
             ]
         }
     ],
@@ -45,7 +93,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 5
+        "WebSocket": 2,
+        "Script": 9
     },
     "nameservers": [
         "ns-1482.awsdns-57.org",

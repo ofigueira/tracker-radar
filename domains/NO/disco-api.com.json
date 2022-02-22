@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "us1-prod",
         "eu1-prod",
-        "eu1-prod-images"
+        "eu3-prod",
+        "eu1-prod-images",
+        "eu3-prod-images"
     ],
     "cnames": [
         {
@@ -20,40 +21,44 @@
             "resolved": "eu1-prod.disco-api.com"
         },
         {
-            "original": "us1-prod-direct.discoveryplus.com",
-            "resolved": "us1-prod.disco-api.com"
+            "original": "eu3-prod-direct.eurosportplayer.com",
+            "resolved": "eu3-prod.disco-api.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "disco-api\\.com\\/cms\\/configs\\/auth",
+            "rule": "disco-api\\.com\\/users\\/me",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us1-prod",
-                "eu1-prod"
+                "eu1-prod",
+                "eu3-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
-                {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
                     "resolved": "eu1-prod.disco-api.com"
+                },
+                {
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "d654c643cd24a4b8e04939e235685516a92429639f159f37f29e8ec8942a9505",
+                "cd3ad0496071223a354e20d7b80b09846448b39f5cf44746bcc2de9aaf6f4882"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "auth.discoveryplus.com"
+                "www.discoveryplus.com",
+                "www.eurosportplayer.com"
             ]
         },
         {
@@ -61,20 +66,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us1-prod",
-                "eu1-prod"
+                "eu1-prod",
+                "eu3-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
-                {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
                     "resolved": "eu1-prod.disco-api.com"
+                },
+                {
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
                 }
             ],
             "responseHashes": [],
@@ -83,103 +88,39 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "auth.discoveryplus.com",
-                "www.discoveryplus.com"
+                "www.eurosportplayer.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/cms\\/configs\\/auth",
-            "cookies": 0,
+            "rule": "disco-api\\.com\\/token",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "us1-prod"
+                "eu1-prod",
+                "eu3-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "3e70d543c859387fadd1fa7fb7f9e64d2b139e92f5840b12616a46f64aa7cc23"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "auth.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/users\\/me",
-            "cookies": 0.0001,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
                     "original": "eu1-prod-direct.discoveryplus.com",
                     "resolved": "eu1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "2e9874665c22d3a12c101dc5eadd5cc2499685843967bd7766a87a18db19f231",
-                "5e5c5de48575873621378f9c9b60e59aa59012d9aded68f1292a658664d19025"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "auth.discoveryplus.com",
-                "www.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/token",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
                 },
                 {
-                    "original": "eu1-prod-direct.discoveryplus.com",
-                    "resolved": "eu1-prod.disco-api.com"
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
                 }
             ],
             "responseHashes": [
-                "c27946fe3e564c98b7d913a9eb0665e66d0991486eec99cb86b59d34029a3474",
-                "9b8bd3b859ed312b22d3f49121d231a83dacd19641af5718c9672321a304fe98"
+                "7c3101d650abcfa6da66a3865a58844ef3ac8be72fb44de8b87ebf68e98ae3c7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "auth.discoveryplus.com",
-                "www.discoveryplus.com"
+                "www.eurosportplayer.com"
             ]
         },
         {
@@ -187,20 +128,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us1-prod",
-                "eu1-prod"
+                "eu1-prod",
+                "eu3-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
+                    "original": "eu1-prod-direct.discoveryplus.com",
+                    "resolved": "eu1-prod.disco-api.com"
                 },
                 {
-                    "original": "eu1-prod-direct.discoveryplus.com",
-                    "resolved": "eu1-prod.disco-api.com"
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
                 }
             ],
             "responseHashes": [],
@@ -209,16 +150,16 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "auth.discoveryplus.com",
-                "www.discoveryplus.com"
+                "www.eurosportplayer.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/users\\/me\\/profiles",
+            "rule": "disco-api\\.com\\/cms\\/collections\\/web-footer",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod"
+                "eu1-prod",
+                "eu3-prod"
             ],
             "apis": {},
             "sites": 2,
@@ -227,6 +168,10 @@
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
                     "resolved": "eu1-prod.disco-api.com"
+                },
+                {
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
                 }
             ],
             "responseHashes": [],
@@ -235,15 +180,16 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discoveryplus.com"
+                "www.eurosportplayer.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/users\\/me\\/profiles",
+            "rule": "disco-api\\.com\\/cms\\/collections\\/web-footer",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod"
+                "eu1-prod",
+                "eu3-prod"
             ],
             "apis": {},
             "sites": 2,
@@ -252,137 +198,21 @@
                 {
                     "original": "eu1-prod-direct.discoveryplus.com",
                     "resolved": "eu1-prod.disco-api.com"
+                },
+                {
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
                 }
             ],
             "responseHashes": [
-                "9c8a7783559ba37833b886076d55d673d2bb81d404ff9cc1043a68eaffca66c9"
+                "51bc7901a1ed29fe9364d87754e283c8e8f5466d865c46060c3ce7309489a1c1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/2\\/18\\/e9accebf-808e-4b6e-aa51-9cfecf5dc641\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "7f6da080eb4e0b5f83bfe7360c582fadbd24b8059e9038db07ff3668bfdeb15c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com",
-                "www.discovery.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/2\\/18\\/83a94d9f-ff57-4e1c-b9f7-f618c994e029\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "bc826bdcb104efaa64078d69b3fdf33b753d8c7557988d005bdfd5061bef687b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com",
-                "www.discovery.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/4\\/21\\/661f28ab-f272-45da-a6f1-e2606cdf795b\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "f215d6fe4651e55007586404b9d8acf49387591e5b473635f1a9810035301bba"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com",
-                "www.discovery.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/4\\/21\\/c5e64935-f266-4253-b295-16c84220b396\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "1f9ee681a5b4b5825aac1d0c0000b8daa3b74039e57aecf6eeebf330c327327f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com",
-                "www.discovery.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/4\\/21\\/b2c09631-047d-4377-aa38-cdc3fefcde15\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "b86f57fddd364173aacd7aaf659a312839bd51567e005764bba9e7ae9e848e36"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com",
-                "www.discovery.com",
-                "www.dplay.com"
+                "www.eurosportplayer.com"
             ]
         },
         {
@@ -393,8 +223,8 @@
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "433b4af358c3942d08d4bcfc2b9f07717592b3c5128157c5b1475a33b48480a9"
@@ -404,7 +234,28 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discovery.com",
+                "www.dplay.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/1\\/27\\/aba02202-e8ed-45f6-a9a6-5690c1dfba52\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8bc5d4582737542aaac83f2c6e43b90c83fe1fef3e817dd57820ceffcc1ba17e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
                 "www.dplay.com"
             ]
         },
@@ -416,8 +267,8 @@
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "ca93795c15f49ab51bac97a002d1d872005dd1921e2c701913003f8f10fc1972"
@@ -427,7 +278,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discovery.com",
                 "www.dplay.com"
             ]
         },
@@ -439,8 +289,8 @@
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "de4e56ea3f988ddad30037f4db78a69eacd7b724fab2c0527575bf7eb2c05b79"
@@ -450,7 +300,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discovery.com",
                 "www.dplay.com"
             ]
         },
@@ -462,8 +311,8 @@
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "ab1a87eef0fa8afe36a03ef397bd9a7c17f80790465f06dfcd2143a47942f3a5"
@@ -473,7 +322,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discovery.com",
                 "www.dplay.com"
             ]
         },
@@ -485,8 +333,8 @@
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "c7b09aaac7b3705ccc1e95a9d1fbccdb2892d281b126529d06801073c9f5e05e"
@@ -496,12 +344,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discovery.com",
                 "www.dplay.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/01\\/13\\/e9287065-2c4a-48b6-943b-c0c51fd1b3c9\\.jpeg",
+            "rule": "disco-api\\.com\\/2021\\/2\\/18\\/e9accebf-808e-4b6e-aa51-9cfecf5dc641\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -512,8 +359,8 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0b370c3fd0fae252181d9db6369f2e25cac79f552d958e79c5012d3abda55b9e",
-                "d10beae434159d93b57c11999da4da6cb70b132e7d381cec155ceda58bb75196"
+                "424303fd7aaeaf850f4db0e5d5a4237a3547ba7c037fb555ce1bda561a85600a",
+                "ceb23344260d3defb42cbc1e75eeb58566dd5b66fb93fb3f8909fa22efed528b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -525,31 +372,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/01\\/13\\/cf532d6c-01cc-4b22-8f6a-9ebd8af86c70\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "f097126d886f6b446a9e9b4d810df312a8039ad715e3ed0f1073f21d4f5bcd46",
-                "274ce14b6b2a0cfcb71fd42c1b94f619ef43055e0b79369be8fa954093ba0a4c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/13\\/7aa0bb8c-8ebc-43f1-aff8-e7b4220985ba\\.png",
+            "rule": "disco-api\\.com\\/2021\\/2\\/18\\/83a94d9f-ff57-4e1c-b9f7-f618c994e029\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -560,7 +383,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1aba868f79cc5e486e7d7e92789070c7cecec77e413282c1f1d01c99b5510789"
+                "145ab3ca81c2821c4b4fbd9ba2e4f3116dcf582934671e5aa5f261e210217086"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -571,7 +394,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/09\\/29\\/677af653-cd6c-4c6d-815b-7f16af54fe60\\.png",
+            "rule": "disco-api\\.com\\/2021\\/4\\/21\\/661f28ab-f272-45da-a6f1-e2606cdf795b\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -582,7 +405,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "467c2e985b651c480528333d942cc2b8e2cff323c61c1f3a5b64dff1204725b5"
+                "f215d6fe4651e55007586404b9d8acf49387591e5b473635f1a9810035301bba"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -593,25 +416,209 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/12\\/01\\/a4a4027d-98dc-4da8-9403-e9f8482748e3\\.png",
+            "rule": "disco-api\\.com\\/2021\\/4\\/21\\/c5e64935-f266-4253-b295-16c84220b396\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "459ac7866df6ae781398512c212dfd1177d5954e3ed8f3e5a6dd8764102bc85f"
+                "1f9ee681a5b4b5825aac1d0c0000b8daa3b74039e57aecf6eeebf330c327327f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discovery.com",
+                "www.dplay.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2021\\/4\\/21\\/b2c09631-047d-4377-aa38-cdc3fefcde15\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b86f57fddd364173aacd7aaf659a312839bd51567e005764bba9e7ae9e848e36"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/15\\/e6ecb2cd-18a6-31cd-8dbb-c1917db16807\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0a3c8a00dcf95bd143c90a7aef6a5c69839cbe30165e95dfe3db58d9f6e7ce63"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.discoveryplus.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/18\\/8e70da50-7306-46e7-a8f6-840e7a39ea5a\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7439b7df9d1fb2a4db4210fa2ad81fb618c945a18c130c199210bebdb1752015"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.discoveryplus.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/16\\/27f434a6-6c99-3697-a491-2969debcc473\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images",
+                "eu3-prod-images"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "5d56f8d8e5161e059e542baae2907cdaa90da0c5ad7d79161b68b54c92c2a26c",
+                "086747afaf1b1c83646ae7c30244a0a8f038ad28d7e00558729c419e2a7aedd0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com",
+                "www.eurosportplayer.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/18\\/75bc956d-b140-3ba5-83e0-987622d0b102\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images",
+                "eu3-prod-images"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "8e38acc52b078b714961d75c73b82decac756ca2170ca153a642cbcd3a46ef68",
+                "83e40dd91d5c79fda9fc36cf8836587e5e7e1caa2c5bd79c665df245f5cc79c8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com",
+                "www.eurosportplayer.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/01\\/17\\/ec7a4626-568c-4b75-98ff-63820d5f1fef\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b2ed471d8e4d363963cf40ec111dc68627a963b84375fe34def4a10554279548"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/05\\/1b6d7362-e21c-3f97-85e5-70046cec3b93\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images",
+                "eu3-prod-images"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "0ec57b0630fe963344cda81ed8022266d9d48d8815f1500ebe6d4840e5c275d7",
+                "38b780033e76d3b53f2294d74c687d2db83918e0f9cdd3793afd3b65ecd01501"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com",
+                "www.eurosportplayer.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/18\\/1e553ebc-9f64-4c50-8159-ac0435e21bdf\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "16de3d82aaf7b9e4a79858585e987973473da9a37a280f01ab3cdc8a63f85fef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
                 "www.dplay.com"
             ]
         },
@@ -623,11 +630,10 @@
                 "eu1-prod-images"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3428d96d67986e5e6b3b3fa5848016d89eb8d215f2f32e80d4c299564b18e80b",
                 "a9901ea9b2f9f6e32b820a9a60cd723fe202d7972ec6d173a8a9ce383b57571b"
             ],
             "type": "Image",
@@ -635,12 +641,36 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "discoveryplus.com",
-                "www.discoveryplus.com",
                 "www.dplay.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/1\\/17\\/d3cf9ece-e1d7-44a0-95e0-98824beca2bb\\.jpg",
+            "rule": "disco-api\\.com\\/2022\\/01\\/25\\/8067081d-8200-3752-9b10-953b8aec7d80\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1-prod-images",
+                "eu3-prod-images"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "b99947b7d23810ebb56c41150ede4ea54a6d75d18622ea4399fd91ad3244e57f",
+                "747bdcca75653c63a1aed1cadcac6b2477bd0564692073ca5aef74273745c1b7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoveryplus.com",
+                "www.dplay.com",
+                "www.eurosportplayer.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/2022\\/02\\/17\\/ad859396-99cb-44e4-aa30-6e712ab8fc5e\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -651,7 +681,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "875ad81fea7ec9f09512ae24bb28cba14160105ffd06bca304ce11de8efd6381"
+                "4d3a8e804d9e27a180c61b3ba4fd58f287d12062001c0fbc2ddbcc10c87d5e58"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -662,7 +692,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/1\\/17\\/336e602d-8b72-4506-9b0f-57315f8af9da\\.jpg",
+            "rule": "disco-api\\.com\\/2022\\/02\\/18\\/6b4bd8be-9b1c-323d-b94b-666b235d7f53\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -673,7 +703,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "875ad81fea7ec9f09512ae24bb28cba14160105ffd06bca304ce11de8efd6381"
+                "aef384a815dff91cc6ae0f2450c6cda3944216f86cb88affe9529dc0b65bbcd7"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -684,7 +714,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/01\\/04\\/6eb93b57-31a8-48b6-81a0-fff2bb5a1539\\.jpeg",
+            "rule": "disco-api\\.com\\/2022\\/02\\/05\\/5a788bd4-157d-3ec5-b37a-5beecf4da63d\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -695,7 +725,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "34a3e0663d98e9871f04a3823400ef662428132f2ac0908ce66acf4b8f2332a0"
+                "f69d62c89422bde6de8dd0944059b81343d9c5bdfb24c45ca79f9bb506c2f773"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -706,7 +736,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2022\\/01\\/04\\/468f9c1b-2506-4852-9217-4a268e675d76\\.jpeg",
+            "rule": "disco-api\\.com\\/2022\\/02\\/18\\/9ffc9f64-71aa-3eb4-9051-2146ec110fa0\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -717,7 +747,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cbbbe63aa372eabaa0699060d9f515bd0d11bb37c29cf2a45c0cc4353ea1c82f"
+                "dd37a70c4b36b9538a83436ecdf4e0936ece089d2b3a9b170c064c6971c899f0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -728,7 +758,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/12\\/22\\/d064c8c5-1a5e-432a-ae22-5a14a1338158\\.jpeg",
+            "rule": "disco-api\\.com\\/2022\\/02\\/01\\/42c8237e-409b-485b-af57-6cf4756da070\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -739,7 +769,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fbda3fb3533787136a3d4e0e75606ef32a3c56ca514612b066942acc81ec9498"
+                "441e30d457df237ea60bd4ed542a7f456de083cee0cbf3f119687be89344ccfc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -750,7 +780,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/12\\/22\\/01b2cde0-1a91-46e5-8ec9-fbe734982611\\.jpeg",
+            "rule": "disco-api\\.com\\/2022\\/02\\/18\\/3acb81c9-f1af-42c6-a0f4-d9d4c2ab42b1\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -761,7 +791,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ce62ff01065d964a8dc798fed424d3e435769e1dbde9e9614f7b87f6e7308473"
+                "cfc4957de77c152f478bd4319f3ef5c95f3727d3cfacb812ceff4dc24b4c221a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -772,7 +802,7 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/12\\/02\\/b90f4b15-8f8f-424e-829c-f91d55e4f487\\.jpeg",
+            "rule": "disco-api\\.com\\/2022\\/02\\/17\\/218ce8c0-872c-4250-baa7-a6fa1168c93b\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -783,542 +813,41 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d530006db2db6056cbaab9ad3be4fa3898a90f3b985947160acce939af2e6d3b"
+                "fad384e02e09c12a7ab0a1a99da17ebdd522f11fc27b51da76ab87937e8e3087"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "discoveryplus.com",
+                "dplay.com",
                 "www.dplay.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/2021\\/12\\/02\\/4c477e3b-066d-4f5f-a1cc-380f0737532f\\.jpeg",
+            "rule": "disco-api\\.com\\/cms\\/configs\\/esp-olympics-web",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod-images"
+                "eu3-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1145e26d143fb924fd8a06b45e3ccd002afa5d859e4536f0464d62e1112c1e76"
+            "cnames": [
+                {
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
+                }
             ],
-            "type": "Image",
+            "responseHashes": [
+                "9d042e2b57349adfb787efd5db2055964c1bbf07c30b0986f5304326726756fb"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/10\\/27\\/c5b17e3c-bd8d-3efa-8b7c-60f9f8d2c7e1\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4942db03aff39e00546411cf7d673a7b9858153e4f18665afe2d0da88c970bbc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/22\\/00762581-6bf3-4d55-a46c-02956d8fc9e8\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "dd44065c9fc28fe2488b78ca043f7feaffcdd6a1690f67199919fe983e8725e3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/22\\/6014b702-df8b-4e82-ad7e-443fd32b8fba\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4bb9dd5b6db6b302ea251d291f1ceaf3197af45c67f65e7c3075ddd4fca0267b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/10\\/19\\/55b26e9a-e905-482f-aaa6-72430e1885c2\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "d83b1759c0e6b1c952e1d769f180a7d290a317369773969834840679a8309a30"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/01\\/2337954e-ce18-4854-b060-30f9a0fd7775\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1c754ed42ce4bbf018b417b5290d9f3feceb8b70580317ce5fb1d0b017d0c616"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/01\\/05df474d-6f9b-4563-9f39-875ac46203d4\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1536ebdbc7e882abbea78d7643ca52103e1b7924474640e4291f7e54869a04f5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/07\\/335aeff5-deda-49f4-9f29-12eccb57bc4a\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "b94b3076d079525984d1a501683d430dbea7bca2f8977587de3cd163d17f514b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/07\\/2ca88d20-ac2a-40a5-a507-f141d8ed1ff0\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "bc718bdb768b455d61c0a6bc5ab626d8eb5e0779d88881849b30866288ff475a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/22\\/84089e0b-b978-48f9-8e78-4a2ca1c018dd\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ffe8281a798e81193127064a73a93bbe69f31713e7c35434aaf72e3af2bd4868"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/22\\/74b2191f-a220-47f7-bae6-4b6e956f7879\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "af094ed9d16a66c979de0f2d43d700694979ef10dcf0c1e0772fa47f0a90b805"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/12\\/58632b19-5c23-4d2e-8e51-221eefccd02d\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1b5201c13f721e31cc85939cf0358b2e448a855be4c4a68f92bd192b5d403e27"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/12\\/6ab387b9-3103-4365-ace2-97261c398b90\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "224e2badb7832c5dfe2dd5f3602d223c974f41da115c294bb2735ae480434f19"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/07\\/05c4add7-e05f-4a68-8e16-844faab8c0b2\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "a268368b41077d86ee8b2f361e31f90b4905a0d4623032ec3f3bf8d648d82d1a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/23\\/ecdb5fdd-84f6-408d-9d11-a36a6fc4e46d\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "379d9a1637f360b5a5747ac53c0c4f1e5f760fc69edcc49bf7d03ec151d394ff"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/23\\/c6c2f940-4eef-48cd-9a42-4111193838dc\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f6ca922bd8ee18f311d502827b3f0f8feec064eef2c08cac69af2b65fdb15156"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/a7c3afbd-d52e-458c-bedc-3620ab713bc7\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c5daa8f19dc45795bc8d2f25f178e303ded035e4b42c2a60d7be94d1faecb423"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/8962e40e-7295-4211-b6a9-20e8f45c6639\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8c189105c06e14dd8d5a9caa1ab55851db6280f0ace16b8b096e2fe4fd977e36"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/16\\/3495f7f4-6da5-414e-852a-4f79241f7889\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "39df029ed9cb7327a6b3e8dd29adaa08fb1df5b6e86f9161b72c22d805928bab"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/16\\/3651f4f3-cd78-4029-8e72-551beccd707d\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "04187cf72908615f41f4ffa140bafdb730bc4ad5c182282999dd5e7ca37680bc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/02\\/c8b86c0e-51b9-40f5-8a76-ca739f925b27\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "94e22e7e53c00de5667229c91ca6dd677f11bd3d7366b9566351a81d0af31e8b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/02\\/cc5f2a96-1c54-49fd-9b5f-585125a125fb\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c08c31bc2d99d76df0108e92838fb5dfee8996743392d54d33df821aea61dbe1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/23\\/892f6f05-d8be-46f1-8bf8-72f442cc61e0\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "aa82b2d7d13cd32b5bbb34a007b6c5d1477d0ae1a2ade2e88dbece1e5a4c32be"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/23\\/b4f54310-159e-4dc4-96c6-2d45585bba12\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "50771095fdee2d3bff7f11db7fc8da209beedb04905f1902c49a26a0b889286c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.dplay.com"
+                "eurosportplayer.com",
+                "www.eurosportplayer.com"
             ]
         }
     ],
@@ -1326,14 +855,14 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Preflight": 10,
-        "Fetch": 10,
-        "Image": 113
+        "Fetch": 9,
+        "Preflight": 6,
+        "Image": 59
     },
     "nameservers": [
-        "ns-235.awsdns-29.com",
         "ns-722.awsdns-26.net",
         "ns-1647.awsdns-13.co.uk",
-        "ns-1277.awsdns-31.org"
+        "ns-1277.awsdns-31.org",
+        "ns-235.awsdns-29.com"
     ]
 }

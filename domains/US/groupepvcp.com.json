@@ -4,14 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
-        "wording-api"
+        "cpe-search-api",
+        "wording-api",
+        "csxd"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "groupepvcp\\.com\\/v1\\/search\\/results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cpe-search-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "domainVisited": 0.000006810829218457347
+            },
+            "exampleSites": [
+                "centerparcs.nl",
+                "www.centerparcs.eu"
+            ]
+        },
         {
             "rule": "groupepvcp\\.com\\/v1\\/wording\\/page",
             "cookies": 0,
@@ -20,18 +44,43 @@
                 "wording-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "528833d47e0eac94de17afd769c0d8d6a0d1c6c3587cbca5832d49b28479ec98"
+                "3a3a765a8e82d0025f53558c4cc5e59f3a079cb24cd01cfc1403e67a9583b781"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "centerparcs.de",
-                "www.centerparcs.de"
+                "centerparcs.nl",
+                "www.centerparcs.eu",
+                "www.centerparcs.nl"
+            ]
+        },
+        {
+            "rule": "groupepvcp\\.com\\/xdframe-1\\.0\\.0\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "csxd"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "01c5f3d7746282875c8967061c478f1170c9fceb13eb94ccf785f8d0f48cd7a3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pierreetvacances.com",
+                "www.pierreetvacances.com"
             ]
         }
     ],
@@ -39,7 +88,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "XHR": 2,
+        "Fetch": 3,
+        "Document": 2
     },
     "nameservers": [
         "ns-89.awsdns-11.com",

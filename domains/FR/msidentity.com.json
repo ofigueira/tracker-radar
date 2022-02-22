@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "login.msa",
         "ak.privatelink"
@@ -20,18 +20,18 @@
             "resolved": "ak.privatelink.msidentity.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "msidentity\\.com\\/login\\.srf",
-            "cookies": 0.000703,
+            "cookies": 0.000803,
             "fingerprinting": 0,
             "subdomains": [
                 "login.msa"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [
                 {
                     "original": "login.live.com",
@@ -45,6 +45,7 @@
             "exampleSites": [
                 "microsoft.com",
                 "answers.microsoft.com",
+                "bing.com",
                 "onedrive.live.com",
                 "support.microsoft.com",
                 "templates.office.com",
@@ -54,14 +55,14 @@
         },
         {
             "rule": "msidentity\\.com\\/me\\.srf",
-            "cookies": 0.000703,
+            "cookies": 0.000803,
             "fingerprinting": 0,
             "subdomains": [
                 "login.msa"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [
                 {
                     "original": "login.live.com",
@@ -69,18 +70,20 @@
                 }
             ],
             "responseHashes": [
-                "1c1135824a91b082e7129402180c16e3e4cf314ba494e56c283c2a79374cb231",
-                "3b1cdb151cb0fc27cef515f41d584e8e5254f897cdf69dce91c80b0bc11397b6",
-                "768cd7859183c277ac70f321bd6c26f67fb25e340e247db2882d7b803d1953ef",
-                "259c7c682e83e66ebcdfa129adb69650e3cb7f37c01702dfabb0f3e94859b578",
-                "167a04fe2fa4baeface8988871787977e9288618a7f479bf2f51054633307704",
-                "dee292b8285de31d4982926e291e1d131de3a387aecad0a73d9bed13bc13aff3"
+                "25fe751eb8351da87d126b80f1d2cb445b48cf791e541071dc2479fa90daea29",
+                "9a98dd1258e7ae4ae2aad2614b00c069a5d8a5c597e2120a6851a5d694bcb469",
+                "f71ea1f38433bd76b7b63af46326a919f9e24e0975c6ece36f65f62c69d57af5",
+                "0b42b2b9ea25211795ac8bc33698d2c4825aa7247a9f3b5e64cf4240134245c0",
+                "c0cc5e6803d3b1acd6fc88b93e916e76edc4a8cf153484c5287c75385bc49712",
+                "a9569bb10ae7058acc8d0281ff9702a8bcb1daf13f5279eb306cc687f2c0be15",
+                "237baaedebe5b67acdf1aff8c82b51e8a5d32f9ee16418ddfd80c9b2ed3e3ad3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "microsoft.com",
+                "microsoftedge.microsoft.com",
                 "onedrive.live.com",
                 "support.microsoft.com",
                 "templates.office.com",
@@ -90,15 +93,45 @@
             ]
         },
         {
-            "rule": "msidentity\\.com\\/Me\\.htm",
-            "cookies": 0.000201,
+            "rule": "msidentity\\.com\\/common\\/oauth2\\/authorize",
+            "cookies": 0.000401,
             "fingerprinting": 0,
+            "subdomains": [
+                "ak.privatelink"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "login.microsoftonline.com",
+                    "resolved": "ak.privatelink.msidentity.com"
+                }
+            ],
+            "responseHashes": [
+                "eb2cd380c7131050a6c5ce18d17f545fee1a2f9bd5bf87e89331b0f9e5e54651",
+                "963362143ea7acd361219e3857cfd79252d782375794e9824e01ac869e8717af"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bing.com",
+                "support.microsoft.com",
+                "templates.office.com",
+                "www.bing.com"
+            ]
+        },
+        {
+            "rule": "msidentity\\.com\\/Me\\.htm",
+            "cookies": 0.000301,
+            "fingerprinting": 1,
             "subdomains": [
                 "login.msa"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "login.live.com",
@@ -113,44 +146,17 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "office365.com",
+                "portal.azure.com",
                 "teams.microsoft.com"
-            ]
-        },
-        {
-            "rule": "msidentity\\.com\\/common\\/oauth2\\/authorize",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ak.privatelink"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "login.microsoftonline.com",
-                    "resolved": "ak.privatelink.msidentity.com"
-                }
-            ],
-            "responseHashes": [
-                "553732ebe019ed5d4fb4923c9ee1c63b26cc71fccd7badbce8984f4e5a95b7f3"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "microsoft.com",
-                "templates.office.com",
-                "www.bing.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00131,
+    "cookies": 0.00161,
     "types": {
-        "Document": 17,
-        "Other": 2
+        "Document": 20,
+        "Other": 3
     },
     "nameservers": []
 }

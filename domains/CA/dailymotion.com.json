@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000904,
+    "prevalence": 0.000903,
     "sites": 9,
     "subdomains": [
         "speedtest",
         "graphql.api",
         "st.sv4",
-        "www"
+        "www",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,14 +27,13 @@
                 "speedtest"
             ],
             "apis": {
-                "window.localStorage": 3,
+                "window.localStorage": 4,
                 "Date.prototype.getTime": 3
             },
-            "sites": 8,
-            "prevalence": 0.000804,
+            "sites": 7,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                 "72b2181e58d5c45800d66d36702794ca5ae5bf1fbc20f106442b7eac3191a623"
             ],
             "type": "Script",
@@ -43,9 +43,8 @@
                 "nouvelobs.com",
                 "www.01net.com",
                 "www.asiaone.com",
-                "www.jawapos.com",
+                "www.gmanetwork.com",
                 "www.marieclaire.fr",
-                "www.marketscreener.com",
                 "www.paroles.net",
                 "www.scotsman.com"
             ]
@@ -82,7 +81,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e1466339a2038867eb10c10b444bc6ba9d337fc1d1ed4dc452345162e9762d40"
+                "f599a69b5133df0c77cfbbe11804a3fc53ef1bbbbd520eb96cb4146081208bc6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,7 +123,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "dbdebd75e0c909e1632b5765007d3c405a53169fc016c57db0f57d911170e17b"
+                "0e323c0da94431fda48b6a2ed4090a333cbb072367ba84d701a550e4f024cf77"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -154,26 +153,29 @@
                 "nouvelobs.com",
                 "la-conjugaison.nouvelobs.com",
                 "www.01net.com",
-                "www.marieclaire.fr",
-                "www.paroles.net"
+                "www.gmanetwork.com",
+                "www.marieclaire.fr"
             ]
         },
         {
             "rule": "dailymotion\\.com\\/embed\\/video\\/k4HSurCuB7v2sQvwFiw",
             "cookies": 0.0001,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
             "apis": {
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.connection": 1,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0bca3c8dec3fbf5c884b66f812faba0a961114a65c08a88abd68bc3ae9f2556d"
+                "527045334210d18ca44c7aac3d48a0b80004f49fae127bbe643a794b2204f520"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -195,7 +197,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2617a5df45d908587dec37774caa70cf3afa0a1f7dbf4908a7f656df89beebc1"
+                "77d8871c9698040293ef308a96135a32bfcddbb4fbf8f47d6a274f4a11f1a28d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -204,6 +206,28 @@
                 "01net.com",
                 "www.01net.com"
             ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/videos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6e1a4facee8dca0ea395897840de3a14b1582a5abba2e6dfdca55bbfdaadf75a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asiaone.com",
+                "www.gmanetwork.com"
+            ]
         }
     ],
     "categories": [
@@ -211,13 +235,14 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000804,
+    "cookies": 0.000803,
     "types": {
-        "Script": 8,
+        "Script": 7,
         "Preflight": 4,
         "XHR": 6,
         "WebSocket": 5,
-        "Document": 2
+        "Document": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "b.dailymotion.com",

@@ -10,13 +10,37 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
+        "channel-provider-service.care",
         "pecs.ct",
         "sitewide-promobar-service.prod.merch",
-        "prod.puc.starbug"
+        "prod.puc.starbug",
+        "exp-config.personalization"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "vpsvc\\.com\\/v2\\/chat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "channel-provider-service.care"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d7ae75f9aa72e43433153e1d0ba04db060bf76a6cd74bb64bbfbc62c3620472c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
         {
             "rule": "vpsvc\\.com\\/api\\/Placements\\/nvhp\\/show",
             "cookies": 0,
@@ -70,8 +94,28 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/promobar\\/vistaprint\\/en-AU",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sitewide-promobar-service.prod.merch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "0c817645ddf7817834a45cf735ba0a4578a2cf1aad1d8b0fbf4bd4d671c98c85"
+                "edd0df494ca299e19b2f690c7d1474103463acdf2e6212a3e5410dfe3e20fe39"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -115,7 +159,51 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5e1930823e5b6e2a450ae1c210eb23fc258b8bf2653814c0e2d883e877f2efc3"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/datafiles\\/TL6bJ6aeorhsvy5X8LGMVX\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "exp-config.personalization"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e019683ceb2d954d02dee32704548ec1b1f12918974c15041e247a07e0b30ce4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/get_user_profile\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.puc.starbug"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -130,9 +218,9 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Preflight": 2,
-        "XHR": 4,
-        "Fetch": 4
+        "Fetch": 10,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns1-134.akam.net",

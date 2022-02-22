@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "script-api",
+        "carbon-cdn",
         "pogo",
         "privacy-location-edge"
     ],
@@ -20,18 +21,23 @@
             "resolved": "script-api.ccgateway.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ccgateway\\.net\\/script",
-            "cookies": 0.000201,
+            "cookies": 0.000502,
             "fingerprinting": 1,
             "subdomains": [
-                "script-api"
+                "script-api",
+                "carbon-cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -39,39 +45,45 @@
                 }
             ],
             "responseHashes": [
-                "d85797c04adf7c733caf67f156fd95d49b037f22391e5185b8bd6c872495d9e1"
+                "a4525e620c409603dae359e70f864b8693263667f52c5b827f424e33cd96a988",
+                "418784c75a18b68423eb6adf92d3e1eda4a1e03919615a21218c1b43e47a94a1",
+                "32389d6f9dd5be9fc1d5b83cd66c0003b4e720093c90ab687355c2714b1b7cea",
+                "58cbb36136f62538fecd87548328fa612c8c7a024414cf3fbd8ea170fa5c011e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "GLAM-JID": {
                     "ttl": 1202,
                     "length": 32,
-                    "prevalence": 0.00020066218521119696,
+                    "prevalence": 0.0005015548199418196,
                     "uniqueness": 1
                 },
                 "GLAM-AID": {
                     "ttl": 2592002,
                     "length": 32,
-                    "prevalence": 0.00020066218521119696,
+                    "prevalence": 0.0005015548199418196,
                     "uniqueness": 1
                 },
                 "GLAM-SID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.00020066218521119696,
+                    "prevalence": 0.0005015548199418196,
                     "uniqueness": 1
                 },
                 "__j_state": {
                     "ttl": 1202,
-                    "length": 222,
-                    "prevalence": 0.00020066218521119696,
+                    "length": 223,
+                    "prevalence": 0.0005015548199418196,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "tvtropes.org",
+                "www.gamepur.com",
+                "www.salon.com"
             ]
         },
         {
@@ -86,7 +98,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c3f18f2178c8e23dc4a75b6e0b1506766f456ad96e331bd988eb7d10839a1f74"
+                "33badd5440e515e393a3ac46e5a6529aec1d9cd73886ff29b0ecb32763c8c3f0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -125,9 +137,12 @@
             "subdomains": [
                 "script-api"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -142,7 +157,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "tvtropes.org",
+                "www.salon.com"
             ]
         },
         {
@@ -153,24 +170,30 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "9c7826587618452d6b00d1794108278e15325b1bc8201409be58409dd5a93867"
+                "191a9f5c7f8dc59944682b5fe7cd3a3a83195a4be52e6705180dc76ae896fff5",
+                "b56ebae4189582fc1798d8084a06b88f5101f09ebfe63ed2e5c9221a8c4fd6d8",
+                "9a837319b9d7b4e26dedb59cd68d93deee48ed763272f26a9a9f65060e4a0972",
+                "82b809322ca6bfa04ac2a0d25cd4cfaa41a169b286c50345f8aaecacdafed79c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "tvtropes.org",
+                "www.gamepur.com",
+                "www.salon.com"
             ]
         },
         {
             "rule": "ccgateway\\.net\\/script\\/launcher\\/1\\/realtime\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "script-api"
             ],
@@ -229,8 +252,8 @@
                 "script-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -245,7 +268,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "tvtropes.org",
+                "www.gamepur.com",
+                "www.salon.com"
             ]
         },
         {
@@ -265,7 +291,7 @@
                 }
             ],
             "responseHashes": [
-                "5a8eb65131af2ff26adf43c65ac78168d6c58674f5bca7ed1bb4e06989679d18"
+                "9f39fe6d02e1d843224b3b1bc8ec82113554bb0e76beb9c78e703ef087f6c1a6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -282,9 +308,12 @@
             "subdomains": [
                 "script-api"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "script-api.kinja.com",
@@ -292,14 +321,18 @@
                 }
             ],
             "responseHashes": [
-                "19f492fb6afb3fd39097bca303873123fe5c5865977f2f4e06086ff628381637"
+                "19f492fb6afb3fd39097bca303873123fe5c5865977f2f4e06086ff628381637",
+                "6d36a7a813d3cf634ae099e469e3df96591eecc89dc1eee25071a61598ff29d6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "tvtropes.org",
+                "www.gamepur.com",
+                "www.salon.com"
             ]
         },
         {
@@ -310,8 +343,8 @@
                 "privacy-location-edge"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "9170a8b2fb3234baa721bf8b3de5935d8d160f6f987215b83b07a49a403e5e74"
@@ -321,16 +354,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gizmodo.com",
-                "lifehacker.com"
+                "lifehacker.com",
+                "tvtropes.org",
+                "www.gamepur.com",
+                "www.salon.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000502,
     "types": {
-        "Script": 18,
-        "XHR": 4
+        "Script": 32,
+        "XHR": 7
     },
     "nameservers": [
         "ns1-05.azure-dns.com",

@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
         "player",
-        "link"
+        "link",
+        "api-cdn",
+        "zagent29"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,24 +26,27 @@
                 "player"
             ],
             "apis": {
-                "window.localStorage": 5,
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "window.localStorage": 4,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.devicePixelRatio": 1
             },
-            "sites": 7,
-            "prevalence": 0.000703,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "434c8d4d86ab92e8a1e1010b946c0c8209fc4c34c2b318568d964ccbe8b4cf1d",
-                "8e89223c8beda357ee846816dde1dff59d1f965d601e109e353a293e5821c0f6",
-                "4d33ab8473e4b6c17cb9ae532ced483df4b230f051f9b7cda459452a442bc1f6",
-                "ac463f8c9952318b0b9bdf292691647ec511c5bc8ca10e5616b3380f4c7e57b3"
+                "b1ff6f1d6dee880b201170153659f99bf0875fc48a1a38a7b71f4fb8130d5bee",
+                "28fbd4d5c94f9ecd0a21fbaae4c974cf9d43c39f43840488ebe2c9ec8f4e309e",
+                "6b01d97f84bcfb8e5a319a5977846e74f038d53dfa564498d4cee7a0cd44c7dc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dw.com",
-                "m.dw.com",
+                "bild.de",
                 "www.bild.de",
                 "www.blick.ch",
                 "www.dw.com",
@@ -57,23 +62,21 @@
                 "player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "5d699711d37b17a0a38cabcadf098ceb66425c669ba4924425cffc481ff0db86",
-                "93739f62eab54a20fcc96fd585933ead51e9579e21e3b769dc6b2226b115ad17",
-                "8c3b58231e5a98c947035537fe406aeea309514b3dcd42dbea3ee5ca2c79fc66",
-                "a1295dad1abb3d3fc6cbe9ad3556b717a1f8e90975846a2d589ea6ca24942e60"
+                "2027aa94e758de6cddd475953d2e84b1ae2cfef517167ba8d9f0497003a25782",
+                "bc75a0d9fc5bfbe3b66a3042d07f12780451548c90ae16c3140c48b0a4a63dc9",
+                "396184d72d9f0370c93607202f729eb90fba8b125b0407989c173ea540fc373a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dw.com",
-                "www.bild.de",
+                "bild.de",
                 "www.blick.ch",
                 "www.dw.com",
                 "www.tagesschau.de"
@@ -87,16 +90,15 @@
                 "link"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dw.com",
-                "www.bild.de",
+                "bild.de",
                 "www.dw.com",
                 "www.nieuwsblad.be"
             ]
@@ -109,22 +111,44 @@
                 "link"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "051b627a5582fb70e2e207b4f11f6f8deca48729cd8df24751969efb6569501b",
-                "16775d2163fdc7312244cd9a552413ce1054d6490bffc46c277f930e8e375317",
-                "3dda5cbe306dd85eb8ae0bf40439c760026301ac7109a7ff3ba3e0e95537bbfb"
+                "59038e3886dc459ce98fb57dd109c25ce1ddd4e1a43cfa617657612a4c0f3c6e",
+                "46371f2b76534f911f87ca8046f2bf2bffe4b3b73b297d4f0bbc5953467ec885"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dw.com",
-                "www.bild.de",
+                "bild.de",
                 "www.dw.com",
                 "www.nieuwsblad.be"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/preview_url",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "81c8482d135472322aee5b730ef972a66903fd28cafbc10c952955912931ed0c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.0002007226013649137
+            },
+            "exampleSites": [
+                "blick.ch",
+                "www.blick.ch"
             ]
         },
         {
@@ -135,8 +159,8 @@
                 "player"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "b141a7524bb772ea57aaf05440bcae1e74fe44208644cad5bcd70f8a3c6e2ba4"
@@ -146,7 +170,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dw.com",
-                "www.dw.com",
                 "www.nieuwsblad.be"
             ]
         },
@@ -158,8 +181,8 @@
                 "player"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "42224d4aca0ff3faca9c8ff6dddfc649dfdda53c48cede3db38150b71190bf07"
@@ -169,8 +192,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dw.com",
-                "www.dw.com",
                 "www.nieuwsblad.be"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/cmd\\/get_links_info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zagent29"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "20ecb5f2f2874646c49561f5c7b88dc169a33659900de308bd35eafcc90fd707"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tagesschau.de",
+                "www.tagesschau.de"
             ]
         }
     ],
@@ -178,10 +222,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 12,
-        "Preflight": 4,
-        "XHR": 4,
-        "Stylesheet": 6
+        "Script": 10,
+        "Preflight": 3,
+        "XHR": 7,
+        "Stylesheet": 4
     },
     "nameservers": [
         "ns-1405.awsdns-47.org",

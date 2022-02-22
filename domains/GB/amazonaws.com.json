@@ -9,19 +9,19 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00904,
-    "sites": 90,
+    "prevalence": 0.011,
+    "sites": 110,
     "subdomains": [
+        "production-klarna-il-shopify-osm.s3.eu-west-1",
         "jwkow33d62.execute-api.eu-west-1",
         "nlb-assets-5a3b833d1fb0d373.elb.eu-west-1",
         "o9tt6h08li.execute-api.eu-west-1",
-        "cognito-identity.eu-west-1",
-        "cognito-identity.ca-central-1",
-        "cognito-identity.eu-west-2",
-        "comms-mat.s3.eu-west-1",
-        "3fzst3kk8h.execute-api.eu-west-1",
-        "6n2x6wg3fc.execute-api.eu-west-1",
         "sdk",
+        "cognito-identity.eu-west-1",
+        "cognito-identity.eu-west-2",
+        "kinesis.ap-northeast-2",
+        "cognito-identity.ca-central-1",
+        "comms-mat.s3.eu-west-1",
         "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1",
         "97qyqre5rl.execute-api.eu-west-1",
         "a2jvy22h0kr7b5-ats.iot.us-west-2",
@@ -29,6 +29,10 @@
         "qgmou9eqyi.execute-api.us-east-2",
         "bd46ots9ed.execute-api.us-west-2",
         "d-u7ic8z9gb4.execute-api.eu-west-2",
+        "bwnew2n3u5cina42gveozinmkq.appsync-api.us-west-1",
+        "3fzst3kk8h.execute-api.eu-west-1",
+        "6n2x6wg3fc.execute-api.eu-west-1",
+        "a08cieviq6.execute-api.eu-west-1",
         "i98xu2nhdj.execute-api.eu-west-1",
         "webpick-cdn.s3.us-west-2"
     ],
@@ -52,6 +56,60 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "amazonaws\\.com\\/7f2c07b705bbcbbf4bdfefa8fe0305bb2511ad2f\\/258\\.index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-klarna-il-shopify-osm.s3.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "329173b311eb02ebad5191d3b7314d7ffaeb93d00504f46009f4392bbad28e8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpkit.com",
+                "uk.eufylife.com",
+                "uk.gymshark.com",
+                "uk.nps-solovair.com",
+                "www.bonnersmusic.co.uk",
+                "www.vapesuperstore.co.uk"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/7f2c07b705bbcbbf4bdfefa8fe0305bb2511ad2f\\/747\\.index\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-klarna-il-shopify-osm.s3.eu-west-1"
+            ],
+            "apis": {
+                "window.localStorage": 6
+            },
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "94f8a77d1f63ff21158b282051a595a38dc12c864a730c37d81a8d3d69dd867d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpkit.com",
+                "uk.eufylife.com",
+                "uk.gymshark.com",
+                "uk.nps-solovair.com",
+                "www.bonnersmusic.co.uk",
+                "www.vapesuperstore.co.uk"
+            ]
+        },
         {
             "rule": "amazonaws\\.com\\/v1",
             "cookies": 0,
@@ -184,6 +242,33 @@
             ]
         },
         {
+            "rule": "amazonaws\\.com\\/js\\/aws-sdk-2\\.283\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "window.localStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "adcc82d3181ad467c6e1153bf4bf1c7458b835565b51abdddd791a8cbd21d2e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortnitetracker.com",
+                "primagames.com",
+                "tvtropes.org",
+                "www.powerpyx.com",
+                "www.psu.com"
+            ]
+        },
+        {
             "rule": "amazonaws\\.com\\/cs\\/groups\\/system\\/documents\\/webasset\\/main-min-css\\.css",
             "cookies": 0.000201,
             "fingerprinting": 0,
@@ -267,7 +352,7 @@
         {
             "rule": "amazonaws\\.com\\/cs\\/groups\\/system\\/documents\\/webasset\\/main-min-js\\.js",
             "cookies": 0.000201,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "nlb-assets-5a3b833d1fb0d373.elb.eu-west-1"
             ],
@@ -297,47 +382,60 @@
             "fingerprinting": 0,
             "subdomains": [
                 "cognito-identity.eu-west-1",
+                "cognito-identity.eu-west-2",
+                "kinesis.ap-northeast-2",
                 "cognito-identity.ca-central-1"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.00151,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [],
             "responseHashes": [
-                "8cef27580000e2b6ca7a5e91f19392ee7b8acba72507dec15861d233f61e6c57",
-                "6a3de6e57412a44465a0c733a8e0954e8555a2f2644779fa1c801310618e7671",
-                "d289893d8303149d991ca30b906e11ce1fadbecb551b7e6903e95c5d00df46e6",
-                "d02998df09b7719e98d3a01f2928fcf826a06420ae62efbb745302fd3e44c44d",
-                "e289e23669a0bc8a1c95a8b7ef6769b68b517b054c9afd76694218c17480dcea",
-                "3e4c66ee08ec5a36ee948315ee642e54c60db9adff479b97cad8816771020f06",
-                "6a3680c18e325bd84b34b02a751de4ddc7efd8ccbaa8a18734e21e678d5ef4f9",
-                "4ca45107d57a4442819b61182f76ce9894248171bcc0229a6e0378dd621c0b77",
-                "fe0dc4f11e6fa395c879af3588bbdc853c819858fee83f98d9c5a5f173e595c2",
-                "57e26b64d4387865220ce6ee3b88164fe67177cd6a5a9244aa40d9bb6664f282",
-                "0ca021ddffccdc2d356508b3821cc2b5435be102103d7eed0672f18aaba4ce80",
-                "bf327d841f5624d18bb36ebd2239d992c76f806a512dcced624c74323fabe280",
-                "3a2d1c27985235d265e18ebfce17d7aa23aa4788e08928fb9e2fa8168879cef5",
-                "2c73308e58e1ffd9467765d3d32b29eae8bb950ba5a57d5aae5165514792ea9f"
+                "24fc865754be599203d4581abba45f95977ff864ea8c9fada75ce501f177e26d",
+                "0e47606edea2b5443072fe0f620d5ce9b20dac826b4fd08522a02c0705419392",
+                "3497f25444e13706b120fb252cb225e80149558d01fdabedab13f1acbac9931c",
+                "53225da6dead92a11f7775ea7985994474522913292da4b1dadc8471abf60573",
+                "0a7689d54372c0d45c23222abd1a022481ef218ff6016c71bd7dde497258f90c",
+                "2f86555e911321189de635123f8282f3646ad034b352ca63aaf216100d3cd035",
+                "e062f5fbe51aeb617c753764843689c41de55e6e1cc83a8f6039b55dce3005d7",
+                "56ce4df607361287f96563a692b6f160e466cdfb45af4d436c1f63f39bdddc47",
+                "2aa692386bb9e4916056ec5947a317d7134735c07005466399b85d3a5e5e900a",
+                "ca25a1c445a53a1d69fd834e3edf416f9cd855173b6e6d4f4a8ea9381150df6b",
+                "e06255b2f7a0d3325a2e273c51619121987a1bf9e1d757d0332e98344e7cb291",
+                "ed097223dc7e844668b65f4021d2dac2f4a2a2d209dc88229f75cae2edaed80f",
+                "16239a741527007499a07517562361939319adeabcaab6f6f60b87075defd1bd",
+                "09fbc669741f5eef078a998178f24f2abac63f5650169ec9e98d65c4ae826e6c",
+                "a7cf10020e4fee522929dd3554fa554465d0e1d5ed5e8e8d217815fb5911fcc1",
+                "ec7469010f11783ae1b24536f2af9cafb258cdefe5d27df010b53eb698d9800e",
+                "2231e02508cc86cc54cb73c2bb5fba44f92a9ef1960ab88aadee84452db4164c",
+                "94dccf6594e1b2b10ebdaf7ea2073640ed5af0a55dd15434e27a04ce098581d5",
+                "07117ed2838b95ec20dd51e29328bdf5ee85abe2b42c7e9af26cc7828d2e2fc1",
+                "8c270d6f3957d98a23c84bc28439b9c7505bd1ba2410f6f432d0555de28b5d04"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nowtv.com",
-                "help.nowtv.com",
-                "ledhut.co.uk",
-                "smarty.co.uk",
-                "uk.webuy.com",
-                "www.carphonewarehouse.com",
-                "www.celticfc.com",
-                "www.fulhamfc.com",
-                "www.getthelabel.com",
-                "www.hughes.co.uk",
-                "www.jessops.com",
-                "www.marieclaire.co.uk",
-                "www.notonthehighstreet.com",
                 "www.sex.com",
-                "www.sigmasports.com"
+                "uk.webuy.com",
+                "www.celticfc.com",
+                "www.hughes.co.uk",
+                "www.coral.co.uk",
+                "m.feelunique.com",
+                "www.lg.com",
+                "smarty.co.uk",
+                "www.coolstays.com",
+                "www.jessops.com",
+                "www.carphonewarehouse.com",
+                "www.nevisport.com",
+                "www.sky.com",
+                "help.nowtv.com",
+                "www.sportsshoes.com",
+                "www.notonthehighstreet.com",
+                "sports.coral.co.uk",
+                "www.sigmasports.com",
+                "www.rac.co.uk",
+                "www.marieclaire.co.uk"
             ]
         },
         {
@@ -347,35 +445,38 @@
             "subdomains": [
                 "cognito-identity.eu-west-1",
                 "cognito-identity.eu-west-2",
+                "kinesis.ap-northeast-2",
                 "cognito-identity.ca-central-1"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.00181,
+            "sites": 24,
+            "prevalence": 0.00241,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nowtv.com",
-                "ledhut.co.uk",
-                "new.siemens.com",
-                "smarty.co.uk",
-                "uk.webuy.com",
-                "www.brightnetwork.co.uk",
-                "www.carphonewarehouse.com",
-                "www.celticfc.com",
-                "www.checkatrade.com",
-                "www.ercol.com",
-                "www.fulhamfc.com",
-                "www.getthelabel.com",
-                "www.hughes.co.uk",
-                "www.jessops.com",
-                "www.marieclaire.co.uk",
-                "www.notonthehighstreet.com",
                 "www.sex.com",
-                "www.sigmasports.com"
+                "www.notonthehighstreet.com",
+                "www.jessops.com",
+                "www.sigmasports.com",
+                "sports.coral.co.uk",
+                "www.checkatrade.com",
+                "www.hughes.co.uk",
+                "www.brightnetwork.co.uk",
+                "www.nevisport.com",
+                "www.carphonewarehouse.com",
+                "www.lg.com",
+                "heatworld.com",
+                "www.coral.co.uk",
+                "smarty.co.uk",
+                "www.coolstays.com",
+                "www.rac.co.uk",
+                "help.nowtv.com",
+                "www.marieclaire.co.uk",
+                "www.sky.com",
+                "www.celticfc.com"
             ]
         },
         {
@@ -387,14 +488,13 @@
                 "cognito-identity.eu-west-2"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "20ca5fa30d6adb76199b7f094b59ffb71be72d7b22c63e9ed83114ddabc72b05",
-                "2c99de0f1093f5ef3005463051c643e75c0e512937dade7e272857498b4a66c6",
-                "3f16e363fd0c09ce6ea5a4ea9520e2fd6724834dab1445b13ace57be16de74c5",
-                "8be73ba5baf29692dabbc278787f6b4bb06e0dda91f1e139b2f5642faaaaeaff"
+                "36828cc6ff051faa15337ee5893c5f9b6991633b6420b8af31745f0262a30d0d",
+                "22821faad2ec3444e2e1962c4590fbedad015e89bf0f6c228545c076fb46ea23",
+                "933f22992ba30d71f197ed7405b04db3f8a4662c1542846797aa078be3365d56"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -403,8 +503,7 @@
                 "siemens.com",
                 "new.siemens.com",
                 "www.brightnetwork.co.uk",
-                "www.checkatrade.com",
-                "www.ercol.com"
+                "www.checkatrade.com"
             ]
         },
         {
@@ -496,128 +595,6 @@
             ]
         },
         {
-            "rule": "amazonaws\\.com\\/mnc_lead_insert",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3fzst3kk8h.execute-api.eu-west-1"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smolproducts.com",
-                "www.ratedpeople.com",
-                "www.serenataflowers.com",
-                "www.virginexperiencedays.co.uk",
-                "www.wrenkitchens.com"
-            ]
-        },
-        {
-            "rule": "amazonaws\\.com\\/mnc_lead_by_minute_update",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "6n2x6wg3fc.execute-api.eu-west-1"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smolproducts.com",
-                "www.ratedpeople.com",
-                "www.serenataflowers.com",
-                "www.virginexperiencedays.co.uk",
-                "www.wrenkitchens.com"
-            ]
-        },
-        {
-            "rule": "amazonaws\\.com\\/mnc_lead_insert",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3fzst3kk8h.execute-api.eu-west-1"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smolproducts.com",
-                "www.ratedpeople.com",
-                "www.serenataflowers.com",
-                "www.virginexperiencedays.co.uk",
-                "www.wrenkitchens.com"
-            ]
-        },
-        {
-            "rule": "amazonaws\\.com\\/mnc_lead_by_minute_update",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "6n2x6wg3fc.execute-api.eu-west-1"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [],
-            "responseHashes": [
-                "d4fd9e94d596ee0f7589f281ced995ff403f725d7448f874718ddc795b787077",
-                "06df373b35348b5a7974d7f24d7f387a1d65d2550a8aef5ab37b4098b0ce5b25",
-                "e2efc43d8d52a43b43a487e7e41a25f16aea2f82786a8212a96493b03eb75499",
-                "342f03fab21f9f7a865cf15eef76a1278479e30ea2b686b87805a069ae37d4a4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smolproducts.com",
-                "www.ratedpeople.com",
-                "www.serenataflowers.com",
-                "www.virginexperiencedays.co.uk",
-                "www.wrenkitchens.com"
-            ]
-        },
-        {
-            "rule": "amazonaws\\.com\\/js\\/aws-sdk-2\\.283\\.1\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "window.localStorage": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "adcc82d3181ad467c6e1153bf4bf1c7458b835565b51abdddd791a8cbd21d2e2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tvtropes.org",
-                "www.powerpyx.com",
-                "www.psu.com"
-            ]
-        },
-        {
             "rule": "amazonaws\\.com\\/player\\/image\\.aspx",
             "cookies": 0,
             "fingerprinting": 0,
@@ -625,8 +602,8 @@
                 "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [
                 {
                     "original": "mediaweb.musicradio.com",
@@ -634,16 +611,18 @@
                 }
             ],
             "responseHashes": [
-                "c1802bd889e5b0cad64e168c88160ce953e578576533520c2bd29215794bc35d",
-                "854f241330d1b4d979525017e556382941c61005e93d699c116bcdbe1dcb6ff5",
-                "e8443bfd6e90bc7c66e32de0a8eae05ccebb52b7f3c7f45a84de2aea76aed863",
-                "a0d54a3dffb0b6bf26c792f01b49f6057d5c0272646ee02e80bd88d9275b2484"
+                "782bcf5d9c79af5cc697cb7334e195fa9d3a11ef362ff486dfcb4d8f1d8429f6",
+                "3cb7895bed5ed09978918ae2696be6aedf57adcb5d7b25b86514b696f7564a5f",
+                "e45e8e85441f7284141dd932a323182b29ff2df6751c196f352e7025cdf61dc9",
+                "fad625018de4ac6ffd62627bdc1afe4eb08c0afefdec93ac08b8f0b557ddca67",
+                "3e8f5007ebdb111b8ef2d628d672d48b277d76290bc016707edb3e29b7ea6f5a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "capitalfm.com",
+                "capitalxtra.com",
+                "www.capitalfm.com",
                 "www.classicfm.com",
                 "www.heart.co.uk",
                 "www.lbc.co.uk",
@@ -731,7 +710,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.00020080321285140563
+                "G_ENABLED_IDPS": 0.00020066218521119696
             },
             "exampleSites": [
                 "fotor.com",
@@ -755,7 +734,7 @@
                 }
             ],
             "responseHashes": [
-                "26f3d104efa4f651219514c53d3ae3301a162843ca11a83395ab22ef14c3665d"
+                "fc713f47a675e0b6606af8e4d6a8601dda3766c5852b72b23d3bb9ce5de10058"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -763,6 +742,157 @@
             "exampleSites": [
                 "heathrow.com",
                 "www.heathrow.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bwnew2n3u5cina42gveozinmkq.appsync-api.us-west-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e99b1ad0eb977e98fe22fbf5aedbeb42f4728b51fd44dea2bc69d827a7f396d4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lewdlegame.com",
+                "www.lewdlegame.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/mnc_lead_insert",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "3fzst3kk8h.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ratedpeople.com",
+                "www.virginexperiencedays.co.uk",
+                "www.wrenkitchens.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/mnc_lead_insert",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "3fzst3kk8h.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ratedpeople.com",
+                "www.virginexperiencedays.co.uk",
+                "www.wrenkitchens.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/mnc_lead_by_minute_update",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "6n2x6wg3fc.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "d4fd9e94d596ee0f7589f281ced995ff403f725d7448f874718ddc795b787077",
+                "02b13a1dec51d45fd1554e85b0fc3598253a8a8a802727490cb3ebbf1719847e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ratedpeople.com",
+                "www.virginexperiencedays.co.uk",
+                "www.wrenkitchens.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/mnc_lead_by_minute_update",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "6n2x6wg3fc.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ratedpeople.com",
+                "www.virginexperiencedays.co.uk",
+                "www.wrenkitchens.com"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/mnc_by_minute_insert",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a08cieviq6.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ratedpeople.com",
+                "www.virginexperiencedays.co.uk"
+            ]
+        },
+        {
+            "rule": "amazonaws\\.com\\/mnc_by_minute_insert",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a08cieviq6.execute-api.eu-west-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ratedpeople.com",
+                "www.virginexperiencedays.co.uk"
             ]
         },
         {
@@ -814,23 +944,23 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000803,
     "types": {
-        "XHR": 35,
-        "Image": 18,
+        "Script": 21,
+        "XHR": 41,
+        "Image": 19,
         "Font": 4,
         "Other": 2,
         "Stylesheet": 4,
-        "Script": 7,
-        "Preflight": 28,
-        "Fetch": 5,
+        "Preflight": 32,
+        "Fetch": 4,
         "WebSocket": 3,
         "Ping": 2
     },
     "nameservers": [
-        "r1.amazonaws.com",
-        "r2.amazonaws.com",
+        "u2.amazonaws.com",
         "u1.amazonaws.com",
-        "u2.amazonaws.com"
+        "r1.amazonaws.com",
+        "r2.amazonaws.com"
     ]
 }
