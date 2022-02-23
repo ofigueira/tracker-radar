@@ -264,6 +264,28 @@
             ]
         },
         {
+            "rule": "abc\\.net\\.au\\/sdk\\.config\\.get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aa31022b3f6bc80bfde76c9bc6686ec1d4fe64dc329d018b2f2c26f83baa7880"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcaustralia.net.au",
+                "www.abcaustralia.net.au"
+            ]
+        },
+        {
             "rule": "abc\\.net\\.au\\/libraries\\/snowplow\\/tracker\\/sp-3\\.0\\.3\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
@@ -299,20 +321,29 @@
             ]
         },
         {
-            "rule": "abc\\.net\\.au\\/sdk\\.config\\.get",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "abc\\.net\\.au\\/gs\\/webSdk\\/Api\\.aspx",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
             "subdomains": [
                 "login"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aa31022b3f6bc80bfde76c9bc6686ec1d4fe64dc329d018b2f2c26f83baa7880"
+                "d1775da4a22e94246977c393e0adbb25bbdfc4fce8eab4c76d955bbc79f126db"
             ],
-            "type": "Fetch",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -355,37 +386,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abcaustralia.net.au",
-                "www.abcaustralia.net.au"
-            ]
-        },
-        {
-            "rule": "abc\\.net\\.au\\/gs\\/webSdk\\/Api\\.aspx",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "login"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d1775da4a22e94246977c393e0adbb25bbdfc4fce8eab4c76d955bbc79f126db"
-            ],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -496,18 +496,18 @@
         "Image": 16,
         "Script": 12,
         "Fetch": 2,
+        "Document": 4,
         "XHR": 2,
-        "Preflight": 2,
-        "Document": 4
+        "Preflight": 2
     },
     "nameservers": [
+        "eur2.akam.net",
         "eur3.akam.net",
         "eur5.akam.net",
-        "ns1-31.akam.net",
+        "usw1.akam.net",
         "usw5.akam.net",
         "asia1.akam.net",
-        "ns1-129.akam.net",
-        "eur2.akam.net",
-        "usw1.akam.net"
+        "ns1-31.akam.net",
+        "ns1-129.akam.net"
     ]
 }
