@@ -12,13 +12,33 @@
     "prevalence": 0.000602,
     "sites": 6,
     "subdomains": [
+        "ajax",
         "browser.pipe.aria",
-        "teams",
         "browser.events.data"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/ajax\\/jquery\\.ui\\/1\\.8\\.10\\/jquery-ui\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajax"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "le-codepostal.com",
+                "www.le-codepostal.com"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -42,28 +62,6 @@
             ]
         },
         {
-            "rule": "microsoft\\.com\\/share\\/launcher\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "teams"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1abd6fa2bc92e804b232d1dccbb6d8e922cbaca4d5e3e24b11e53e9c006cc864"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "quizizz.com",
-                "wakelet.com"
-            ]
-        },
-        {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
             "cookies": 0.0001,
             "fingerprinting": 0,
@@ -75,6 +73,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
+                "598405707dae1c339fceb7042b0091967a10345405a874d693246318ec303464",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
@@ -94,10 +93,10 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000201,
     "types": {
-        "XHR": 5,
-        "Script": 2
+        "Script": 2,
+        "XHR": 5
     },
     "nameservers": [
         "ns4-205.azure-dns.info",

@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
-        "wording-api"
+        "wording-api",
+        "cpe-search-api",
+        "csxd"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "groupepvcp\\.com\\/v1\\/wording\\/page",
@@ -20,18 +22,68 @@
                 "wording-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "528833d47e0eac94de17afd769c0d8d6a0d1c6c3587cbca5832d49b28479ec98"
+                "3a3a765a8e82d0025f53558c4cc5e59f3a079cb24cd01cfc1403e67a9583b781",
+                "769cdfe1585e6d6f2bd43ea28b8d72166275a13b94b630aa7e526feea4fd15b2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "centerparcs.de",
-                "www.centerparcs.de"
+                "centerparcs.eu",
+                "www.centerparcs.eu",
+                "www.centerparcs.nl"
+            ]
+        },
+        {
+            "rule": "groupepvcp\\.com\\/v1\\/search\\/results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cpe-search-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2c380797ef4e84c27b2c2482ee9e5ac597033f9ebcbffecba2d059fbf388c933",
+                "7e83734e45f16f89c84d037cff675e45343a38402c68c8b0b2a1579e8e6f8c3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "domainVisited": 0.00001362138011823358
+            },
+            "exampleSites": [
+                "centerparcs.eu",
+                "www.centerparcs.eu",
+                "www.centerparcs.nl"
+            ]
+        },
+        {
+            "rule": "groupepvcp\\.com\\/xdframe-1\\.0\\.0\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "csxd"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pierreetvacances.com",
+                "www.pierreetvacances.com"
             ]
         }
     ],
@@ -39,7 +91,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Fetch": 3,
+        "XHR": 3,
+        "Document": 2
     },
     "nameservers": [
         "ns-89.awsdns-11.com",

@@ -9,12 +9,12 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "nslc-prod-app",
-        "prod-client-logs",
-        "idp.redbridge"
+        "serviceschipotlecom",
+        "prod-client-logs"
     ],
     "cnames": [
         {
@@ -22,26 +22,26 @@
             "resolved": "prod-client-logs.trafficmanager.net"
         },
         {
-            "original": "idp.redbridge.gov.uk",
-            "resolved": "idp.redbridge.trafficmanager.net"
-        },
-        {
             "original": "login.norton.com",
             "resolved": "nslc-prod-app.trafficmanager.net"
+        },
+        {
+            "original": "services.chipotle.com",
+            "resolved": "serviceschipotlecom.trafficmanager.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "trafficmanager\\.net\\/sso\\/idp\\/SAML2",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "nslc-prod-app"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "login.norton.com",
@@ -49,14 +49,95 @@
                 }
             ],
             "responseHashes": [
-                "2a9206df6024ced962ef4e6379a82bff97a83978512d79a9d2b2c74f36d19caa"
+                "331edc2c17598e714687319bbd31bd0c7c4c873e4586559ade28259c85123e32",
+                "7a8e1f24ab87915d9068a14dc90a7d70ca3fcc4eab9eef47354e0f967d2c5c9b"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "norton.com",
+                "community.norton.com",
                 "support.norton.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/onlineorderingstatus",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serviceschipotlecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "services.chipotle.com",
+                    "resolved": "serviceschipotlecom.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "68dbadca49032e85dcee4c61c8d2c5b1c0f51e819ef4175b1a1f8087704c9123"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.chipotle.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/onlineorderingstatus",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serviceschipotlecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "services.chipotle.com",
+                    "resolved": "serviceschipotlecom.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.chipotle.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/__imp_apg__\\/api\\/imp\\/v1\\.0\\/report\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serviceschipotlecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "services.chipotle.com",
+                    "resolved": "serviceschipotlecom.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.chipotle.com"
             ]
         },
         {
@@ -85,31 +166,6 @@
                 "etoro.com",
                 "www.etoro.com"
             ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/connect\\/authorize",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "idp.redbridge"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "idp.redbridge.gov.uk",
-                    "resolved": "idp.redbridge.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "redbridge.gov.uk",
-                "www.redbridge.gov.uk"
-            ]
         }
     ],
     "categories": [
@@ -118,8 +174,10 @@
     "performance": {},
     "cookies": 0.000602,
     "types": {
-        "Document": 4,
-        "XHR": 2
+        "Document": 3,
+        "XHR": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

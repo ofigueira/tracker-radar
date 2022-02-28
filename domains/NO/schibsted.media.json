@@ -10,7 +10,8 @@
     "prevalence": 0.000402,
     "sites": 4,
     "subdomains": [
-        "jssdk.touchpoints"
+        "jssdk.touchpoints",
+        "cdn.stream"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -39,13 +40,66 @@
                 "www.aftenbladet.no",
                 "www.bt.no"
             ]
+        },
+        {
+            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.23\\.2\\/jwplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.stream"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "MediaSource.isTypeSupported": 1,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6b2f387031c2c3711da5a43718d4582b57241542568b0e486c7f4a028d6d5344"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aftenposten.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.23\\.2\\/translations\\/no\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.stream"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0d9e05d46f6d3a58de0038407e23dd505247f9264e3e3be3a84fff8178b4a2cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aftenposten.no",
+                "www.vgtv.no"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 5,
+        "XHR": 2
     },
     "nameservers": [
         "ns-412.awsdns-51.com",

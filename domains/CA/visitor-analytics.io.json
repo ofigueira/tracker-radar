@@ -4,74 +4,72 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000402,
+    "prevalence": 0.000401,
     "sites": 4,
     "subdomains": [
-        "loadbalancer",
-        "visits"
+        "app-worker",
+        "loadbalancer"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "visitor-analytics\\.io\\/worker",
-            "cookies": 0.000201,
+            "rule": "visitor-analytics\\.io\\/main\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
+            "subdomains": [
+                "app-worker"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "window.sessionStorage": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "06b76b45bfc74376b2d26b3e054011f6d2c091ea931d7f149ac9eb95c38a5355"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bible.org",
+                "www.thecoast.ca"
+            ]
+        },
+        {
+            "rule": "visitor-analytics\\.io\\/worker",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "loadbalancer"
             ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "56a7bccd93e195252020045e4029e82b106487c3b33d911c3cd0004421169c54"
+                "5748e32c7a8efca86634ef1be9006b545c14be1d5a87228237b60a98fe1da81e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "geertvandenbossche.org",
-                "www.libertycoalitioncanada.com",
-                "www.officialgamerules.org"
-            ]
-        },
-        {
-            "rule": "visitor-analytics\\.io\\/worker-log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "visits"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "bebf9b74226b28a577354b53f4635f679723f5cc1178c29c245af01ace7136a6",
-                "d7c3a67320bb2c96202f983244032c0bec3c8bcd44f8ffe60394e01d26641687"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "geertvandenbossche.org",
-                "www.libertycoalitioncanada.com",
-                "www.officialgamerules.org"
+                "humorousmathematics.com",
+                "www.libertycoalitioncanada.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0,
     "types": {
-        "Document": 3,
-        "XHR": 3
+        "Script": 2,
+        "Document": 2
     },
     "nameservers": [
         "ns1.first-ns.de",

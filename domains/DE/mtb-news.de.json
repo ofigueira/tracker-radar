@@ -7,12 +7,38 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
+        "stats",
         "thumbnails",
         "assets"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "mtb-news\\.de\\/js\\/plausible\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.webdriver": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7eec3429c76cb48e5fd457c5afb71b7cf34bc4298d53023bae8aea715443b4a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emtb-news.de",
+                "www.rennrad-news.de"
+            ]
+        },
         {
             "rule": "mtb-news\\.de\\/cache\\/310_auto_1_1_0\\/55\\/aHR0cHM6Ly93d3cubXRiLW5ld3MuZGUvbmV3cy93cC1jb250ZW50L3VwbG9hZHMvMjAxNC8wOC93aWRnZXQtd2ludGVycG9rYWwtc3VwZXJub3ZhLnBuZw\\.png",
             "cookies": 0,
@@ -28,6 +54,28 @@
                 "decbf793ab1c697056058778a0397cfb253a5741acfa8e0d284bfe45aeb3b111"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emtb-news.de",
+                "www.rennrad-news.de"
+            ]
+        },
+        {
+            "rule": "mtb-news\\.de\\/api\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -62,7 +110,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 4
+        "Script": 2,
+        "Image": 4,
+        "XHR": 2
     },
     "nameservers": [
         "david.ns.cloudflare.com",

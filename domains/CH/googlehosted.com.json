@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "ghs",
         "api.stage-id.ghs"
@@ -20,16 +20,16 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
-            "original": "analytics.loxone.com",
-            "resolved": "ghs.googlehosted.com"
-        },
-        {
             "original": "api.stage-id.swmhdata.stuttgarter-nachrichten.de",
             "resolved": "api.stage-id.ghs.googlehosted.com"
         },
         {
             "original": "api.stage-id.swmhdata.stuttgarter-zeitung.de",
             "resolved": "api.stage-id.ghs.googlehosted.com"
+        },
+        {
+            "original": "gtm.electrolux.ch",
+            "resolved": "ghs.googlehosted.com"
         },
         {
             "original": "purr.nytimes.com",
@@ -48,7 +48,7 @@
             "resolved": "ghs.googlehosted.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "googlehosted\\.com\\/svc\\/nyt\\/data-layer",
@@ -67,7 +67,7 @@
                 }
             ],
             "responseHashes": [
-                "45bc37c8ff2a54cbb8922d99688b00fa6e634172de875f10224c919ed1f79ad5"
+                "22ea8c634ac5d1d926c8b600e3293fe6c14867f595833ee3f993eeb8cfc964ca"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -158,7 +158,41 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/5a8ec3e5-e084-427d-8d89-0b04d51e0629\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/g\\/collect",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "gtm.electrolux.ch",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "t.swatch.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.0004013243704223939
+            },
+            "exampleSites": [
+                "electrolux.ch",
+                "www.electrolux.ch",
+                "www.swatch.com"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/002321e8-4d29-4e29-bcb4-d832c3921343\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -185,7 +219,34 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/g\\/collect",
+            "rule": "googlehosted\\.com\\/gtm\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "gtm.electrolux.ch",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "9950c2d7b85c2b9828af2cb29f417b0939dede47706795bc1c2777fbf871cd7f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "electrolux.ch",
+                "www.electrolux.ch"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/collect",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -196,25 +257,19 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "analytics.loxone.com",
-                    "resolved": "ghs.googlehosted.com"
-                },
-                {
-                    "original": "t.swatch.com",
+                    "original": "gtm.electrolux.ch",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
             "responseHashes": [
-                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
             ],
-            "type": "XHR",
+            "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.00040120361083249747
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "loxone.com",
-                "www.swatch.com"
+                "electrolux.ch",
+                "www.electrolux.ch"
             ]
         },
         {
@@ -253,10 +308,10 @@
     "performance": {},
     "cookies": 0.000702,
     "types": {
-        "XHR": 8,
+        "XHR": 9,
         "Fetch": 2,
-        "Ping": 3,
-        "Script": 2
+        "Ping": 5,
+        "Script": 4
     },
     "nameservers": []
 }

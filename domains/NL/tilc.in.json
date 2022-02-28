@@ -4,31 +4,64 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "sf-objects-s3"
+        "sf-objects-s3",
+        "failover"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "tilc\\.in\\/sf-objects\\/cdnperf\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "sf-objects-s3"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.onLine": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.connection": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "272b379dca74bc5745b0ff6b0bbec2d48211c911096e0f4cf9599cd7da0d8dbb"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "indiatimes.com",
+                "m.timesofindia.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/multi-cdn\\/81338257_cached\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "failover"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4faaec4ad5d2e6e5bbf5a4b57d62c947189b004a59dc6faabbce2ad6046d2bdc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
                 "timesofindia.indiatimes.com"
             ]
         }
@@ -37,12 +70,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Image": 2
     },
     "nameservers": [
-        "ns-97.awsdns-12.com",
         "ns-1323.awsdns-37.org",
+        "ns-1678.awsdns-17.co.uk",
         "ns-813.awsdns-37.net",
-        "ns-1678.awsdns-17.co.uk"
+        "ns-97.awsdns-12.com"
     ]
 }

@@ -11,7 +11,7 @@
     "sites": 3,
     "subdomains": [
         "speedtest",
-        "graphql.api"
+        "st.nyc"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -19,15 +19,18 @@
         {
             "rule": "dailymotion\\.com\\/latencies\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "speedtest"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1
+            },
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                 "72b2181e58d5c45800d66d36702794ca5ae5bf1fbc20f106442b7eac3191a623"
             ],
             "type": "Script",
@@ -35,28 +38,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nouvelobs.com",
-                "www.asiaone.com",
-                "www.huffingtonpost.fr"
+                "www.eldiario.es",
+                "www.weibo.com"
             ]
         },
         {
-            "rule": "dailymotion\\.com\\/oauth\\/token",
+            "rule": "dailymotion\\.com\\/speedtest",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "graphql.api"
+                "speedtest",
+                "st.nyc"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "XHR",
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nouvelobs.com",
-                "www.huffingtonpost.fr"
+                "weibo.com",
+                "www.weibo.com"
             ]
         }
     ],
@@ -68,7 +72,7 @@
     "cookies": 0.000301,
     "types": {
         "Script": 3,
-        "XHR": 2
+        "WebSocket": 2
     },
     "nameservers": [
         "b.dailymotion.com",
