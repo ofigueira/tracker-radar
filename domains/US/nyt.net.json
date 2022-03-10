@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
+        "a.prd.geo",
         "samizdat-graphql.prd.map.nytimes.xovr",
         "als-svc.prd.geo"
     ],
     "cnames": [
+        {
+            "original": "a.nytimes.com",
+            "resolved": "a.prd.geo.nyt.net"
+        },
         {
             "original": "als-svc.nytimes.com",
             "resolved": "als-svc.prd.geo.nyt.net"
@@ -22,6 +27,35 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "nyt\\.net\\/svc\\/nyt\\/data-layer",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a.prd.geo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "a.nytimes.com",
+                    "resolved": "a.prd.geo.nyt.net"
+                }
+            ],
+            "responseHashes": [
+                "18fc05e64a4749561a4fbeb415d578451ffa9d3b88452322bebace6e2046d097",
+                "1a4998d6a9c0346e1a81707e7ef3ae8b5fe28acb2d364a8e03ca51a73e338f31"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
         {
             "rule": "nyt\\.net\\/graphql\\/v2",
             "cookies": 0,
@@ -104,10 +138,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000341,
     "types": {
-        "Preflight": 2,
-        "XHR": 4
+        "XHR": 7,
+        "Preflight": 2
     },
     "nameservers": []
 }
