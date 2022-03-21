@@ -7,15 +7,53 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
+    "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [
-        "booster",
-        "leonardo"
+        "ws-front",
+        "booster"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "ws-sio.dtf.ru",
+            "resolved": "ws-front.osnova.io"
+        },
+        {
+            "original": "ws-sio.vc.ru",
+            "resolved": "ws-front.osnova.io"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "osnova\\.io\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-front"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000137,
+            "cnames": [
+                {
+                    "original": "ws-sio.dtf.ru",
+                    "resolved": "ws-front.osnova.io"
+                },
+                {
+                    "original": "ws-sio.vc.ru",
+                    "resolved": "ws-front.osnova.io"
+                }
+            ],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dtf.ru",
+                "vc.ru"
+            ]
+        },
         {
             "rule": "osnova\\.io\\/a\\/relevant",
             "cookies": 0,
@@ -25,56 +63,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000137,
             "cnames": [],
             "responseHashes": [
-                "0693b3603f280693f3ff39b191729cd101551a6ca3026602c3918640dce9dd85"
+                "9c42a9144618807d28c21a73ef37001b32478f0742f99901dc89fb85d5e12a80"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dtf.ru",
-                "vc.ru"
-            ]
-        },
-        {
-            "rule": "osnova\\.io\\/2a04e5da-9b55-5bec-a888-effc230ec02d\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "leonardo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6cd8e2d52e50fbce4884c0aafc81c4e4df6f2bf4ce3529ab8f8d3c39b10255d8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dtf.ru",
-                "vc.ru"
-            ]
-        },
-        {
-            "rule": "osnova\\.io\\/5c910458-19e3-5fa7-bdbc-516adb84b6cc\\/-\\/scale_crop\\/300x300\\/-\\/format\\/webp\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "leonardo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5c8eea60da66f86c35e2ea2db28bafa64bd57d5c5335b7ad39d37d651858d745"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -87,13 +81,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Image": 4
+        "WebSocket": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns3.selectel.org",
-        "ns2.selectel.org",
         "ns1.selectel.org",
+        "ns2.selectel.org",
+        "ns3.selectel.org",
         "ns4.selectel.org"
     ]
 }
