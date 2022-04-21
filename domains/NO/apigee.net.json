@@ -9,34 +9,39 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
-        "se-prod-prod",
+        "conrad-prod-gcp-prod",
+        "costco-prd",
         "cmg-prod"
     ],
     "cnames": [
         {
-            "original": "api.se.com",
-            "resolved": "se-prod-prod.apigee.net"
+            "original": "api.conrad.de",
+            "resolved": "conrad-prod-gcp-prod.apigee.net"
+        },
+        {
+            "original": "api.costco.com",
+            "resolved": "costco-prd.apigee.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
+            "rule": "apigee\\.net\\/reco\\/3\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "se-prod-prod"
+                "conrad-prod-gcp-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.se.com",
-                    "resolved": "se-prod-prod.apigee.net"
+                    "original": "api.conrad.de",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
                 }
             ],
             "responseHashes": [],
@@ -44,35 +49,62 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "se.com",
-                "www.se.com"
+                "conrad.de",
+                "www.conrad.de"
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
+            "rule": "apigee\\.net\\/reco\\/3\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "se-prod-prod"
+                "conrad-prod-gcp-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.se.com",
-                    "resolved": "se-prod-prod.apigee.net"
+                    "original": "api.conrad.de",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
                 }
             ],
             "responseHashes": [
-                "7bf9f5963487a79865580a6ab5ab4409cc9f7830e299fe0b4f907c7c2ae1d0d7"
+                "e269bf078e84f3c32e622c135831180546db0a9680b205580a8cf17b18c2dbae"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "se.com",
-                "www.se.com"
+                "conrad.de",
+                "www.conrad.de"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/warehouseLocatorMobile\\/v1\\/warehouses\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "550a8f8e3446d2ce9f0a6c44362e2b63486dc11a0135c61dd35448ad263ba897"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.com"
             ]
         },
         {
@@ -87,7 +119,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "95746be71b16b041da2bbe507e75ebb54cf5df9689da9b13ffe953924b78fd31"
+                "0305da96272b5dd46abfaa8380f5d378b35e2a893440d67c15fd70f1f8783e1c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -109,7 +141,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "448557112adfb7e63f0bcf0315491b882741d822ad201172c2a6f9b55231927c"
+                "136eb9c7f0ebde12045e8683e41a83062898149db5cfb9e652e4e75b94c695b4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,11 +156,10 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
         "Preflight": 2,
-        "Fetch": 2,
-        "XHR": 4
+        "XHR": 8
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

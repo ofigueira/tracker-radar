@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "i.w",
         "a.w"
     ],
     "cnames": [
@@ -19,12 +20,39 @@
             "resolved": "a.w.bilicdn1.com"
         },
         {
-            "original": "live-trace.bilibili.com",
-            "resolved": "a.w.bilicdn1.com"
+            "original": "data.bilibili.tv",
+            "resolved": "i.w.bilicdn1.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "bilicdn1\\.com\\/log\\/web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i.w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "data.bilibili.tv",
+                    "resolved": "i.w.bilicdn1.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilibili.tv",
+                "www.bilibili.tv"
+            ]
+        },
         {
             "rule": "bilicdn1\\.com\\/x\\/web-show\\/res\\/locs",
             "cookies": 0,
@@ -42,7 +70,7 @@
                 }
             ],
             "responseHashes": [
-                "33ce343269f09ccd175fcbc54fe279bb516ce3e0c8f45186686e48986ece2fbf"
+                "0e8baf6aee99b4296a2e0aa91a1fca621adeea5cbc27684ca3a4955239962d90"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -130,40 +158,14 @@
                 "bilibili.com",
                 "www.bilibili.com"
             ]
-        },
-        {
-            "rule": "bilicdn1\\.com\\/xlive\\/data-interface\\/v1\\/index\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a.w"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "live-trace.bilibili.com",
-                    "resolved": "a.w.bilicdn1.com"
-                }
-            ],
-            "responseHashes": [
-                "c459c244b0d0918770f28f350b6f29512eb96c151dbf4cca38ede57616fcc689"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bilibili.com",
-                "www.bilibili.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4,
+        "Ping": 2,
+        "Fetch": 2,
         "XHR": 4,
         "Preflight": 2
     },

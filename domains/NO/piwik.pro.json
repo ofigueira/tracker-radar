@@ -7,26 +7,64 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
         "opanalytics",
-        "hella"
+        "cbs",
+        "eboks",
+        "tiwonk"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "piwik\\.pro\\/ppas\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "opanalytics"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "window.name": 2,
+                "Navigator.prototype.appVersion": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "92e9dc6453283c6023adf4a3bcf4a5657afd940d3d7f5c0f70a330868de59b11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "europa.eu",
+                "eur-lex.europa.eu"
+            ]
+        },
         {
             "rule": "piwik\\.pro\\/ppms\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "opanalytics",
-                "hella"
+                "cbs",
+                "eboks",
+                "tiwonk"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -36,7 +74,63 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "europa.eu",
-                "www.hella.com"
+                "eur-lex.europa.eu",
+                "www.cbs.nl",
+                "www.e-boks.no",
+                "www.strim.no"
+            ]
+        },
+        {
+            "rule": "piwik\\.pro\\/ppms\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cbs",
+                "eboks",
+                "tiwonk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.platform": 2,
+                "window.name": 3,
+                "Navigator.prototype.appVersion": 2,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "2c3a87f9593e6086a09449e1893bf11d0f02c5aa5115513799b7d58522289c0e",
+                "3864f520560090025d1901924ddb14a04c87e03b61488e2e31cd6a561bd30cf5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.5f1c1978-2de3-4279-8abc-14c72eed13ed.1957": {
+                    "ttl": 33955204,
+                    "length": 52,
+                    "prevalence": 0.00010048231511254019,
+                    "uniqueness": 1
+                },
+                "_pk_ses.5f1c1978-2de3-4279-8abc-14c72eed13ed.1957": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00010048231511254019,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbs.nl",
+                "www.e-boks.no",
+                "www.strim.no"
             ]
         }
     ],
@@ -44,12 +138,13 @@
     "performance": {},
     "cookies": 0.000402,
     "types": {
-        "Image": 2
+        "Script": 5,
+        "Image": 5
     },
     "nameservers": [
-        "ns-945.awsdns-54.net",
-        "ns-1658.awsdns-15.co.uk",
         "ns-344.awsdns-43.com",
-        "ns-1249.awsdns-28.org"
+        "ns-945.awsdns-54.net",
+        "ns-1249.awsdns-28.org",
+        "ns-1658.awsdns-15.co.uk"
     ]
 }

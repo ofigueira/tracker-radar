@@ -9,14 +9,69 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "js.monitor"
+        "westeurope-0.in.applicationinsights",
+        "westeurope-5.in.applicationinsights",
+        "js.monitor",
+        "dt-appgw-prod.eastus2.cloudapp"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "dynatrace.att.com",
+            "resolved": "dt-appgw-prod.eastus2.cloudapp.azure.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "westeurope-0.in.applicationinsights",
+                "westeurope-5.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "513fa9efcd57db663d3a04059d0e6758f2c0b42d54082c3353a8340cdb41effa",
+                "2f06451e2da9bcec5593f0e5f8be5aaf93a584def5560838666f6ddcc0f90a19"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nederlandseloterij.nl",
+                "www.vitaminstore.nl",
+                "www.wonen360.nl"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "westeurope-0.in.applicationinsights",
+                "westeurope-5.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nederlandseloterij.nl",
+                "www.vitaminstore.nl",
+                "www.wonen360.nl"
+            ]
+        },
         {
             "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
             "cookies": 0.000401,
@@ -34,23 +89,23 @@
                 "PerformanceTiming.prototype.navigationStart": 4
             },
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
-                "db6f184339c08d2b34fa2d2fc6dbb5f74e4b5ad9a2a5c686ced52b943e345396"
+                "feb5a95f889fd1ecdabaab0aece26b232bdb83017971c4636dce99105898f318"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.0004013243704223939,
+                    "prevalence": 0.0004011633737839735,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.0004013243704223939,
+                    "prevalence": 0.0004011633737839735,
                     "uniqueness": 1
                 }
             },
@@ -62,18 +117,47 @@
                 "www.onvz.nl",
                 "www.roompot.nl"
             ]
+        },
+        {
+            "rule": "azure\\.com\\/bf\\/fc09f351-c4e7-46dc-afb8-cd98de60285e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dt-appgw-prod.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dynatrace.att.com",
+                    "resolved": "dt-appgw-prod.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "4f62433ea2aaad8ea7fa3b5b536a18ffc4731dd0ed46ac74f16f47ef0b20a382"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "att.com",
+                "www.att.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000501,
     "types": {
+        "XHR": 5,
+        "Preflight": 3,
         "Script": 5
     },
     "nameservers": [
-        "ns2-205.azure-dns.net",
-        "ns4-205.azure-dns.info",
         "ns3-205.azure-dns.org",
-        "ns1-205.azure-dns.com"
+        "ns1-205.azure-dns.com",
+        "ns2-205.azure-dns.net",
+        "ns4-205.azure-dns.info"
     ]
 }

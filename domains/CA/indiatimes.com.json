@@ -7,15 +7,15 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "geoapi",
-        "agi-static",
+        "jsso",
         "slike"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "indiatimes\\.com\\/",
@@ -40,40 +40,41 @@
             ]
         },
         {
-            "rule": "indiatimes\\.com\\/cms-common\\/ibeat\\.min\\.js",
+            "rule": "indiatimes\\.com\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
             "cookies": 0.000201,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "agi-static"
+                "jsso"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "cece97aaf018a6e727277546f7e1e3bffadf0baf63fbc18866d6e0396a951bd8"
+                "3d776ad05de09002667c34dcef93d81380cbdcb79c2b28c89da392152028d2a1"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_iibeat_session": {
-                    "ttl": 15768009,
-                    "length": 36,
-                    "prevalence": 0.00020066218521119696,
-                    "uniqueness": 1
-                },
-                "_iibeat_vt": {
-                    "ttl": 2592009,
-                    "length": 8,
-                    "prevalence": 0.00020066218521119696,
-                    "uniqueness": 0.5
-                }
-            },
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetimesofindia.com",
+                "www.timesnownews.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "thetimesofindia.com",
@@ -101,13 +102,37 @@
                 "timesnownews.com",
                 "www.timesnownews.com"
             ]
+        },
+        {
+            "rule": "indiatimes\\.com\\/feed\\/stream\\/fn\\/y3\\/1xfny336u9\\/1xfny336u9\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "slike"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0a8fd663ce8a15f305ff58bd850571357a871d83d2edfa1bb2ab47d09a76f7cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesnownews.com",
+                "www.timesnownews.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Script": 4,
+        "Script": 2,
+        "XHR": 4,
+        "Preflight": 2,
         "Image": 2
     },
     "nameservers": [

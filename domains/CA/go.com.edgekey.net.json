@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000903,
+    "prevalence": 0.000904,
     "sites": 9,
     "subdomains": [
-        "cdn.registerdisney"
+        "stg-ds.cdn.registerdisney",
+        "cdn.registerdisney",
+        "go4.disney"
     ],
     "cnames": [
         {
@@ -22,59 +24,69 @@
         {
             "original": "cdn.unid.go.com",
             "resolved": "cdn.registerdisney.go.com.edgekey.net"
+        },
+        {
+            "original": "go4.disney.go.com",
+            "resolved": "go4.disney.go.com.edgekey.net"
+        },
+        {
+            "original": "stg.cdn.registerdisney.go.com",
+            "resolved": "stg-ds.cdn.registerdisney.go.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/outer\\/DisneyID\\.js",
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/OneID\\.js",
             "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
+                "stg-ds.cdn.registerdisney",
                 "cdn.registerdisney"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
+                {
+                    "original": "stg.cdn.registerdisney.go.com",
+                    "resolved": "stg-ds.cdn.registerdisney.go.com.edgekey.net"
+                },
                 {
                     "original": "cdn.registerdisney.go.com",
                     "resolved": "cdn.registerdisney.go.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "930e6e87abad58fa50fd295b498cffa7bd3550b6a8382b2e29f7775e7120b8ab"
+                "0648b4c0fb5dab7ec496f55bbbb918d51d0822e3d048b586475893f37dbd94ca"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "SWID": {
-                    "ttl": 31536003,
+                    "ttl": 31536020,
                     "length": 36,
-                    "prevalence": 0.00020066218521119696,
+                    "prevalence": 0.00020090406830738323,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abc13.com",
                 "abc7.com",
                 "abc.com",
-                "www.espn.com",
-                "www.marvel.com",
-                "www.nationalgeographic.com",
+                "fivethirtyeight.com",
                 "www.starwars.com"
             ]
         },
         {
-            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/responder\\/responder\\.js",
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/responder\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.registerdisney"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "cdn.registerdisney.go.com",
@@ -82,18 +94,13 @@
                 }
             ],
             "responseHashes": [
-                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
+                "3af07103fe2267b00a09f3b798e0063f78a170038f4cb7135255551094dd808f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abc13.com",
                 "abc7.com",
-                "abc.com",
-                "www.espn.com",
-                "www.marvel.com",
-                "www.nationalgeographic.com",
                 "www.starwars.com"
             ]
         },
@@ -106,7 +113,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.000903,
+            "prevalence": 0.000904,
             "cnames": [
                 {
                     "original": "cdn.unid.go.com",
@@ -120,10 +127,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abc13.com",
                 "abc7.com",
                 "abc.com",
                 "disneyworld.disney.go.com",
+                "disneyland.disney.go.com",
                 "fivethirtyeight.com",
                 "www.espn.com",
                 "www.marvel.com",
@@ -140,7 +147,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.000903,
+            "prevalence": 0.000904,
             "cnames": [
                 {
                     "original": "cdn.unid.go.com",
@@ -154,23 +161,115 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abc13.com",
                 "abc7.com",
                 "abc.com",
                 "disneyworld.disney.go.com",
+                "disneyland.disney.go.com",
                 "fivethirtyeight.com",
                 "www.espn.com",
                 "www.marvel.com",
                 "www.nationalgeographic.com",
                 "www.starwars.com"
             ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "go4.disney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "go4.disney.go.com",
+                    "resolved": "go4.disney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2c063644983641ead95407dd09a10ed5eb42c3caaf3d7690dc2eaf5642499dab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "disneyland.disney.go.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/outer\\/DisneyID\\.js",
+            "cookies": 0.000301,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "930e6e87abad58fa50fd295b498cffa7bd3550b6a8382b2e29f7775e7120b8ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/responder\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000603,
     "types": {
-        "Script": 32
+        "Script": 34
     },
     "nameservers": []
 }

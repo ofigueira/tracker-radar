@@ -4,51 +4,68 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
-        "static"
+        "static",
+        "fnacdarty",
+        "boots"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "queue.boots.com",
+            "resolved": "boots.queue-it.net"
+        },
+        {
+            "original": "queue.fnac.com",
+            "resolved": "fnacdarty.queue-it.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "queue-it\\.net\\/script\\/queueclient\\.min\\.js",
-            "cookies": 0.000301,
+            "cookies": 0.000402,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Document.cookie getter": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3
+                "Document.cookie getter": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "38df4c03494c934305f487f55b26ce92cb45fcfe065995fc81d9ac030a1b93cc"
+                "944ab414abd7379509535f0f7422544deaf2a4d19b9fbee4ef9bd1b6b02b3dcd"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "QueueITAccepted-SDFrts345E-V3_prodfullsite": {
                     "ttl": 606,
                     "length": 196,
-                    "prevalence": 0.00010032102728731942,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "QueueITAccepted-SDFrts345E-V3_prodevent": {
+                    "ttl": 1204,
+                    "length": 194,
+                    "prevalence": 0.00010054293183189222,
                     "uniqueness": 1
                 },
                 "QueueITAccepted-SDFrts345E-V3_dysonprod2021": {
-                    "ttl": 1266,
+                    "ttl": 1264,
                     "length": 198,
-                    "prevalence": 0.00010032102728731942,
+                    "prevalence": 0.00010054293183189222,
                     "uniqueness": 1
                 },
                 "QueueITAccepted-SDFrts345E-V3_lmsprod": {
-                    "ttl": 1205,
+                    "ttl": 1204,
                     "length": 192,
-                    "prevalence": 0.00010032102728731942,
+                    "prevalence": 0.00010054293183189222,
                     "uniqueness": 1
                 }
             },
@@ -56,6 +73,7 @@
             "exampleSites": [
                 "rakuten.com",
                 "www.amd.com",
+                "www.carrefour.fr",
                 "www.dyson.ch",
                 "www.olat.uzh.ch"
             ]
@@ -68,13 +86,14 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 1
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "b7408a854ae791ab9192c928b8becfb3365beab69d8b8dd0ca81e2761ba95baa"
+                "7157deb8ebe872e9ad11477112493ef6d3175123c43073bbbc81954295049f08"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -82,16 +101,69 @@
             "exampleSites": [
                 "rakuten.com",
                 "www.amd.com",
+                "www.carrefour.fr",
                 "www.dyson.ch",
                 "www.olat.uzh.ch"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fnacdarty"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "queue.fnac.com",
+                    "resolved": "fnacdarty.queue-it.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fnac.com",
+                "www.fnac.com"
+            ]
+        },
+        {
+            "rule": "queue-it\\.net\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "boots"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "queue.boots.com",
+                    "resolved": "boots.queue-it.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boots.com",
+                "www.boots.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000804,
     "types": {
-        "Script": 8
+        "Script": 10,
+        "Document": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1175.awsdns-18.org",

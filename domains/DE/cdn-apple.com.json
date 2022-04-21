@@ -12,19 +12,25 @@
     "prevalence": 0.00171,
     "sites": 17,
     "subdomains": [
-        "appleid"
+        "appleid",
+        "applepay"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "cdn-apple\\.com\\/appleauth\\/static\\/jsapi\\/appleid\\/1\\/de_DE\\/appleid\\.auth\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 3,
             "subdomains": [
                 "appleid"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -42,13 +48,18 @@
         {
             "rule": "cdn-apple\\.com\\/appleauth\\/static\\/jsapi\\/appleid\\/1\\/en_US\\/appleid\\.auth\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 3,
             "subdomains": [
                 "appleid"
             ],
-            "apis": {},
-            "sites": 15,
-            "prevalence": 0.0015,
+            "apis": {
+                "window.innerWidth": 13,
+                "window.innerHeight": 13,
+                "window.screenLeft": 13,
+                "window.screenTop": 13
+            },
+            "sites": 13,
+            "prevalence": 0.0013,
             "cnames": [],
             "responseHashes": [
                 "60e60bf2583cf7444b00a4b0b8d46de5fd5816f768fc72fd71c643357132df69"
@@ -57,11 +68,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mihoyo.com",
-                "m.twitter.com",
+                "player.fm",
+                "gettr.com",
                 "mobile.twitter.com",
                 "quizlet.com",
-                "search.twitter.com",
                 "thechive.com",
                 "twitter.com",
                 "www.bible.com",
@@ -70,8 +80,32 @@
                 "www.instant-gaming.com",
                 "www.realtor.com",
                 "www.secretescapes.de",
-                "www.strava.com",
-                "www.swissinfo.ch"
+                "www.strava.com"
+            ]
+        },
+        {
+            "rule": "cdn-apple\\.com\\/jsapi\\/v1\\/apple-pay-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "applepay"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 2,
+                "document.fonts.check": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8aeca11893e11ccf08d253c8ed0691a754b304be998a8ad91e3e87933d852064"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schuhcenter.de",
+                "www.xn--diewaffenbrder-qsb.de"
             ]
         }
     ],
@@ -82,8 +116,8 @@
         "Script": 17
     },
     "nameservers": [
-        "a.ns.apple.com",
         "b.ns.apple.com",
+        "a.ns.apple.com",
         "c.ns.apple.com",
         "d.ns.apple.com"
     ]

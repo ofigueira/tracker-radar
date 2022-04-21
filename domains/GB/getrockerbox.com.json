@@ -1,13 +1,18 @@
 {
     "domain": "getrockerbox.com",
-    "owner": {},
+    "owner": {
+        "name": "Rockerbox, Inc.",
+        "displayName": "Rockerbox",
+        "privacyPolicy": "https://www.rockerbox.com",
+        "url": "http://rockerbox.com"
+    },
     "source": [
         "DuckDuckGo-GB"
     ],
     "prevalence": 0.000602,
     "sites": 6,
     "subdomains": [
-        "metrics",
+        "onrunning.cname",
         "saatchiart.cname",
         "wwinternational.cname",
         "thewhiskyexchange.cname"
@@ -24,30 +29,45 @@
         {
             "original": "rbm0wu6g.thewhiskyexchange.com",
             "resolved": "thewhiskyexchange.cname.getrockerbox.com"
+        },
+        {
+            "original": "shz64n.on-running.com",
+            "resolved": "onrunning.cname.getrockerbox.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "getrockerbox\\.com\\/track\\/v5",
+            "rule": "getrockerbox\\.com\\/assets\\/xyz\\.js",
             "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "metrics"
-            ],
-            "apis": {},
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b49b797ab0a35e37fb51790818e0a97902725399a0f714343b12b1a6133ec96f"
+                "4a8b42be2df7b31e11b442a965f4ee259ffac45e2643d39f47faedc219589fc5"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "rbuid": {
+                    "ttl": 2592008,
+                    "length": 41,
+                    "prevalence": 0.00020058168689198675,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "askubuntu.com",
-                "superuser.com"
+                "jacamo.co.uk",
+                "www.usps.com"
             ]
         },
         {
@@ -55,13 +75,18 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "onrunning.cname",
                 "saatchiart.cname",
                 "wwinternational.cname"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [
+                {
+                    "original": "shz64n.on-running.com",
+                    "resolved": "onrunning.cname.getrockerbox.com"
+                },
                 {
                     "original": "iedx0r.saatchiart.com",
                     "resolved": "saatchiart.cname.getrockerbox.com"
@@ -73,52 +98,83 @@
             ],
             "responseHashes": [
                 "a6e9e1722cffa254dc5061e3d89fc40a4faec0cd7d44819923657d498e8df822",
-                "5dfe2254aa3f1ce2e14ad669fabd8f49fd7bb749ab2fdc4e60f86a8300cfe81b"
+                "e2a7dd179bd61789caf2cf0f389eac73e7b8320bb08abf7192e6f0d5629cf62c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jacamo.co.uk",
+                "www.on-running.com",
                 "www.saatchiart.com",
+                "www.usps.com",
                 "www.weightwatchers.com"
             ]
         },
         {
             "rule": "getrockerbox\\.com\\/jpuid",
-            "cookies": 0.000301,
+            "cookies": 0.000501,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
-                "cb97b386f57c6e697406dd30e0cc00ff43c2258933c9c6d89ea87f0084de3b09",
-                "329921ed991ba9dc56a66b39c603c7d2ba220c0e5ddcc25b676242bafc6b8135"
+                "522a81d27349b7546a1ecfe91ff38f347895ea750aa456a4d9428ba12bd26453",
+                "a0c573381b93102f2881dfad49fab00ae95a3aa44e433de1829e19af70e6e252",
+                "fb66ac7e951fda9e82fcf5961038ee67e318300a85036cf10e1bf9c2aee74096",
+                "93f786e1eeae11ba6618539cb16f67bef7326756551abc9dd8606c2c968b7076"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jacamo.co.uk",
+                "www.on-running.com",
                 "www.saatchiart.com",
+                "www.usps.com",
                 "www.weightwatchers.com"
             ]
         },
         {
+            "rule": "getrockerbox\\.com\\/rb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rbuid": 0.00020058168689198675
+            },
+            "exampleSites": [
+                "jacamo.co.uk",
+                "www.usps.com"
+            ]
+        },
+        {
             "rule": "getrockerbox\\.com\\/assets\\/wxyz\\.rb\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 1,
             "subdomains": [
+                "onrunning.cname",
                 "saatchiart.cname",
                 "thewhiskyexchange.cname",
                 "wwinternational.cname"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
+                {
+                    "original": "shz64n.on-running.com",
+                    "resolved": "onrunning.cname.getrockerbox.com"
+                },
                 {
                     "original": "iedx0r.saatchiart.com",
                     "resolved": "saatchiart.cname.getrockerbox.com"
@@ -133,6 +189,7 @@
                 }
             ],
             "responseHashes": [
+                "9f87ff66d8a9132d8e0ea533b3cefcd5f2d46adf23beb0a423e0d1296551a8f1",
                 "11030abdd9c34a72326a64882e09cfb7a97b2a095d21ff0a3c083eb06fcd1516",
                 "5d0f4b5d69b4a495be426e3b1019a195f4486bb4fd6a90acdbefeccf6932cd27"
             ],
@@ -140,7 +197,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "saatchiart.com",
+                "on-running.com",
+                "www.saatchiart.com",
                 "www.thewhiskyexchange.com",
                 "www.weightwatchers.com"
             ]
@@ -150,6 +208,7 @@
             "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
+                "onrunning.cname",
                 "saatchiart.cname",
                 "wwinternational.cname"
             ],
@@ -157,6 +216,10 @@
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [
+                {
+                    "original": "shz64n.on-running.com",
+                    "resolved": "onrunning.cname.getrockerbox.com"
+                },
                 {
                     "original": "iedx0r.saatchiart.com",
                     "resolved": "saatchiart.cname.getrockerbox.com"
@@ -171,9 +234,11 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "dy_fs_page": 0.00010029084344599338
+            },
             "exampleSites": [
-                "saatchiart.com",
+                "on-running.com",
                 "www.saatchiart.com",
                 "www.weightwatchers.com"
             ]
@@ -181,14 +246,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000501,
     "types": {
-        "Fetch": 2,
-        "Script": 9,
-        "Image": 3
+        "Script": 16,
+        "Image": 5
     },
     "nameservers": [
-        "brad.ns.cloudflare.com",
-        "iris.ns.cloudflare.com"
+        "iris.ns.cloudflare.com",
+        "brad.ns.cloudflare.com"
     ]
 }

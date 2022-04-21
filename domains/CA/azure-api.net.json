@@ -9,12 +9,18 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "api-tanguay"
+        "api-tanguay",
+        "apim-gw-azu-nyc-prod"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "api.nyc.gov",
+            "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -38,13 +44,67 @@
                 "tanguay.ca",
                 "www.tanguay.ca"
             ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "74236d92daf77b070c5db7bddb325e5bfbefaab87c6b2b2ef216e6a4a345ba16"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-gw-azu-nyc-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www1.nyc.gov"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1-05.azure-dns.com",

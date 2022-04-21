@@ -12,7 +12,8 @@
     "subdomains": [
         "marvel-b2-cdn",
         "marvel-b1-cdn",
-        "marvel-processor"
+        "marvel-processor",
+        "cookie-cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,11 +26,11 @@
                 "marvel-b2-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Navigator.prototype.appVersion": 9
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.appVersion": 7
             },
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 10,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
                 "965fc05b277596a937ba9d14388799fd5217eb96179f0187b8b937347bdfaf59"
@@ -44,9 +45,8 @@
                 "www.eastlink.ca",
                 "www.fjallraven.com",
                 "www.fortinet.com",
+                "www.leupold.com",
                 "www.peta.org",
-                "www.savagearms.com",
-                "www.tonyrobbins.com",
                 "www.uoguelph.ca",
                 "www1.cbn.com"
             ]
@@ -103,6 +103,32 @@
                 "marvel-processor"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "983e400b38e2934eea355b4f823646251ad0c70562ca4343ad40c0b50d7752f6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "feathr_session_id": 0.00010045203415369161,
+                "gpv_pn": 0.00010045203415369161
+            },
+            "exampleSites": [
+                "aao.org",
+                "www.eastlink.ca",
+                "www.fortinet.com"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/f00000000216283\\/t\\.co\\/i\\/adsct",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "marvel-b1-cdn"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -110,20 +136,64 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "feathr_session_id": 0.00010033109260559848
+                "gpv_pn": 0.00020090406830738323
             },
             "exampleSites": [
-                "aao.org",
+                "fortinet.com",
                 "www.fortinet.com"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/addcookieeventtoqueue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cookie-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leupold.com",
+                "www.uoguelph.ca"
+            ]
+        },
+        {
+            "rule": "bc0a\\.com\\/addcookieeventtoqueue",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cookie-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a0de1f5e79087f1b99057eaba695931431db50a7a1497ab7aaa8ec648a32f9d4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leupold.com",
+                "www.uoguelph.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 11,
-        "Image": 6
+        "Script": 10,
+        "Image": 9,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "pdns10.domaincontrol.com",

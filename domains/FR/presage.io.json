@@ -7,14 +7,43 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "mwtw",
         "ms-ads-monitoring-events"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "presage\\.io\\/v1\\/tag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mwtw"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e218b4ab29e5ad9fc275fe96066ec2646107ab7e370f9478a78d8ed68e6170da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gp-inside.com",
+                "www.moto-net.com"
+            ]
+        },
         {
             "rule": "presage\\.io\\/tag",
             "cookies": 0,
@@ -27,12 +56,55 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gp-inside.com",
+                "www.moto-net.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/tag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ms-ads-monitoring-events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "histoire-pour-tous.fr",
-                "www.histoire-pour-tous.fr"
+                "gp-inside.com",
+                "www.gp-inside.com",
+                "www.moto-net.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/tag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ms-ads-monitoring-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gp-inside.com",
+                "www.moto-net.com"
             ]
         }
     ],
@@ -40,11 +112,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 2
+        "Script": 2,
+        "Fetch": 2,
+        "Preflight": 3,
+        "XHR": 2
     },
     "nameservers": [
+        "c.dns.gandi.net",
         "a.dns.gandi.net",
-        "b.dns.gandi.net",
-        "c.dns.gandi.net"
+        "b.dns.gandi.net"
     ]
 }

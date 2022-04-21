@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "imagesvc"
+        "imagesvc",
+        "cdn.video"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "meredithcorp\\.io\\/v3\\/mm\\/image",
@@ -20,19 +21,18 @@
                 "imagesvc"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
-                "7cfe4afb8155250c70b3b411aea41f617c5303eca936891342c69623cd963818",
-                "24d848ea2014d8be51e93d942897caaa9ee68aa93822a605af8091f325ccfc45",
-                "0002fe76f195d86b74a184b9e668584e412f57c03dbe012613d487aab4edddbc",
-                "e6449d66921bbf19935fc847f573af2a5e70c9c9f4886aac6b3c8d0440b30399",
-                "18411be967e22e1ccaac8cee81270a87fcd8deffd940c6b5f8e8798579c3c423",
-                "ca1422338b655f90ff196e7c2383a445ac0253ba6669e8fd9ddaee5fa0be1c1b",
-                "9f34e38d0e3e3fea878386f389160800887eabb9f139fdde321fb0286ec4a3c0",
-                "efa84969d0689564d5064bc1d901ed86f0e904ecb4c90b5f0606c41cfbab90cd",
-                "cefbadb66daad16d6e4e2d9355accca7b82855855148da8573801be0f181f55f"
+                "e08a32fbf9538f5bda503752dacf65d33666f99b324c98faa4c6a401a1dc031a",
+                "488921d6e1b65994f407833073a615afb7a66935d0b3ffc7376b09173883cfea",
+                "fd9282eb9e79f5ebcbf0c0454e15ea5644866e477bb2d3363b0795b604b616c9",
+                "35861c8c574cd4f0eb4b553457ef66fa8b407b2f24f61294c8fe38f83c015698",
+                "ab54b9647634b6e071717b2de5986b2171e4fb2f2c0a1fa8d720cb973af99a2b",
+                "2a557a87f2c998dab24eb852c9e2c275cd9043f17ceb4c3d1b5ac1fd1075e357",
+                "2fdc47536b1c330ac2da322d333c6a9cf38269ea64eca29b51856afae9d1924f",
+                "0d49836ff00b12002278c9ef5e374e38ae6b9e5bfd9f1e4f9b6ab736b0fa3f8c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -42,34 +42,43 @@
                 "people.com",
                 "www.allrecipes.com",
                 "www.eatingwell.com",
-                "www.foodandwine.com",
                 "www.health.com",
                 "www.instyle.com",
                 "www.marthastewart.com",
-                "www.parents.com",
+                "www.myrecipes.com",
                 "www.shape.com"
             ]
         },
         {
-            "rule": "meredithcorp\\.io\\/v3\\/mm\\/gif",
+            "rule": "meredithcorp\\.io\\/jumpstart\\/v4\\/js\\/jumpstart\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "imagesvc"
+                "cdn.video"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.innerHeight": 3,
+                "HTMLMediaElement.prototype.canPlayType": 3,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "6657f3619e8328ddd0e6993230b4d2882d638c3127d17bd18f9de929c7d09afc"
+                "113cd2a2a5b23540d2008c02bb2bbde7376d11680b0e8da43b11e597a22642ca"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eatingwell.com",
-                "www.instyle.com"
+                "ew.com",
+                "people.com",
+                "www.eatingwell.com"
             ]
         }
     ],
@@ -77,7 +86,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 12
+        "Image": 9,
+        "Script": 3
     },
     "nameservers": [
         "ns-912.awsdns-50.net",

@@ -8,6 +8,7 @@
     "sites": 2,
     "subdomains": [
         "syndication",
+        "edge.syndication",
         "player"
     ],
     "cnames": [],
@@ -16,18 +17,43 @@
         {
             "rule": "target-video\\.com\\/native-player\\.js",
             "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication",
+                "edge.syndication"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b9055adcdb0da77ca2af48bca70789aa7c9539e8a1e06e06000e2d5732c08029"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "der-betze-brennt.de",
+                "www.hallo-eltern.de"
+            ]
+        },
+        {
+            "rule": "target-video\\.com\\/native-player-component\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "syndication"
+                "syndication",
+                "edge.syndication"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "677699031c1ebb860b1279ae8df48844f72195efaee9a06e0cddfc53b6ec0b52"
+                "5edaf04723f90e3e53975feb069741a57389cdd8c8f7150c9cc18bc33f043a2a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -51,6 +77,7 @@
                 "window.localStorage": 1,
                 "Navigator.prototype.connection": 1,
                 "Navigator.prototype.appName": 1,
+                "window.innerHeight": 1,
                 "Navigator.prototype.platform": 1,
                 "HTMLMediaElement.prototype.canPlayType": 1
             },
@@ -58,7 +85,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "afa93ee3df7cc7b85c59de172146481514bbbe8a0711f46675f91a784ede928b"
+                "11d25e279c688b5544b6b4306e701dfdff067fa8a8a4c035be301948ef97dfd9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -73,7 +100,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
         "ns-138.awsdns-17.com",

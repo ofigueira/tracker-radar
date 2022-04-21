@@ -8,7 +8,6 @@
     "sites": 2,
     "subdomains": [
         "content-v2-ssr.cloud",
-        "jdkafkab1.cloud",
         "boomerang.cloud"
     ],
     "cnames": [],
@@ -93,7 +92,8 @@
             "apis": {
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.userAgent": 2,
-                "window.devicePixelRatio": 2
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -275,7 +275,9 @@
                 "content-v2-ssr.cloud"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -316,11 +318,13 @@
         {
             "rule": "jdplc\\.com\\/_nuxt\\/3ed69afc789edc5039b4\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "content-v2-ssr.cloud"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -328,48 +332,6 @@
                 "6daeb219145f1019501078e9fd9234ea61590c6b3482c82c85351dc044608a95"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jd-sports.com.au",
-                "www.jd-sports.com.au"
-            ]
-        },
-        {
-            "rule": "jdplc\\.com\\/rest\\/topics\\/PRO_JD_USER_EVENTS",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "jdkafkab1.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jd-sports.com.au",
-                "www.jd-sports.com.au"
-            ]
-        },
-        {
-            "rule": "jdplc\\.com\\/rest\\/topics\\/PRO_JD_USER_EVENTS",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "jdkafkab1.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "9134a5e966e572575ebefbd6fd50e6426d31fd6640b0ea9671a96e9d20dba382"
-            ],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -404,15 +366,14 @@
     "types": {
         "Script": 16,
         "Stylesheet": 12,
-        "Preflight": 2,
-        "Fetch": 4
+        "Fetch": 2
     },
     "nameservers": [
-        "a9-67.akam.net",
         "a4-65.akam.net",
         "a7-66.akam.net",
         "a14-67.akam.net",
         "a1-160.akam.net",
-        "a20-64.akam.net"
+        "a20-64.akam.net",
+        "a9-67.akam.net"
     ]
 }

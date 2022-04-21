@@ -7,30 +7,80 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "collector2",
+        "cdn",
         "collector"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
-            "rule": "sophi\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "sophi\\.io\\/latest\\/sophi\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
-                "collector2",
-                "collector"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.onLine": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.connection": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "0b84fd43019c94dd94867d42843bafaefe3352abb09b3e0d15763142d798fc31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sophiTagses.81ab": {
+                    "ttl": 1807,
+                    "length": 1,
+                    "prevalence": 0.00010048231511254019,
+                    "uniqueness": 1
+                },
+                "sophiTagid.81ab": {
+                    "ttl": 63072007,
+                    "length": 108,
+                    "prevalence": 0.00010048231511254019,
+                    "uniqueness": 1
+                },
+                "_sp_duid": {
+                    "ttl": 63072007,
+                    "length": 36,
+                    "prevalence": 0.00020096463022508038,
+                    "uniqueness": 1
+                },
+                "sophiTagses.23dd": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.00010048231511254019,
+                    "uniqueness": 1
+                },
+                "sophiTagid.23dd": {
+                    "ttl": 63072005,
+                    "length": 108,
+                    "prevalence": 0.00010048231511254019,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "globo.com",
+                "news24.com",
                 "www.reuters.com"
             ]
         },
@@ -39,7 +89,6 @@
             "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
-                "collector2",
                 "collector"
             ],
             "apis": {},
@@ -53,17 +102,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "globo.com",
+                "news24.com",
+                "www.reuters.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "news24.com",
                 "www.reuters.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1220.awsdns-24.org",
