@@ -10,12 +10,39 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "xd",
-        "api"
+        "api",
+        "xd"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "adnz\\.co\\/header\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "76aa178e3616d6c4e6415ea6787b3575b385b266e33d6c1e0f0e9e005e35311b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesobservateurs.ch",
+                "www.archdaily.com"
+            ]
+        },
         {
             "rule": "adnz\\.co\\/dmp\\/publisher\\.js",
             "cookies": 0,
@@ -29,18 +56,115 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7d82c1fe9a52f591afbe069434c1d96083dbfcda883740b476a06e8a71e82640"
+                "b81e27c1456af690f0265a6c47cd0e289ab5cf3441f7589bf590521ff19f08a7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lesobservateurs.ch",
-                "www.watson.ch"
+                "www.archdaily.com"
+            ]
+        },
+        {
+            "rule": "adnz\\.co\\/api\\/ws-geodata\\/country",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesobservateurs.ch",
+                "www.archdaily.com"
+            ]
+        },
+        {
+            "rule": "adnz\\.co\\/api\\/ws-geodata\\/country",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c899b3d71c1f520db816563ec9d7d0c4f15a47776d1e52e83bddfec13a440e7b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesobservateurs.ch",
+                "www.archdaily.com"
+            ]
+        },
+        {
+            "rule": "adnz\\.co\\/api\\/ws-contextual\\/page-keywords",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "90252160945eb9869f861fc1c9b85094ff62b5b8e9e943871bcc11d381ca0e74"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesobservateurs.ch",
+                "www.archdaily.com"
             ]
         },
         {
             "rule": "adnz\\.co\\/xdomain_cookie\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "xd"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ac380463865d84b458852ee2a98dc2ca66d2561bc050f9aa2743099a130e7a1f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "adnzVisitorId": {
+                    "ttl": 10368004,
+                    "length": 12,
+                    "prevalence": 0.00020096463022508038,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lesobservateurs.ch",
+                "www.archdaily.com"
+            ]
+        },
+        {
+            "rule": "adnz\\.co\\/xdomain_cookie\\.html",
             "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
@@ -55,59 +179,26 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ac380463865d84b458852ee2a98dc2ca66d2561bc050f9aa2743099a130e7a1f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "adnzVisitorId": {
-                    "ttl": 10368004,
-                    "length": 20,
-                    "prevalence": 0.00010035122930255896,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lesobservateurs.ch",
-                "www.watson.ch"
-            ]
-        },
-        {
-            "rule": "adnz\\.co\\/xdomain_cookie\\.html",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "xd"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
                 "bd2717d6c9540ef58d7a2551925e8756b072e2a2efe80e6813b7f0319f5f5df9"
             ],
             "type": "Document",
             "firstPartyCookies": {
                 "adnzVisitorId": {
-                    "ttl": 10368009,
-                    "length": 20,
-                    "prevalence": 0.00020070245860511792,
+                    "ttl": 10368004,
+                    "length": 19,
+                    "prevalence": 0.00010048231511254019,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lesobservateurs.ch",
-                "www.watson.ch"
+                "www.archdaily.com"
             ]
         },
         {
             "rule": "adnz\\.co\\/api\\/ws-convey\\/visitor-id",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
@@ -117,14 +208,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1bad253bf21de17a4c357d13cb1a67fc7bddd59ae9a2fb898b50e59c15721670"
+                "bdf011b934bf9ae65c68c58d3efbd03336cc3b34d2854e07fdd2f4eb8cf08e3e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lesobservateurs.ch",
-                "www.watson.ch"
+                "www.archdaily.com"
             ]
         },
         {
@@ -144,34 +235,11 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "adnzVisitorId": 0.00030105368790767686
+                "adnzVisitorId": 0.00040192926045016077
             },
             "exampleSites": [
-                "lesobservateurs.ch",
-                "www.watson.ch"
-            ]
-        },
-        {
-            "rule": "adnz\\.co\\/ad-tag\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "35c6664e49bad6fac253f9a565253b78b0153b769528e8a31b01a344ebc62b0a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "watson.ch",
-                "www.watson.ch"
+                "archdaily.com",
+                "www.archdaily.com"
             ]
         }
     ],
@@ -180,8 +248,9 @@
     "cookies": 0.000201,
     "types": {
         "Script": 6,
-        "Document": 2,
-        "XHR": 4
+        "Preflight": 2,
+        "XHR": 8,
+        "Document": 2
     },
     "nameservers": [
         "charles.ns.cloudflare.com",

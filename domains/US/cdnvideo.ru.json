@@ -7,22 +7,27 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000307,
-    "sites": 45,
+    "prevalence": 0.000272,
+    "sites": 40,
     "subdomains": [
-        "cdx19ssl",
-        "s.pikabu",
         "unisound",
-        "phototass1",
+        "s.pikabu",
         "phototass3",
-        "playercdn",
+        "phototass1",
         "bfm",
         "svirtus",
+        "eldorado",
         "monetnik",
+        "ntv-static",
         "olx",
-        "raritetus"
+        "cdx19ssl",
+        "www.small.vgtrk"
     ],
     "cnames": [
+        {
+            "original": "cdn-st1.rtr-vesti.ru",
+            "resolved": "www.small.vgtrk.cdnvideo.ru"
+        },
         {
             "original": "cdn.bfm.ru",
             "resolved": "bfm.cdnvideo.ru"
@@ -36,56 +41,42 @@
             "resolved": "s.pikabu.cdnvideo.ru"
         },
         {
+            "original": "static.eldorado.ru",
+            "resolved": "eldorado.cdnvideo.ru"
+        },
+        {
             "original": "static.olx.uz",
             "resolved": "olx.cdnvideo.ru"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
-            "rule": "cdnvideo\\.ru\\/img\\/r20\\.gif",
+            "rule": "cdnvideo\\.ru\\/static\\/js\\/xman\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "cdx19ssl"
+                "unisound"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000273,
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.plugins": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+                "7c3e160c0b3992a1d18d6e86c4dcdaa6444a06c4459e8b4db62890240962f31d"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "globo.com",
-                "globoplay.globo.com",
-                "www.citrix.com",
-                "www.visitcalifornia.com"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/img\\/r20-100KB\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdx19ssl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "ec9e64c4d4546b45a25d683c76a9d7bbf956259eb4c1a6614ebaab3be7f146c2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "globo.com",
-                "www.visitcalifornia.com"
+                "online-red.com",
+                "radiopotok.ru",
+                "zaycev.net"
             ]
         },
         {
@@ -97,7 +88,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cs.pikabu.ru",
@@ -116,30 +107,23 @@
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/static\\/js\\/xman\\.min\\.js",
+            "rule": "cdnvideo\\.ru\\/newtass\\/fonts\\/GOSTUI2-bold\\/GOSTUI2-bold\\.woff2",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
-                "unisound"
+                "phototass3"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.plugins": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "7c3e160c0b3992a1d18d6e86c4dcdaa6444a06c4459e8b4db62890240962f31d"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "radiopotok.ru",
-                "zaycev.net"
+                "tass.com",
+                "tass.ru"
             ]
         },
         {
@@ -151,7 +135,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Font",
@@ -163,377 +147,911 @@
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/newtass\\/fonts\\/GOSTUI2-bold\\/GOSTUI2-bold\\.woff2",
+            "rule": "cdnvideo\\.ru\\/news\\/photopreviewsmall\\/2022\\/04\\/19\\/tass_52143894\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "phototass3"
+                "bfm"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "d1855578bdfcb380a24f693fae39dde0b2a7e1fbff58c3434ff63c28b8f488bf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/news\\/photopreviewsmall\\/2022\\/04\\/19\\/airbus\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "f6084a618d93b6c557bf48e53d577b5f5a9ee63e8e83a41b1bd12847e2b08029"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/sergey-suverov\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "befa98cce78dbe570d0f51178fa3813a2460185dd40f75e0cc532c0802f86add"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/am\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "76cc08921c8925eda4c08d56e43236537c03b036ab0301953ae552ce336dda39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/dragunskiy_denis\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "69c60ce8452f71c72018d15b606d0613dd30e9ab671883bdcfc19754ab1c9cf7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/tatulova\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "60b28f78680030d2f0fd3ab456cf526c96f557a5559737fc332c5979a08d10c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/tass_42025810\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "3b4741af54895a318fb0c9240378651b2bb840eefd664d99bc3d91c9b1bb2b2d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/kalachev_1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.bfm.ru",
+                    "resolved": "bfm.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "e3732324365a0cdf59363d04ceb75f6d878db10741f7612f1591c9b8e175df92"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfm.ru",
+                "www.bfm.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/rZFNiPw04gx5_M7Q8urJb3fCfK4=\\/0x0:1000x1000\\/30x30\\/filters:quality\\(100\\)\\/https:\\/\\/hb\\.bizmrg\\.com\\/cybersportru-media\\/ba\\/ba19eded6ea507bbfe3054e447852d85\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svirtus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "00b0406b4f0b3c8c71d4138e13d960f3343f19b12ccf59f05f3b3ea8f3fec25c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cybersport.ru",
+                "www.cybersport.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/QQEGvOfqCYLkm_y38y3ekKb9kZ4=\\/0x0:800x800\\/30x30\\/filters:quality\\(100\\)\\/https:\\/\\/hb\\.bizmrg\\.com\\/cybersportru-media\\/dc\\/dc2786dba61f33ef3290193bdfd4cff8\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svirtus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "446d7fd851f57497f6b70b73e2a6c28c22c9f8d11c2842086b96fe51501d591f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cybersport.ru",
+                "www.cybersport.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/static_spa\\/assets\\/DINPro-CondensedBold\\.0\\.f88ed842\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "169b36bbb45499e92c5aeabc4d18c5826ab5cc440b4bd58758c201f560ddcf4a"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tass.com",
-                "tass.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/aloha\\/clappr\\/clappr4\\.min\\.js",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/static_spa\\/assets\\/logo\\.0\\.107e1872\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "d21d288959ba3fe9ea1488138f8b498f14fdcb348b76996ba91125bc6b1bc454"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/css\\/e5b72e31bad700ff9271\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "217bdfadf47cca32277cc4825fe21812fe3ee8735cfb81ec74ba95559fd3aa95"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/5914\\.0\\.2345d6aded46084df10b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "3777cd2fdb3bd009fa98ed01b537a9becae9bd833d54eeb0716dd9ad930793e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/webpack-4d744790a080deb63d26\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "3ebc627dfdd472e83384ff9b1d03a8e2fcb3ff0e8e7216062b4cd0e86c9215d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/framework-1c28876af024d9fc78de\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "09e5d7778b3d3bf3dad586bcca5697833d28aac8e997ee96948c483bcdca4fa9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/main-1028f5634ecc6e2e62a1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "daf87adbc19ec7c65e44a815d2eaf17bea5232cb8278aa0df6dbbf400e8f479b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/pages\\/_app-aa151821db5519ad7afe\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "playercdn"
+                "eldorado"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "MediaSource.isTypeSupported": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
             "responseHashes": [
-                "279ec505529d6c56b3f59ccf65ee398122c9c41cbb9bb1b030832622f0115243"
+                "c19abddc34450c18c88bac49a6e660362fbc610185205e368e8e643967723377"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "1tv.ru",
-                "www.1tv.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/aloha\\/clappr\\/level-selector\\.min\\.js",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/1502-0fa10575e41a9e599292\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "playercdn"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
             "responseHashes": [
-                "dfb81a7120a9eb9bad5a31b112a341e26b248e6fa4e6522c918df4f9c21dace7"
+                "8a78fed40ba36eb7b0188cf95ac79ed039fed74bfc4da6f6eef55c910d5f167e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "1tv.ru",
-                "www.1tv.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/aloha\\/clappr\\/clappr-poster\\.min\\.js",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/7471-a2342ea7c93e0d0cd1d9\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "playercdn"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
             "responseHashes": [
-                "87f06be44b11ec5901d16ec92049518ad133d6b810f7fae417530fde2ae1da4a"
+                "25f70f7febc711e1941afea5779c998b6facb583b5435bdb4ca21fc9686c0e9d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "1tv.ru",
-                "www.1tv.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/aloha\\/clappr\\/38861cba61c66739c1452c3a71e39852\\.ttf",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/6799-65836d13bb581f665237\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "playercdn"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "08b76361afdf7de3776a974906dcd80f72527470e091e3cb59ddd58c15b1f885"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "1tv.ru",
-                "www.1tv.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/news\\/photopreviewsmall\\/2022\\/03\\/17\\/tass_51338009_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "b9ff16bc037ce31afa05c55447117b139599e660248a0aed9d03c7130bf5fbae"
+                "1b4331e135c31603fff3d686c89dd46ac98b682afd4e7dc9c86c6f170e933484"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/news\\/photopreviewsmall\\/2022\\/03\\/17\\/tass_51296457\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/XGcz5WL06DZ86fLvMjQ2C\\/_buildManifest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "304ea48fff1c05f9dad5e7843362afcfa71d58f6bc5d42278a48356c7bf9e052"
+                "f91b1fb5e81cc723be44122891ba43ec5dd71eb7e2c81065dd85c9e5d8891ee0"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/novoprudskiy1_2\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/XGcz5WL06DZ86fLvMjQ2C\\/_ssgManifest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "7416564093a1a81179ca3e44460c420ffaed1974c036fa478e7485738e4de0d4"
+                "6f5b4aa00d2f8d6aed9935b471806bf7acef464d0c1d390260e5fe27f800c67e"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/mashagin_1\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/static_spa\\/assets\\/star\\.0\\.26fe6451\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "8a2f67910c2475802617daa2dbb19879f5d2fb6c53dc461c2482019afb91a910"
+                "a942f26a52f5767f3c597437ddcaa006751bc9c156dc2bb77f39a66767d280b8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/bovt\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/static_spa\\/assets\\/checkbox-mark-grey\\.0\\.da56eb60\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "4f64cbdcc106d6bf701c6cb6889c06b2ad9c439a1a9c72bb300ea94fb8ca7161"
+                "83052ebbf04dfded34a412c5d5133016ac9cd464b84fd6084de08e819a91a983"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/mkrtchian\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/6525\\.0\\.16409ea9bf971691eb77\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "3a317a999401ad6ccf4ad15f1c0d79033db6a53d5ae6772ea444655a0ca58753"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/urgens\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/3413\\.0\\.284e1b067f1cf1f6005a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "e8716f37513cf6ab6d9022de29e805f6bb3ef25c3e683d79e66075ad4ad54699"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/faces\\/80x80\\/mironov_6\\.jpg",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/7237\\.0\\.f52a023401acd9427282\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfm"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "cdn.bfm.ru",
-                    "resolved": "bfm.cdnvideo.ru"
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
                 }
             ],
             "responseHashes": [
-                "281c35b57731fcaf47ff93e1629eddfb6bd529a9d0d6f71024c66059fb786473"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bfm.ru",
-                "www.bfm.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/FAwX5YZ9Jo-5jJKvJ0sCPY09IUQ=\\/0x0:140x54\\/filters:quality\\(100\\)\\/https:\\/\\/hb\\.bizmrg\\.com\\/cybersportru-media\\/78\\/7855b3f28224fe91a71a7a80be937847\\.png",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/9278\\.0\\.90172b7b5e3162afd8a5\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "svirtus"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "ad95c6b313a39a97b762bd3e14d2ee4409f9aa4fd6cdc0e163d1b9b994579e2a"
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
             ],
-            "type": "Image",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cybersport.ru",
-                "www.cybersport.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/WBxQUBK1GrHqTbzfc9LaGKuT6Uk=\\/0x0:30x30\\/30x30\\/filters:quality\\(100\\)\\/https:\\/\\/hb\\.bizmrg\\.com\\/cybersportru-media\\/7a\\/7a3d80608713e779a95486cf887022ef\\.png",
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/128-b56e677968d65fb10573\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "svirtus"
+                "eldorado"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "d3b08cc1b66a082b0d644fa9affd85496ecf370311abd027b3bbf98eec661037"
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
             ],
-            "type": "Image",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cybersport.ru",
-                "www.cybersport.ru"
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/5450\\.0\\.9bfb28be8c6e58a7520b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/static_spa\\/assets\\/main_157_a5d41804_339_1229\\.0\\.71e4457e\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "c194067c7cf23b845911855b7c9a4727819264d30dec53d91d2256ede9507b7d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/css\\/32fdae18e4129d118830\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "a3f52d7dfac80b3ee1ee87853216d9024ae8d339af85ec1577bc6ca6e0f639f6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/espa\\/1\\.36\\.3-XGcz5WL06DZ86fLvMjQ2C\\/_next\\/static\\/chunks\\/7\\.0\\.3e50aee6a7ff4eef5bc6\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eldorado"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.eldorado.ru",
+                    "resolved": "eldorado.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "327c647259a56fac20605aa338c8c57ebd0a8981e2b1d2ffbb4824cda69779e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "www.eldorado.ru"
             ]
         },
         {
@@ -545,7 +1063,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -572,7 +1090,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -599,7 +1117,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -620,13 +1138,13 @@
         {
             "rule": "cdnvideo\\.ru\\/bundles\\/new_design\\/desktop-menu\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "monetnik"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -653,7 +1171,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -674,13 +1192,13 @@
         {
             "rule": "cdnvideo\\.ru\\/bundles\\/fosjsrouting\\/js\\/router\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "monetnik"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -707,7 +1225,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -715,7 +1233,7 @@
                 }
             ],
             "responseHashes": [
-                "6cc8539b9af4b1694bb61b67cf0889f9e5607cf1a27fc59c1402838b16e2f053"
+                "01ab674505c8c10a9014da109a19fa68a2198bb71b3f2a9d120ec9235d642726"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -734,7 +1252,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -742,7 +1260,7 @@
                 }
             ],
             "responseHashes": [
-                "409fed1d6c84312a97c99b006482b5bd74a19ec8cb6114341eaaf94644353769"
+                "276437b86746452c2a2db24a96440e0c3e568fad623d8060de24f57e0c5c6054"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -754,14 +1272,14 @@
         },
         {
             "rule": "cdnvideo\\.ru\\/bundles\\/new_design\\/app\\.js",
-            "cookies": 0.0000137,
+            "cookies": 0.00000681,
             "fingerprinting": 2,
             "subdomains": [
                 "monetnik"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -769,7 +1287,7 @@
                 }
             ],
             "responseHashes": [
-                "94f41b83d09061056c4573cf3d07d9f67d58096b230f9f253737b19bfaf71f58"
+                "0a4597362a168a8447f01630c0003fabdf38b18cef97f08e953d33097b889516"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -788,7 +1306,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -807,7 +1325,7 @@
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/storage\\/banners\\/vash-shans-vyigrat-971517\\.1200\\.webp",
+            "rule": "cdnvideo\\.ru\\/storage\\/banners\\/novinka-evro-v-podarok-517136\\.1200\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -815,7 +1333,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "cdn.monetnik.ru",
@@ -823,7 +1341,7 @@
                 }
             ],
             "responseHashes": [
-                "c14a7c546f1367960d979f4b3da1bbcae72835ca2dc4a0de2da134369929e798"
+                "a6bc7761a183398ff44a62d9f587823cc5c29a354b011a8b178b205ec188bdbb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -831,6 +1349,611 @@
             "exampleSites": [
                 "monetnik.ru",
                 "www.monetnik.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/webpack-minification\\/public\\/08feb2017-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5946ed49af2bb9d2de5b78799e99e2354bd824e512bbc260beb2fc5ec89c6b7f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/webpack-minification\\/public\\/second-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ec2e3833730f0cfc9003c6005d4d4512dcede45ae0a0096a443d41715307801"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/webpack-minification\\/public\\/s1300px-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "56865da12f9d27d07fc31c746da8da0bef2cb2478560169f3c849b3a880b8e8b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/thickbox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a8f27e0dd8572e1faf3e8a33a65a8efb24e493f54be7a384303b8e26962bf86"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/popups\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23d85cab97ae03b3c0cf25a0a64639881d66db47583b805b18bd255648a57a48"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/exp\\/facebook\\/facebook\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "923cc42b3daedd6757541e8923688b150896aaaa1717a8b495dd5b63a1e385a8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/webpack-minification\\/public\\/vps-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f00d378702e86906fc9c6e51883ec8e88442cfcc270cc5c3780ca11dbf252901"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/kvp\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b6fb6303247920ef6eb11be2bca6941ee95f2c4296b3817e6b3900570bfc6665"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/js\\/all\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.innerWidth": 1,
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e9e9e8e04f4a0f905230a0c35943eefc4346874bd4e20378818395fade5032dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/js\\/jquery\\.scrollTo\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed04b5707b07ef987720582b14ab1d8662871e95aa17cdac6fff6f34ba9caacd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/js\\/jquery\\.easing\\.1\\.3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a3d2fcbf7f555be0b9983d1453526049cfa01f951c5aecaf83348c970417ea34"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/js\\/scripts\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appVersion": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f80817c2e76f2dcc3aaee802ade19592817f4357814248b688cf58fc673ea2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "brandingPageNumber": {
+                    "ttl": -703672026,
+                    "length": 1,
+                    "prevalence": 0.000013613591810063168,
+                    "uniqueness": 0.5
+                },
+                "airLeft": {
+                    "ttl": -703672026,
+                    "length": 2,
+                    "prevalence": 0.000013613591810063168,
+                    "uniqueness": 0.5
+                },
+                "airTop": {
+                    "ttl": -703672026,
+                    "length": 3,
+                    "prevalence": 0.000013613591810063168,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/js\\/player5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41305d6e90a432677287af31ea88cf2dc42565e4218e00c5136adf2a1049c3aa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/img\\/gm1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8d09fdf203e6826e707a7f76d760740e92eb3d6cf4b141dbeb4fca583ae012f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/files\\/ntv\\/home\\/ntvmir\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3231414bda3e9da058cf875682e8a1db51f91b9d26ab7ea3feaf914063e91155"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/webpack-minification\\/public\\/s970px-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e914f3cbdeacd95a3240616e907562c0ebe613adbc2af3a896a1a8dc9d1b6882"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/webpack-minification\\/public\\/s400px-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b2b9ef85022f506fcd328c1c31f71babfc3be5f205ebaa113481c3383243179e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/css\\/print\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02c90fafd6dc8a7257489115e48308debf3fa07e31d67bbeb0dbf0795421868a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c7083f812a258a233027b659bd5fb865bbc2d651435bea8be3955810c59240d9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/allicons\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a3beaccafa4872298196bcc7b21b11cc1383d1d2b38e93fa70c67978349ee60a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/icons1\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "097ade6f61f89fc6aef507abaf02b937b2bcef471bfd4f5fa61b9e4b392af1ea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/social5\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aed2dd878031b41f301bb99d9dde8d3ca318216e431f12a04403700062730f75"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/RuTube36x36\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3e3c91501e33c98663830f479961d803da4d6632a7e112aa12e5b8c28deea571"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/ios_droid\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "918c7d62b2ea20ff452f9fa8f333fbeef59cf9dc1d5d829314a6b00d6fd8cd0e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/images\\/ico_efir\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "31b55e8100fc1c9420ae99e0aa51b1dc84ed59f49113b093e01b995a0f532e39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/home\\/schedule\\/2018\\/20180312\\/segodnya7-16-2018_avg\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "363d36d4eb4d07ca6f1c8124f843994e80e1bf370f78317c4a9666909e75e514"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
             ]
         },
         {
@@ -842,7 +1965,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -869,7 +1992,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -896,7 +2019,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -915,6 +2038,114 @@
             ]
         },
         {
+            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/sw642e53304fb1d9088dd78bc85c5caed1\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "olx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.olx.uz",
+                    "resolved": "olx.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "8cb9e6f093f36857710e95624c36ac47f161ca393533569d29b869e2fa1bc0b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.uz",
+                "www.olx.uz"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2f7d515ccf53e427f222999e9e6f453e1c\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.olx.uz",
+                    "resolved": "olx.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "8e082185e815f928544e30b7171c6833ce303c4784bdf8234d64f3fef67898fd"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.uz",
+                "www.olx.uz"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2f5da9077a4fd524bfa4a23e595fc41982\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.olx.uz",
+                    "resolved": "olx.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "5ce20a8eed306cb941d6638ba6c6bfb478ba03ab97caf3dc813e063bb790fb65"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.uz",
+                "www.olx.uz"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2fd779557aae0695e80a5b66aa0182c45e\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.olx.uz",
+                    "resolved": "olx.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [
+                "5547ecb0ba1038fe5d9f999080a8f19d760e265837dba0a1f86556b95a1af785"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.uz",
+                "www.olx.uz"
+            ]
+        },
+        {
             "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2fc9f37e6707acfc0e1255cec57c49a986\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -923,7 +2154,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -950,7 +2181,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -977,7 +2208,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -996,114 +2227,6 @@
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2f93d984f561637f78d1b86363c029781c\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "olx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "static.olx.uz",
-                    "resolved": "olx.cdnvideo.ru"
-                }
-            ],
-            "responseHashes": [
-                "6ec5f2171e1da10d223961d7a4f17b0204860a8e01aa8bae3ce4653556b0dfcd"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "olx.uz",
-                "www.olx.uz"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2f5da9077a4fd524bfa4a23e595fc41982\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "olx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "static.olx.uz",
-                    "resolved": "olx.cdnvideo.ru"
-                }
-            ],
-            "responseHashes": [
-                "5ce20a8eed306cb941d6638ba6c6bfb478ba03ab97caf3dc813e063bb790fb65"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "olx.uz",
-                "www.olx.uz"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2f7e8861b87ac5191c0249cd874b067d2c\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "olx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "static.olx.uz",
-                    "resolved": "olx.cdnvideo.ru"
-                }
-            ],
-            "responseHashes": [
-                "a8d0942e2040ec71d9d0187c40a6c8a0293e0651aa7a2d889032824917406f0d"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "olx.uz",
-                "www.olx.uz"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2f7d515ccf53e427f222999e9e6f453e1c\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "olx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [
-                {
-                    "original": "static.olx.uz",
-                    "resolved": "olx.cdnvideo.ru"
-                }
-            ],
-            "responseHashes": [
-                "8e082185e815f928544e30b7171c6833ce303c4784bdf8234d64f3fef67898fd"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "olx.uz",
-                "www.olx.uz"
-            ]
-        },
-        {
             "rule": "cdnvideo\\.ru\\/static\\/olxuz\\/packed\\/font\\/2ff83b34dfd44c0357b170f1021984795e\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1112,7 +2235,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "static.olx.uz",
@@ -1131,277 +2254,95 @@
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/svg\\/si-glyph-circle-error\\.svg",
+            "rule": "cdnvideo\\.ru\\/img\\/r20\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "raritetus"
+                "cdx19ssl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "d0543bbe54aa900586b83d52b3fe1c51dded93834cd851b5401d5bc6cc4af5f1"
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
+                "veja-store.com",
+                "www.veja-store.com",
+                "www.viafree.se",
+                "www.visitcalifornia.com"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/icon_w\\.png",
+            "rule": "cdnvideo\\.ru\\/img\\/r20-100KB\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "raritetus"
+                "cdx19ssl"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4fa8510088a299f7a9f088d84843c80bf542b5e178bed42cb48dd68e1661b61b"
+                "ec9e64c4d4546b45a25d683c76a9d7bbf956259eb4c1a6614ebaab3be7f146c2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
+                "veja-store.com",
+                "www.viafree.se"
             ]
         },
         {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/icon_vk\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "cdnvideo\\.ru\\/mh_files\\/002\\/420\\/imho\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "raritetus"
+                "www.small.vgtrk"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "f226226b2c216005fcacfde0e9d70fab922f14b0efc672b6408b5926181778b3"
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn-st1.rtr-vesti.ru",
+                    "resolved": "www.small.vgtrk.cdnvideo.ru"
+                }
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "df2fb75c0918771ce26995f512fde041dc190f7c9bc48d7b98d7aff19b47c3eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "af_lpdid": {
+                    "ttl": 31536002,
+                    "length": 10,
+                    "prevalence": 0.000013613591810063168,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/icon_viber\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "a03a31caeec051614c831da0299ced80d1cfbf1f4a012cf6fe8c0eeaeb573565"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/icon_telegram\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "57012217013d85c5104cfcca1f3b2246e8bfc5b4850570c6b989ad89612be547"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/loading\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "b5222614eebe64ddec8f0e7da52ab0222fb5d0ced88abb5c174a45dd6884e988"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/vk_55\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "1216267471c0852565b56217d4ea11f4f5adbe970e50e61c70a59a7d659c4784"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/fb_55\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "a16ce692cfcfaf57d5dbba9b3f7af43d65e6b37a2faf0c29e011fb6460eaaf02"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/close\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "bc3899013ef0c3fff4e00c05b4b80fcd587c79361da4e714075b566ffc266cc2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/icon_email\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "396eb03a1662aacfa26fc1484c5a149a232fad81ac79d695fad9e53eff159e5c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/icon_phone\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "daaa5153c9987c96d6e783fa541cf3ce1b8d5eaf1fe3dc25da9ea48ff4b7e870"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
-            ]
-        },
-        {
-            "rule": "cdnvideo\\.ru\\/bundles\\/raritetusapp\\/img\\/homepage\\/logo5\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raritetus"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
-            "cnames": [],
-            "responseHashes": [
-                "9951895427e615cb2828de9e03fa1c97bf167b2936d394abddc36c6345013c64"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raritetus.ru",
-                "www.raritetus.ru"
+                "vesti.ru",
+                "www.vesti.ru"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000478,
+    "cookies": 0.0000681,
     "types": {
-        "Image": 66,
-        "Script": 26,
-        "Font": 18
+        "Script": 59,
+        "Image": 68,
+        "Font": 16,
+        "Stylesheet": 26,
+        "Other": 12
     },
     "nameservers": [
         "ns006.cdnvideo.ru",

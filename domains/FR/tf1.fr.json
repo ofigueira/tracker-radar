@@ -10,10 +10,11 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "www"
+        "www",
+        "metrics-broker.prod.p"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "tf1\\.fr\\/graphql\\/web",
@@ -27,9 +28,31 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d6431ffbd26a33dff45e200b35493dd30a06d43f408ebe641386bb65d0fdfb85"
+                "caed6b6830885ab6b96e04a70a50f02b8a19a8ee85e1f69db4c816cd7a9bcf88"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laurentmariotte.com",
+                "www.laurentmariotte.com"
+            ]
+        },
+        {
+            "rule": "tf1\\.fr\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics-broker.prod.p"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -42,7 +65,8 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns1.coltfrance.com",

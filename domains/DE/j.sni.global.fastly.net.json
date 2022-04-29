@@ -18,10 +18,43 @@
         {
             "original": "api.hackster.io",
             "resolved": "dualstack.j.sni.global.fastly.net"
+        },
+        {
+            "original": "litium.revolutionrace.de",
+            "resolved": ".j.sni.global.fastly.net"
+        },
+        {
+            "original": "schedule-tool.foxnews.com",
+            "resolved": ".j.sni.global.fastly.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/schedule\\/feed\\/fox-news\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "schedule-tool.foxnews.com",
+                    "resolved": ".j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b567b1f516f5bbbf80a6a90b9285be0f4d8d3c6b57dadeb0e5f95fdae4a78472"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxnews.com"
+            ]
+        },
         {
             "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql\\/query",
             "cookies": 0,
@@ -39,7 +72,7 @@
                 }
             ],
             "responseHashes": [
-                "bdab66de7055008b3d9863d32adfb78486ac856995d27fa4fbc5100618a77d04"
+                "44129bb9cf251a5866d243cdf28eae83a0d7799ff6ae3cb483c752884e6abbd3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -47,6 +80,54 @@
             "exampleSites": [
                 "hackster.io",
                 "www.hackster.io"
+            ]
+        },
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "litium.revolutionrace.de",
+                    "resolved": ".j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revolutionrace.de",
+                "www.revolutionrace.de"
+            ]
+        },
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "litium.revolutionrace.de",
+                    "resolved": ".j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "6035fe164296d64e5e97daaafae197795001083c4e8a595500b38f4f8acaad44"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revolutionrace.de",
+                "www.revolutionrace.de"
             ]
         }
     ],
@@ -63,7 +144,10 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

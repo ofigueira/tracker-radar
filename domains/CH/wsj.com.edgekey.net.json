@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "video-api"
+        "video-api",
+        "san"
     ],
     "cnames": [
+        {
+            "original": "api-secure.wsj.net",
+            "resolved": "san.wsj.com.edgekey.net"
+        },
         {
             "original": "video-api.wsj.com",
             "resolved": "video-api.wsj.com.edgekey.net"
@@ -22,6 +27,33 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/player\\/v3\\/js\\/vendors~hls\\.9ed3bf57b730b7a439bf\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "video-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "video-api.wsj.com",
+                    "resolved": "video-api.wsj.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d34f5f2bbc428e272032496a49fc97b95300dbfeef49c22f943d106299b07623"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barrons.com",
+                "www.wsj.com"
+            ]
+        },
         {
             "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/audio\\/css\\/audioplayer\\.min\\.css",
             "cookies": 0,
@@ -39,7 +71,7 @@
                 }
             ],
             "responseHashes": [
-                "18e53795f94b71c7bf85c4109b29fac0afcacf7d6a1fd1aed2da28da9b7df3d2"
+                "f74f2e5524d1c938da5f37a45cc774150ccaa6df59be21e201b270526bceff17"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -66,29 +98,81 @@
                 }
             ],
             "responseHashes": [
-                "9cfb3a0e89b87ba9a6ce32ac8c2bd553031a724120dc935599150771c0bc51bb"
+                "5d5219b2614df88d417c9e3bb058f82bfedd5a23ced01c6d98af4304c032f03e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "djvideovol": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.00010032102728731942,
+                    "prevalence": 0.00010054293183189222,
                     "uniqueness": 1
                 },
                 "AMCV_CB68E4BA55144CAA0A4C98A5%40AdobeOrg": {
-                    "ttl": 63072007,
+                    "ttl": 63158408,
                     "length": 259,
-                    "prevalence": 0.00010032102728731942,
+                    "prevalence": 0.00010054293183189222,
                     "uniqueness": 1
                 },
                 "AMCVS_CB68E4BA55144CAA0A4C98A5%40AdobeOrg": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.00010032102728731942,
+                    "prevalence": 0.00010054293183189222,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api\\/michelangelo\\/timeseries\\/history",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api-secure.wsj.net",
+                    "resolved": "san.wsj.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api\\/michelangelo\\/timeseries\\/history",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api-secure.wsj.net",
+                    "resolved": "san.wsj.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d57a32aedace3aa38120595dc6ce8b3ab25cd0a066b74d6f8e577ce167eac001"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "marketwatch.com",
@@ -100,8 +184,10 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
+        "Script": 4,
         "Stylesheet": 2,
-        "Script": 2
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

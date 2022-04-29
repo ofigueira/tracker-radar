@@ -8,7 +8,9 @@
     "sites": 1,
     "subdomains": [
         "livechat",
-        "ocw"
+        "ocw",
+        "pushpromjs",
+        "messaging"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,13 +27,16 @@
                 "Navigator.prototype.userAgent": 1,
                 "PerformanceTiming.prototype.navigationStart": 1,
                 "window.localStorage": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "window.innerHeight": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e9ba1091900916a3436e5d7599cbcb070f50a094b95ea14ddb86f53dda9e91fb"
+                "dfb010540668d9719ef03e0fcdc891e51e9011acccb9b59f10155fa74ca99ce6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -42,18 +47,66 @@
             ]
         },
         {
-            "rule": "messagebird\\.com\\/index\\.html",
-            "cookies": 0,
+            "rule": "messagebird\\.com\\/measure",
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
-                "livechat",
-                "ocw"
+                "pushpromjs"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scribbr.com",
+                "www.scribbr.com"
+            ]
+        },
+        {
+            "rule": "messagebird\\.com\\/livechat\\/widget\\/f1969c26-6920-470c-b7be-d37a782c2acc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "messaging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "08b5ba79d4fd049fa0af935efb2b152bbb8705a19deab61d96f0be9fac66a58f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scribbr.com",
+                "www.scribbr.com"
+            ]
+        },
+        {
+            "rule": "messagebird\\.com\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "livechat",
+                "ocw"
+            ],
+            "apis": {
+                "window.indexedDB": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a3d8410eb3c8354b6d79dee0983c1fdb7b7d7d804a42d2eb03328443c99570f4"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -68,12 +121,14 @@
     "cookies": 0.0001,
     "types": {
         "Script": 2,
+        "Ping": 2,
+        "Fetch": 2,
         "Document": 2
     },
     "nameservers": [
-        "ns-24.awsdns-03.com",
-        "ns-752.awsdns-30.net",
         "ns-1310.awsdns-35.org",
-        "ns-2001.awsdns-58.co.uk"
+        "ns-2001.awsdns-58.co.uk",
+        "ns-24.awsdns-03.com",
+        "ns-752.awsdns-30.net"
     ]
 }

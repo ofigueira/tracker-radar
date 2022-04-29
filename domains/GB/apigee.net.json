@@ -9,14 +9,20 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.0014,
+    "sites": 14,
     "subdomains": [
+        "accor-group-prod-prod",
         "ee-prod-prod-02",
+        "adsk-prod",
         "ee-prod-prod",
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.accor.com",
+            "resolved": "accor-group-prod-prod.apigee.net"
+        },
         {
             "original": "api.ee.co.uk",
             "resolved": "ee-prod-prod-02.apigee.net"
@@ -24,10 +30,39 @@
         {
             "original": "api.external.plus.net",
             "resolved": "ee-prod-prod.apigee.net"
+        },
+        {
+            "original": "developer.api.autodesk.com",
+            "resolved": "adsk-prod.apigee.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/authentication\\/v2\\.0\\/authorization",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "ibis.accor.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/v1\\/identity\\/authorize",
             "cookies": 0.000201,
@@ -52,6 +87,32 @@
                 "ee.co.uk",
                 "id.ee.co.uk",
                 "myaccount.ee.co.uk"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adsk-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "developer.api.autodesk.com",
+                    "resolved": "adsk-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autodesk.com",
+                "knowledge.autodesk.com",
+                "www.autodesk.com"
             ]
         },
         {
@@ -96,7 +157,7 @@
                 }
             ],
             "responseHashes": [
-                "e266a52f6a4c7560e1d9fb44c7ed5585e855876e1b4afcc1072f75d26c84aa4b"
+                "10b57ceddf186e8d721200fa92d46dff19a31848b55ece4dbf40a0531a185068"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -118,7 +179,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a680f89f3a1ac9bfb4fafdfc8f2ce197cea64dacb9225424b685261f51ec4852"
+                "5699c92547ce2f31ca25ae60bccbaa02638e5b6eb82cb895e0a308db8ffe9e4e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -140,7 +201,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "448557112adfb7e63f0bcf0315491b882741d822ad201172c2a6f9b55231927c"
+                "136eb9c7f0ebde12045e8683e41a83062898149db5cfb9e652e4e75b94c695b4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -155,9 +216,9 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000702,
     "types": {
-        "Document": 3,
+        "Document": 8,
         "Preflight": 2,
         "XHR": 6
     },

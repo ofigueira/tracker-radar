@@ -11,7 +11,6 @@
     "sites": 20,
     "subdomains": [
         "platform.cloud",
-        "usageanalytics",
         "static.cloud",
         "analytics-au.cloud",
         "platform-au.cloud"
@@ -27,8 +26,8 @@
                 "platform.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -36,7 +35,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "xero.com",
-                "kb.vmware.com"
+                "central.xero.com",
+                "kb.vmware.com",
+                "www.cloudflare.com"
             ]
         },
         {
@@ -51,49 +52,29 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "de71a5ee2ccca5847967117a58f85a8057ee777de766b07e9e356ce6447a508c"
+                "854b66bee1f1c44463bb32500b5c19b4abc3392db83f05125776e6d1e3ae867e"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "xero.com",
-                "kb.vmware.com"
+                "www.cloudflare.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
+            "rule": "coveo\\.com\\/rest\\/search\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "usageanalytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xero.com",
-                "kb.vmware.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "usageanalytics"
+                "platform.cloud"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "74d1d4d27c4ccb1ab8d1d81e28c52ffd00314a94918a6b9cf0366b630c302530"
+                "d04ab30fd039ac591f76cf64c2569b7acce0af11069630c96f7bba2bc338d006"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -126,48 +107,6 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/search\\/v2\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paloaltonetworks.com",
-                "knowledgebase.paloaltonetworks.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/search\\/v2\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paloaltonetworks.com",
-                "knowledgebase.paloaltonetworks.com"
-            ]
-        },
-        {
             "rule": "coveo\\.com\\/coveo\\.analytics\\.js\\/2\\/coveoua\\.js",
             "cookies": 0.000201,
             "fingerprinting": 2,
@@ -197,7 +136,7 @@
                 "coveo_visitorId": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.00020052135552436334,
+                    "prevalence": 0.0002008233758409479,
                     "uniqueness": 1
                 }
             },
@@ -221,7 +160,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4da341505a3a64e7a7c5b6a25a795e7865c08464f2312775d432d835c93a5c00"
+                "9e102f816183a71043a09636bd24c89a500f9f45fd363e12f98982fe3e5b61ab"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -251,16 +190,68 @@
                 "blackwoods.com.au",
                 "www.bunnings.co.nz"
             ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/css\\/CoveoFullSearch\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ddbeadcd840e8e058da587074b6b2e6dc323c8b159fe60d92108488aab9d6ff1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ird.govt.nz",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.maxTouchPoints": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b558b6f9009af1fb5ed34c70a683687d588943c198953c76f18fffde37d97877"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ird.govt.nz",
+                "www.mskcc.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0012,
+    "cookies": 0.000904,
     "types": {
-        "Preflight": 8,
-        "XHR": 6,
-        "Script": 5,
-        "Fetch": 2
+        "Preflight": 6,
+        "Fetch": 4,
+        "XHR": 2,
+        "Script": 7,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-1245.awsdns-27.org",

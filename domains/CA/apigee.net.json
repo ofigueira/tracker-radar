@@ -9,15 +9,21 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "cisco-dsc-prod",
+        "adsk-prod",
+        "costco-prd",
         "dswinc-prod",
         "ecollege-prod",
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.costco.com",
+            "resolved": "costco-prd.apigee.net"
+        },
         {
             "original": "api.dsw.ca",
             "resolved": "dswinc-prod.apigee.net"
@@ -25,6 +31,14 @@
         {
             "original": "api.dsw.com",
             "resolved": "dswinc-prod.apigee.net"
+        },
+        {
+            "original": "api.theshoecompany.ca",
+            "resolved": "dswinc-prod.apigee.net"
+        },
+        {
+            "original": "developer.api.autodesk.com",
+            "resolved": "adsk-prod.apigee.net"
         },
         {
             "original": "dsc.cisco.com",
@@ -54,7 +68,7 @@
                 }
             ],
             "responseHashes": [
-                "9a3a7bb7a55a02a499fda0e0c19cefc77c63fd63abd539d004337cac0cf0f26b"
+                "73ad500ad37257ccb2a48e66c82e267f101064827edd053f77113b1612544c8f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -65,23 +79,72 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/content\\/api\\/v1\\/page",
-            "cookies": 0,
+            "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "dswinc-prod"
+                "adsk-prod"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.000301,
             "cnames": [
                 {
-                    "original": "api.dsw.ca",
-                    "resolved": "dswinc-prod.apigee.net"
-                },
+                    "original": "developer.api.autodesk.com",
+                    "resolved": "adsk-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autodesk.com",
+                "knowledge.autodesk.com",
+                "www.autodesk.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/ebusiness\\/inventory\\/v1\\/location\\/distributioncenters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
                 {
-                    "original": "api.dsw.com",
-                    "resolved": "dswinc-prod.apigee.net"
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "bdb63dbc6987ca24a9188fdc404b56ed93ea44b19a2deb6f045f2c2c2e8de286"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.ca"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/ebusiness\\/inventory\\/v1\\/location\\/distributioncenters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
                 }
             ],
             "responseHashes": [],
@@ -89,9 +152,35 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dsw.ca",
-                "www.dsw.ca",
-                "www.dsw.com"
+                "costco.com",
+                "www.costco.ca"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/warehouseLocatorMobile\\/v1\\/warehouses\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "af7808a3d60544e757f80c6d8180b2ddd5c3474700608c108563e01cf125fb39"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.ca"
             ]
         },
         {
@@ -102,8 +191,8 @@
                 "dswinc-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "api.dsw.ca",
@@ -112,11 +201,50 @@
                 {
                     "original": "api.dsw.com",
                     "resolved": "dswinc-prod.apigee.net"
+                },
+                {
+                    "original": "api.theshoecompany.ca",
+                    "resolved": "dswinc-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dsw.ca",
+                "www.dsw.ca",
+                "www.dsw.com",
+                "www.theshoecompany.ca"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/content\\/api\\/v1\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dswinc-prod"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "api.dsw.ca",
+                    "resolved": "dswinc-prod.apigee.net"
+                },
+                {
+                    "original": "api.dsw.com",
+                    "resolved": "dswinc-prod.apigee.net"
+                },
+                {
+                    "original": "api.theshoecompany.ca",
+                    "resolved": "dswinc-prod.apigee.net"
                 }
             ],
             "responseHashes": [
-                "5c96708b61416a4e7fd04ebfdf8b7370c44e318549a64e3674595e927d50d378",
-                "393fdc125a75f9d48bdf900deb47237d7418b5fbe9afc87575ec43957b151920"
+                "a0231c63478d7e4a6c7fb66c79ff672b2545b5e9562966a02b32ce8f42c7e8bd",
+                "f651cc23fe1df7689a315e7e5025276ce65d3bf25bae3f43cb94828685ec0efd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,7 +252,8 @@
             "exampleSites": [
                 "dsw.ca",
                 "www.dsw.ca",
-                "www.dsw.com"
+                "www.dsw.com",
+                "www.theshoecompany.ca"
             ]
         },
         {
@@ -144,7 +273,7 @@
                 }
             ],
             "responseHashes": [
-                "a45ff057b264c507ddf8a2713fe6ef9e18c1ca0551a5aa010e883dbb36a2b223"
+                "34b647afbbde00dbb7a32b626104bde9976dfaf7797ee4c2c94a14baa2857060"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -166,7 +295,29 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "311b4db250fbbdf9360b1af59552241ccf1bcaa63ea605556ef043c11f0a2a9a"
+                "e4c5960331f3bea6dd4e24ad669113dbd52d880679c483e74eca5e43131f2ef8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvguide.com",
+                "www.tvguide.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/xapi\\/tvschedules\\/tvguide\\/tonight\\/9100001138\\/new\\/web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmg-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "136eb9c7f0ebde12045e8683e41a83062898149db5cfb9e652e4e75b94c695b4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -181,11 +332,12 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
         "Script": 4,
-        "Preflight": 3,
-        "XHR": 5
+        "Document": 3,
+        "XHR": 12,
+        "Preflight": 6
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

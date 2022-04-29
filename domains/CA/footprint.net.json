@@ -7,12 +7,18 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0015,
-    "sites": 15,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "vop-yahoo.secure"
+        "vop-yahoo.secure",
+        "cdn-l3.ts.mtvnservices.com.c"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "cdn-l3.ts.mtvnservices.com",
+            "resolved": "cdn-l3.ts.mtvnservices.com.c.footprint.net"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -23,8 +29,8 @@
                 "vop-yahoo.secure"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0011,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -34,16 +40,37 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "yahoo.com",
-                "ca.rogers.yahoo.com",
-                "ca.news.yahoo.com",
-                "ca.sports.yahoo.com",
                 "ca.yahoo.com",
-                "currently.att.yahoo.com",
-                "finance.yahoo.com",
                 "us.yahoo.com",
                 "www.aol.com",
-                "www.intheknow.com",
                 "www.yahoo.com"
+            ]
+        },
+        {
+            "rule": "footprint\\.net\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-l3.ts.mtvnservices.com.c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "cdn-l3.ts.mtvnservices.com",
+                    "resolved": "cdn-l3.ts.mtvnservices.com.c.footprint.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popculture.com",
+                "www.mtv.com"
             ]
         }
     ],
@@ -51,13 +78,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 11
+        "Image": 5,
+        "Fetch": 2
     },
     "nameservers": [
+        "ns102.footprint.net",
+        "ns105.footprint.net",
         "ns103.footprint.net",
         "ns100.footprint.net",
-        "ns101.footprint.net",
-        "ns102.footprint.net",
-        "ns105.footprint.net"
+        "ns101.footprint.net"
     ]
 }

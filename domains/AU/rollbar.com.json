@@ -7,14 +7,40 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0015,
+    "prevalence": 0.00151,
     "sites": 15,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.19\\.2\\/rollbar\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "console.memory": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c77308873c903ec4d6a3163d5e90c0dc18d26cbe1a16b2f43674ca82b6c250c1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "careerfoundry.com",
+                "www.husqvarna.com"
+            ]
+        },
         {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.21\\.1\\/rollbar\\.min\\.js",
             "cookies": 0,
@@ -36,7 +62,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "koinly.io",
+                "mixkit.co",
                 "variety.com",
                 "www.rollingstone.com"
             ]
@@ -49,11 +75,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 3,
-                "Date.prototype.getTime": 3
+                "console.memory": 2,
+                "Date.prototype.getTime": 2
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "5aded642b1abb82543fe9109e8941ecf20187725e620f653e5a4493f98bfd682"
@@ -63,7 +89,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "quizlet.com",
-                "www.melbournefoodandwine.com.au",
                 "www.summitracing.com"
             ]
         },
@@ -92,13 +117,57 @@
                 "www.oneflare.com.au",
                 "www.sitejabber.com"
             ]
+        },
+        {
+            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "umart.com.au",
+                "www.vistaprint.com.au"
+            ]
+        },
+        {
+            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7f21cd1b6da176a3c4328a07bcd6c106a181c563ef5faf21358254bbd3d56f00"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "umart.com.au",
+                "www.vistaprint.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 9
+        "Script": 10,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-112.awsdns-14.com",

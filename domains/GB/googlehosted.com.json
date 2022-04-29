@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000903,
-    "sites": 9,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "ghs"
     ],
@@ -23,6 +23,14 @@
             "resolved": "ghs.googlehosted.com"
         },
         {
+            "original": "ssm.datalounge.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
+            "original": "t.swatch.com",
+            "resolved": "ghs.googlehosted.com"
+        },
+        {
             "original": "ups.data.cbc.ca",
             "resolved": "ghs.googlehosted.com"
         },
@@ -37,6 +45,31 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "purr.nytimes.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
         {
             "rule": "googlehosted\\.com\\/track",
             "cookies": 0.000301,
@@ -66,28 +99,42 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v1\\/purr-cache",
-            "cookies": 0.000201,
+            "rule": "googlehosted\\.com\\/g\\/collect",
+            "cookies": 0.000401,
             "fingerprinting": 0,
             "subdomains": [
                 "ghs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
-                    "original": "purr.nytimes.com",
+                    "original": "t.swatch.com",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "gtm.aeg.co.uk",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "ssm.datalounge.com",
                     "resolved": "ghs.googlehosted.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.0005014542172299669
+            },
             "exampleSites": [
-                "nytimes.com",
-                "www.nytimes.com"
+                "swatch.com",
+                "www.aeg.co.uk",
+                "www.datalounge.com",
+                "www.swatch.com"
             ]
         },
         {
@@ -116,8 +163,8 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.00020064205457463884,
-                "_ga": 0.0004012841091492777
+                "dy_fs_page": 0.00020058168689198675,
+                "_ga": 0.0004011633737839735
             },
             "exampleSites": [
                 "accessorize.com",
@@ -141,7 +188,7 @@
                 }
             ],
             "responseHashes": [
-                "3978af86a43ba4468af8130abc08264ab4ce75c916f5463e99577614d26aa998"
+                "cc9f4b82de22e1de7bcf41685ce6344048b8354f7150b029d4aa6e5b0c943e1d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -149,6 +196,37 @@
             "exampleSites": [
                 "aeg.co.uk",
                 "www.aeg.co.uk"
+            ]
+        },
+        {
+            "rule": "googlehosted\\.com\\/gtag\\/js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ghs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "gtm.aeg.co.uk",
+                    "resolved": "ghs.googlehosted.com"
+                },
+                {
+                    "original": "ssm.datalounge.com",
+                    "resolved": "ghs.googlehosted.com"
+                }
+            ],
+            "responseHashes": [
+                "ca2ede761e1e0b42c243b7e789db2a327103f640d0da8ddadfb100d66977a3a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeg.co.uk",
+                "www.datalounge.com"
             ]
         },
         {
@@ -179,7 +257,7 @@
             ]
         },
         {
-            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/98cfb82e-5abc-432f-8ad7-783c33e6956c\\/UPSPreferences\\/fdfc9e",
+            "rule": "googlehosted\\.com\\/v0\\/UIEUser\\/af18cded-6e33-43ab-aa1f-5e4e2d62cb5c\\/UPSPreferences\\/fdfc9e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -208,12 +286,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000702,
     "types": {
-        "Ping": 7,
         "Fetch": 2,
-        "Script": 2,
-        "XHR": 2
+        "Ping": 7,
+        "XHR": 6,
+        "Script": 4
     },
     "nameservers": []
 }

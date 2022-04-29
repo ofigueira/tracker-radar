@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "e"
+        "e",
+        "sentry",
+        "pingback"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,29 +22,77 @@
                 "e"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "6764ab90e94ef266d1fec4ab8c67b2c7e8e2d772c2f95e3a1b9daa56bc28d6f4"
+                "0c476246060bf4f056269493f6006780e3a777db39541857db7810970f41f6c3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "landi.ch",
+                "bpg.ch",
+                "www.bpg.ch",
                 "www.lenzburg.ch"
+            ]
+        },
+        {
+            "rule": "issuu\\.com\\/api\\/150\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bpg.ch",
+                "www.lenzburg.ch",
+                "www.metrotimes.com"
+            ]
+        },
+        {
+            "rule": "issuu\\.com\\/ping",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pingback"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "metrotimes.com",
+                "www.metrotimes.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Fetch": 3,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1343.awsdns-39.org",
