@@ -4,17 +4,39 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000034,
+    "prevalence": 0.0000341,
     "sites": 5,
     "subdomains": [
+        "econsole",
         "ecomapi",
         "listener",
-        "econsole",
         "widgetapi"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "cartup\\.ai\\/SpotdyService",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "econsole"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6a300f87306d17276dee1c6404662219c5ac938fd5d80b570c1d3909f0669982"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hunkemoller.de",
+                "www.intertoys.nl"
+            ]
+        },
         {
             "rule": "cartup\\.ai\\/v1\\/config",
             "cookies": 0,
@@ -23,8 +45,8 @@
                 "ecomapi"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "18567b059f622c4c48ba911a7abec45a82f27106ca6f19b8b84cfad2ce186874",
@@ -34,9 +56,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hunkemoller.nl",
+                "hunkemoller.de",
                 "www.hunkemoller.nl",
-                "www.hunkemoller.co.uk",
+                "www.intertoys.nl"
+            ]
+        },
+        {
+            "rule": "cartup\\.ai\\/v1\\/theme\\/result",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecomapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e81c324b6de1b0e019ef2a6282055d15440b2b039919546e002ff2f236af53b8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hunkemoller.de",
                 "www.intertoys.nl"
             ]
         },
@@ -49,27 +92,33 @@
             ],
             "apis": {
                 "window.sessionStorage": 2,
-                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "083845814a72219d368ed07960739aee36c0ea218ddd743c9bf83fefe7d259af"
+                "5765d1ae31d4bd1919d99a0502d2881e11450d6a0613d55295c7ccd4cfd2962f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "spotDy_uid": {
                     "ttl": 15552008,
                     "length": 36,
-                    "prevalence": 0.000013613591810063168,
+                    "prevalence": 0.000013639401503062045,
+                    "uniqueness": 1
+                },
+                "sessionId": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013639401503062045,
                     "uniqueness": 1
                 }
             },
@@ -104,50 +153,6 @@
             ]
         },
         {
-            "rule": "cartup\\.ai\\/SpotdyService",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "econsole"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b5577b9790680375650805dbd2673780063af8e1a92f79e99dba5a1a4fdaa5df"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "intertoys.nl",
-                "www.intertoys.nl"
-            ]
-        },
-        {
-            "rule": "cartup\\.ai\\/v1\\/theme\\/result",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ecomapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "345f201000a2c3e3d6b1e7e757ff2917036686200c563bf8ee2275063d3e6d36"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "intertoys.nl",
-                "www.intertoys.nl"
-            ]
-        },
-        {
             "rule": "cartup\\.ai\\/v1\\/widgetserver\\/custom",
             "cookies": 0,
             "fingerprinting": 0,
@@ -159,11 +164,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d3d36064a52cb0bf33a5d78c0390913264473a5ee0058caed763dc292147440e"
+                "e7972fb5a8e881fe64785a17cfeb2904e555e2345b754291d9da9ee3b6cb40b0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "spotDy_uid": 0.000013639401503062045,
+                "sessionId": 0.000013639401503062045
+            },
             "exampleSites": [
                 "intertoys.nl",
                 "www.intertoys.nl"
@@ -174,7 +182,7 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "XHR": 10,
+        "XHR": 9,
         "Script": 4
     },
     "nameservers": [

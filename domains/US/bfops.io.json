@@ -4,17 +4,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
         "web-vitals",
         "cdn.bf-whatsnext-production.aws",
-        "pie-cdn.bf-sugarless-production.aws",
-        "chef-widget.bf-whatsnext-production.aws"
+        "chef-widget.bf-whatsnext-production.aws",
+        "pie-cdn.bf-sugarless-production.aws"
     ],
     "cnames": [
         {
             "original": "cdn.whatsnext.chip.de",
+            "resolved": "cdn.bf-whatsnext-production.aws.bfops.io"
+        },
+        {
+            "original": "cdn.whatsnext.focus.de",
             "resolved": "cdn.bf-whatsnext-production.aws.bfops.io"
         }
     ],
@@ -29,7 +33,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000034,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "868f106f5dbea64391e33223d85a21a5436ecea457eb13761fc0e48aed5465cd"
@@ -59,7 +63,7 @@
                 "Navigator.prototype.hardwareConcurrency": 5
             },
             "sites": 5,
-            "prevalence": 0.000034,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "f7781eeff51ea77c070fe1df6186d52b95935fe4b180cb322e13cc1043c032a1"
@@ -73,6 +77,107 @@
                 "www.bunte.de",
                 "www.fitforfun.de",
                 "www.focus.de"
+            ]
+        },
+        {
+            "rule": "bfops\\.io\\/static\\/widget\\/focus\\/wnloader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.bf-whatsnext-production.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.whatsnext.focus.de",
+                    "resolved": "cdn.bf-whatsnext-production.aws.bfops.io"
+                }
+            ],
+            "responseHashes": [
+                "174cc6128d8c47cd9778e24d81a7fe1b8c2d0eba0e0263e3f3cd5891256aef40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "www.focus.de"
+            ]
+        },
+        {
+            "rule": "bfops\\.io\\/api\\/v1\\/telemetry\\/error\\/widget_error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chef-widget.bf-whatsnext-production.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "praxistipps.chip.de",
+                "www.bunte.de",
+                "www.chip.de",
+                "www.focus.de",
+                "www.netmoms.de"
+            ]
+        },
+        {
+            "rule": "bfops\\.io\\/api\\/v1\\/telemetry\\/error\\/widget_error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chef-widget.bf-whatsnext-production.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "praxistipps.chip.de",
+                "www.bunte.de",
+                "www.chip.de",
+                "www.focus.de",
+                "www.netmoms.de"
+            ]
+        },
+        {
+            "rule": "bfops\\.io\\/client\\/integration\\/v1\\.0\\.0\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pie-cdn.bf-sugarless-production.aws"
+            ],
+            "apis": {
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d269ee48e6467a2387380550ce0d869135032ccdf21e3c7096e29575e02574b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "praxistipps.chip.de"
             ]
         },
         {
@@ -92,7 +197,7 @@
                 }
             ],
             "responseHashes": [
-                "2446f11e6277912d216fe593fc1556c8a9fba83ee04523025c9fc0e1abccf32e"
+                "aa6f938813e165389930d0079710ca9a1cefe1e99a1636a27a731d61abcf92a0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -103,71 +208,52 @@
             ]
         },
         {
-            "rule": "bfops\\.io\\/client\\/integration\\/v1\\.0\\.0\\/index\\.js",
+            "rule": "bfops\\.io\\/bfops-analytics\\/dist\\/analytics\\.umd\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
-                "pie-cdn.bf-sugarless-production.aws"
+                "web-vitals"
             ],
             "apis": {
-                "window.innerWidth": 1
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5c62a113f55e5e9e33b3cde56628001244aaa586df525d387d5de36ddad28e26"
+                "087a5f0956bc8a4fb7a5b54d51beafb62708adb0fec6c0ff5f2b375ff3b1396e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chip.de",
-                "praxistipps.focus.de"
+                "bunte.de",
+                "ratgeber.bunte.de"
             ]
         },
         {
-            "rule": "bfops\\.io\\/api\\/v1\\/telemetry\\/error\\/widget_error",
+            "rule": "bfops\\.io\\/static\\/widget\\/netmoms\\/wnloader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "chef-widget.bf-whatsnext-production.aws"
+                "cdn.bf-whatsnext-production.aws"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "292010e2d7ea5110aed3cde1522d0f282dd4ec87ade05bd15d4e3e8dbd50107d"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chip.de",
-                "www.bunte.de",
-                "www.chip.de"
-            ]
-        },
-        {
-            "rule": "bfops\\.io\\/api\\/v1\\/telemetry\\/error\\/widget_error",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "chef-widget.bf-whatsnext-production.aws"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chip.de",
-                "www.bunte.de",
-                "www.chip.de"
+                "netmoms.de",
+                "www.netmoms.de"
             ]
         }
     ],
@@ -175,16 +261,16 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 14,
-        "XHR": 3,
-        "Preflight": 3
+        "Script": 20,
+        "XHR": 6,
+        "Preflight": 6
     },
     "nameservers": [
-        "a5-66.akam.net",
         "a28-65.akam.net",
-        "a1-118.akam.net",
         "a16-67.akam.net",
+        "a1-118.akam.net",
         "a2-64.akam.net",
-        "a7-67.akam.net"
+        "a7-67.akam.net",
+        "a5-66.akam.net"
     ]
 }

@@ -9,14 +9,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0013,
-    "sites": 13,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "pdw-usr",
-        "sak",
-        "audex",
         "nugmw",
+        "sak",
         "tag",
+        "visitanalytics",
         "cdw-dcl",
         "pdw-adf"
     ],
@@ -24,28 +23,29 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "userreport\\.com\\/api\\/v2\\/partner\\/osds\\/uid",
-            "cookies": 0,
+            "rule": "userreport\\.com\\/rc-ap\\/0\\/si\\.nuggad\\.net\\/nuggad",
+            "cookies": 0.000401,
             "fingerprinting": 0,
             "subdomains": [
-                "pdw-usr"
+                "nugmw"
             ],
             "apis": {},
             "sites": 4,
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "ff89884d27c69c73d7b5093f9c562ed726cc80052ddd3061bd2f419315812b0d",
-                "c4d843d41eea04458b1e7ec57dd71702dd2d415a01c987dcaacbaf47c5aa3c4f"
+                "928af75f32807bbcf0b28354b163471aa57f68462b7f47e2c03a276fc9dfeae4",
+                "09a43d86c428902d19ea0e9e52df399f3a1b8819b0909dabc8d053d3a3dd4b3f",
+                "67dce55d5b25b5b2913caa04f7fe86d9360bfcb0cd5d47aad6b14496ca46a2cc"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "einfachtierisch.de",
-                "intouch.wunderweib.de",
-                "www.mz-web.de",
-                "www.mz.de"
+                "danisch.de",
+                "www.computerhilfen.de",
+                "www.danisch.de",
+                "www.mmnews.de"
             ]
         },
         {
@@ -56,90 +56,41 @@
                 "sak"
             ],
             "apis": {
-                "window.localStorage": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Document.cookie getter": 5,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 1
             },
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "ea89be957f76716fae07c6a85a07fb948ea5b78815e21fe7cc45ee65f09294a7"
+                "56fd52144cef5d51a8b6c1a5deb628a9842f3964d4c3e12739a59319a9d690af"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "einfachtierisch.de",
-                "intouch.wunderweib.de",
-                "www.mmnews.de",
-                "www.mz-web.de",
-                "www.mz.de"
-            ]
-        },
-        {
-            "rule": "userreport\\.com\\/sync\\/put\\/adex",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "audex"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "5f20a986cbb2f692bea9724d55a9cf3c99e9dac795cfc30aa51af8d5c86f2ff7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "axd": 0.00020062192797672785
-            },
-            "exampleSites": [
-                "berliner-ensemble.de",
-                "www.sonntagsblatt.de"
-            ]
-        },
-        {
-            "rule": "userreport\\.com\\/rc-ap\\/0\\/si\\.nuggad\\.net\\/nuggad",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nugmw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "3a538f105c43d88438d2a374d0d49af7c0c6d83f64f8338a2462e1db9347a757"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "computerhilfen.de",
+                "danisch.de",
                 "www.mmnews.de"
             ]
         },
         {
             "rule": "userreport\\.com\\/server\\.html",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "tag"
             ],
             "apis": {
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
                 "41c12262453783f916105c53e3513dcf49cfae58b805b09c92eeac8d43b8b022"
@@ -147,16 +98,38 @@
             "type": "Document",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 9,
+                    "ttl": 22,
                     "length": 9,
-                    "prevalence": 0.00020062192797672785,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00010024057738572574,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.com",
-                "www.mmnews.de"
+                "danisch.de",
+                "www.croxyproxy.net"
+            ]
+        },
+        {
+            "rule": "userreport\\.com\\/hit\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visitanalytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "croxyproxy.net",
+                "www.croxyproxy.net"
             ]
         },
         {
@@ -168,59 +141,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.com",
-                "www.croxyproxy.com"
-            ]
-        },
-        {
-            "rule": "userreport\\.com\\/sync\\/put\\/adform",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "audex"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "croxyproxy.com",
-                "www.croxyproxy.com"
-            ]
-        },
-        {
-            "rule": "userreport\\.com\\/gs\\/receive",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdw-dcl"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "croxyproxy.com",
-                "www.croxyproxy.com"
+                "croxyproxy.net",
+                "www.croxyproxy.net"
             ]
         },
         {
@@ -231,8 +160,8 @@
                 "pdw-adf"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -242,8 +171,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "garten-schlueter.de",
-                "www.klimaworld.com",
-                "www.marvel.com",
+                "www.palmenmann.de",
                 "www.restposten.de"
             ]
         }
@@ -256,12 +184,11 @@
         "Audience Measurement"
     ],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000601,
     "types": {
-        "Fetch": 4,
-        "Script": 7,
-        "Image": 12,
-        "Document": 2
+        "Script": 6,
+        "Document": 2,
+        "Image": 7
     },
     "nameservers": [
         "ns-1439.awsdns-51.org",

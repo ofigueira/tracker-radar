@@ -4,44 +4,94 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000501,
+    "sites": 5,
     "subdomains": [
-        "app-visitor-counter",
-        "app-countdown-pro"
+        "app",
+        "tracking-app-sas",
+        "app-spinner"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "carecart\\.io\\/FrontController\\/checkStore\\/",
+            "rule": "carecart\\.io\\/api\\/abandoned-cart\\/js-script",
             "cookies": 0.000201,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "app-visitor-counter",
-                "app-countdown-pro"
+                "app"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "38a09a95660109c825e9bb9debf7d1b530a51e9f803f00f1f21f088e80b03b38"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bstore.com.au",
-                "www.clarkrubber.com.au"
+                "nightcafe.studio",
+                "www.megavitamins.com.au"
+            ]
+        },
+        {
+            "rule": "carecart\\.io\\/store-front-api\\/get-store-information",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-app-sas",
+                "app-spinner"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nightcafe.studio",
+                "www.megavitamins.com.au",
+                "www.tupperware.com.au"
+            ]
+        },
+        {
+            "rule": "carecart\\.io\\/store-front-api\\/get-store-information",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-app-sas",
+                "app-spinner"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "525249d2d0ea507fcb764036a7bd6bead5c3e16fc7a51d2aa4f61edfc710320e",
+                "a30a3e24751b834d8daff511f541147877cdfaee63c57ed20771773f4910bc80"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nightcafe.studio",
+                "www.megavitamins.com.au",
+                "www.tupperware.com.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000501,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
         "noah.ns.cloudflare.com",

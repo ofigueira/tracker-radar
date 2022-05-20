@@ -7,12 +7,15 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000804,
+    "sites": 8,
     "subdomains": [
         "antenna",
+        "antenna-us",
         "geoworker",
-        "optchk"
+        "optchk",
+        "ads",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -22,11 +25,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "antenna"
+                "antenna",
+                "antenna-us"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -36,11 +40,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ccm.net",
-                "sante.journaldesfemmes.fr",
-                "www.euribor.com.es",
-                "www.generacodice.com",
+                "thenextweb.com",
                 "www.honestjohn.co.uk",
-                "www.linternaute.com"
+                "www.journaldesfemmes.fr",
+                "www.musicme.com",
+                "www.sporcle.com",
+                "www.thinkbabynames.com"
             ]
         },
         {
@@ -51,19 +56,22 @@
                 "geoworker"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ccm.net",
-                "sante.journaldesfemmes.fr",
-                "www.euribor.com.es",
                 "www.honestjohn.co.uk",
-                "www.linternaute.com"
+                "www.journaldesfemmes.fr",
+                "www.musicme.com",
+                "www.sporcle.com",
+                "www.thinkbabynames.com"
             ]
         },
         {
@@ -74,8 +82,8 @@
                 "optchk"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "49120de5d47bd735b7fe51736fde6bfd75dcdadbe3862c7eff507f27214ad6c2"
@@ -85,23 +93,98 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ccm.net",
-                "sante.journaldesfemmes.fr",
-                "www.euribor.com.es",
                 "www.honestjohn.co.uk",
-                "www.linternaute.com"
+                "www.journaldesfemmes.fr",
+                "www.musicme.com",
+                "www.sporcle.com",
+                "www.thinkbabynames.com"
+            ]
+        },
+        {
+            "rule": "ayads\\.co\\/ajs\\.php",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "infoconcert.com",
+                "www.musicme.com",
+                "www.thinkbabynames.com"
+            ]
+        },
+        {
+            "rule": "ayads\\.co\\/creatives\\/commons\\/close-up\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "85ef8c85c421d909e91bc6dd4ec3102a0b8cc52b8673906a89b5f9776841e22b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "www.musicme.com"
+            ]
+        },
+        {
+            "rule": "ayads\\.co\\/creatives\\/commons\\/volume-off\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d78635d2c4f67cf3b3b7036de3b69a36ccc22ce94e3a459679c652bbbab96320"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "www.musicme.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "types": {
-        "Image": 6,
-        "XHR": 5,
-        "Script": 5
+        "Image": 11,
+        "XHR": 6,
+        "Script": 9
     },
     "nameservers": [
-        "rita.ns.cloudflare.com",
-        "paul.ns.cloudflare.com"
+        "paul.ns.cloudflare.com",
+        "rita.ns.cloudflare.com"
     ]
 }

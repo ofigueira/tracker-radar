@@ -9,42 +9,17 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
-        "wcpstatic",
         "browser.pipe.aria",
-        "browser.events.data",
-        "ajax"
+        "wcpstatic",
+        "target",
+        "browser.events.data"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "wcpstatic"
-            ],
-            "apis": {
-                "Document.cookie getter": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "768304ececf64109acb1144a4a5fb1ea56ccadf675c60b65956dfad07a8d5ceb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mojang.com",
-                "help.minecraft.net",
-                "www.minecraft.net"
-            ]
-        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -70,6 +45,52 @@
             ]
         },
         {
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wcpstatic"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "768304ececf64109acb1144a4a5fb1ea56ccadf675c60b65956dfad07a8d5ceb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/rest\\/v1\\/delivery",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "target"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "53b6156d83008bdeba237251575829b3134220b04db00c25f4a62d783119dad0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
             "cookies": 0.000201,
             "fingerprinting": 0,
@@ -81,8 +102,8 @@
             "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "b66960f4f24692274ec5bbb379bc3828528f1564c1f1fb72e2eef2cdbf8dd231",
-                "0eeecf031ecfea4c346088e264b84058dd41a76189d6a4247a06bb38a1f997b7",
+                "c8b6bb4eadcb5e3b90679e2687dcee857052ff25a12433e9ad50a711f237ba51",
+                "29db5f1668e83d3f7100c576d0ecc3d5b1bc5c09b4ca6b0241d471edec1cfb5b",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
@@ -90,31 +111,29 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "minecraft.net",
-                "help.minecraft.net",
+                "education.minecraft.net",
                 "www.minecraft.net",
                 "www.trekbikes.com"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/ajax\\/jquery\\.templates\\/beta1\\/jquery\\.tmpl\\.min\\.js",
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ajax"
+                "browser.events.data"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "dfee1fe127c3a828a6f88e3ef6e8d1d7f8a3750e6f9d9e24520992a2294696a6"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aspsnippets.com",
-                "www.searchyellowdirectory.com"
+                "minecraft.net",
+                "www.minecraft.net"
             ]
         }
     ],
@@ -125,15 +144,16 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000201,
     "types": {
-        "Script": 5,
-        "XHR": 8
+        "XHR": 10,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns3-39.azure-dns.org",
         "ns4-39.azure-dns.info",
         "ns1-39.azure-dns.com",
-        "ns2-39.azure-dns.net"
+        "ns2-39.azure-dns.net",
+        "ns3-39.azure-dns.org"
     ]
 }

@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000034,
-    "sites": 5,
+    "prevalence": 0.0000409,
+    "sites": 6,
     "subdomains": [
+        "frontgate",
         "charts.comdirect",
         "push.onvista"
     ],
@@ -19,12 +20,41 @@
             "resolved": "charts.comdirect.mdgms.com"
         },
         {
+            "original": "marktdaten.boersen-zeitung.de",
+            "resolved": "frontgate.mdgms.com"
+        },
+        {
             "original": "push.onvista.de",
             "resolved": "push.onvista.mdgms.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "mdgms\\.com\\/ws",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frontgate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "marktdaten.boersen-zeitung.de",
+                    "resolved": "frontgate.mdgms.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boersen-zeitung.de",
+                "www.boersen-zeitung.de"
+            ]
+        },
         {
             "rule": "mdgms\\.com\\/charts\\/rebrush\\/homepage_resp\\.chart",
             "cookies": 0,
@@ -42,7 +72,7 @@
                 }
             ],
             "responseHashes": [
-                "b82f7e95436fdbfaa4a9bb41c705a57c073d73445f37788b8b76a46740ae8d9a"
+                "893e23f499ec32853f4ec69e061fd536d34bf33f584fa8f04adb115bb1864929"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -50,106 +80,6 @@
             "exampleSites": [
                 "comdirect.de",
                 "www.comdirect.de"
-            ]
-        },
-        {
-            "rule": "mdgms\\.com\\/files\\/js-api\\/1\\.6\\.2\\/blank\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "push.onvista"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "push.onvista.de",
-                    "resolved": "push.onvista.mdgms.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onvista.de",
-                "www.onvista.de"
-            ]
-        },
-        {
-            "rule": "mdgms\\.com\\/skye\\/session\\.csv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "push.onvista"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "push.onvista.de",
-                    "resolved": "push.onvista.mdgms.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onvista.de",
-                "www.onvista.de"
-            ]
-        },
-        {
-            "rule": "mdgms\\.com\\/meta\\/descriptor\\.csv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "push.onvista"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "push.onvista.de",
-                    "resolved": "push.onvista.mdgms.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onvista.de",
-                "www.onvista.de"
-            ]
-        },
-        {
-            "rule": "mdgms\\.com\\/system\\/timezone_offset_list\\.csv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "push.onvista"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "push.onvista.de",
-                    "resolved": "push.onvista.mdgms.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onvista.de",
-                "www.onvista.de"
             ]
         },
         {
@@ -182,9 +112,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "WebSocket": 2,
         "Image": 2,
-        "Document": 6,
-        "XHR": 4
+        "Document": 2
     },
     "nameservers": []
 }

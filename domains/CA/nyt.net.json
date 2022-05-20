@@ -4,16 +4,26 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "a.prd.geo-ns1",
-        "samizdat-graphql.prd.map.nytimes.xovr"
+        "a.prd.xovr",
+        "samizdat-graphql.prd.map.nytimes.xovr",
+        "als-svc.prd.geo",
+        "meter-svc.prd.geo"
     ],
     "cnames": [
         {
             "original": "a.nytimes.com",
-            "resolved": "a.prd.geo-ns1.nyt.net"
+            "resolved": "a.prd.xovr.nyt.net"
+        },
+        {
+            "original": "als-svc.nytimes.com",
+            "resolved": "als-svc.prd.geo.nyt.net"
+        },
+        {
+            "original": "meter-svc.nytimes.com",
+            "resolved": "meter-svc.prd.geo.nyt.net"
         },
         {
             "original": "samizdat-graphql.nytimes.com",
@@ -24,28 +34,30 @@
     "resources": [
         {
             "rule": "nyt\\.net\\/svc\\/nyt\\/data-layer",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "a.prd.geo-ns1"
+                "a.prd.xovr"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "a.nytimes.com",
-                    "resolved": "a.prd.geo-ns1.nyt.net"
+                    "resolved": "a.prd.xovr.nyt.net"
                 }
             ],
             "responseHashes": [
-                "8d737b239912d5cf52ef70f06bcd57e1a6313c4c079a018b0b18be33a728f54b"
+                "0d62fc808995c21e5a348438e74eb655c6ef5771161c427766c83490e5d60356",
+                "cb4d6dc1e49f745a7e5a3cbe3d84aa8918452864e014413ee9c429ea72e52016"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nytimes.com",
+                "nyt.com",
                 "www.nytimes.com"
             ]
         },
@@ -66,22 +78,102 @@
                 }
             ],
             "responseHashes": [
-                "62ecb2c76b4179b7ae15e6cf85ed81b63fed0e7838897e3171a2af6952948f33"
+                "1a4921877a651d0873db28503f132aed42da17b71b686c676d5067d239b1e389"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nytimes.com",
+                "nyt.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nyt\\.net\\/graphql\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "samizdat-graphql.prd.map.nytimes.xovr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "samizdat-graphql.nytimes.com",
+                    "resolved": "samizdat-graphql.prd.map.nytimes.xovr.nyt.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyt.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nyt\\.net\\/als",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "als-svc.prd.geo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "als-svc.nytimes.com",
+                    "resolved": "als-svc.prd.geo.nyt.net"
+                }
+            ],
+            "responseHashes": [
+                "c4ceb7a1c1b7c0a8a9b0a887295c157b29e1e66c1c1ad7e397bf859155550c82"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyt.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nyt\\.net\\/meter\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "meter-svc.prd.geo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "meter-svc.nytimes.com",
+                    "resolved": "meter-svc.prd.geo.nyt.net"
+                }
+            ],
+            "responseHashes": [
+                "aa275f70b05e83d013349e73734298fecff8a3218b71c2a7baba29a3fcde7cc5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyt.com",
                 "www.nytimes.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "XHR": 4
+        "XHR": 9,
+        "Preflight": 2
     },
     "nameservers": []
 }

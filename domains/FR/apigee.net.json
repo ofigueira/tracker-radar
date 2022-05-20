@@ -9,13 +9,23 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
+        "accor-group-prod-prod",
         "adsk-prod",
+        "se-prod-prod",
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.accor.com",
+            "resolved": "accor-group-prod-prod.apigee.net"
+        },
+        {
+            "original": "api.se.com",
+            "resolved": "se-prod-prod.apigee.net"
+        },
         {
             "original": "developer.api.autodesk.com",
             "resolved": "adsk-prod.apigee.net"
@@ -23,6 +33,31 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/authentication\\/v2\\.0\\/authorization",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "ibis.accor.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
             "cookies": 0.000301,
@@ -50,6 +85,58 @@
             ]
         },
         {
+            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.se.com",
+                    "resolved": "se-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "se.com",
+                "www.se.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.se.com",
+                    "resolved": "se-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "bc494d2fd04cfa8c65cef40297c9a6b78129aae486218b8004c98b3c26cd66a8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "se.com",
+                "www.se.com"
+            ]
+        },
+        {
             "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
             "cookies": 0,
             "fingerprinting": 0,
@@ -61,7 +148,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "668ace988d6c68898787f3fe4da6816ec7fddcba3f40ec0eedacb9b1e66952ac"
+                "da9c58f964e16a5994612cb7524e8591bd637cf1417d69d86330637ef05bccae"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -83,7 +170,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "136eb9c7f0ebde12045e8683e41a83062898149db5cfb9e652e4e75b94c695b4"
+                "766b50e629a624b9e237cccb19c5320adb791888640ca9131356e44b3ab93539"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -98,9 +185,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000602,
     "types": {
-        "Document": 3,
+        "Document": 5,
+        "Preflight": 2,
+        "Fetch": 2,
         "XHR": 4
     },
     "nameservers": [

@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0014,
-    "sites": 14,
+    "prevalence": 0.0015,
+    "sites": 15,
     "subdomains": [
-        "download.steinberg",
         "dl.gmx",
+        "api.farfetch",
         "api.wsj"
     ],
     "cnames": [
@@ -26,39 +26,12 @@
             "resolved": "dl.gmx.net.edgekey.net"
         },
         {
-            "original": "download.steinberg.net",
-            "resolved": "download.steinberg.net.edgekey.net"
+            "original": "ot.farfetch.com",
+            "resolved": "api.farfetch.net.edgekey.net"
         }
     ],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "net\\.edgekey\\.net\\/cmp\\/steinberg_logo_cmp_300\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "download.steinberg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "download.steinberg.net",
-                    "resolved": "download.steinberg.net.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "c6aa5341dbf6e955f214d3735a3dafb9c090de9b52b70ecd4a1f0c512e33be77"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "steinberg.net",
-                "www.steinberg.net"
-            ]
-        },
         {
             "rule": "net\\.edgekey\\.net\\/tcf\\/live\\/v1\\/js\\/tcf-api\\.js",
             "cookies": 0,
@@ -68,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "dl.gmx.net",
@@ -85,6 +58,58 @@
             ]
         },
         {
+            "rule": "net\\.edgekey\\.net\\/ext\\/marketing\\/v1\\/trackings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.farfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "ot.farfetch.com",
+                    "resolved": "api.farfetch.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farfetch.com",
+                "www.farfetch.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/ext\\/marketing\\/v1\\/trackings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.farfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "ot.farfetch.com",
+                    "resolved": "api.farfetch.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farfetch.com",
+                "www.farfetch.com"
+            ]
+        },
+        {
             "rule": "net\\.edgekey\\.net\\/api\\/dylan\\/quotes\\/v2\\/comp\\/quoteByDialect",
             "cookies": 0,
             "fingerprinting": 0,
@@ -93,7 +118,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.wsj.net",
@@ -101,7 +126,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Other",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -118,14 +143,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.wsj.net",
                     "resolved": "api.wsj.net.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "a3192644946dcad15452795ae8e53be5094d83f368f8bfcce4233815a4efd781"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -137,12 +164,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000301,
     "types": {
-        "Image": 2,
         "Script": 2,
-        "Other": 2,
-        "XHR": 2
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": []
 }
