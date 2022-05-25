@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "scripts",
-        "pond"
+        "pond",
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "tadpull\\.com\\/TadpullTracker\\.js",
@@ -34,18 +35,40 @@
             "type": "Script",
             "firstPartyCookies": {
                 "tp_id": {
-                    "ttl": 31536006,
+                    "ttl": 31536003,
                     "length": 36,
-                    "prevalence": 0.000013613591810063168,
+                    "prevalence": 0.000013639401503062045,
                     "uniqueness": 1
                 },
                 "tp_referrer": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.000013613591810063168,
+                    "prevalence": 0.000013639401503062045,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osprey.com",
+                "www.osprey.com"
+            ]
+        },
+        {
+            "rule": "tadpull\\.com\\/api\\/tracker\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pond"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dff0082a25fdc03dd7dd04bee7bc55b6c05d61907c3ad97f60b227e52238c0cb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "osprey.com",
@@ -73,35 +96,85 @@
             ]
         },
         {
-            "rule": "tadpull\\.com\\/api\\/tracker\\/collect",
-            "cookies": 0,
+            "rule": "tadpull\\.com\\/tadpull\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "pond"
+                "static"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2588f9b19f465e1943bc44d5c67bf0b1af3c1e0574b4cabdc10f38a24900afdd"
+                "d437fb55744a2971b431896435a698d5b837a5019f13648d9655a75db86e30c5"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "osprey.com",
-                "www.osprey.com"
+                "parts-express.com",
+                "www.parts-express.com"
+            ]
+        },
+        {
+            "rule": "tadpull\\.com\\/h6ydgak8\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bd4522a330650e9a4f9e33243b734b3fc9423e90d48fd218e3df3e875ae2cec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_tp_sp_ses.3d6a": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000013639401503062045,
+                    "uniqueness": 0.5
+                },
+                "_tp_sp_id.3d6a": {
+                    "ttl": 63072004,
+                    "length": 108,
+                    "prevalence": 0.000013639401503062045,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parts-express.com",
+                "www.parts-express.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000273,
     "types": {
-        "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 6,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",

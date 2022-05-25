@@ -8,10 +8,11 @@
     "sites": 2,
     "subdomains": [
         "resources",
-        "pixel"
+        "pixel",
+        "redirect"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "lista10\\.dev\\/resources\\/content\\/bggood\\.js",
@@ -64,11 +65,20 @@
         {
             "rule": "lista10\\.dev\\/hit\\/send\\/bg\\.gif",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "pixel"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.outerHeight": 1,
+                "window.innerHeight": 1,
+                "window.outerWidth": 1,
+                "window.innerWidth": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -104,7 +114,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a42d1c8ba1d93fbc23cbb92dc99e22c50e11bae30b2404f96ee8c1a1fd44ef52"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -113,13 +123,36 @@
                 "banggood.com",
                 "www.banggood.com"
             ]
+        },
+        {
+            "rule": "lista10\\.dev\\/click",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "redirect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fbdb1006dc5ca7395f7a2d63459f7a8ca69681d41fb44c2e5908738db21fddf6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "fr.banggood.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 8,
+        "Document": 2
     },
     "nameservers": [
         "elijah.ns.cloudflare.com",

@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "yui",
+        "yui-s",
         "query"
     ],
     "cnames": [],
@@ -21,13 +22,11 @@
         {
             "rule": "yahooapis\\.com\\/2\\.9\\.0\\/build\\/yahoo-dom-event\\/yahoo-dom-event\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "yui"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -65,26 +64,28 @@
             ]
         },
         {
-            "rule": "yahooapis\\.com\\/v1\\/public\\/yql",
+            "rule": "yahooapis\\.com\\/combo",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "query"
+                "yui-s",
+                "yui"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
+            "responseHashes": [
+                "98d7695fcc5d70d5be4ee003798c48f5de17ac1f7784ffc739d739ba57d24b55"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abbynews.com",
-                "www.nanaimobulletin.com",
-                "www.rdck.ca",
-                "www.todayinbc.com",
-                "www.vancouverislandfreedaily.com"
+                "canadiangunnutz.com",
+                "www.huntingbc.ca"
             ]
         },
         {
@@ -95,17 +96,20 @@
                 "query"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bladehq.com",
-                "www.steo.ca",
-                "ylw.kelowna.ca"
+                "cowichanvalleycitizen.com",
+                "www.nanaimobulletin.com",
+                "www.rdck.ca",
+                "www.theprogress.com",
+                "www.todayinbc.com",
+                "www.vancouverislandfreedaily.com"
             ]
         }
     ],
@@ -113,8 +117,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 7,
-        "XHR": 5
+        "Script": 6,
+        "XHR": 6
     },
     "nameservers": [
         "ns1.yahoo.com",

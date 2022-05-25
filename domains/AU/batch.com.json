@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "via"
     ],
@@ -13,7 +13,117 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "batch\\.com\\/v3\\/bootstrap\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "via"
+            ],
+            "apis": {
+                "console.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c286b04bda091d3e24d397d8b64e0b9d1fea7e6e29886ca43de937e09eb91bd0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eurosport.com",
+                "www.tudorwatch.com"
+            ]
+        },
+        {
             "rule": "batch\\.com\\/manifest\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "via"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "809fbe2459d38ce10c2c6d89fe364d8732c85bfb75cda8c4ffb149c84f8d56fb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eurosport.com",
+                "www.france24.com",
+                "www.michelin.com.au",
+                "www.tudorwatch.com"
+            ]
+        },
+        {
+            "rule": "batch\\.com\\/3\\.3\\.0\\/sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "via"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "window.indexedDB": 3,
+                "Navigator.prototype.permissions": 3,
+                "Notification.permission": 2,
+                "window.sessionStorage": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "cd472c44942a277398630ed2936ed4a4343561a61dbf14bf171a37fe61d7d3d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eurosport.com",
+                "www.france24.com",
+                "www.tudorwatch.com"
+            ]
+        },
+        {
+            "rule": "batch\\.com\\/3\\.3\\.0\\/native\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "via"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Notification.permission": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "616b548080c64af763c80b1d9ecae3767a3a3584ec9c3ba8fe80bca77835bada"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eurosport.com",
+                "www.tudorwatch.com"
+            ]
+        },
+        {
+            "rule": "batch\\.com\\/v2\\/worker\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,47 +134,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "31c5b5b53aa02240edf8e3b27d587fe6568637f4dbc4254e85a7914b8fd23afc"
+                "b1ae34f51f61f224b0654be548f3b431c44e5307691aa3a627e9ddede78fdce2"
             ],
-            "type": "Fetch",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eurosport.com",
-                "www.france24.com"
-            ]
-        },
-        {
-            "rule": "batch\\.com\\/3\\.2\\.0\\/sdk\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "via"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.permissions": 2,
-                "Notification.permission": 1,
-                "window.sessionStorage": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Navigator.prototype.language": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "951401eb59c52b46bf39baefc7a3da409567bd486247a71728b5f782b106a4fa"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eurosport.com",
-                "www.france24.com"
+                "michelin.com.au",
+                "www.tudorwatch.com"
             ]
         }
     ],
@@ -72,13 +149,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Script": 2
+        "Script": 7,
+        "Fetch": 4,
+        "Other": 2
     },
     "nameservers": [
+        "ns-11.awsdns-01.com",
         "ns-964.awsdns-56.net",
         "ns-1823.awsdns-35.co.uk",
-        "ns-1215.awsdns-23.org",
-        "ns-11.awsdns-01.com"
+        "ns-1215.awsdns-23.org"
     ]
 }

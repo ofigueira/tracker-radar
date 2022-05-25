@@ -9,23 +9,61 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000177,
-    "sites": 26,
+    "prevalence": 0.000307,
+    "sites": 45,
     "subdomains": [
+        "d-p7nu0mipyg.execute-api",
         "qd28tcd6b5.execute-api",
+        "bkt-sa-east-1-cms-2-assets-hml.s3",
         "s3",
+        "loadlandigns-527ea76a28440a5b.elb",
         "elblandingsventas-f1a31cd69fbf7bb8.elb",
-        "flipnet-assets.s3",
-        "ra-content-prod.s3"
+        "fpgrcbdbrc.execute-api",
+        "pim-funil.s3"
     ],
     "cnames": [
         {
+            "original": "marketing-api.toroinvestimentos.com.br",
+            "resolved": "d-p7nu0mipyg.execute-api.sa-east-1.amazonaws.com"
+        },
+        {
             "original": "ofertas.movistar.cl",
             "resolved": "elblandingsventas-f1a31cd69fbf7bb8.elb.sa-east-1.amazonaws.com"
+        },
+        {
+            "original": "ww2.movistar.cl",
+            "resolved": "loadlandigns-527ea76a28440a5b.elb.sa-east-1.amazonaws.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/tuuid\\/create-cookie",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-p7nu0mipyg.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "marketing-api.toroinvestimentos.com.br",
+                    "resolved": "d-p7nu0mipyg.execute-api.sa-east-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toroinvestimentos.com.br",
+                "blog.toroinvestimentos.com.br"
+            ]
+        },
         {
             "rule": "sa-east-1\\.amazonaws\\.com\\/prod\\/PortalGeral",
             "cookies": 0,
@@ -58,7 +96,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eb586c56521c705a63d249fb90cba4d16e73d6b32ce84e0a3d5bb70c547c7876"
+                "d3894703fdf9fe0f4141bc28c2441866b6986ed75cc0ea83f1b9e327b04616c0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -79,15 +117,36 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "851d99c386bb8da87a4190dcf989f65df93569f6d31678edee6a6ce624281902"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "saude.gov.br",
                 "covid.saude.gov.br"
+            ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/hml\\/sites\\/10\\/2021\\/10\\/05102858\\/certificado_PALC-1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bkt-sa-east-1-cms-2-assets-hml.s3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "03a326b5668691dfc19f2bbd6a5febe036cfc3d0b87c7473aa88926252406e95"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delboniauriemo.com.br",
+                "lavoisier.com.br",
+                "sergiofranco.com.br"
             ]
         },
         {
@@ -113,6 +172,33 @@
             ]
         },
         {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/static\\/js\\/dmp-v4\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "loadlandigns-527ea76a28440a5b.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ww2.movistar.cl",
+                    "resolved": "loadlandigns-527ea76a28440a5b.elb.sa-east-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "78e8083798c9bb6a048146313fa318d68243e09c048241e08b28eb4713808aa1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movistar.cl",
+                "pagos.movistar.cl"
+            ]
+        },
+        {
             "rule": "sa-east-1\\.amazonaws\\.com\\/web\\/movistar\\/tienda\\/php\\/Functions\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -121,7 +207,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000205,
             "cnames": [
                 {
                     "original": "ofertas.movistar.cl",
@@ -164,93 +250,175 @@
             ]
         },
         {
-            "rule": "sa-east-1\\.amazonaws\\.com\\/admin\\/public\\/ecommerce\\/customized\\/marisa\\/flip-marisa\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "flipnet-assets.s3"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5ef7437c620da1aa85e249547b04ed4afb9ab7923269500cb09e1d2adfae45a1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marisa.com.br",
-                "www.marisa.com.br"
-            ]
-        },
-        {
-            "rule": "sa-east-1\\.amazonaws\\.com\\/Theme\\/16\\.png",
+            "rule": "sa-east-1\\.amazonaws\\.com\\/chatbot-droz\\/chatbot-droz-prod\\/attachment\\/9acd6bd61d0a3443ec29b830e771f99af73939b9\\/icon-minimized-20210617164324467-710\\.svg%2Bxml",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ra-content-prod.s3"
+                "s3"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4893d5ff9dc8f9fd62864b051d6ea5b15399eb5a5bf0b628791c7b15d8134973"
+                "b08ba2e10ea397b25f6ab496ff8e65fe107024ce86d669c8ea2085ac6b7b3234"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "respondeai.com.br",
-                "www.respondeai.com.br"
+                "evino.com.br",
+                "www.evino.com.br"
             ]
         },
         {
-            "rule": "sa-east-1\\.amazonaws\\.com\\/Theme\\/17\\.png",
+            "rule": "sa-east-1\\.amazonaws\\.com\\/prd\\/cognito",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ra-content-prod.s3"
+                "fpgrcbdbrc.execute-api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a847b26d1dde551c91071b5c4563bad23cb3852999b361cb98973fe0fb928e26"
+                "169eb8edae12af4b6e551eddd330b0efc474246b96b91faabd4154984278cea1"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "respondeai.com.br",
-                "www.respondeai.com.br"
+                "natura.com.br",
+                "www.natura.com.br"
             ]
         },
         {
-            "rule": "sa-east-1\\.amazonaws\\.com\\/Theme\\/18\\.png",
+            "rule": "sa-east-1\\.amazonaws\\.com\\/prd\\/cf_product_recommendation",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ra-content-prod.s3"
+                "fpgrcbdbrc.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natura.com.br",
+                "www.natura.com.br"
+            ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/prd\\/cf_product_recommendation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fpgrcbdbrc.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natura.com.br",
+                "www.natura.com.br"
+            ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/site2\\.shop2gether\\.com\\.br\\/outros\\/161219\\/WHATS\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5be7d075bc7b277c1fd588b8f911d033fcaa3a42373d45181c774eba12f509bd"
+                "43d9277f469d5d5988b2dbed94081c9674b94efd39873a69622e004bf8301243"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "respondeai.com.br",
-                "www.respondeai.com.br"
+                "shop2gether.com.br",
+                "www.shop2gether.com.br"
+            ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/site2\\.shop2gether\\.com\\.br\\/outros\\/161219\\/TELEFONE\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f3c1dd9206e5df963534caf1f1e99f6352f699859bc4ee4b8764bf449443829b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shop2gether.com.br",
+                "www.shop2gether.com.br"
+            ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/site2\\.shop2gether\\.com\\.br\\/outros\\/161219\\/CHAT\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79f14e6f22f20abde266d572207b52ae590f16394abe521c0ffbba0c2a6357d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shop2gether.com.br",
+                "www.shop2gether.com.br"
+            ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/site2\\.shop2gether\\.com\\.br\\/outros\\/161219\\/ENVELOPE\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d2b72d2b06dce5e27f010292ee9c5b1234337f05b7d5e2055b1e2f0d853a0fdf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shop2gether.com.br",
+                "www.shop2gether.com.br"
             ]
         },
         {
@@ -274,18 +442,44 @@
                 "tramontina.com.br",
                 "www.tramontina.com.br"
             ]
+        },
+        {
+            "rule": "sa-east-1\\.amazonaws\\.com\\/widget\\/index\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pim-funil.s3"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a7a9449c1bf7fc403d086ff99c80526e5ca547d816b1e6b8a6ca76219ba19ef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unopar.com.br",
+                "www.unopar.com.br"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000341,
     "types": {
-        "Preflight": 2,
+        "Image": 21,
+        "Preflight": 4,
         "XHR": 7,
-        "Image": 12,
-        "Script": 2
+        "Script": 4,
+        "Fetch": 4
     },
     "nameservers": [
         "ns1.p31.dynect.net",

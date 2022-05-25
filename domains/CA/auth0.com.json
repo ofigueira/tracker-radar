@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
+        "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2",
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
@@ -21,25 +23,34 @@
         {
             "original": "login.arduino.cc",
             "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
+            "original": "oauth.airmiles.ca",
+            "resolved": "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
                     "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "oauth.airmiles.ca",
+                    "resolved": "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -47,22 +58,55 @@
                 }
             ],
             "responseHashes": [
-                "f2555a197d50c7fa656ceef41eba6fa51004ed1b9e38c2a83bd6ca653a9a2279"
+                "af218d9548f148ac96d465f9fc335b50584e0610f07588fbfa0e4e489210ca82",
+                "abcedd5310dc844093e04426b541fee6c4184b8c1478f3b9c1efe95f4f40f8fe"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arduino.cc",
+                "www.airmiles.ca",
                 "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denverpost.com",
+                "www.mercurynews.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
+    ]
 }

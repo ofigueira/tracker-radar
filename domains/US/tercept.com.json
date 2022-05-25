@@ -4,28 +4,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000887,
+    "sites": 13,
     "subdomains": [
         "cdn",
-        "b-s"
+        "b-s",
+        "serve"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "tercept\\.com\\/js\\/trcpt",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
+                "d912108c906318f5c0ad035d0e5de309a34b084e92669240a3003ce5c7a896db",
                 "e28974b6a0c76c1f2ce104eebda9b534bf5133e2f3d8548e3abbbda186d741f7",
+                "aee8e0f53ad63c2c200deb56b903434624d1e1c7ec4d3a5c15651c0ea97e13c7",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
@@ -33,9 +40,12 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gaana.com",
+                "m.vidio.com",
                 "swirlster.ndtv.com",
+                "www.atv.pe",
+                "www.carousell.com.hk",
                 "www.carousell.sg",
-                "www.carousell.ph"
+                "www.merdeka.com"
             ]
         },
         {
@@ -59,13 +69,36 @@
                 "ndtv.com",
                 "swirlster.ndtv.com"
             ]
+        },
+        {
+            "rule": "tercept\\.com\\/getkeycombinations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serve"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5e5766373524ebfbe31a1a18dbaf66bdc0db81b7995cd3671fc2e5fd11969f8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "merdeka.com",
+                "www.merdeka.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6
+        "Script": 9,
+        "XHR": 2
     },
     "nameservers": [
         "ns71.domaincontrol.com",

@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0014,
-    "sites": 14,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
         "accor-group-prod-prod",
         "ee-prod-prod-02",
         "adsk-prod",
+        "costco-prd",
         "ee-prod-prod",
         "cmg-prod"
     ],
@@ -22,6 +23,10 @@
         {
             "original": "api.accor.com",
             "resolved": "accor-group-prod-prod.apigee.net"
+        },
+        {
+            "original": "api.costco.com",
+            "resolved": "costco-prd.apigee.net"
         },
         {
             "original": "api.ee.co.uk",
@@ -65,14 +70,14 @@
         },
         {
             "rule": "apigee\\.net\\/v1\\/identity\\/authorize",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "ee-prod-prod-02"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api.ee.co.uk",
@@ -85,8 +90,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ee.co.uk",
-                "id.ee.co.uk",
-                "myaccount.ee.co.uk"
+                "id.ee.co.uk"
             ]
         },
         {
@@ -113,6 +117,33 @@
                 "autodesk.com",
                 "knowledge.autodesk.com",
                 "www.autodesk.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/warehouseLocatorMobile\\/v1\\/warehouses\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "2daf8188b6761bf7820fce0e1a4c66c2455478b98bb64efed547c9b206ac97c0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.com"
             ]
         },
         {
@@ -157,7 +188,7 @@
                 }
             ],
             "responseHashes": [
-                "10b57ceddf186e8d721200fa92d46dff19a31848b55ece4dbf40a0531a185068"
+                "a65da2865bb8a19d7f892dc74e6670aa3c3c6bfc10f9bb2a2f82c778bcb75819"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -179,7 +210,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5699c92547ce2f31ca25ae60bccbaa02638e5b6eb82cb895e0a308db8ffe9e4e"
+                "59b9fde9284212c9f053a0b02c7b24e2a2c547a04076b20b4b5552aafbfc4aee"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -201,7 +232,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "136eb9c7f0ebde12045e8683e41a83062898149db5cfb9e652e4e75b94c695b4"
+                "766b50e629a624b9e237cccb19c5320adb791888640ca9131356e44b3ab93539"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -216,11 +247,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000702,
+    "cookies": 0.000803,
     "types": {
-        "Document": 8,
-        "Preflight": 2,
-        "XHR": 6
+        "Document": 7,
+        "XHR": 8,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

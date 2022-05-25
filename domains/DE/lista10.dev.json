@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
+    "prevalence": 0.0002,
     "sites": 2,
     "subdomains": [
         "resources",
-        "pixel"
+        "pixel",
+        "redirect"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "lista10\\.dev\\/resources\\/content\\/bggood\\.js",
@@ -24,7 +25,7 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
                 "e109abb8f560fdc1c8a2100c3b8e89d9136a5f7301529c5e9732d1306a9c61d4"
@@ -48,10 +49,41 @@
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
                 "b1b8d9c18530492a8fedacf749d1f288a1b34c280ffae08cc43721f2316d9232"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "www.banggood.com"
+            ]
+        },
+        {
+            "rule": "lista10\\.dev\\/hit\\/send\\/bg\\.gif",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.outerHeight": 1,
+                "window.innerHeight": 1,
+                "window.outerWidth": 1,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "43bfea1d2cc40045d89d531c0e7efb6d0fb708cb95b6b541caf3495548e52ef9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -79,10 +111,10 @@
                 "window.innerWidth": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "1416066cbd7897a3cfa16fbad307bd25cd0c3afbf5e4671358dbabdfe563f335"
+                "930ca7967d5c7b8ad670f24e646f21e8d9b1d837f5ddeb0e33eee8bb83554feb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -93,20 +125,20 @@
             ]
         },
         {
-            "rule": "lista10\\.dev\\/hit\\/send\\/bg\\.gif",
+            "rule": "lista10\\.dev\\/click",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pixel"
+                "redirect"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "eef871b0f4f89a85a9f66e4b4230248aaa9f34c654da2586c1797bbb6936461e"
             ],
-            "type": "Script",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -119,7 +151,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 8,
+        "Document": 2
     },
     "nameservers": [
         "elijah.ns.cloudflare.com",

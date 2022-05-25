@@ -4,15 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000034,
+    "prevalence": 0.0000341,
     "sites": 5,
     "subdomains": [
         "services",
-        "cdn",
-        "subsapi"
+        "subsapi",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "epoch\\.cloud\\/\\/public-labs\\/src\\/push_notifications\\/push_notif\\.js",
@@ -25,7 +25,7 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
                 "0523c13750f634735ff97f98cc6b2d0100bc0aab4d8f703ad3b6952731d7a545"
@@ -40,18 +40,68 @@
             ]
         },
         {
-            "rule": "epoch\\.cloud\\/public-labs\\/epoch-ai\\/et_utils\\.js",
+            "rule": "epoch\\.cloud\\/db\\/senddata",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "services"
+                "subsapi"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000205,
             "cnames": [],
             "responseHashes": [
-                "9dc41cd8cbc53ad35fcf1d5ff107d43600de2abb0730cc6f656d98610c55e7e7"
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theepochtimes.com",
+                "m.theepochtimes.com",
+                "www.theepochtimes.com"
+            ]
+        },
+        {
+            "rule": "epoch\\.cloud\\/db\\/senddata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "subsapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theepochtimes.com",
+                "m.theepochtimes.com",
+                "www.theepochtimes.com"
+            ]
+        },
+        {
+            "rule": "epoch\\.cloud\\/public-labs\\/epoch-ai\\/et_utils\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "3b72fec812a73619ad0c47d4fc717f81eff2839df049ae614f0f01974b0db193"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -303,48 +353,6 @@
                 "theepochtimes.com",
                 "www.theepochtimes.com"
             ]
-        },
-        {
-            "rule": "epoch\\.cloud\\/db\\/senddata",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "subsapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theepochtimes.com",
-                "www.theepochtimes.com"
-            ]
-        },
-        {
-            "rule": "epoch\\.cloud\\/db\\/senddata",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "subsapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theepochtimes.com",
-                "www.theepochtimes.com"
-            ]
         }
     ],
     "categories": [],
@@ -352,10 +360,10 @@
     "cookies": 0,
     "types": {
         "Script": 6,
+        "XHR": 3,
+        "Preflight": 3,
         "Image": 16,
-        "Font": 6,
-        "XHR": 2,
-        "Preflight": 2
+        "Font": 6
     },
     "nameservers": [
         "darl.ns.cloudflare.com",

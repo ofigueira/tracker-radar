@@ -9,21 +9,30 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "api3"
+        "api3",
+        "san"
     ],
     "cnames": [
         {
             "original": "api3.fox.com",
             "resolved": "api3.fox.com.edgekey.net"
+        },
+        {
+            "original": "assets.foxdcg.com",
+            "resolved": "san.fox.com.edgekey.net"
+        },
+        {
+            "original": "config.foxdcg.com",
+            "resolved": "san.fox.com.edgekey.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "fox\\.com\\.edgekey\\.net\\/v2\\.0\\/screens\\/foxsports-live",
+            "rule": "fox\\.com\\.edgekey\\.net\\/v2\\.0\\/login",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -43,8 +52,87 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxsports.com",
+                "fox.com",
                 "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\.edgekey\\.net\\/v2\\.0\\/login",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api3.fox.com",
+                    "resolved": "api3.fox.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9e06a95125c396a0e75b93d4ddd735b0c983efe4177c754e6a5050466a9ad801"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\.edgekey\\.net\\/foxnow\\/web\\/footer\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "config.foxdcg.com",
+                    "resolved": "san.fox.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ef116ccbb6e44542697715d62b767a6061d0777423bf039228bed6f75a9c2cc4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox.com",
+                "www.fox.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\.edgekey\\.net\\/dpp-uploaded\\/images\\/the-masked-singer\\/the-masked-singer_07\\/the-masked-singer_07_11\\/poster_c04dbd17a2a5467b94bd0581d659b77c\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "assets.foxdcg.com",
+                    "resolved": "san.fox.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox.com",
+                "www.fox.com"
             ]
         },
         {
@@ -64,7 +152,7 @@
                 }
             ],
             "responseHashes": [
-                "da0ac2e44e9d39c5caf2802dcf8f5ff657bc0be5a5ade31ddcb9797ee24df738"
+                "9485b1aa168c84ca0a364d3b23099a5701070e0b4a0c4c7ab520e24c5f554830"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -77,10 +165,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
         "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4,
+        "XHR": 4
     },
     "nameservers": []
 }

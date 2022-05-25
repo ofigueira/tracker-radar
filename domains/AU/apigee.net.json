@@ -9,15 +9,20 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00161,
-    "sites": 16,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "cisco-dsc-prod",
         "adsk-prod",
         "bgl-web-prod",
+        "costco-prd",
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.costco.com",
+            "resolved": "costco-prd.apigee.net"
+        },
         {
             "original": "api.prod.bunnings.com.au",
             "resolved": "bgl-web-prod.apigee.net"
@@ -31,7 +36,7 @@
             "resolved": "cisco-dsc-prod.apigee.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "apigee\\.net\\/v1\\/netid",
@@ -50,7 +55,7 @@
                 }
             ],
             "responseHashes": [
-                "1de4b6f8bad806115f61844c199a3b50a40610a4643acf0fe1619cf0c2ad5da2"
+                "2f5fc81dca6329e86a6ce3bbb1947bebd1a6b115ce35e81c20940f49c84133a9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -88,31 +93,6 @@
         },
         {
             "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -128,9 +108,34 @@
                 }
             ],
             "responseHashes": [
-                "56858857dba65198c6ac29547beb4821400b1fbe76dc946bbdb67b154d94d67d"
+                "23f82a9ea2dcb9eef558c3dc88f89a1ee70d77f959c1d0dd7759ed528ca914ae"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.com.au",
+                "www.bunnings.com.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bgl-web-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.prod.bunnings.com.au",
+                    "resolved": "bgl-web-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -180,7 +185,7 @@
                 }
             ],
             "responseHashes": [
-                "7d5214b1dc629b44c1367af869f89a0fc062dc062421ecfc541c01a6e30c8912"
+                "0f0ad00d4c54a3f1c553fab2419f1317ef66f0de06290404fb35c77ef73bccf7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -188,6 +193,33 @@
             "exampleSites": [
                 "bunnings.com.au",
                 "www.bunnings.com.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/warehouseLocatorMobile\\/v1\\/warehouses\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "d8b142649e4160eed5704427224900bb4f5140097e9d5945a5e4104321d9c496"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.com"
             ]
         },
         {
@@ -202,7 +234,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c2eafb78228e6b6d965dd0d88e4aedcf609bf3d645725f17f63b8e003da6e4da"
+                "781f48ad2c5ef6493d4122bf3b627711bb312629d6e243d5ed272e2a06c08563"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -224,7 +256,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "136eb9c7f0ebde12045e8683e41a83062898149db5cfb9e652e4e75b94c695b4"
+                "766b50e629a624b9e237cccb19c5320adb791888640ca9131356e44b3ab93539"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -239,12 +271,12 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000802,
     "types": {
         "Script": 2,
         "Document": 3,
-        "Preflight": 4,
-        "XHR": 8
+        "XHR": 10,
+        "Preflight": 4
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

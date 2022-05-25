@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.0012,
+    "sites": 12,
     "subdomains": [
         "star.cdn.nintendo",
+        "api.farfetch",
         "api.wsj"
     ],
     "cnames": [
@@ -23,6 +24,10 @@
         {
             "original": "api.wsj.net",
             "resolved": "api.wsj.net.edgekey.net"
+        },
+        {
+            "original": "ot.farfetch.com",
+            "resolved": "api.farfetch.net.edgekey.net"
         }
     ],
     "fingerprinting": 3,
@@ -52,6 +57,58 @@
             "exampleSites": [
                 "nintendo.com",
                 "www.nintendo.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/ext\\/marketing\\/v1\\/trackings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.farfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ot.farfetch.com",
+                    "resolved": "api.farfetch.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farfetch.com",
+                "www.farfetch.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/ext\\/marketing\\/v1\\/trackings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.farfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ot.farfetch.com",
+                    "resolved": "api.farfetch.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farfetch.com",
+                "www.farfetch.com"
             ]
         },
         {
@@ -96,7 +153,7 @@
                 }
             ],
             "responseHashes": [
-                "42fffc24b8ed54efdeb5e7c0425d8d62efe53ff18430c244597bd57b786ab4d8"
+                "27298817efd411a49130dc993dd1db2babe810a7e4bbf14fb0f7578ff771beaf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -112,8 +169,8 @@
     "cookies": 0.000201,
     "types": {
         "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": []
 }
