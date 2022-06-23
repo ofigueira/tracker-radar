@@ -4,14 +4,29 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "wup-ac77ffef.us.v2",
-        "wup-dfb31537.us.v2",
-        "log-dfb31537.us.v2"
+        "wup-532e636f.us.v2",
+        "log-ac77ffef.us.v2",
+        "log-dfb31537.us.v2",
+        "bcdn-dfb31537",
+        "wup-dfb31537.us.v2"
     ],
     "cnames": [
+        {
+            "original": "bcdn.td.com",
+            "resolved": "bcdn-dfb31537.we-stats.com"
+        },
+        {
+            "original": "bup.bankofamerica.com",
+            "resolved": "wup-532e636f.us.v2.we-stats.com"
+        },
+        {
+            "original": "log-sec.desjardins.com",
+            "resolved": "log-ac77ffef.us.v2.we-stats.com"
+        },
         {
             "original": "stat.td.com",
             "resolved": "log-dfb31537.us.v2.we-stats.com"
@@ -32,53 +47,33 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wup-ac77ffef.us.v2"
+                "wup-ac77ffef.us.v2",
+                "wup-532e636f.us.v2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "wup-sec.desjardins.com",
                     "resolved": "wup-ac77ffef.us.v2.we-stats.com"
+                },
+                {
+                    "original": "bup.bankofamerica.com",
+                    "resolved": "wup-532e636f.us.v2.we-stats.com"
                 }
             ],
             "responseHashes": [
-                "03d4832ae7a24b20e97cddfa2b4d46f77df37c82703bb04b51ac7a7158a9fd4e"
+                "2f98590ceb80d9c90308bf71d914aeeb761b26fa4d8398108f2ec40ba67f5723",
+                "a38a74dc4351d1c93200981b0087f744787e08fc79c6d11035074aa32a24e140"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "desjardins.com",
-                "accweb.mouv.desjardins.com"
-            ]
-        },
-        {
-            "rule": "we-stats\\.com\\/client\\/v3\\/web\\/wup",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wup-dfb31537.us.v2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "wup.td.com",
-                    "resolved": "wup-dfb31537.us.v2.we-stats.com"
-                }
-            ],
-            "responseHashes": [
-                "6b4b0d201d53a933479702f225df7f369a62cd22dc825fd428a3c24effa7f1b6"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "td.com",
-                "easyweb.td.com"
+                "accweb.mouv.desjardins.com",
+                "www.bankofamerica.com"
             ]
         },
         {
@@ -86,12 +81,17 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "log-ac77ffef.us.v2",
                 "log-dfb31537.us.v2"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
+                {
+                    "original": "log-sec.desjardins.com",
+                    "resolved": "log-ac77ffef.us.v2.we-stats.com"
+                },
                 {
                     "original": "stat.td.com",
                     "resolved": "log-dfb31537.us.v2.we-stats.com"
@@ -102,18 +102,78 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cdSNum": 0.0001004419445560466
+            },
+            "exampleSites": [
+                "desjardins.com",
+                "banquenet.td.com",
+                "easyweb.td.com"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/scripts\\/dfb31537\\/dfb31537\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "bcdn-dfb31537"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "bcdn.td.com",
+                    "resolved": "bcdn-dfb31537.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "370ae50d75ba8ae403a867926831e9dba2cd6f078e2d1424e13f7c778cd40a0c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "td.com",
+                "easyweb.td.com"
+            ]
+        },
+        {
+            "rule": "we-stats\\.com\\/client\\/v3\\/web\\/wup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wup-dfb31537.us.v2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "wup.td.com",
+                    "resolved": "wup-dfb31537.us.v2.we-stats.com"
+                }
+            ],
+            "responseHashes": [
+                "57e778353c1bc57249fe9adad3429a01393820e278b52e29c5b7bb69550bd822",
+                "bd5c8d61d974fea6b2dfb8e00b4399dff53d11378eeba230ca4f116f0321e2cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "td.com",
+                "banquenet.td.com",
                 "easyweb.td.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "XHR": 6
+        "XHR": 9,
+        "Script": 2
     },
     "nameservers": []
 }

@@ -13,8 +13,8 @@
     "sites": 10,
     "subdomains": [
         "yui",
-        "yui-s",
-        "query"
+        "query",
+        "yui-s"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,11 +22,13 @@
         {
             "rule": "yahooapis\\.com\\/2\\.9\\.0\\/build\\/yahoo-dom-event\\/yahoo-dom-event\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "yui"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
@@ -64,6 +66,48 @@
             ]
         },
         {
+            "rule": "yahooapis\\.com\\/v1\\/public\\/yql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "query"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abbynews.com",
+                "www.kelownacapnews.com",
+                "www.todayinbc.com",
+                "www.yukon-news.com"
+            ]
+        },
+        {
+            "rule": "yahooapis\\.com\\/v1\\/public\\/yql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "query"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bladehq.com",
+                "ylw.kelowna.ca"
+            ]
+        },
+        {
             "rule": "yahooapis\\.com\\/combo",
             "cookies": 0,
             "fingerprinting": 1,
@@ -72,7 +116,7 @@
                 "yui"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -87,38 +131,14 @@
                 "canadiangunnutz.com",
                 "www.huntingbc.ca"
             ]
-        },
-        {
-            "rule": "yahooapis\\.com\\/v1\\/public\\/yql",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "query"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cowichanvalleycitizen.com",
-                "www.nanaimobulletin.com",
-                "www.rdck.ca",
-                "www.theprogress.com",
-                "www.todayinbc.com",
-                "www.vancouverislandfreedaily.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6,
-        "XHR": 6
+        "Script": 8,
+        "XHR": 4
     },
     "nameservers": [
         "ns1.yahoo.com",

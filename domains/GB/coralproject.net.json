@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "sbnation.coral"
+        "sbnation.coral",
+        "polygon.coral"
     ],
     "cnames": [
         {
@@ -18,13 +19,17 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "coralproject\\.net\\/api\\/story\\/count\\.js",
+            "rule": "coralproject\\.net\\/assets\\/js\\/count\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "sbnation.coral"
+                "sbnation.coral",
+                "polygon.coral"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
@@ -34,14 +39,44 @@
                 }
             ],
             "responseHashes": [
-                "b4b66a2068171e849f24beae26fe878a5e32652b587a210dc7fdb11854b116ca"
+                "8941a49352d7f3caaa2e710f3f53cf13d1717f35d30f9bede919de695b90cc04"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mmafighting.com",
-                "www.mmafighting.com"
+                "www.polygon.com"
+            ]
+        },
+        {
+            "rule": "coralproject\\.net\\/api\\/story\\/count\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sbnation.coral",
+                "polygon.coral"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "comments.mmafighting.com",
+                    "resolved": "sbnation.coral.coralproject.net"
+                }
+            ],
+            "responseHashes": [
+                "b62090e92c3f4139705b829f9b4b5811826e4c223b963da0f82eb98484fcaf2a",
+                "5ee8da5974db1879bd3968ba4bbc3865ce7be00892f1fb5bc9b4a8584f9be3e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mmafighting.com",
+                "www.mmafighting.com",
+                "www.polygon.com"
             ]
         }
     ],
@@ -49,7 +84,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 5
     },
     "nameservers": []
 }

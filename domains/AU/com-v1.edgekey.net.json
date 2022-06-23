@@ -9,19 +9,19 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
+        "gbxgateway.dell",
         "toifeeds.indiatimes",
-        "ase.clmbtech",
         "jsso.indiatimes",
-        "api.foxnews",
-        "gbxgateway.dell"
+        "ase.clmbtech",
+        "akm-img-a-in.tosshub"
     ],
     "cnames": [
         {
-            "original": "api.foxnews.com",
-            "resolved": "api.foxnews.com-v1.edgekey.net"
+            "original": "akm-img-a-in.tosshub.com",
+            "resolved": "akm-img-a-in.tosshub.com-v1.edgekey.net"
         },
         {
             "original": "ase.clmbtech.com",
@@ -40,8 +40,40 @@
             "resolved": "toifeeds.indiatimes.com-v1.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/post\\/WEB\\/report",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gbxgateway.dell"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "gbxgateway.dell.com",
+                    "resolved": "gbxgateway.dell.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "eb882113cf70ba32f53ce983c2694631594436eec6b5efc7eaabcf13b3f9b80e",
+                "9840f7ea2b2d71b0ba265da2e041b046a0f2a252222f82a6f8beea7d651310e9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_cls_v": 0.00030084235860409147,
+                "_cls_s": 0.00030084235860409147
+            },
+            "exampleSites": [
+                "dell.com",
+                "deals.dell.com",
+                "www.dell.com"
+            ]
+        },
         {
             "rule": "com-v1\\.edgekey\\.net\\/treact\\/feeds\\/toi\\/web\\/game\\/game",
             "cookies": 0,
@@ -59,7 +91,7 @@
                 }
             ],
             "responseHashes": [
-                "5e7d75b02ed2490795a2c412ab939356f2d838c012ba76f9e8ca9919242b1d18"
+                "e5094f2f4749f7c02689eee96b0dcced37feb5b9b107417d5ef3d1dbee8a666b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -85,7 +117,9 @@
                     "resolved": "toifeeds.indiatimes.com-v1.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
@@ -98,44 +132,15 @@
             ]
         },
         {
-            "rule": "com-v1\\.edgekey\\.net\\/message",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ase.clmbtech"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "ase.clmbtech.com",
-                    "resolved": "ase.clmbtech.com-v1.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "c7856fccbbddc419fddaafd8fde632513f59a06f5aa40658af9c91e180f14338"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_col_uuid": 0.00010028078620136381
-            },
-            "exampleSites": [
-                "timesofindia.com",
-                "www.indiatimes.com"
-            ]
-        },
-        {
             "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
-            "cookies": 0.0001,
+            "cookies": 0.000401,
             "fingerprinting": 0,
             "subdomains": [
                 "jsso.indiatimes"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
                     "original": "jsso.indiatimes.com",
@@ -150,73 +155,134 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "timesofindia.com",
-                "www.indiatimes.com"
+                "timesofindia.indiatimes.com",
+                "www.indiatimes.com",
+                "www.mensxp.com"
             ]
         },
         {
-            "rule": "com-v1\\.edgekey\\.net\\/v3\\/video-player\\/6306502439112",
-            "cookies": 0,
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
+            "cookies": 0.000401,
             "fingerprinting": 0,
             "subdomains": [
-                "api.foxnews"
+                "jsso.indiatimes"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com",
+                "www.indiatimes.com",
+                "www.mensxp.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/message",
+            "cookies": 0.000401,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ase.clmbtech"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "ase.clmbtech.com",
+                    "resolved": "ase.clmbtech.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b63f83b33016b66dbc318ff870482ae1cb1175a585d25b50876113e9ad025546",
+                "4cec622dbe2b35aa65932c6eaefb71da19aaafe7c4b84c56e08f9bd177459856",
+                "88a140ac82c249e59963abb578bba036757f7887be4d3e55a8ad341975c7894b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_col_uuid": 0.00010028078620136381
+            },
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com",
+                "www.indiatimes.com",
+                "www.mensxp.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossdomain\\/getTicket",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jsso.indiatimes"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.foxnews.com",
-                    "resolved": "api.foxnews.com-v1.edgekey.net"
+                    "original": "jsso.indiatimes.com",
+                    "resolved": "jsso.indiatimes.com-v1.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "97d8722ac7f926c0cb76684e60b4e5e24f7b5f629fc9318745e24a194bd0233e"
+                "16922e0618061c38b2fecdfbe9725bbc3e018f855becf498d30ad8acae59ff21"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxnews.com",
-                "video.foxnews.com"
+                "indiatimes.com",
+                "www.mensxp.com"
             ]
         },
         {
-            "rule": "com-v1\\.edgekey\\.net\\/post\\/WEB\\/report",
-            "cookies": 0.000201,
+            "rule": "com-v1\\.edgekey\\.net\\/indiatoday\\/images\\/story\\/202206\\/akshayvsaamir\\.jpg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "gbxgateway.dell"
+                "akm-img-a-in.tosshub"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "gbxgateway.dell.com",
-                    "resolved": "gbxgateway.dell.com-v1.edgekey.net"
+                    "original": "akm-img-a-in.tosshub.com",
+                    "resolved": "akm-img-a-in.tosshub.com-v1.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "96077079b82b5b46a02167bbdda9584ee67ce6d941659d7a648ebb0f5073204b"
+                "323088cd99bee11dec62accda6bb2d707153d3a94567bfef47cc4cbd2b43535f"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_cls_v": 0.00020056157240272763,
-                "_cls_s": 0.00020056157240272763
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dell.com",
-                "www.dell.com"
+                "indiatoday.in",
+                "www.indiatoday.in"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000702,
     "types": {
-        "XHR": 9,
-        "Script": 4
+        "XHR": 12,
+        "Preflight": 4,
+        "Script": 6,
+        "Image": 2
     },
     "nameservers": []
 }

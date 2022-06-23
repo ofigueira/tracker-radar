@@ -7,13 +7,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000475,
+    "sites": 7,
     "subdomains": [
         "www",
         "smetrics",
         "cisco-tags",
-        "secure-web"
+        "cdcvps.cloudapps",
+        "dsc",
+        "pps",
+        "engagemetrics",
+        "partnersuccessmetrics"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,21 +30,22 @@
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.localStorage": 2
+                "Document.cookie getter": 3,
+                "window.localStorage": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "65376de4331b8ea0a4d835b7d6786de65c7592ea1cd8fb08ce75256ea3a9f0b2"
+                "e7785e09e91a67b0be4cb350abe07ab849c4b3cc193e57b8e40252338429da5f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meraki.com",
-                "community.meraki.com"
+                "community.meraki.com",
+                "www.ciscolive.com"
             ]
         },
         {
@@ -51,26 +56,28 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.doNotTrack": 2
+                "Navigator.prototype.platform": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.doNotTrack": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "4b1589731cab3cc03fa56b6e91e496162499ae05dc2e5f0a685dca5b2bc646a8"
+                "f853543b5df83881345fd344fc0de2643c6caea4b544488188c30eb129162a43"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meraki.com",
-                "community.meraki.com"
+                "community.meraki.com",
+                "www.ciscolive.com",
+                "www.thousandeyes.com"
             ]
         },
         {
@@ -81,8 +88,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "8771b025c9a4ad79c440a6de651e1c864d2720bd02d7385a747eb1fbb1c231cb"
@@ -92,33 +99,191 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meraki.com",
-                "community.meraki.com"
+                "community.meraki.com",
+                "www.ciscolive.com",
+                "www.thousandeyes.com"
             ]
         },
         {
             "rule": "cisco\\.com\\/id",
-            "cookies": 0.0000136,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "smetrics"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "c8141323e48c4bfef15db49a94f961381adcffb4683c2395905d493981678328"
+                "576fe4e80f84fb038a707d5a5b9d66db5c71c324900f6fdcc63505803d569877",
+                "0fb41fd2d868c6fbc5d755820ec656783ed79aa8f0c7a1c4ba70e74419309185"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meraki.com",
-                "community.meraki.com"
+                "community.meraki.com",
+                "www.ciscolive.com"
             ]
         },
         {
             "rule": "cisco\\.com\\/tag\\/ntpagetag\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cisco-tags"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "9313ef5e7429e377ca74e280b857fe3fd4803b39533c29c1744941bc886c6c06"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gpv_v9": 0.000013562632235664297,
+                "_ga": 0.0000067813161178321486
+            },
+            "exampleSites": [
+                "meraki.com",
+                "community.meraki.com",
+                "www.thousandeyes.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/assets\\/ctm\\/xdc\\/xdcLsFrame\\.html",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89d6b6eb10d35c0382e4cc9eca1e00e7f117757e9e45ce1ba4eb7efafc99c682"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ciscolive.com",
+                "www.ciscolive.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/support\\/cdcvps\\/virtualprofile",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdcvps.cloudapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ciscolive.com",
+                "www.ciscolive.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/assets\\/ctm\\/xdc\\/xdc_ls_frame\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37127e2d363610adecd080af84e622af6cb9576ff8c1722991c21b823581be5f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ciscolive.com",
+                "www.ciscolive.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/web\\/fw\\/co\\/i\\/s\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ciscolive.com",
+                "www.ciscolive.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/v1\\/netid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dsc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3be097e69137ae2f1f7a2bb9ded37050018c1c447701ba445fcd638e06665d24"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ciscolive.com",
+                "www.ciscolive.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/search\\/guest",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ciscolive.com",
+                "www.ciscolive.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/tag\\/auth\\/ntpagetag\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -133,48 +298,48 @@
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gpv_v9": 0.000013639401503062045
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "meraki.com",
-                "community.meraki.com"
+                "ciscolive.com",
+                "www.ciscolive.com"
             ]
         },
         {
-            "rule": "cisco\\.com\\/1DxGw_dHk2gDkk5xvvVmgIKX_NZ5flv4UvB-2qiBRZbh1B4cv2IFLiRrtLAMrJev1eMXgHtjT4kWY9lUu1qbKRQ5cSjfXFzQyJvfnYeoWShZ72vU0k18tuUxDfOjHopRL1MZFD5LntjcPSd2PrBrttkXMM2cnPwzAvK2joYTJrJ18FXOg9opPhhK9Xe_ecOOp\\/https%3A%2F%2Ffairfax\\.demdex\\.net%2Fevent%3Fd_sid%3D2870985",
+            "rule": "cisco\\.com\\/visitor\\/v200\\/svrGP",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "secure-web"
+                "engagemetrics",
+                "partnersuccessmetrics"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "2e977bdccc768f21f5e6e93aa077f55edb9a01c32429d8ac18752fd59fe30f1c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flightcentre.co.nz",
-                "www.flightcentre.co.nz"
+                "ciscolive.com",
+                "www.ciscolive.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000271,
     "types": {
-        "Script": 4,
-        "Image": 6,
-        "XHR": 2
+        "Script": 11,
+        "Image": 11,
+        "XHR": 9,
+        "Document": 2
     },
     "nameservers": [
-        "ns3.cisco.com",
         "ns1.cisco.com",
-        "ns2.cisco.com"
+        "ns2.cisco.com",
+        "ns3.cisco.com"
     ]
 }

@@ -7,7 +7,8 @@
     "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "external"
+        "external",
+        "websocket"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -15,7 +16,7 @@
         {
             "rule": "airport\\.ai\\/js\\/sdk\\/web\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "external"
             ],
@@ -30,7 +31,7 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "1cca183f43f61ff3c195b6ff55f7fac144b444a9db77905ba0b147e590aac72d"
+                "0f62bbeb7dae692647c70de331e8c2f744ee4ec61305669e31a68766595fc1ed"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -213,7 +214,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "cc3d2a1ede37d3331062c63440f782f70b9a559218dc7e48c9e8ff5b148c2ada"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -230,12 +233,14 @@
                 "external"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e931a1f082ca3d90d8c90315c910bfd16a148d14740ed3038cc7bde5fa551e2a"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -255,7 +260,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9b1fc40526457dc837aa5a149626902af901de8fae4cfe3bce750eb9ffe3374f"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -272,15 +279,37 @@
                 "external"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "a837ce5295936818032573bf4331e37f2409b0810c41e75282deaf4c7a94e6b9"
+            ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "melbourneairport.com.au",
+                "www.sydneyairport.com.au"
+            ]
+        },
+        {
+            "rule": "airport\\.ai\\/chat-prod",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "websocket"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -296,11 +325,12 @@
         "Script": 7,
         "XHR": 6,
         "Stylesheet": 13,
-        "Document": 4
+        "Document": 4,
+        "WebSocket": 2
     },
     "nameservers": [
+        "ns1.101domain.com",
         "ns2.101domain.com",
-        "ns5.101domain.com",
-        "ns1.101domain.com"
+        "ns5.101domain.com"
     ]
 }

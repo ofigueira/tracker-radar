@@ -9,13 +9,20 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0178,
-    "sites": 178,
+    "prevalence": 0.0174,
+    "sites": 174,
     "subdomains": [
         "entitlements",
-        "cdn"
+        "cdn",
+        "3czhe1bn.cdn",
+        "vpb-cache"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "videos.coindesk.com",
+            "resolved": "3czhe1bn.cdn.jwplayer.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -26,8 +33,8 @@
                 "entitlements"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
                 "58a14ba2e3e773324e8b8aeadcd988bdd177f68e6bf65c5fcdd339032e536e61"
@@ -37,8 +44,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fandom.com",
+                "dc.fandom.com",
                 "diablo.fandom.com",
-                "memory-alpha.fandom.com"
+                "memory-alpha.fandom.com",
+                "the-boys.fandom.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/videos\\/uSEQWD8G-TI0yeHZW\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandom.com",
+                "bigbangtheory.fandom.com"
             ]
         },
         {
@@ -73,7 +102,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "dae6437727d26e007916d897d956477c8bc24c16035b876992027d0f12e996ed"
+                "c86b94a347cd1face150ff751ec1d8de08f915ab5de86eb21ab44b0a1d8795cf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -81,80 +110,6 @@
             "exampleSites": [
                 "macrumors.com",
                 "www.macrumors.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/libraries\\/RTetulgq\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2,
-                "MediaSource.isTypeSupported": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "9ec4758255f14f87e49bd859cabb2f182b1b1877cfdbef367b8fa6f9b56d9c71"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "republicworld.com",
-                "www.republicworld.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/v2\\/media\\/ADe4psmE",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "027310f367722c219f5cdcb6278f389699f4bffda881f44ee9d64d0689f6515b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "republicworld.com",
-                "www.republicworld.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/oMhXGhczEei3xRKCk4Wcgw\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "entitlements"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "58a14ba2e3e773324e8b8aeadcd988bdd177f68e6bf65c5fcdd339032e536e61"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "republicworld.com",
-                "www.republicworld.com"
             ]
         },
         {
@@ -171,13 +126,14 @@
                 "Navigator.prototype.platform": 2,
                 "Date.prototype.getTime": 2,
                 "MediaSource.isTypeSupported": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5f061dd433c5331878c9d45d89c8de2c0fc95c083285b9e648fb2d8649b1576f"
+                "b3f8ac49d0eded2783a63a5ec5c5e904fe06daeacce6ad1c2f382107213f99ba"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -210,6 +166,101 @@
             ]
         },
         {
+            "rule": "jwplayer\\.com\\/libraries\\/RTetulgq\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2,
+                "MediaSource.isTypeSupported": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "badab136e93348397f18de624d2dfb82683b9150675b249c5061a46d6229f1d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "republicworld.com",
+                "www.republicworld.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/v2\\/media\\/ADe4psmE",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a8efb863aa7fc0c20e94fba24ab3ca8d2da0b9e07dcd600fbcbc441ee60d19b8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "republicworld.com",
+                "www.republicworld.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/oMhXGhczEei3xRKCk4Wcgw\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "entitlements"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "58a14ba2e3e773324e8b8aeadcd988bdd177f68e6bf65c5fcdd339032e536e61"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "republicworld.com",
+                "www.republicworld.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/v2\\/media\\/ADe4psmE\\/poster\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "republicworld.com",
+                "www.republicworld.com"
+            ]
+        },
+        {
             "rule": "jwplayer\\.com\\/videos\\/pYs2ofpM-TI0yeHZW\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
@@ -237,8 +288,8 @@
                 "entitlements"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "0d313b7a9876c147d52857fa4b069e837051480222e2d659c82797dbf54f0193"
@@ -248,8 +299,54 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "australiannationalreview.com",
-                "www.australiannationalreview.com",
-                "www.nationaltimesaustralia.com"
+                "www.australiannationalreview.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/bbJUEDH7Eeingkbea9tnbQ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "entitlements"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "58a14ba2e3e773324e8b8aeadcd988bdd177f68e6bf65c5fcdd339032e536e61"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coindesk.com",
+                "www.coindesk.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/videos\\/wzhK4jfa-KuVjSRIN\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "3czhe1bn.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "videos.coindesk.com",
+                    "resolved": "3czhe1bn.cdn.jwplayer.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coindesk.com",
+                "www.coindesk.com"
             ]
         },
         {
@@ -273,9 +370,9 @@
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "b4cb956244bda4174c7042a698df11f15697237255ed412461daae3a368c53b2",
-                "c33b36bc35d4f57c7282f37957e2cb4baeec584bc538af35786f73904d4f9d7c",
-                "f6c726a34234a7564b3b0527cb9ddb9e4d2429e3c0463194705d65e2b98df415"
+                "03bc35c630fc3d84acc96dc11118c52b25b5b01c8c1591008166a3fe1f72b9f9",
+                "0c96329a0ca3f5ec2342923d7ba701f269b3016623ba29549c964dc82a5b3447",
+                "6e9dd65116e1bb849a23a4dd038b59639858c92800666b1b06ab5e53796ea623"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -312,46 +409,6 @@
             ]
         },
         {
-            "rule": "jwplayer\\.com\\/v2\\/media\\/2yvg6xcS\\/poster\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "healthline.com",
-                "www.healthline.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/videos\\/2yvg6xcS-PTrUFiMu\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "healthline.com",
-                "www.healthline.com"
-            ]
-        },
-        {
             "rule": "jwplayer\\.com\\/libraries\\/eHiF4Kz0\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -365,13 +422,14 @@
                 "Navigator.prototype.platform": 2,
                 "Date.prototype.getTime": 2,
                 "MediaSource.isTypeSupported": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "eb993ad98d4e066ff53526a8f3ecf1dda6b5d7c9fa4d5a401554a899348a2c5a"
+                "00ac52f18833f597b1b25182a09001e6858f5bc3bd4780457dee95cc22ad6de7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -424,7 +482,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fd6516bbc4e33bf280d8ad3e1b7a3da320d9c63de6abae8b6149ff3ed58bf086"
+                "a6fde611bc9101f011339c249c67cece68fbfaf69c189ac80fdbff16caa85489"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -446,7 +504,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6eca8d0a80bce6ad7514cf430b3ed530ff6a7cd67fd965c2b76943c03f217771"
+                "ed13a054cdf4513f682eae3728e4390e030ee295cf169c15e1a83b9664e07bc3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -467,7 +525,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "9970ca9a45090b499d04b540c8d28d9c4ffa372bd0982def2964f99e8c40d9f2"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -487,7 +547,9 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "a7b3e400f1e299bb82ff1fec423c5f48061f1e33b056ccbe2fa5551381a5e790"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -530,7 +592,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ec0e9fa913f645fe68a29fc18c71e5f051332b49c08e30683b9cbcce11852f92"
+                "ba1c53c9fd34eb52f16666ba1ab1b01a81493ff2df600d566144a536642313dc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -541,51 +603,7 @@
             ]
         },
         {
-            "rule": "jwplayer\\.com\\/tracks\\/4Hi3DUVd\\.vtt",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "676aa93f681993339245565c308e0970cac9263a132d499fbd9d1c70d33a2e01"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pcworld.com",
-                "www.pcworld.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/strips\\/37nRCvug-120\\.vtt",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ddd7fef2c2f2fdef134cb780a8cbdee635cb79a14b7ce649c35d311509b4f5a9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pcworld.com",
-                "www.pcworld.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/videos\\/s2MeK1vL-OOHHzDJg\\.mp4",
+            "rule": "jwplayer\\.com\\/tracks\\/gPL0Q5Fj\\.vtt",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -596,16 +614,16 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Media",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thehealthy.com",
-                "www.thehealthy.com"
+                "pcworld.com",
+                "www.pcworld.com"
             ]
         },
         {
-            "rule": "jwplayer\\.com\\/videos\\/k2yZhXz8-we68IQIw\\.mp4",
+            "rule": "jwplayer\\.com\\/strips\\/mdojwXbd-120\\.vtt",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -616,12 +634,52 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Media",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theknot.com",
-                "www.theknot.com"
+                "pcworld.com",
+                "www.pcworld.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/cache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vpb-cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pcworld.com",
+                "www.pcworld.com"
+            ]
+        },
+        {
+            "rule": "jwplayer\\.com\\/v2\\/media\\/TlQIGotR\\/poster\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thespruce.com",
+                "www.thespruce.com"
             ]
         },
         {
@@ -647,7 +705,7 @@
             ]
         },
         {
-            "rule": "jwplayer\\.com\\/videos\\/bVhLGYtW-tXzwfO7V\\.mp4",
+            "rule": "jwplayer\\.com\\/videos\\/gVIYl96h-tXzwfO7V\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -665,66 +723,6 @@
                 "thespruceeats.com",
                 "www.thespruceeats.com"
             ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/libraries\\/X4D75mWg\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 1,
-                "Date.prototype.getTime": 1,
-                "CanvasRenderingContext2D.prototype.getImageData": 1
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c30c9fa2ff66f9ac973b524e93a3e14076f92255f381cbe498201a727b4e5867"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thetruthaboutguns.com",
-                "www.thetruthaboutguns.com"
-            ]
-        },
-        {
-            "rule": "jwplayer\\.com\\/libraries\\/aVr2lJgW\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2,
-                "MediaSource.isTypeSupported": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "CanvasRenderingContext2D.prototype.getImageData": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2305956a9e06f2e965063aa75365bc8f0981e9ee07624ca654136a7ae1ce82d7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xnxvn.org",
-                "xnxxvn.org"
-            ]
         }
     ],
     "categories": [
@@ -737,11 +735,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 34,
-        "Media": 12,
+        "XHR": 39,
+        "Media": 10,
         "Fetch": 2,
-        "Script": 16,
-        "Image": 2
+        "Script": 12,
+        "Image": 4
     },
     "nameservers": [
         "ns-1254.awsdns-28.org",

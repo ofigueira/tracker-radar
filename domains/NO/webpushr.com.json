@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "cdn",
         "bot",
@@ -16,53 +16,42 @@
     "resources": [
         {
             "rule": "webpushr\\.com\\/app\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4,
+                "Navigator.prototype.platform": 4,
+                "Document.cookie getter": 4,
+                "window.sessionStorage": 3,
                 "Notification.permission": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "44ad315912c9335a551e38342e439c1cf8c66a45513ec1b2fcb2133be074b86a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_webpushrPageViews": {
+                    "ttl": 7776005,
+                    "length": 1,
+                    "prevalence": 0.0001003814495081309,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "worldofbuzz.com",
-                "www.ninefornews.nl"
-            ]
-        },
-        {
-            "rule": "webpushr\\.com\\/sw-server\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c9c84d691721e6278aad1e8ec2581f79b7c3b5f806d2bf0ab610e186b00b305b"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "worldofbuzz.com",
-                "www.ninefornews.nl"
+                "grouplinknew.site",
+                "www.extraavisen.no",
+                "www.idownloadblog.com",
+                "www.predatornutrition.com"
             ]
         },
         {
@@ -73,40 +62,22 @@
                 "bot"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "fdd0cc1586165e5b6385e827feb85c6310a23171b464e6390e8bd803a3595bca"
+                "feb210c02438217f89129063470a250fcdfb6de77ed7b67b4cb4fbdd52e7e2e6",
+                "12608bf918c06deff64dd1b2de3c66a656b2a501abd0d2ecbf35073be9f6229f",
+                "1aee1fbb648587feb716e7550d0e8f6ce2f9c6e13d10a736c1477741c60781de"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "worldofbuzz.com",
-                "www.ninefornews.nl"
-            ]
-        },
-        {
-            "rule": "webpushr\\.com\\/impression\\/session",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "worldofbuzz.com",
-                "www.ninefornews.nl"
+                "grouplinknew.site",
+                "www.extraavisen.no",
+                "www.idownloadblog.com",
+                "www.predatornutrition.com"
             ]
         },
         {
@@ -127,18 +98,62 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "worldofbuzz.com",
-                "www.ninefornews.nl"
+                "grouplinknew.site",
+                "www.extraavisen.no"
+            ]
+        },
+        {
+            "rule": "webpushr\\.com\\/sw-server\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "438b418e128965f54e6a712546b9d6629fa44d8cad6c4a2fcc751ed39d5fc5f5"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "extraavisen.no",
+                "www.idownloadblog.com"
+            ]
+        },
+        {
+            "rule": "webpushr\\.com\\/impression\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "extraavisen.no",
+                "www.idownloadblog.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "types": {
-        "Script": 2,
-        "Other": 2,
-        "Fetch": 6
+        "Script": 4,
+        "Fetch": 8,
+        "Other": 2
     },
     "nameservers": [
         "ns-514.awsdns-00.net",

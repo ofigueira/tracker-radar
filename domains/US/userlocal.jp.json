@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000543,
+    "sites": 8,
     "subdomains": [
+        "support-widget",
+        "support-beacon",
         "storage",
         "supportbot-admin"
     ],
@@ -14,29 +16,87 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "userlocal\\.jp\\/chatbot\\/images\\/748ff5dd-219b-4375-8ea2-6d0fdf085115\\.png",
+            "rule": "userlocal\\.jp\\/chatbot\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "storage"
+                "support-widget"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.devicePixelRatio": 3,
+                "Date.prototype.getTime": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.platform": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "b987e0edc8fbc0df1a291561bc74086ef920097fcad570dc7eb5c5f7beef5328"
+                "91781818e503c81e413def4e1c3eef2099b24945d68b167cbba1ccff4db9dd05"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "skyticket.jp",
-                "www.komeri.com"
+                "daisonet.com",
+                "jp.daisonet.com",
+                "www.jp-bank.japanpost.jp"
             ]
         },
         {
-            "rule": "userlocal\\.jp\\/chatbot\\/images\\/b6645a35-9555-4881-9ec7-923b14502b2c\\.png",
+            "rule": "userlocal\\.jp\\/widget\\/view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "support-beacon"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "d021edec4703b3d1e19c54b3d7b9585baf23fa09603e9aa6f8af3494ed0e6885",
+                "2a453be407d821421f2ed0577d42a77f17fc9ee03bbfa85ae26752ef554d45f3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daisonet.com",
+                "jp.daisonet.com",
+                "www.jp-bank.japanpost.jp"
+            ]
+        },
+        {
+            "rule": "userlocal\\.jp\\/chatbot_pc\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "support-widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "31c6f42749412dfb155914c9da9eec08533f6997b3d1b98088f8752a899ba94c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daisonet.com",
+                "jp.daisonet.com",
+                "www.jp-bank.japanpost.jp"
+            ]
+        },
+        {
+            "rule": "userlocal\\.jp\\/chatbot\\/icon\\/a0fe8554-9cca-4974-b33d-86a104292de0\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -46,15 +106,13 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "5c458d269d1443323d7f164705bf8d6323612658b67a7c7b5cd87067a9dea8ae"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "skyticket.jp",
-                "www.komeri.com"
+                "daisonet.com",
+                "jp.daisonet.com"
             ]
         },
         {
@@ -126,12 +184,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 10
+        "Script": 3,
+        "XHR": 3,
+        "Stylesheet": 3,
+        "Image": 8
     },
     "nameservers": [
-        "ns-1350.awsdns-40.org",
         "ns-140.awsdns-17.com",
         "ns-556.awsdns-05.net",
+        "ns-1350.awsdns-40.org",
         "ns-1964.awsdns-53.co.uk"
     ]
 }

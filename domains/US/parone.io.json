@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "sdk",
         "wp-thumbnail"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "parone\\.io\\/parone\\.min\\.js",
@@ -32,7 +32,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4a885bf7f7b95b47601756102b7003343cad337f01d35e5fe5bc68544414c593"
+                "52006e821892abfd73d2a0a4a27073e1e2c78f2694c132bbb5ccbdbcef2f5065"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -45,13 +45,15 @@
         {
             "rule": "parone\\.io\\/wp-thumbnail\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "wp-thumbnail"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "86e9d175b1fb607ae48eef85fd01375c166d504ce2ea50f35309bf9d83d19507"
@@ -61,7 +63,46 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "usatoday.com",
-                "golfweek.usatoday.com"
+                "golfweek.usatoday.com",
+                "www.linksmagazine.com"
+            ]
+        },
+        {
+            "rule": "parone\\.io\\/parone\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.plugins": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f647aecf2d7124708c367f24f91139f29b7494729e59cd9ce5213e0146166a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linksmagazine.com",
+                "www.linksmagazine.com"
             ]
         }
     ],
@@ -69,7 +110,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 7
     },
     "nameservers": [
         "jake.ns.cloudflare.com",
