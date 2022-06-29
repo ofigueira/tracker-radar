@@ -9,13 +9,18 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "toifeeds.indiatimes",
-        "jsso.indiatimes"
+        "jsso.indiatimes",
+        "api.foxnews"
     ],
     "cnames": [
+        {
+            "original": "api.foxnews.com",
+            "resolved": "api.foxnews.com-v1.edgekey.net"
+        },
         {
             "original": "jsso.indiatimes.com",
             "resolved": "jsso.indiatimes.com-v1.edgekey.net"
@@ -25,7 +30,7 @@
             "resolved": "toifeeds.indiatimes.com-v1.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "com-v1\\.edgekey\\.net\\/treact\\/feeds\\/toi\\/web\\/game\\/game",
@@ -44,7 +49,7 @@
                 }
             ],
             "responseHashes": [
-                "5e7d75b02ed2490795a2c412ab939356f2d838c012ba76f9e8ca9919242b1d18"
+                "e5094f2f4749f7c02689eee96b0dcced37feb5b9b107417d5ef3d1dbee8a666b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -76,7 +81,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "geolocation": 0.00010034115994380895
+                "geolocation": 0.00010032102728731942
             },
             "exampleSites": [
                 "timesofindia.com",
@@ -85,14 +90,14 @@
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
-            "cookies": 0.000401,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "jsso.indiatimes"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "jsso.indiatimes.com",
@@ -108,20 +113,19 @@
             "exampleSites": [
                 "timesofindia.com",
                 "timesofindia.indiatimes.com",
-                "www.gadgetsnow.com",
                 "www.indiatimes.com"
             ]
         },
         {
             "rule": "com-v1\\.edgekey\\.net\\/sso\\/crossapp\\/identity\\/web\\/loggedInUser",
-            "cookies": 0.000401,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "jsso.indiatimes"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "jsso.indiatimes.com",
@@ -135,8 +139,61 @@
             "exampleSites": [
                 "timesofindia.com",
                 "timesofindia.indiatimes.com",
-                "www.gadgetsnow.com",
                 "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/spark\\/mvpd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.foxnews"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.foxnews.com",
+                    "resolved": "api.foxnews.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "356421131d068573b1eebc38dd7f4b27f83a93b608132b2dd27794d21624f0e9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "video.foxnews.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/v3\\/video-player\\/6189191231001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.foxnews"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.foxnews.com",
+                    "resolved": "api.foxnews.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ed6b4cf716dee383ec87dd0f67da37b863c256c9bbd03c5b8555da7b5a5f34f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxnews.com"
             ]
         }
     ],
@@ -144,8 +201,9 @@
     "performance": {},
     "cookies": 0.000502,
     "types": {
-        "XHR": 8,
-        "Preflight": 4
+        "XHR": 9,
+        "Preflight": 3,
+        "Script": 2
     },
     "nameservers": []
 }

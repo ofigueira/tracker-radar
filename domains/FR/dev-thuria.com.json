@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000402,
+    "prevalence": 0.000401,
     "sites": 4,
     "subdomains": [
         "matomo",
@@ -15,7 +15,7 @@
     "resources": [
         {
             "rule": "dev-thuria\\.com\\/matomo\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 2,
             "subdomains": [
                 "matomo",
@@ -30,10 +30,13 @@
                 "Navigator.prototype.javaEnabled": 4,
                 "Navigator.prototype.cookieEnabled": 4,
                 "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.doNotTrack": 1
             },
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "0504b67a506ab4b537725084eb6c26f4c1ceeb3349e7c84da8974bec7bde47e1",
@@ -43,10 +46,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "auvergne-destination.com",
+                "clermontauvergnetourisme.com",
                 "www.en-pays-basque.fr",
                 "www.ladrometourisme.com",
                 "www.savoie-mont-blanc.com"
+            ]
+        },
+        {
+            "rule": "dev-thuria\\.com\\/index\\.php",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b03be678bc76e9e99267b901bd55c9d428e373440151b2b472f14a9c76d56922"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clermontauvergnetourisme.com",
+                "www.en-pays-basque.fr"
             ]
         },
         {
@@ -58,8 +83,8 @@
                 "smbt-matomo"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -68,19 +93,45 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "auvergne-destination.com",
+                "clermontauvergnetourisme.com",
+                "www.clermontauvergnetourisme.com",
                 "www.en-pays-basque.fr",
                 "www.ladrometourisme.com",
                 "www.savoie-mont-blanc.com"
+            ]
+        },
+        {
+            "rule": "dev-thuria\\.com\\/plugins\\/CoreAdminHome\\/javascripts\\/optOut\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fde7bf4b646157a6fdb858e8876273421ecd194437395b4b213f2e931f69e8b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clermontauvergnetourisme.com",
+                "www.en-pays-basque.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 4,
-        "Ping": 4
+        "Script": 6,
+        "Document": 2,
+        "Ping": 5
     },
     "nameservers": [
         "carol.ns.cloudflare.com",

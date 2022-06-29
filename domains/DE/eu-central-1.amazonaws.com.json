@@ -9,14 +9,53 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000702,
-    "sites": 7,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
-        "cognito-identity"
+        "fraaws-public-slb-ec53ddffde80b088.elb",
+        "cognito-identity",
+        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api",
+        "d-27lyv9kpda.execute-api"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "api.cloud.tui.com",
+            "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
+        },
+        {
+            "original": "chloro.trip.com",
+            "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fraaws-public-slb-ec53ddffde80b088.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "chloro.trip.com",
+                    "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "fde6a91331df34cb081f973a7fb6dd3844b394db10f5a073f965a8b1ac4a7e44"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/",
             "cookies": 0,
@@ -26,10 +65,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3924881be3b25832c22aa3394d47e62d97b38b0226770755f512ecd95f169a45"
+                "3c3f887ac5157eee38f6dfc2c24bd4a83c21de844b82a94c68ce2aac2675a729"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -70,10 +109,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f2ad19745edeaec61c332616728c84742a09a84cbdd7ea43e596d23f6649b50b"
+                "2ba6be4802192074327887e1b5c694321f0d1315992b4bba577cbe25ac92346b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -82,31 +121,125 @@
                 "sensiseeds.com",
                 "www.medpets.de"
             ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nsei6eihgzhsxptxxiawzkzpsi.appsync-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maingau-energie.de",
+                "www.maingau-energie.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nsei6eihgzhsxptxxiawzkzpsi.appsync-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a20ae943fada70a4c477cdc389f0756143060a2065eadd15480c30119822b470"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maingau-energie.de",
+                "www.maingau-energie.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/login\\/current\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-27lyv9kpda.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.cloud.tui.com",
+                    "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tui.com",
+                "www.tuifly.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/login\\/current\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-27lyv9kpda.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.cloud.tui.com",
+                    "resolved": "d-27lyv9kpda.execute-api.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "1d7e5a9839bd5eada96ab205bbf9b31367f3fb5046f99ad1f9f00672de338527"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tui.com",
+                "www.tuifly.com"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000301,
     "types": {
-        "Fetch": 2,
-        "Preflight": 4,
-        "XHR": 2
+        "XHR": 6,
+        "Fetch": 4,
+        "Preflight": 8
     },
     "nameservers": [
-        "u2.amazonaws.com",
+        "ns1.p31.dynect.net",
+        "ns2.p31.dynect.net",
+        "ns3.p31.dynect.net",
+        "ns4.p31.dynect.net",
         "pdns1.ultradns.net",
+        "pdns3.ultradns.org",
         "pdns5.ultradns.info",
         "u1.amazonaws.com",
-        "ns4.p31.dynect.net",
+        "u2.amazonaws.com",
         "u3.amazonaws.com",
         "u4.amazonaws.com",
         "u5.amazonaws.com",
-        "ns1.p31.dynect.net",
-        "pdns3.ultradns.org",
-        "u6.amazonaws.com",
-        "ns2.p31.dynect.net",
-        "ns3.p31.dynect.net"
+        "u6.amazonaws.com"
     ]
 }

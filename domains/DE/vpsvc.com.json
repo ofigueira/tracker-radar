@@ -10,13 +10,36 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
+        "my-account-hub-prod.personalization",
         "pecs.ct",
         "sitewide-promobar-service.prod.merch",
-        "prod.puc.starbug"
+        "my-account-page-prod.personalization"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "vpsvc\\.com\\/FlyoutDefinitions\\/vistaprint\\/de-DE\\/resources\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my-account-hub-prod.personalization"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "408ec78eb194e200ee9a34880419582750514f7251617fd4c973a6e8d8935d6e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.de",
+                "www.vistaprint.de"
+            ]
+        },
         {
             "rule": "vpsvc\\.com\\/api\\/Placements\\/nvhp\\/show",
             "cookies": 0,
@@ -26,7 +49,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "bc40005514cec98935f1bd3d0eb9dabbd9d49d7b8886183e4ec86d26ee565b39"
@@ -48,10 +71,30 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistaprint.de",
+                "www.vistaprint.de"
+            ]
+        },
+        {
+            "rule": "vpsvc\\.com\\/v1\\/promobar\\/vistaprint\\/de-DE",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sitewide-promobar-service.prod.merch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f6d3fe2ab9a889908b64e85ebafd3c685c380167303c431d117b2f577b3ff0a6"
+                "a5c934f464ee469b0c531ce331ccf44dc79b90f4797417f521ece802b433bce1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -62,20 +105,20 @@
             ]
         },
         {
-            "rule": "vpsvc\\.com\\/v1\\/get_context\\/me",
+            "rule": "vpsvc\\.com\\/sidebarContent\\/vistaprint\\/de-DE\\/resources\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prod.puc.starbug"
+                "my-account-page-prod.personalization"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e403b5e70c1386e83b9799b60051766016b6db229fcc81ecd095d67d42e9229b"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -88,8 +131,8 @@
     "performance": {},
     "cookies": 0.0001,
     "types": {
-        "XHR": 4,
-        "Fetch": 2
+        "XHR": 8,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1-134.akam.net",

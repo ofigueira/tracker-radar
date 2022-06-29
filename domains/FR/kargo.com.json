@@ -7,10 +7,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.0012,
+    "sites": 12,
     "subdomains": [
-        "krk"
+        "krk",
+        "crb",
+        "socialcanvas-cdn",
+        "socialcanvas-api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -32,17 +35,39 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00010040160642570282,
-                "__li_idex_cache": 0.00010040160642570282,
-                "pbjs_li_nonid": 0.00010040160642570282,
-                "currentPage": 0.00010040160642570282
+                "_li_dcdm_c": 0.00010033109260559848,
+                "__li_idex_cache": 0.00010033109260559848,
+                "pbjs_li_nonid": 0.00010033109260559848,
+                "_sharedID": 0.00010033109260559848
             },
             "exampleSites": [
                 "cafemom.com",
                 "homeguides.sfgate.com",
                 "www.bustle.com",
-                "www.mapquest.com",
-                "www.thedrive.com"
+                "www.dualshockers.com",
+                "www.elitedaily.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/bswsync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marvel.com",
+                "www.tuxboard.com"
             ]
         },
         {
@@ -63,9 +88,77 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "healthfully.com",
-                "www.nbcnews.com",
+                "nbcnews.com",
+                "www.rottentomatoes.com",
                 "www.today.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/js\\/rh\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socialcanvas-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3a56b53df7170451ce436431c6e5e75d48d48f0cd7f935590e67ac0db108d583"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinknews.co.uk",
+                "www.thethings.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinknews.co.uk",
+                "www.thethings.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0ca1906e2c0eef99c8404d99ac5ef889a9e318e4bbc48a51caf35207919aa4fe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinknews.co.uk",
+                "www.thethings.com"
             ]
         }
     ],
@@ -77,12 +170,15 @@
     "performance": {},
     "cookies": 0.000803,
     "types": {
-        "XHR": 8
+        "XHR": 10,
+        "Image": 2,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1512.awsdns-61.org",
         "ns-1837.awsdns-37.co.uk",
         "ns-243.awsdns-30.com",
-        "ns-635.awsdns-15.net"
+        "ns-635.awsdns-15.net",
+        "ns-1512.awsdns-61.org"
     ]
 }

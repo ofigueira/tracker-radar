@@ -4,18 +4,112 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "api"
+        "api",
+        "upsell"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "revy\\.io\\/upsell\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1377c32e0e5999f7c11189c3bb393e85775233f29c360d4bd25a10977c76ee66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/api\\/data\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "upsell"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "51197b33ffb4c0987e01551f5b29cf70d93b0c6d7cf044933e792cc20b3a4943"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/api\\/data\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "upsell"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/css\\/upsell\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71b5c9605cd03bb61e5af51253492d33a2a3851038a38eaffb73e7f91ea3303b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
             "rule": "revy\\.io\\/bundle\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
@@ -31,7 +125,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c590e37308c15bd6fa49d734d6c143637f627e271838766ecc02a4d3df67bbd5"
+                "fa367c2fb3801ca6108f1c300d3ea9fcb53ba4cca6d70feb70c78e97037f87ef"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -46,10 +140,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 2,
+        "Preflight": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "venus.ns.cloudflare.com",
-        "jerome.ns.cloudflare.com"
+        "jerome.ns.cloudflare.com",
+        "venus.ns.cloudflare.com"
     ]
 }

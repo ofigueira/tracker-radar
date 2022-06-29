@@ -4,15 +4,20 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
-        "gnar-writr.data"
+        "gnar-writr.data",
+        "public-treatment.prod-experimentation"
     ],
     "cnames": [
         {
             "original": "gnar.grammarly.com",
             "resolved": "gnar-writr.data.grammarlyaws.com"
+        },
+        {
+            "original": "treatment.grammarly.com",
+            "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
         }
     ],
     "fingerprinting": 0,
@@ -26,7 +31,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "gnar.grammarly.com",
+                    "resolved": "gnar-writr.data.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "demo.grammarly.com"
+            ]
+        },
+        {
+            "rule": "grammarlyaws\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gnar-writr.data"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "gnar.grammarly.com",
@@ -35,6 +65,59 @@
             ],
             "responseHashes": [],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "demo.grammarly.com",
+                "www.grammarly.com"
+            ]
+        },
+        {
+            "rule": "grammarlyaws\\.com\\/treatment\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-treatment.prod-experimentation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "treatment.grammarly.com",
+                    "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "www.grammarly.com"
+            ]
+        },
+        {
+            "rule": "grammarlyaws\\.com\\/treatment\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-treatment.prod-experimentation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "treatment.grammarly.com",
+                    "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -51,7 +134,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "gnar.grammarly.com",
@@ -70,10 +153,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Other": 2,
+        "Fetch": 5,
+        "Preflight": 4
     },
     "nameservers": []
 }

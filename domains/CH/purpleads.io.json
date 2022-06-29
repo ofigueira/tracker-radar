@@ -4,16 +4,44 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
+        "cdn",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "purpleads\\.io\\/x\\/",
+            "rule": "purpleads\\.io\\/agent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3fe1ad3952d6b7367c50b25410d01cab729b76d3a3785b937427f95451372abd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journalistenwatch.com",
+                "www.voltairenet.org"
+            ]
+        },
+        {
+            "rule": "purpleads\\.io\\/x\\/init",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,14 +49,61 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "587259314084a04755f0dfb2d0f0e9f07bdf03a575352e366e308d2e19cfc70a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journalistenwatch.com",
+                "www.voltairenet.org"
+            ]
+        },
+        {
+            "rule": "purpleads\\.io\\/x\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "voltairenet.org",
+                "journalistenwatch.com",
+                "www.voltairenet.org"
+            ]
+        },
+        {
+            "rule": "purpleads\\.io\\/load\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "0d67a598b75e69102e7fd62ae425c9693e7361e1c35bea39145d9c4ecb01c326"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journalistenwatch.com",
                 "www.voltairenet.org"
             ]
         },
@@ -41,16 +116,36 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journalistenwatch.com",
+                "www.voltairenet.org"
+            ]
+        },
+        {
+            "rule": "purpleads\\.io\\/x\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "4d8d7f45ae0a780cb13a86789d8d7499d29d82c377d920ca2407652b322ddcf9"
+                "4d17fd0edf15eb7810950ee450f25e9794f3902d5d39ede8d9d56fdbd4a2210f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "voltairenet.org",
+                "journalistenwatch.com",
                 "www.voltairenet.org"
             ]
         },
@@ -63,16 +158,16 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "c55c137cb7c92565f71c599e5f6fa671f7d3b17503cd34ac5f20dbd47abff7b1"
+                "c3f9a87235e6f3e174684651bad12b7777fee3f93d624d0b25afb46282ae11ac"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "voltairenet.org",
+                "journalistenwatch.com",
                 "www.voltairenet.org"
             ]
         },
@@ -85,14 +180,14 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "voltairenet.org",
+                "journalistenwatch.com",
                 "www.voltairenet.org"
             ]
         }
@@ -101,13 +196,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 4,
-        "Fetch": 4
+        "Script": 4,
+        "Fetch": 6,
+        "Preflight": 6
     },
     "nameservers": [
         "ns-1380.awsdns-44.org",
+        "ns-1857.awsdns-40.co.uk",
         "ns-222.awsdns-27.com",
-        "ns-808.awsdns-37.net",
-        "ns-1857.awsdns-40.co.uk"
+        "ns-808.awsdns-37.net"
     ]
 }

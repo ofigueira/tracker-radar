@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "prixtel.automation",
-        "dns-prixtel.automation"
+        "dns-prixtel.automation",
+        "dns-metanche.automation"
     ],
     "cnames": [
+        {
+            "original": "lp.maison-etanche.com",
+            "resolved": "dns-metanche.automation.webmecanik.com"
+        },
         {
             "original": "webmecanik.prixtel.com",
             "resolved": "dns-prixtel.automation.webmecanik.com"
@@ -20,11 +25,12 @@
     "resources": [
         {
             "rule": "webmecanik\\.com\\/mtc\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "prixtel.automation",
-                "dns-prixtel.automation"
+                "dns-prixtel.automation",
+                "dns-metanche.automation"
             ],
             "apis": {
                 "Navigator.prototype.language": 1,
@@ -37,50 +43,120 @@
                 "window.localStorage": 1,
                 "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "webmecanik.prixtel.com",
                     "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "lp.maison-etanche.com",
+                    "resolved": "dns-metanche.automation.webmecanik.com"
                 }
             ],
             "responseHashes": [
-                "df8fc367fb990d8876dc9ebca91961f9cb276e2cfb82d4878010673ce1a2a975"
+                "df8fc367fb990d8876dc9ebca91961f9cb276e2cfb82d4878010673ce1a2a975",
+                "bcf95f6091691c727825e356c14aa6e89ba41a7c9c4e160308458d88a5167874"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "mtc_id": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.00010040160642570282,
+                    "prevalence": 0.00010033109260559848,
                     "uniqueness": 1
                 },
                 "mtc_sid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.00010040160642570282,
+                    "prevalence": 0.00010033109260559848,
                     "uniqueness": 1
                 },
                 "mautic_device_id": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.00010040160642570282,
+                    "prevalence": 0.00010033109260559848,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "prixtel.com",
-                "assistance.prixtel.com"
+                "assistance.prixtel.com",
+                "www.maison-etanche.com"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/mtc\\/event",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-prixtel.automation",
+                "dns-metanche.automation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webmecanik.prixtel.com",
+                    "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "lp.maison-etanche.com",
+                    "resolved": "dns-metanche.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [
+                "36442f1f08d8926958b17356efa372a5d12c55c4bcaac3c246f7ebb38fc8642e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prixtel.com",
+                "www.maison-etanche.com"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/mtc\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-prixtel.automation",
+                "dns-metanche.automation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webmecanik.prixtel.com",
+                    "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "lp.maison-etanche.com",
+                    "resolved": "dns-metanche.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prixtel.com",
+                "www.maison-etanche.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-235-a.gandi.net",

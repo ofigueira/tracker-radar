@@ -7,15 +7,15 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0017,
-    "sites": 17,
+    "prevalence": 0.0014,
+    "sites": 14,
     "subdomains": [
-        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "cdn",
         "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au",
         "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
         "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au",
-        "cdn"
+        "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au"
     ],
     "cnames": [
         {
@@ -27,39 +27,57 @@
             "resolved": "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au.auth0.com"
         },
         {
+            "original": "auth.yha.com.au",
+            "resolved": "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au.auth0.com"
+        },
+        {
             "original": "bcauth.tradelink.com.au",
             "resolved": "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au.auth0.com"
         },
         {
             "original": "lala.lendi.com.au",
             "resolved": "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au.auth0.com"
-        },
-        {
-            "original": "login.arduino.cc",
-            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "auth0\\.com\\/styleguide\\/components\\/1\\.0\\.8\\/media\\/logos\\/img\\/badge\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8ce9f639d0609bbca3d5362034f3d85efc0d75830259b3b1f56e6387fe9153a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tradelink.com.au",
+                "www.yha.com.au"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/authorize",
             "cookies": 0.000501,
             "fingerprinting": 0,
             "subdomains": [
-                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au",
                 "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
-                "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au"
+                "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au",
+                "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au"
             ],
             "apis": {},
             "sites": 5,
             "prevalence": 0.000501,
             "cnames": [
-                {
-                    "original": "login.arduino.cc",
-                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-                },
                 {
                     "original": "bcauth.tradelink.com.au",
                     "resolved": "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au.auth0.com"
@@ -75,13 +93,17 @@
                 {
                     "original": "auth.westfield.com.au",
                     "resolved": "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au.auth0.com"
+                },
+                {
+                    "original": "auth.yha.com.au",
+                    "resolved": "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au.auth0.com"
                 }
             ],
             "responseHashes": [
-                "2e3bf4aa34611f3dc71b25f6967afe292a86c100e8a783731cbeea3b5888072f",
-                "89d83e5757d83b77627c09c1cd714d91212c28b49f17927b94926010d2939bde",
-                "5270f4380d7c99c73a697f1ac79d474e9e61c0420e2e324db2c3ee7d022dda50",
-                "ae1f06e1150a7c394ca328d7d0b4ab29bd8c3ded25727e44e1af7947c123116d"
+                "5197bff2372ca2b654c660e924c573a4f40de633d6c1a6eae4f394c58c231e67",
+                "07ab5948cbd00e6a0961f97032a0a1e2087a941e70778d54a0bc67f1868557d6",
+                "0c01a56a24d77c3482f6262b4d9a452602068cca07303e8c71109933c2cff104",
+                "5be206efeb7ffb3e3a0e63fbd88b9d380980e370b123ddd57091830004545466"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -89,11 +111,11 @@
                 "_hjTLDTest": 0.00010028078620136381
             },
             "exampleSites": [
-                "arduino.cc",
                 "tradelink.com.au",
                 "www.lendi.com.au",
                 "www.native-instruments.com",
-                "www.westfield.com.au"
+                "www.westfield.com.au",
+                "www.yha.com.au"
             ]
         },
         {
@@ -120,43 +142,18 @@
                 "urbanutilities.com.au",
                 "www.ey.com"
             ]
-        },
-        {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "inquirer.com",
-                "www.iprimus.com.au"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000602,
     "types": {
+        "Image": 2,
         "Document": 5,
-        "Script": 4
+        "Script": 2
     },
     "nameservers": [
-        "monroe.ns.cloudflare.com",
-        "kolton.ns.cloudflare.com"
+        "kolton.ns.cloudflare.com",
+        "monroe.ns.cloudflare.com"
     ]
 }

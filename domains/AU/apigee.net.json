@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.0016,
+    "sites": 16,
     "subdomains": [
+        "accor-group-prod-prod",
         "cisco-dsc-prod",
         "adsk-prod",
         "bgl-web-prod",
@@ -19,6 +20,10 @@
         "cmg-prod"
     ],
     "cnames": [
+        {
+            "original": "api.accor.com",
+            "resolved": "accor-group-prod-prod.apigee.net"
+        },
         {
             "original": "api.costco.com",
             "resolved": "costco-prd.apigee.net"
@@ -36,8 +41,33 @@
             "resolved": "cisco-dsc-prod.apigee.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/authentication\\/v2\\.0\\/authorization",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/v1\\/netid",
             "cookies": 0,
@@ -55,7 +85,7 @@
                 }
             ],
             "responseHashes": [
-                "2f5fc81dca6329e86a6ce3bbb1947bebd1a6b115ce35e81c20940f49c84133a9"
+                "b80004ee94fd85d597a8d773176d8de1e76b80d632b3172fdf020b935d665895"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -93,6 +123,31 @@
         },
         {
             "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bgl-web-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.prod.bunnings.com.au",
+                    "resolved": "bgl-web-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.com.au",
+                "www.bunnings.com.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -108,59 +163,9 @@
                 }
             ],
             "responseHashes": [
-                "23f82a9ea2dcb9eef558c3dc88f89a1ee70d77f959c1d0dd7759ed528ca914ae"
+                "7d816dfaa81bed17252a1b9d36f45af6cee663f80aa392c4322d5d34be6142c8"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -185,9 +190,34 @@
                 }
             ],
             "responseHashes": [
-                "0f0ad00d4c54a3f1c553fab2419f1317ef66f0de06290404fb35c77ef73bccf7"
+                "c867af2827c145a6ca62a17a9fbd8be8f41c0694aa3578e310aa37f0e246eb79"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.com.au",
+                "www.bunnings.com.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bgl-web-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.prod.bunnings.com.au",
+                    "resolved": "bgl-web-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -212,7 +242,7 @@
                 }
             ],
             "responseHashes": [
-                "d8b142649e4160eed5704427224900bb4f5140097e9d5945a5e4104321d9c496"
+                "ab8707ac9558e4eff1e54eb3bf898603a1c71464d0e5e7683688dcbc3e3456c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -234,7 +264,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "781f48ad2c5ef6493d4122bf3b627711bb312629d6e243d5ed272e2a06c08563"
+                "44468ec43b4fba61c14da3928dd6929c0771f3268bdfa97259a3bf5f43d33769"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -256,7 +286,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "766b50e629a624b9e237cccb19c5320adb791888640ca9131356e44b3ab93539"
+                "c73a695b59a2886e2500d872c27454a2ea231cd20b50a11a52d6e291d6187685"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -271,12 +301,12 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000802,
+    "cookies": 0.000702,
     "types": {
+        "Document": 5,
         "Script": 2,
-        "Document": 3,
-        "XHR": 10,
-        "Preflight": 4
+        "Preflight": 4,
+        "XHR": 10
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

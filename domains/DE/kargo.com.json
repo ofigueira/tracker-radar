@@ -7,24 +7,27 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
-        "krk"
+        "krk",
+        "crb",
+        "socialcanvas-cdn",
+        "socialcanvas-api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "kargo\\.com\\/api\\/v2\\/bid",
-            "cookies": 0.000702,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "krk"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000702,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -32,31 +35,48 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00010024057738572574,
-                "__li_idex_cache": 0.00010024057738572574,
-                "pbjs_li_nonid": 0.00010024057738572574,
-                "_sharedID": 0.00010024057738572574
+                "_sharedID": 0.00010036130068245685
             },
             "exampleSites": [
                 "cafemom.com",
                 "comicvine.gamespot.com",
-                "homeguides.sfgate.com",
-                "linuxhint.com",
+                "www.babycenter.de",
                 "www.bustle.com",
+                "www.dualshockers.com",
                 "www.elitedaily.com",
-                "www.thedrive.com"
+                "www.yourtango.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/api\\/v1\\/dsync\\/Conversant",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farnell.com",
+                "www.urbanoutfitters.com"
             ]
         },
         {
             "rule": "kargo\\.com\\/api\\/v1\\/bid",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "krk"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -65,9 +85,76 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rottentomatoes.com",
-                "www.today.com",
-                "www.nbcnews.com"
+                "nbcnews.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/js\\/rh\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socialcanvas-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3a56b53df7170451ce436431c6e5e75d48d48f0cd7f935590e67ac0db108d583"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinknews.co.uk",
+                "www.thethings.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinknews.co.uk",
+                "www.thethings.com"
+            ]
+        },
+        {
+            "rule": "kargo\\.com\\/v2\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socialcanvas-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6016c83b88efa360df1c1deb683335d0be2b3b934a95615cc698e1fab17f88c6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pinknews.co.uk",
+                "www.thethings.com"
             ]
         }
     ],
@@ -77,9 +164,12 @@
         "Ad Fraud"
     ],
     "performance": {},
-    "cookies": 0.001,
+    "cookies": 0.000803,
     "types": {
-        "XHR": 10
+        "XHR": 11,
+        "Image": 2,
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1512.awsdns-61.org",

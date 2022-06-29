@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
+    "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
-        "js-api"
+        "js-api",
+        "cdn",
+        "widget"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -27,13 +29,13 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "667f66ef8d9ef32d4877ece69a4029d564dc913ba9c6dd5d0810b906611d8a73"
+                "1bf23e59ba449f107e74f4401f0606275990460366bce987de7232cebc4a3488"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "peugeot.fr",
+                "fortuneo.fr",
                 "www.fortuneo.fr"
             ]
         },
@@ -55,8 +57,94 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "peugeot.fr",
+                "fortuneo.fr",
                 "www.fortuneo.fr"
+            ]
+        },
+        {
+            "rule": "dial-once\\.com\\/integrations-widget-widget\\/assets\\/auto\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "14177ff93463fb9edd6edd7e9ad1a6191e28ed14cdbd812dc17a956577907f06"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kiabi.com",
+                "www.kiabi.com"
+            ]
+        },
+        {
+            "rule": "dial-once\\.com\\/integrations-widget-widget\\/assets\\/autoBundle\\.3a7387d5b70ad6d363d2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kiabi.com",
+                "www.kiabi.com"
+            ]
+        },
+        {
+            "rule": "dial-once\\.com\\/api\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kiabi.com",
+                "www.kiabi.com"
+            ]
+        },
+        {
+            "rule": "dial-once\\.com\\/api\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7ffdd761c18346e476ea2bb57acc310237e2f581da7a0679d0d14c54ab09d669"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kiabi.com",
+                "www.kiabi.com"
             ]
         }
     ],
@@ -64,7 +152,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4
+        "XHR": 4,
+        "Script": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-cloud-a1.googledomains.com",

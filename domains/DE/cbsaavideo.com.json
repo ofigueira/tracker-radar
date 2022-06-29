@@ -7,10 +7,9 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "vod-gcs-edgecast",
-        "vod-gcs-fastly",
+        "vod-gcs-cloudfront",
         "vod-gcs-lumen",
-        "availability-fastly.syncbak-mediastore-cedexis"
+        "vod-gcs-akamai"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,14 +19,16 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vod-gcs-edgecast",
-                "vod-gcs-fastly"
+                "vod-gcs-cloudfront",
+                "vod-gcs-lumen"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -41,15 +42,39 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vod-gcs-lumen",
-                "availability-fastly.syncbak-mediastore-cedexis"
+                "vod-gcs-akamai",
+                "vod-gcs-lumen"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-lumen"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3f7cd636f2b4d285468bb4f8516e69edd13d866bb57e4537ee35ea8761a35a6a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -63,7 +88,8 @@
     "cookies": 0,
     "types": {
         "Image": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1404.awsdns-47.org",

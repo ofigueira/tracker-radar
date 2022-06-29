@@ -8,8 +8,8 @@
     "sites": 2,
     "subdomains": [
         "cdn",
-        "logger-prod",
-        "webinsights-prod"
+        "webinsights-prod",
+        "logger-prod"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -62,21 +62,32 @@
             ]
         },
         {
-            "rule": "avlr\\.net\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "avlr\\.net\\/common\\/avatag\\/avatag\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "logger-prod"
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b32330cd87975c95f62698fb423f46de723bbe896def7ac14875df0a8b1d12da"
+                "bfcd79b8fd8072587b210b216b30492b39eeac1622a18261d59617a046554184"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "_avaQv": {
+                    "ttl": 1803,
+                    "length": 29,
+                    "prevalence": 0.000013562632235664297,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "avalara.com",
@@ -126,32 +137,21 @@
             ]
         },
         {
-            "rule": "avlr\\.net\\/common\\/avatag\\/avatag\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "rule": "avlr\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "logger-prod"
             ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bfcd79b8fd8072587b210b216b30492b39eeac1622a18261d59617a046554184"
+                "de08b3fd5ac077da35d135ef62d169665201203df5d2e5e22eb92c2aa62a18b0"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_avaQv": {
-                    "ttl": 1802,
-                    "length": 29,
-                    "prevalence": 0.000013639401503062045,
-                    "uniqueness": 0.5
-                }
-            },
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "avalara.com",
