@@ -4,14 +4,122 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
+        "upstream.production",
+        "splitit-dd.production",
+        "translations-v2.production",
         "externals"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "splitit\\.com\\/v1\\/dist\\/upstream-messaging\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "upstream.production"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.connection": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "Screen.prototype.availTop": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availLeft": 2,
+                "Screen.prototype.availHeight": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "Navigator.prototype.languages": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.plugins": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ad88bdce0d749023c28f5ba479317039ffe60a877347b6fa80f4a08382db41db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1658273932,
+                    "length": 1,
+                    "prevalence": 0.000013572664653388076,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joovv.com",
+                "secretlab.eu"
+            ]
+        },
+        {
+            "rule": "splitit\\.com\\/um-prod-ingestion-stream\\/record",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splitit-dd.production"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10e25f4dbfdc9980781e5a86033c9c88da7f8cae362c994b99b8e90668d15bd9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joovv.com",
+                "secretlab.eu"
+            ]
+        },
+        {
+            "rule": "splitit\\.com\\/api\\/v1\\.0\\/translations\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "translations-v2.production"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c064fc4f12892d95c7bb35b5a36c5395ca32ef76b6485e36eab33204fd079808"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "joovv.com",
+                "secretlab.eu"
+            ]
+        },
         {
             "rule": "splitit\\.com\\/integration\\/js\\/splitit-marketing\\.js",
             "cookies": 0,
@@ -59,9 +167,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.0000204,
     "types": {
-        "Script": 2,
+        "Script": 4,
+        "XHR": 2,
+        "Fetch": 2,
         "Document": 2
     },
     "nameservers": [

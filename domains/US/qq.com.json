@@ -7,13 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000814,
-    "sites": 12,
+    "prevalence": 0.000115,
+    "sites": 17,
     "subdomains": [
         "res.wx",
         "wpa",
         "dp3",
-        "a.gdt"
+        "a.gdt",
+        "ssl.captcha",
+        "t.captcha"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -31,7 +33,7 @@
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e55662dc8c011c02ffc492e7140a8651ef0a4de6b907b69c4bb5e2982961da28"
@@ -66,6 +68,32 @@
             ]
         },
         {
+            "rule": "qq\\.com\\/open\\/js\\/jweixin-1\\.4\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "res.wx"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d2157f629b7c3d9ad48ac78c65ed4a9774ae2861c35bd723d169f4308ce4fe97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.tuya.com"
+            ]
+        },
+        {
             "rule": "qq\\.com\\/stdlog",
             "cookies": 0,
             "fingerprinting": 0,
@@ -74,7 +102,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "cf29e1b2087058ccb7d034620fc45bb35671afa6509fbd6459f315ddf6b82343"
@@ -97,7 +125,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "f139e4295f71dc13b09f52f38526a00e06b1f5ddcc7cbe39c3ff4f314ddb9a24"
@@ -105,7 +133,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.0000067813161178321486
+                "dy_fs_page": 0.000006786332326694038
             },
             "exampleSites": [
                 "indonesia.travel",
@@ -122,7 +150,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -130,12 +158,58 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.0000067813161178321486
+                "dy_fs_page": 0.000006786332326694038
             },
             "exampleSites": [
                 "indonesia.travel",
                 "www.indonesia.travel",
                 "www.marinabaysands.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/TCaptcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl.captcha"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18f87e3be6f42f9356b993a9dee42431c985728425231097c1b26a7a0f9bbec5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "monkey.app",
+                "www.monkey.app"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/template\\/drag_ele\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t.captcha"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "monkey.app",
+                "www.monkey.app"
             ]
         }
     ],
@@ -143,14 +217,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3,
+        "Script": 7,
         "Image": 5,
-        "XHR": 6
+        "XHR": 6,
+        "Document": 2
     },
     "nameservers": [
         "ns4.qq.com",
-        "ns3.qq.com",
+        "ns1.qq.com",
         "ns2.qq.com",
-        "ns1.qq.com"
+        "ns3.qq.com"
     ]
 }

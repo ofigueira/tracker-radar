@@ -4,20 +4,27 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
         "compare-static.weather-and-climate.com",
         "compare-static.flightconnections.com",
+        "static",
         "a",
         "remarket",
         "www",
-        "compare.flightconnections.com"
+        "compare-static.travelgay.com",
+        "compare.flightconnections.com",
+        "compare.travelgay.com"
     ],
     "cnames": [
         {
             "original": "compare-static.flightconnections.com",
             "resolved": "compare-static.flightconnections.com.clicktripz.com"
+        },
+        {
+            "original": "compare-static.travelgay.com",
+            "resolved": "compare-static.travelgay.com.clicktripz.com"
         },
         {
             "original": "compare-static.weather-and-climate.com",
@@ -26,21 +33,30 @@
         {
             "original": "compare.flightconnections.com",
             "resolved": "compare.flightconnections.com.clicktripz.com"
+        },
+        {
+            "original": "compare.travelgay.com",
+            "resolved": "compare.travelgay.com.clicktripz.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "clicktripz\\.com\\/tag\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "compare-static.weather-and-climate.com",
-                "compare-static.flightconnections.com"
+                "compare-static.flightconnections.com",
+                "static"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
                     "original": "compare-static.weather-and-climate.com",
@@ -55,16 +71,25 @@
                 "b20b74960c34485290e7470970494925fea42e9d930f02fa25e48d44ac2557c3"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_ctpuid": {
+                    "ttl": 7776016,
+                    "length": 36,
+                    "prevalence": 0.0001002707309736288,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "weather-and-climate.com",
-                "www.flightconnections.com"
+                "www.flightconnections.com",
+                "www.mapquest.com",
+                "www.travelgay.com"
             ]
         },
         {
             "rule": "clicktripz\\.com\\/api\\/advertisers\\/v1\\/prof",
-            "cookies": 0.000903,
+            "cookies": 0.000902,
             "fingerprinting": 0,
             "subdomains": [
                 "a",
@@ -72,7 +97,7 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.000903,
+            "prevalence": 0.000902,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -82,10 +107,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cheapflights.com.au",
-                "www.kayak.com.au",
                 "www.kayak.com",
-                "www.tripadvisor.co.nz",
+                "www.kayak.com.au",
                 "www.tripadvisor.co.uk",
+                "www.tripadvisor.co.nz",
                 "www.tripadvisor.com.au",
                 "www.tripadvisor.com.sg",
                 "www.tripadvisor.com",
@@ -94,22 +119,91 @@
         },
         {
             "rule": "clicktripz\\.com\\/api\\/integrations\\/v1\\/constrain",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "a97a4e62194d09d716c0e6da8ea60628294397be8d8972b6038624c3f7eb258d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0001002707309736288
+            },
+            "exampleSites": [
+                "flightconnections.com",
+                "www.flightconnections.com",
+                "www.travelgay.com"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/asset\\/__adslot-bundle_v2\\/efd7bec7017f9cb5c2a3a82c546774f506e92df9\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "compare-static.flightconnections.com",
+                "compare-static.travelgay.com"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
+            "cnames": [
+                {
+                    "original": "compare-static.flightconnections.com",
+                    "resolved": "compare-static.flightconnections.com.clicktripz.com"
+                },
+                {
+                    "original": "compare-static.travelgay.com",
+                    "resolved": "compare-static.travelgay.com.clicktripz.com"
+                }
+            ],
+            "responseHashes": [
+                "f97a807e32447cc744b328af51158bec56ebcf3897262c192f120e34c20f8c14"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flightconnections.com",
-                "www.flightconnections.com"
+                "www.travelgay.com"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/asset\\/Cti1Lib\\/3\\.0\\.2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "compare-static.flightconnections.com",
+                "compare-static.travelgay.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "compare-static.flightconnections.com",
+                    "resolved": "compare-static.flightconnections.com.clicktripz.com"
+                },
+                {
+                    "original": "compare-static.travelgay.com",
+                    "resolved": "compare-static.travelgay.com.clicktripz.com"
+                }
+            ],
+            "responseHashes": [
+                "61aa1050e21573fb7e3005628ffe13d38606c6efed32173f1e0ee63919f1e5a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightconnections.com",
+                "www.travelgay.com"
             ]
         },
         {
@@ -117,35 +211,67 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "compare.flightconnections.com"
+                "compare.flightconnections.com",
+                "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "compare.flightconnections.com",
                     "resolved": "compare.flightconnections.com.clicktripz.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flightconnections.com",
-                "www.flightconnections.com"
+                "www.flightconnections.com",
+                "www.travelgay.com"
+            ]
+        },
+        {
+            "rule": "clicktripz\\.com\\/x\\/pas",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "compare.travelgay.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "compare.travelgay.com",
+                    "resolved": "compare.travelgay.com.clicktripz.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0002005414619472576,
+                "_ctpuid": 0.0002005414619472576
+            },
+            "exampleSites": [
+                "travelgay.com",
+                "www.travelgay.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.001,
+    "cookies": 0.0011,
     "types": {
-        "Script": 2,
+        "Script": 10,
         "Image": 9,
-        "XHR": 2,
-        "Ping": 2
+        "XHR": 3,
+        "Ping": 3
     },
     "nameservers": [
         "ns-1486.awsdns-57.org",

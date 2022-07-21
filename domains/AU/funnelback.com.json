@@ -1,18 +1,21 @@
 {
     "domain": "funnelback.com",
     "owner": {
-        "name": "Funnelback Pty Ltd",
-        "displayName": "Funnelback"
+        "name": "Squiz Australia Pty. Ltd.",
+        "displayName": "Squiz Australia"
     },
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0014,
-    "sites": 14,
+    "prevalence": 0.0015,
+    "sites": 15,
     "subdomains": [
+        "transurban-search.clients",
         "actgov-search.clients",
         "tga-search.clients",
-        "slnsw-search.clients"
+        "slnsw-search.clients",
+        "mu-search.clients",
+        "service-tas-search.clients"
     ],
     "cnames": [
         {
@@ -27,6 +30,28 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "funnelback\\.com\\/s\\/search\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "transurban-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e95187d545bbc32453e0ed528fcf01e9e651df6558380c762a64019864599918"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linkt.com.au",
+                "www.linkt.com.au"
+            ]
+        },
+        {
             "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\/jquery\\.tmpl\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -35,8 +60,8 @@
                 "tga-search.clients"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.001,
+            "sites": 9,
+            "prevalence": 0.000902,
             "cnames": [
                 {
                     "original": "www.search.act.gov.au",
@@ -59,7 +84,6 @@
                 "www.communityservices.act.gov.au",
                 "www.covid19.act.gov.au",
                 "www.education.act.gov.au",
-                "www.environment.act.gov.au",
                 "www.library.act.gov.au",
                 "www.revenue.act.gov.au",
                 "www.tga.gov.au",
@@ -75,8 +99,8 @@
                 "slnsw-search.clients"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000802,
+            "sites": 7,
+            "prevalence": 0.000702,
             "cnames": [
                 {
                     "original": "www.search.act.gov.au",
@@ -94,10 +118,81 @@
                 "www.communityservices.act.gov.au",
                 "www.covid19.act.gov.au",
                 "www.education.act.gov.au",
-                "www.environment.act.gov.au",
                 "www.library.act.gov.au",
                 "www.sl.nsw.gov.au",
                 "www.transport.act.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources-global\\/thirdparty\\/typeahead-0\\.11\\.1\\/typeahead\\.bundle\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mu-search.clients",
+                "service-tas-search.clients"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "075c11a06a2a62c26afcdeda6d40a3fb015225bf341ba5ea505f23c5cc5658ba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "murdoch.edu.au",
+                "www.service.tas.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources-global\\/thirdparty\\/handlebars-4\\.0\\.5\\/handlebars\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-search.clients",
+                "service-tas-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "acc39238ce470f35443285594efdb5f3df912924d2818e5929f4df6a9eeadb31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "murdoch.edu.au",
+                "www.service.tas.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/funnelback\\.autocompletion-2\\.6\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-search.clients",
+                "service-tas-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8415e8c7f73bd81bc6c58ddf25e7f352eaafd6ada546de4c2bc9b8cc7da00ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "murdoch.edu.au",
+                "www.service.tas.gov.au"
             ]
         }
     ],
@@ -105,7 +200,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 18
+        "Fetch": 2,
+        "Script": 22
     },
-    "nameservers": []
+    "nameservers": [
+        "ns1.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com"
+    ]
 }

@@ -9,16 +9,26 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.0012,
+    "sites": 12,
     "subdomains": [
+        "star.cdn.nintendo",
         "api.farfetch",
+        "locations.smartertravel",
         "api.wsj"
     ],
     "cnames": [
         {
+            "original": "alps.cdn.nintendo.net",
+            "resolved": "star.cdn.nintendo.net.edgekey.net"
+        },
+        {
             "original": "api.wsj.net",
             "resolved": "api.wsj.net.edgekey.net"
+        },
+        {
+            "original": "locations.smartertravel.net",
+            "resolved": "locations.smartertravel.net.edgekey.net"
         },
         {
             "original": "ot.farfetch.com",
@@ -27,6 +37,33 @@
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "net\\.edgekey\\.net\\/v1\\/js\\/account_en_USA\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "star.cdn.nintendo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "alps.cdn.nintendo.net",
+                    "resolved": "star.cdn.nintendo.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "576b6f7a56a871f2dd4ef5a7e2685cea9f428bbe3f2a466154e20d363f914c7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nintendo.com",
+                "www.nintendo.com"
+            ]
+        },
         {
             "rule": "net\\.edgekey\\.net\\/ext\\/marketing\\/v1\\/trackings",
             "cookies": 0,
@@ -80,6 +117,33 @@
             ]
         },
         {
+            "rule": "net\\.edgekey\\.net\\/en\\/proximity\\/type=10017,10004,10008,10010,10011,10015\\/header",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locations.smartertravel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "locations.smartertravel.net",
+                    "resolved": "locations.smartertravel.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "af406a31b9eb2721c7018e9e974feaa3fb091a060d11b7c5cadc1d04ef26969b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartertravel.com",
+                "www.smartertravel.com"
+            ]
+        },
+        {
             "rule": "net\\.edgekey\\.net\\/api\\/dylan\\/quotes\\/v2\\/comp\\/quoteByDialect",
             "cookies": 0,
             "fingerprinting": 0,
@@ -96,7 +160,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "XHR",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -120,8 +184,10 @@
                     "resolved": "api.wsj.net.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Other",
+            "responseHashes": [
+                "c57a4e9bdb010ea885d7da98720ad8c60d64352e46e4e2af7c292f8a2c312f55"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -134,9 +200,9 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Preflight": 2,
-        "XHR": 4,
-        "Other": 2
+        "Script": 2,
+        "Preflight": 4,
+        "XHR": 6
     },
     "nameservers": []
 }

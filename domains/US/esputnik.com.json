@@ -7,10 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000949,
-    "sites": 14,
+    "prevalence": 0.0000814,
+    "sites": 12,
     "subdomains": [
-        "push"
+        "push",
+        "statics",
+        "site-script",
+        "web-events"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -27,26 +30,24 @@
                 "window.localStorage": 2,
                 "Notification.permission": 2
             },
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "ecf0966d876995d75a13e2c76aca7a45662e751305d75f5cac0cac7ee14d288d",
                 "f04d8115e465af000e3bbc96709d1caaac7f1a63f73979d75fb124874565844a",
-                "12b4a86392a79a14566f995c334f63c4aa903acf5ebddb96bd28f0a474c746da",
                 "ef4039d1ad2da25398339e310182e79a257f8dca4fbe56f8af09c259d49a4c19",
-                "8f8e27b6d1a167077b35c01166ef0a27f9ca583afbeb6363fc02c9b4f267fa94"
+                "8f8e27b6d1a167077b35c01166ef0a27f9ca583afbeb6363fc02c9b4f267fa94",
+                "3ed2c6cc0c915e7cd11df9cc8d1258e926ae08bab77ae7c815ab916ed56e3e3f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ask.fm",
-                "deal.by",
                 "epicentrk.ua",
-                "freebooksummary.com",
                 "www.foxtrot.com.ua",
-                "www.macupdate.com"
+                "www.macupdate.com",
+                "www.moyo.ua"
             ]
         },
         {
@@ -58,7 +59,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "2c0e0b81b99174665eade9993ffb42a3f53fff7c7be754831ab477bda0ed164d"
@@ -68,22 +69,121 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "epicentrk.ua",
-                "freebooksummary.com",
-                "graduateway.com"
+                "graduateway.com",
+                "www.moyo.ua"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/scripts\\/E6E2EE04D2DC4FA1B257302915D6A57A\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "statics"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ef71c90c386994a5127c2058b7e32a53750b8702190709773ed6846c93d4adef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sc": {
+                    "ttl": 140497920,
+                    "length": 36,
+                    "prevalence": 0.000013572664653388076,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moyo.ua",
+                "www.moyo.ua"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/site-script\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moyo.ua",
+                "www.moyo.ua"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/site-script\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-script"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6f69de9cdb32a508852b2e7be4bdc73a185368f54114aca80c588b4144d52241"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moyo.ua",
+                "www.moyo.ua"
+            ]
+        },
+        {
+            "rule": "esputnik\\.com\\/api\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moyo.ua",
+                "www.moyo.ua"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
-        "Script": 6,
-        "Other": 3
+        "Script": 7,
+        "Other": 3,
+        "Preflight": 2,
+        "XHR": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-185.awsdns-23.com",
         "ns-974.awsdns-57.net",
         "ns-1742.awsdns-25.co.uk",
-        "ns-1170.awsdns-18.org"
+        "ns-1170.awsdns-18.org",
+        "ns-185.awsdns-23.com"
     ]
 }

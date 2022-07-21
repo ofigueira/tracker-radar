@@ -10,10 +10,19 @@
     "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "servicenowsignon",
-        "ea"
+        "servicenowsignon.customdomains",
+        "ligonier.customdomains"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "auth.ligonier.org",
+            "resolved": "ligonier.customdomains.okta.com"
+        },
+        {
+            "original": "ssosignon.servicenow.com",
+            "resolved": "servicenowsignon.customdomains.okta.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -21,43 +30,29 @@
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "servicenowsignon",
-                "ea"
+                "servicenowsignon.customdomains",
+                "ligonier.customdomains"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "ssosignon.servicenow.com",
+                    "resolved": "servicenowsignon.customdomains.okta.com"
+                },
+                {
+                    "original": "auth.ligonier.org",
+                    "resolved": "ligonier.customdomains.okta.com"
+                }
+            ],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "servicenow.com",
-                "login.ea.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "servicenowsignon",
-                "ea"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "b418d90349b62d068a606464345b6674c8064e81b79f8ae770cee0ab1b69c41b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "servicenow.com",
-                "login.ea.com"
+                "www.ligonier.org"
             ]
         }
     ],
@@ -65,17 +60,7 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Preflight": 2,
-        "XHR": 2
+        "Preflight": 2
     },
-    "nameservers": [
-        "edns5.ultradns.biz",
-        "edns5.ultradns.com",
-        "edns5.ultradns.net",
-        "edns5.ultradns.org",
-        "ns-1459.awsdns-54.org",
-        "ns-1563.awsdns-03.co.uk",
-        "ns-285.awsdns-35.com",
-        "ns-684.awsdns-21.net"
-    ]
+    "nameservers": []
 }

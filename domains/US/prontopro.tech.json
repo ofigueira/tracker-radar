@@ -7,8 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "c.analytics",
-        "lb-k8s-2.prod"
+        "lb-k8s-2.prod",
+        "c.analytics"
     ],
     "cnames": [
         {
@@ -19,22 +19,29 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "prontopro\\.tech\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "rule": "prontopro\\.tech\\/g\\/collect",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "c.analytics"
+                "lb-k8s-2.prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            "cnames": [
+                {
+                    "original": "gtm.prontopro.it",
+                    "resolved": "lb-k8s-2.prod.prontopro.tech"
+                }
             ],
-            "type": "Fetch",
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027145329306776152
+            },
             "exampleSites": [
                 "prontopro.it",
                 "www.prontopro.it"
@@ -61,29 +68,22 @@
             ]
         },
         {
-            "rule": "prontopro\\.tech\\/g\\/collect",
+            "rule": "prontopro\\.tech\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "lb-k8s-2.prod"
+                "c.analytics"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "gtm.prontopro.it",
-                    "resolved": "lb-k8s-2.prod.prontopro.tech"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [
-                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.000027125264471328594
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "prontopro.it",
                 "www.prontopro.it"
@@ -94,9 +94,9 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Fetch": 2,
+        "XHR": 2,
         "Preflight": 2,
-        "XHR": 2
+        "Fetch": 2
     },
     "nameservers": [
         "ns-1.prontopro.tech",

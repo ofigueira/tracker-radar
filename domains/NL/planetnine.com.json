@@ -7,35 +7,43 @@
     "prevalence": 0.001,
     "sites": 10,
     "subdomains": [
-        "resources"
+        "resources",
+        "config"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "planetnine\\.com\\/player\\/new\\/Pnvp\\.js",
+            "rule": "planetnine\\.com\\/player\\/latest\\/Pnvp\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "resources"
             ],
             "apis": {
-                "Navigator.prototype.product": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.product": 8,
+                "Navigator.prototype.userAgent": 8,
+                "window.localStorage": 8,
+                "window.innerHeight": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 8,
+            "prevalence": 0.000802,
             "cnames": [],
             "responseHashes": [
-                "77e14e703c50af493718e06738790540b8aa649251d4692dea757e23e5c9428e"
+                "c717955e4521d11bd559e2b95cfcfb97b11673459b0bb3e816b3bbcf7076a147"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "festileaks.com",
                 "filmkrant.nl",
-                "www.festivalinfo.nl",
-                "www.podiuminfo.nl"
+                "jfk.men",
+                "topgear.nl",
+                "www.filmladder.nl",
+                "www.newscientist.nl",
+                "www.podiuminfo.nl",
+                "www.topgear.com"
             ]
         },
         {
@@ -46,13 +54,14 @@
                 "resources"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "URL.createObjectURL": 2
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "3ea3b7a446e0e465d95fa53a0422795e99152913dee5a2fc0331475964748677"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -62,28 +71,49 @@
             ]
         },
         {
-            "rule": "planetnine\\.com\\/player\\/test\\/Pnvp\\.js",
+            "rule": "planetnine\\.com\\/api\\/config\\/topgear\\.nl",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7f45d9178e72cf165d4dbe3b40e78b8ca0795a7a754c0a016521cf35b092a55a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "topgear.nl",
+                "www.topgear.com"
+            ]
+        },
+        {
+            "rule": "planetnine\\.com\\/player\\/new\\/Pnvp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "resources"
             ],
             "apis": {
                 "Navigator.prototype.product": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "fc0fa83467a06181a54e1aa14dc5c825f2b3eaf71d1b13d6a30a965807ebf10d"
+                "77e14e703c50af493718e06738790540b8aa649251d4692dea757e23e5c9428e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "filmladder.nl",
+                "festivalinfo.nl",
                 "www.horses.nl"
             ]
         }
@@ -92,7 +122,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 7
+        "Script": 12,
+        "XHR": 2
     },
     "nameservers": [
         "ns01.hostnet.nl",

@@ -7,10 +7,12 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
-        "css"
+        "css",
+        "es-js",
+        "migratory"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "enetscores\\.com\\/hour\\/gz\\/css\\/mx\\/555\\.css",
@@ -20,19 +22,17 @@
                 "css"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d4904b7b2c772c9a704c0d5a57a0021ec5a5fdacc173b42a593ad7aaf845b4d0",
                 "bc6d7bda4ece1ac70f178e545e464b92f47163dfcfac5854162ee675e87701bb"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "calciomercato.com",
-                "www.delo.si",
+                "delo.si",
                 "www.prosport.ro"
             ]
         },
@@ -79,13 +79,60 @@
                 "delo.si",
                 "www.prosport.ro"
             ]
+        },
+        {
+            "rule": "enetscores\\.com\\/js\\/migratorydata\\/v1\\/lib\\/migratorydata-client\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "es-js"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a8e949c66c7aa4e70aeb307f93850671c266a6b3deaf46a93f75913b32aa039c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dr.dk",
+                "www.prosport.ro"
+            ]
+        },
+        {
+            "rule": "enetscores\\.com\\/WebSocketConnection-Secure",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "migratory"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dr.dk",
+                "www.prosport.ro"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.0000136,
     "types": {
-        "Stylesheet": 7
+        "Stylesheet": 6,
+        "Script": 2,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns-152.awsdns-19.com",

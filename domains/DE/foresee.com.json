@@ -13,36 +13,94 @@
     "sites": 6,
     "subdomains": [
         "gateway",
-        "analytics",
-        "brain"
+        "brain",
+        "analytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "foresee\\.com\\/sites\\/delta\\/production\\/gateway\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "foresee\\.com\\/code\\/19\\.14\\.4-fs\\/fs\\.utils\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
                 "gateway"
             ],
             "apis": {
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b678474feeb8618310b0df27194c0e2d639777cd6fc7fe9c0cda19acf8382216"
+                "63850473398a3173fc0d66b16e7b82cbcae949b5395cf502d1fa1701a927169c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_4c_": {
+                    "ttl": 63062609,
+                    "length": 597,
+                    "prevalence": 0.00020066218521119696,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epa.gov",
+                "www.hopkinsmedicine.org"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/code\\/19\\.14\\.4-fs\\/fs\\.compress\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0966d8fbc15e32988c6ecaa987e967227ec12c76e0f007c8eed7b064a142edf4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "delta.com",
-                "www.delta.com"
+                "epa.gov",
+                "www.hopkinsmedicine.org"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/state\\/irs-gov\\/681d26df-b91f-40c5-9731-386e34645441",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "brain"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "135e1df8b6d23022b065e73fb4fd67d3a297a94fc4e4e1f238b26af5317086e0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "irs.gov",
+                "www.irs.gov"
             ]
         },
         {
@@ -63,7 +121,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "delta.com",
+                "irs.gov",
                 "www.irs.gov",
                 "www.nasa.gov"
             ]
@@ -76,39 +134,16 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "delta.com",
-                "www.irs.gov",
-                "www.nasa.gov"
-            ]
-        },
-        {
-            "rule": "foresee\\.com\\/state\\/irs-gov\\/c3e15280-ab96-45ff-bb26-b4fd79c0921d",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "brain"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "afa61e8a0f5d4995746470f5c87de93830ca8f2d030fd1c128fb140006f64602"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
                 "irs.gov",
-                "www.irs.gov"
+                "www.nasa.gov"
             ]
         }
     ],
@@ -121,9 +156,9 @@
     "performance": {},
     "cookies": 0.000401,
     "types": {
-        "Script": 2,
+        "Script": 4,
         "XHR": 5,
-        "Preflight": 3
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1388.awsdns-45.org",
