@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.0013,
+    "sites": 13,
     "subdomains": [
         "dualstack"
     ],
@@ -18,10 +18,39 @@
         {
             "original": "api.hackster.io",
             "resolved": "dualstack.j.sni.global.fastly.net"
+        },
+        {
+            "original": "schedule-tool.foxnews.com",
+            "resolved": ".j.sni.global.fastly.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/schedule\\/feed\\/fox-news\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "schedule-tool.foxnews.com",
+                    "resolved": ".j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a6095f9dd4ece98de5364d66f62176d449f6008daecd9392b2e1b4a0f089bbb4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxnews.com"
+            ]
+        },
         {
             "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql\\/query",
             "cookies": 0,
@@ -39,7 +68,7 @@
                 }
             ],
             "responseHashes": [
-                "56606de903e13407c5b8bdcc74fb9533fd77afd74a8caa4b775acbdeb47ed69a"
+                "8ceeb4d823e05490937d3df6c163ac38872ba29fe5bf323f1d66d316f200d803"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -61,8 +90,9 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": []

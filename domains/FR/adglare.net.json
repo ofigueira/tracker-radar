@@ -4,17 +4,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "laweekly.engine",
-        "laweekly.cdn"
+        "tomorrowland.engine"
     ],
     "cnames": [
-        {
-            "original": "cdn.laweekly.com",
-            "resolved": "laweekly.cdn.adglare.net"
-        },
         {
             "original": "engine.laweekly.com",
             "resolved": "laweekly.engine.adglare.net"
@@ -25,13 +21,24 @@
         {
             "rule": "adglare\\.net\\/",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "laweekly.engine"
+                "laweekly.engine",
+                "tomorrowland.engine"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Navigator.prototype.webdriver": 1,
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "engine.laweekly.com",
@@ -39,14 +46,16 @@
                 }
             ],
             "responseHashes": [
-                "da2575ba7b6810b23c907f2210f4888aee46cfb90a0cedfb41f08d4ec72b9157"
+                "5c78787ece8308cb08d0f55bb662c626cf339966a9be193cb94a4e1fe3815714",
+                "a42064f0f272ff1e5111a4f2aa27311f55d615d9fd234c800174ff0e82872980"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "laweekly.com",
-                "www.laweekly.com"
+                "www.laweekly.com",
+                "www.tomorrowland.com"
             ]
         },
         {
@@ -104,28 +113,25 @@
             ]
         },
         {
-            "rule": "adglare\\.net\\/tb6fe08cd\\/img\\/vue8z_vfb2wt_53fec7ff\\.jpg",
+            "rule": "adglare\\.net\\/data",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "laweekly.cdn"
+                "tomorrowland.engine"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "cdn.laweekly.com",
-                    "resolved": "laweekly.cdn.adglare.net"
-                }
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "responseHashes": [],
-            "type": "Image",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "laweekly.com",
-                "www.laweekly.com"
+                "tomorrowland.com",
+                "www.tomorrowland.com"
             ]
         }
     ],
@@ -133,9 +139,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Ping": 4,
-        "Image": 2
+        "Script": 3,
+        "Ping": 6
     },
-    "nameservers": []
+    "nameservers": [
+        "ns5.adglare.eu",
+        "ns7.adglare.nl",
+        "ns8.adglare.org",
+        "ns9.adglare.info",
+        "ns6.adglare.info"
+    ]
 }

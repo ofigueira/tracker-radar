@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "orderweb-cdn-endpoint-centralus\\.azureedge\\.net\\/css\\/app\\.css",
@@ -25,7 +25,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "31c64cf540346f5432fb2986494d54dfff21f2629e854f8382de16738589b1db"
+                "55ccb3740fe2f7dde6763f21f3f608e44fd37b149b28227174e4808ec169eb13"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -57,16 +57,19 @@
         },
         {
             "rule": "orderweb-cdn-endpoint-centralus\\.azureedge\\.net\\/js\\/app\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
                 "Date.prototype.getTime": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
@@ -79,10 +82,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "84f203c5baba566d546b32bb9ad0f92d7e4e14108b18bd2198df82765fbc314f"
+                "a070dae177246f5f9f9cf2ca0c7dd9083fc482b03b9fbabeedabcc59896070d6"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mbox": {
+                    "ttl": 63244811,
+                    "length": 103,
+                    "prevalence": 0.000013572664653388076,
+                    "uniqueness": 1
+                },
+                "kppid": {
+                    "ttl": 15768000,
+                    "length": 11,
+                    "prevalence": 0.000013572664653388076,
+                    "uniqueness": 1
+                },
+                "mboxEdgeCluster": {
+                    "ttl": 1870,
+                    "length": 2,
+                    "prevalence": 0.000013572664653388076,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chipotle.com",
@@ -92,7 +114,7 @@
         {
             "rule": "orderweb-cdn-endpoint-centralus\\.azureedge\\.net\\/js\\/chunk-vendors\\.js",
             "cookies": 0,
-            "fingerprinting": 3,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
@@ -101,17 +123,9 @@
                 "window.devicePixelRatio": 2,
                 "Navigator.prototype.product": 2,
                 "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.platform": 2,
-                "window.name": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "window.screenX": 1,
-                "window.screenY": 1,
-                "window.outerWidth": 1,
-                "window.outerHeight": 1,
-                "window.screenLeft": 1,
-                "window.screenTop": 1,
-                "window.indexedDB": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -132,7 +146,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
         "Stylesheet": 4,
         "Script": 4

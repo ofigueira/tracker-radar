@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
-        "static-media"
+        "static-media",
+        "api3",
+        "strike"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -58,22 +60,119 @@
                 "foxnews.com",
                 "www.foxbusiness.com"
             ]
+        },
+        {
+            "rule": "fox\\.com\\/v2\\.0\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxbusiness.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\/v2\\.0\\/login",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7b4028a5cb70d23750e7d2738ce7959fc896ffcc89da66eba5495ffe8762620e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxbusiness.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\/static\\/fxw\\/display\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strike"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "59ddf8633cb80205a73d626127d57564ec9c46755c951aeff62c93904e50656e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxbusiness.com"
+            ]
+        },
+        {
+            "rule": "fox\\.com\\/static\\/fxw\\/display\\/ver\\/app\\.v63\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "strike"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "be7125bb773a0babd0c6d0010c05425d19527b5470d50220492cc9a87aecb93b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxbusiness.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000604,
     "types": {
-        "Image": 4
+        "Image": 4,
+        "Preflight": 2,
+        "XHR": 2,
+        "Script": 4
     },
     "nameservers": [
-        "ns01.dns.fox",
-        "ns02.dns.fox",
-        "ns03.dns.fox",
-        "ns04.dns.fox",
         "ns01.foxdoua.com",
         "ns02.foxdoua.com",
         "ns03.foxdoua.com",
-        "ns04.foxdoua.com"
+        "ns04.foxdoua.com",
+        "ns04.dns.fox",
+        "ns03.dns.fox",
+        "ns02.dns.fox",
+        "ns01.dns.fox"
     ]
 }

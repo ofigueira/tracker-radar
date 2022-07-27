@@ -9,19 +9,105 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
+        "qa-events-schema.viacom",
         "events-collector-api.viacom"
     ],
     "cnames": [
         {
             "original": "events-collector-api.viacom.tech",
             "resolved": "events-collector-api.viacom.tech.edgekey.net"
+        },
+        {
+            "original": "qa-events-schema.viacom.tech",
+            "resolved": "qa-events-schema.viacom.tech.edgekey.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "tech\\.edgekey\\.net\\/filters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "qa-events-schema.viacom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "qa-events-schema.viacom.tech",
+                    "resolved": "qa-events-schema.viacom.tech.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "tech\\.edgekey\\.net\\/filters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "qa-events-schema.viacom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "qa-events-schema.viacom.tech",
+                    "resolved": "qa-events-schema.viacom.tech.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3c69135a535ca05864f3789fee1bf33c9b263eb7928304594543750066e40b53"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.mtv.com"
+            ]
+        },
+        {
+            "rule": "tech\\.edgekey\\.net\\/api\\/v1\\/events\\/bulk",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-collector-api.viacom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "events-collector-api.viacom.tech",
+                    "resolved": "events-collector-api.viacom.tech.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "66374becf0613be78d6d8d70faf71d8366e05bf6774a8fe9baf750957f1c477f",
+                "f89e6918d83ebd26db0eabd021be2f4b0e3b6051263d108f9a0258559e5ce3f3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.cc.com",
+                "www.mtv.com"
+            ]
+        },
         {
             "rule": "tech\\.edgekey\\.net\\/api\\/v1\\/events\\/bulk",
             "cookies": 0,
@@ -31,21 +117,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "events-collector-api.viacom.tech",
                     "resolved": "events-collector-api.viacom.tech.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mtv.com",
+                "cc.com",
                 "www.mtv.com"
             ]
         }
@@ -54,7 +138,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Preflight": 4,
+        "Fetch": 5
     },
     "nameservers": []
 }

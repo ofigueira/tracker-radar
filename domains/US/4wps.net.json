@@ -7,39 +7,44 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "api-academy",
+        "abtest-api-v2",
+        "store.wps.com.cname",
         "api-wps-param"
     ],
     "cnames": [
         {
-            "original": "api-academy.wps.com",
-            "resolved": "api-academy.4wps.net"
+            "original": "abtest-api-v2.wps.com",
+            "resolved": "abtest-api-v2.4wps.net"
         },
         {
             "original": "params.wps.com",
             "resolved": "api-wps-param.4wps.net"
+        },
+        {
+            "original": "store.wps.com",
+            "resolved": "store.wps.com.cname.4wps.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "4wps\\.net\\/search\\/hot_words",
+            "rule": "4wps\\.net\\/api\\/abtest-core\\/abtest\\/2\\/parameters",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-academy"
+                "abtest-api-v2"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "api-academy.wps.com",
-                    "resolved": "api-academy.4wps.net"
+                    "original": "abtest-api-v2.wps.com",
+                    "resolved": "abtest-api-v2.4wps.net"
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -48,23 +53,50 @@
             ]
         },
         {
-            "rule": "4wps\\.net\\/search\\/hot_words",
+            "rule": "4wps\\.net\\/api\\/userforweb",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-academy"
+                "store.wps.com.cname"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "api-academy.wps.com",
-                    "resolved": "api-academy.4wps.net"
+                    "original": "store.wps.com",
+                    "resolved": "store.wps.com.cname.4wps.net"
                 }
             ],
             "responseHashes": [
-                "bcd2eee0fbc7151d1e1ab8bfbfc69f6bc729e8a1b0ba4852221c89fe8a6fcc39"
+                "e92babd9bf365772e86edff0152230a4023e17609109d1250795c3790cd08027"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wps.com",
+                "www.wps.com"
+            ]
+        },
+        {
+            "rule": "4wps\\.net\\/api\\/map\\/web\\/owconfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-wps-param"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "params.wps.com",
+                    "resolved": "api-wps-param.4wps.net"
+                }
+            ],
+            "responseHashes": [
+                "ca67014c32ee147e291252b50cdb6be4cc1875766ed8aeff518f955ad1b6c319"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -106,8 +138,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 2,
-        "XHR": 4
+        "XHR": 8
     },
     "nameservers": []
 }

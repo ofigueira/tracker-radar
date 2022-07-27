@@ -9,21 +9,58 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00381,
-    "sites": 38,
+    "prevalence": 0.00413,
+    "sites": 41,
     "subdomains": [
+        "prod-control-plane-8d9730db9171363a.elb",
         "lyhv8cylzj.execute-api",
         "firehose",
         "cognito-identity",
+        "production-klarna-il-shopify-osm.s3",
         "s3",
-        "tryggmedia-storage.s3",
-        "marketertechnologies.s3",
+        "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb",
         "qbn9j15dd1.execute-api",
-        "i98xu2nhdj.execute-api"
+        "aicomms-themes.s3"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "mediaweb.musicradio.com",
+            "resolved": "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1.amazonaws.com"
+        },
+        {
+            "original": "sentry.monitoring.bitvavo.com",
+            "resolved": "prod-control-plane-8d9730db9171363a.elb.eu-west-1.amazonaws.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/api\\/219\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-control-plane-8d9730db9171363a.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "sentry.monitoring.bitvavo.com",
+                    "resolved": "prod-control-plane-8d9730db9171363a.elb.eu-west-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "7a770e0110dbfa68ce65e723708b739826fe553064f0607b6f44e0164222e8fb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitvavo.com",
+                "account.bitvavo.com"
+            ]
+        },
         {
             "rule": "eu-west-1\\.amazonaws\\.com\\/production\\/v1\\/ad_request",
             "cookies": 0,
@@ -32,8 +69,8 @@
                 "lyhv8cylzj.execute-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -43,6 +80,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "finansavisen.no",
+                "funky.finansavisen.no",
                 "kapital.no"
             ]
         },
@@ -55,23 +93,21 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 8,
+            "prevalence": 0.000807,
             "cnames": [],
-            "responseHashes": [
-                "5f1aecc1da7cb977ef0c7c94b194b9b18e2986295cfcc948688b3fda899efe7a",
-                "cb408db852ee7ba39cf8b456f1952f3c97e6cefe29aca351940e8074ef35823f",
-                "403e3b9e62ef1bf33a68f6f9244f9ea40553ebe40ecd99efa1c83d3c1b1c70eb",
-                "e78edea6d330bf751f46154158f2e48137473acb91e12391ab0a43edcd355a09"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eniro.se",
-                "kartor.eniro.se",
+                "gulesider.no",
+                "kart.gulesider.no",
+                "map.krak.dk",
+                "www.eniro.se",
                 "www.gulesider.no",
                 "www.krak.dk",
+                "www.moneygram.com",
                 "www.p4.no"
             ]
         },
@@ -84,42 +120,76 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 8,
+            "prevalence": 0.000807,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "b227295434dc0f4502db5352b873c7ba73a53545b0879729cee03bd2dfc3825f",
+                "82e96d3f29c17dde309c1f29fca93ef581e981d309e1944a81364079fa05f2e9",
+                "3a8ddbfa1596e6be5c40a9a3a360116e711ed11ad710cb5fba29f6885c5e22a3",
+                "4cd4b72f1e32c1698bff7a9f33122df1cb191cfc2e270b01c7a86f29b0d7c636",
+                "da5182fe2c3f40b9a33ec4493bfdd8aa3d8c19cf3564a83187808cd1aa609a7a",
+                "80bd650a4e298163599822e3c5e96b86a08457daacb8ce986238081b3e89d4c7",
+                "738cddbc5ee3b0b7e54b1976687a6ca3c6977ec4a8f55220e57ab1a1699ebecc"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eniro.se",
-                "kartor.eniro.se",
-                "new.siemens.com",
+                "gulesider.no",
+                "kart.gulesider.no",
+                "map.krak.dk",
+                "www.eniro.se",
                 "www.gulesider.no",
                 "www.krak.dk",
+                "www.moneygram.com",
                 "www.p4.no"
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/df9e9749fad4029c418fcebdee2381d9e8d1b88c\\/258\\.index\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cognito-identity"
+                "production-klarna-il-shopify-osm.s3"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "183cbef3398b32a5f0befaf27b67b15b89b01c7647b9048ca256066f013f1058"
+                "329173b311eb02ebad5191d3b7314d7ffaeb93d00504f46009f4392bbad28e8d"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "siemens.com",
-                "new.siemens.com"
+                "moderneliv.no",
+                "tateossian.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/df9e9749fad4029c418fcebdee2381d9e8d1b88c\\/906\\.index\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-klarna-il-shopify-osm.s3"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8e41b50ce3f964f522751ee6a198dd5562f3646e2e8c386fe35639f59dfc2b4f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moderneliv.no",
+                "tateossian.com"
             ]
         },
         {
@@ -131,7 +201,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -151,7 +221,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -163,45 +233,30 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/web-video\\/002\\.+Ombud+\\(versjon+5\\)\\.mp4",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/player\\/image\\.aspx",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tryggmedia-storage.s3"
+                "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coopstorlien.no",
-                "www.coopstorlien.no"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/public\\/campaigns\\/114625\\/images\\/644245272747\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "marketertechnologies.s3"
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "mediaweb.musicradio.com",
+                    "resolved": "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1.amazonaws.com"
+                }
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
             "responseHashes": [
-                "e2e827ea186560c7dce543937d763b145c9d3ace093cb3b2a5dac8ccd69e8641"
+                "05ca8dcf43eb96b0239b38dddcff80070f65ea535912edbf3900728c2c1bcc5c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lierposten.no",
-                "www.lierposten.no"
+                "capitalfm.com",
+                "www.classicfm.com"
             ]
         },
         {
@@ -213,10 +268,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "b566e88bf7d6d66d2b08e41a50b8b1cf3f954e0eac9a6a595ab6dc080c51b6a5"
+                "42e2161aa076c40c00df2eaae4b8a0d35a7926a5054838e330438eaf6d5fd109"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -235,7 +290,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -249,25 +304,25 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/v1\\/track",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/stina\\/StenaLine_Chatbot\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "i98xu2nhdj.execute-api"
+                "aicomms-themes.s3"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e546b2f80a2ae0f6646b50e495e210c022379153656371de018e34c13158512d"
             ],
-            "type": "Ping",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thinkspain.com",
-                "www.thinkspain.com"
+                "stenaline.se",
+                "www.stenaline.pl"
             ]
         }
     ],
@@ -275,28 +330,28 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "types": {
-        "Ping": 4,
-        "XHR": 9,
-        "Preflight": 6,
         "Fetch": 2,
-        "Image": 6,
-        "Media": 2
+        "Ping": 3,
+        "Preflight": 8,
+        "XHR": 12,
+        "Script": 4,
+        "Image": 8
     },
     "nameservers": [
+        "u1.amazonaws.com",
+        "u2.amazonaws.com",
+        "u3.amazonaws.com",
+        "u4.amazonaws.com",
+        "u5.amazonaws.com",
+        "u6.amazonaws.com",
         "ns1.p31.dynect.net",
         "ns2.p31.dynect.net",
         "ns3.p31.dynect.net",
         "ns4.p31.dynect.net",
         "pdns1.ultradns.net",
         "pdns3.ultradns.org",
-        "pdns5.ultradns.info",
-        "u1.amazonaws.com",
-        "u2.amazonaws.com",
-        "u3.amazonaws.com",
-        "u4.amazonaws.com",
-        "u5.amazonaws.com",
-        "u6.amazonaws.com"
+        "pdns5.ultradns.info"
     ]
 }

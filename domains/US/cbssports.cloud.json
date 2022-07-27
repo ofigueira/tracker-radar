@@ -4,19 +4,24 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
         "sdf-api",
+        "avia.prod.video",
         "video-api.prod.video"
     ],
     "cnames": [
+        {
+            "original": "avia.cbssports.com",
+            "resolved": "avia.prod.video.cbssports.cloud"
+        },
         {
             "original": "video-api.cbssports.com",
             "resolved": "video-api.prod.video.cbssports.cloud"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "cbssports\\.cloud\\/primpy\\/ads\\/featuredGames\\/",
@@ -26,22 +31,24 @@
                 "sdf-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "8d18671b5c6c50e0c4a96f6633950572db93d229583005d06233f11c19addd8a"
+                "97e5371a8860a422435ac123fd2b3f4fcd6982a9b137c39ef287a2ca427abb39",
+                "7709aa404e76cba5197c11a4cee16c15fb374a43b5c4e00f5dfb075cc8a4d278"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "247sports.com",
+                "assets.247sports.com",
                 "www.sportsline.com"
             ]
         },
         {
-            "rule": "cbssports\\.cloud\\/primpy\\/ads\\/game\\/28869397",
+            "rule": "cbssports\\.cloud\\/primpy\\/ads\\/game\\/28836360",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -51,40 +58,41 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "fb27dc1d5fd6bde6c6f8aa22d11e6447543934c1169f2eabf8cd6d146940a021"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "247sports.com",
-                "www.cbssports.com"
+                "assets.247sports.com"
             ]
         },
         {
-            "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1",
+            "rule": "cbssports\\.cloud\\/latest\\/video-avia-wrapper\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "video-api.prod.video"
+                "avia.prod.video"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "video-api.cbssports.com",
-                    "resolved": "video-api.prod.video.cbssports.cloud"
+                    "original": "avia.cbssports.com",
+                    "resolved": "avia.prod.video.cbssports.cloud"
                 }
             ],
             "responseHashes": [
-                "c13194fe4bac69891cb273260642a3be9a27d8f700a71b24c52ff8f98a393972"
+                "e11c5f5541cb0c5238c5068652832a4c529caf48ac7eb45a3c5e4d1a5175cd8a"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbssports.com",
-                "www.cbssports.com",
+                "sportsline.com",
                 "www.sportsline.com"
             ]
         },
@@ -96,8 +104,35 @@
                 "video-api.prod.video"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "video-api.cbssports.com",
+                    "resolved": "video-api.prod.video.cbssports.cloud"
+                }
+            ],
+            "responseHashes": [
+                "08572dd0901d12f3c64e4e0881287d3ab80bb071fb8e27dab6dd9b07675dc670"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportsline.com",
+                "www.sportsline.com"
+            ]
+        },
+        {
+            "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api.prod.video"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "video-api.cbssports.com",
@@ -109,8 +144,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbssports.com",
-                "www.cbssports.com",
+                "sportsline.com",
                 "www.sportsline.com"
             ]
         }
@@ -120,12 +154,13 @@
     "cookies": 0,
     "types": {
         "XHR": 7,
-        "Preflight": 3
+        "Script": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-113.awsdns-14.com",
-        "ns-953.awsdns-55.net",
         "ns-1343.awsdns-39.org",
-        "ns-1856.awsdns-40.co.uk"
+        "ns-1856.awsdns-40.co.uk",
+        "ns-113.awsdns-14.com",
+        "ns-953.awsdns-55.net"
     ]
 }

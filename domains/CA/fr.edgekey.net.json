@@ -9,13 +9,23 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000604,
+    "sites": 6,
     "subdomains": [
+        "api.prismaconnect",
+        "live.francetvinfo",
         "static-lefigaro",
         "player-video.lefigaro"
     ],
     "cnames": [
+        {
+            "original": "api.prismaconnect.fr",
+            "resolved": "api.prismaconnect.fr.edgekey.net"
+        },
+        {
+            "original": "live.francetvinfo.fr",
+            "resolved": "live.francetvinfo.fr.edgekey.net"
+        },
         {
             "original": "player-video.lefigaro.fr",
             "resolved": "player-video.lefigaro.fr.edgekey.net"
@@ -27,6 +37,87 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "fr\\.edgekey\\.net\\/prd\\/ping",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.prismaconnect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.prismaconnect.fr",
+                    "resolved": "api.prismaconnect.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cuisineactuelle.fr",
+                "www.femmeactuelle.fr",
+                "www.programme-tv.net"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/prd\\/ping",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.prismaconnect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.prismaconnect.fr",
+                    "resolved": "api.prismaconnect.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9408be658ddfc6ec2f04f3a6c48fac9258c99351aa21c76cd51121d230921161"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cuisineactuelle.fr",
+                "www.femmeactuelle.fr",
+                "www.programme-tv.net"
+            ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/uploads\\/avatars\\/big_4eb9496d1cc6f062300009ba\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live.francetvinfo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "live.francetvinfo.fr",
+                    "resolved": "live.francetvinfo.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4a2d35257264d59f9ffa1ab20a9c95164913c7311b2428f28838c9e94e418902"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "francetvinfo.fr",
+                "www.francetvinfo.fr"
+            ]
+        },
         {
             "rule": "fr\\.edgekey\\.net\\/common\\/fonts\\/SourceSansPro\\/sourcesanspro-semibold\\.woff2",
             "cookies": 0,
@@ -103,33 +194,6 @@
             ]
         },
         {
-            "rule": "fr\\.edgekey\\.net\\/figanalytics\\/figanalytics-short-ttl\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-lefigaro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "static.lefigaro.fr",
-                    "resolved": "static-lefigaro.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "c9e963bc149e42badfd80788e373417066da694cd07c26e57a43be9b2f7b5f77"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lefigaro.fr",
-                "www.lefigaro.fr"
-            ]
-        },
-        {
             "rule": "fr\\.edgekey\\.net\\/common\\/fonts\\/NotoSerif\\/notoserif-regular\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -196,7 +260,7 @@
                 }
             ],
             "responseHashes": [
-                "27306948668ba81cc90b5c2232bf9a14d99b97d846ccd7402445e908ddcff6b6"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -211,9 +275,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Font": 10,
-        "Script": 2,
-        "Fetch": 2
+        "Preflight": 3,
+        "Fetch": 5,
+        "Image": 2,
+        "Font": 10
     },
     "nameservers": []
 }

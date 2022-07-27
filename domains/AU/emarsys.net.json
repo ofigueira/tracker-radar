@@ -4,17 +4,33 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00572,
-    "sites": 57,
+    "prevalence": 0.00582,
+    "sites": 58,
     "subdomains": [
         "webchannel-content.eservice",
+        "suite45",
+        "suite17",
+        "link-roddandgunn-com",
+        "link-seton-net-au",
+        "snippet.plugins",
         "assets",
         "suite24",
-        "suite10",
-        "suite40",
-        "snippet.plugins"
+        "suite40"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "link.roddandgunn.com",
+            "resolved": "link-roddandgunn-com.emarsys.net"
+        },
+        {
+            "original": "link.seton.net.au",
+            "resolved": "link-seton-net-au.emarsys.net"
+        },
+        {
+            "original": "links.goop.com",
+            "resolved": "suite45.emarsys.net"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -34,7 +50,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020056157240272763
+                "IR_gbd": 0.0002005414619472576
             },
             "exampleSites": [
                 "adventurekings.com",
@@ -61,6 +77,70 @@
             "exampleSites": [
                 "dymocks.com.au",
                 "www.dymocks.com.au"
+            ]
+        },
+        {
+            "rule": "emarsys\\.net\\/u\\/nprefill\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "suite45",
+                "suite17",
+                "link-roddandgunn-com",
+                "link-seton-net-au"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [
+                {
+                    "original": "links.goop.com",
+                    "resolved": "suite45.emarsys.net"
+                },
+                {
+                    "original": "link.roddandgunn.com",
+                    "resolved": "link-roddandgunn-com.emarsys.net"
+                },
+                {
+                    "original": "link.seton.net.au",
+                    "resolved": "link-seton-net-au.emarsys.net"
+                }
+            ],
+            "responseHashes": [
+                "4235969d830ac3e0700fd400ba4fc11fa3418fe4fd91689ca1d7ab7600c86a18"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goop.com",
+                "www.bendonlingerie.com.au",
+                "www.roddandgunn.com",
+                "www.seton.net.au"
+            ]
+        },
+        {
+            "rule": "emarsys\\.net\\/emarsys-m2-email-after-233\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snippet.plugins"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "6a6935717b8f193b0b20e15004501169b1ecc91ad99480118028d08b5834ac23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "511tactical.com",
+                "www.sportsgirl.com.au",
+                "www.suzannegrae.com.au",
+                "www.sussan.com.au"
             ]
         },
         {
@@ -137,40 +217,16 @@
             ]
         },
         {
-            "rule": "emarsys\\.net\\/img\\/trans\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "suite24",
-                "suite10"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "6b3da89922d333d106b84fefeebd7b16bfebf4cfbd7bef37fa10a47c471ae64c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frenchconnection.com.au",
-                "www.surfdome.com.au"
-            ]
-        },
-        {
             "rule": "emarsys\\.net\\/\\/common\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "suite24",
-                "suite10",
                 "suite40"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "71ff591774bdb9f8c3c582e6aacf7b63a42b277631928ee480f0e6c694c54e72"
@@ -180,52 +236,61 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "frenchconnection.com.au",
-                "www.surfdome.com.au",
                 "www.theblockshop.com.au"
             ]
         },
         {
-            "rule": "emarsys\\.net\\/web-emarsys-sdk\\/3\\.1\\.2\\/web-emarsys-service-worker\\.js",
+            "rule": "emarsys\\.net\\/web-emarsys-sdk\\/4\\.0\\.0\\/web-emarsys-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.indexedDB": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.language": 3,
+                "Notification.permission": 2,
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "f9de08162583772df83c06c14d250fb1dffe6a03af71743ffc6006128bd54519"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gluestore.com.au",
+                "www.lornajane.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "emarsys\\.net\\/web-emarsys-sdk\\/4\\.0\\.0\\/web-emarsys-service-worker\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "5515c2d79522ee6a6fc7a7d4be118e142ff3d300ca5f0d520904bac035e0a952"
+                "11e1c6f0281ad4a90f9263fa0118514193115359adbf5fe18549490b5481f090"
             ],
             "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pillowtalk.com.au",
+                "gluestore.com.au",
+                "www.gluestore.com.au",
+                "www.lornajane.com.au",
                 "www.pillowtalk.com.au"
-            ]
-        },
-        {
-            "rule": "emarsys\\.net\\/emarsys-m2-email-after-233\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "snippet.plugins"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "6a6935717b8f193b0b20e15004501169b1ecc91ad99480118028d08b5834ac23"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sportsgirl.com.au",
-                "www.sussan.com.au"
             ]
         },
         {
@@ -256,9 +321,8 @@
     "cookies": 0,
     "types": {
         "XHR": 4,
-        "Script": 7,
-        "Other": 8,
-        "Image": 2
+        "Script": 15,
+        "Other": 10
     },
     "nameservers": [
         "ns1.dnsmadeeasy.com",

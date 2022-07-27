@@ -12,6 +12,7 @@
     "subdomains": [
         "cbre",
         "thrivent",
+        "analytics",
         "cdn"
     ],
     "cnames": [
@@ -20,7 +21,7 @@
             "resolved": "thrivent.qumucloud.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "qumucloud\\.com\\/widgets\\/application\\.js",
@@ -40,7 +41,7 @@
                 }
             ],
             "responseHashes": [
-                "bd68340b716287fb6cae3ed90a103b00e474a062f6a18a9272bb4ff2a6eae8a7"
+                "93109bb0eeada21011b59a065526cc7354c55eee0bf4af28a4a6cb19f12788f7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,12 +54,17 @@
         {
             "rule": "qumucloud\\.com\\/widgets\\/reporting",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cbre",
                 "thrivent"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
@@ -68,7 +74,7 @@
                 }
             ],
             "responseHashes": [
-                "ccf7729cbf66969bfb70eeec84d33a92de581def5986892cfd15961c98937c4e"
+                "e31eea064004f503fc59a5a3e671d13061d1a090d018e27e5e28ce517b51663a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -79,7 +85,51 @@
             ]
         },
         {
-            "rule": "qumucloud\\.com\\/origin\\/public\\/henderson\\.kuluvalley\\.com\\/staticcontent\\/577\\/client\\/js-lib\\/widgets\\/jquery\\.min\\.js",
+            "rule": "qumucloud\\.com\\/1\\/245c3146b4",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dac715f087720dd7ff7067f5d2ec1988851fa93140ae8a9cbfaa15659dd7fd82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbre.com",
+                "www.thrivent.com"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/events\\/1\\/245c3146b4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0c9cf152a0ad00d4f102c93c613c104914be5517ac8f8e0831727f8bfbe8b300"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbre.com",
+                "www.thrivent.com"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/henderson\\.kuluvalley\\.com\\/staticcontent\\/586\\/client\\/js-lib\\/widgets\\/jquery\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -101,7 +151,7 @@
             ]
         },
         {
-            "rule": "qumucloud\\.com\\/origin\\/public\\/henderson\\.kuluvalley\\.com\\/staticcontent\\/577\\/client\\/application\\/widgets\\.js",
+            "rule": "qumucloud\\.com\\/origin\\/public\\/henderson\\.kuluvalley\\.com\\/staticcontent\\/586\\/client\\/application\\/widgets\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -112,7 +162,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "349d2a93da2caeabe2728f6c5c9bbe54b3771872f799734f4ec4a9cf547f9748"
+                "c41390fa5330ae1b23bbabd4ee21387f1feaa430f759b61dc5b8b0c96c810bee"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -123,7 +173,7 @@
             ]
         },
         {
-            "rule": "qumucloud\\.com\\/origin\\/public\\/video\\.thrivent\\.com\\/staticcontent\\/539\\/client\\/application\\/widgets\\.js",
+            "rule": "qumucloud\\.com\\/origin\\/public\\/video\\.thrivent\\.com\\/staticcontent\\/552\\/client\\/application\\/widgets\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -134,7 +184,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "349d2a93da2caeabe2728f6c5c9bbe54b3771872f799734f4ec4a9cf547f9748"
+                "c41390fa5330ae1b23bbabd4ee21387f1feaa430f759b61dc5b8b0c96c810bee"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -145,7 +195,7 @@
             ]
         },
         {
-            "rule": "qumucloud\\.com\\/origin\\/public\\/video\\.thrivent\\.com\\/staticcontent\\/539\\/client\\/application\\/widget-reporting\\.js",
+            "rule": "qumucloud\\.com\\/origin\\/public\\/video\\.thrivent\\.com\\/staticcontent\\/552\\/client\\/application\\/widget-reporting\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -156,7 +206,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c7a4129651494be733baa203ddba38fa7b91393d675a9cfcdb321c5c95314c44"
+                "209b33102c66a1d02c24afe5c08f72f50000733781d43a9e503e8ae1ffcf4c59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -169,16 +219,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000203,
+    "cookies": 0.0000204,
     "types": {
-        "Script": 4,
+        "Script": 6,
         "Document": 2,
-        "XHR": 6
+        "XHR": 8
     },
     "nameservers": [
-        "ns-1096.awsdns-09.org",
-        "ns-1959.awsdns-52.co.uk",
+        "ns-735.awsdns-27.net",
         "ns-299.awsdns-37.com",
-        "ns-735.awsdns-27.net"
+        "ns-1096.awsdns-09.org",
+        "ns-1959.awsdns-52.co.uk"
     ]
 }

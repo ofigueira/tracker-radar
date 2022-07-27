@@ -20,12 +20,37 @@
             "resolved": "dualstack.j.sni.global.fastly.net"
         },
         {
-            "original": "api.supersummary.com",
+            "original": "schedule-tool.foxnews.com",
             "resolved": ".j.sni.global.fastly.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/schedule\\/feed\\/fox-news\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "schedule-tool.foxnews.com",
+                    "resolved": ".j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a6095f9dd4ece98de5364d66f62176d449f6008daecd9392b2e1b4a0f089bbb4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxnews.com"
+            ]
+        },
         {
             "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql\\/query",
             "cookies": 0,
@@ -43,7 +68,7 @@
                 }
             ],
             "responseHashes": [
-                "79963785c3c29b3e04c528d402bda7095bce7c88c8be93e367680406d2c92d08"
+                "c2502b0c4ca3c51d63a66b62fd4cf85089d71a862ed57fc42287d640757906f7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -51,31 +76,6 @@
             "exampleSites": [
                 "hackster.io",
                 "www.hackster.io"
-            ]
-        },
-        {
-            "rule": "j\\.sni\\.global\\.fastly\\.net\\/testimonials",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.supersummary.com",
-                    "resolved": ".j.sni.global.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "9ebf0ae74fb075f9a5e4182f471e1a503be46856af069e935db9361f9ce9b02d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "supersummary.com",
-                "www.supersummary.com"
             ]
         }
     ],
@@ -92,7 +92,8 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "XHR": 4
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": []
 }
