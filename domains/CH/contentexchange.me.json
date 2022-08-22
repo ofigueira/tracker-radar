@@ -4,35 +4,34 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0013,
-    "sites": 13,
+    "prevalence": 0.00221,
+    "sites": 22,
     "subdomains": [
         "alo",
         "adria",
-        "collector_sr",
-        "analytics",
-        "match"
+        "tracker_alo",
+        "tracker_adria"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "contentexchange\\.me\\/static\\/tracker\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "alo",
                 "adria"
             ],
             "apis": {
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1d79af66a3a6343cf92dbe1ae507aed6833fe34cdc36c0e70c13105dbf64373f"
+                "a67fa1729903382c0074f20ea68a89e3194642875cec52b074917cee625f84ad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,71 +42,42 @@
             ]
         },
         {
-            "rule": "contentexchange\\.me\\/sr\\/collect",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
+            "rule": "contentexchange\\.me\\/boot",
+            "cookies": 0.0001,
+            "fingerprinting": 2,
             "subdomains": [
-                "collector_sr"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "cx_id": 0.0002007226013649137
-            },
-            "exampleSites": [
-                "logicno.com",
-                "www.srbijadanas.com"
-            ]
-        },
-        {
-            "rule": "contentexchange\\.me\\/bex\\/storage\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "analytics"
+                "tracker_alo",
+                "tracker_adria"
             ],
             "apis": {
-                "window.localStorage": 2
+                "Document.cookie setter": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Date.prototype.getTime": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.colorDepth": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "78526ac509a71a338fd7659197f80b4a153b6c4cdd4d61240511b78e47370834"
+                "6ad0ee47b3134765e7a9115a2eee6b316a254b89f9be77a43089a70e9096cee8"
             ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "cx_id": {
+                    "ttl": 62208011,
+                    "length": 24,
+                    "prevalence": 0.00010041168792047395,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "euconsent-v2": 0.00010041168792047395
+            },
             "exampleSites": [
-                "logicno.com",
-                "www.srbijadanas.com"
-            ]
-        },
-        {
-            "rule": "contentexchange\\.me\\/dsp\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "match"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "logicno.com",
-                "www.srbijadanas.com"
+                "b92.net",
+                "www.logicno.com"
             ]
         }
     ],
@@ -115,13 +85,11 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Script": 2,
-        "Image": 4,
-        "Document": 2
+        "Script": 4
     },
     "nameservers": [
-        "dns3.siel.si",
         "dns2.siel.si",
+        "dns3.siel.si",
         "dns1.siel.si"
     ]
 }

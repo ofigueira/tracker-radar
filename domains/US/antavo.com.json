@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "api.st2"
+        "api.st2",
+        "api.st4",
+        "cdn.st2",
+        "cdn.st4"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -17,25 +20,28 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "api.st2"
+                "api.st2",
+                "api.st4"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Document.cookie getter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "92a36c1d257eda6655f226b3966caa4fe765d26832d9602d2862a886390a0bb3"
+                "92a36c1d257eda6655f226b3966caa4fe765d26832d9602d2862a886390a0bb3",
+                "f53965ed1fa4536337f2786ab917d18b34cab722391396bfab111e62e53e065a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brewdog.com",
-                "www.brewdog.com"
+                "www.brewdog.com",
+                "www.ripcurl.com"
             ]
         },
         {
@@ -43,11 +49,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.st2"
+                "api.st2",
+                "api.st4"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -55,7 +62,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brewdog.com",
-                "www.brewdog.com"
+                "www.brewdog.com",
+                "www.ripcurl.com"
             ]
         },
         {
@@ -63,21 +71,93 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api.st2"
+                "api.st2",
+                "api.st4"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "7a51e21b710087e693369242132b4d738134642754717b4cdf386a3064b2002b"
+                "5d490c925b9f31fb64151be5f8cda2cba26dafd4b5cb31c9cacfb10137ac227d",
+                "5e2705f764416d0deaca22bfa69d7dd669c03008faaf1a853563f74beb359fe2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brewdog.com",
-                "www.brewdog.com"
+                "www.brewdog.com",
+                "www.ripcurl.com"
+            ]
+        },
+        {
+            "rule": "antavo\\.com\\/css\\/loyalty\\/antavo-popup\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.st2",
+                "cdn.st4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe0a8abf274e7a832b2dd7f3212b098b1c42ba21fffdf310278d4f553996f242"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brewdog.com",
+                "www.ripcurl.com"
+            ]
+        },
+        {
+            "rule": "antavo\\.com\\/css\\/loyalty\\/helper\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.st2",
+                "cdn.st4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1db3be2214aa7b9c829ab2937155f545fe682022622b8d408031c8d939d4a2af"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brewdog.com",
+                "www.ripcurl.com"
+            ]
+        },
+        {
+            "rule": "antavo\\.com\\/lib\\/bower-froogaloop\\/froogaloop\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.st2",
+                "cdn.st4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "be8b51ffb37d864a2ba662d9de815277a243daac644b4f911cb648908c356a70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brewdog.com",
+                "www.ripcurl.com"
             ]
         }
     ],
@@ -85,9 +165,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 5,
+        "Preflight": 3,
+        "XHR": 3,
+        "Stylesheet": 4
     },
     "nameservers": [
         "donald.ns.cloudflare.com",

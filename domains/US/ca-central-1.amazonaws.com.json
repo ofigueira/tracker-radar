@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000339,
-    "sites": 5,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
+        "firehose",
         "cognito-identity",
-        "a1zszksasx8rt7-ats.iot"
+        "a1zszksasx8rt7-ats.iot",
+        "hmy0rc1bo2.execute-api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,18 +25,27 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "firehose",
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "3952c4ff535c1c4526b04f65893143cd922747d8a7beea162c5c569f7d2d11ec",
+                "b005bf386b46c6e86bb8d71ca13f7d9b27fa663344a1bac4495af86257c0df62",
+                "a1c12107c9b7af2cdd0da9fe20a7d57125c8687bbe7acae773d5c7c03f17a6ee",
+                "17ed1b9da140e8ca9c1e944fbce0847eaaced8bbe57206965a1e1dd510af18dd",
+                "20d9b055a25cbce174d12d368f436f92320ad393d76335191de27aa49fb66266"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sex.com",
+                "alicenorth.com",
+                "es.sex.com",
+                "fr.sex.com",
                 "it.sex.com",
                 "pt.sex.com",
                 "www.sex.com"
@@ -45,23 +56,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "firehose",
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 6,
+            "prevalence": 0.0000407,
             "cnames": [],
-            "responseHashes": [
-                "cb9dd779f3d70638fa8ed3163542b634cf3e2fee58361222a2c7d8ae155b9f1a",
-                "6c3c8e344a5e8509a36a36ee4016187364308138f44c0b08d1146a4aca1916f0",
-                "2ad5eb5ab12dc2aa953894e4fdda65a907501e94f2c2d2cdbd05e3b6cd190c46",
-                "a9b8a2ffce7b4e42b8b90dfca8d64122f6bb018b7b1f370bf67d31026a396ce9"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sex.com",
+                "alicenorth.com",
+                "es.sex.com",
                 "fr.sex.com",
                 "it.sex.com",
                 "pt.sex.com",
@@ -76,8 +84,8 @@
                 "a1zszksasx8rt7-ats.iot"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -85,9 +93,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sex.com",
+                "fr.sex.com",
                 "it.sex.com",
                 "pt.sex.com",
                 "www.sex.com"
+            ]
+        },
+        {
+            "rule": "ca-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hmy0rc1bo2.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvo.org",
+                "www.tvo.org"
+            ]
+        },
+        {
+            "rule": "ca-central-1\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hmy0rc1bo2.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "762a3af26c139796b0a91cb4311a66f3cf3132eedf8aa8b8df601bf6426a6819"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvo.org",
+                "www.tvo.org"
             ]
         }
     ],
@@ -97,9 +148,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 4,
-        "XHR": 5,
-        "WebSocket": 4
+        "XHR": 6,
+        "Preflight": 8,
+        "WebSocket": 5,
+        "Fetch": 2
     },
     "nameservers": [
         "ns1.p31.dynect.net",

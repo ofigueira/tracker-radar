@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00521,
-    "sites": 52,
+    "prevalence": 0.00471,
+    "sites": 47,
     "subdomains": [
         "api",
         "experience",
@@ -22,10 +22,10 @@
         "auth-forbes",
         "id-japantimes",
         "id-scotsman",
-        "auth-gulfnews",
         "auth-pjmedia",
         "auth-redstate",
         "auth-townhall",
+        "auth-sheppnews",
         "id-spectator",
         "id-thedailybeast",
         "api-v3"
@@ -34,10 +34,6 @@
         {
             "original": "auth.forbes.com",
             "resolved": "auth-forbes.tinypass.com"
-        },
-        {
-            "original": "auth.gulfnews.com",
-            "resolved": "auth-gulfnews.tinypass.com"
         },
         {
             "original": "auth.japantimes.co.jp",
@@ -50,6 +46,10 @@
         {
             "original": "auth.redstate.com",
             "resolved": "auth-redstate.tinypass.com"
+        },
+        {
+            "original": "auth.sheppnews.com.au",
+            "resolved": "auth-sheppnews.tinypass.com"
         },
         {
             "original": "auth.townhall.com",
@@ -76,23 +76,18 @@
     "resources": [
         {
             "rule": "tinypass\\.com\\/xbuilder\\/experience\\/load",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0001,
+            "fingerprinting": 0,
             "subdomains": [
                 "api",
                 "experience",
                 "dashboard"
             ],
-            "apis": {
-                "window.sessionStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1
-            },
-            "sites": 32,
-            "prevalence": 0.00321,
+            "apis": {},
+            "sites": 28,
+            "prevalence": 0.00281,
             "cnames": [],
             "responseHashes": [
-                "e7e1fd283dcfd9eeb5229cc9867dcf38056f311cc59976addfaf08171f32894e",
                 "83b05071c41672f0495dd861f92e9aec491c65071de0109f86f3b8fc9dd08f98",
                 "56f4719421b1c54e619f59ede31d0b1bb41ba3a778cd0ad07d92879ad25db834",
                 "d294bc7479b53375c2f1207f4d765914476c815825329a4923b7a1b0a3df0ccb",
@@ -101,17 +96,14 @@
                 "f8a40d798b94029bf1911cbd3550a8c51a7dd6a679a42c7f6b1b171230bb6529",
                 "2d93d459bd535fad98b44b7f05b772d5a78396dd9efbff76ba895d7df4921142",
                 "67dda4d4fa546b23627458bba47e787da33eaccaf0381c74ba4f61503c7e5f8b",
+                "1d2e355798a896e45d694062f74071bd8c17d5dd2dda7d07788b2dba08600e34",
                 "e03fefacbe929f48b23c8d87af6bb0a4aabf5051d763c067308b89e28568e32f",
-                "b02b058cf116b8469fe94ca95d92129aabb53425bd77ed62fcfdd9b200da47cb",
                 "ef59847d85902d0938a35fe34758908a825ea222cc424e714c49fc51acbe2be4",
                 "1a0bd8e9709c38c9bd3fba2ba4a0e99e28d2aff70cb388b5ea08520d47e0c719",
-                "1d2e355798a896e45d694062f74071bd8c17d5dd2dda7d07788b2dba08600e34",
-                "7a7f5ea13ed32ba001f59e85c9a4e627994f87c563ef71e3d4ae09b0fc894b8d",
                 "3e31814208836c2b2d2ebd4a06af78a1c88a5cbd8f2f3d3fab32e463b8ad67f1",
                 "ee51e56fae558ad6d55a7783bd7b299ff9b0283d5c8d1bb94bdad68c81928c0f",
                 "766c9b77ce788a0b1c432197344245b7cf3fdbb9da70e44d733da7e28095005e",
                 "53ec6cd740b1983f84154d0683843be3bcdf5ddcba855517bc62c3455ea9d71b",
-                "464b98e4ec83bb60ad92bd76656277037d3548e44a7d1dcddec0c0a41ada20e6",
                 "2896ed7bd752239ed23c5eb456a62053dcd6cc070a7b34cbcce0dedcb36cde96",
                 "9716914e18bbfe1c745b25478bb8fd2e9e77339eb1e15e8a84e9a427b76c0e6c",
                 "d26736305423a51d32469f27c9d722c77c650b9c386a2478d5e786b634a31aee",
@@ -119,7 +111,7 @@
                 "930678ce46f4145e988831e7ac53940f79d7e1ce027b326d24854b8b3cd77385",
                 "75dfa7c2a29429f83fd19460369bf41e85533224f6d706d70e5504806711e45d",
                 "f8c0576f81d450f9036f043c43b2005fd86bff7e6133d3d1c7bf09d262890056",
-                "9692b086bbd8e4383ca44ebaf2f7a0bfad12d803d60689792dfa12e6f46d90cf",
+                "ce6ea5dd25560be04e844c1a99ce2f64b95294a880dfaf665339926130d37f7b",
                 "f523eea805a17623bd7bdb69699d2cb965c656477e51fb8f2988c705c2590464",
                 "b44a4a7fa849e927e33dc8f8bfb1d1a5264ea46c5e68b2fd9ed3a000fc111b0a"
             ],
@@ -136,137 +128,125 @@
                 "www.politico.com",
                 "www.snopes.com",
                 "www.telegraph.co.uk",
-                "spectator.com.au",
-                "www.christianity.com",
                 "www.spectator.co.uk",
-                "www.pinknews.co.uk",
+                "www.refinery29.com",
+                "www.christianity.com",
+                "www.globalsecurity.org",
+                "spectator.com.au",
+                "www.thehindu.com",
                 "inews.co.uk",
-                "www.decanter.com",
-                "www.scotsman.com",
-                "www.motorcyclenews.com",
-                "www.nj.com",
-                "www.biblestudytools.com",
-                "www.golfdigest.com"
+                "www.pinknews.co.uk",
+                "redstate.com",
+                "www.vice.com",
+                "www.biblestudytools.com"
             ]
         },
         {
             "rule": "tinypass\\.com\\/api\\/tinypass\\.min\\.js",
-            "cookies": 0.00511,
+            "cookies": 0.00441,
             "fingerprinting": 3,
             "subdomains": [
                 "cdn",
                 "buy"
             ],
             "apis": {
-                "window.localStorage": 51,
-                "window.name": 51,
-                "Date.prototype.getTime": 51,
-                "Document.cookie setter": 51,
-                "Document.cookie getter": 51,
-                "Navigator.prototype.userAgent": 51,
-                "Navigator.prototype.language": 51,
-                "Date.prototype.getTimezoneOffset": 51,
-                "Navigator.prototype.plugins": 51,
-                "Screen.prototype.height": 51,
-                "Screen.prototype.width": 51,
-                "Screen.prototype.colorDepth": 51,
-                "window.sessionStorage": 51,
-                "Navigator.prototype.platform": 51,
-                "window.innerWidth": 50,
-                "window.innerHeight": 51,
-                "Notification.permission": 49,
-                "Navigator.prototype.appVersion": 49,
+                "window.localStorage": 44,
+                "window.name": 44,
+                "Date.prototype.getTime": 44,
+                "Document.cookie setter": 44,
+                "Document.cookie getter": 44,
+                "Navigator.prototype.userAgent": 44,
+                "Navigator.prototype.language": 44,
+                "Date.prototype.getTimezoneOffset": 44,
+                "Navigator.prototype.plugins": 44,
+                "Screen.prototype.height": 44,
+                "Screen.prototype.width": 44,
+                "Screen.prototype.colorDepth": 44,
+                "window.sessionStorage": 44,
+                "Navigator.prototype.platform": 44,
+                "window.innerWidth": 43,
+                "window.innerHeight": 44,
+                "Notification.permission": 42,
+                "Navigator.prototype.appVersion": 42,
                 "window.screenLeft": 20,
                 "window.screenTop": 20,
                 "window.outerHeight": 18,
-                "Element.prototype.getClientRects": 3,
-                "Navigator.prototype.doNotTrack": 5
+                "Navigator.prototype.doNotTrack": 6,
+                "Element.prototype.getClientRects": 3
             },
-            "sites": 51,
-            "prevalence": 0.00511,
+            "sites": 45,
+            "prevalence": 0.00451,
             "cnames": [],
             "responseHashes": [
-                "4dd6b4809846a1973cf30f45d2240928855e28e09c5626feb7043f656fc1946b",
-                "cb063310db4a1e40b7cf52f9d9a6043d5ad134f9b7e6cd4bed743802054b883c"
+                "e7c90307819b8687c69adc3241394ed898b23eaafa0f47289dc137ac63224bb3",
+                "cf44c3af5a6ffe38abea036571a0619c569936104d503167354a9c37d0fdc3f2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pctx": {
-                    "ttl": 63072017,
-                    "length": 169,
-                    "prevalence": 0.004812995086734182,
+                    "ttl": 63072018,
+                    "length": 173,
+                    "prevalence": 0.004311209143773812,
                     "uniqueness": 1
                 },
                 "__pnahc": {
-                    "ttl": 7776012,
+                    "ttl": 7779613,
                     "length": 1,
-                    "prevalence": 0.0026070390053143486,
-                    "uniqueness": 0.038461538461538464
+                    "prevalence": 0.00240625626629236,
+                    "uniqueness": 0.041666666666666664
                 },
                 "__tbc": {
-                    "ttl": 63072013,
-                    "length": 89,
-                    "prevalence": 0.004812995086734182,
+                    "ttl": 63072014,
+                    "length": 84,
+                    "prevalence": 0.00421094846601163,
                     "uniqueness": 1
                 },
                 "cX_P": {
-                    "ttl": 63072014,
+                    "ttl": 63072015,
                     "length": 16,
-                    "prevalence": 0.003509475584077008,
+                    "prevalence": 0.003408863043914177,
                     "uniqueness": 1
                 },
                 "get_top_level_domain_cookie": {
-                    "ttl": -1658349132,
+                    "ttl": -1660835970,
                     "length": 15,
-                    "prevalence": 0.004812995086734182,
-                    "uniqueness": 0.9791666666666666
+                    "prevalence": 0.00421094846601163,
+                    "uniqueness": 0.9761904761904762
                 },
                 "__pat": {
                     "ttl": 2592014,
                     "length": 8,
-                    "prevalence": 0.004812995086734182,
-                    "uniqueness": 0.16666666666666666
+                    "prevalence": 0.00421094846601163,
+                    "uniqueness": 0.14285714285714285
                 },
                 "__pvi": {
                     "ttl": 86414,
-                    "length": 119,
-                    "prevalence": 0.004812995086734182,
+                    "length": 114,
+                    "prevalence": 0.00421094846601163,
                     "uniqueness": 1
                 },
                 "xbc": {
-                    "ttl": 63072013,
-                    "length": 318,
-                    "prevalence": 0.004812995086734182,
+                    "ttl": 63072014,
+                    "length": 336,
+                    "prevalence": 0.00421094846601163,
                     "uniqueness": 1
                 },
-                "_pc_accessLevel": {
+                "_pc_hpdirect": {
                     "ttl": null,
-                    "length": 7,
-                    "prevalence": 0.0001002707309736288,
-                    "uniqueness": 1
-                },
-                "_pc_segment": {
-                    "ttl": null,
-                    "length": 7,
-                    "prevalence": 0.0001002707309736288,
+                    "length": 3,
+                    "prevalence": 0.00010026067776218167,
                     "uniqueness": 1
                 },
                 "__pil": {
                     "ttl": 2592029,
                     "length": 5,
-                    "prevalence": 0.0002005414619472576,
+                    "prevalence": 0.00020052135552436334,
                     "uniqueness": 0.5
-                },
-                "_pc_u4nAQhbEBHpX7X3b": {
-                    "ttl": null,
-                    "length": 10,
-                    "prevalence": 0.0001002707309736288,
-                    "uniqueness": 1
                 },
                 "LANG": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.0001002707309736288,
+                    "prevalence": 0.00010026067776218167,
                     "uniqueness": 1
                 }
             },
@@ -282,88 +262,80 @@
                 "townhall.com",
                 "www.businessinsider.com",
                 "www.cnbc.com",
-                "www.insider.com",
+                "www.olivemagazine.com",
+                "www.thehindu.com",
+                "www.globalsecurity.org",
+                "www.forbes.com",
+                "www.motorcyclenews.com",
+                "www.independent.co.uk",
+                "www.politico.com",
+                "redstate.com",
                 "www.crosswalk.com",
-                "www.snopes.com",
-                "www.inc.com",
-                "spectator.com.au",
-                "inews.co.uk",
-                "www.billboard.com",
-                "markets.businessinsider.com",
-                "www.spectator.com.au",
-                "www.motorsport.com"
+                "www.billboard.com"
             ]
         },
         {
             "rule": "tinypass\\.com\\/api\\/v3\\/anon\\/captcha\\/get\\.js",
-            "cookies": 0.0017,
+            "cookies": 0.00231,
             "fingerprinting": 0,
             "subdomains": [
                 "buy",
                 "api"
             ],
             "apis": {},
-            "sites": 51,
-            "prevalence": 0.00511,
+            "sites": 44,
+            "prevalence": 0.00441,
             "cnames": [],
             "responseHashes": [
-                "d4435865784ec77b31eb4650a33f5a5edf65b02afb75ba8984d5d3659d30691f",
-                "2f2c98cac828dd9ded57ce294291c41863a1b30a2f2645a22ed975e3ef899806",
-                "6c49c04a1c098d6e0e2e87d9129197005d2cab5c76342bbe87779416da778e4a",
-                "0578d4c084a64dc9ca06a4dadc3419ae4d83aae461192a05997355ec745be4d0",
-                "ffb0ae5311c0c2f24c9f066d6922c1e5d4bcdf58393eee451c6ac73c04c61f5d",
-                "f405b62288b01ecdfd4ca5119176d0b601d1153ae1a490f9b19bf17a91f95b5d",
-                "8f462eb7c3fcda1e6dfa83db8505f39996c3e7a9e84cd74c949883f7819460af",
-                "0da53da6d98a8b7043ec83e7d95d3277c4bdcdfb099a4a48a724408d0fbaa9ac",
-                "360f67df73031faef619be47b91caa7b414e751897123961b82964c1c1f4a71d",
-                "257864f454e7cf7c84fe4402228eeb682c32d5da61219b9e5a7b829e3f51ada8",
-                "803e35e026da796e8909fc98035d6a1cd62434eeb0a705e8379887a4cb6e9f45",
-                "e961bcc25366a88aaa4da10fd8822390ffb2979686676b3c0c031ed168eead1c",
-                "813d9154e09d50e684e531ead56adcf242f07d7674ccacf3407cb2cc6face666",
-                "5e3edab604f8b914c09d9365a29fb353580fdc7cb22791eb57c7fcca44d76c33",
-                "8f602b64bb3d03776d50aa62eb64ac6fa36a5b302619a6744b14734b4a7ddb3d",
-                "3779a6009be3e9535fcdb723a2a8933a9bad4e838b1391f09081202e038b31ad",
-                "0814f6fb6b78e02b17d2f79387d48a50aa9504e8f92935476e80994c0c9dbadf",
-                "5a371255aa26af062ab2dee27d5428a8bec799ba090be84e9f07bafef5ef5010",
-                "a1c2df89d16004605008d4b222668473affb3744a734866b901a916d49e6e1d7",
-                "5e4e0c8cc577a47ad31f96d530c9d489316c055fccf3b09e7fad2560b95051d2",
-                "85cdf3362fd1d625ae63a258b2a9b6bc8910ef16b1cc39905fb91c1450940946",
-                "5a60bbf13e9fd3a6006b91a0489e2af31451f1f00df30381d7b627cad9240315",
-                "bc710e2207afaa0ab21137b4c42bd989f433536daa7729d41b93c11b2a105055",
-                "97209cb2ffcdb39b3127762fd96c4571aa984b7d5720fe3befb635a8d5316239",
-                "a2921f6b2008ebcebf789eb6005c98c9831bb43cc496c5a82f0ee9dd8809f3e8",
-                "36226c354cdec55d38a272cb5c06dd4bcf0af6c4ee0da2113984018968fa49ae",
-                "0c0bc590b774bcf39e1fb2505dcb549687c4baba861d51ecb9bd511c0d6da00c",
-                "c3093af9d6a9cd08c7f66e9f8ec3edb495d1cc4a422aaa9a299ea34f6484ca52",
-                "edceeae1b2466b6ffa3622a61c5722596ad512da0f765acd904d58c583371f11",
-                "e9e6f9f693b91ba4bbdd42d9238bce5e7f7e43a7d2600b2bed22958ba91f934c",
-                "0d9ff129796cf2a6d50d96ca5c02cab15dbe738bc50c0857978c0e6b86d1de49",
-                "9c326ff0c8c152f505b049ca6a0ac5dc188f2837638c87f3f58892bb324f45d6",
-                "b9bec3c54d1d4708546d24a53fe4ff539cf80d5fa8e487e18774ad6a3d3a9d8c",
-                "668ee79d52153f578286ce0474222596ccbaf452244240d3432adc919c421d3f",
-                "57c55f371d3c1898965c99b1bfcb830959eb866a41bd23e6a5c101247d6faf89",
-                "159be9dff52003f3346f6cf26dcfc1e308b95e818945eaba860d539e8401ffe8",
-                "1c41d3e483f5f834ab9b046683ede25ff09ce5ca3d58298b1617f9046effcce6",
-                "dfb0e651138ae136344649c0bda9465d9df71e732c31fae33dfa01980f2e4eb2",
-                "1d2f6ef8ac4830a452d4bbe6c87e6c6c447ae8731e5f16245370517f40a23066",
-                "79a78e4c56a5a15bfc51e44e230de722e4667de8e0892067b75be96f24a334f0",
-                "494f21aea0a27dce35e0a054bf8539cbfe067db96479a469336d4bf9a4448dbf",
-                "187ad9f80972427beb7e20c23ec30b77c9ddfd9273a212dfe671e3842d7eb6d5",
-                "1139c072de350ae02b945098ca9a23d03c54eae4d515f7b678e3eed6364c118b",
-                "bbcd70cc907fc53b54baa63c0b59db026c233fa2be64b7e7af6555a89aefb2ca",
-                "c0fc8ab1aeb999d37cd4e3b61a0b9fd1ab3d9da32def50df02a9f6e7db2608b9",
-                "c92ca7bb71aff1c01f13efc8506ae8fc606bd40d1d5ec0da53250d7f0bbae90c",
-                "980ce1a21417bdb15ee5825160f52ac92a1691615033f87b584cf46937ea1664",
-                "31f1fa0c75265a0a0446af8dce0880f55b4d300e7221d0c5d0ef93dce9c18f98",
-                "e96c5456244ec0e1e3a14fcce39973199808c00a3e2a259d9e40d8ff912a2e30",
-                "d1b8a30ee0b169993f5439d718de8eac7b51008d33b2738a2fd1f159f34f00bb"
+                "c91d3d2837d67760203c14ea16cd6bc0b207a2cb449e267cf24c055433387b01",
+                "2c47bbf8dad5e7558ec320ea8d790ff9eba6784048f3208337ba57420449822a",
+                "b330ebbb52b8922831ba07f8ae81c2f18aa79d974a76d271093706ba6a54d985",
+                "1ce6cb3689d9434ae9c5b7d80f5b94045117c1a2dc979c585ea97b689c6e1588",
+                "677d5bf88a7a34159d93b73bda239a00ca37f35a5a199d8750c7d3c8f060a41c",
+                "e8537d4bd5fb79a88669acc2a936a38e2488618fa5494ae152bf6c463ea74528",
+                "0d657e322fa170be647a76c0ff30e50cfeab47a5fdae17cef9ac5ebd4762252b",
+                "2be07e5d7559490e090a151c5f9f4f8e95ec5160c38b6d7b6a619934b320b5b2",
+                "f58a8d22bb4a8b6c83ef72974432ead67926b9908f846b22a8568e654ec69fda",
+                "3230455a31a8e934203463019b7070fb076912a20658de866af9138dc80a0a40",
+                "144b02adb9a42ec511a86e813cd1bc66a27dd8726cd3a9ddfa6787e5dc2a5aa0",
+                "8d124103fc41ec547298b7ba62dd85b70d1f5b862a472d53088b6d0b8f3dd92a",
+                "70f173e54173d467d4b19acfafdef30d396bdaa5c9bf083d80d23b8b2867c7c1",
+                "de34bc931a625bce39f0a1def21b4993e85538b6b942d25baecbbd20ec84f6fc",
+                "49db57590d795d009c9be871fe166d1fd2e1003c3f526968fee6c7bdb197c217",
+                "fc733175d5d93cbe7919ddb863bb358eec6e72a46b3bbca791916c79d911d2cc",
+                "0a8b16c283a2b1e1e87872df24d38fc653e48a171e4144a02cefcec97932902b",
+                "230e827ebf389f59390f3cade8cc12fb4c31de68a1bf28c5d407bb98986bffc9",
+                "e2b8e666fddeff7d72a11d3f5c524895dee858b11f9eb0676a52a2c05b2c908b",
+                "80e77904d2e0d9ceb0bd50b3591af02cdce1ca9d7d73968a18a325bd0ee25110",
+                "37fcb4871c54397b1260d677e55d87351ef9fc133c4d11e433bdd96d63b3dc17",
+                "287ce4055785ada4807bde48d0ae3f3039f06bd682b31c23dd1cbc356891da88",
+                "fd7eff295ba80c9b1fe7dfded7097fa79385e4e23d3f83278478d758a7954ed2",
+                "560a4f7eedc954226c4272437f34825471a83db3eac63909ea43852c61b75f9e",
+                "ee45f1fc82a99376e5741fcf0bcca214640efb48c92816773a94fbaf2ae185fd",
+                "bd2073b68715bfe34d8eae0be28b7495f378fbd55ab8cec2333eb4ee972a97fd",
+                "98dcfc0b1209803ebe3eac4403ca9c2584622a5e4098168f1d51dd1dac13b691",
+                "127b7ba79387c85e05af0efe73a6878178a484af83d8965ee635ea9f44ad1d43",
+                "b4dc92bc90a0e5d6f5a0abe14f3d9941f3188f04840e964952e8c8c8126bded3",
+                "ea36c8eb9a2fd016dcaef7d169626d374c049fce9cc0b6a65412547a0417c9a7",
+                "839f28fb4b5c6a0930a4ee25ac37156c8e97c2e22740e3af2413b4fac6c7e2ac",
+                "a8495e811f4431eb7664c72d8ba3e9926e117a2d9ed540694023b28ca799e19a",
+                "ffeec84bdf8159dd5ea8ab47821828aaae83b1e5bdfbb1a5fe88562ecd80d6c5",
+                "aea956ccd7b1329b4d771001aff571d5aa16c5e99a33570fbb953041fcbfaa48",
+                "bc9b62d67d8e7b25aab016dc315920263aff36539fe59e8624ccf5f901a7b25c",
+                "b893c82f9dadd69b5690e4da9162a6adfdffab6ee0b84f37dae2e8c545a90e93",
+                "3b3c217f44303fc74d9dfc085420862218d6f053b6e8dd878dca8cf2e88d1fd9",
+                "56357a9ce02d06acfd91bd1351f55dc10073f0d030cce9f7056efa876bd2a94c",
+                "9723a5b4968b06abc8cc5081e2de8c773210c2a8bd46b588c8c95dfeed2a422c",
+                "8f5b5a5772bdd9c3a742be10a60dffeb53deb227cfc2d0bcb41bebdcfd43cda9",
+                "1874e80718ed30559df6dda07eed2834c42f241c35a914726a3a0ee0600be639",
+                "dac3487b92c7e55bcf42582b1d2d3b9695a66dbb14e08b0e800c0d2bd487e8c7",
+                "619d15398cea4dd7c60e1c5281828308fe8396d5b1a44c3db9408616718fa160"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailycaller.com",
-                "fortune.com",
                 "pjmedia.com",
                 "seekingalpha.com",
                 "slate.com",
@@ -372,21 +344,22 @@
                 "townhall.com",
                 "www.businessinsider.com",
                 "www.cnbc.com",
-                "spectator.com.au",
+                "www.forbes.com",
+                "www.vice.com",
                 "www.economist.com",
-                "www.crosswalk.com",
-                "www.golfdigest.com",
-                "www.thelocal.fr",
-                "www.snopes.com",
-                "www.christianity.com",
-                "www.fastcompany.com",
-                "www.motorsport.com",
-                "redstate.com"
+                "www.politico.com",
+                "spectator.com.au",
+                "www.independent.co.uk",
+                "redstate.com",
+                "markets.businessinsider.com",
+                "www.insider.com",
+                "www.inc.com",
+                "www.washingtontimes.com"
             ]
         },
         {
             "rule": "tinypass\\.com\\/id\\/api\\/v1\\/identity\\/token\\/verify",
-            "cookies": 0.00251,
+            "cookies": 0.00211,
             "fingerprinting": 0,
             "subdomains": [
                 "id",
@@ -396,8 +369,8 @@
                 "id-scotsman"
             ],
             "apis": {},
-            "sites": 25,
-            "prevalence": 0.00251,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [
                 {
                     "original": "social.fastcompany.com",
@@ -417,59 +390,110 @@
                 }
             ],
             "responseHashes": [
-                "5ce7a507ee91cf9ee52a390ccf74d997033fd83360be16c1676824f9e3f472c1",
-                "bc5350701c37cd23d7f1b4b3d97e47fb4a5099dddb6527f086eeae0fe4e7aede",
-                "9eb3e2ee6b3723b4a03be0f6814ec63d1b04ef5479aa1be1b469f3598c5ed2b5",
-                "4f99cc712ebb374663d1073b9bf377d06212d08ca9455f3867556f8f79dcfa5d",
-                "d2c8365959ab177a6d93cbc92ddc6e7741a3120f7c117211284d33cb5f8cf983",
-                "3ccdbf236de27481fb36b834ea11911a3332da742951322bdfaf3e9eade7b5b6",
-                "e294bf84b200c58b01c30c70d8ec64dda2b025c3106b6f8477879f9c66ab92f6",
-                "98ae0b21549d4fd6a074edd15cba4e4bc40e2aeacc2995c9d6d699d807714ec2",
-                "877121771a4c9a3c6ca75133acee077a0ee0b2b89dff367b21f67419642d16b4",
-                "e580b75069d400388c3eb800ac88435d030440584dc8633722730a50719683b5",
-                "f879a775f292dbbbabef31a799f9b9b36e17f097d5999323002bb0c8cf69ee35",
-                "3626476ca11ffb480f600ae2e5cacb2e8b15f60fb6b236190da11d77de3699bd",
-                "6307719442ef1e514042cadebb750c6c829045352322aabe284b5c58b9d38a59",
-                "85a2782646c43d47c0779683c82b476ded17ffdf3dee8ec6fba47b99a84c7cb4",
-                "f19d1770eeee6ad5b3d302375c398978f0ffce21ccb8cbb5f4aa329929635bde",
-                "c1c6b27b9cf17b1d07f92b2ee477dbf76d7e5868206300236c0305ee940018a4",
-                "fa040e409dcd364ae008ce28efe288225a38790665aae4e1a2d7fa83d0cfcb12",
-                "f477b1dad38a9f6632f75795fcbd32f3d9ce953b7d4131eea31a19fbebaac51a",
-                "fce99b54a75fbdb015240b6d2cec45d46f812ba9e97cce877b18b5b7012b07a6",
-                "d58f2c0255253f22c6e63ac6099b73bb1436a95aa14d84e24eae312c3197171d",
-                "ad5963c4a9f3c66339a5e985d5ff5efdbcd7317d9f965291b59debb7373e9e14",
-                "ae4ada810e70758829749b4c548c4c14adc0ea3ea6bfcaec69c79b71ad4f5cd8",
-                "b8bac24c1431b9e24f22233c5c39a8a3ed6ab1eeed4d58dec40bc9c7bdb1e2f5",
-                "c4db085943ee2958b7229fdd319767e926505ec13a65ff04649978b7cbe8713a"
+                "3fcc332a9d45e6a15e828f533963cf7f7298393c0aec2565c731c332a9cb7dcf",
+                "9a1c0a81a38718b765ff4321d10ca54389a16b956809870c157e00b8a8f3a665",
+                "4ee178b8e045511fd1b051c3b2f2877edfab34f1115dad61f367240cd34096d5",
+                "ec34e37c238fc1acb9c54d6c5d5cf0221485995edb6efe9bc576bafd12ae25eb",
+                "2d58bf4402621b23c6e0fc42cdb2704c1684b5937ec8866c61af29984b5a7d29",
+                "ded1a4247cb5e25a08f161973e07564217485f270e3fccf699c995ce84a975ad",
+                "8fdec80558462bad6fab253a9203ca00473d45833c13b5dcf45e75b17842f632",
+                "0d4dcf24b94519d3c2fa8cd24b35f27454ddb2afbf54dd102fce63c7fa69599c",
+                "136da435644c58e7163a195d177f274b363deb9c96d15d10b146ae92e6453b4a",
+                "e2052b6f354a40f84fae6e472db09de4618352d90305ac72192b6674d9c82fb2",
+                "1cfad3486e10d93660bab51e998fb310919c5dd85cb72de4a2e80401dac455cc",
+                "e33d07166de3c305ffa5235ada6839ffdc27d2067b27d9cbb2f5ebd672b9208c",
+                "8beaa99dd1d61809c09d05f1b659e0fe5b0d2f6b68067e2d43bb8d9b5f2aa4df",
+                "53f9dbe2c68847eb0ba9ade101451473f8a4a543e82fdd9463b1e0d67fd74dd8",
+                "9aab07adf76b1272c2a0cce7aa12a1754b14431ea5ca113ec09beaad3a85ecd1",
+                "1912932fef289bb486f2403f5dbebdcc194950fbb45c9d027202af4ccba468a1",
+                "2a163ec1d54c775ec56cff65924867acba21bf54940d89db41161451eda07aea",
+                "cf40638022b168da1ccac0c1569226f1b6ae62551ee486cb35853bc74371d143",
+                "1bfd096f7b4f9bd6bc200581c125d1f36e5fa8957f38bde23798a694e14c631e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.0016043316955780607,
-                "gpv_p12": 0.0001002707309736288,
-                "lotame_domain_check": 0.0001002707309736288,
-                "_li_dcdm_c": 0.0001002707309736288
+                "_li_dcdm_c": 0.00060156406657309,
+                "get_top_level_domain_cookie": 0.0014036494886705434,
+                "_dor_zuWlHZZk": 0.00010026067776218167,
+                "gpv_p12": 0.00010026067776218167,
+                "_dor": 0.00020052135552436334,
+                "_dor_VvT57L3U": 0.00010026067776218167,
+                "lotame_domain_check": 0.00010026067776218167
             },
             "exampleSites": [
                 "dailycaller.com",
-                "fortune.com",
                 "pjmedia.com",
                 "slate.com",
                 "townhall.com",
                 "www.forbes.com",
                 "www.snopes.com",
-                "www.biblestudytools.com",
-                "inews.co.uk",
-                "www.fastcompany.com",
-                "www.rugbypass.com",
-                "www.japantimes.co.jp",
-                "www.crosswalk.com",
                 "www.inc.com",
-                "www.christianity.com",
+                "spectator.com.au",
+                "redstate.com",
+                "www.japantimes.co.jp",
                 "www.spectator.com.au",
+                "www.fastcompany.com",
+                "www.biblestudytools.com",
                 "www.thedailybeast.com",
-                "www.thelocal.fr",
+                "www.christianity.com",
+                "www.pinknews.co.uk",
+                "www.washingtontimes.com",
                 "www.scotsman.com",
+                "www.crosswalk.com",
+                "www.thehindu.com"
+            ]
+        },
+        {
+            "rule": "tinypass\\.com\\/api\\/v3\\/anon\\/template\\/loadTemplateContext",
+            "cookies": 0.0017,
+            "fingerprinting": 0,
+            "subdomains": [
+                "buy",
+                "api"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.0017,
+            "cnames": [],
+            "responseHashes": [
+                "d134e0cbad015102f8814b7754fbecbf7db58e6b2aa8111b1eb080d68f844a0c",
+                "9e2925d482884aefe56ee2ec562614aafbef91e336a5fd9dcff652c40214f5cd",
+                "84480592b8a48d9d10c0179babd4518be290d062f0ac89a825d2f6bbdd217d28",
+                "d6b9ee69b104705c8c4516225f327135e6aa70f49043f250357df0516d0fadd5",
+                "4ac2e8cd526265bcaebb2cdd98a11f3e30f5b6cf17bf8fdb64e039bcc257112b",
+                "6b9c5657339a1c66b329fdb35bd55904ee476dc7a39db7a07b6cfda7d032f5d9",
+                "2d9d1ff103ab5095047f872ad575d248deed5d21f31200d04fa0ea2d78873432",
+                "616b9a5a0ffa297d8c53a3342b83f22e5fa7c054c9ef97c726b8efde98951b0b",
+                "980f023383448b5a920644530335ba305901aa11e5ae665230b8d7d08ebfcf16",
+                "a83d18aa727c17b86955d65c4d508969582ad1ecf68d4e028c6a73eb2ddde1c3",
+                "4648ef4879082696bff71bd97719c90419925d32ef4c58f8121890839c2309eb",
+                "d5ecde9074ba8d5ca534fbc2f6ba242ff023da734aebffd2a010ce184004c72a",
+                "a89d7da2691fd77cf173577605da7563200f7eef6203143887c669fad366f405",
+                "33d8b707f657e0276642e0f5d8c63f26789d200794a575aa626f49e71ca88278",
+                "d351a3cbb197b240d29e95c1d4b7ef6afec7a38b32163f6bd64f3a754198096b",
+                "8f63080350d7c2d421317e5f2487962d82181ae7f084d9d9b3d8b00d2010ac20"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailycaller.com",
+                "pjmedia.com",
+                "redstate.com",
+                "slate.com",
+                "techcrunch.com",
+                "www.billboard.com",
+                "www.crosswalk.com",
+                "www.economist.com",
+                "www.historyextra.com",
+                "www.independent.co.uk",
+                "www.motorsport.com",
+                "www.scotsman.com",
+                "www.snopes.com",
+                "www.spectator.com.au",
+                "www.standard.co.uk",
+                "www.thehindu.com",
                 "www.washingtontimes.com"
             ]
         },
@@ -486,99 +510,47 @@
             "prevalence": 0.0017,
             "cnames": [],
             "responseHashes": [
-                "91c7114d8f85c3c15c434f034cb394f52a46bcc011ebf8b41fc3474578e464c6",
-                "2e38a51333813da589a016a97793d696890c160a13ac2f763ccdee783ab6faff",
-                "b7ad219fd23693d0433ed4bd6385234fbc5994e56876d5dd84e79042488a9fb1",
-                "5155fb5cdc6a980ed724120d280222334cc605502c64d92e29ea407198f39edc",
-                "f554cf8679e79b416cc013a8197ba5f496bb8ad6cc75493d7814a1d0423a3fce",
-                "12a1363cdb92ba881ddd783ce5f9c3104f9a9d8dfb3e28fe24d1e83764319c72",
-                "b1360d1d5994f0b55b103843681e7d41655f8eb9346ea8ffd132bd3a8e206ac0",
-                "fc4e3982bb417387e71f05eb0d9b07179d4c049a722754ace24bca50524c7395",
-                "4b8aa84e02afa854a8528f7be321eefb72324b2b7e849451792333cd016b1b51",
-                "907086348427435378c065fceec423273167738f3ca296deae2d9d6741080701",
-                "4680d19692e0b6c81da9fb6d887ea6d2d25a71603ff28011d72532179bf21e47",
-                "4c3b6c2c103ba0b3dae7320d6c2f078f77d238fc90496bac8f96aef869c3b383",
-                "e424d27ee371ca2adbe70d024c6f248ecb4faa8ef9b0e7cd5b367da74c843daa",
-                "d4176f02296d5d96e426bc3fba04fbae4b696f700cdd3ed289fde594a6480718",
-                "40d0b268d4b9cb90e8f6ba522333f839a471962c5854df37c5aed8c93c454acb"
+                "0b2de1a55e251a4e7cd24102e0c8017024215e3c0eb725c990a554b0731f6047",
+                "9304db8f373a79c48d8744fe3aa60d08127213cd2d1b9f6cb08e2d1af5efa656",
+                "72bb3d0f794e991af7cee2d717e2c0eb9faa807dcf5157b942e7c2b691ba401a",
+                "6e9835efe15ea128b21157401fe3b2232d60fed84aed51aa2a711e1f0151385b",
+                "7e1f7ac4434a50c0db70d8c6e8b6394416c332fbddd8bda60299325f9d1f7610",
+                "4315ce227b07ad645fb6e033d10467183c41161632cf5468da0f14ab1eb67ad5",
+                "c7adfc78057bab2a20204e58cae4b882cdbd0d628d75f2ffc3b7aa8c5470edb1",
+                "0340818bb36d2cba9aca8210cffd8df229d5b9fda4f9fc354b4aa342a87b2c92",
+                "9a8aab0faaf191f3800b6b9b392e6cd4fc86e0f11b16cf0d495525d6f8e56655",
+                "48941bf14e7eea27f1e612a1f52cc56a199dd3dfb98423dbd98e6ec1a2b7539b",
+                "9cf6a97808a069accbe5733c174618aa6e2767ba229790ec0215427ee1721274",
+                "e0c4eb7ebd810d0bce774c4f95623ca730ac541c8291a13189d173ffbd4770d7",
+                "9546cea64ee39a1ded25d96fd56a178cda6484cdad740c914e08a3631a6dcdc7",
+                "67cf4001bd0c58fb894cad5809cbb54445568729b10d5da56e523c59efc0c438",
+                "febdef05ecd442c6473c52fe588bc44c12cd502bee569dd8b053a51e865f28f6",
+                "fb57ccafb41a4014a7328aa8d0ab5d5754926dbee9eff7c73261506ffb1106b2"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.0012032487716835455,
-                "lotame_domain_check": 0.0001002707309736288,
-                "_li_dcdm_c": 0.0001002707309736288
+                "get_top_level_domain_cookie": 0.00120312813314618,
+                "_li_dcdm_c": 0.000300782033286545,
+                "lotame_domain_check": 0.00010026067776218167
             },
             "exampleSites": [
                 "dailycaller.com",
-                "news.bbc.co.uk",
                 "pjmedia.com",
                 "redstate.com",
                 "slate.com",
                 "techcrunch.com",
-                "www.crosswalk.com",
                 "www.billboard.com",
-                "www.decanter.com",
+                "www.crosswalk.com",
                 "www.economist.com",
+                "www.historyextra.com",
                 "www.independent.co.uk",
+                "www.motorsport.com",
                 "www.scotsman.com",
                 "www.snopes.com",
                 "www.spectator.com.au",
                 "www.standard.co.uk",
-                "www.thelocal.fr",
-                "www.washingtontimes.com"
-            ]
-        },
-        {
-            "rule": "tinypass\\.com\\/api\\/v3\\/anon\\/template\\/loadTemplateContext",
-            "cookies": 0.0017,
-            "fingerprinting": 0,
-            "subdomains": [
-                "buy",
-                "api"
-            ],
-            "apis": {},
-            "sites": 17,
-            "prevalence": 0.0017,
-            "cnames": [],
-            "responseHashes": [
-                "d56475afacb4916cc726792c324a001c6bb2b015782a7e3de0ff33cdeaa78de8",
-                "b3e93faaca500d5458efe3110496179fb48e3450a221f69dae09065dc276927f",
-                "373338b9dd17b7fea201d92eb36b062f0eb60b60b0d5b12dfe47cddcb1f0d6dc",
-                "1f2b1835201c61739fd9c600d3f5ae3fd0f1b17f3a8f8e5821826b97dd94877b",
-                "680b8c2f1f0cdda4e0b188cb9a191062bba7ca578d209c8839fa0abe1d156e80",
-                "926310aba215b1683e729b3198c709f19a9bbaab23ef9b4d07463351fc612619",
-                "2fcaadcc611a98ee4a613be86d02db1275ed3b1332c1d2bde2da006a22b09b08",
-                "4b9372c8e6d6e205d8ef8c6f965c69d288b68dbb34c271d917586b9966419a67",
-                "1627872fb1d4bd414f827989f71099d5765d441ebec778e550f4471284faee42",
-                "ece3a2e4842f20c353e1fb93c6c81c43a98cdbe2a4f9f7d8ec8af53d6d099f46",
-                "98a138d6a3472b423f2d6d9d8a36cac7587cd8ff3fc085c1c9525c5a63a7b206",
-                "97d2fff2284a67c2fffacac87c7a6ad685cd188523b1822a144ed3d8c6208fee",
-                "c3bec2ba3cb460440a354522909eb452d87b40a979a6004301c37e9cb59ea8f1",
-                "60cc8839f220ae3cd3244d5c1fe7d4051a5c0eabce84d0288015d7cc763870fe",
-                "26896e97322ef930596df201dff17cfea9e83175ed25aa335309483d596e3f7c",
-                "553e3b9e80724002ef345dac9e924e8bfda63f2f209685e5a08a108d3bd6d3ca"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailycaller.com",
-                "news.bbc.co.uk",
-                "pjmedia.com",
-                "redstate.com",
-                "slate.com",
-                "techcrunch.com",
-                "www.crosswalk.com",
-                "www.billboard.com",
-                "www.decanter.com",
-                "www.economist.com",
-                "www.independent.co.uk",
-                "www.scotsman.com",
-                "www.snopes.com",
-                "www.spectator.com.au",
-                "www.standard.co.uk",
-                "www.thelocal.fr",
+                "www.thehindu.com",
                 "www.washingtontimes.com"
             ]
         },
@@ -602,21 +574,21 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailycaller.com",
-                "news.bbc.co.uk",
                 "pjmedia.com",
                 "redstate.com",
                 "slate.com",
                 "techcrunch.com",
-                "www.crosswalk.com",
                 "www.billboard.com",
-                "www.decanter.com",
+                "www.crosswalk.com",
                 "www.economist.com",
+                "www.historyextra.com",
                 "www.independent.co.uk",
+                "www.motorsport.com",
                 "www.scotsman.com",
                 "www.snopes.com",
                 "www.spectator.com.au",
                 "www.standard.co.uk",
-                "www.thelocal.fr",
+                "www.thehindu.com",
                 "www.washingtontimes.com"
             ]
         },
@@ -625,12 +597,11 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "buy",
-                "api"
+                "buy"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.0013,
+            "sites": 12,
+            "prevalence": 0.0012,
             "cnames": [],
             "responseHashes": [
                 "3ed2d612d85e582c424cb012116f95cc1fc6217547f920fe78ba0c2f8af04626"
@@ -644,14 +615,13 @@
                 "redstate.com",
                 "slate.com",
                 "techcrunch.com",
-                "www.crosswalk.com",
                 "www.billboard.com",
-                "www.decanter.com",
+                "www.crosswalk.com",
                 "www.economist.com",
-                "www.independent.co.uk",
+                "www.historyextra.com",
+                "www.motorsport.com",
                 "www.standard.co.uk",
-                "www.thelocal.fr",
-                "www.washingtontimes.com"
+                "www.thehindu.com"
             ]
         },
         {
@@ -659,10 +629,10 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "auth-gulfnews",
                 "auth-pjmedia",
                 "auth-redstate",
                 "auth-townhall",
+                "auth-sheppnews",
                 "id-spectator",
                 "id-thedailybeast"
             ],
@@ -670,10 +640,6 @@
             "sites": 6,
             "prevalence": 0.000602,
             "cnames": [
-                {
-                    "original": "auth.gulfnews.com",
-                    "resolved": "auth-gulfnews.tinypass.com"
-                },
                 {
                     "original": "auth.pjmedia.com",
                     "resolved": "auth-pjmedia.tinypass.com"
@@ -685,6 +651,10 @@
                 {
                     "original": "auth.townhall.com",
                     "resolved": "auth-townhall.tinypass.com"
+                },
+                {
+                    "original": "auth.sheppnews.com.au",
+                    "resolved": "auth-sheppnews.tinypass.com"
                 },
                 {
                     "original": "id.spectator.co.uk",
@@ -702,11 +672,82 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gulfnews.com",
                 "pjmedia.com",
                 "redstate.com",
                 "townhall.com",
+                "www.sheppnews.com.au",
                 "www.spectator.co.uk",
+                "www.thedailybeast.com"
+            ]
+        },
+        {
+            "rule": "tinypass\\.com\\/_sam\\/H4sIAAAAAAAAAD3IwQ6AIAgA0B9KmJ76m4bJHI6oBa7f7-bt7eEnrXNgEw8Mvh6lYBy-DHVaU95QpTqS9an0pgwFSkHJu63T-yTlgy1Nh-E_BjVxNVoAAAA",
+            "cookies": 0.0014,
+            "fingerprinting": 1,
+            "subdomains": [
+                "buy",
+                "api"
+            ],
+            "apis": {
+                "window.localStorage": 14,
+                "Document.cookie getter": 14,
+                "Document.cookie setter": 14,
+                "Date.prototype.getTime": 10
+            },
+            "sites": 16,
+            "prevalence": 0.0016,
+            "cnames": [],
+            "responseHashes": [
+                "bcc2b4610f2dbc921a4d77384835c78a5b6e6705b1f9d20cda7bb8fa1fe7eba8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pjmedia.com",
+                "redstate.com",
+                "slate.com",
+                "techcrunch.com",
+                "www.billboard.com",
+                "www.crosswalk.com",
+                "www.economist.com",
+                "www.historyextra.com",
+                "www.independent.co.uk",
+                "www.motorsport.com",
+                "www.scotsman.com",
+                "www.snopes.com",
+                "www.spectator.com.au",
+                "www.standard.co.uk",
+                "www.thehindu.com",
+                "www.washingtontimes.com"
+            ]
+        },
+        {
+            "rule": "tinypass\\.com\\/checkout\\/offer\\/show",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "buy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d2822d5f0222a4d1d5ad42f30c26816cf603ce62adef6ff3e36408c4cc218f53"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00020052135552436334,
+                "_dor": 0.00010026067776218167,
+                "get_top_level_domain_cookie": 0.00010026067776218167,
+                "_li_dcdm_c": 0.00010026067776218167,
+                "__li_idex_cache": 0.00010026067776218167,
+                "pbjs_li_nonid": 0.00010026067776218167
+            },
+            "exampleSites": [
+                "slate.com",
                 "www.thedailybeast.com"
             ]
         },
@@ -723,30 +764,28 @@
             "prevalence": 0.0011,
             "cnames": [],
             "responseHashes": [
-                "2ee370285bb332d4c9ca2d23feb450c817824e279b9327aeda0001d83641c12e",
                 "25b4a029f8a38916853447e510c4af03034a80a8eed4f064674c0bce08bcdbda",
-                "3e50ca24c4e658dcdd64e1e67e6e3624bb828bf9080cbe41c8f554faeba2eb9e",
                 "d1ddd87e48b65c981cff34b7dafeb66c912fe02ef7ff89703ecb875e65e080a7",
-                "e9e5463af27d51fa85b075910f65558ea33f7f276d31126e331d33e4c9e28c69",
+                "3e50ca24c4e658dcdd64e1e67e6e3624bb828bf9080cbe41c8f554faeba2eb9e",
                 "0bad6b39878c06825c51ad277f9783c9fe1628a66cb11b71312039ca0b0703c2",
+                "f273a3295527587bb78124e808baee5a9a5991f5601becd931adb5af89b876ff",
                 "ccef3ab3266fafccf8cc8f7d1eb968e95ee95b37b9952a9d99a49e91c8e53b52",
-                "d77d37b217d261e8a2601acee59eabc2946c17b9821f729cee7d7fad9974024b",
-                "1e99a50bbc1d9a3fa157c312f7bf0732452a7f38b23c37363c830527def5f76d"
+                "1e60c81352cbd0311dd0989f218d3023817cb6bda8032e48c82e61af0fb809df"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bbc.co.uk",
                 "slate.com",
                 "techcrunch.com",
-                "www.crosswalk.com",
                 "www.billboard.com",
-                "www.decanter.com",
+                "www.crosswalk.com",
+                "www.historyextra.com",
                 "www.independent.co.uk",
+                "www.motorsport.com",
                 "www.spectator.com.au",
                 "www.standard.co.uk",
-                "www.thelocal.fr",
+                "www.thehindu.com",
                 "www.washingtontimes.com"
             ]
         },
@@ -763,115 +802,23 @@
             "prevalence": 0.0011,
             "cnames": [],
             "responseHashes": [
-                "c86fb217f8602088391dbcffb6ef61c6841ccc78ac98b0fda6cc3966fb1aaf8f"
+                "920daffef39b8a08b68663b747d1f8c72f207ea442f5422890d68620a260dcfa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bbc.co.uk",
                 "slate.com",
                 "techcrunch.com",
-                "www.crosswalk.com",
                 "www.billboard.com",
-                "www.decanter.com",
+                "www.crosswalk.com",
+                "www.historyextra.com",
                 "www.independent.co.uk",
+                "www.motorsport.com",
                 "www.spectator.com.au",
                 "www.standard.co.uk",
-                "www.thelocal.fr",
+                "www.thehindu.com",
                 "www.washingtontimes.com"
-            ]
-        },
-        {
-            "rule": "tinypass\\.com\\/_sam\\/H4sIAAAAAAAAAD3IwQ6AIAgA0B9KmJ76m4bJHI6oBa7f7-bt7eEnrXNgEw8Mvh6lYBy-DHVaU95QpTqS9an0pgwFSkHJu63T-yTlgy1Nh-E_BjVxNVoAAAA",
-            "cookies": 0.0015,
-            "fingerprinting": 1,
-            "subdomains": [
-                "buy",
-                "api"
-            ],
-            "apis": {
-                "window.localStorage": 15,
-                "Document.cookie getter": 15,
-                "Date.prototype.getTime": 11,
-                "Document.cookie setter": 15
-            },
-            "sites": 16,
-            "prevalence": 0.0016,
-            "cnames": [],
-            "responseHashes": [
-                "4f71b53bf05be1e722a1ee077686f9a4e337a087dc2d479747238c3127b7e08b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bbc.co.uk",
-                "pjmedia.com",
-                "redstate.com",
-                "slate.com",
-                "techcrunch.com",
-                "www.crosswalk.com",
-                "www.billboard.com",
-                "www.decanter.com",
-                "www.economist.com",
-                "www.independent.co.uk",
-                "www.scotsman.com",
-                "www.snopes.com",
-                "www.spectator.com.au",
-                "www.standard.co.uk",
-                "www.thelocal.fr",
-                "www.washingtontimes.com"
-            ]
-        },
-        {
-            "rule": "tinypass\\.com\\/api\\/v3\\/composer\\/logExecutionStats",
-            "cookies": 0.000501,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-v3"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000501,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pjmedia.com",
-                "www.cnbc.com",
-                "www.snopes.com",
-                "www.spectator.com.au",
-                "www.washingtontimes.com"
-            ]
-        },
-        {
-            "rule": "tinypass\\.com\\/checkout\\/offer\\/show",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "buy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2dedbe5771e5319f3bd82ab9e82c0f2ed8934a795c214f9b8b929b574bd27751"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.0002005414619472576,
-                "get_top_level_domain_cookie": 0.0001002707309736288
-            },
-            "exampleSites": [
-                "slate.com",
-                "www.thedailybeast.com"
             ]
         },
         {
@@ -886,7 +833,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "faecbb91e76d5eb183bc28d656a9c80d31e3c713facddd996499cb2ba5b138d5"
+                "753a797ce726c94e6fd020bb9ec382c68fb4ba268e63716ce315484cfeeceb6d"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -897,7 +844,7 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/_sam\\/H4sIAAAAAAAAAK2YTW8iORCG_9AmKOxlrzPMajPSjoRCJtdVtV00Htwuyx90yK-faiAIKYfFLznS9OMq18frcs9GZ3suM-tymZkNm63UcjeIrZ5nv_LMuy5Rcpzvj8_-mP0PYKlwdGbL6VqiuKGRoFo2Pw6_lDDbazEjwfIyyc5ZTgAfHQX5bj-scJ3xxNaVJ7Y8xOIktNFTVDO05RpK2q_YsymCbLpz3rvQf7E2cUZciJTzKMn6S7zF9ELC2vVYvjOHApDpY5quh3u3RmzW2CeyDJB5Q-rwqnbZJId6rcEqLlR-3iTmb6tlTWZDGXGnxEPG0rCQYYB8mUpG_ZDaI22ex76tzmKSQRZyEfurMH6NnFQSABdJY71OVO2CYtE4v_zZZvoDP_8MJ-Y3aGO-qL4nJlPcjsBKjLQftG1vcKZwGv5RxVxx2jmD1DD5xGT3j5S_GIPpnjk2ARqFjsJ2xaYmxP1LzV0ew4klIpL_-zVOyr84_Y9E4nD0GUoWdgIA7SjeE5L7gd4kDCOWdBc6TDandwFMIgeN0YIyopVvnARLyrihspc6ElRa_Ko9Gsi_qIKunYGlIrlQ8NHEnGsaCv2xNL8-IzUWo2ftTAjWzvZWjT-9DkhjvOOPMd5AP8uWkZRlVRO2fv-N11R9WZWkQt3vb1hJw_jzXyo0fMJaSCnb3nn1YSSIdj0URr2Vaemr0_iQdTpf8-KxTVc11BrokGHL5xWWksvaBQoG3wZT3k_6B_NTAmB660llDMalczB7kBDdeW5N4BksOq8xCGu1N5Jm32mxid4rWm1ekGVo3e2hPRsZCVwaESiYo0s8jUWNWC8TNM12thnVi04boXMo4OJphue3dq66YB0Zg5O7OcrW6FA0dABpNs4ztFXV_zfnb0A7yF_xMnRgdt7hmFv7ZKL1rl0hs5RU4IueMs30-Zwqo561KNyL9AfJRBd4l9xGfie-p1bGxQjPA8dxuF2QrBhpliXlsqzLdEtuPU0Ot9G-Aro7CFVcq5NEF9DgftKYhQ9Y8HCEjUUYtUQ_FmQJzfPM6dF5gHs3nG9b5rTCEfaumz7U9VVDefdwP7-fz2fu4a9wfua1vjz_x-Gu5vtf-Tc3axJYzxkAAA",
+            "rule": "tinypass\\.com\\/_sam\\/H4sIAAAAAAAAAK2YTW8aMRCG_1ADCr30mtKqqdRKKKS5VrP2sEzweix_sCy_vrMQEFIOxUOOLPt4xvPxerzTnmyLeWop5alZo9lwyXcd2-Jw-pqmjpoIkTBNjs8-Tf8DWMgYyGwwXktk6ioJKHn9-_BLCLO5FjPsLS4ib8liVPCBwPNP-26F64xHtJSf0GIXMrGvo8eoJtWWi89xWKJDk1mz6YacI98-WBsxaVwIkFLP0bpLvMb0nP2KWl2-E_qsIOP7NF0Pt7TS2CyhjWBRQaY1iMPL0iQTSeu1BCuTL_i8jojflosSzRqSxp0cDhmL3Zy7TuXLWDLiB5dW0-apb-vqLETueM4Xsb8Kw13AKJKgcBEk1qsIxc4hZInzy-c60-_42Uc4MbtBG9NF9T0hmExbUFZigKGTtr3BmYyx-yGKucS4JaOpYXARwQ6PkB6M0emeOTaBNgoN-M0STYka9y81d3EMpy4RAdz3XRiVf_72vyYSh6PPQLRqJxSg7dk50OS-gz37rtclnXyjk83xXQXGAb3EaA5Jo5V7jKxLSr-GPHDpQVVauJMe9eBeREFXZNRSEcln_WhizjWtCv2xNL8-a2osBIfSmSpYOttZMf606zSNccIfQ7iBfuYNalKWRE3QuuEbrqC4vMxRhLodblhJwvjnF2ToPmAtTSnblpz40IOKplYVRrmVSemL0_oh6-18TfPHOl2VUEugfVJbPq-w4JRX5MEb_TYQ0jDqn5ofE6CmNw5ExtQ4N6RmDxIiO0-1CTyDWeY1VMJS7ZWkGRopNpZ7Ra3NCzJ3tbs9tGclwx5zJaIKZk8Rx7GoEmt5hMbZzlajctGpI2QOVbj4NsPjvp4r5C2BMXpyO9OyJZAW9Y2CNGtyqNqq6P-e3A1oo_KXHXeNMjsnOKTaPhlpuWsXlVmIIvBZTplq-nxO5V7OWi3cMrcHydQucJLcSn7LroVahkKoFdjDhUe7t-MIXS9ilg1XS5lwiVd5vFnXnkCHG2xbFFrdMRS9vkcO5LXB_aDRTD-UqQcq3SiloxbaDwyJfW1P7h2Z2to7ThbocDxQaxvt9Og8ZZ52mm5b5m2FI-yoGb8mtkVyd3c_mU1msyndf_HnZ04K2uFf9HclTV7TPylUP1Z0GgAA",
             "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
@@ -907,14 +854,13 @@
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 1,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "003734c20b6b2969d15c33558e7480392b7b077770886530a89456275228f62e"
+                "7625a4507e218088876d2f25c18a054998ea20bc7fb37aba8f5dce034ad426c5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -936,14 +882,15 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "3071549068feb473f394d23112304e18cb2904b6c4aa5dc5f27421176f4e92d9",
-                "6e7ee8a66641837164e4abf42332b5f2b0078d5a179d3c05e49ce8a921d94dc8"
+                "cba2ecbbbcf81bdd5577010a76879cd9cb48d2a417682fcfecfbb751c82786f3",
+                "3d9eafec07a83877bce47d02e3560f5326aa839107489c52566d694ecb23af5c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__tbc": 0.00030081219292088637,
-                "get_top_level_domain_cookie": 0.0002005414619472576
+                "_dor_VvT57L3U": 0.00010026067776218167,
+                "__tbc": 0.00020052135552436334,
+                "get_top_level_domain_cookie": 0.00020052135552436334
             },
             "exampleSites": [
                 "spectator.com.au",
@@ -974,8 +921,8 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/runtime-es2015\\.0d05c03aca9bf3cc48f7\\.js",
-            "cookies": 0.0001,
+            "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/runtime-es2015\\.ed7527b6e65f6397cbaf\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "id"
@@ -985,7 +932,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5344c65433a237b173f9466824a06cb5fb2671391bcaab532856a6d473a960f9"
+                "28b080ffe36c984f5d191ed953e59961d4d90e694b3b72eb9171f58f31709c95"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -997,7 +944,7 @@
         },
         {
             "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/polyfills-es2015\\.99622606bdaff8c2429d\\.js",
-            "cookies": 0.0001,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "id"
@@ -1018,8 +965,8 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/main-es2015\\.cde32379cc054fb2238f\\.js",
-            "cookies": 0.0001,
+            "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/main-es2015\\.3468c941a5fc1b8eaaa0\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "id"
@@ -1034,7 +981,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8b6b5e3d94d227b6ee4e0ad7ed6350392c78c0ee3ecc28e63e369112e455591c"
+                "95ea88dfd96272fc5eaeee6b608aa2d1a088600439f90301ae71272905deb9a1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1045,7 +992,7 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/0-es2015\\.552422c92ab2e156ba77\\.js",
+            "rule": "tinypass\\.com\\/id\\/crHkWBC55K\\/0-es2015\\.4f6f83948e9c1b5f6e79\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1056,7 +1003,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "445f75ef7d532fbc004fb85ce0ac1db928275fe8870debfc39fbeecd55032051"
+                "e7fb23460a7d1a8879c87b1d425652d2c62636ecabf21918b3a67ffa16ffcc8a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1127,7 +1074,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.0001002707309736288
+                "__tbc": 0.00010026067776218167,
+                "get_top_level_domain_cookie": 0.00010026067776218167
             },
             "exampleSites": [
                 "spectator.com.au",
@@ -1150,7 +1098,9 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__tbc": 0.00020052135552436334
+            },
             "exampleSites": [
                 "spectator.com.au",
                 "www.inc.com",
@@ -1159,7 +1109,7 @@
         },
         {
             "rule": "tinypass\\.com\\/id\\/api\\/v1\\/assets\\/crHkWBC55K\\/lang",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "id"
@@ -1173,7 +1123,9 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__tbc": 0.00010026067776218167
+            },
             "exampleSites": [
                 "spectator.com.au",
                 "www.spectator.com.au"
@@ -1181,7 +1133,7 @@
         },
         {
             "rule": "tinypass\\.com\\/api\\/v3\\/customform\\/log\\/impression",
-            "cookies": 0.000301,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "api-v3"
@@ -1191,15 +1143,14 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4f45619cf8e4454cb4cc59264253663f9aca26a31f85214101298e36bd5c3d62",
-                "c440320688dbe3dcf9bef8e0cfb4ccff3122ebf4dba5d54c3069b1367eb4849b"
+                "950a7d4fbb6512d7462a04b9e85e2ed2533b80c0694cf91dcee35922d845ab7e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "s_pltp": 0.0001002707309736288,
-                "cookies.js_dtest": 0.0001002707309736288,
-                "parsely_uuid": 0.0001002707309736288
+                "s_pltp": 0.00010026067776218167,
+                "cookies.js_dtest": 0.00010026067776218167,
+                "parsely_uuid": 0.00010026067776218167
             },
             "exampleSites": [
                 "spectator.com.au",
@@ -1209,29 +1160,26 @@
         },
         {
             "rule": "tinypass\\.com\\/api\\/v3\\/anon\\/assets\\/gaAccount",
-            "cookies": 0.000401,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "buy"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0051e47a81e2e893ed9bce5a07ff2404ca7da2ef89bd24bff04dae2c46c80cde",
-                "b24bff5240ce5f657e3fcc73e4d879f4f8c71e45f78f065202dd5d2bbf8190be",
-                "07c220c7fe05bec7ffbf7d0ebdc9aef2429b2b80e732ddb09559bd45d22a5d29"
+                "4eed7ceda6ebf4314afe54d56cc491b8f94528f008bc80eedd4066a78a50db51"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__tbc": 0.0002005414619472576
+                "__tbc": 0.000300782033286545
             },
             "exampleSites": [
                 "spectator.com.au",
-                "www.biblestudytools.com",
-                "www.inc.com",
+                "www.spectator.com.au",
                 "www.thedailybeast.com"
             ]
         },
@@ -1281,7 +1229,7 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/id\\/AezVxbkgJt\\/runtime-es2015\\.bf89018885e36dc4cf55\\.js",
+            "rule": "tinypass\\.com\\/id\\/AezVxbkgJt\\/runtime-es2015\\.409b8c7f184a79f8c600\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1292,7 +1240,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "52a20aea112c28ddfb627a2b00864b54e711f59f12a8251b493147fcbf89293c"
+                "f422a95ee6052b7e8661efe59876bc7de5368537477410fd3cc715e92cb6c144"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1325,7 +1273,7 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/id\\/AezVxbkgJt\\/main-es2015\\.77838e191a38bf85d900\\.js",
+            "rule": "tinypass\\.com\\/id\\/AezVxbkgJt\\/main-es2015\\.56d1b326e39d0224ed40\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -1335,14 +1283,13 @@
                 "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "KeyboardEvent.prototype.keyCode": 2
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d06ce48c64add6535ab052626424a01d9d753558e6816d63034617c71c66b4ab"
+                "9a9258c9dfbf900fc57470501a4f9ee7e092ced49d748cd3848a497fff4bdc4b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1353,7 +1300,7 @@
             ]
         },
         {
-            "rule": "tinypass\\.com\\/id\\/AezVxbkgJt\\/0-es2015\\.f28232d4e0354d47a8c3\\.js",
+            "rule": "tinypass\\.com\\/id\\/AezVxbkgJt\\/0-es2015\\.ef3f74c0aa69363e6dfb\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1364,7 +1311,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f4fb99d0e03180491cf8a5d515c63ad55f1bd038cb46081bcff084edd5ff93ef"
+                "fbfe80ff4af85633d1c1dc583fd90a24f380de225e7f8623980061b90a70b610"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1435,7 +1382,9 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.0002005414619472576
+                "_dor_VvT57L3U": 0.00020052135552436334,
+                "__tbc": 0.00020052135552436334,
+                "get_top_level_domain_cookie": 0.00020052135552436334
             },
             "exampleSites": [
                 "inc.com",
@@ -1444,7 +1393,7 @@
         },
         {
             "rule": "tinypass\\.com\\/id\\/api\\/v1\\/assets\\/AezVxbkgJt\\/lang",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "id"
@@ -1453,12 +1402,12 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "77d4294a606f41740b9c8ddb8eebdaba73b35d0784f5c8c61538e960d6b3f646"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "__tbc": 0.00020052135552436334
+            },
             "exampleSites": [
                 "inc.com",
                 "www.inc.com"
@@ -1495,14 +1444,13 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00521,
+    "cookies": 0.00451,
     "types": {
-        "Script": 232,
-        "Document": 22,
+        "Script": 210,
         "XHR": 34,
+        "Document": 22,
         "Stylesheet": 23,
-        "Image": 15,
-        "Ping": 5
+        "Image": 14
     },
     "nameservers": [
         "ian.ns.cloudflare.com",

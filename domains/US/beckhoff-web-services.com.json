@@ -7,10 +7,11 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "webapp"
+        "webapp",
+        "statistics"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "beckhoff-web-services\\.com\\/mybeckhoff\\/jquery\\.mybeckhoff\\.min\\.js",
@@ -24,7 +25,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "606469033b308c1c243e99adcb8c0137483e2c7ac478f128d6de1ecfd2384099"
+                "58cf26f4abdadcbdafb63a2686afbe670212b8be6147bb8381f4918133178661"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -124,7 +125,7 @@
         },
         {
             "rule": "beckhoff-web-services\\.com\\/navigation\\/navigation\\.proxy\\.php",
-            "cookies": 0.00000679,
+            "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
                 "webapp"
@@ -134,7 +135,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eca12fdfcf8630df54fe0f01bc19fcf38b8da271aab70b3875eea81c8114667e"
+                "75152407cf491755fbca865a709820aee8c07416035bd9aea98fa8f1205e6018"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -156,9 +157,78 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "36c25117d0fa79cc1fdbfb18a545a24f25bdb582f0589918336b4ce58d93e5d1"
+                "00781be1be293bb7c4294fe65295bee4bc16e2d960ce5c9c310e65f97c07dbb7"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckhoff.com",
+                "www.beckhoff.com"
+            ]
+        },
+        {
+            "rule": "beckhoff-web-services\\.com\\/matomo\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "statistics"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5951438dd533bfc072aa250205ad3d618ac9add4b8f609a68d4608c7d3282434"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.7.dc9c": {
+                    "ttl": 33955209,
+                    "length": 28,
+                    "prevalence": 0.000013555829684555844,
+                    "uniqueness": 1
+                },
+                "_pk_ses.7.dc9c": {
+                    "ttl": 1808,
+                    "length": 1,
+                    "prevalence": 0.000013555829684555844,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckhoff.com",
+                "www.beckhoff.com"
+            ]
+        },
+        {
+            "rule": "beckhoff-web-services\\.com\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "statistics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -171,7 +241,8 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Script": 14
+        "Script": 16,
+        "Ping": 2
     },
     "nameservers": [
         "ns-690.awsdns-22.net",

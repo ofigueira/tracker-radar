@@ -9,16 +9,26 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.0017,
+    "sites": 17,
     "subdomains": [
+        "img.ui-portal",
         "a.bildstatic",
-        "img.ui-portal"
+        "auth.idealo",
+        "cdn.immonet"
     ],
     "cnames": [
         {
             "original": "a.bildstatic.de",
             "resolved": "a.bildstatic.de.edgekey.net"
+        },
+        {
+            "original": "auth.idealo.de",
+            "resolved": "auth.idealo.de.edgekey.net"
+        },
+        {
+            "original": "cdn.immonet.de",
+            "resolved": "cdn.immonet.de.edgekey.net"
         },
         {
             "original": "img.ui-portal.de",
@@ -28,6 +38,34 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "de\\.edgekey\\.net\\/pos-cdn\\/tracklib\\/4\\.3\\.0\\/tracklib\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img.ui-portal"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "img.ui-portal.de",
+                    "resolved": "img.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "40a6f6526afea19db42dcf345249915ccacc710ee6c97091d5d6285b5f90ead3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "web.de",
+                "www.gmx.com",
+                "www.mail.com"
+            ]
+        },
+        {
             "rule": "de\\.edgekey\\.net\\/breakingnews\\/index\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -36,7 +74,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "a.bildstatic.de",
@@ -55,39 +93,67 @@
             ]
         },
         {
-            "rule": "de\\.edgekey\\.net\\/pos-cdn\\/tracklib\\/4\\.3\\.0\\/tracklib\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "rule": "de\\.edgekey\\.net\\/refresh\\/idtoken",
+            "cookies": 0.0002,
+            "fingerprinting": 0,
             "subdomains": [
-                "img.ui-portal"
+                "auth.idealo"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
-                    "original": "img.ui-portal.de",
-                    "resolved": "img.ui-portal.de.edgekey.net"
+                    "original": "auth.idealo.de",
+                    "resolved": "auth.idealo.de.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "40a6f6526afea19db42dcf345249915ccacc710ee6c97091d5d6285b5f90ead3"
+                "db6e45e3758fb79fb72130927205beea391d70e2a584d5ef5b8ebea023bd55d1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idealo.de",
+                "www.idealo.de"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/adtag-snippets\\/9\\.8\\.3\\/initImmonetAds\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.immonet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "cdn.immonet.de",
+                    "resolved": "cdn.immonet.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "11d5c67310771a2aa67502ce53d1bb2b0489aa95c2faaac0bf38e5766182fae0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gmx.com",
-                "www.gmx.net"
+                "immonet.de",
+                "www.immonet.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000401,
     "types": {
+        "Script": 5,
         "Fetch": 2,
-        "Script": 2
+        "XHR": 2
     },
     "nameservers": []
 }

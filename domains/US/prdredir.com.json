@@ -4,27 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000109,
-    "sites": 16,
+    "prevalence": 0.000122,
+    "sites": 18,
     "subdomains": [
-        "scripts"
+        "scripts",
+        "rtg"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "prdredir\\.com\\/scripts\\/b_banggood\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "scripts"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "Performance.prototype.memory": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "window.outerHeight": 1,
+                "window.outerWidth": 1
+            },
             "sites": 5,
             "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
-                "95d838de11136e7964ca0eaa375bf294d19a0b15880a014338e0a5d9d8e05385"
+                "95d838de11136e7964ca0eaa375bf294d19a0b15880a014338e0a5d9d8e05385",
+                "e713646248d68f999c3231deea75009e4460de50f1fc97db9d1c854450e593f8",
+                "fb766eea6836c6cb4e639bebf28b019476f9ee2b4ea93695acc8dccfbaf05cc4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -45,11 +58,11 @@
                 "scripts"
             ],
             "apis": {
-                "window.localStorage": 7,
-                "Date.prototype.getTime": 9
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 4
             },
-            "sites": 9,
-            "prevalence": 0.0000611,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
                 "963b33b968ee14442d917bb14b6c8155b4bfa633a6ce3d00e89ff9f05d630828"
@@ -60,28 +73,31 @@
             "exampleSites": [
                 "banggood.com",
                 "au.banggood.com",
-                "uk.banggood.com",
                 "usa.banggood.com",
                 "www.banggood.com",
-                "www.magzter.com",
-                "www.movavi.com",
-                "www.screencapture.com",
-                "www.u-buy.co.nz"
+                "www.latamairlines.com"
             ]
         },
         {
             "rule": "prdredir\\.com\\/scripts\\/k_magzter\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "scripts"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "Performance.prototype.memory": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "95d838de11136e7964ca0eaa375bf294d19a0b15880a014338e0a5d9d8e05385"
+                "ef07af6c8496e617b2dab34714c19cb896e1511faaeb38a24b7a2efe5547772c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -93,21 +109,61 @@
         },
         {
             "rule": "prdredir\\.com\\/scripts\\/k_movavi\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000203,
+            "fingerprinting": 1,
             "subdomains": [
                 "scripts"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.width": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "window.name": 3
+            },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "95d838de11136e7964ca0eaa375bf294d19a0b15880a014338e0a5d9d8e05385"
+                "f14dfa5f97504ce8a8a82bac70a0076ce598e690b6cf4acc282a0fb0fdad1d6a"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__tid": {
+                    "ttl": 31536006,
+                    "length": 33,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movavi.com",
+                "www.movavi.com",
+                "www.screencapture.com"
+            ]
+        },
+        {
+            "rule": "prdredir\\.com\\/sync",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__tid": 0.000020333744526833766
+            },
             "exampleSites": [
                 "movavi.com",
                 "www.movavi.com",
@@ -117,16 +173,26 @@
         {
             "rule": "prdredir\\.com\\/scripts\\/k_ubuy\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 3,
             "subdomains": [
                 "scripts"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "Performance.prototype.memory": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "window.outerHeight": 1,
+                "window.outerWidth": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "95d838de11136e7964ca0eaa375bf294d19a0b15880a014338e0a5d9d8e05385"
+                "92a046d19ff10ed0b03a9744ddecc279a6166d2f286b33ff4f4cd287bcded95c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -139,13 +205,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000339,
     "types": {
         "Script": 12,
-        "Document": 9
+        "Document": 5,
+        "Image": 3
     },
     "nameservers": [
-        "porter.ns.cloudflare.com",
-        "nataly.ns.cloudflare.com"
+        "nataly.ns.cloudflare.com",
+        "porter.ns.cloudflare.com"
     ]
 }

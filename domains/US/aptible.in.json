@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
+        "elb-forhims-22918",
         "elb-everplans-7100",
         "elb-everplans-7099"
     ],
     "cnames": [
+        {
+            "original": "api.forhims.com",
+            "resolved": "elb-forhims-22918.aptible.in"
+        },
         {
             "original": "my.everplans.com",
             "resolved": "elb-everplans-7099.aptible.in"
@@ -22,6 +27,58 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "aptible\\.in\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "elb-forhims-22918"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.forhims.com",
+                    "resolved": "elb-forhims-22918.aptible.in"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forhims.com",
+                "www.forhims.com"
+            ]
+        },
+        {
+            "rule": "aptible\\.in\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "elb-forhims-22918"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.forhims.com",
+                    "resolved": "elb-forhims-22918.aptible.in"
+                }
+            ],
+            "responseHashes": [
+                "931e767f70b8c2d3ab9c76343f2452f3c18ee8f780485b9d8870686c2325154f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forhims.com",
+                "www.forhims.com"
+            ]
+        },
         {
             "rule": "aptible\\.in\\/externalApp\\.js",
             "cookies": 0,
@@ -39,7 +96,7 @@
                 }
             ],
             "responseHashes": [
-                "5bbf370d9dab350d401c2456b2deef8ef7804fa3d391d9354779a80d8ba09851"
+                "0142d52e34aa85a698371fc2180ee53033b3303dd12f182c9c84bcef45ad555e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -91,7 +148,7 @@
                 }
             ],
             "responseHashes": [
-                "b16357c2d79af48311988699d79ac97a64d389b77a1239b132c21704237625eb"
+                "262fa247d70842a5c86b9cee2b9a7f072b2378b2b1d2c9dc69fcdeefe23be6c9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -133,8 +190,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Preflight": 4,
+        "Fetch": 2,
         "Script": 4,
-        "Preflight": 2,
         "XHR": 2
     },
     "nameservers": []

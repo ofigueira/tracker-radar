@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000407,
+    "sites": 6,
     "subdomains": [
+        "pwd7jm.canadianbs.gslb",
         "p10o5q.nasa.gslb",
         "py55oz.ocado.gslb"
     ],
@@ -18,10 +19,39 @@
         {
             "original": "ebranch.nasafcu.com",
             "resolved": "p10o5q.nasa.gslb.f5silverline.com"
+        },
+        {
+            "original": "myaccount.blood.ca",
+            "resolved": "pwd7jm.canadianbs.gslb.f5silverline.com"
         }
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "f5silverline\\.com\\/cbs-wss\\/ajax\\/user-status",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pwd7jm.canadianbs.gslb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "myaccount.blood.ca",
+                    "resolved": "pwd7jm.canadianbs.gslb.f5silverline.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blood.ca",
+                "www.blood.ca"
+            ]
+        },
         {
             "rule": "f5silverline\\.com\\/HBNet\\/App\\/Signon\\/tetheredFrameLoginEntry",
             "cookies": 0,
@@ -39,7 +69,7 @@
                 }
             ],
             "responseHashes": [
-                "a04c3f10acac5a0a00c86c350074ab6f59b7406d8575350019aed3d5c11b825e"
+                "218190182a8437c12d57aabb99a1334dd893dc7eb7c248c87e33bc74f904c25e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -66,7 +96,7 @@
                 }
             ],
             "responseHashes": [
-                "12385144ba8b5e3fe7f4ae6abc93abc16ba5805e3e1125682680c3b821b5522c"
+                "a613952e96b918c5db6c5a1d6dd4edb68862db0b0e2f164dc821c15050ea08c9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -239,6 +269,33 @@
             ]
         },
         {
+            "rule": "f5silverline\\.com\\/HBNet\\/App\\/Scripts\\/Customer\\/raphael\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "p10o5q.nasa.gslb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ebranch.nasafcu.com",
+                    "resolved": "p10o5q.nasa.gslb.f5silverline.com"
+                }
+            ],
+            "responseHashes": [
+                "861c01d843ab96bc72f8d40db878d0466206763fe8c1fc2a93a280cba19f1f36"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasafcu.com",
+                "www.nasafcu.com"
+            ]
+        },
+        {
             "rule": "f5silverline\\.com\\/auth-service\\/sso\\/check-session",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -255,8 +312,33 @@
                 }
             ],
             "responseHashes": [
-                "f31dce790086a62706d62656f88b5bfffaa1ba8af78333b64b3e5f7f99c403b5"
+                "5c857fdf358c2befe53b386153c7d1ecb402b25975723e7736aad989ef60f7f5"
             ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ocado.com",
+                "www.ocado.com"
+            ]
+        },
+        {
+            "rule": "f5silverline\\.com\\/auth-service\\/sso\\/authorize",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "py55oz.ocado.gslb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "accounts.ocado.com",
+                    "resolved": "py55oz.ocado.gslb.f5silverline.com"
+                }
+            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -291,40 +373,15 @@
                 "ocado.com",
                 "www.ocado.com"
             ]
-        },
-        {
-            "rule": "f5silverline\\.com\\/auth-service\\/sso\\/authorize",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "py55oz.ocado.gslb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "accounts.ocado.com",
-                    "resolved": "py55oz.ocado.gslb.f5silverline.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ocado.com",
-                "www.ocado.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000407,
     "types": {
+        "XHR": 4,
         "Document": 6,
-        "XHR": 2,
-        "Script": 14
+        "Script": 16
     },
     "nameservers": []
 }

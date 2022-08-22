@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000265,
-    "sites": 39,
+    "prevalence": 0.000603,
+    "sites": 89,
     "subdomains": [
         "advertising-cdn",
-        "advertising-module.api"
+        "profile-public-api.data",
+        "advertising-module.api",
+        "temptation-module-assets.api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,7 +23,12 @@
                 "advertising-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -39,51 +46,155 @@
         },
         {
             "rule": "dpgmedia\\.cloud\\/web-advertising\\/prebid\\.js",
-            "cookies": 0,
+            "cookies": 0.000183,
             "fingerprinting": 2,
             "subdomains": [
                 "advertising-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 21,
-                "Navigator.prototype.cookieEnabled": 21,
-                "window.sessionStorage": 21,
-                "Navigator.prototype.appName": 21,
-                "Date.prototype.getTime": 21,
-                "window.localStorage": 21,
-                "Document.cookie getter": 21
+                "Navigator.prototype.userAgent": 42,
+                "Navigator.prototype.cookieEnabled": 43,
+                "window.sessionStorage": 41,
+                "Navigator.prototype.appName": 41,
+                "Date.prototype.getTime": 43,
+                "window.localStorage": 43,
+                "Document.cookie getter": 43,
+                "Document.cookie setter": 27,
+                "Navigator.prototype.doNotTrack": 25,
+                "Screen.prototype.height": 25,
+                "Screen.prototype.width": 25,
+                "Navigator.prototype.language": 25,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
             },
-            "sites": 22,
-            "prevalence": 0.000149,
+            "sites": 47,
+            "prevalence": 0.000319,
             "cnames": [],
             "responseHashes": [
                 "d851dba0fe0decf8085d230fc0582327fbb1740fa4e936782c0b35270bf525f3",
                 "0656e021f5ca125c3ad202475db9a411c277a43c14698cffef7c82fe14fc79ec"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592006,
+                    "length": 16,
+                    "prevalence": 0.00018300370074150388,
+                    "uniqueness": 0.4444444444444444
+                },
+                "_pubcid": {
+                    "ttl": 31536010,
+                    "length": 36,
+                    "prevalence": 0.00017622578589922597,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 33696004,
+                    "length": 220,
+                    "prevalence": 0.00014233621168783636,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696004,
+                    "length": 161,
+                    "prevalence": 0.00014233621168783636,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "pbjs-id5id_nb": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "pbjs-id5id_677_nb": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "pbjs-id5id_last": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id.1st": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id.1st_nb": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id.1st_677_nb": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id.1st_last": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id_nb": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id_677_nb": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                },
+                "id5id_last": {
+                    "ttl": -86389,
+                    "length": 3,
+                    "prevalence": 0.000020333744526833766,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.kekmama.nl",
-                "www.scholieren.com",
                 "www.flair.nl",
-                "www.vtwonen.nl",
-                "www.nu.nl",
+                "www.libelle.nl",
                 "scholieren.com",
                 "www.startpagina.nl",
-                "forum.scholieren.com",
-                "www.tvgids.nl",
-                "www.hartvannederland.nl",
-                "www.story.nl",
-                "www.weer.nl",
-                "www.huislijn.nl",
-                "www.nouveau.nl",
+                "www.7sur7.be",
+                "www.autowereld.nl",
+                "www.bndestem.nl",
+                "www.nu.nl",
                 "www.top40.nl",
-                "www.gids.tv",
-                "indebuurt.nl",
-                "forum.viva.nl",
-                "www.24kitchen.nl",
-                "www.autowereld.nl"
+                "www.volkskrant.nl",
+                "www.oudersvannu.nl",
+                "www.parool.nl",
+                "www.hartvannederland.nl",
+                "forum.scholieren.com",
+                "www.bd.nl",
+                "www.margriet.nl",
+                "www.tubantia.nl",
+                "www.humo.be",
+                "www.kekmama.nl",
+                "www.pzc.nl"
             ]
         },
         {
@@ -109,52 +220,55 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/web-advertising\\/13\\/13\\/2\\/advert-xandr\\.js",
+            "rule": "dpgmedia\\.cloud\\/web-advertising\\/13\\/17\\/1\\/advert-xandr\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "advertising-cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 19,
-                "window.localStorage": 19,
-                "Navigator.prototype.cookieEnabled": 19,
-                "Document.cookie getter": 19
+                "Navigator.prototype.userAgent": 41,
+                "window.localStorage": 40,
+                "Navigator.prototype.cookieEnabled": 38,
+                "Document.cookie getter": 38,
+                "window.innerHeight": 26,
+                "window.innerWidth": 26,
+                "Element.prototype.getClientRects": 20
             },
-            "sites": 21,
-            "prevalence": 0.000143,
+            "sites": 44,
+            "prevalence": 0.000298,
             "cnames": [],
             "responseHashes": [
-                "d6d86fde89629d75f5c46ae0147bf0d614c14d6c39d8764e263924093430db74"
+                "43576cd5b81dec5d9088e9be98476bcd6bcf00fc2fb2436e6953293ecda624cb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.huislijn.nl",
-                "www.24kitchen.nl",
-                "www.scholieren.com",
-                "www.nouveau.nl",
-                "www.oudersvannu.nl",
+                "www.rtlboulevard.nl",
                 "www.hartvannederland.nl",
-                "www.nu.nl",
-                "www.startpagina.nl",
-                "www.story.nl",
-                "www.autowereld.nl",
-                "www.vtwonen.nl",
-                "www.flair.nl",
-                "www.top40.nl",
-                "www.weer.nl",
-                "www.linda.nl",
-                "indebuurt.nl",
+                "www.nouveau.nl",
+                "www.huislijn.nl",
                 "www.tvgids.nl",
-                "www.gids.tv",
+                "www.vtwonen.nl",
+                "www.gelderlander.nl",
+                "www.linda.nl",
+                "www.weer.nl",
+                "www.autowereld.nl",
+                "www.autoweek.nl",
+                "www.volkskrant.nl",
+                "www.startpagina.nl",
                 "forum.viva.nl",
-                "viva.nl"
+                "www.7sur7.be",
+                "sportnieuws.nl",
+                "www.trouw.nl",
+                "www.libelle.nl",
+                "www.demorgen.be",
+                "www.spaargids.be"
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/viva\\/2641fd0b91348df19f7f7a7c9ca37de55110c6d4\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/viva\\/3a9c0231166abc3854d6fbf5c16d3ce90d897355\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -165,7 +279,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2f6f46e127f192f0a2165ccb636cd9332d2683bc4935d9695beb73fff665bed1"
+                "795af4b87b1d22ecc3ea58fe8ab10a60e5a0737b03ad05088b22fd25dcaf7d68"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -176,7 +290,103 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/24kitchen\\/e9917d2a22f946cae1b379f5afe4a3e8a019e914\\.js",
+            "rule": "dpgmedia\\.cloud\\/dmoi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profile-public-api.data"
+            ],
+            "apis": {},
+            "sites": 22,
+            "prevalence": 0.000149,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.nouveau.nl",
+                "www.parool.nl",
+                "www.spaargids.be",
+                "www.margriet.nl",
+                "www.pzc.nl",
+                "www.volkskrant.nl",
+                "www.humo.be",
+                "www.tubantia.nl",
+                "www.ad.nl",
+                "www.demorgen.be",
+                "www.story.nl",
+                "www.destentor.nl",
+                "www.veronicasuperguide.nl",
+                "sportnieuws.nl",
+                "www.hln.be",
+                "www.7sur7.be",
+                "www.ed.nl",
+                "www.gelderlander.nl",
+                "www.trouw.nl",
+                "indebuurt.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/dmoi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profile-public-api.data"
+            ],
+            "apis": {},
+            "sites": 22,
+            "prevalence": 0.000149,
+            "cnames": [],
+            "responseHashes": [
+                "d1b7b3793c1d64ece6834c2ccf3aff79ee2cf22b67a4b42eb33c1e8213e5ed5a",
+                "8152bdbe146fac8176ba2dac283201e838422c58b5af156a29f8ce1c3e772744",
+                "fb932147e44afe521acc844453d22c27d80e21651ed20c404fc35864ace0b8ae",
+                "2ffbfe46308c4a20c9dc5e1d6f3a65f1d478cda38d9df5eddbef27cdb4ffa77b",
+                "69eaac5a7043c19d7e49a82524c9b7f9383a286cc2b003a2e0ebf1b20bae8e18",
+                "870b7fdd699b29ddaebd53150109758421e8baff28b25ea53f486aea1c107014",
+                "224d063472c3fe09fd29dcc0360fc707b3b10e580cc0300ad8f44352deb00327",
+                "62d360616f49bf75cb0ce17ad96e020203637f157bd0c7d730a5fff04e7c1916",
+                "6c79b272932c3d1c53ced95a6f6db5297fb042a8865c0e7cdfd5639a529e880c",
+                "dc410b6685595d1898a30d6cabba300c8f7ae88b4c08dfef2e485a2186d75fbe",
+                "aa62be02f646f02e973160543a3b9cc376853000bfb75b3db7be54cb91c788ee",
+                "320bd3ca1bec6d82eb94dc9088e11f4c15d458d3871071599748cc518d25b392",
+                "9dd6b3c95a083acbf7c3e052262b52cdec802dfd9251b935c47728c5766b3ec4",
+                "36237280c6fcd2a8ccabd5df2678ba6870710e2f36ba65229ae9a9abc8b6d4a6",
+                "d2d5aee7d38f2e2118fb1cf81c7cc8131afbc253a51ecf0b1a5ce858c4784607",
+                "a28dc68060ef7da9e626c1ceb13ef9115d60a22392e172e90d2431b870760f4b",
+                "33674fb5237fee06152ae10b0ea75bbc2aa34045ed6ccddc2e5061bd18a1c71b",
+                "0ed19fe4519f48c50a346ec08debbb6a1a9bcef38b1deb0766e3fbdc3ad5128e",
+                "d3d9ca3163192b5fcc48498264ead8756dba605566b9797fd8fce881fae978e4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.parool.nl",
+                "www.nouveau.nl",
+                "www.margriet.nl",
+                "sportnieuws.nl",
+                "www.trouw.nl",
+                "www.humo.be",
+                "www.pzc.nl",
+                "www.demorgen.be",
+                "www.ed.nl",
+                "www.7sur7.be",
+                "www.ad.nl",
+                "www.destentor.nl",
+                "www.story.nl",
+                "www.veronicasuperguide.nl",
+                "www.tubantia.nl",
+                "www.volkskrant.nl",
+                "indebuurt.nl",
+                "www.hln.be",
+                "www.spaargids.be",
+                "www.bd.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/24kitchen\\/ebb823d937410998529cfd48e29518578a8e23a7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -187,7 +397,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "54f7d9d8faafcd175acffdbfed5d122ace7768de0a48aa02daab52341f3f8ae2"
+                "9208113c91350bb641f372df13ecfe735e2da405aba60ebd3f2fad83992c8250"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -198,7 +408,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/autowereld\\/ef969ad65bcdfec137aedb6fb0c427b06976fc5d\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/7sur7\\/d843f219134cb286a3712ae63e051b863d46cbda\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -209,18 +419,50 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b57f76c8d1c244b5b64be18ee66b76231e5cfec30be7005c8f40f51bdf39ddb6"
+                "69331cff5df1325e0108397ed86eae7191d4d153d4df3e443ea257f37c5d96b3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "autowereld.nl",
-                "www.autowereld.nl"
+                "7sur7.be",
+                "www.7sur7.be"
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/flair\\/c7c89fe9c7e4340222b478d227e9b719c87807af\\.js",
+            "rule": "dpgmedia\\.cloud\\/web-advertising\\/13\\/17\\/0\\/advert-xandr\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Document.cookie getter": 3,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Element.prototype.getClientRects": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "4f8fcf626eb1d686ad23a510afb0ccd47a3021aed51941ef202f1cc244d0dc4a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ad.nl",
+                "www.ad.nl",
+                "www.hln.be",
+                "www.nu.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/algemeendagblad\\/f8d9c6f2bb8c9b6f2d4db5ee142d7968356f7d52\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -231,7 +473,201 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "194e69431486e311c2f2ea792190a189ad88e8924676c39ec7370bb1b3e60599"
+                "cc7e05d089d7dad2beef91dfc78b59fcf96f799b5f687738a8211696bfc803ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ad.nl",
+                "www.ad.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/video\\/ad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ad.nl",
+                "www.ad.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/video\\/ad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bd5dd2c6187a3ae2962555b3f9c1bcc8b9fe0255c5d2094db121ee0b08ee569d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ad.nl",
+                "www.ad.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/autoweek\\/10cfe27314204c7451a9ce168e29354d4cf98f18\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7714d475556cabee00a8fb254e9b1d2ad384b52679e25772f2c099c43282f390"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autoweek.nl",
+                "www.autoweek.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/brabantsdagblad\\/9ae11705fd20aedc6062a0708e199363d8a310a1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c3a51d22a68baebfd9a1d7e2d8f931f17ef14eb8c98b9507ef3d02ad01bc4ea9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bd.nl",
+                "www.bd.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/demorgen\\/32cf3f30d761d52e8a6871da15fe911ff0cb2f1a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a2d69529be14fa2e4db1b25fd877e243a4e8cbdacb3e026448ae871f6443773f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "demorgen.be",
+                "www.demorgen.be"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/eindhovensdagblad\\/204811467a104c33ed87d9e30a67aefeff1dcb5e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "edcf48e4ad2874cddaa4ed651980192cb9ba7bf79966292a3e6394df3393aec4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ed.nl",
+                "www.ed.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/video\\/eindhovensdagblad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ed.nl",
+                "www.ed.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/video\\/eindhovensdagblad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c1c914f1a85c591b11f9bbd5a63c935796521ae7de4fcc848fc45010bd73d3fc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ed.nl",
+                "www.ed.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/flair\\/51bc1869cdec43e7fc5421c82eb6a45556bd75e2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f175a082510c80e0c20585617562593227160eb0b9730b0337a007bc8378ac34"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -239,6 +675,28 @@
             "exampleSites": [
                 "flair.nl",
                 "www.flair.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/gelderlander\\/8e1de4f693e05cc3115c067480c5f9b924639fa0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f865b2bee6d15b0d45e67d4534efa21dadf32315dd39f8ff7a6685d55e24d7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gelderlander.nl",
+                "www.gelderlander.nl"
             ]
         },
         {
@@ -264,6 +722,90 @@
             ]
         },
         {
+            "rule": "dpgmedia\\.cloud\\/web\\/hartvannederland",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hartvannederland.nl",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/hartvannederland",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5f90debf83c18777cc034af36f862906de3803567b729a0a0c123d2066dd5e2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hartvannederland.nl",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/hartvannederland\\/5fac24e2e89d128b026d16e1b2902260191c7549\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0c9f0bb258092885d80632e7e7bd23c436708791f6a99808da3dad6c9bbdb299"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hartvannederland.nl",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/hln\\/a2d258109a1886ce4d45e04ec9eb54da3dffef9d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hln.be",
+                "www.hln.be"
+            ]
+        },
+        {
             "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/huislijn\\/853d4c72f115eaaff3bb819698e1bda00696dcee\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -286,7 +828,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/kekmama\\/2e671ff6e0b05a28b03d466d69561a6f45bb0e9d\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/humo\\/0906805b56a38893f5bced96ec3b770657d8b059\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -297,7 +839,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "780e013aaddc91012c53f5411c46b21b7b3b6b8ff672317689667a83ca8a1e7a"
+                "18b7046808b044477c60a71c70ce85950a3f7374880eed9d7ef69e7c5827e2b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "humo.be",
+                "www.humo.be"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/kekmama\\/927e35b9bcb72ce05d169bdb66a50097fb7c5d22\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cba6a10afb2fb04cbfe7648c82f282c64802294b5f196dc873b9d8f4aa66f2a3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -305,6 +869,92 @@
             "exampleSites": [
                 "kekmama.nl",
                 "www.kekmama.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/libelle\\/487b696d54bd50fabe5509db40d2637b8ab61622\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "32b6d9eb2fc77176807cad7e8b203979ecfad0eb5083ea539dccb4401af02cd8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "libelle.nl",
+                "www.libelle.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/linda",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linda.nl",
+                "www.linda.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/linda",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "12878a288d252699f050d6567dc194fc01b6245454e589aed92e37ae5ed4f1cc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linda.nl",
+                "www.linda.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/linda\\/fe54b3bd23c75f9c1d94162782f6bdca671360c8\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c6671070dbdf145d8675cb81e71afe7a746478995ba00b4bddd3284f96846cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linda.nl",
+                "www.linda.nl"
             ]
         },
         {
@@ -330,7 +980,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/oudersvannu\\/ed709b6fed63fd997c97331f726f0aec80d3c329\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/nunl\\/a8bc5dbdb7febadfb23ca5321344ca65b86a2d36\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -341,8 +991,28 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7f2b095cd93acda901d410d6aedac191e9a46d76b275d2466fa61767de41814f"
+                "96a65f17dcf4c45a090de99177450f0f37f38336e4551b76df3079003841b6ee"
             ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nu.nl",
+                "www.nu.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/oudersvannu\\/9c15f15605892ac07bbec5b3a7aa12d16bce7590\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -352,7 +1022,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/scholieren\\/d8b30e2e59c74c557da1aae659fd81f66b42e65e\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/pzc\\/0512c236673d7b6e11a31cf9b8275c0626c9db41\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -363,7 +1033,187 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "51acef861391b6c8174dceb74e55ef7770876f40c2fd3439fcdfa0f52da5aa74"
+                "04e024e57770b49d0475c8497c8d89ad5bbfb7aa7b7c248ca33fc914ddf0815e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pzc.nl",
+                "www.pzc.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/components\\/usps\\/components\\/usp\\/yes-85f91d9739cf83a73316fc2d050b64f4\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "temptation-module-assets.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "b9a203374b2c0b5b2baefe8105560cc9cf3150bc8d68034c4044523a95eaa42b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pzc.nl",
+                "www.trouw.nl",
+                "www.volkskrant.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/components\\/usps\\/components\\/usp\\/no-06f8ccb86c9a2d22ae5f734ba40ce634\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "temptation-module-assets.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "77266e658ad8a60332174d1cafc802115decf4f00935291fbdf3acaa66241434"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pzc.nl",
+                "www.trouw.nl",
+                "www.volkskrant.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/framework\\/rtlboulevard\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "076cce792ad2618fa1f98636c144ad090e668b0985e04f760545e43539bdc706"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtlboulevard.nl",
+                "www.rtlboulevard.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/framework\\/rtlnieuws\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "62c59ea7bf723c93c1ed4bbfb595f971cb252450aec5695d73c122310833781f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtlnieuws.nl",
+                "www.rtlnieuws.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/rtlnieuws",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "371fbdf1e4b3903a8c5a17d17e19a7593706019bc5c85eb68df9232752690606"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtlnieuws.nl",
+                "www.rtlnieuws.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/rtlnieuws",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtlnieuws.nl",
+                "www.rtlnieuws.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/rtlnieuws\\/191e15660b0ae4f4bcdf2d8794b91c5caa39ae27\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0023772a10203b7ef3eea978d2208d247674345df711073da7299b59c8a3b601"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtlnieuws.nl",
+                "www.rtlnieuws.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/scholieren\\/875f7ff3177c7b2e0d4fad3d9bd8e26b80cb55ea\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "06da285c78bc7c82d25a5d0b67a36c34ebd0b6f314a478a515223cc97f53e525"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -374,7 +1224,49 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/story\\/0abb801dab757d70c886b0b5bc39c2e9180cc4be\\.js",
+            "rule": "dpgmedia\\.cloud\\/web\\/schoolbank",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a3987608e828dfb1da727e173125e30b8a71fde300785393c7ab5ded5ae1cd8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schoolbank.nl",
+                "www.schoolbank.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/schoolbank",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schoolbank.nl",
+                "www.schoolbank.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/spaargids\\/23de5bd5ab871a9c49d972d20489c79f3609e2f6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -385,7 +1277,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4823cecda1f6d4136a05c6d26d688ce683b3c2e2a39af7cee651ede3871b9998"
+                "0718322600358690b37331973923ecea0514654310be58a7cf43811176561b23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spaargids.be",
+                "www.spaargids.be"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/story\\/0c73473d6a2ecf285d29b9d623546097e6185bcd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9d95e387e8fda47e55bce8841645a8f6024eadc655e321fa38e9ad6b54158b0d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -396,7 +1310,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/top40\\/bf7056a0ff98fb6ee34f8c1cb0487be1de298ce3\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/televizier\\/8a09c93b593d1c6d5dc15aae87af2d715b323177\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -407,7 +1321,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "32f9cc08fdca25675716098202311d58f2dc968252799bcf5d86fa0ac9642d24"
+                "7715a2e51a3281cbdc28e6c3dc77db05d0445d77a68626df20ce6c7c9b806731"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "televizier.nl",
+                "www.televizier.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/top40\\/42afb8646b716e855dde31266838911d56633dc0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "833e915f47596e0f0e430369b07636501121d50ef21e2a1540a9c9309d400a46"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -418,7 +1354,7 @@
             ]
         },
         {
-            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/tvgids\\/b4cf03895a5fed08def362136ce714a6fb3a5631\\.js",
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/tubantia\\/c512e1bae1632bb555d1be141bb54378b82288dd\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -429,7 +1365,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "81699c1c56a3ed88fbe0179fe330847e284def1fdd5483bf0d48d14d251ef1d5"
+                "2ff843371fb68883ab908eadc31267ff596b29ca01ccfd62ebfcb915795112eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tubantia.nl",
+                "www.tubantia.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/tvgids\\/8a9292e2875bc1e4e43b435e7dade19869383539\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "83df1b0f9760b427b21e2d82ab4769fd73e42e0d1cc63a036afff6fa5101960e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -437,6 +1395,70 @@
             "exampleSites": [
                 "tvgids.nl",
                 "www.tvgids.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/superguide",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "veronicasuperguide.nl",
+                "www.veronicasuperguide.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/web\\/superguide",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-module.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f767d0925fa40d038dfe6fb663a8aa0483524c95886e14b169f1b53d923bafa9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "veronicasuperguide.nl",
+                "www.veronicasuperguide.nl"
+            ]
+        },
+        {
+            "rule": "dpgmedia\\.cloud\\/header-bidding\\/prod\\/superguide\\/f45bffbb007e48765d932f4d5c09ba725fa3e475\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "advertising-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f0294df16c851263d6cba8e82c01f8599fa497a0985745ffefd5acfbb723f6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "veronicasuperguide.nl",
+                "www.veronicasuperguide.nl"
             ]
         },
         {
@@ -472,10 +1494,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "1d8bcc302bb5848495a2b95bf6fe6581e6b4fcc62b2621f4ce651c7f1b96514a"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -494,8 +1514,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "b2a6b039c71184023fb516313776c2262144e0ab45abbbe9f05dbc7a1086719c"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -528,16 +1550,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000332,
     "types": {
-        "Script": 77,
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 169,
+        "Preflight": 38,
+        "Fetch": 26,
+        "XHR": 12,
+        "Image": 6
     },
     "nameservers": [
+        "ns-1120.awsdns-12.org",
         "ns-1934.awsdns-49.co.uk",
-        "ns-780.awsdns-33.net",
         "ns-79.awsdns-09.com",
-        "ns-1120.awsdns-12.org"
+        "ns-780.awsdns-33.net"
     ]
 }

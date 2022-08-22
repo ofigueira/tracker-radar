@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [],
     "cnames": [
         {
@@ -24,25 +24,29 @@
         {
             "original": "client.vulture.com",
             "resolved": ".n.sni.global.fastly.net"
+        },
+        {
+            "original": "union.barstoolsports.com",
+            "resolved": ".n.sni.global.fastly.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "n\\.sni\\.global\\.fastly\\.net\\/_nymcid",
-            "cookies": 0.000302,
+            "cookies": 0.000301,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [
                 {
-                    "original": "client.nymag.com",
+                    "original": "client.vulture.com",
                     "resolved": ".n.sni.global.fastly.net"
                 },
                 {
-                    "original": "client.vulture.com",
+                    "original": "client.nymag.com",
                     "resolved": ".n.sni.global.fastly.net"
                 }
             ],
@@ -52,23 +56,27 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "nymcid": 0.0012099213551119178
+                "nymcid": 0.0012037315678603672
             },
             "exampleSites": [
-                "thecut.com",
+                "nymag.com",
                 "www.thecut.com",
                 "www.vulture.com"
             ]
         },
         {
             "rule": "n\\.sni\\.global\\.fastly\\.net\\/_nymcid\\/extend",
-            "cookies": 0.000202,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
+                {
+                    "original": "client.nymag.com",
+                    "resolved": ".n.sni.global.fastly.net"
+                },
                 {
                     "original": "client.thecut.com",
                     "resolved": ".n.sni.global.fastly.net"
@@ -85,8 +93,57 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thecut.com",
+                "nymag.com",
+                "www.thecut.com",
                 "www.vulture.com"
+            ]
+        },
+        {
+            "rule": "n\\.sni\\.global\\.fastly\\.net\\/v2\\/stories\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "union.barstoolsports.com",
+                    "resolved": ".n.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barstoolsports.com",
+                "www.barstoolsports.com"
+            ]
+        },
+        {
+            "rule": "n\\.sni\\.global\\.fastly\\.net\\/v2\\/stories\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "union.barstoolsports.com",
+                    "resolved": ".n.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "9a34b25e3135cceb2829229746c451607a92ec9ec8c7803c18a37486b7ee66f0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barstoolsports.com",
+                "www.barstoolsports.com"
             ]
         }
     ],
@@ -101,10 +158,12 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000302,
+    "cookies": 0.000401,
     "types": {
         "Document": 3,
-        "XHR": 2
+        "XHR": 3,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

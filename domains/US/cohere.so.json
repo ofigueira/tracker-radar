@@ -8,15 +8,16 @@
     "sites": 2,
     "subdomains": [
         "static",
-        "service"
+        "service",
+        "voice"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "cohere\\.so\\/main\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 3,
             "subdomains": [
                 "static"
             ],
@@ -24,16 +25,20 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
-                "Navigator.prototype.language": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "window.devicePixelRatio": 1
+                "Navigator.prototype.language": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "HTMLCanvasElement.prototype.toDataURL": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "82c7fe540aa406e360b2b22f08f1ef83f855c5cc8fb33c954688c22f2debf366"
+                "ccb0c20f3fc44a2e8d0954a633350367041fd17cee5332480c39fa91bd3f8b1f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -62,17 +67,131 @@
                 "atlys.com",
                 "www.atlys.com"
             ]
+        },
+        {
+            "rule": "cohere\\.so\\/localClientIdGetter\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52f046d475a5535eceb3ada6515ac611e983a160798aa5895de621190578469e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlys.com",
+                "www.atlys.com"
+            ]
+        },
+        {
+            "rule": "cohere\\.so\\/assets\\/modulepreload-polyfill\\.c7c6310f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cbb5ca0d987f4561749a86c6f2f0cc960ce40963116f5a59e256789ea805ca62"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlys.com",
+                "www.atlys.com"
+            ]
+        },
+        {
+            "rule": "cohere\\.so\\/assets\\/localClientIdKey\\.eacd28c0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d863f1f1703b87ec8a3570a307d58a58b18c0d5ce8a333e1148afca7c18a443c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlys.com",
+                "www.atlys.com"
+            ]
+        },
+        {
+            "rule": "cohere\\.so\\/assets\\/localClientIdGetter\\.b99938d6\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "voice"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5228999a3e2d924c12a548a96681999fd1159b9216f33faf8d52c7db656c99f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlys.com",
+                "www.atlys.com"
+            ]
+        },
+        {
+            "rule": "cohere\\.so\\/28a492b864d92021\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9dd458795a0641fde3d2fcc4fb0e6c963b66817b68f506f29cc7cd415d8a7ea8"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atlys.com",
+                "www.atlys.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "WebSocket": 2
+        "Script": 8,
+        "WebSocket": 2,
+        "Document": 2,
+        "Media": 2
     },
     "nameservers": [
-        "neil.ns.cloudflare.com",
-        "iris.ns.cloudflare.com"
+        "iris.ns.cloudflare.com",
+        "neil.ns.cloudflare.com"
     ]
 }

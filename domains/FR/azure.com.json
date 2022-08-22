@@ -9,12 +9,18 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
-        "js.monitor"
+        "js.monitor",
+        "dt-appgw-prod.eastus2.cloudapp"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "dynatrace.att.com",
+            "resolved": "dt-appgw-prod.eastus2.cloudapp.azure.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
@@ -33,24 +39,24 @@
                 "window.localStorage": 2,
                 "PerformanceTiming.prototype.navigationStart": 2
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "726c70dd86fcc3d0253e282501acfb531f918339a52187476609db4a876922e0"
+                "323698c013a7aa4dc8dd76d1265b8f00639591603d25ae9dd58820d597746984"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.00020078305391024997,
+                    "prevalence": 0.00020064205457463884,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.00020078305391024997,
+                    "prevalence": 0.00020064205457463884,
                     "uniqueness": 1
                 }
             },
@@ -58,7 +64,35 @@
             "exampleSites": [
                 "clevelandclinic.org",
                 "www.generali.fr",
+                "www.po.co",
                 "www.suunto.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/bf\\/fc09f351-c4e7-46dc-afb8-cd98de60285e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dt-appgw-prod.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dynatrace.att.com",
+                    "resolved": "dt-appgw-prod.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "c3bbbe0f897ec2cad4fc4c02e30ba2cda1d7810719a5834b22b1d08d29e8de53"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "att.com",
+                "www.att.com"
             ]
         }
     ],
@@ -66,12 +100,13 @@
     "performance": {},
     "cookies": 0.000301,
     "types": {
-        "Script": 3
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1-39.azure-dns.com",
-        "ns2-39.azure-dns.net",
         "ns3-39.azure-dns.org",
-        "ns4-39.azure-dns.info"
+        "ns4-39.azure-dns.info",
+        "ns1-39.azure-dns.com",
+        "ns2-39.azure-dns.net"
     ]
 }

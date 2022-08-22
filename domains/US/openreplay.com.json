@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000814,
-    "sites": 12,
+    "prevalence": 0.0000881,
+    "sites": 13,
     "subdomains": [
-        "api"
+        "api",
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "openreplay\\.com\\/ingest\\/v1\\/web\\/start",
@@ -62,14 +63,47 @@
                 "typeset.io",
                 "www.gfinityesports.com"
             ]
+        },
+        {
+            "rule": "openreplay\\.com\\/3\\.5\\.10\\/openreplay\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.deviceMemory": 2,
+                "Performance.prototype.memory": 2,
+                "URL.createObjectURL": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.connection": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73cb59b2747b7430ff84ce493ffd1328fc9c53ae6dcd9b73d73188ec72808478"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ou.org",
+                "www.ou.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000814,
+    "cookies": 0.0000746,
     "types": {
         "Fetch": 6,
-        "Preflight": 6
+        "Preflight": 6,
+        "Script": 2
     },
     "nameservers": [
         "ns-676.awsdns-20.net",

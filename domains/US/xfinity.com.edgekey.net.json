@@ -9,20 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000611,
-    "sites": 9,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
         "login",
         "sdx",
-        "api-support",
         "auth",
-        "assets"
+        "assets",
+        "xm-api"
     ],
     "cnames": [
-        {
-            "original": "api-support.xfinity.com",
-            "resolved": "api-support.xfinity.com.edgekey.net"
-        },
         {
             "original": "assets.xfinity.com",
             "resolved": "assets.xfinity.com.edgekey.net"
@@ -38,6 +34,10 @@
         {
             "original": "sdx.xfinity.com",
             "resolved": "sdx.xfinity.com.edgekey.net"
+        },
+        {
+            "original": "xm-api.xfinity.com",
+            "resolved": "xm-api.xfinity.com.edgekey.net"
         }
     ],
     "fingerprinting": 0,
@@ -59,6 +59,7 @@
                 }
             ],
             "responseHashes": [
+                "240136ffc987721bc1563fcbe5b9ce20fd64418d87ef8a3e19af590c3e43a681",
                 "a3e27ce8d07cbc5aa2936c2078c33b17238db5a5e8a0b1bb03fb6ad318e8673b"
             ],
             "type": "Document",
@@ -81,34 +82,6 @@
                 "sdx"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "sdx.xfinity.com",
-                    "resolved": "sdx.xfinity.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "3d658337681530c4bbeca6a59b71cf571ab24dbee929356e72b224522236ee89"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xfinity.com",
-                "customer.xfinity.com",
-                "www.xfinity.com"
-            ]
-        },
-        {
-            "rule": "xfinity\\.com\\.edgekey\\.net\\/cms\\/data\\/bluebar\\/unauthorized\\/clients\\/resi-help-and-support\\/bluebarpackage\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdx"
-            ],
-            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
@@ -118,39 +91,12 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xfinity.com",
-                "www.xfinity.com"
-            ]
-        },
-        {
-            "rule": "xfinity\\.com\\.edgekey\\.net\\/logger\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-support"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api-support.xfinity.com",
-                    "resolved": "api-support.xfinity.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "xfinity.com",
-                "www.xfinity.com"
+                "customer.xfinity.com"
             ]
         },
         {
@@ -181,6 +127,58 @@
             ]
         },
         {
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/fonts\\/latest\\/Xfinity_Standard\\/XfinityStandard-Light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sdx.xfinity.com",
+                    "resolved": "sdx.xfinity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5cff119811675ef8086372c0f04623f4e9eb1474bc9d3f0deeb2d68c0dd03951"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comcast.net",
+                "my.xfinity.com"
+            ]
+        },
+        {
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/oauth\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.xfinity.com",
+                    "resolved": "auth.xfinity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comcast.net",
+                "my.xfinity.com"
+            ]
+        },
+        {
             "rule": "xfinity\\.com\\.edgekey\\.net\\/cms\\/data\\/bluebar\\/unauthorized\\/clients\\/myxfinity\\/bluebarpackage\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -225,31 +223,6 @@
             ],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "comcast.net",
-                "my.xfinity.com"
-            ]
-        },
-        {
-            "rule": "xfinity\\.com\\.edgekey\\.net\\/oauth\\/login",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "auth"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "auth.xfinity.com",
-                    "resolved": "auth.xfinity.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -290,8 +263,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -305,7 +278,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -317,8 +291,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -332,12 +306,13 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
         {
-            "rule": "xfinity\\.com\\.edgekey\\.net\\/assets\\/dotcom\\/projects\\/cix-3570_xm--xb8-placements-super-bowl-response\\/SamsungGalaxy_Tile02_Desktop\\.jpg",
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/assets\\/dotcom\\/projects\\/cxm-405_xmdm_npi_samsung_b4_q4_fall_2022_pre_order\\/Homepage-vertical-desktop-Samsung-B4Q4-pre-order\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -353,14 +328,14 @@
                 }
             ],
             "responseHashes": [
-                "d0ee3d56fb7a5573b6729ec1615fc0f5600ac240362db17e1b2a07533acf24b8"
+                "242471d7e682816a48cab90f7643a521c2931f691d9d14fe11298a87f57d07e6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
-                "www.xfinity.com"
+                "comcast.net",
+                "my.xfinity.com"
             ]
         },
         {
@@ -371,8 +346,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -386,7 +361,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -398,8 +374,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -413,7 +389,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -425,8 +402,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -440,7 +417,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -452,8 +430,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -467,7 +445,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -479,8 +458,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -494,7 +473,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -506,8 +486,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -521,7 +501,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -533,8 +514,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -548,7 +529,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -560,8 +542,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -575,7 +557,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -587,8 +570,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -602,7 +585,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -614,8 +598,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -629,7 +613,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -641,8 +626,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -656,7 +641,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -668,8 +654,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -683,7 +669,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -695,8 +682,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -710,7 +697,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -722,8 +710,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -737,7 +725,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -749,8 +738,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -764,7 +753,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -776,8 +766,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -791,7 +781,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -803,8 +794,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -818,7 +809,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -830,8 +822,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -845,7 +837,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "xfinity.com",
+                "comcast.net",
+                "my.xfinity.com",
                 "www.xfinity.com"
             ]
         },
@@ -857,8 +850,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "assets.xfinity.com",
@@ -872,6 +865,34 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "comcast.net",
+                "my.xfinity.com",
+                "www.xfinity.com"
+            ]
+        },
+        {
+            "rule": "xfinity\\.com\\.edgekey\\.net\\/buy\\/getjson",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xm-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "xm-api.xfinity.com",
+                    "resolved": "xm-api.xfinity.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9341de47478547996a1aaa25d62298a04c54d3ad70969bb2cf26c5a2ae2c2021"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "xfinity.com",
                 "www.xfinity.com"
             ]
@@ -879,13 +900,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000611,
+    "cookies": 0.0000678,
     "types": {
         "Document": 10,
-        "Fetch": 7,
-        "Preflight": 4,
-        "Font": 2,
-        "Image": 44
+        "Fetch": 4,
+        "Font": 4,
+        "Preflight": 2,
+        "Image": 65,
+        "XHR": 2
     },
     "nameservers": []
 }
