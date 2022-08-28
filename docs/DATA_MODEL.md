@@ -162,7 +162,7 @@ Data files used to regenerate the Tracker Radar
 |File|Use|
 |---|---|
 |[categorized_trackers](/build-data/static/categorized_trackers.csv)|CSV file with domains and which categories they belong to|
-|[breaking](/build-data/breaking)|Broken site data used for identifying whole sites or requests that cause breakage.|
+|[breaking](/build-data/static/breaking)|Broken site data used for identifying whole sites or requests that cause breakage, [described in detail below](#breakage-data).|
 
 ### /generated
 
@@ -170,7 +170,7 @@ Generated files created while building Tracker Radar
 
 |File|Use|
 |---|---|
-|[api_fingerprint_scores](/build-data/generated/api_fingerprint_scores.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher score means that an API is more likely to be used for fingerprinting|
+|[api_fingerprint_weights](/build-data/generated/api_fingerprint_weights.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher weight means that an API is more likely to be used for fingerprinting|
 |[tracking-parameters](/build-data/generated/tracking_parameters.json)|An object listing how prevalent a parameter is used in third party requests and cookies.|
 
 ### Tracking parameters
