@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "k8s-main",
         "consent"
     ],
     "cnames": [
@@ -22,10 +23,41 @@
         {
             "original": "consent.xing.com",
             "resolved": "consent.gtm4p-xing.com.akadns.net"
+        },
+        {
+            "original": "stan.xing.com",
+            "resolved": "k8s-main.gtm4p-xing.com.akadns.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "gtm4p-xing\\.com\\.akadns\\.net\\/stm-v1\\.html",
+            "cookies": 0.0002,
+            "fingerprinting": 1,
+            "subdomains": [
+                "k8s-main"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "stan.xing.com",
+                    "resolved": "k8s-main.gtm4p-xing.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "1849ff85e18513798af577339f5c44bf8b3a2392ec8e088977de9f5abda92834"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xing.com",
+                "www.xing.com"
+            ]
+        },
         {
             "rule": "gtm4p-xing\\.com\\.akadns\\.net\\/legal\\/api\\/user_consent",
             "cookies": 0,
@@ -34,15 +66,15 @@
                 "consent"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
-                    "original": "consent.kununu.com",
+                    "original": "consent.xing.com",
                     "resolved": "consent.gtm4p-xing.com.akadns.net"
                 },
                 {
-                    "original": "consent.xing.com",
+                    "original": "consent.kununu.com",
                     "resolved": "consent.gtm4p-xing.com.akadns.net"
                 }
             ],
@@ -51,38 +83,42 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kununu.com",
+                "xing.com",
+                "www.kununu.com",
                 "www.xing.com"
             ]
         },
         {
             "rule": "gtm4p-xing\\.com\\.akadns\\.net\\/legal\\/api\\/user_consent",
-            "cookies": 0.0001,
+            "cookies": 0.0002,
             "fingerprinting": 0,
             "subdomains": [
                 "consent"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [
                 {
-                    "original": "consent.kununu.com",
+                    "original": "consent.xing.com",
                     "resolved": "consent.gtm4p-xing.com.akadns.net"
                 },
                 {
-                    "original": "consent.xing.com",
+                    "original": "consent.kununu.com",
                     "resolved": "consent.gtm4p-xing.com.akadns.net"
                 }
             ],
             "responseHashes": [
+                "daa09cfac299995c65121743ef7af209eb0b7c6e78c54fa04bf4aa0ea89d5baa",
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kununu.com",
+                "xing.com",
+                "login.xing.com",
+                "www.kununu.com",
                 "www.xing.com"
             ]
         }
@@ -91,10 +127,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Document": 2,
+        "Preflight": 3,
+        "Fetch": 4
     },
     "nameservers": []
 }

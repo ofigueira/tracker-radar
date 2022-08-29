@@ -7,9 +7,23 @@
     "prevalence": 0.0000407,
     "sites": 6,
     "subdomains": [
-        "static"
+        "static",
+        "splunk"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "harvest-pipeline.dvhn.nl",
+            "resolved": "splunk.ndcmediagroep.nl"
+        },
+        {
+            "original": "harvest-pipeline.lc.nl",
+            "resolved": "splunk.ndcmediagroep.nl"
+        },
+        {
+            "original": "harvest-pipeline.mensenlinq.nl",
+            "resolved": "splunk.ndcmediagroep.nl"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -36,12 +50,17 @@
         },
         {
             "rule": "ndcmediagroep\\.nl\\/js\\/evolok\\/ev-em\\/3\\.2\\.26\\/ev-em\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -49,19 +68,141 @@
                 "7e464cc257a3a3da05a69768a2223d88a6e77a3d5995d6adb7f4d884671ad016"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ev_sid": {
+                    "ttl": 126144005,
+                    "length": 24,
+                    "prevalence": 0.000006777914842277922,
+                    "uniqueness": 1
+                },
+                "ev_did": {
+                    "ttl": 126144005,
+                    "length": 24,
+                    "prevalence": 0.000006777914842277922,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dvhn.nl",
                 "lc.nl"
             ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "harvest-pipeline.dvhn.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                },
+                {
+                    "original": "harvest-pipeline.lc.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                },
+                {
+                    "original": "harvest-pipeline.mensenlinq.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "mensenlinq.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/track",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "harvest-pipeline.dvhn.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                },
+                {
+                    "original": "harvest-pipeline.lc.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                },
+                {
+                    "original": "harvest-pipeline.mensenlinq.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                }
+            ],
+            "responseHashes": [
+                "eed0214f1478c842d85b32704c85282daad247db378669ab2076c2cc7900c6ce"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "mensenlinq.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "harvest-pipeline.dvhn.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                },
+                {
+                    "original": "harvest-pipeline.lc.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                },
+                {
+                    "original": "harvest-pipeline.mensenlinq.nl",
+                    "resolved": "splunk.ndcmediagroep.nl"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl",
+                "mensenlinq.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000407,
     "types": {
-        "Script": 4
+        "Script": 4,
+        "Ping": 3,
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
         "nsauth1.bit.nl",

@@ -11,10 +11,11 @@
     "sites": 11,
     "subdomains": [
         "static",
-        "public-api"
+        "public-api",
+        "isc-tracking"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "eventim\\.com\\/evi\\/3\\.12\\/evi-widget\\.js",
@@ -25,7 +26,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000475,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
                 "77c32b3ef7efba4688432ec9a25f386fea0bd99ae6b57b4789148ccff05f42ac"
@@ -44,23 +45,45 @@
             ]
         },
         {
+            "rule": "eventim\\.com\\/trip\\/api\\/v1\\/min-prices\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eventim.de",
+                "www.eventim.de"
+            ]
+        },
+        {
             "rule": "eventim\\.com\\/evi\\/api\\/evi\\/public\\/rule",
-            "cookies": 0.0000475,
+            "cookies": 0.0000474,
             "fingerprinting": 0,
             "subdomains": [
                 "public-api"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000475,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "fe6fd51a3ea7e5819c3bd4524a764a17570991430419af2772141e28b7e969cc",
-                "4b378d2f9a8db82977b5e06c5905cacde02262acf5c8be7c20a00e6b78c31261",
-                "139f02d69cddaa6ed81c7244a651a19055a3f422d0f0e556ebe5ac9206c6566b",
-                "09fc4c5115e82de6472477cf24f931bc5058f5e4d79fdc4f79cc0de8e0f109f5",
-                "78cc3ac0dc39012e8d8e976f6cdb32bacabe95f14a5f8c587ba28726e0e982e6",
-                "f7475b5f710d43d51aeb7d4aecfb1b74866efdc1ed603470de02368f0cef8fd8"
+                "0a1b02e8895d08cddf3223d5c6bd05a090cd1de5d1527c56cb66e4c6e75a1742",
+                "0469600fdfa2b934af4e48567ef26cfb15005a7a48ce99814e0eb9635471bd3a",
+                "4564bb51f26cc83373ef3358fe510fb961c8d6cc3436bbaf0076b115c99ef360",
+                "f2f335f6e1e970287671737393a5a539cc3b3089a0c9bb06cbcc9b6970f51b21",
+                "729120524bed9d28adf65a60e32b11e3f48f2e398d216bd3e51e130b1e84a4d4",
+                "e25b865e9a95283ad1f8c0b2a4409d1ed611e821a343054ee2e94c1a74c4029b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -74,13 +97,63 @@
                 "www.ticketcorner.ch",
                 "www.ticketone.it"
             ]
+        },
+        {
+            "rule": "eventim\\.com\\/js\\/eventim\\.prodg\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "isc-tracking"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f4a821bca91a0fec45395430211f8db9d0f1a38590b326d34741b1b9321059f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticketone.it",
+                "www.ticketone.it"
+            ]
+        },
+        {
+            "rule": "eventim\\.com\\/message",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "isc-tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticketone.it",
+                "www.ticketone.it"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000746,
     "types": {
-        "Script": 7,
+        "Script": 9,
+        "XHR": 4,
         "Fetch": 7
     },
     "nameservers": [

@@ -12,13 +12,59 @@
     "prevalence": 0.0012,
     "sites": 12,
     "subdomains": [
-        "logs",
-        "s3aa2hjgc8.execute-api",
-        "5wq01g0dp0.execute-api"
+        "cognito-identity",
+        "logs"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "a2af369e843f585e54f80604f1f9ccdeb6d4adb74bce4d5570fc30891dd3cc92",
+                "8ca70cd50a62e46bd74fa51e87a0fb4c1de74fcb7f4ba89db6a0988993134197"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sensiseeds.com",
+                "www.mepal.com",
+                "www.toolnationschweiz.ch"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity",
+                "logs"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sensiseeds.com",
+                "www.covid19.admin.ch",
+                "www.mepal.com",
+                "www.toolnationschweiz.ch"
+            ]
+        },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/",
             "cookies": 0,
@@ -31,7 +77,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4605ec839ebb03a280ab5b9b11ae048b19b9732fef24a88ca4b23c2a373ca6d7"
+                "299b08db84152be91fb057ddcd0a35684f50c69a44ff753be680a3d4e2a79872"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -40,94 +86,31 @@
                 "admin.ch",
                 "www.covid19.admin.ch"
             ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/default\\/websiteTracking",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3aa2hjgc8.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schweizersee.ch",
-                "www.schweizersee.ch"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/default\\/websiteTracking",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3aa2hjgc8.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "schweizersee.ch",
-                "www.schweizersee.ch"
-            ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/production\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "5wq01g0dp0.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tomorrowland.com",
-                "www.tomorrowland.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Fetch": 2,
-        "Preflight": 2,
-        "XHR": 2,
-        "WebSocket": 2
+        "XHR": 3,
+        "Preflight": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "u2.amazonaws.com",
-        "u4.amazonaws.com",
-        "pdns1.ultradns.net",
-        "ns4.p31.dynect.net",
         "u1.amazonaws.com",
-        "ns2.p31.dynect.net",
+        "u2.amazonaws.com",
+        "u3.amazonaws.com",
+        "u4.amazonaws.com",
         "u5.amazonaws.com",
-        "ns1.p31.dynect.net",
         "u6.amazonaws.com",
-        "pdns3.ultradns.org",
-        "pdns5.ultradns.info",
+        "ns1.p31.dynect.net",
+        "ns2.p31.dynect.net",
         "ns3.p31.dynect.net",
-        "u3.amazonaws.com"
+        "ns4.p31.dynect.net",
+        "pdns1.ultradns.net",
+        "pdns3.ultradns.org",
+        "pdns5.ultradns.info"
     ]
 }

@@ -4,20 +4,53 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
+        "beatportllc.us-7",
+        "marriott.us-1",
+        "beiersdorf.germany-2",
+        "paysafeholdings.germany-2",
+        "sonyinteractiveent.us-5",
         "citrix",
         "invaluable.us-1",
         "lottoland",
         "westernunion",
-        "fortinet.us-4",
-        "marriott.us-1",
-        "zebra.us-1"
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "evergage\\.com\\/pr",
+            "cookies": 0.000601,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beatportllc.us-7",
+                "marriott.us-1",
+                "beiersdorf.germany-2",
+                "paysafeholdings.germany-2",
+                "sonyinteractiveent.us-5"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000601,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beatport.com",
+                "www.marriott.de",
+                "www.marriott.com",
+                "www.nivea.de",
+                "www.paysafecard.com",
+                "www.playstation.com"
+            ]
+        },
         {
             "rule": "evergage\\.com\\/twreceiver",
             "cookies": 0.000401,
@@ -33,9 +66,9 @@
             "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "9be72153db4ed466500ee3fea5a9e9535604281dac23b5b899862aea104ca7ef",
-                "3d63806274ea68a744643560db103be3203febd54329982d5960ce4d4291e1e7",
-                "64cc810cfea7ff1294759980743c660910c19f6077ede237c7a64147b5c4d3d3"
+                "0c14fd610cd3e51a5e99141d91eda51fba3f5e40cd2019ca50e78eafe6fd9250",
+                "4ffd0f47e0c6d400d4145cffd755af1c806b91fe1695420b477975f35e990941",
+                "71636623f4910fb097eff8e6fa779d1d33fed88ec0d75141aef76432152b3211"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -128,44 +161,18 @@
             ]
         },
         {
-            "rule": "evergage\\.com\\/pr",
-            "cookies": 0.000401,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fortinet.us-4",
-                "marriott.us-1",
-                "zebra.us-1"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fortinet.com",
-                "www.marriott.de",
-                "www.marriott.com",
-                "www.zebra.com"
-            ]
-        },
-        {
             "rule": "evergage\\.com\\/api2\\/event\\/marriott_production",
-            "cookies": 0.000201,
+            "cookies": 0.0002,
             "fingerprinting": 0,
             "subdomains": [
                 "marriott.us-1"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "1b68034302cf2e7d1526425c36db0a533a44ca8cd0ca261f887f4a1956faa3d6"
+                "d116580143eaaf9f9805756b6926715ec12da795dfa7e193d1dd9404415b7f15"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -174,20 +181,60 @@
                 "marriott.de",
                 "www.marriott.com"
             ]
+        },
+        {
+            "rule": "evergage\\.com\\/beacon\\/westernunion\\/de_prod_web_responsive\\/scripts\\/evergage\\.min\\.js",
+            "cookies": 0.0002,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "c7da52fdd41724b10a022adab525f35e24452996ef9b092367fb859371e76446"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_evga_4736": {
+                    "ttl": 63072008,
+                    "length": 17,
+                    "prevalence": 0.00020046106043900973,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "westernunion.com",
+                "www.westernunion.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000803,
+    "cookies": 0.001,
     "types": {
+        "Ping": 6,
         "XHR": 14,
         "Image": 4,
-        "Ping": 4
+        "Script": 2
     },
     "nameservers": [
         "ns-181.awsdns-22.com",
-        "ns-2026.awsdns-61.co.uk",
         "ns-678.awsdns-20.net",
-        "ns-1244.awsdns-27.org"
+        "ns-1244.awsdns-27.org",
+        "ns-2026.awsdns-61.co.uk"
     ]
 }

@@ -12,12 +12,44 @@
     "prevalence": 0.000502,
     "sites": 5,
     "subdomains": [
-        "cognito-identity",
-        "5wq01g0dp0.execute-api"
+        "fraaws-public-slb-ec53ddffde80b088.elb",
+        "cognito-identity"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "chloro.trip.com",
+            "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fraaws-public-slb-ec53ddffde80b088.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "chloro.trip.com",
+                    "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "149377b476fa8abaa966d8e9612df36114d074ebc06c78419092cae401110f11"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
         {
             "rule": "eu-central-1\\.amazonaws\\.com\\/",
             "cookies": 0,
@@ -50,7 +82,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c16f9fd4578c455377700b0baa21984d5d5fb10f88881a96b87318f08fb627d9"
+                "cee4481cb7845af910884533b8cfa47979d60c3d0222f4eebad7d3870bd0002e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -59,37 +91,16 @@
                 "sensiseeds.com",
                 "www.vetostore.com"
             ]
-        },
-        {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/production\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "5wq01g0dp0.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tomorrowland.com",
-                "www.tomorrowland.com"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "types": {
-        "Preflight": 2,
-        "XHR": 2,
-        "WebSocket": 2
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1.p31.dynect.net",

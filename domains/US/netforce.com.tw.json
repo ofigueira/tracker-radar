@@ -8,8 +8,8 @@
     "sites": 2,
     "subdomains": [
         "cdp-js",
-        "mapping",
-        "tracker-api"
+        "tracker-api",
+        "mapping"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -63,43 +63,19 @@
             "type": "Script",
             "firstPartyCookies": {
                 "fpc": {
-                    "ttl": 311040004,
+                    "ttl": 311040009,
                     "length": 47,
-                    "prevalence": 0.000013572664653388076,
+                    "prevalence": 0.000013555829684555844,
                     "uniqueness": 1
                 },
                 "aqM": {
-                    "ttl": 311040004,
+                    "ttl": 311040009,
                     "length": 1,
-                    "prevalence": 0.000013572664653388076,
+                    "prevalence": 0.000013555829684555844,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pchome.com.tw",
-                "24h.pchome.com.tw"
-            ]
-        },
-        {
-            "rule": "netforce\\.com\\.tw\\/cdp_link\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mapping"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ea3f0b299a3738d47c7f18c7b511b9a326bdd2c81021fbf57848b4fe96549864"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "fpc": 0.000013572664653388076
-            },
             "exampleSites": [
                 "pchome.com.tw",
                 "24h.pchome.com.tw"
@@ -128,44 +104,68 @@
             ]
         },
         {
+            "rule": "netforce\\.com\\.tw\\/cdp_link\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mapping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4ef06093cadb26837e4ae8a62f6c700fedc2de161e9a9f6d85c896e51405fc0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fpc": 0.000006777914842277922
+            },
+            "exampleSites": [
+                "pchome.com.tw",
+                "24h.pchome.com.tw"
+            ]
+        },
+        {
             "rule": "netforce\\.com\\.tw\\/accuJS-mapping\\.min\\.js",
-            "cookies": 0.00000679,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "cdp-js"
             ],
             "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "window.localStorage": 1,
-                "window.indexedDB": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.deviceMemory": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.plugins": 1,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getContextAttributes": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 1,
-                "Navigator.prototype.languages": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.productSub": 1,
-                "OfflineAudioContext.prototype.constructor": 1,
-                "AudioBuffer.prototype.getChannelData": 1,
-                "Navigator.prototype.appVersion": 1
+                "window.sessionStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.plugins": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.productSub": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "Navigator.prototype.appVersion": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -209,8 +209,8 @@
     "cookies": 0.0000136,
     "types": {
         "Script": 4,
-        "Document": 2,
-        "Ping": 4
+        "Ping": 4,
+        "Document": 2
     },
     "nameservers": [
         "adaline.ns.cloudflare.com",

@@ -9,12 +9,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
-        "direct-events-collector",
-        "publisher-assets",
         "api-2-0",
+        "publisher-assets",
+        "direct-events-collector",
         "static-cdn",
         "pix"
     ],
@@ -22,28 +22,29 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "spot\\.im\\/api\\/v2\\/events",
-            "cookies": 0,
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
-                "direct-events-collector"
+                "api-2-0"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "aef81c9874aacb56e46a5448f114a0db38ab12dfe891398b6b081f0e2c2518c1",
+                "03bd9ffc88f93bf9110d24f3c89b543eae37941da1bd7e53fb9ffc2739aa813f",
+                "f4aabfd563ed472e5f876a9bd072f14343bf159744ab6d9935f0e7739810aa62"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
-                "www.dailydot.com",
+                "dailydot.com",
                 "www.dexerto.com",
-                "www.realclearpolitics.com",
-                "www.thekitchn.com"
+                "www.thekitchn.com",
+                "www.thrillist.com"
             ]
         },
         {
@@ -57,46 +58,100 @@
             "sites": 5,
             "prevalence": 0.000502,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
+                "dailydot.com",
                 "www.dailydot.com",
                 "www.dexerto.com",
-                "www.realclearpolitics.com",
-                "www.thekitchn.com"
+                "www.thekitchn.com",
+                "www.thrillist.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
-            "cookies": 0.000502,
+            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-2-0"
+                "direct-events-collector"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "1a001a61e69f4aa5575ab991f7018fdcbee17fcf8b5369d2550c4798a7448fd3",
-                "67cd875a750dffd2c5eaa4fcdf882791511859670c9db536d32ae049a1ca0c75",
-                "90d00b76e3e0467e2cc0117d356a2a600a9c1a2cf12d696cfd9b617b2344f38c",
-                "37e716e7a2f7afbdd44fade805e6762e1ed157b2696ad73a640374d9bd7eb127"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
-                "www.dailydot.com",
+                "dailydot.com",
                 "www.dexerto.com",
-                "www.realclearpolitics.com",
-                "www.thekitchn.com"
+                "www.thekitchn.com",
+                "www.thrillist.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.4\\.0\\/ads-independent\\/ads-independent\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fb2f2ba826edffd09b5881ac4ed533e69fc6f17b6351db01bd4fe662950cab48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_dd_s": {
+                    "ttl": 927,
+                    "length": 4,
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.thrillist.com"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.thrillist.com"
             ]
         },
         {
@@ -107,8 +162,8 @@
                 "static-cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "769317f76d7d2670d9445ac516c6888967c310c6c4df441799946b37bf8d8af8"
@@ -117,110 +172,80 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
-                "www.dexerto.com",
-                "www.realclearpolitics.com",
+                "dexerto.com",
                 "www.thekitchn.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.2\\.3\\/ads\\/ads\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
-            "responseHashes": [
-                "c2067af65cbface50d77d9ad38afecaa6825c7a3691b82918cfda486d323ff30"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dailywire.com",
-                "www.dexerto.com",
-                "www.realclearpolitics.com",
-                "www.thekitchn.com"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.2\\.3\\/ads\\/ads\\.js",
-            "cookies": 0.000401,
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.4\\.0\\/ads\\/ads\\.js",
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "static-cdn"
             ],
             "apis": {
-                "window.localStorage": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.platform": 4,
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "PerformanceTiming.prototype.navigationStart": 4,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "window.innerHeight": 1
             },
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1514cc84e9ed7f59cc3fa7b417ddde4fb0d42fd93756d5b697a7dc464915fee9"
+                "ae42bdef694e3c18d74cb5db5626c50b746c88263f21d3a793af79f33e60dac5"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_dd_s": {
                     "ttl": 914,
                     "length": 4,
-                    "prevalence": 0.0004014452027298274,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0002008233758409479,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
-                "www.dexerto.com",
-                "www.realclearpolitics.com",
+                "dexerto.com",
                 "www.thekitchn.com"
             ]
         },
         {
-            "rule": "spot\\.im\\/api\\/v1\\/pixels",
-            "cookies": 0.000401,
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.4\\.0\\/ads\\/ads\\.css",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pix"
+                "static-cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "74d21e26af3345fe049a05c82330e3a1b496890c34225839deb65aef06e2b74e"
             ],
-            "type": "Ping",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dailywire.com",
-                "www.dailydot.com",
-                "www.dexerto.com",
-                "www.realclearpolitics.com"
+                "dexerto.com",
+                "www.thekitchn.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000402,
     "types": {
-        "XHR": 5,
-        "Fetch": 14,
-        "Stylesheet": 4,
+        "Fetch": 11,
+        "XHR": 4,
         "Script": 4,
-        "Ping": 4
+        "Ping": 3,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-1202.awsdns-22.org",

@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/assets\\/fonts\\/CharterITCStd-Regular\\.woff2",
@@ -81,6 +81,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2
             },
@@ -128,7 +129,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b524ce7631464f07dfb586dd61dd5c1b96ac948ac354efe978abce9139c72ac7"
+                "50b6fbc495d79a06ea90db94e3401b2bc2b1de9571307b9ba7658b5da8cb7fba"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -184,8 +185,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "window.innerWidth": 2,
-                "window.innerHeight": 2
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -203,18 +206,31 @@
         },
         {
             "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/js\\/scripts\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "dde5e71b71c02c3f45f032829f28fa5d8df650d3c8575a10bc7c476673f9ffbd"
+                "e318ff51301ab3d3a25ce8447244d900b9059ab565982a415a7a58c2de42234c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_shvenergy_cookie_consent": {
+                    "ttl": 7776002,
+                    "length": 15,
+                    "prevalence": 0.000013555829684555844,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "calor.co.uk",
@@ -224,9 +240,14 @@
         {
             "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/js\\/foundation\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Element.prototype.getClientRects": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -246,7 +267,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
         "Font": 6,
         "Script": 8,

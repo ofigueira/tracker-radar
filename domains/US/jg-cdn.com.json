@@ -38,14 +38,16 @@
         },
         {
             "rule": "jg-cdn\\.com\\/chrome\\/chrome-a1a50ac3597c972aa9a6\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -54,7 +56,14 @@
                 "15cc96bab528c6ab5c8753ceebc26eaf9df71b39fa71bbd9cbd1d78127ff4d5c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "CookieConsent": {
+                    "ttl": 31536009,
+                    "length": 64,
+                    "prevalence": 0.000013555829684555844,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "justgiving.com",
@@ -174,7 +183,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
         "Script": 4,
         "Stylesheet": 2,

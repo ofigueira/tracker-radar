@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
-        "gifi",
-        "sephora-fr",
         "glenat",
-        "hachette"
+        "hachette",
+        "livre-de-poche",
+        "gifi",
+        "sephora-fr"
     ],
     "cnames": [
         {
@@ -24,6 +25,32 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "reach5\\.net\\/js\\/v1\\/fr\\/identity\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "glenat",
+                "hachette",
+                "livre-de-poche"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "34dc7c10da383a83ace35b64fc580a622c6bb1d107b5424c6f887bd76cab1828",
+                "b25bb9b2ca988426cc98babba68495d5621606b2c6198f1893e8e0dc95cb7a18"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "glenat.com",
+                "www.hachette.fr",
+                "www.livredepoche.com"
+            ]
+        },
+        {
             "rule": "reach5\\.net\\/identity\\/v1\\/config",
             "cookies": 0,
             "fingerprinting": 0,
@@ -32,8 +59,8 @@
                 "sephora-fr"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "connect.gifi.fr",
@@ -41,6 +68,7 @@
                 }
             ],
             "responseHashes": [
+                "b956d39436c6a8c6be8f689f94b64626ee9c1438706e60b7b61d17b6866e1a81",
                 "20f8ed6088f1bd6e4b6b823afc9c6f2126e443eb17bc83b4bbc63127291c450c"
             ],
             "type": "Fetch",
@@ -48,30 +76,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gifi.fr",
+                "www.gifi.fr",
                 "www.sephora.fr"
-            ]
-        },
-        {
-            "rule": "reach5\\.net\\/js\\/v1\\/fr\\/identity\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "glenat",
-                "hachette"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "06d4cfab28914e3ce6422d4916676429ff4fdda22213cd90ccd60b5c91b0fb3e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "glenat.com",
-                "www.hachette.fr"
             ]
         }
     ],
@@ -79,8 +85,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Script": 2
+        "Script": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "ns-18.awsdns-02.com",

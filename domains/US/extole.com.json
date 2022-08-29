@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00017,
-    "sites": 25,
+    "prevalence": 0.000163,
+    "sites": 24,
     "subdomains": [
         "ancestrydna",
         "boden-us",
@@ -63,7 +63,7 @@
     "resources": [
         {
             "rule": "extole\\.com\\/core\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.0000203,
             "fingerprinting": 1,
             "subdomains": [
                 "ancestrydna",
@@ -77,7 +77,8 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 1,
-                "Document.cookie getter": 1
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
             },
             "sites": 11,
             "prevalence": 0.0000746,
@@ -112,23 +113,29 @@
                 }
             ],
             "responseHashes": [
-                "8ad754643249685b98b6f2d9967b4ff227c3c67a1afead3d57a6e23b418f046c",
-                "0149379d257a80521be7ad72a9e305cbd95c318f6ecd22c31b66fa23fd13b80a",
-                "95088ed491de62644903de4c62fa440194b425a91b7cba1e4783703ee2f8513b",
-                "8ac167ae94edfdabd3c88d3c3f27cf7c1fd52c18649e7587d034ce033f1846f1",
-                "064be2574f804ca6ba1bbf1abe2991019206bf1aaae4b162aea0a812f210d9ad",
-                "85f579ff4f8bdae3fd97911c190f1717d423ec1a3ff2c3f86aa3405a8764ef28",
-                "2ea1d0c65cca19fde0b8c2c28be8c73221d87a39d8fa2103c860eb135a52892b",
-                "626873f8070db633bd4cfb307aef9229c8924c3af37558798e1bb8c8b441b5bd",
-                "63161eb92fe6ea085a214c01ab67237f6779c3fd95cdd8877127619404cacacc"
+                "991cedb17d46de4f8af345973217766b1e9454bc3441617551e928b0e7d2fd2d",
+                "e100cb54bdde581ecb2dca69a829c180bcde194d74a8ced120a60d8f4e2b3b0e",
+                "5f3b0df5b1fab7f833c5574bc5dd80603eca3819fa023e38bbb847a6ee24379d",
+                "edf1d957b73106b45866e4e9579886ab134c3402e2c86d3e4b03ec1a845e90b1",
+                "e1abef0953198513c668e1425e83ebf44e788f5436c552236834242cd38990b8",
+                "eec3dd7a54645a445ece813a71eb981fb2122f4ea7763a9fbb398e0336c7e32e",
+                "c7a137a03eaafcbe5cea4517a61b1c5756e9afbd67c8b98a5fce7ac8e24b4c53",
+                "760db45dde11a7c6b58690921821d5f668ca0518932085ce3fc281c54cc073d2"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "extole_access_token": {
+                    "ttl": 31536013,
+                    "length": 26,
+                    "prevalence": 0.000006777914842277922,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ancestry.com",
-                "search.ancestry.com",
                 "support.ancestry.com",
+                "www.ancestry.com.au",
                 "www.ancestry.com",
                 "www.bodenusa.com",
                 "www.clearme.com",
@@ -141,15 +148,15 @@
         },
         {
             "rule": "extole\\.com\\/zones\\/global_header",
-            "cookies": 0.0000204,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
-                "talbots",
-                "boden-us"
+                "boden-us",
+                "talbots"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "refer.talbots.com",
@@ -157,15 +164,88 @@
                 }
             ],
             "responseHashes": [
+                "8a67af425d9078f8780c27958adeff71b69e26860513e142705908b62a8a06df",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "talbots.com",
+                "bodenusa.com",
                 "www.bodenusa.com",
                 "www.talbots.com"
+            ]
+        },
+        {
+            "rule": "extole\\.com\\/api\\/v4\\/debug\\/metrics",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "boden-us",
+                "hostgator",
+                "moo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "referral.hostgator.com",
+                    "resolved": "hostgator.extole.com"
+                },
+                {
+                    "original": "refer.moo.com",
+                    "resolved": "moo.extole.com"
+                }
+            ],
+            "responseHashes": [
+                "ffb08088c178d6fb19c8599182b1af4f097f9415baf744a6c8952397470f1494",
+                "d1235ec5caa1a762df1815c5b62b76748f7be86a1c013c342eb99a8b4569e4de"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bodenusa.com",
+                "www.hostgator.com",
+                "www.moo.com"
+            ]
+        },
+        {
+            "rule": "extole\\.com\\/api\\/v4\\/debug\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "boden-us",
+                "hostgator",
+                "moo"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [
+                {
+                    "original": "referral.hostgator.com",
+                    "resolved": "hostgator.extole.com"
+                },
+                {
+                    "original": "refer.moo.com",
+                    "resolved": "moo.extole.com"
+                }
+            ],
+            "responseHashes": [
+                "df0823676ef9c78ef0dc5205bc63d800f9f8786e0ec5a229f8888083c1cdb2be",
+                "142cedbbeffa44c8403a470fb68e7e715625ccc72daac44a67524c8ae33d3bb4",
+                "edbc414408ddd88e2deeabdffa6986b17562b4a62e822116357090e897c018ce"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bodenusa.com",
+                "www.bodenusa.com",
+                "www.hostgator.com",
+                "www.moo.com"
             ]
         },
         {
@@ -173,18 +253,14 @@
             "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
-                "talbots",
                 "hannaandersson",
-                "luckyvitamin"
+                "luckyvitamin",
+                "talbots"
             ],
             "apis": {},
             "sites": 4,
             "prevalence": 0.0000271,
             "cnames": [
-                {
-                    "original": "refer.talbots.com",
-                    "resolved": "talbots.extole.com"
-                },
                 {
                     "original": "refer.hannaandersson.com",
                     "resolved": "hannaandersson.extole.com"
@@ -192,18 +268,22 @@
                 {
                     "original": "refer.luckyvitamin.com",
                     "resolved": "luckyvitamin.extole.com"
+                },
+                {
+                    "original": "refer.talbots.com",
+                    "resolved": "talbots.extole.com"
                 }
             ],
             "responseHashes": [
-                "817c72411dbbaaeaec2249b2825f354bf6c460bd4e8d6e1e5db9e53eed69fc2f",
-                "7da1f1081d049b3f28e3526ca6fb9522f2dbe9575334a5cd3433a0124192cb7b",
-                "e8895d482e5cc8903fae8648b0a18129ea15a371ff5d4b25c72b44d6eb92c147"
+                "e925a467da0ac2cb456e9ab9b8359158dd8caceafe2e4e145d3faefc430398bd",
+                "b5e960f3a3e2a22dea1d32840ee96ba1d7cd539aa1d9c6374ca4d0a2abacde50",
+                "0361dc8dddf632776015e0bc5d3c983adced09eb0b05c25801b3e10f1b8e8a10"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "talbots.com",
+                "hannaandersson.com",
                 "www.hannaandersson.com",
                 "www.luckyvitamin.com",
                 "www.talbots.com"
@@ -226,7 +306,7 @@
                 }
             ],
             "responseHashes": [
-                "68d3a99b235a828b640e99ed398b7ca41802466d0f24fffc5a8c07a3f56790e2"
+                "25ddcc2bc7ada4b723275db3bfccf6bd9ee6a423b0c628bb934b2a455b494d08"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -253,7 +333,7 @@
                 }
             ],
             "responseHashes": [
-                "02033a13f13a6b967c371e9bd5367f6e8fdd44355f9675309d4e541c9a283faa"
+                "cda416b795e3b4de7a949f4fcf54753d8c22a2e882130e4bba7455e8710078bb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -261,94 +341,20 @@
             "exampleSites": [
                 "moo.com",
                 "www.moo.com"
-            ]
-        },
-        {
-            "rule": "extole\\.com\\/api\\/v4\\/debug\\/metrics",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "moo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "refer.moo.com",
-                    "resolved": "moo.extole.com"
-                }
-            ],
-            "responseHashes": [
-                "23939443cb22b478d7bf04db5e1728c5d50c9fc02efbf9a3787ff6fc422bd597"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "moo.com",
-                "www.moo.com"
-            ]
-        },
-        {
-            "rule": "extole\\.com\\/api\\/v4\\/debug\\/logs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "moo"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "refer.moo.com",
-                    "resolved": "moo.extole.com"
-                }
-            ],
-            "responseHashes": [
-                "c58db85b033676dcf053f11ce022fc88c7fa131c00bb8ef2d94135b60a48faf5"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "moo.com",
-                "www.moo.com"
-            ]
-        },
-        {
-            "rule": "extole\\.com\\/zones\\/promo_bar",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sperry"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "refer.sperry.com",
-                    "resolved": "sperry.extole.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sperry.com",
-                "www.sperry.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000095,
+    "cookies": 0.0000746,
     "types": {
         "Script": 11,
-        "XHR": 17
+        "XHR": 18
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-409.awsdns-51.com",
+        "ns-988.awsdns-59.net",
+        "ns-1155.awsdns-16.org",
+        "ns-1967.awsdns-53.co.uk"
+    ]
 }

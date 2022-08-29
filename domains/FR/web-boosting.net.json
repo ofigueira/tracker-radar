@@ -4,12 +4,15 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
         "ws-cob",
+        "ws-izblbe",
         "ws-mil",
-        "ws-pis"
+        "ws-pis",
+        "s-izblbe",
+        "s-pis"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,32 +23,78 @@
             "fingerprinting": 0,
             "subdomains": [
                 "ws-cob",
+                "ws-izblbe",
                 "ws-mil",
                 "ws-pis"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "3ca63cf736c0ee6b7549d32623c62d66d086ca33646d0a48cfb7080a576fc67b",
-                "ee301eac5ed417e6466dd77a6991f253faf7433c77fb10b081b81e5a7ccf9ee8"
+                "828ca6894500a99a52fd59a8d64dbbe0c495bedf661fed8c48a4d3e16e260cda",
+                "bff79d93dcceffdbd9dbd6f3928cfb6c9c4af885410406099b63a600269637bf",
+                "f2e2f6abcfbfa064d6575431150010d3944697fe74eb2d1e49b20754c10c480e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cobra.fr",
+                "www.label-emmaus.co",
                 "www.miliboo.com",
+                "www.piscine-clic.com"
+            ]
+        },
+        {
+            "rule": "web-boosting\\.net\\/wsb\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s-izblbe",
+                "s-pis"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "62b8c1cec3f9b073dc1dba4609d998f859e98c6f8239192d1c14b3aa0a4c4ae7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_wsbMessages": {
+                    "ttl": 1808,
+                    "length": 6,
+                    "prevalence": 0.00020064205457463884,
+                    "uniqueness": 0.5
+                },
+                "_wsbA": {
+                    "ttl": 31968008,
+                    "length": 24,
+                    "prevalence": 0.00020064205457463884,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "label-emmaus.co",
                 "www.piscine-clic.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "types": {
-        "XHR": 3
+        "XHR": 4,
+        "Script": 2
     },
     "nameservers": [
         "dns18.ovh.net",

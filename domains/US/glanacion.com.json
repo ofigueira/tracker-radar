@@ -11,9 +11,15 @@
     "sites": 2,
     "subdomains": [
         "static",
+        "cdnedge",
         "arc-static"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "suscripciones.lanacion.com.ar",
+            "resolved": "cdnedge.glanacion.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -35,6 +41,33 @@
                 "533b5c5e4cb29b680e84637524f1bc60e30fd37611ca9c0c9bc796332f7d3926"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lanacion.com.ar",
+                "www.lanacion.com.ar"
+            ]
+        },
+        {
+            "rule": "glanacion\\.com\\/api\\/suscripciones\\/stock",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnedge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "suscripciones.lanacion.com.ar",
+                    "resolved": "cdnedge.glanacion.com"
+                }
+            ],
+            "responseHashes": [
+                "fce86e339dc3131c489202ec3b6c8d4319c61f152b3541ba0e4141e5d5c3fac3"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -67,9 +100,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000679,
+    "cookies": 0.0000136,
     "types": {
         "Script": 2,
+        "Fetch": 2,
         "Image": 2
     },
     "nameservers": [

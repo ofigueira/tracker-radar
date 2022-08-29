@@ -9,15 +9,64 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000501,
+    "sites": 5,
     "subdomains": [
+        "cdn",
         "people.api",
+        "onsiterecs.api",
         "events.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "boomtrain\\.com\\/p13n\\/cnn\\/p13n\\.min\\.js",
+            "cookies": 0.0002,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "e838d370e365226638f5f2a6701dd55acdf320cae60f87881218ff0f02cca8d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "btIdentify": {
+                    "ttl": 31536022,
+                    "length": 36,
+                    "prevalence": 0.0002004008016032064,
+                    "uniqueness": 1
+                },
+                "_bti": {
+                    "ttl": 31536024,
+                    "length": 183,
+                    "prevalence": 0.0002004008016032064,
+                    "uniqueness": 1
+                },
+                "_bts": {
+                    "ttl": 3622,
+                    "length": 36,
+                    "prevalence": 0.0002004008016032064,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "www.cnn.com"
+            ]
+        },
         {
             "rule": "boomtrain\\.com\\/identify\\/resolve",
             "cookies": 0,
@@ -26,22 +75,46 @@
                 "people.api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000501,
             "cnames": [],
             "responseHashes": [
-                "b83139b50897e8e8734782bddf8158d48d2bf6ec71077beced866fc4eb13f1de",
-                "1ede8768ba258e978a1a83ffa29f66ea258807ada8ca58c455acea91fbc660bd",
-                "9b9ba5324717ee40a3e5b7c1e1c5f210c16e3cb9b950d05c7631a36e78ada9c0"
+                "c9b5edb31a0165f4a72d2496a3b46e50fb3e4efe80cc059b24082c81041b091c",
+                "fa5ebe9133ed4f01ff20ef3cfc1171ce64efaef52761d768c44b4eb13913c69e",
+                "0949e1aac2cb07e4b3f48478288b09cedd88111193f54449662859e994a23a0c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ireland.com",
+                "cnn.com",
+                "www.cnn.com",
+                "www.healthgrades.com",
                 "www.mlb.com",
-                "www.urbanoutfitters.com",
                 "www.yidio.com"
+            ]
+        },
+        {
+            "rule": "boomtrain\\.com\\/api\\/v1\\/selectors",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "onsiterecs.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1c6443e56a8d88c1734afadf22d91420afa0c321e7387077aca580735a046b57"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "www.cnn.com",
+                "www.healthgrades.com"
             ]
         },
         {
@@ -52,31 +125,30 @@
                 "events.api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "32fe6f3381b5896550d3b6b2cf76b8c8bd84855869a1c0955eed9a5da8f0f8b3",
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_bts": 0.00010030090270812437
+                "_bts": 0.0001002004008016032
             },
             "exampleSites": [
-                "ireland.com",
+                "healthgrades.com",
                 "www.mlb.com",
-                "www.urbanoutfitters.com",
                 "www.yidio.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000501,
     "types": {
-        "XHR": 8
+        "Script": 2,
+        "XHR": 11
     },
     "nameservers": [
         "rick.ns.cloudflare.com",

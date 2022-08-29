@@ -8,7 +8,8 @@
     "sites": 2,
     "subdomains": [
         "www",
-        "es"
+        "es",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -48,10 +49,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "ea816f76dd1e70a389be1aa4a9aab4295dc213570e645fcde5983d328133e553"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -70,8 +69,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "26454cfcf2dbc25e5904d0cee5013052894a8349d6c57681592450604ef0c16a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -100,6 +101,28 @@
                 "donaukurier.de",
                 "www.wochenblatt.de"
             ]
+        },
+        {
+            "rule": "allesregional\\.de\\/uploads\\/get\\/11243\\/small",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "baad60a6c6f9b82f63a316cffe6af04ec7f973d82441f401e2282ea69e2bdffd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaukurier.de",
+                "www.wochenblatt.de"
+            ]
         }
     ],
     "categories": [],
@@ -107,14 +130,15 @@
     "cookies": 0,
     "types": {
         "Document": 2,
-        "XHR": 2,
         "Preflight": 2,
-        "Font": 2
+        "XHR": 2,
+        "Font": 2,
+        "Image": 2
     },
     "nameservers": [
-        "pns.dtag.de",
-        "ns2.vgp.de",
         "ns1.vgp.de",
+        "ns2.vgp.de",
+        "pns.dtag.de",
         "secondary006.dtag.net"
     ]
 }

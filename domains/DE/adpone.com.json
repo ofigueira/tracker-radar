@@ -4,17 +4,61 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.0014,
+    "sites": 14,
     "subdomains": [
         "rtb",
-        "hb"
+        "hb",
+        "adserver"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "adpone\\.com\\/bid-request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtb"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0011,
+            "cnames": [],
+            "responseHashes": [
+                "407e0ba27ff215518cb6f81619a824240ebebd23570f6cdba8968b539a68de64",
+                "25b1d9f43d97a8100496d500b3460172d7c30ce309f1f89f6765849bcce537c7",
+                "5a3cf69f216d1cd1148e820a72f05d5361e1a4e8221ce2d8b58634fd2b2a80b6",
+                "7710229d2533f8599d8632da1e855f857ab463c9a5d6c77e0487a63a1ac4d6eb",
+                "f0a55a41df9e5c6ed9f99d80fe2929b8241c29ab6592e20cf829fda3e3e55397",
+                "1bd92ed703bc606b2fcc29bd0f7daf88e3655e95fc149e9036e568caa97676af",
+                "1aad07c8c091f1e3759cfa4b514ac28b53d733291cc44596b368c508e213ff20",
+                "fae55403e5fc1103c5614c420650defd6435554c305ef16484e243ffd17012bd",
+                "632e216e900c9ea669aab51270b4cfe026f48380b989471a33e007f857e867b6",
+                "1383c25ca53e2e806ebf29e9d55ca0d9558bab27794186a1a5d8e9b357aec3cf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "euconsent-v2": 0.00020046106043900973,
+                "eupubconsent-v2": 0.00020046106043900973
+            },
+            "exampleSites": [
+                "alleantworten.de",
+                "camping-experten.de",
+                "grammarhow.com",
+                "ipaddress.com",
+                "itigic.com",
+                "memesbams.com",
+                "tvn24.pl",
+                "vymaps.com",
+                "www.digitaltrends.com",
+                "www.eliteprospects.com",
+                "www.metric-conversions.org"
+            ]
+        },
+        {
+            "rule": "adpone\\.com\\/prebid\\/analytics",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -25,16 +69,15 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "532fbcfa54809de0722e52a42f8deb506c46da980901068c7d4c766dffa06cc9",
-                "4c54c0e5e1f313400db6dd4f98bc80a8dadcb121e7eb28a5c951072ba2046db9"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "memesbams.com",
-                "phonesdata.com",
-                "www.woman.ru"
+                "www.digitaltrends.com",
+                "www.eliteprospects.com"
             ]
         },
         {
@@ -57,10 +100,14 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.colorDepth": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "window.name": 1,
+                "Screen.prototype.orientation": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 6,
+            "prevalence": 0.000601,
             "cnames": [],
             "responseHashes": [
                 "c732adb13b1be3b4e9283988a26cdf5153eefe90b9797f8e70fe2a6378affbe4"
@@ -69,8 +116,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "readonepiece.com",
-                "ww9.readonepiece.com"
+                "memesbams.com",
+                "www.digitaltrends.com",
+                "www.eliteprospects.com",
+                "www.marca.com",
+                "www.spox.com",
+                "www.trueachievements.com"
+            ]
+        },
+        {
+            "rule": "adpone\\.com\\/r\\/p\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adserver"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spox.com",
+                "www.spox.com"
             ]
         }
     ],
@@ -78,8 +149,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 3,
-        "Script": 2
+        "XHR": 11,
+        "Image": 3,
+        "Script": 6,
+        "Document": 2
     },
     "nameservers": [
         "elma.ns.cloudflare.com",
