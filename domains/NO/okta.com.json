@@ -7,12 +7,22 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.00081,
+    "sites": 8,
     "subdomains": [
+        "sas.customdomains",
+        "churchofjesuschrist.customdomains",
         "servicenowsignon.customdomains"
     ],
     "cnames": [
+        {
+            "original": "auth.sas.com",
+            "resolved": "sas.customdomains.okta.com"
+        },
+        {
+            "original": "id.churchofjesuschrist.org",
+            "resolved": "churchofjesuschrist.customdomains.okta.com"
+        },
         {
             "original": "ssosignon.servicenow.com",
             "resolved": "servicenowsignon.customdomains.okta.com"
@@ -21,16 +31,87 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000201,
+            "rule": "okta\\.com\\/api\\/v1\\/users\\/me",
+            "cookies": 0.000304,
             "fingerprinting": 0,
             "subdomains": [
+                "sas.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000304,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "d0b8fa22095956b5f9d93190a19b7f4d48dc5c15dc3a2e303069bf2830dbbe2e",
+                "c216f585e70391524da96183a5a72b4e1441f602dd067d82354c08b0df3c17c4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "support.sas.com",
+                "www.sas.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000405,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains",
+                "churchofjesuschrist.customdomains"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000506,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                },
+                {
+                    "original": "id.churchofjesuschrist.org",
+                    "resolved": "churchofjesuschrist.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "5fe76c9fc55298262c29a2d4be2373e6258c3b8e6eb53c9f301938920dfc2b40",
+                "52ae2c4f31caf0d8f9e93f044d92cb57b6ae1993b1cbbf5ee2fd983a73cc484b",
+                "4dacd3885e859ed38131ee9f389b3cbbb3fc6d9fa6b9c86dc977e75dd2c6a884"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "communities.sas.com",
+                "support.sas.com",
+                "www.churchofjesuschrist.org",
+                "www.sas.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000506,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains",
                 "servicenowsignon.customdomains"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000506,
             "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                },
                 {
                     "original": "ssosignon.servicenow.com",
                     "resolved": "servicenowsignon.customdomains.okta.com"
@@ -41,20 +122,23 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "servicenow.com",
-                "developer.servicenow.com"
+                "sas.com",
+                "communities.sas.com",
+                "community.servicenow.com",
+                "support.sas.com",
+                "www.sas.com"
             ]
         },
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000301,
+            "cookies": 0.000203,
             "fingerprinting": 0,
             "subdomains": [
                 "servicenowsignon.customdomains"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000203,
             "cnames": [
                 {
                     "original": "ssosignon.servicenow.com",
@@ -62,25 +146,24 @@
                 }
             ],
             "responseHashes": [
-                "389954b3ef573d542d16e0f010243f82088de734c10935d2d49c0313daa36fc5",
-                "f814132d47be989a82d66f522bda83dac44a50b2660607e9762d0bcae584a4d0"
+                "13e56e85a850b787d8a80faa33b656ce16ebcd6873da3293eff93a6baf314458"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "servicenow.com",
-                "developer.servicenow.com",
                 "www.servicenow.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000709,
     "types": {
-        "Preflight": 2,
-        "XHR": 3
+        "XHR": 5,
+        "Fetch": 5,
+        "Preflight": 5
     },
     "nameservers": []
 }

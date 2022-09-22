@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00202,
+    "sites": 20,
     "subdomains": [
         "rum",
-        "logs"
+        "logs",
+        "session-replay"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,24 +25,67 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000903,
+            "sites": 13,
+            "prevalence": 0.00131,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "b7d0dad45dc4c22fb5086669836ed6f337f790ede6bc2f95310d762195ffc472",
+                "6bcb6dc4b3ffa66714e6a9862cba39bb810eb1b57184eeeae119609834756470",
+                "9818a0eb9b9b93176044a6e34ac589bf21bf21bdf2c0ea3f3ebf8db141432861",
+                "7dc1b6e623b9dc2997f8b33d435c408cdde8eebd4fafb79ca1be4d9096df1885",
+                "1add99abc1b67c4e29366c6d17f46980e2d225b6785c737535cb464930ba1e41",
+                "73f8e40c9fc32816d92ee346e48f6069d6ee489216637247abc0abf5152130a9",
+                "c3f7edb89ec120708e37239ed2930463e77abd766bfbd673062c4431881aa2f5",
+                "e998fce1290747bade49dd78bf3cef79fc1b63630a6c84e51cea07cd1935acaa",
+                "62d262bc335f119dd084938c7c9d78760793ce1bba4a50548fd6d96b49ada5ef",
+                "8347493fb72ce5939db738de4fd5b0ee4b7f0a82bf466c1ff0852157a3476f3d",
+                "d0910e0de6c41853bb562cde3ff873508d7973be865c09bebbff8adb2bdec3fe",
+                "4898358fe054a05a6880996f06fc9a34f25885736936cb85475281aafc4acc3c"
             ],
-            "type": "Ping",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freespoke.com",
-                "mashable.com",
-                "www.airtasker.com",
-                "www.carandclassic.com",
-                "www.codecademy.com",
+                "dunelm.com",
+                "splice.com",
+                "www.dunelm.com",
+                "www.i-bidder.com",
                 "www.letsdothis.com",
-                "www.myfitnesspal.com",
+                "www.netlify.com",
+                "www.pitchup.com",
                 "www.roofingmegastore.co.uk",
+                "www.shopify.co.uk",
+                "www.the-saleroom.com",
+                "www.wish.com",
+                "www.wyndhamhotels.com",
+                "www.zwift.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000506,
+            "cnames": [],
+            "responseHashes": [
+                "c7f2e28d8e6baa9bea8451d4aa8fc0dbb033aaeca107f45d942f970e2a9cfd33",
+                "3916a70bdeb959ccd02e80d4460012267d9de36628752cbe234bac8dff339407",
+                "03d7c39518e6900fb0279d4552299274cba86b7c80c1c876a2a1a5b0a890a481",
+                "c81a2a23224a84d4b7eb6651e9c8e12ac70f2f5a8a4c8bcf3c82b310eb3893b6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dunelm.com",
+                "www.dunelm.com",
+                "www.roofingmegastore.co.uk",
+                "www.wish.com",
                 "www.zoominfo.com"
             ]
         },
@@ -54,7 +98,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -68,6 +112,30 @@
             ]
         },
         {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-replay"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "9200c1fbdce9e96043eff559303102b74719e9192dcc78d3fe6ceadfbfd592ec",
+                "1e29ee6fc81abc042f4aeced513717971f33291fb1ab837547c594d2df5a98a9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "squareup.com",
+                "www.pitchup.com",
+                "www.roofingmegastore.co.uk"
+            ]
+        },
+        {
             "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
             "cookies": 0,
             "fingerprinting": 0,
@@ -75,21 +143,20 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000506,
             "cnames": [],
             "responseHashes": [
-                "025f433a6fe619e24924dbbc7b4d02693c339f71138521f9411d5a1a2c40b40f",
-                "784aaa6b3d33f2727f69cb8cb2f62beca91819813fd90292e33f6b59e28c09cc",
-                "0c569b6f5a2f1ad5afa35a5b8ef1705f95a13451cd68939992e6c98d0c1006fe"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "codecademy.com",
+                "squareup.com",
+                "uk.practicallaw.thomsonreuters.com",
+                "www.burgerking.co.uk",
                 "www.codecademy.com",
-                "www.roofingmegastore.co.uk",
                 "www.zoominfo.com"
             ]
         }
@@ -98,8 +165,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Ping": 11,
-        "XHR": 4
+        "Fetch": 13,
+        "XHR": 8,
+        "Ping": 7
     },
     "nameservers": [
         "ns-1264.awsdns-30.org",

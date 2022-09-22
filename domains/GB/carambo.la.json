@@ -4,60 +4,140 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "analytics"
+        "route",
+        "cdata",
+        "logging",
+        "content"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "carambo\\.la\\/SetItemsView",
+            "rule": "carambo\\.la\\/inimage\\/getlayer",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "analytics"
+                "route"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 1,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dict.cc",
-                "www.dict.cc"
+                "allfreeknitting.com",
+                "www.linguee.fr",
+                "www.thewordfinder.com"
             ]
         },
         {
-            "rule": "carambo\\.la\\/SetAdsRequest",
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/js\\/Carambola_layer_152\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "analytics"
+                "cdata"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d81eb1606ab2d7888ce10f1e84ff0716c920129938c81955738616da704002f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.linguee.fr"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/AddLogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logging"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.allfreeknitting.com",
+                "www.linguee.fr"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetInContentInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dict.cc",
-                "www.dict.cc"
+                "allfreeknitting.com",
+                "www.linguee.fr"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetInContentInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.linguee.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "types": {
-        "Fetch": 4
+        "Script": 5,
+        "XHR": 3,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1002.awsdns-61.net",

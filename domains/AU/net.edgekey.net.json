@@ -9,16 +9,26 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
+        "ssl2.tiles.virtualearth",
+        "star.cdn.nintendo",
         "api.farfetch",
         "api.wsj"
     ],
     "cnames": [
         {
+            "original": "alps.cdn.nintendo.net",
+            "resolved": "star.cdn.nintendo.net.edgekey.net"
+        },
+        {
             "original": "api.wsj.net",
             "resolved": "api.wsj.net.edgekey.net"
+        },
+        {
+            "original": "ecn.dev.virtualearth.net",
+            "resolved": "ssl2.tiles.virtualearth.net.edgekey.net"
         },
         {
             "original": "ot.farfetch.com",
@@ -27,6 +37,60 @@
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "net\\.edgekey\\.net\\/REST\\/v1\\/Imagery\\/Map\\/RoadVibrant\\/-33\\.87,151\\.21\\/12",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl2.tiles.virtualearth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ecn.dev.virtualearth.net",
+                    "resolved": "ssl2.tiles.virtualearth.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4a1b7c7921c64ff09aa4d761c0b1899c83c2932f8f5af90b9f9d30adf7f4882d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bing.com",
+                "www.bing.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/v1\\/js\\/account_en_USA\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "star.cdn.nintendo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "alps.cdn.nintendo.net",
+                    "resolved": "star.cdn.nintendo.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "576b6f7a56a871f2dd4ef5a7e2685cea9f428bbe3f2a466154e20d363f914c7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nintendo.com",
+                "www.nintendo.com"
+            ]
+        },
         {
             "rule": "net\\.edgekey\\.net\\/ext\\/marketing\\/v1\\/trackings",
             "cookies": 0,
@@ -121,7 +185,7 @@
                 }
             ],
             "responseHashes": [
-                "7758e20acedd4dcf8113ad730d128d74e88cbe243060012efb9e9762bd375250"
+                "0fbb84c6bbf778c6e23e32be97d0a9c7d2bb6b26f277192a8b0bd56cc64d0bc8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -136,8 +200,9 @@
     "performance": {},
     "cookies": 0.000201,
     "types": {
-        "Preflight": 4,
-        "XHR": 4
+        "XHR": 6,
+        "Script": 2,
+        "Preflight": 4
     },
     "nameservers": []
 }

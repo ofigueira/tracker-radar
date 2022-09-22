@@ -7,12 +7,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.00271,
-    "sites": 27,
+    "prevalence": 0.00295,
+    "sites": 29,
     "subdomains": [
-        "ccpa",
-        "message",
         "mms",
+        "message",
+        "ccpa",
         "ccpa-service",
         "gdpr-tcfv2",
         "message1061",
@@ -63,20 +63,72 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "sp-prod\\.net\\/get_site_data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mms",
+                "message"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000611,
+            "cnames": [
+                {
+                    "original": "mms.cnn.com",
+                    "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "eurogamer-uk.eurogamer.net",
+                    "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "lapresse-ca.lapresse.ca",
+                    "resolved": "message.sp-prod.net"
+                },
+                {
+                    "original": "sp.nintendolife.com",
+                    "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "rps-uk.rockpapershotgun.com",
+                    "resolved": "mms.sp-prod.net"
+                }
+            ],
+            "responseHashes": [
+                "901631d41f761696526670b27454df4ace5684d4e7649cfae047689a64fefe36",
+                "f55e52d31c2155dc61d98a7281015f417fe651e141c4b74eb4910f97c9067371",
+                "0d004688c894ca15df2457a3527f2298e631915591060943334b31adc5a51d2b",
+                "0bab9b534fedb4466771d9a1c2f0907243a3fa64b19ac890d3b19462aaa456ff",
+                "0ae0225732c05519dc5f86486b15ceba3b2ef046ebec9009090c495a78f67a81"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "www.cnn.com",
+                "www.eurogamer.net",
+                "www.lapresse.ca",
+                "www.nintendolife.com",
+                "www.rockpapershotgun.com"
+            ]
+        },
+        {
             "rule": "sp-prod\\.net\\/ccpa\\.js",
-            "cookies": 0.000803,
+            "cookies": 0.000713,
             "fingerprinting": 1,
             "subdomains": [
                 "ccpa"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Document.cookie getter": 9,
-                "Date.prototype.getTime": 8,
-                "Document.cookie setter": 8
+                "Navigator.prototype.userAgent": 8,
+                "Document.cookie getter": 8,
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7
             },
-            "sites": 9,
-            "prevalence": 0.000903,
+            "sites": 8,
+            "prevalence": 0.000815,
             "cnames": [],
             "responseHashes": [
                 "fc630eae66d14c714e935e9686b763aab14adc301890a57262408ee4bd401978"
@@ -86,38 +138,37 @@
                 "ccpaUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.0007022471910112359,
+                    "prevalence": 0.0006110601894286587,
                     "uniqueness": 1
                 },
                 "dnsDisplayed": {
                     "ttl": 31536000,
                     "length": 4,
-                    "prevalence": 0.0007022471910112359,
-                    "uniqueness": 0.14285714285714285
+                    "prevalence": 0.0006110601894286587,
+                    "uniqueness": 0.16666666666666666
                 },
                 "ccpaApplies": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.0007022471910112359,
-                    "uniqueness": 0.14285714285714285
+                    "prevalence": 0.0006110601894286587,
+                    "uniqueness": 0.16666666666666666
                 },
                 "signedLspa": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.0007022471910112359,
-                    "uniqueness": 0.14285714285714285
+                    "prevalence": 0.0006110601894286587,
+                    "uniqueness": 0.16666666666666666
                 },
                 "_vice_cmp_fb_ldu": {
-                    "ttl": 2592027,
+                    "ttl": 2592029,
                     "length": 5,
-                    "prevalence": 0.00020064205457463884,
+                    "prevalence": 0.00020368672980955292,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flipboard.com",
-                "gamingonphone.com",
                 "markets.businessinsider.com",
                 "www.hitc.com",
                 "www.lemagit.fr",
@@ -137,7 +188,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000702,
+            "prevalence": 0.000713,
             "cnames": [
                 {
                     "original": "consent.lemagit.fr",
@@ -163,8 +214,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00010032102728731942,
-                "activation_landing_url": 0.00010032102728731942
+                "activation_landing_url": 0.00010184336490477646
             },
             "exampleSites": [
                 "flipboard.com",
@@ -178,7 +228,7 @@
         },
         {
             "rule": "sp-prod\\.net\\/mms\\/v2\\/message_url",
-            "cookies": 0.0001,
+            "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
                 "message",
@@ -186,7 +236,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000702,
+            "prevalence": 0.000713,
             "cnames": [
                 {
                     "original": "consent.lemagit.fr",
@@ -207,8 +257,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00010032102728731942,
-                "activation_landing_url": 0.00010032102728731942
+                "activation_landing_url": 0.00010184336490477646
             },
             "exampleSites": [
                 "flipboard.com",
@@ -229,10 +278,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "e17a83fb3842d1b5df29eabfd0fc2a93b5e123be8e8e8b4c13bdad672f21d90e"
+                "c1cb9163e983fb31b5fcfc03f437eb65bab826886ffe9301a4ec3944cc32bf5d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -251,7 +300,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -264,57 +313,63 @@
         },
         {
             "rule": "sp-prod\\.net\\/wrapperMessagingWithoutDetection\\.js",
-            "cookies": 0.0014,
+            "cookies": 0.00163,
             "fingerprinting": 1,
             "subdomains": [
                 "gdpr-tcfv2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 14,
-                "Document.cookie getter": 14,
-                "window.localStorage": 14,
-                "Date.prototype.getTime": 14,
-                "Document.cookie setter": 14,
-                "window.innerHeight": 14,
-                "window.innerWidth": 14
+                "Navigator.prototype.userAgent": 16,
+                "Document.cookie getter": 16,
+                "window.localStorage": 16,
+                "Date.prototype.getTime": 15,
+                "Document.cookie setter": 16,
+                "window.innerHeight": 15,
+                "window.innerWidth": 15
             },
-            "sites": 14,
-            "prevalence": 0.0014,
+            "sites": 16,
+            "prevalence": 0.00163,
             "cnames": [],
             "responseHashes": [
-                "bfb8735f4aa6e814dac05a3dfd611407fd833bc341e723ca59eb0f3f3875aef6"
+                "5487cce6ea1377e6d67df624fbcdf32444a6550285e8992f389a2e1362071d69"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_sp_enable_dfp_personalized_ads": {
                     "ttl": 7776000,
                     "length": 5,
-                    "prevalence": 0.00020064205457463884,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00030553009471432935,
+                    "uniqueness": 0.3333333333333333
                 },
                 "_sp_v1_uid": {
                     "ttl": 2592000,
                     "length": 42,
-                    "prevalence": 0.0014044943820224719,
+                    "prevalence": 0.0015276504735716467,
                     "uniqueness": 1
                 },
                 "_sp_v1_data": {
                     "ttl": 2592000,
                     "length": 36,
-                    "prevalence": 0.0014044943820224719,
+                    "prevalence": 0.0015276504735716467,
                     "uniqueness": 1
                 },
                 "_sp_v1_ss": {
                     "ttl": 2592000,
                     "length": 91,
-                    "prevalence": 0.0014044943820224719,
-                    "uniqueness": 0.5
+                    "prevalence": 0.0015276504735716467,
+                    "uniqueness": 0.4666666666666667
+                },
+                "sampledUser": {
+                    "ttl": 31536000,
+                    "length": 5,
+                    "prevalence": 0.0015276504735716467,
+                    "uniqueness": 0.06666666666666667
                 },
                 "_sp_krux": {
                     "ttl": 7776000,
                     "length": 5,
-                    "prevalence": 0.00030096308186195825,
-                    "uniqueness": 0.3333333333333333
+                    "prevalence": 0.00040737345961910584,
+                    "uniqueness": 0.25
                 }
             },
             "firstPartyCookiesSent": {},
@@ -327,6 +382,8 @@
                 "www.biography.com",
                 "www.caradisiac.com",
                 "www.lemagit.fr",
+                "www.meteoetradar.com",
+                "www.si.com",
                 "www.skysports.com",
                 "www.techtarget.com",
                 "www.thetimes.co.uk",
@@ -346,7 +403,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000502,
+            "prevalence": 0.000509,
             "cnames": [
                 {
                     "original": "consent.distance.to",
@@ -387,56 +444,6 @@
             ]
         },
         {
-            "rule": "sp-prod\\.net\\/get_site_data",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mms",
-                "message"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
-            "cnames": [
-                {
-                    "original": "mms.cnn.com",
-                    "resolved": "mms.sp-prod.net"
-                },
-                {
-                    "original": "eurogamer-uk.eurogamer.net",
-                    "resolved": "mms.sp-prod.net"
-                },
-                {
-                    "original": "lapresse-ca.lapresse.ca",
-                    "resolved": "message.sp-prod.net"
-                },
-                {
-                    "original": "sp.nintendolife.com",
-                    "resolved": "mms.sp-prod.net"
-                },
-                {
-                    "original": "rps-uk.rockpapershotgun.com",
-                    "resolved": "mms.sp-prod.net"
-                }
-            ],
-            "responseHashes": [
-                "f55e52d31c2155dc61d98a7281015f417fe651e141c4b74eb4910f97c9067371",
-                "0d004688c894ca15df2457a3527f2298e631915591060943334b31adc5a51d2b",
-                "0bab9b534fedb4466771d9a1c2f0907243a3fa64b19ac890d3b19462aaa456ff",
-                "0ae0225732c05519dc5f86486b15ceba3b2ef046ebec9009090c495a78f67a81"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cnn.com",
-                "www.eurogamer.net",
-                "www.lapresse.ca",
-                "www.nintendolife.com",
-                "www.rockpapershotgun.com"
-            ]
-        },
-        {
             "rule": "sp-prod\\.net\\/mms\\/get_loaders",
             "cookies": 0,
             "fingerprinting": 0,
@@ -445,8 +452,8 @@
                 "message"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 3,
+            "prevalence": 0.000306,
             "cnames": [
                 {
                     "original": "eurogamer-uk.eurogamer.net",
@@ -459,14 +466,11 @@
                 {
                     "original": "sp.nintendolife.com",
                     "resolved": "mms.sp-prod.net"
-                },
-                {
-                    "original": "rps-uk.rockpapershotgun.com",
-                    "resolved": "mms.sp-prod.net"
                 }
             ],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "5da2984a8a5270e8561c27e8eabef85d2bd4b84476c48bd5de4ba1e1fa61ce84"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -474,23 +478,22 @@
             "exampleSites": [
                 "eurogamer.net",
                 "www.lapresse.ca",
-                "www.nintendolife.com",
-                "www.rockpapershotgun.com"
+                "www.nintendolife.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00231,
+    "cookies": 0.00234,
     "types": {
-        "Script": 23,
         "XHR": 30,
+        "Script": 24,
         "Preflight": 2
     },
     "nameservers": [
-        "ns-1307.awsdns-35.org",
-        "ns-1976.awsdns-55.co.uk",
         "ns-414.awsdns-51.com",
-        "ns-840.awsdns-41.net"
+        "ns-840.awsdns-41.net",
+        "ns-1307.awsdns-35.org",
+        "ns-1976.awsdns-55.co.uk"
     ]
 }
