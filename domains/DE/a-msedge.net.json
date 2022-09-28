@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "c-bing-com.a-0001",
-        "bat-bing-com.a-0001"
+        "bat-bing-com.a-0001",
+        "api-msn-com.a-0003"
     ],
     "cnames": [
+        {
+            "original": "api.msn.com",
+            "resolved": "api-msn-com.a-0003.a-msedge.net"
+        },
         {
             "original": "bat.bing.com",
             "resolved": "bat-bing-com.a-0001.a-msedge.net"
@@ -20,40 +25,83 @@
             "resolved": "c-bing-com.a-0001.a-msedge.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "a-msedge\\.net\\/c\\.gif",
-            "cookies": 0.000902,
+            "cookies": 0.000708,
             "fingerprinting": 0,
             "subdomains": [
                 "c-bing-com.a-0001"
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0011,
+            "prevalence": 0.00111,
             "cnames": [
                 {
                     "original": "c.bing.com",
                     "resolved": "c-bing-com.a-0001.a-msedge.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "8f84c4ced509262009163e45994b45ed7ee9d4dbac88674be5f2db5c9e5be38e"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "microsoft.com",
                 "azure.microsoft.com",
-                "bing.com",
+                "dotnet.microsoft.com",
+                "news.microsoft.com",
                 "office.com",
                 "office.live.com",
-                "techcommunity.microsoft.com",
+                "powerbi.microsoft.com",
                 "windows.microsoft.com",
                 "www.bing.com",
                 "www.microsoft.com",
-                "www.office.com",
-                "www.xbox.com"
+                "www.office.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/bat\\.js",
+            "cookies": 0.000303,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bat-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [
+                {
+                    "original": "bat.bing.com",
+                    "resolved": "bat-bing-com.a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "30153b15b4cb898c421e657f6de21dc27435cb990e7888367bdee12e06398da7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_uetsid": {
+                    "ttl": 86406,
+                    "length": 32,
+                    "prevalence": 0.00030333670374115267,
+                    "uniqueness": 1
+                },
+                "_uetvid": {
+                    "ttl": 33696006,
+                    "length": 32,
+                    "prevalence": 0.00030333670374115267,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "microsoft.com",
+                "powerbi.microsoft.com",
+                "www.microsoft.com"
             ]
         },
         {
@@ -64,8 +112,8 @@
                 "bat-bing-com.a-0001"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
                 {
                     "original": "bat.bing.com",
@@ -78,21 +126,78 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_uetsid": 0.00020046106043900973,
-                "_uetvid": 0.00020046106043900973,
-                "IR_gbd": 0.00010023053021950487
+                "_uetsid": 0.00030333670374115267,
+                "_uetvid": 0.00030333670374115267,
+                "IR_gbd": 0.00010111223458038423
             },
             "exampleSites": [
                 "microsoft.com",
+                "powerbi.microsoft.com",
                 "www.microsoft.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/p\\/action\\/4000034\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bat-bing-com.a-0001"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "bat.bing.com",
+                    "resolved": "bat-bing-com.a-0001.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "4657168fd3c24a280c873596813c9aa0ba7940e478d777176112566a9a53012b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "microsoft.com",
+                "www.microsoft.com"
+            ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/segments\\/recoitems\\/LiveRampObjectStoreCaller",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-msn-com.a-0003"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "api.msn.com",
+                    "resolved": "api-msn-com.a-0003.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "37d3bbf8dd241c04515a4d2fdafae36eca0f33d6bf1fbd95ba94e9ab1df22677"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "www.msn.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000902,
+    "cookies": 0.00091,
     "types": {
-        "Image": 13
+        "Image": 14,
+        "Script": 5,
+        "Fetch": 2
     },
     "nameservers": []
 }

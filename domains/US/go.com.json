@@ -7,46 +7,82 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000949,
-    "sites": 14,
+    "prevalence": 0.000123,
+    "sites": 18,
     "subdomains": [
+        "sw88",
         "cdn.registerdisney",
+        "log",
         "unid",
-        "log"
+        "go4.disney"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "go\\.com\\/id",
+            "cookies": 0.000041,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sw88"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000041,
+            "cnames": [],
+            "responseHashes": [
+                "92b6c477e34f210039a980cdc9eef08074a29894ba4fdb0abbe1694eb6c5130c",
+                "8c1847ab974aca31e5896e68d3251b4dbe4f82e1dcc92bc9b48712a434a604c5",
+                "b96a01727cc3793e787e7a092475caaae3fc7cf5858acbfe5ff80a1eb93ea908",
+                "e63bd378277b892defc5f5f5371e2171f0f6fde4bf67b7fedfd89b2d5877ee7f",
+                "d21d11346e0cecbced06f485ce5a6025ff0764f1a10704d215929dfaa8f89ff0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "d23expo.com",
+                "d23.com",
+                "www.adventuresbydisney.com",
+                "www.disneyholidays.com",
+                "www.disneytravelagents.com",
+                "www.rundisney.com"
+            ]
+        },
+        {
             "rule": "go\\.com\\/v4\\/OneID\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.000041,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Document.cookie getter": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie setter": 2
+                "Navigator.prototype.userAgent": 6,
+                "Document.cookie getter": 7,
+                "Document.cookie setter": 6
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 7,
+            "prevalence": 0.0000478,
             "cnames": [],
             "responseHashes": [
-                "5b8fea21185226e2329ffced43ed0ec80caa24fa0cec77e018f7dbe80cdc65a0"
+                "07ef1c3772d04a9752879d29c81a3e08b5fcdd3e982c2a5f5e447486fd60cd0f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "SWID": {
-                    "ttl": 31536013,
+                    "ttl": 31536015,
                     "length": 36,
-                    "prevalence": 0.000013555829684555844,
+                    "prevalence": 0.00003412619868272873,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "d23.com",
+                "disneyrewards.com",
+                "getaccnetwork.com",
+                "www.disneygiftcard.com",
+                "www.disneymovieinsiders.com",
                 "www.natgeotv.com",
                 "www.shopdisney.co.uk"
             ]
@@ -59,19 +95,45 @@
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 5
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
-                "1a841e25b63c0cfedd0d71564ce67fe3007fc3c5eb071fae0d11e5e894fba6c7"
+                "3a690e7d5df86547d51def8e9c46605c4d1d42d67d52c38534dceec85bb4450a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "d23.com",
+                "disneyrewards.com",
+                "getaccnetwork.com",
+                "www.disneygiftcard.com",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/log",
+            "cookies": 0.0000205,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000205,
+            "cnames": [],
+            "responseHashes": [
+                "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "getaccnetwork.com",
+                "www.disneygiftcard.com",
                 "www.shopdisney.co.uk"
             ]
         },
@@ -85,7 +147,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000137,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -99,130 +161,174 @@
             ]
         },
         {
-            "rule": "go\\.com\\/v2\\/outer\\/DisneyID\\.js",
+            "rule": "go\\.com\\/",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "cdn.registerdisney"
+                "go4.disney"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000273,
             "cnames": [],
             "responseHashes": [
-                "0f7a5ac612d50ae7a04ffe20f16d22791098b40a0d118822e7c681aa3459da0d"
+                "101b6829c87904a15e4b67e89e6b5ee3e563c53f65cab75275adb074090ffd0a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
+                "adventuresbydisney.com",
+                "www.disneyholidays.com",
+                "www.disneytravelagents.com",
+                "www.rundisney.com"
             ]
         },
         {
-            "rule": "go\\.com\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-US",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "go\\.com\\/jsaf\\/v\\/stable\\/framework-top\\.min\\.js",
+            "cookies": 0.0000137,
+            "fingerprinting": 2,
             "subdomains": [
-                "cdn.registerdisney"
+                "go4.disney"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.orientation": 1,
+                "Screen.prototype.colorDepth": 1,
+                "window.devicePixelRatio": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000137,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "abc24eab601cb14c6431820d937ada762cf24baa90f1b8021362494b00be767b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "AMCV_EDA101AC512D2B230A490D4C%40AdobeOrg": {
+                    "ttl": 63158406,
+                    "length": 264,
+                    "prevalence": 0.000013650479473091493,
+                    "uniqueness": 1
+                },
+                "mbox": {
+                    "ttl": 63244802,
+                    "length": 77,
+                    "prevalence": 0.000013650479473091493,
+                    "uniqueness": 1
+                },
+                "AMCVS_EDA101AC512D2B230A490D4C%40AdobeOrg": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013650479473091493,
+                    "uniqueness": 0.5
+                },
+                "mboxEdgeCluster": {
+                    "ttl": 1861,
+                    "length": 2,
+                    "prevalence": 0.000006825239736545746,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
+                "adventuresbydisney.com",
+                "www.disneyholidays.com"
             ]
         },
         {
-            "rule": "go\\.com\\/v2\\/responder\\/responder\\.js",
+            "rule": "go\\.com\\/jsaf\\/v\\/stable\\/framework-bottom\\.min\\.js",
+            "cookies": 0.0000137,
+            "fingerprinting": 2,
+            "subdomains": [
+                "go4.disney"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.appName": 2,
+                "Document.cookie getter": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000137,
+            "cnames": [],
+            "responseHashes": [
+                "409fdeca84d119dc1a9f6af48ed05243d4136c82d2b73b764dd8ab45a3fe684b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "s_sess": {
+                    "ttl": null,
+                    "length": 146,
+                    "prevalence": 0.000013650479473091493,
+                    "uniqueness": 1
+                },
+                "s_pers": {
+                    "ttl": 1807,
+                    "length": 88,
+                    "prevalence": 0.000013650479473091493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adventuresbydisney.com",
+                "www.disneyholidays.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v4\\/responder\\.JS",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000137,
             "cnames": [],
             "responseHashes": [
-                "1df11a1d2bc17e9f23de253636d6ce0bbb26ce366438599e9feaba58425af395"
+                "3a690e7d5df86547d51def8e9c46605c4d1d42d67d52c38534dceec85bb4450a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/v4\\/bundle\\/web\\/WDI-UK\\.TDS\\.AB3\\.NONBRANDED\\.WEB\\/en-UK",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn.registerdisney"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8570c05368e317e99110d2e536ed1410c791d71892d52c53265a10d3b34e4f7b"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopdisney.co.uk",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/log",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "log"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "shopdisney.co.uk",
-                "www.shopdisney.co.uk"
+                "disneymovieinsiders.com",
+                "www.natgeotv.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000474,
+    "cookies": 0.000102,
     "types": {
-        "Script": 9,
-        "Other": 2,
-        "Document": 4,
-        "XHR": 2
+        "XHR": 9,
+        "Script": 22,
+        "Other": 2
     },
     "nameservers": [
         "ns1.twdcns.com",

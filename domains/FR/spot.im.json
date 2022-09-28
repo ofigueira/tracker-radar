@@ -9,39 +9,80 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.00306,
+    "sites": 30,
     "subdomains": [
-        "direct-events-collector",
-        "publisher-assets",
         "api-2-0",
-        "static-cdn",
+        "publisher-assets",
+        "direct-events-collector",
         "pix",
-        "metrics-logger"
+        "launcher",
+        "static-cdn"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "rule": "spot\\.im\\/pixels\\/ayl_pixel",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "direct-events-collector"
+                "api-2-0"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 27,
+            "prevalence": 0.00275,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
-                "www.dailydot.com",
+                "ccm.net",
+                "jardinage.lemonde.fr",
+                "monjardinmamaison.maison-travaux.fr",
+                "www.entreparticuliers.com",
+                "www.pleinevie.fr",
+                "www.science-et-vie.com",
+                "www.maison-travaux.fr",
+                "www.lejdd.fr",
+                "votreargent.lexpress.fr",
+                "serieophile.fr",
+                "www.mariefrance.fr",
+                "www.senscritique.com",
+                "generationvoyage.fr",
+                "www.motoplanete.com",
+                "www.wowisclassic.com",
+                "www.autojournal.fr",
+                "www.air-journal.fr",
+                "dirigeant.societe.com",
+                "www.cuisineaz.com",
+                "www.aidedd.org"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
+            "cookies": 0.000306,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000306,
+            "cnames": [],
+            "responseHashes": [
+                "edb45f79ece468196ec78c5292cc152c2028a69101120f1bba18e0bac81f6de0",
+                "225a76d3ab630dffc77ad2d4271abca68282d2c72fb225ca2e2a7ca952fb192f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
                 "www.dexerto.fr"
             ]
         },
@@ -53,40 +94,108 @@
                 "publisher-assets"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000407,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
+                "dailydot.com",
                 "www.dailydot.com",
+                "www.dexerto.com",
                 "www.dexerto.fr"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/device-load",
-            "cookies": 0.000301,
+            "rule": "spot\\.im\\/api\\/v2\\/events",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-2-0"
+                "direct-events-collector"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000306,
             "cnames": [],
             "responseHashes": [
-                "4f5155f9362536a10a63b0dae892af7d9b60a935c5af8787f04b42a2bf069eee",
-                "e30452896264a51b4c763e63a37d26f6734ef427977389f595d9d82d211b88a6"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
-                "www.dailydot.com",
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.dexerto.fr"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/api\\/v1\\/pixels",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pix"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000306,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.dexerto.fr"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/spot\\/sp_1kH6jnBV",
+            "cookies": 0.000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "launcher"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "2e0a3051d54576ca586be0db027fb52c3cea2c34c08622589acc48c4b018dd1d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_dd_s": {
+                    "ttl": 917,
+                    "length": 4,
+                    "prevalence": 0.00020368672980955292,
+                    "uniqueness": 0.5
+                },
+                "spotim_visitId": {
+                    "ttl": 1823,
+                    "length": 129,
+                    "prevalence": 0.00020368672980955292,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexerto.com",
                 "www.dexerto.fr"
             ]
         },
@@ -99,7 +208,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
                 "769317f76d7d2670d9445ac516c6888967c310c6c4df441799946b37bf8d8af8"
@@ -108,34 +217,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
+                "dexerto.com",
                 "www.dexerto.fr"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/authenticate",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-2-0"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "3331faf3e1312b4c2f265077d3025e0091f97d52316e8f4cf359d7ab17d35101"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techraptor.net",
-                "www.dexerto.fr"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/authenticate",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_1kH6jnBV\\/no_post",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -143,42 +230,42 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "0b54a17fa894a2cac645b2ae48311f7ad3a31d7c2f9da104605472fbf4d92cf9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexerto.com",
+                "www.dexerto.fr"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/config\\/ab_test\\/sp_1kH6jnBV\\/no_post",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-2-0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
+                "dexerto.com",
                 "www.dexerto.fr"
             ]
         },
         {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.4\\.0\\/ads\\/ads\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "74d21e26af3345fe049a05c82330e3a1b496890c34225839deb65aef06e2b74e"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techraptor.net",
-                "www.dexerto.fr"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.4\\.0\\/ads\\/ads\\.js",
-            "cookies": 0.000201,
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.6\\.2\\/ads\\/ads\\.js",
+            "cookies": 0.000204,
             "fingerprinting": 1,
             "subdomains": [
                 "static-cdn"
@@ -193,28 +280,50 @@
                 "PerformanceTiming.prototype.navigationStart": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "ae42bdef694e3c18d74cb5db5626c50b746c88263f21d3a793af79f33e60dac5"
+                "f8d3c85c409b217ab7cb7bea8f4bfa692eb7cc7c021d2c04423a0a494949dbfb"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_dd_s": {
-                    "ttl": 906,
+                    "ttl": 926,
                     "length": 4,
-                    "prevalence": 0.00020064205457463884,
-                    "uniqueness": 1
+                    "prevalence": 0.00020368672980955292,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
+                "dexerto.com",
                 "www.dexerto.fr"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/realtime\\/read",
+            "rule": "spot\\.im\\/production\\/ads\\/tags\\/v21\\.6\\.2\\/ads\\/ads\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "005a7d1c0485bc96f56665d505aa2ab5bdd123b7822896bf6f38286a6739d81c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexerto.com",
+                "www.dexerto.fr"
+            ]
+        },
+        {
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_1kH6jnBV\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -222,21 +331,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "3331faf3e1312b4c2f265077d3025e0091f97d52316e8f4cf359d7ab17d35101"
+                "735f916beb638dce6bab9cca3c9e2731a74cc3ff45b325e5f5331f9bb583d79f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
+                "dexerto.com",
                 "www.dexerto.fr"
             ]
         },
         {
-            "rule": "spot\\.im\\/v1\\.0\\.0\\/conversation\\/realtime\\/read",
+            "rule": "spot\\.im\\/v1\\.0\\.0\\/owa-gw\\/spot\\/sp_1kH6jnBV\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -244,76 +353,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techraptor.net",
-                "www.dexerto.fr"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/api\\/v1\\/pixels",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pix"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "techraptor.net",
-                "www.dailydot.com",
-                "www.dexerto.fr"
-            ]
-        },
-        {
-            "rule": "spot\\.im\\/metric",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "metrics-logger"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dexerto.fr",
+                "dexerto.com",
                 "www.dexerto.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000306,
     "types": {
+        "Image": 27,
+        "Fetch": 13,
         "XHR": 3,
-        "Fetch": 14,
+        "Ping": 3,
+        "Script": 4,
         "Preflight": 4,
-        "Stylesheet": 2,
-        "Script": 2,
-        "Ping": 3
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-802.awsdns-36.net",
         "ns-1202.awsdns-22.org",
+        "ns-2018.awsdns-60.co.uk",
         "ns-34.awsdns-04.com",
-        "ns-2018.awsdns-60.co.uk"
+        "ns-802.awsdns-36.net"
     ]
 }

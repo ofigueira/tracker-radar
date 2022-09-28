@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000501,
+    "prevalence": 0.000505,
     "sites": 5,
     "subdomains": [
         "mediaauth",
-        "js-cdn-music-lb"
+        "js-cdn-music-lb",
+        "xp"
     ],
     "cnames": [
         {
@@ -23,6 +24,10 @@
         {
             "original": "mediaauth.apple.com",
             "resolved": "mediaauth.itunes-apple.com.akadns.net"
+        },
+        {
+            "original": "xp.apple.com",
+            "resolved": "xp.itunes-apple.com.akadns.net"
         }
     ],
     "fingerprinting": 2,
@@ -36,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "mediaauth.apple.com",
@@ -55,6 +60,33 @@
             ]
         },
         {
+            "rule": "itunes-apple\\.com\\.akadns\\.net\\/musickit\\/v3\\/amp\\/auth-bridge\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js-cdn-music-lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "js-cdn.music.apple.com",
+                    "resolved": "js-cdn-music-lb.itunes-apple.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "f90d0406148796b60aec2a0291c5931a05ebae66ceacc1428286fd6fd5414dad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apple.com",
+                "tv.apple.com"
+            ]
+        },
+        {
             "rule": "itunes-apple\\.com\\.akadns\\.net\\/musickit\\/v3\\/components\\/musickit-components\\/assets\\/icons\\/stop\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -63,7 +95,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "js-cdn.music.apple.com",
@@ -90,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "js-cdn.music.apple.com",
@@ -107,16 +139,43 @@
                 "apple.com",
                 "tv.apple.com"
             ]
+        },
+        {
+            "rule": "itunes-apple\\.com\\.akadns\\.net\\/report\\/2\\/xp_amp_tv_perf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "xp.apple.com",
+                    "resolved": "xp.itunes-apple.com.akadns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apple.com",
+                "tv.apple.com"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0002,
+    "cookies": 0.000202,
     "types": {
         "Document": 2,
-        "Fetch": 4
+        "Script": 2,
+        "Fetch": 4,
+        "XHR": 2
     },
     "nameservers": []
 }

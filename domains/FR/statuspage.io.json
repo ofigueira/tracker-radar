@@ -7,17 +7,19 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000815,
+    "sites": 8,
     "subdomains": [
         "dn6mqn7xvzz3",
         "5b4dcn321xtp",
-        "t34htyd6jblf",
+        "z8s4n2jmrsl0",
+        "x2m8rwtfjg4j",
         "gp2tp03j16xq",
+        "l4wxddfpxjw0",
         "2p66nmmycsj3"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "statuspage\\.io\\/api\\/v2\\/summary\\.json",
@@ -29,10 +31,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "a8a37ffc74ee186be7ac09254772e6fb053b5ba871fe90dfb84eb29d1f76bc8f"
+                "3f37e50fbb065b24db4c08fd0a4734ae02f81fd40fa575851ee179b9c9466875"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -43,29 +45,123 @@
             ]
         },
         {
+            "rule": "statuspage\\.io\\/embed\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "z8s4n2jmrsl0",
+                "x2m8rwtfjg4j"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "5a0f5b5c464f87be27cf820514a408991e4cc95e4e16012388a90443d712c9be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradle.org",
+                "forums.plex.tv"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/embed\\/frame",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "z8s4n2jmrsl0",
+                "x2m8rwtfjg4j"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "fb76647854308884adad968a231ee160f4c3267434a3d953a80ca0d7149aabc8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradle.org",
+                "forums.plex.tv"
+            ]
+        },
+        {
             "rule": "statuspage\\.io\\/api\\/v2\\/status\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "t34htyd6jblf",
                 "gp2tp03j16xq",
+                "l4wxddfpxjw0",
                 "2p66nmmycsj3"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000306,
             "cnames": [],
             "responseHashes": [
-                "b84b20e33849cd3f7d72685b99f71cdb31b2211af879f8f9cdbb7099b0b38ba9",
-                "1dd8e88f3e5e6973024a1cb9ca6ba6b2d852eaf6a4f843dd5a22825be9e82237"
+                "a098d9a26782efb9031280f101f1fc58029aa147d9e41d1853eb7d1bebd0e2da",
+                "b741ae6075e9f64a58a3fb811cdbcd2e0b93458608669f2e9e1a023027f1b39f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dropbox.com",
-                "mail.ionos.fr",
+                "ionos.fr",
+                "mail.ionos.com",
                 "www.python.org"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/api\\/v2\\/scheduled-maintenances\\/active\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gp2tp03j16xq",
+                "l4wxddfpxjw0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "5bac25d4e141a80e0d15c044c7e988c881d4ec94199e72c9f57778c1e9ad9c8d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ionos.fr",
+                "mail.ionos.com"
+            ]
+        },
+        {
+            "rule": "statuspage\\.io\\/api\\/v2\\/incidents\\/unresolved\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gp2tp03j16xq",
+                "l4wxddfpxjw0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "6f1ea14beeba5ff053a5e683d228dd846962f535d9ffbe769d0b6155998b9228"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ionos.fr",
+                "mail.ionos.com"
             ]
         }
     ],
@@ -73,12 +169,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 5
+        "XHR": 9,
+        "Script": 2,
+        "Document": 2
     },
     "nameservers": [
+        "ns-1560.awsdns-03.co.uk",
         "ns-209.awsdns-26.com",
         "ns-951.awsdns-54.net",
-        "ns-1407.awsdns-47.org",
-        "ns-1560.awsdns-03.co.uk"
+        "ns-1407.awsdns-47.org"
     ]
 }

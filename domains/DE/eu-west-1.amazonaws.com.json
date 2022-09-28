@@ -9,28 +9,29 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0017,
-    "sites": 17,
+    "prevalence": 0.00222,
+    "sites": 22,
     "subdomains": [
         "o9tt6h08li.execute-api",
-        "cognito-identity"
+        "cognito-identity",
+        "web-chat-tag-cdn.s3"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "eu-west-1\\.amazonaws\\.com\\/v1\\/event",
-            "cookies": 0.0002,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "o9tt6h08li.execute-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "723367da9b2d057db1d55d7843488402df82deda00b650d7ac6feafda9c03fcd"
+                "89c7341aee4d8c0270528e25e6bcc54b735cef4d073821445915f11d7ee47354"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -48,18 +49,114 @@
                 "cognito-identity"
             ],
             "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "miro.com",
+                "new.siemens.com",
+                "www.aeg.de",
+                "www.sky.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "666356db0c6f4a551cb7d663b43781d324c8d1109915aa03e9827efc0373805b"
+                "beaeef1850e52947c06b903a6137e80b9dfbaa16f4143867d4befa6476ee0db4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "siemens.com",
+                "miro.com",
                 "new.siemens.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "530eba996711b4d5fe31c5f07beb71a89633675f6f19c158af689b4793af2317",
+                "9ab17ed37256fa3e8bc3fa5fe74441559bc954b8aad7c9dd509699bc1c708a2c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeg.de",
+                "www.aeg.de",
+                "www.sky.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/live\\/chat-live\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "web-chat-tag-cdn.s3"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c99ac784d78f248daa45f38b0becc14fb593ea41f97b5a5aaae9dacb5ccc4671"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.com",
+                "www.hellofresh.de"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/live\\/core-bubble\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-chat-tag-cdn.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "850a2ea94206dbdaf02a7c71999b5c3441b485f0732bf8cfaf4e19e2af64311d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.com",
+                "www.hellofresh.de"
             ]
         }
     ],
@@ -67,24 +164,26 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000303,
     "types": {
-        "XHR": 2,
-        "Fetch": 2
+        "XHR": 5,
+        "Preflight": 4,
+        "Fetch": 2,
+        "Script": 4
     },
     "nameservers": [
-        "u1.amazonaws.com",
-        "u2.amazonaws.com",
-        "u3.amazonaws.com",
-        "u4.amazonaws.com",
-        "u5.amazonaws.com",
-        "u6.amazonaws.com",
         "ns1.p31.dynect.net",
         "ns2.p31.dynect.net",
         "ns3.p31.dynect.net",
         "ns4.p31.dynect.net",
         "pdns1.ultradns.net",
         "pdns3.ultradns.org",
-        "pdns5.ultradns.info"
+        "pdns5.ultradns.info",
+        "u1.amazonaws.com",
+        "u2.amazonaws.com",
+        "u3.amazonaws.com",
+        "u4.amazonaws.com",
+        "u5.amazonaws.com",
+        "u6.amazonaws.com"
     ]
 }

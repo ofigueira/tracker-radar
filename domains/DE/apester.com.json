@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000601,
-    "sites": 6,
+    "prevalence": 0.000708,
+    "sites": 7,
     "subdomains": [
         "static",
-        "events",
         "sdk",
+        "events",
+        "sdk-canary",
         "renderer",
         "interaction"
     ],
@@ -27,48 +28,56 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.language": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.width": 4,
                 "Date.prototype.getTime": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
-            "responseHashes": [
-                "8fcc9aa9e1948f6ca8b2076abde54d65e0cbf87a3334a3a83964d5fc5f90a20e"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "itsfoss.com",
                 "www.kicker.de",
+                "www.mopo.de",
                 "www.vip.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/event",
+            "rule": "apester\\.com\\/web-sdk\\.core\\.legacy\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "events"
+                "sdk"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.language": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1
+            },
             "sites": 6,
-            "prevalence": 0.000601,
+            "prevalence": 0.000607,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "23f9b38d40ddf801a55930d05c0b1de17fb99f919287c2d141daaab16f22a02a",
+                "d56733b5d7adba397575fa516351720f373e2027a6309e475de82a2e901e114f"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "itsfoss.com",
+                "www.bfv.de",
                 "www.kicker.de",
-                "www.musikexpress.de",
-                "www.rollingstone.de",
+                "www.mopo.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
@@ -81,8 +90,33 @@
                 "events"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000601,
+            "sites": 7,
+            "prevalence": 0.000708,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itsfoss.com",
+                "www.bfv.de",
+                "www.kicker.de",
+                "www.mopo.de",
+                "www.musikexpress.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000708,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -92,33 +126,33 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "itsfoss.com",
+                "www.bfv.de",
                 "www.kicker.de",
+                "www.mopo.de",
                 "www.musikexpress.de",
-                "www.rollingstone.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.346db69cc8d36167d0c3\\.Monetization\\.min\\.js",
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.3d0daea7471d9af9ae7c\\.Monetization\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "sdk"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "d2aa1d6eb3da4e1d3c6f1d49f5321309b1f45e05f33da1d31c0bc18e92bf3aac"
+                "84654e5dcc1d5e559299669075acca873fff7ed34621e64af666d3c690e2a10d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kicker.de",
-                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
@@ -127,11 +161,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "sdk-canary",
                 "sdk"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "27bd58ace81298f73ac767552b641e3d40596160ecfe85847e179dfd717916ce"
@@ -140,77 +175,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.4fb86c64585e6a470a71\\.255\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "c4475d773ec611b10f19330b7ee711a8b999c30f01cba1ca5a695cedb0978c0e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.4ec8e56a6d5493905c0a\\.Aniview\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "adcabfe0341482f300f1735381c9c4edadf3e3cd0047b9af4793f39bf5820e02"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.a2e0cb90532ac19c44fe\\.Magnite\\.min\\.js",
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.32f22d791cede5923397\\.Magnite\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
+                "sdk-canary",
                 "sdk"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "0e6c65ee7ccf3a4359cbc633ab148fcda44e7db99e7d3af6287c083ab48edefd"
+                "68b39e2f273241bb6b5aa1356cd5e72dbdeb875cdb64313486eaedee1f495f1e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
@@ -222,8 +212,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "5e76c85f466ea1d63394b8cc0bc66a7e7e1eca012fe93aff25db58ddb09bd368"
@@ -232,79 +222,76 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/main\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/main\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "renderer"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Screen.prototype.availHeight": 3,
-                "Screen.prototype.availWidth": 3,
-                "window.localStorage": 3,
-                "window.innerHeight": 3,
-                "window.innerWidth": 3,
-                "Navigator.prototype.language": 3,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.language": 2,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "2c427e8ebb592d1309dca9013065fd8b6cb706582684e59b651a249cfe2e0b28"
+                "09514bb25010b7acafa2fe930d06b5c3a3f7e028f2905151ffc49696378ae522"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/runtime\\.4d769fe281a2a7b9ce6c\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/runtime\\.264edd7cb6e76ad88d8d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "b3cafeffcc753d30a0ce2ba2389ea25806ee473645ba173337c87f3d05ec3f61"
+                "330b945354d5340646abc3fd013a5dc449402a2c401f44a3a4210e651e5d399d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendor\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendor\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "renderer"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.userAgent": 2,
                 "Event.prototype.timeStamp": 2
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "22a5958dc9e0d640cb42c749917c3c52f1b77736545e70ce03fc36b2d735a4a1"
@@ -313,65 +300,20 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/assets\\/iconPoll\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "3671237ea79234ad92aaa907313d27edfbd32f8fd194a334cf952b032f7f668e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/assets\\/logoWhite\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "c4a0fb4da7f6db6ea3be9b26968272fd292b94084b4f85652c21a91e106613ff"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/adsbygoogle\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/adsbygoogle\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "d6b87189f2250ea0dcdbb2ddace715469013a7f2c2b5d3861df3fb449839c621"
@@ -380,8 +322,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
@@ -393,8 +334,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "93f389802e0b01b5557630ca3cb9409c869b1899b19cb8f37f27ce0af6970238"
@@ -403,366 +344,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
+                "vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~3d8d2281\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~0ecdca87\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/AnimationComponent\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableInteractiveElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~CoverButton~SeeMore~Utility~textElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/videoElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableVideoElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {
-                "window.innerHeight": 2,
-                "window.innerWidth": 2
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableBUTTONElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableImageElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableStickerElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableTextElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kicker.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.core\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "f2d248f72e69ee21df0bd24ada5a4e99a5f4a990b0e53061b7e8bbb5edf96e4c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "musikexpress.de",
-                "www.rollingstone.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~EEFeedback~MainLayout~VideoFrameContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~EEFeedback~MainLayout~VideoFrameContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -770,7 +357,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "4741b8a9d3a130a0e20a55e17a06d355b7a322eb44416777a87eb7d6a86c81aa"
@@ -784,7 +371,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/EEFeedback~MainLayout~VideoFrameContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/EEFeedback~MainLayout~VideoFrameContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -792,7 +379,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "2142d0f9baa2beaea7355ae1b98bcf996a0cd5938e8313646504d4e082dd1f62"
@@ -806,7 +393,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~VideoFrameContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~VideoFrameContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -814,7 +401,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "098fa7c41f109f5495cc106d656d989cc55cd9b1c6b81f3cb7fe317812781d74"
@@ -828,7 +415,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~monContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~monContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -836,10 +423,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "d69c3f14c1526e41d27495d23f94b3ae5db9ee17c4808f7a7873847e22312ffe"
+                "a124275a36a1508c80707fc0c55dac8362a1d51103f62367c5cd02355eb1ca8c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -850,7 +437,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/MainLayout\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/MainLayout\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -858,10 +445,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "1cc00c4736988f08dc2cae929fef9617aa6e5180ef52e00f95121a92b0a7bdeb"
+                "a9cf702d9b9462c1eeef5604a169463cac937fdd8ca4bdd3c996d90a28982fdb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -872,7 +459,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~3d8d2281\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -880,12 +467,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "9bce2754fbab097f40858871cf6500e1d0c73dd82585210a08f7ff227a862802"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Script",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -894,7 +481,183 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~0ecdca87\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/AnimationComponent\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableInteractiveElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~CoverButton~SeeMore~Utility~textElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/videoElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableVideoElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -905,7 +668,142 @@
                 "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableBUTTONElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableImageElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableStickerElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableTextElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d1fd49755117e80068ef268e06664f2ab3dc7a227bb7201902f96fe21631edfd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "d296743ecbe68f6fac64742318657b50131fba4ef904d8bc4335320477d2f9b2"
@@ -919,29 +817,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "a377bdc13c35180baf2ad6e3781c3fb1b7869373c0cbf803a0db854d428a6c67"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~monContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~monContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -951,7 +827,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "e1fc4bd045280071a9e8448eaadeee58eeaef58c7f83523f456c9add1487fb40"
@@ -965,7 +841,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/monContainer\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/monContainer\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -973,7 +849,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "0371d0d8dfbb6839a2f6a2f8db5fe712a0730ad651d9b04bb7563e9178f9dba6"
@@ -987,7 +863,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/Statistics-init\\.4d769fe281a2a7b9ce6c\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/Statistics-init\\.264edd7cb6e76ad88d8d\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -995,7 +871,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "062e8651e39e90a8e4dfc1347423c2883872b84ef48765623ae7b3d3ce5131e5"
@@ -1020,7 +896,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "8bc07128346828549f0e7d8f4f8a5cdfff19779ae01bd916d5ca047b5565135f"
@@ -1034,7 +910,7 @@
             ]
         },
         {
-            "rule": "apester\\.com\\/interaction-stats\\/6281f0abfa6e21002b77e3c1",
+            "rule": "apester\\.com\\/interaction-stats\\/6242dda89027c2002ac11719",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1042,11 +918,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [
-                "6dfd0592593ad0404e0b98997fb2842a94d109feedfcbdc2c0f7341f7d2ae5c0"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1060,19 +934,18 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 54,
-        "Preflight": 6,
-        "XHR": 6,
-        "Stylesheet": 3,
-        "Image": 4,
-        "Document": 3,
-        "Other": 42,
+        "Script": 46,
+        "Preflight": 7,
+        "XHR": 7,
+        "Stylesheet": 2,
+        "Document": 2,
+        "Other": 28,
         "Fetch": 2
     },
     "nameservers": [
         "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c2.googledomains.com"
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com"
     ]
 }

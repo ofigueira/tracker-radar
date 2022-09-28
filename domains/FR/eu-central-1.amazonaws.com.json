@@ -9,45 +9,44 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000713,
+    "sites": 7,
     "subdomains": [
-        "fraaws-public-slb-ec53ddffde80b088.elb",
-        "cognito-identity"
+        "cf-proxy-hcp-live-eu10-33e33aae450c8486.elb",
+        "cognito-identity",
+        "s3aa2hjgc8.execute-api"
     ],
     "cnames": [
         {
-            "original": "chloro.trip.com",
-            "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+            "original": "webanalytics.cfapps.eu10.hana.ondemand.com",
+            "resolved": "cf-proxy-hcp-live-eu10-33e33aae450c8486.elb.eu-central-1.amazonaws.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/v2\\/d",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
+            "rule": "eu-central-1\\.amazonaws\\.com\\/tracker\\/js\\/privacy\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "fraaws-public-slb-ec53ddffde80b088.elb"
+                "cf-proxy-hcp-live-eu10-33e33aae450c8486.elb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [
                 {
-                    "original": "chloro.trip.com",
-                    "resolved": "fraaws-public-slb-ec53ddffde80b088.elb.eu-central-1.amazonaws.com"
+                    "original": "webanalytics.cfapps.eu10.hana.ondemand.com",
+                    "resolved": "cf-proxy-hcp-live-eu10-33e33aae450c8486.elb.eu-central-1.amazonaws.com"
                 }
             ],
-            "responseHashes": [
-                "149377b476fa8abaa966d8e9612df36114d074ebc06c78419092cae401110f11"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trip.com",
-                "www.trip.com"
+                "sap.com",
+                "blogs.sap.com"
             ]
         },
         {
@@ -59,7 +58,29 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "65371366c81f106e4e1e16f54cbf09ed2a4378da8f91c8d62af9c3b650b8fc4f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sensiseeds.com",
+                "www.vetostore.com"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -71,25 +92,25 @@
             ]
         },
         {
-            "rule": "eu-central-1\\.amazonaws\\.com\\/",
+            "rule": "eu-central-1\\.amazonaws\\.com\\/default\\/websiteTracking",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cognito-identity"
+                "s3aa2hjgc8.execute-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000204,
             "cnames": [],
             "responseHashes": [
-                "cee4481cb7845af910884533b8cfa47979d60c3d0222f4eebad7d3870bd0002e"
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sensiseeds.com",
-                "www.vetostore.com"
+                "lessentiel.lu",
+                "www.lessentiel.lu"
             ]
         }
     ],
@@ -97,13 +118,13 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000306,
     "types": {
+        "Script": 2,
         "XHR": 4,
         "Preflight": 2
     },
     "nameservers": [
-        "ns1.p31.dynect.net",
         "ns2.p31.dynect.net",
         "ns3.p31.dynect.net",
         "ns4.p31.dynect.net",
@@ -115,6 +136,7 @@
         "u3.amazonaws.com",
         "u4.amazonaws.com",
         "u5.amazonaws.com",
-        "u6.amazonaws.com"
+        "u6.amazonaws.com",
+        "ns1.p31.dynect.net"
     ]
 }

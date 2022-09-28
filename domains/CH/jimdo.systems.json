@@ -4,12 +4,18 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
-        "at.prod"
+        "at.prod",
+        "feature-flags-proxy.prod"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "dolphin-feature-flags-proxy-prod.jimdo-platform.net",
+            "resolved": "feature-flags-proxy.prod.jimdo.systems"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -20,8 +26,31 @@
                 "at.prod"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jimdo.com",
+                "account.e.jimdo.com",
+                "www.jimdo.com"
+            ]
+        },
+        {
+            "rule": "jimdo\\.systems\\/rich",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "at.prod"
+            ],
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -35,20 +64,25 @@
             ]
         },
         {
-            "rule": "jimdo\\.systems\\/rich",
+            "rule": "jimdo\\.systems\\/feature-flags",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "at.prod"
+                "feature-flags-proxy.prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "dolphin-feature-flags-proxy-prod.jimdo-platform.net",
+                    "resolved": "feature-flags-proxy.prod.jimdo.systems"
+                }
             ],
-            "type": "Ping",
+            "responseHashes": [
+                "b73dcecfc39ffdbe508f47ae848acd38a490c9b2647e95dc385eb0091a54e49a"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,7 +95,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Ping": 4
+        "Ping": 5,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-1558.awsdns-02.co.uk",

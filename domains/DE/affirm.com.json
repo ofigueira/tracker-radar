@@ -7,42 +7,117 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
+        "cdn1",
+        "api-cf",
         "www"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "affirm\\.com\\/api\\/v2\\/cookie_sent",
-            "cookies": 0.0002,
-            "fingerprinting": 0,
+            "rule": "affirm\\.com\\/js\\/v2\\/affirm\\.js",
+            "cookies": 0.000303,
+            "fingerprinting": 2,
             "subdomains": [
-                "www"
+                "cdn1"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "apis": {
+                "console.memory": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.connection": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "window.localStorage": 3,
+                "window.devicePixelRatio": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8"
+                "f023b9c97cf8462f3f46e83d1097eee7f2d9d0c35efbf99fe6d51d54af3f8dea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1663717212,
+                    "length": 1,
+                    "prevalence": 0.00030333670374115267,
+                    "uniqueness": 0.3333333333333333
+                },
+                "tracker_device": {
+                    "ttl": 157680011,
+                    "length": 36,
+                    "prevalence": 0.00030333670374115267,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anker.com",
+                "www.bluettipower.com",
+                "www.denon.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.com\\/api\\/v2\\/session\\/touch_track",
+            "cookies": 0.000303,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-cf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "5a09a16574fbf033c954dbaa2179497139c4392986c84e2a3902b62ed68a17ae",
+                "3224541cf338e17b5fb523766ceff44bd0d162c66a4aac2093721885b623d57f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oakley.com",
-                "www.oakley.com"
+                "anker.com",
+                "www.bluettipower.com",
+                "www.denon.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.com\\/api\\/v2\\/cookie_sent",
+            "cookies": 0.000404,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8",
+                "924aebf24af414b12986f4af470b2ac7b61d765897f9e222c0af15805de9ae40"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anker.com",
+                "www.anker.com",
+                "www.bluettipower.com",
+                "www.denon.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000303,
     "types": {
-        "Fetch": 2
+        "Script": 3,
+        "Fetch": 7
     },
     "nameservers": [
         "ns-1463.awsdns-54.org",

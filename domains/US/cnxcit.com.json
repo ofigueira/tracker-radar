@@ -4,31 +4,78 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
+    "prevalence": 0.0000273,
     "sites": 4,
     "subdomains": [
-        "partycity.svcs"
+        "partycity.svcs",
+        "partycity-np.svcs"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "cnxcit\\.com\\/v1\\/bootloader\\.js",
-            "cookies": 0,
+            "rule": "cnxcit\\.com\\/v2\\/bootloader\\.js",
+            "cookies": 0.00000683,
             "fingerprinting": 1,
             "subdomains": [
                 "partycity.svcs"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000137,
             "cnames": [],
             "responseHashes": [
-                "8b4acd2cdd4e9d352ca396f3325a676f5f1b0bc9ce00c3314dce00760b30e8d8"
+                "c2d810a05f5bc2db1ba9fdf50f457bc749f522dad040cedffbe7a6540953e485"
             ],
             "type": "Script",
+            "firstPartyCookies": {
+                "firstEntry": {
+                    "ttl": 14400,
+                    "length": 45,
+                    "prevalence": 0.000006825239736545746,
+                    "uniqueness": 1
+                },
+                "chatMuted": {
+                    "ttl": 14400,
+                    "length": 5,
+                    "prevalence": 0.000006825239736545746,
+                    "uniqueness": 1
+                },
+                "chatOpened": {
+                    "ttl": 14400,
+                    "length": 5,
+                    "prevalence": 0.000006825239736545746,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partycity.com",
+                "www.partycity.com"
+            ]
+        },
+        {
+            "rule": "cnxcit\\.com\\/v2\\/assets\\/ding\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partycity-np.svcs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000137,
+            "cnames": [],
+            "responseHashes": [
+                "c25e51feb681e5b8575f517f0bba96ab3af7a441a9acfa4d617de54a156982b3"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -37,7 +84,7 @@
             ]
         },
         {
-            "rule": "cnxcit\\.com\\/v1\\/assets\\/ding\\.wav",
+            "rule": "cnxcit\\.com\\/v2\\/assets\\/chat\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -45,12 +92,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000137,
             "cnames": [],
             "responseHashes": [
-                "be2b406b703ab3e41e3975367f582d1e8a14654e04c2462ea1bc11a54b39e65b"
+                "3eb66add4b1d245d568ddd207619aa8953c94d3b9deb6e4953acbaa27a9ac918"
             ],
-            "type": "Media",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,10 +108,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.00000683,
     "types": {
         "Script": 2,
-        "Media": 2
+        "Media": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-466.awsdns-58.com",
