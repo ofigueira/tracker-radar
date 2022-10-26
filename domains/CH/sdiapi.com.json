@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000404,
-    "sites": 4,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
         "services",
         "reports"
@@ -24,12 +24,12 @@
                 "services"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 4,
-                "Navigator.prototype.vendor": 4,
-                "Navigator.prototype.platform": 4
+                "PerformanceTiming.prototype.navigationStart": 5,
+                "Navigator.prototype.vendor": 5,
+                "Navigator.prototype.platform": 5
             },
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 5,
+            "prevalence": 0.000505,
             "cnames": [],
             "responseHashes": [
                 "e19db3a5d5037a16ae4b34187d0e9aa28052b4e574d2a4825efc2424eb28b48f"
@@ -41,6 +41,7 @@
                 "blackrock.com",
                 "www.ishares.com",
                 "www.newegg.com",
+                "www.nutribullet.com",
                 "www.sigsauer.com"
             ]
         },
@@ -52,8 +53,8 @@
                 "reports"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000404,
+            "sites": 5,
+            "prevalence": 0.000505,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -65,6 +66,7 @@
                 "blackrock.com",
                 "www.ishares.com",
                 "www.newegg.com",
+                "www.nutribullet.com",
                 "www.sigsauer.com"
             ]
         },
@@ -115,11 +117,14 @@
         {
             "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.10\\/receiver\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "services"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "SharedWorker.prototype.constructor": 1
+            },
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
@@ -132,6 +137,29 @@
             "exampleSites": [
                 "blackrock.com",
                 "www.ishares.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/service\\/viceEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reports"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackrock.com",
+                "www.nutribullet.com",
+                "www.sigsauer.com"
             ]
         },
         {
@@ -186,8 +214,8 @@
                 "services"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "SharedWorker.prototype.constructor": 2
+                "Navigator.prototype.userAgent": 1,
+                "SharedWorker.prototype.constructor": 1
             },
             "sites": 2,
             "prevalence": 0.000202,
@@ -206,16 +234,17 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000202,
     "types": {
-        "Script": 12,
-        "XHR": 4,
-        "Document": 4
+        "Script": 13,
+        "XHR": 5,
+        "Document": 4,
+        "Fetch": 3
     },
     "nameservers": [
         "ns1024.ui-dns.de",
-        "ns1024.ui-dns.biz",
         "ns1024.ui-dns.org",
+        "ns1024.ui-dns.biz",
         "ns1024.ui-dns.com"
     ]
 }

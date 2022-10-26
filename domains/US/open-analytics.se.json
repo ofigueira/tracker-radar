@@ -4,22 +4,64 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000611,
+    "sites": 9,
     "subdomains": [
+        "tracker.vattenfall",
+        "tracker.msb",
         "tracker.transportstyrelsen"
     ],
     "cnames": [
         {
             "original": "open-analytics.hrw.org",
             "resolved": ".open-analytics.se"
+        },
+        {
+            "original": "statistics.vattenfall.com",
+            "resolved": "tracker.vattenfall.open-analytics.se"
+        },
+        {
+            "original": "tracking.webbanalys.msb.se",
+            "resolved": "tracker.msb.open-analytics.se"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "open-analytics\\.se\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker.vattenfall",
+                "tracker.msb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "statistics.vattenfall.com",
+                    "resolved": "tracker.vattenfall.open-analytics.se"
+                },
+                {
+                    "original": "tracking.webbanalys.msb.se",
+                    "resolved": "tracker.msb.open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "39f8b6731e23df7a10616f31ca468c2d3b84e92435b5702f33f56d1d3a6a914a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.com",
+                "www.msb.se"
+            ]
+        },
+        {
             "rule": "open-analytics\\.se\\/js\\/container_Z8n8vkKp\\.js",
-            "cookies": 0.0000137,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "tracker.transportstyrelsen"
@@ -42,36 +84,24 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cfa5bce076019c5fcb2d3ddf8fc599285527840658165e719fb3c3405ac007d6"
+                "c867fffcbdbe4ea6576b9605973ef33e14e547fc6e02807e9e5d10e95a32e858"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pk_id.1.0748": {
-                    "ttl": 33955205,
-                    "length": 28,
-                    "prevalence": 0.000006825239736545746,
-                    "uniqueness": 1
-                },
-                "_pk_ses.1.0748": {
-                    "ttl": 1804,
-                    "length": 1,
-                    "prevalence": 0.000006825239736545746,
-                    "uniqueness": 1
-                },
                 "_pk_id.1.625c": {
-                    "ttl": 33955202,
+                    "ttl": 33955203,
                     "length": 28,
-                    "prevalence": 0.000006825239736545746,
+                    "prevalence": 0.000013571651534275207,
                     "uniqueness": 1
                 },
                 "_pk_ses.1.625c": {
-                    "ttl": 1802,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.000006825239736545746,
-                    "uniqueness": 1
+                    "prevalence": 0.000013571651534275207,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -89,7 +119,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -111,10 +141,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f295cac6b93873e596bbadfe8187569d74dfb862d192bfcee8da3d9896f9161f"
+                "fd03c26bbcd6521cf1b185f490f4ce7b1df5c19f87f05de1e902bf7c959088b0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -131,7 +161,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000137,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "open-analytics.hrw.org",
@@ -139,7 +169,7 @@
                 }
             ],
             "responseHashes": [
-                "1bf8c92187cd74534cb75e4761e7015eadd7b05794e94544e9e20540ba0de7a6"
+                "050d868fa22756dc5090a7aac0d7120d6a3a2c6a47e9e4b0b1990eb27f012a73"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -153,14 +183,20 @@
             "rule": "open-analytics\\.se\\/matomo\\.php",
             "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [],
+            "subdomains": [
+                "tracker.msb"
+            ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "open-analytics.hrw.org",
                     "resolved": ".open-analytics.se"
+                },
+                {
+                    "original": "tracking.webbanalys.msb.se",
+                    "resolved": "tracker.msb.open-analytics.se"
                 }
             ],
             "responseHashes": [
@@ -171,19 +207,47 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hrw.org",
-                "www.hrw.org"
+                "www.hrw.org",
+                "www.msb.se"
+            ]
+        },
+        {
+            "rule": "open-analytics\\.se\\/js\\/container_F96Nf4nS\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tracker.msb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tracking.webbanalys.msb.se",
+                    "resolved": "tracker.msb.open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "255b1adb776528c4ce9791b4ed48f0048034f12448bad056dab19571e779ae15"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msb.se",
+                "www.msb.se"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000137,
+    "cookies": 0.0000271,
     "types": {
-        "Script": 6,
-        "Ping": 4
+        "Script": 10,
+        "Ping": 5
     },
     "nameservers": [
-        "ns1.dnshost.net",
-        "ns2.dnshost.net"
+        "ns2.dnshost.net",
+        "ns1.dnshost.net"
     ]
 }

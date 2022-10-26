@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00101,
+    "prevalence": 0.00103,
     "sites": 10,
     "subdomains": [
-        "b"
+        "b",
+        "captcha"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "px-cdn\\.net\\/api\\/v1\\/PXrf8vapwA\\/d\\/p",
@@ -23,22 +24,52 @@
                 "b"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000405,
+            "sites": 3,
+            "prevalence": 0.000308,
             "cnames": [],
             "responseHashes": [
-                "fa7e6f7398188385250bfef934fa2371ca7eb5932773d635209031cbfc13b09e",
-                "5ec631e143ad0dc0aa4957c7f1831b8a2d99d2fd17e2e5a7a951ac2d91f263dd",
-                "1a3e068a634456f6a76ec2639e7aba513f8566227d10556af6fe6539cb468291"
+                "4464b164191e515a0a00c64a8ad78071298a173c3a4a15f1888fef7a453e8b25",
+                "6fca67b4783455da3635479844abdbdd6033eb190df3d0f3d4ba02e6f3dbf921"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "skyscanner.com",
-                "www.skyscanner.ca",
+                "skyscanner.ca",
                 "www.skyscanner.com",
                 "www.skyscanner.net"
+            ]
+        },
+        {
+            "rule": "px-cdn\\.net\\/PXO4boPf13\\/captcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "captcha"
+            ],
+            "apis": {
+                "Performance.prototype.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.languages": 2,
+                "window.localStorage": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.hardwareConcurrency": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [],
+            "responseHashes": [
+                "b9c452854141be6f5dabcd4ddd41e6a7f4e55d98fe13b6e01969aa3b6574d52a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_pxvid": 0.00020521239482864764
+            },
+            "exampleSites": [
+                "westmarine.com",
+                "www.westmarine.com"
             ]
         }
     ],
@@ -46,12 +77,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4
+        "XHR": 3,
+        "Script": 2
     },
     "nameservers": [
-        "dns1.p06.nsone.net",
-        "dns2.p06.nsone.net",
-        "dns3.p06.nsone.net",
-        "dns4.p06.nsone.net"
+        "dns1.p02.nsone.net",
+        "dns2.p02.nsone.net",
+        "dns3.p02.nsone.net",
+        "dns4.p02.nsone.net"
     ]
 }

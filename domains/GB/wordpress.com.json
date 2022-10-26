@@ -9,13 +9,15 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
-        "public-api"
+        "public-api",
+        "r-login",
+        "videos.files"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "wordpress\\.com\\/geo\\/",
@@ -28,27 +30,51 @@
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [
-                "612ec64fc21deb2bd5c647cebb15b213231eb907d153f86a03bb5b924ee35f06"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "globalnews.ca",
-                "stylecaster.com"
+                "cairnsnews.org",
+                "globalnews.ca"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/remote-login\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "r-login"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "0c94da64f2ed0e419db69100279f1a6c0d29ae824231b3682e2dcba26aea8fe5",
+                "43770f0afbd95a608dc8bdf661c9a8f9018d5cf22d01e87a432a3b2a64ccc5cb"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cairnsnews.org",
+                "roserambles.org",
+                "ukrainetoday.org"
             ]
         },
         {
             "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
-            "cookies": 0.000202,
-            "fingerprinting": 0,
+            "cookies": 0.000504,
+            "fingerprinting": 1,
             "subdomains": [
                 "public-api"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "apis": {
+                "Document.cookie getter": 4
+            },
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "790ec67cfead1484557dd102d63648a86a2499feca55b656d144e5bde9abd23a"
@@ -57,8 +83,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cairnsnews.org",
                 "roserambles.org",
-                "skwawkbox.org"
+                "skwawkbox.org",
+                "uk-database.org",
+                "ukrainetoday.org"
             ]
         },
         {
@@ -69,18 +98,44 @@
                 "public-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "d76c57b53652b23a2438c18879211e3f777f79e7564eb9fdd380fdbaa57559b4"
+                "42cef226123e1e4fc3c56ba12603384ab9ac0b85d8f46dbee03398b4fb42e0ce",
+                "a94ea342f3ca2b32726ae13a96ef76d58e7b5ad44827c2107f9cce3485a443fe",
+                "f10ba2595765c5af0c4ffbb2d4c37b432c64f00b86f73c1ad94d7cbda9d6f48f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "roserambles.org",
-                "skwawkbox.org"
+                "skwawkbox.org",
+                "uk-database.org",
+                "ukrainetoday.org"
+            ]
+        },
+        {
+            "rule": "wordpress\\.com\\/Yzs9H6I3\\/about-vanessa-van-edwards_mp4_dvd\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "videos.files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8b72f81781b517c411e85130c07b1c3f4dc660131cc4ef163b8de4371e682179"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scienceofpeople.com",
+                "www.scienceofpeople.com"
             ]
         }
     ],
@@ -89,15 +144,16 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000605,
     "types": {
-        "XHR": 4,
-        "Document": 2
+        "XHR": 6,
+        "Document": 8,
+        "Media": 2
     },
     "nameservers": [
+        "ns1.wordpress.com",
         "ns4.wordpress.com",
-        "ns3.wordpress.com",
         "ns2.wordpress.com",
-        "ns1.wordpress.com"
+        "ns3.wordpress.com"
     ]
 }

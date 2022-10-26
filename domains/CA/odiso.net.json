@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000308,
+    "sites": 3,
     "subdomains": [
         "czproxy",
-        "psproxy56"
+        "rtlportailsproxy",
+        "psproxy12"
     ],
     "cnames": [
         {
@@ -17,22 +18,59 @@
         },
         {
             "original": "matomo.passeportsante.net",
-            "resolved": "psproxy56.odiso.net"
+            "resolved": "psproxy12.odiso.net"
+        },
+        {
+            "original": "matomo.rtl.fr",
+            "resolved": "rtlportailsproxy.odiso.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "odiso\\.net\\/matomo\\.js",
+            "cookies": 0.000205,
+            "fingerprinting": 2,
+            "subdomains": [
+                "czproxy",
+                "rtlportailsproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000205,
+            "cnames": [
+                {
+                    "original": "matomo.cuisineaz.com",
+                    "resolved": "czproxy.odiso.net"
+                },
+                {
+                    "original": "matomo.rtl.fr",
+                    "resolved": "rtlportailsproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [
+                "d7fc375178c93a2fc15fd888e30170eedf4ef3d04497e7f951ab7bfe0c921693"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cuisineaz.com",
+                "www.rtl.fr"
+            ]
+        },
         {
             "rule": "odiso\\.net\\/matomo\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "czproxy",
-                "psproxy56"
+                "psproxy12",
+                "rtlportailsproxy"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000308,
             "cnames": [
                 {
                     "original": "matomo.cuisineaz.com",
@@ -40,7 +78,11 @@
                 },
                 {
                     "original": "matomo.passeportsante.net",
-                    "resolved": "psproxy56.odiso.net"
+                    "resolved": "psproxy12.odiso.net"
+                },
+                {
+                    "original": "matomo.rtl.fr",
+                    "resolved": "rtlportailsproxy.odiso.net"
                 }
             ],
             "responseHashes": [
@@ -48,18 +90,22 @@
             ],
             "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "pa_user": 0.00010260619741432382
+            },
             "exampleSites": [
                 "cuisineaz.com",
-                "www.passeportsante.net"
+                "www.passeportsante.net",
+                "www.rtl.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000308,
     "types": {
-        "Ping": 2
+        "Script": 2,
+        "Ping": 3
     },
     "nameservers": []
 }

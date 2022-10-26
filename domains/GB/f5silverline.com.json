@@ -4,12 +4,17 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
+        "pprp47.ocado.gslb",
         "py55oz.ocado.gslb"
     ],
     "cnames": [
+        {
+            "original": "accounts.groceries.morrisons.com",
+            "resolved": "pprp47.ocado.gslb.f5silverline.com"
+        },
         {
             "original": "accounts.ocado.com",
             "resolved": "py55oz.ocado.gslb.f5silverline.com"
@@ -18,27 +23,69 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "f5silverline\\.com\\/auth-service\\/sso\\/authorize",
-            "cookies": 0.000202,
+            "rule": "f5silverline\\.com\\/auth-service\\/sso\\/check-session",
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
+                "pprp47.ocado.gslb",
                 "py55oz.ocado.gslb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
+                {
+                    "original": "accounts.groceries.morrisons.com",
+                    "resolved": "pprp47.ocado.gslb.f5silverline.com"
+                },
                 {
                     "original": "accounts.ocado.com",
                     "resolved": "py55oz.ocado.gslb.f5silverline.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "8bd0cd438bda005265c4d59c8a6f5619c276968c248436f352de605dd06811ab",
+                "ac2f5ef962cd0a3807c0b07373d0a49bfdef02e71ad008e083418db17567c14a"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ocado.com",
+                "morrisons.com",
+                "www.morrisons.com",
+                "www.ocado.com"
+            ]
+        },
+        {
+            "rule": "f5silverline\\.com\\/auth-service\\/sso\\/resources\\/dist\\/main\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pprp47.ocado.gslb",
+                "py55oz.ocado.gslb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [
+                {
+                    "original": "accounts.groceries.morrisons.com",
+                    "resolved": "pprp47.ocado.gslb.f5silverline.com"
+                },
+                {
+                    "original": "accounts.ocado.com",
+                    "resolved": "py55oz.ocado.gslb.f5silverline.com"
+                }
+            ],
+            "responseHashes": [
+                "54833617dfb53d0b5bcb24e3892a3412dc2e0416b34545c5df2d83fa5381f572"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morrisons.com",
+                "www.morrisons.com",
                 "www.ocado.com"
             ]
         }
@@ -47,7 +94,8 @@
     "performance": {},
     "cookies": 0.000101,
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Script": 3
     },
     "nameservers": []
 }

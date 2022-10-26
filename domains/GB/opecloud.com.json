@@ -9,9 +9,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000404,
-    "sites": 4,
+    "prevalence": 0.000605,
+    "sites": 6,
     "subdomains": [
+        "cdn",
+        "lefigaro.tagger",
         "tagger-scmp",
         "tagger"
     ],
@@ -21,8 +23,58 @@
             "resolved": "tagger-scmp.opecloud.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "opecloud\\.com\\/ope-lefigaro\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "1753f027cf8b19f30a34c0eeb3ac0b7c93e83213ce26e9646e95451587c54d7d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lefigaro.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journaldesfemmes.fr",
+                "www.lefigaro.fr"
+            ]
+        },
         {
             "rule": "opecloud\\.com\\/scmp\\/v2\\/pixel\\.gif",
             "cookies": 0.000202,
@@ -42,7 +94,9 @@
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00040351054171290223
+            },
             "exampleSites": [
                 "scmp.com",
                 "www.scmp.com"
@@ -73,12 +127,14 @@
     "performance": {},
     "cookies": 0.000101,
     "types": {
+        "Script": 2,
+        "XHR": 2,
         "Image": 4
     },
     "nameservers": [
         "ns-1454.awsdns-53.org",
-        "ns-1611.awsdns-09.co.uk",
+        "ns-899.awsdns-48.net",
         "ns-353.awsdns-44.com",
-        "ns-899.awsdns-48.net"
+        "ns-1611.awsdns-09.co.uk"
     ]
 }

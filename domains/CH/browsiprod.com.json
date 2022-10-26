@@ -4,14 +4,60 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "events"
+        "cdn",
+        "events",
+        "yield-manager"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "browsiprod\\.com\\/bootstrap\\/bootstrap\\.js",
+            "cookies": 0.000303,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "22a95e6391130e97bee5a4005ec1e6ad308ecf6131c3c4ae257e34cd67068201"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__browsiSessionID": {
+                    "ttl": 1804,
+                    "length": 79,
+                    "prevalence": 0.0003031221582297666,
+                    "uniqueness": 1
+                },
+                "__browsiUID": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.0003031221582297666,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.ladbible.com"
+            ]
+        },
         {
             "rule": "browsiprod\\.com\\/events\\/supply",
             "cookies": 0,
@@ -20,8 +66,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -31,7 +77,84 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailydot.com",
-                "www.dailydot.com"
+                "www.dailydot.com",
+                "www.dexerto.com",
+                "www.ladbible.com"
+            ]
+        },
+        {
+            "rule": "browsiprod\\.com\\/supply\\/v5",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yield-manager"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "35f929de28e1ef0a348a8955645c9de2a1102fc945ddd11d9f4af0b1ea9b27c9",
+                "6d0abf0e5a59c8dde54d27c9e8b0b4d6b4b0a2120dee84bf5baa479fba767e33"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.ladbible.com"
+            ]
+        },
+        {
+            "rule": "browsiprod\\.com\\/sd\\/apps\\/middy\\/middy-desktop-4\\.8\\.2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.availWidth": 3,
+                "Screen.prototype.availHeight": 3,
+                "window.innerHeight": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "db4b2f5c8cfd47cbb0ed7d09a9ccab668a24be682b092c2bfefcd353000d58e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.ladbible.com"
+            ]
+        },
+        {
+            "rule": "browsiprod\\.com\\/abd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "481d713552f587d3bc0e3683557f8541ea69543e4d7abb7e4299c646ab10fd03"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailydot.com",
+                "www.dexerto.com",
+                "www.ladbible.com"
             ]
         },
         {
@@ -42,8 +165,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -53,7 +176,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dailydot.com",
-                "www.dailydot.com"
+                "www.dailydot.com",
+                "www.ladbible.com"
             ]
         },
         {
@@ -77,18 +201,40 @@
                 "dailydot.com",
                 "www.dailydot.com"
             ]
+        },
+        {
+            "rule": "browsiprod\\.com\\/events\\/supply",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexerto.com",
+                "www.dexerto.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000303,
     "types": {
-        "XHR": 6
+        "Script": 9,
+        "XHR": 12,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-189.awsdns-23.com",
         "ns-729.awsdns-27.net",
+        "ns-1215.awsdns-23.org",
         "ns-1546.awsdns-01.co.uk",
-        "ns-1215.awsdns-23.org"
+        "ns-189.awsdns-23.com"
     ]
 }

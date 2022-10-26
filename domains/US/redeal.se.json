@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000137,
-    "sites": 2,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "static"
+        "static",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,26 +21,72 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000137,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "34bead744d9196fa77a59101dc4cfff82abf01baf97fa72dec56fe8c8df6ff29"
+                "44fb44b1a6230a85c258fe5ac1941dfc0513df4c8fa91edccb94ffe8ce0a5aa8",
+                "42636f29ae065c6fa76f5ceb4b8fa80fa96d61e81c1487511b651ee677c95441"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cervera.se",
+                "www.cervera.se",
+                "www.nordicnest.de",
                 "www.snusbolaget.se"
+            ]
+        },
+        {
+            "rule": "redeal\\.se\\/api\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8fece8ab19ee8184ea7c67259930b34ac6108e8ada2bfec141dcc1c9dd823fd2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cervera.se",
+                "www.cervera.se",
+                "www.nordicnest.de"
+            ]
+        },
+        {
+            "rule": "redeal\\.se\\/api\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cervera.se",
+                "www.cervera.se"
             ]
         }
     ],
@@ -47,10 +94,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 3,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns1.loopia.se",
-        "ns2.loopia.se"
+        "ns2.loopia.se",
+        "ns1.loopia.se"
     ]
 }
