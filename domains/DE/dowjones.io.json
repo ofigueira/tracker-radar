@@ -4,12 +4,23 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000202,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "video-api.shdsvc"
+        "video-api.shdsvc",
+        "mw-prod.bluegrass.mktdata",
+        "wsj-prod.bluegrass.mktdata"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "mwstream.wsj.net",
+            "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+        },
+        {
+            "original": "wsjstream.wsj.net",
+            "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -21,12 +32,106 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "2dfb0cace2802460a943e52ed78788bc880ca5ce89f0cbab28b9758387575b73"
+                "d56f933a4f5879c51515c807b85d8d0c0fef21768723717601bca8d8902dea3b"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/bg2\\/signalr\\/negotiate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mw-prod.bluegrass.mktdata",
+                "wsj-prod.bluegrass.mktdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "mwstream.wsj.net",
+                    "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "wsjstream.wsj.net",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                }
+            ],
+            "responseHashes": [
+                "0da14bf6db6f40f02d762052ced32719a4d2f47cb2ccec82c171992a9bfd1bfa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/BG2\\/signalr\\/connect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mw-prod.bluegrass.mktdata",
+                "wsj-prod.bluegrass.mktdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "mwstream.wsj.net",
+                    "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "wsjstream.wsj.net",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                }
+            ],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "dowjones\\.io\\/bg2\\/signalr\\/start",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mw-prod.bluegrass.mktdata",
+                "wsj-prod.bluegrass.mktdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "mwstream.wsj.net",
+                    "resolved": "mw-prod.bluegrass.mktdata.dowjones.io"
+                },
+                {
+                    "original": "wsjstream.wsj.net",
+                    "resolved": "wsj-prod.bluegrass.mktdata.dowjones.io"
+                }
+            ],
+            "responseHashes": [
+                "c50a0366bab0d95bd0dfbbf67ed889b5fd383ee7464a77660088c32e4ef91c20"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -39,7 +144,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "XHR": 4,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns-1288.awsdns-33.org",

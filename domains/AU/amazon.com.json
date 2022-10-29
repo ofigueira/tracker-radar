@@ -9,11 +9,15 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "unagi",
-        "apay-us"
+        "unagi-fe",
+        "g-images",
+        "payments",
+        "apay-us",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -26,8 +30,8 @@
                 "unagi"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -37,8 +41,51 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abebooks.co.uk",
-                "www.abebooks.co.uk",
                 "www.abebooks.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.nexusclient\\.prod",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unagi-fe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "audible.com.au",
+                "www.audible.com.au"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/images\\/G\\/01\\/associates\\/network\\/amzn\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b1341b7a78a350944f1a578eb81330b41a19d5297275291f13fd331e54873e4b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eevblog.com",
+                "www.linuxquestions.org"
             ]
         },
         {
@@ -46,6 +93,7 @@
             "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
+                "payments",
                 "apay-us"
             ],
             "apis": {},
@@ -62,6 +110,28 @@
                 "mathway.com",
                 "www.mathway.com"
             ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/batch\\/2\\/OE\\/mid=ATVPDKIKX0DER:sid=142-5006707-2443830:rid=AA9BE46FBB0B49F7ADF5:sn=www\\.newworld\\.com",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newworld.com",
+                "www.newworld.com"
+            ]
         }
     ],
     "categories": [
@@ -75,15 +145,17 @@
     "performance": {},
     "cookies": 0.000101,
     "types": {
-        "Ping": 3,
-        "XHR": 2
+        "Ping": 4,
+        "Image": 2,
+        "XHR": 2,
+        "Other": 2
     },
     "nameservers": [
+        "ns3.p31.dynect.net",
         "ns1.p31.dynect.net",
         "ns2.p31.dynect.net",
-        "ns3.p31.dynect.net",
         "ns4.p31.dynect.net",
-        "pdns1.ultradns.net",
-        "pdns6.ultradns.co.uk"
+        "pdns6.ultradns.co.uk",
+        "pdns1.ultradns.net"
     ]
 }

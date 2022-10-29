@@ -7,38 +7,66 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "scripts"
+        "scripts",
+        "rtg"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "rubiconredirect\\.com\\/scripts\\/k_banggood\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
+            "cookies": 0.000201,
+            "fingerprinting": 1,
             "subdomains": [
                 "scripts"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.innerHeight": 1,
-                "window.innerWidth": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.webkitTemporaryStorage": 1,
-                "Performance.prototype.memory": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "window.outerHeight": 1,
-                "window.outerWidth": 1
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1602f6cf6b1a2a456c1b263d0148a3746b9483337e52b6700112c383343edaf8"
+                "7234b6a4fc50d44b4a457e296d017041ddeae609f1c8a05261a8a1686428a205"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__rub_uid": {
+                    "ttl": 31536008,
+                    "length": 33,
+                    "prevalence": 0.00020110608345902463,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "www.banggood.com"
+            ]
+        },
+        {
+            "rule": "rubiconredirect\\.com\\/sync",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__rub_uid": 0.00020110608345902463
+            },
             "exampleSites": [
                 "banggood.com",
                 "www.banggood.com"
@@ -47,9 +75,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
         "nataly.ns.cloudflare.com",

@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "publicapi"
+        "publicapi",
+        "api",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -20,11 +22,89 @@
                 "publicapi"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "98f2a0776ee8776af35623d7990b2c7f164c73492e03b4608e63213c79266b97",
+                "981fc1cf4e320ba850ac41c5e0f28b739f604a117e0b263e2e3b1911e6eb57b5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com",
+                "www.groupon.com.au"
+            ]
+        },
+        {
+            "rule": "databreakers\\.com\\/v1\\/groupon_us\\/dataPoint",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "981fc1cf4e320ba850ac41c5e0f28b739f604a117e0b263e2e3b1911e6eb57b5"
+                "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com"
+            ]
+        },
+        {
+            "rule": "databreakers\\.com\\/cookie-maker",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a66a4234a18b524b8faabaf4948005802ad4ce37e7ab65e9c210252be8c7657c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "db_ui": {
+                    "ttl": 157680000,
+                    "length": 36,
+                    "prevalence": 0.00010055304172951231,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com.au"
+            ]
+        },
+        {
+            "rule": "databreakers\\.com\\/v1\\/groupon_au\\/dataPoint",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "32af80e0c8ebc33463cea5d9c795a048bdf9e590ad3ce492319545a3b8cba732"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -37,9 +117,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "types": {
-        "XHR": 2
+        "XHR": 7,
+        "Document": 2
     },
     "nameservers": [
         "ns2.ignum.cz",

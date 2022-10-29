@@ -9,17 +9,17 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00916,
-    "sites": 91,
+    "prevalence": 0.00835,
+    "sites": 83,
     "subdomains": [
         "82nqbo4ztg.execute-api",
         "7641vldhgg.execute-api",
-        "assets-iconic-live.s3",
         "news-networkeditorial.s3",
         "7p5l6e4ejb.execute-api",
+        "grdn4zdqxj.execute-api",
         "cognito-identity",
+        "dataplane.rum",
         "sjuy4wrs48.execute-api",
-        "s3",
         "oxe3q02thl.execute-api",
         "2izdf50zr2.execute-api"
     ],
@@ -39,8 +39,8 @@
                 "82nqbo4ztg.execute-api"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.00101,
+            "sites": 11,
+            "prevalence": 0.00111,
             "cnames": [
                 {
                     "original": "loc.api.nine.com.au",
@@ -58,6 +58,7 @@
                 "celebrity.nine.com.au",
                 "honey.nine.com.au",
                 "kitchen.nine.com.au",
+                "ninemsn.com.au",
                 "wwos.nine.com.au",
                 "www.9now.com.au",
                 "www.9news.com.au",
@@ -74,8 +75,8 @@
                 "7641vldhgg.execute-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
                 "950a5c5d8bc7b43da2790f6d573b9db9dd23eed62d3a6a3a46f40cd5d17f44c1"
@@ -87,8 +88,9 @@
                 "bathroomfactorywarehouse.com.au",
                 "frankgreen.com.au",
                 "itechworld.com.au",
-                "www.petersheppard.com.au",
-                "www.reidcycles.com.au"
+                "myhouse.com.au",
+                "superbutcher.com.au",
+                "www.petersheppard.com.au"
             ]
         },
         {
@@ -99,8 +101,8 @@
                 "7641vldhgg.execute-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -110,53 +112,51 @@
                 "bathroomfactorywarehouse.com.au",
                 "frankgreen.com.au",
                 "itechworld.com.au",
-                "www.petersheppard.com.au",
-                "www.reidcycles.com.au"
+                "myhouse.com.au",
+                "superbutcher.com.au",
+                "www.petersheppard.com.au"
             ]
         },
         {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/ravelin\\/ravelin-1\\.2\\.0-core%2Btrack%2Bencrypt%2Bpromise\\.min\\.js",
-            "cookies": 0.000201,
-            "fingerprinting": 3,
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/prd\\/shopify\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "assets-iconic-live.s3"
+                "7641vldhgg.execute-api"
             ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3e8eea876896088cb2b5bc38d850864f0302871b1c793abde11b6b8364b00657"
+                "6b96ce6bb0472d94bf1ae59fde3fee3dcf2685d312369a2b4aeb8faa2b2dd9b4"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ravelinSessionId": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.0002013895881582922,
-                    "uniqueness": 1
-                },
-                "ravelinDeviceId": {
-                    "ttl": 31536036,
-                    "length": 40,
-                    "prevalence": 0.0002013895881582922,
-                    "uniqueness": 1
-                }
-            },
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theiconic.com.au",
-                "www.theiconic.com.au"
+                "itechworld.com.au",
+                "myhouse.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/prd\\/shopify\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "7641vldhgg.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itechworld.com.au",
+                "myhouse.com.au"
             ]
         },
         {
@@ -198,7 +198,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000705,
+            "prevalence": 0.000704,
             "cnames": [],
             "responseHashes": [
                 "63919867af3995b5bdf26e6d016d1c020d0a79b7d28ba4f397065826b734f432"
@@ -239,29 +239,25 @@
             ]
         },
         {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/",
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/production\\/fh\\/home-outfit",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cognito-identity"
+                "grdn4zdqxj.execute-api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "1cd740b29a3ca7635498049ca8c86c18a10c6413a0a98a0ba80f1d158a8fdec0",
-                "9842f71ac7366d342abc49c1a5a1f12c260abf256c70cb081a10459065da5f53",
-                "92594cd6c426f2bc668bc4f5104eaad60f91f347da47ab4db1b53fde7a38638e"
+                "15272338d3b5dc5fdf4af486bf125d97614d9bc1bbf5721699a9b1fda3051773"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "comparethemarket.com.au",
-                "www.comparethemarket.com.au",
-                "www.iseekplant.com.au",
-                "www.lasoo.com.au"
+                "birdsnest.com.au",
+                "www.birdsnest.com.au"
             ]
         },
         {
@@ -273,17 +269,65 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000403,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "5d0d9eb909f3190f089dda365d7ac8470f15fefd6f7c6a3c61a036b5198db94f",
+                "52ef5f3df6ae48ead74d8c5d20661a3ebe091f7d82609584f8c98e2fadbd7136",
+                "20a985242486fa8142dfd092768f74595067ef0cfe3a543e9bf01343c5bb783c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cashrewards.com.au",
+                "www.cashrewards.com.au",
+                "www.comparethemarket.com.au",
+                "www.iseekplant.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "comparethemarket.com.au",
+                "cashrewards.com.au",
+                "www.comparethemarket.com.au",
                 "www.iseekplant.com.au",
-                "www.lasoo.com.au",
                 "www.stockland.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/appmonitors\\/0d357b7a-dec2-4cae-978c-7e3df6d57a21\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dataplane.rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cashrewards.com.au",
+                "www.cashrewards.com.au"
             ]
         },
         {
@@ -297,233 +341,15 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "932ba18fffa58dcb08d76a094976dc60d63f1ba488896f05d89958a403710a3c"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mcgrath.com.au",
                 "www.mcgrath.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_0001\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "0273131afcd510fb6a37d958ae405e1e1a8e5d6c8e4a7140f424fa8231ba530f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_0002\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "6c105b28286d58deec35c084cf71d728c95316b5eb5a805eb7c37d30d966a8ac"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_136076164012311622\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8ba3b601e1649a909ea074f07d7fd9792152b782a3901b27ca1f3dae7cc53903"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_1360761640C023060\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c6bb2e277e36e6a8f72ad0cc16adedde34465b49def7d22157e9ee671b143c1d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_1360761640C029416\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "03081d64df8d570ad10f4ad5a4cd8d0967f4f15ffd16639e3543114a20599a0c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_1360761640MG8799Version2\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ba716a1ca9d448a28c03b6d4d6aa9814f32f65a39f72973009727f73c632fff4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_1360761737WC2092\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "b4230612bac4cd23362995c68c00c519853b02531344464c093ec1b1fc1ad581"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_1360761737WC7246\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f0d5bf331fab41a1033e299b92e3b3ef7d3110d855a07662f14e0efd62e59bd1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_1360761738WC7689\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "f0a7b583c468ceef988191c0768d64341d492d5df47220eb03652bf1408f63ea"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/photographers\\.com\\.au-prod-media\\/images\\/usr\\/7E916B22-F670-2395-593BF917608EBBE1\\/16\\/pf_136076183500261\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "0e103d902d50a67f723aa57cba9f9672f113c217e4fd2e10795ab47cf3c48c19"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "photographers.com.au",
-                "www.photographers.com.au"
             ]
         },
         {
@@ -539,7 +365,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "61e60e1829400c9e8dc87da77313185aa047ef8779b847120db245dbfa0a3901"
+                "ab131f7d72346721bb5a75fb05728742db69a0cc8bbf0a40e8b5701fdc6e2149"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -561,14 +387,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "95e2cd45be2fb173a3bfa748a448412159271ca18aecbb22bfde91f533d2f8cb"
+                "c097670242470f458c09cc988551afaa456792152a6a954db6c2af2cf5a503cd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theguardian.com.au",
-                "www.theguardian.com.au"
+                "sunraysiadaily.com.au",
+                "www.sunraysiadaily.com.au"
             ]
         },
         {
@@ -587,8 +413,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theguardian.com.au",
-                "www.theguardian.com.au"
+                "sunraysiadaily.com.au",
+                "www.sunraysiadaily.com.au"
             ]
         }
     ],
@@ -596,13 +422,12 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000302,
     "types": {
-        "XHR": 16,
-        "Fetch": 9,
-        "Preflight": 11,
-        "Script": 2,
-        "Image": 39
+        "XHR": 19,
+        "Fetch": 14,
+        "Preflight": 14,
+        "Image": 19
     },
     "nameservers": [
         "ns1.p31.dynect.net",

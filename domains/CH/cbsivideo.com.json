@@ -8,7 +8,10 @@
     "sites": 3,
     "subdomains": [
         "doppler-config",
-        "doppler-tasks"
+        "doppler-tasks",
+        "doppler-beacons",
+        "vod62c350g.airspace-g",
+        "vod62c350g.airspace-f"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -31,9 +34,29 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbsnews.com",
+                "cbssports.com",
                 "www.cbssports.com",
-                "www.mtv.com"
+                "www.southpark.de"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/doppler-next\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
             ]
         },
         {
@@ -54,9 +77,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbsnews.com",
+                "cbssports.com",
                 "www.cbssports.com",
-                "www.mtv.com"
+                "www.southpark.de"
             ]
         },
         {
@@ -71,32 +94,94 @@
             "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
-                "4077d0924064ad023894c75a8689b41ea05dc4bccf133dd544b6a4cbb1f83a93"
+                "9cac695538811bb2ba39a2adf666e58435f55deb2229bf488df9cdb0d4819a93"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbsnews.com",
+                "cbssports.com",
                 "www.cbssports.com",
-                "www.mtv.com"
+                "www.southpark.de"
             ]
         },
         {
-            "rule": "cbsivideo\\.com\\/doppler-next\\.js",
+            "rule": "cbsivideo\\.com\\/log",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "doppler-config"
+                "doppler-beacons"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-beacons"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/measurements\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod62c350g.airspace-g",
+                "vod62c350g.airspace-f"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "be2852e18e7f363cd396239589772cde7d8596dff8a38f31ee22bd2f6dfc4a21"
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
             ],
-            "type": "Script",
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod62c350g.airspace-g",
+                "vod62c350g.airspace-f"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -110,12 +195,15 @@
     "cookies": 0,
     "types": {
         "Script": 8,
-        "Fetch": 3
+        "Fetch": 5,
+        "Preflight": 2,
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-883.awsdns-46.net",
-        "ns-1546.awsdns-01.co.uk",
         "ns-1327.awsdns-37.org",
-        "ns-399.awsdns-49.com"
+        "ns-1546.awsdns-01.co.uk",
+        "ns-399.awsdns-49.com",
+        "ns-883.awsdns-46.net"
     ]
 }
