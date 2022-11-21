@@ -4,12 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
+    "prevalence": 0.0000197,
     "sites": 3,
     "subdomains": [
+        "assets.identity.p-dub.myaccess.aws",
         "forward.geo.myaccess.aws"
     ],
     "cnames": [
+        {
+            "original": "assets.identity.porsche.com",
+            "resolved": "assets.identity.p-dub.myaccess.aws.porsche.cloud"
+        },
         {
             "original": "login.porsche.com",
             "resolved": "forward.geo.myaccess.aws.porsche.cloud"
@@ -18,15 +23,42 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "porsche\\.cloud\\/migration\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.identity.p-dub.myaccess.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000131,
+            "cnames": [
+                {
+                    "original": "assets.identity.porsche.com",
+                    "resolved": "assets.identity.p-dub.myaccess.aws.porsche.cloud"
+                }
+            ],
+            "responseHashes": [
+                "5bc3c48e752462d0cc8d8452184b7bc5ed6bd131732b30c273ac2cf707a2c810"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "porsche.com",
+                "www.porsche.com"
+            ]
+        },
+        {
             "rule": "porsche\\.cloud\\/\\.well-known\\/openid-configuration",
-            "cookies": 0.0000136,
+            "cookies": 0.0000131,
             "fingerprinting": 0,
             "subdomains": [
                 "forward.geo.myaccess.aws"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000131,
             "cnames": [
                 {
                     "original": "login.porsche.com",
@@ -46,14 +78,14 @@
         },
         {
             "rule": "porsche\\.cloud\\/as\\/authorization\\.oauth2",
-            "cookies": 0.0000136,
+            "cookies": 0.0000131,
             "fingerprinting": 0,
             "subdomains": [
                 "forward.geo.myaccess.aws"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000131,
             "cnames": [
                 {
                     "original": "login.porsche.com",
@@ -78,7 +110,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000131,
             "cnames": [
                 {
                     "original": "login.porsche.com",
@@ -97,9 +129,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000197,
     "types": {
-        "Fetch": 2,
+        "Fetch": 4,
         "Document": 4
     },
     "nameservers": []

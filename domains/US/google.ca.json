@@ -9,36 +9,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000611,
-    "sites": 9,
+    "prevalence": 0.0000722,
+    "sites": 11,
     "subdomains": [
-        "adservice",
-        "www"
+        "www",
+        "adservice"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "google\\.ca\\/adsid\\/integrator\\.js",
+            "rule": "google\\.ca\\/jsapi",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "adservice"
+                "www"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000131,
             "cnames": [],
-            "responseHashes": [
-                "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "linkr.bio",
-                "www.nationalobserver.com",
-                "yaletools.com"
+                "ri.gov",
+                "www.sos.ri.gov"
             ]
         },
         {
@@ -50,7 +49,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000131,
             "cnames": [],
             "responseHashes": [
                 "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
@@ -72,7 +71,29 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000131,
+            "cnames": [],
+            "responseHashes": [
+                "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalobserver.com",
+                "www.nationalobserver.com"
+            ]
+        },
+        {
+            "rule": "google\\.ca\\/adsid\\/integrator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adservice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000131,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -87,8 +108,18 @@
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.18181818181818182
+        }
+    ],
     "types": {
-        "Script": 5,
+        "Script": 6,
         "Fetch": 2
     },
     "nameservers": [
