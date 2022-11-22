@@ -7,15 +7,20 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "btgrpsec-dd"
+        "btgrpsec-dd",
+        "soar.cebupacair.cust"
     ],
     "cnames": [
         {
             "original": "home.bt.com",
             "resolved": "btgrpsec-dd.lldns.net"
+        },
+        {
+            "original": "soar.cebupacificair.com",
+            "resolved": "soar.cebupacair.cust.lldns.net"
         }
     ],
     "fingerprinting": 1,
@@ -37,7 +42,7 @@
                 }
             ],
             "responseHashes": [
-                "a8e03d6f87750ff76512948662c56606d845f5729ee5eeccfd498696fa5618a8"
+                "67c9005ce300cd7a2eeb079754238a79e1955c9080e552f8ea7b013634bfae9e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -46,15 +51,79 @@
                 "bt.com",
                 "www.bt.com"
             ]
+        },
+        {
+            "rule": "lldns\\.net\\/ceb-omnix_proxy",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "soar.cebupacair.cust"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "soar.cebupacificair.com",
+                    "resolved": "soar.cebupacair.cust.lldns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cebupacificair.com",
+                "www.cebupacificair.com"
+            ]
+        },
+        {
+            "rule": "lldns\\.net\\/ceb-omnix_proxy",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "soar.cebupacair.cust"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "soar.cebupacificair.com",
+                    "resolved": "soar.cebupacair.cust.lldns.net"
+                }
+            ],
+            "responseHashes": [
+                "f204d42ba1b8bc90a15d608407cd4ed28410059c814bc74075f74ab13e68e158"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cebupacificair.com",
+                "www.cebupacificair.com"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "dynatrace.com",
+            "prevalence": 0.18181818181818182
+        }
+    ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

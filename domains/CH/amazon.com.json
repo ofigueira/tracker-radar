@@ -9,12 +9,15 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.000903,
+    "sites": 9,
     "subdomains": [
         "unagi",
-        "g-images",
-        "payments-de"
+        "payments-de",
+        "payments",
+        "payments-eu",
+        "apay-us",
+        "g-images"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -27,8 +30,8 @@
                 "unagi"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000606,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -39,10 +42,58 @@
             "exampleSites": [
                 "abebooks.de",
                 "www.abebooks.de",
-                "www.abebooks.co.uk",
-                "www.abebooks.com",
                 "www.abebooks.fr",
+                "www.abebooks.com",
                 "www.zvab.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments-de",
+                "payments",
+                "payments-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "f67c698da1e05318aa1ee01fe936c848d5ca7825719b02737a5c733429787fb5",
+                "3ade4c4ea8e543f9cef73042f3ea520c74c64b69df978a4a05c88678a09353c0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bio-apo.de",
+                "www.mathway.com",
+                "www.zauberdergewuerze.de"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/cs\\/uedata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments-de",
+                "apay-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bio-apo.de",
+                "www.mathway.com"
             ]
         },
         {
@@ -54,7 +105,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "b1341b7a78a350944f1a578eb81330b41a19d5297275291f13fd331e54873e4b"
@@ -68,49 +119,47 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
-            "cookies": 0.000303,
+            "rule": "amazon\\.com\\/merchantAccount\\/A126JZGEDF7D1L\\/accountStatus",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "payments-de"
+                "payments-eu"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5f7e9b2684694043b88835c903476f77cfd5b27a4476e5435fe7c9961ab70400",
-                "27baddb197c05eeb987e9bd3528045a94ce28043ea5c980c7d84a679e41a5581"
+                "6daf092c820d6323f36c5ddad13658cf42a525808c69025cc3e7a36d76ab5508"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "krippe.it",
-                "www.ofenseite.com",
-                "www.photovoltaik4all.de"
+                "zauberdergewuerze.de",
+                "www.zauberdergewuerze.de"
             ]
         },
         {
             "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "payments-de"
+                "payments-eu"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "krippe.it",
-                "www.photovoltaik4all.de"
+                "zauberdergewuerze.de",
+                "www.zauberdergewuerze.de"
             ]
         }
     ],
@@ -123,18 +172,32 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000301,
+    "topInitiators": [
+        {
+            "domain": "payments-amazon.com",
+            "prevalence": 0.5833333333333334
+        },
+        {
+            "domain": "abebookscdn.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "amazon-adsystem.com",
+            "prevalence": 0.08333333333333333
+        }
+    ],
     "types": {
-        "Ping": 6,
-        "Image": 2,
-        "XHR": 5
+        "Ping": 7,
+        "XHR": 7,
+        "Image": 2
     },
     "nameservers": [
-        "ns1.p31.dynect.net",
-        "ns4.p31.dynect.net",
-        "ns2.p31.dynect.net",
         "pdns6.ultradns.co.uk",
         "ns3.p31.dynect.net",
-        "pdns1.ultradns.net"
+        "pdns1.ultradns.net",
+        "ns4.p31.dynect.net",
+        "ns2.p31.dynect.net",
+        "ns1.p31.dynect.net"
     ]
 }

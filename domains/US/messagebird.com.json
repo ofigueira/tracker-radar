@@ -93,8 +93,10 @@
             "sites": 2,
             "prevalence": 0.0000131,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "3b58cdaf89f1570a0dfbdbcb81b2f2d83feed5a7ef139c1d9b3c0f3d9b1e22c2"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -113,10 +115,8 @@
             "sites": 2,
             "prevalence": 0.0000131,
             "cnames": [],
-            "responseHashes": [
-                "3b58cdaf89f1570a0dfbdbcb81b2f2d83feed5a7ef139c1d9b3c0f3d9b1e22c2"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -127,12 +127,14 @@
         {
             "rule": "messagebird\\.com\\/index\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "livechat",
                 "ocw"
             ],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 1
+            },
             "sites": 10,
             "prevalence": 0.0000656,
             "cnames": [],
@@ -223,12 +225,12 @@
                 "ocw"
             ],
             "apis": {
+                "window.localStorage": 6,
                 "Navigator.prototype.language": 9,
                 "Navigator.prototype.userAgent": 10,
+                "BroadcastChannel.prototype.constructor": 9,
                 "Date.prototype.getTime": 10,
-                "Navigator.prototype.connection": 10,
-                "window.localStorage": 6,
-                "BroadcastChannel.prototype.constructor": 9
+                "Navigator.prototype.connection": 10
             },
             "sites": 10,
             "prevalence": 0.0000656,
@@ -593,16 +595,16 @@
     "types": {
         "Script": 80,
         "Ping": 10,
-        "Preflight": 10,
         "Fetch": 20,
+        "Preflight": 10,
         "Document": 10,
         "Stylesheet": 10,
         "Font": 4
     },
     "nameservers": [
+        "ns-2001.awsdns-58.co.uk",
         "ns-24.awsdns-03.com",
         "ns-752.awsdns-30.net",
-        "ns-1310.awsdns-35.org",
-        "ns-2001.awsdns-58.co.uk"
+        "ns-1310.awsdns-35.org"
     ]
 }

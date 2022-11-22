@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000806,
-    "sites": 8,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "cognito-identity",
-        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api"
+        "rkkck31tec.execute-api",
+        "nsei6eihgzhsxptxxiawzkzpsi.appsync-api",
+        "dataplane.rum"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -26,18 +28,20 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "7ae82ed4b9b7e527487d9fab872b1b419882005b686b75257f3f6bf1de8f8642"
+                "2556cba61696d5c0c8c31c15faa15dac0be135daab273998412941e2d0afd73d",
+                "390aecf111181b2dcc8bc2316bc2d2a59f8af9cded5e5c4fc60a0d41857988a1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jura-online.de",
-                "www.hagebau.de"
+                "www.hagebau.de",
+                "www.mopo.de"
             ]
         },
         {
@@ -49,7 +53,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000503,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -60,7 +64,7 @@
                 "sensiseeds.com",
                 "www.hagebau.de",
                 "www.medpets.de",
-                "www.wollplatz.de"
+                "www.mopo.de"
             ]
         },
         {
@@ -71,20 +75,40 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e4541d0f65420a86db85a8a23b3f33f3e071db0542def9f9da394e02c7ebb39e",
-                "50304c01fb92abd1290ad6b8ad7cb019e9f82e24640678c1ba012ed5a7aec674"
+                "320a2b45306234ba686cb290aff6d034400f0375d8b488d3ed421308fb48b20f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sensiseeds.com",
-                "www.medpets.de",
-                "www.wollplatz.de"
+                "www.medpets.de"
+            ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/v1\\/beacon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rkkck31tec.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "handyhuellen.de",
+                "www.handyhuellen.de"
             ]
         },
         {
@@ -128,17 +152,60 @@
                 "maingau-energie.de",
                 "www.maingau-energie.de"
             ]
+        },
+        {
+            "rule": "eu-central-1\\.amazonaws\\.com\\/appmonitors\\/29cb43c5-8042-4574-af35-5c5e291b7d56\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dataplane.rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mopo.de",
+                "www.mopo.de"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.44
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.28
+        },
+        {
+            "domain": "sooqr.com",
+            "prevalence": 0.16
+        },
+        {
+            "domain": "d5yoctgpv4cpx.cloudfront.net",
+            "prevalence": 0.08
+        },
+        {
+            "domain": "tripcdn.com",
+            "prevalence": 0.04
+        }
+    ],
     "types": {
-        "Fetch": 4,
+        "Fetch": 7,
         "Preflight": 7,
-        "XHR": 3
+        "XHR": 2,
+        "Ping": 2
     },
     "nameservers": [
         "ns1.p31.dynect.net",

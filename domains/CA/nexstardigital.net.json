@@ -4,68 +4,99 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000205,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "segment.psg"
+        "segment.psg",
+        "weather.psg"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "nexstardigital\\.net\\/segment\\.js",
-            "cookies": 0.000205,
+            "cookies": 0.000301,
             "fingerprinting": 2,
             "subdomains": [
                 "segment.psg"
             ],
             "apis": {
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.localStorage": 2,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "window.localStorage": 3,
                 "window.innerHeight": 2
             },
-            "sites": 2,
-            "prevalence": 0.000205,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "7cacdfd1965897968006c6148620d0f438e4d1382600e97e8af0fbb29701f52c"
+                "321be7c4e97cdd77d497599cecbb01b50d1df4bb19fbcf2880be158bf5e9ff2b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "seg_sessionid": {
-                    "ttl": 1803,
+                    "ttl": 1802,
                     "length": 36,
-                    "prevalence": 0.00020521239482864764,
+                    "prevalence": 0.0003006313257841467,
+                    "uniqueness": 1
+                },
+                "_ga": {
+                    "ttl": 63072000,
+                    "length": 27,
+                    "prevalence": 0.0001002104419280489,
                     "uniqueness": 1
                 },
                 "seg_blueconic_sessionid": {
                     "ttl": 1812,
                     "length": 4,
-                    "prevalence": 0.00020521239482864764,
-                    "uniqueness": 0.5
-                },
-                "_ga": {
-                    "ttl": 63072000,
-                    "length": 27,
-                    "prevalence": 0.00010260619741432382,
-                    "uniqueness": 1
+                    "prevalence": 0.0003006313257841467,
+                    "uniqueness": 0.3333333333333333
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ktla.com",
-                "thehill.com"
+                "thehill.com",
+                "www.kron4.com",
+                "www.wivb.com"
+            ]
+        },
+        {
+            "rule": "nexstardigital\\.net\\/service\\/api\\/v3\\/alerts\\/getLiveAlertsByCounties",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "weather.psg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "7730b8b10b517dac277bcfc01b1042067e8ffbf127117ae05fe21db7e4f831ee"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kron4.com",
+                "www.wivb.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000205,
+    "cookies": 0.000301,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Fetch": 2
     },
     "nameservers": [
         "dns2.cscdns.net",

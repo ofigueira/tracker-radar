@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00041,
-    "sites": 4,
+    "prevalence": 0.000601,
+    "sites": 6,
     "subdomains": [
         "unagi",
+        "g-images",
+        "payments",
         "apay-us"
     ],
     "cnames": [],
@@ -27,7 +29,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -41,15 +43,60 @@
             ]
         },
         {
-            "rule": "amazon\\.com\\/cs\\/uedata",
-            "cookies": 0.000103,
+            "rule": "amazon\\.com\\/images\\/G\\/01\\/associates\\/network\\/amzn\\.gif",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "apay-us"
+                "g-images"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "b1341b7a78a350944f1a578eb81330b41a19d5297275291f13fd331e54873e4b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eevblog.com",
+                "www.linuxquestions.org"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
+            "cookies": 0.0002,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "051a86c37f41c00e0c85bd1a50dc9f7302d7b261dd13d98dea6237793d04cf0f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mathway.com",
+                "www.woodcraft.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/cs\\/uedata",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apay-us",
+                "payments"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -59,7 +106,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mathway.com",
-                "www.mathway.com"
+                "www.mathway.com",
+                "www.woodcraft.com"
             ]
         }
     ],
@@ -72,17 +120,36 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000205,
+    "cookies": 0.000301,
+    "topInitiators": [
+        {
+            "domain": "payments-amazon.com",
+            "prevalence": 0.5454545454545454
+        },
+        {
+            "domain": "abebookscdn.com",
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "amazon-adsystem.com",
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "jsguard.net",
+            "prevalence": 0.09090909090909091
+        }
+    ],
     "types": {
         "Ping": 2,
-        "XHR": 2
+        "Image": 2,
+        "XHR": 5
     },
     "nameservers": [
         "pdns1.ultradns.net",
+        "ns2.p31.dynect.net",
         "pdns6.ultradns.co.uk",
         "ns3.p31.dynect.net",
-        "ns1.p31.dynect.net",
         "ns4.p31.dynect.net",
-        "ns2.p31.dynect.net"
+        "ns1.p31.dynect.net"
     ]
 }

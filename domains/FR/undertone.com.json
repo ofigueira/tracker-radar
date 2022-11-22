@@ -9,18 +9,70 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "hb",
+        "cdn",
         "ads",
-        "evt"
+        "evt",
+        "usr"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "undertone\\.com\\/hb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paddock-gp.com",
+                "www.paddock-gp.com",
+                "www.xxlmag.com"
+            ]
+        },
+        {
+            "rule": "undertone\\.com\\/js\\/usersync\\.html",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "629d62adfad8d2674fb6b83a8ba85e3d76dd9f0e63a7a51b5753d0ea223af396"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paddock-gp.com",
+                "www.xxlmag.com"
+            ]
+        },
+        {
             "rule": "undertone\\.com\\/u",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "ads",
@@ -28,7 +80,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -38,6 +90,26 @@
                 "ups.com",
                 "www.ups.com"
             ]
+        },
+        {
+            "rule": "undertone\\.com\\/userPixel\\/sync",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xxlmag.com",
+                "www.xxlmag.com"
+            ]
         }
     ],
     "categories": [
@@ -45,14 +117,34 @@
         "Advertising"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "ezodn.com",
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "townsquareblogs.com",
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "doi3unldljdx6.cloudfront.net",
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "demdex.net",
+            "prevalence": 0.18181818181818182
+        }
+    ],
     "types": {
-        "Image": 2
+        "XHR": 3,
+        "Document": 2,
+        "Image": 4
     },
     "nameservers": [
         "dns3.p09.nsone.net",
         "dns1.p09.nsone.net",
-        "dns2.p09.nsone.net",
-        "dns4.p09.nsone.net"
+        "dns4.p09.nsone.net",
+        "dns2.p09.nsone.net"
     ]
 }

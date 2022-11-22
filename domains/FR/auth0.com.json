@@ -7,13 +7,19 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
+        "cdn",
+        "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
         "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
     ],
     "cnames": [
+        {
+            "original": "auth.beautybay.com",
+            "resolved": "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu.auth0.com"
+        },
         {
             "original": "auth.generale-optique.com",
             "resolved": "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu.auth0.com"
@@ -23,20 +29,51 @@
             "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gymshark.com",
+                "www.gymshark.com"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000202,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
+                "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
                 "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
+                {
+                    "original": "auth.beautybay.com",
+                    "resolved": "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu.auth0.com"
+                },
                 {
                     "original": "auth.generale-optique.com",
                     "resolved": "fr-generaleoptique-production-cd-sizo8jvhnsx7fkqw.edge.tenants.eu.auth0.com"
@@ -47,22 +84,39 @@
                 }
             ],
             "responseHashes": [
-                "686a14f49c2e15a92a5d8ac42697437042cb83d921333b549a005ed421ae551e"
+                "8db26793d437711bad6608a5744026b43995827c2e4188c0d49a33f8e39de4ee",
+                "a8427fc9c8ebd0eb246bb4bf1e9cf7d8b78d58492c44ef1af27539968782bd3a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "generale-optique.com",
+                "beautybay.com",
+                "www.beautybay.com",
+                "www.generale-optique.com",
                 "www.native-instruments.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.000301,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "grandvision.io",
+            "prevalence": 0.25
+        }
+    ],
     "types": {
-        "Document": 2
+        "Script": 2,
+        "Document": 4
     },
-    "nameservers": []
+    "nameservers": [
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
+    ]
 }

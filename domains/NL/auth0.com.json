@@ -7,10 +7,10 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000609,
-    "sites": 6,
+    "prevalence": 0.000702,
+    "sites": 7,
     "subdomains": [
-        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "cdn",
         "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
         "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu"
@@ -27,32 +27,49 @@
         {
             "original": "auth.pearle.nl",
             "resolved": "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu.auth0.com"
-        },
-        {
-            "original": "login.arduino.cc",
-            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gymshark.com",
+                "www.gymshark.com"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000406,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
                 "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000406,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
-                {
-                    "original": "login.arduino.cc",
-                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-                },
                 {
                     "original": "auth.eyewish.nl",
                     "resolved": "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu.auth0.com"
@@ -67,14 +84,13 @@
                 }
             ],
             "responseHashes": [
-                "a8dd4507317d2fca4e5982acd775e0904add50fa92ba3c49c0621fb0caf40162"
+                "0d40da99f9717ae89a81ad5810404c5c2e7504eae455d10342b3b405e319c519"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arduino.cc",
-                "www.eyewish.nl",
+                "eyewish.nl",
                 "www.native-instruments.com",
                 "www.pearle.nl"
             ]
@@ -82,9 +98,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000406,
+    "cookies": 0.000301,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "grandvision.io",
+            "prevalence": 0.3333333333333333
+        }
+    ],
     "types": {
-        "Document": 4
+        "Script": 2,
+        "Document": 3
     },
-    "nameservers": []
+    "nameservers": [
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
+    ]
 }
