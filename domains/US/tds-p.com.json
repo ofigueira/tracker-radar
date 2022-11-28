@@ -4,15 +4,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000197,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "collect-com.prod"
+        "collect-com.prod",
+        "collect-de.prod",
+        "collect-nl.prod"
     ],
     "cnames": [
         {
             "original": "collect.conrad.com",
             "resolved": "collect-com.prod.tds-p.com"
+        },
+        {
+            "original": "collect.conrad.de",
+            "resolved": "collect-de.prod.tds-p.com"
+        },
+        {
+            "original": "collect.conrad.nl",
+            "resolved": "collect-nl.prod.tds-p.com"
         }
     ],
     "fingerprinting": 1,
@@ -26,7 +36,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "collect.conrad.com",
@@ -34,7 +44,7 @@
                 }
             ],
             "responseHashes": [
-                "4f4a9b8b60f90c04f221818f469d5e7c73c039a42371a9d1d8c0b2265785a69a"
+                "5b63f946d6dc34d507022fba185e8d61e377bf88189bc62308409ea4ddc55cc9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,13 +53,55 @@
                 "conrad.com",
                 "www.conrad.com"
             ]
+        },
+        {
+            "rule": "tds-p\\.com\\/g\\/collect",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collect-de.prod",
+                "collect-nl.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "collect.conrad.de",
+                    "resolved": "collect-de.prod.tds-p.com"
+                },
+                {
+                    "original": "collect.conrad.nl",
+                    "resolved": "collect-nl.prod.tds-p.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000040687620791374224
+            },
+            "exampleSites": [
+                "conrad.de",
+                "www.conrad.de",
+                "www.conrad.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000203,
+    "topInitiators": [
+        {
+            "domain": "instana.io",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 3
     },
     "nameservers": []
 }

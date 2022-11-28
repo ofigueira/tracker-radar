@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000131,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "aa"
+        "aa",
+        "t"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "hwigroup\\.com\\/json",
@@ -21,7 +22,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
@@ -43,10 +44,38 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hardware.info",
+                "nl.hardware.info"
+            ]
+        },
+        {
+            "rule": "hwigroup\\.com\\/ctx\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5dfc4600b7367b9342c7fae60c5f4a8a44257a7e1673808d07243ef8fa347447"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,12 +90,17 @@
     "topInitiators": [
         {
             "domain": "hwigroup.net",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.5
         }
     ],
     "types": {
         "Fetch": 2,
-        "Preflight": 2
+        "Preflight": 2,
+        "Script": 2
     },
     "nameservers": [
         "norman.ns.cloudflare.com",

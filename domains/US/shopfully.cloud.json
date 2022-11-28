@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000262,
-    "sites": 4,
+    "prevalence": 0.0000678,
+    "sites": 10,
     "subdomains": [
-        "viewer-whitelabel"
+        "viewer-whitelabel",
+        "log-tiendeo"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -26,7 +27,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d167c0353d5242f7659e8248a8b3486c002e072a006615adcb28a8740ec928e9"
@@ -42,13 +43,15 @@
         {
             "rule": "shopfully\\.cloud\\/scripts\\/v1\\/init\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "viewer-whitelabel"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d167c0353d5242f7659e8248a8b3486c002e072a006615adcb28a8740ec928e9"
@@ -60,6 +63,28 @@
                 "rejectshop.com.au",
                 "www.rejectshop.com.au"
             ]
+        },
+        {
+            "rule": "shopfully\\.cloud\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log-tiendeo"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiendeo.com.br",
+                "www.tiendeo.com",
+                "www.tiendeo.com.br",
+                "www.tiendeo.fr"
+            ]
         }
     ],
     "categories": [],
@@ -68,17 +93,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5333333333333333
+        },
+        {
+            "domain": "tiendeo.com",
+            "prevalence": 0.4666666666666667
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns0.dnsmadeeasy.com",
         "ns2.dnsmadeeasy.com",
-        "ns1.dnsmadeeasy.com",
         "ns4.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
         "ns3.dnsmadeeasy.com"
     ]
 }

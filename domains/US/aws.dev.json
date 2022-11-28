@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000112,
-    "sites": 17,
+    "prevalence": 0.000122,
+    "sites": 18,
     "subdomains": [
         "prod.log.shortbread",
-        "prod-us-west-2.csp-report.marketing"
+        "prod-us-west-2.csp-report.marketing",
+        "bootstrap.prod.scoville.dubai"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,8 +22,8 @@
                 "prod.log.shortbread"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000591,
+            "sites": 10,
+            "prevalence": 0.0000678,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,6 +38,7 @@
                 "calculator.aws",
                 "docs.amplify.aws",
                 "docs.aws.amazon.com",
+                "health.aws.amazon.com",
                 "reinvent.awsevents.com",
                 "repost.aws",
                 "signin.aws.amazon.com"
@@ -51,7 +53,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -63,29 +65,67 @@
                 "awsevents.com",
                 "reinvent.awsevents.com"
             ]
+        },
+        {
+            "rule": "aws\\.dev\\/bwp\\.js",
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bootstrap.prod.scoville.dubai"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "13ad90257fdefc8cfdbb1bb35c3d63c920cc3c7a6e685d3e4d11230c848a3003"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ubid_ovr": {
+                    "ttl": 31536002,
+                    "length": 36,
+                    "prevalence": 0.000006781270131895704,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eufy.com",
+                "us.eufy.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000656,
+    "cookies": 0.00000678,
     "topInitiators": [
         {
             "domain": "awsstatic.com",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.5
         },
         {
             "domain": "first party",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.4166666666666667
+        },
+        {
+            "domain": "d39rzpfdfyswnj.cloudfront.net",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "XHR": 9,
-        "Other": 2
+        "XHR": 10,
+        "Other": 2,
+        "Script": 2
     },
     "nameservers": [
-        "ns-399.awsdns-49.com",
         "ns-964.awsdns-56.net",
+        "ns-1108.awsdns-10.org",
         "ns-1918.awsdns-47.co.uk",
-        "ns-1108.awsdns-10.org"
+        "ns-399.awsdns-49.com"
     ]
 }

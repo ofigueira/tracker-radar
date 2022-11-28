@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000131,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "modules"
+        "modules",
+        "displaysdata"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,15 +22,39 @@
             ],
             "apis": {
                 "window.localStorage": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d50a13f63a57c50be00aeb8140d9437af1abe9b7a0901498490678605dbc58b4"
+                "a76133098c9d27d905e2eba4021e55b35188e4871c16f99a8fc59a98de24dcf0"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lionbrand.com",
+                "www.lionbrand.com"
+            ]
+        },
+        {
+            "rule": "promolayer\\.io\\/displays\\/lion-brand-yarn\\.myshopify\\.com",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "displaysdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4880b2361ae9b08d5143446b36a2b7299654b287ce722151c5076bf3dbf4773f"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -44,11 +69,16 @@
     "topInitiators": [
         {
             "domain": "yottaa.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "abby.ns.cloudflare.com",

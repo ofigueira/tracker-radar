@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000197,
-    "sites": 30,
+    "prevalence": 0.000224,
+    "sites": 33,
     "subdomains": [
         "cdn.hera",
         "js.api.nidan",
         "meas.hera",
         "alxc.allox",
-        "alxd.allox"
+        "alxd.allox",
+        "sync.daisy"
     ],
     "cnames": [
         {
@@ -21,6 +22,10 @@
         {
             "original": "alxd.addlv.smt.docomo.ne.jp",
             "resolved": "alxd.allox.d2c.ne.jp"
+        },
+        {
+            "original": "sync.addlv.smt.docomo.ne.jp",
+            "resolved": "sync.daisy.d2c.ne.jp"
         }
     ],
     "fingerprinting": 1,
@@ -33,12 +38,12 @@
                 "cdn.hera"
             ],
             "apis": {
-                "NavigatorUAData.prototype.getHighEntropyValues": 17,
-                "window.localStorage": 17,
-                "Date.prototype.getTime": 17
+                "NavigatorUAData.prototype.getHighEntropyValues": 18,
+                "window.localStorage": 18,
+                "Date.prototype.getTime": 18
             },
-            "sites": 17,
-            "prevalence": 0.000112,
+            "sites": 18,
+            "prevalence": 0.000122,
             "cnames": [],
             "responseHashes": [
                 "d4cde669955ee477e77a4ea2e25b7f0caaaddfdd01da4957b04e219bd2b68330",
@@ -52,10 +57,11 @@
                 "business.nikkei.com",
                 "dcard.docomo.ne.jp",
                 "furunavi.jp",
+                "hands.net",
                 "himitsu.wakasa.jp",
                 "jp.sharp",
+                "k-tai.sharp.co.jp",
                 "star.cocoloni.jp",
-                "www.gaitame.com",
                 "www.galaxymobile.jp",
                 "www.hotespa.net",
                 "www.jcb.co.jp",
@@ -69,45 +75,48 @@
         },
         {
             "rule": "d2c\\.ne\\.jp\\/id\\/nidan\\/pre",
-            "cookies": 0.000112,
+            "cookies": 0.000122,
             "fingerprinting": 0,
             "subdomains": [
                 "js.api.nidan"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000112,
+            "sites": 18,
+            "prevalence": 0.000122,
             "cnames": [],
             "responseHashes": [
-                "ec8b7a6ed8af2d04554d51c51bbb1a2a66c37234ef3b8e3728c0299bcd1b0c0d",
-                "71201c2447dfc842785fd2e850fba9b627abc3fe25d6d180c682076d124692ae",
-                "995643ebe3392dffc8b8620aaa7eb90fcad497d0495c098443d520cdaa5a1873",
-                "01153a6008c58bea33236777f1961f874b1c781aa16c1834d8baa400134c4c4e",
-                "559dd93a2c3988efa775c456b7f1648ecffe4cbac937b713aa6d0e2e51542c91",
-                "538011a7fd344c70c57d934e204ee7a128e8030cdaaab8e6d127467167e9e6ed",
-                "5286ce5a6bb2a2ccff89e72068a2dda5e9ec54d5634890e84f6b3454455b7763",
-                "7be9171d4670b289acbf5d4639305b4044620d18c66c9e77ee371f9b581540e9",
-                "abd5cbd6755af1e80f182af75c39ad43eda81849e5385eef84b85735f034c672",
-                "2b0b2684f4d6c17a7730c277719ea1484372222f269f8b577442299a14081dbf",
-                "be7cd6377ac6f11f647d215c1d7fbfd9851dba8b04f917ad090fbb0c461bce0c",
-                "a263f9816a477aa2bb0f8b2e7b24d0e821b0b317432fe1dede6ef0f02077c5ec",
-                "78e548e54735de68162158d74f15df04cd0aff7918a6da0a33beb9e304025e28",
-                "7ac904453998e1bfb3122287b0a558a0bea39c22562d3ff005752f7f2a690e7c",
-                "76ce4ce6c91fda545f9ea0d0e4f457e2ac1f478f54e8e6e585d2112e0170fc1d",
-                "6ab27c92dbf9e1c4970480efc87096503cda5b4df7e27cc24b78d48cd8ecf649"
+                "d57dec47070fbc3de38a16b1966c3ca646514e5c052876a2ecd825f8be7b4b13",
+                "a2720f8f0d839ed6e36ce0eaf3d5be9fc6ce799143f0b65c46f5c4d3856959d7",
+                "321257e26d616c42923044926549175cd357bb0d885e2797a0250b7538c83599",
+                "ccd9ed6a461c7fe252e2253195ab12f738c4b6f31380b278fe7334faae21e105",
+                "98382ae7f25e6ec81c402276fb9d8a4ef1d155b1e6bd328d8c2d4961a3f6ef9d",
+                "1cb2578dc3af2fc6826803ef62ca2ecf626d840ac016e93e8e66f55395e9877a",
+                "593c839b3abdf52d5967dd2b92111c1b9cd230f47aefb5de6624e17cb1c6211a",
+                "634391ff66079f5e12577a4d9ae88f00bcde8b3d9a1be9b57649a570ecf17c7e",
+                "fd716afcede5da70fb22a71adbe092f2ae458eb0ae49a73b946c6de5425ce33f",
+                "5ddcdc7a5a750084f73bf98039c857498cd4b557f49a2e5c73e70d6e0987a30a",
+                "3bb956aed478ca79dc04b4cc8822cf7c5e1bafab6663f9fa4a024d2287aa93fb",
+                "c8ea6497acc5100f0a25287054b258813b1bf07c04cc7159bb96d9e3cd31989f",
+                "971e30015fddf8a16c2ab472927a5c141605116b9c6c932879d055f0cdd1a993",
+                "b221ee55ce4966e82dc51b41a0ac6e56215af0b07bc267d143d04ddf4b10b20e",
+                "6cc74964613cf18f12b233dc40567545edf503a1d53bd613c282986c9ab3ee58",
+                "0110538ac9f55da4107ef6b60199fc3381ea0a0ef4aa41873fb7ba5f54928c86"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "tlb_sid": 0.000006781270131895704
+            },
             "exampleSites": [
                 "nikkei.com",
                 "business.nikkei.com",
                 "dcard.docomo.ne.jp",
                 "furunavi.jp",
+                "hands.net",
                 "himitsu.wakasa.jp",
                 "jp.sharp",
+                "k-tai.sharp.co.jp",
                 "star.cocoloni.jp",
-                "www.gaitame.com",
                 "www.galaxymobile.jp",
                 "www.hotespa.net",
                 "www.jcb.co.jp",
@@ -127,26 +136,23 @@
                 "js.api.nidan"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000112,
+            "sites": 16,
+            "prevalence": 0.000109,
             "cnames": [],
             "responseHashes": [
                 "4d60b93cfa47e5fd3199e397244fe6c2aee29d04734d75020ddfb662a8081f50"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "tlb_sid": 0.000006561120114425934
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nikkei.com",
-                "business.nikkei.com",
-                "dcard.docomo.ne.jp",
+                "docomo.ne.jp",
                 "furunavi.jp",
+                "hands.net",
                 "himitsu.wakasa.jp",
                 "jp.sharp",
+                "k-tai.sharp.co.jp",
                 "star.cocoloni.jp",
-                "www.gaitame.com",
                 "www.galaxymobile.jp",
                 "www.hotespa.net",
                 "www.jcb.co.jp",
@@ -159,28 +165,6 @@
             ]
         },
         {
-            "rule": "d2c\\.ne\\.jp\\/v1\\/events\\/53d2d-40014132-f41e-4bb4-ade5-0a5928cc8842\\/pv\\/tag\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "meas.hera"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000131,
-            "cnames": [],
-            "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nikkei.com",
-                "business.nikkei.com"
-            ]
-        },
-        {
             "rule": "d2c\\.ne\\.jp\\/v1\\/events\\/1e68e-cdd93453-bd81-4462-96ef-6a2d1d3ac186\\/pv\\/tag\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -189,7 +173,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -211,7 +195,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "alxc.addlv.smt.docomo.ne.jp",
@@ -238,7 +222,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "alxd.addlv.smt.docomo.ne.jp",
@@ -246,7 +230,7 @@
                 }
             ],
             "responseHashes": [
-                "5031e0e0e882157282c155ceeacab30b42492bb72ba6ed8442227723b1a76efe"
+                "5eb4122e89d2676ffd91d142d50746397b460b401afe9791445f22409e53a52a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -254,6 +238,28 @@
             "exampleSites": [
                 "docomo.ne.jp",
                 "topics.smt.docomo.ne.jp"
+            ]
+        },
+        {
+            "rule": "d2c\\.ne\\.jp\\/v1\\/events\\/30883-9835c0da-a47d-4e5e-aa08-b7acc703b336\\/pv\\/tag\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "meas.hera"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jp.sharp",
+                "k-tai.sharp.co.jp"
             ]
         },
         {
@@ -265,7 +271,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -279,28 +285,6 @@
             ]
         },
         {
-            "rule": "d2c\\.ne\\.jp\\/v1\\/events\\/92abb-4c1cf94e-e8e5-4580-852c-1729d187d821\\/pv\\/tag\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "meas.hera"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000131,
-            "cnames": [],
-            "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gaitame.com",
-                "www.gaitame.com"
-            ]
-        },
-        {
             "rule": "d2c\\.ne\\.jp\\/v1\\/events\\/4f513-76b9d781-f27d-4601-94a6-5e7e4290620a\\/pv\\/tag\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -309,7 +293,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -331,7 +315,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -353,7 +337,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -375,7 +359,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -383,12 +367,39 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__letro_ugc_sets_pattern_357": 0.000013122240228851869,
-                "__ph_opt_in_out_phc_tnQZyAK9BM0WkS5fdAZAxA1bNnyKUlWSACWzmxDfVrA": 0.000006561120114425934
+                "__letro_ugc_sets_pattern_357": 0.000013562540263791409,
+                "__ph_opt_in_out_phc_tnQZyAK9BM0WkS5fdAZAxA1bNnyKUlWSACWzmxDfVrA": 0.000006781270131895704
             },
             "exampleSites": [
                 "nissen.co.jp",
                 "www.nissen.co.jp"
+            ]
+        },
+        {
+            "rule": "d2c\\.ne\\.jp\\/tafs\\/p\\/dsync",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync.daisy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sync.addlv.smt.docomo.ne.jp",
+                    "resolved": "sync.daisy.d2c.ne.jp"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntt.com",
+                "www.ntt.com"
             ]
         },
         {
@@ -400,7 +411,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -422,7 +433,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -444,7 +455,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -466,7 +477,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -488,7 +499,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -504,43 +515,43 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000184,
+    "cookies": 0.00021,
     "topInitiators": [
         {
             "domain": "docomo.ne.jp",
-            "prevalence": 0.4307692307692308
+            "prevalence": 0.4657534246575342
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.36923076923076925
-        },
-        {
-            "domain": "geoedge.be",
-            "prevalence": 0.06153846153846154
+            "prevalence": 0.3561643835616438
         },
         {
             "domain": "yjtag.jp",
-            "prevalence": 0.06153846153846154
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.03076923076923077
-        },
-        {
-            "domain": "d2c.ne.jp",
-            "prevalence": 0.015384615384615385
-        },
-        {
-            "domain": "d2cdm.jp",
-            "prevalence": 0.015384615384615385
+            "prevalence": 0.0547945205479452
         },
         {
             "domain": "microad.jp",
-            "prevalence": 0.015384615384615385
+            "prevalence": 0.0410958904109589
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.0273972602739726
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.0273972602739726
+        },
+        {
+            "domain": "d2c.ne.jp",
+            "prevalence": 0.0136986301369863
+        },
+        {
+            "domain": "d2cdm.jp",
+            "prevalence": 0.0136986301369863
         }
     ],
     "types": {
-        "Script": 55,
+        "Script": 56,
         "Image": 26
     },
     "nameservers": [

@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000984,
+    "prevalence": 0.000102,
     "sites": 15,
     "subdomains": [
+        "61df24fe4763.2a45d33e.us-east-1.token",
+        "61df24fe4763.2a45d33e.us-east-1.captcha",
+        "static.captcha",
         "3303198e064a.93199650.eu-west-1.token",
         "3303198e064a.93199650.eu-west-1.captcha",
-        "static.captcha",
         "97d067090164.edge.sdk",
         "97d067090164.3d54e4e6.us-east-1.token",
         "22a3c9855714.5397ffe4.us-east-1.token",
@@ -25,11 +27,11 @@
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/challenge\\.js",
-            "cookies": 0.00000656,
+            "rule": "awswaf\\.com\\/61df24fe4763\\/dbe64e68b7a4\\/827c057c45b2\\/challenge\\.js",
+            "cookies": 0.00000678,
             "fingerprinting": 3,
             "subdomains": [
-                "3303198e064a.93199650.eu-west-1.token"
+                "61df24fe4763.2a45d33e.us-east-1.token"
             ],
             "apis": {
                 "Navigator.prototype.appName": 2,
@@ -50,17 +52,142 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bd0f5f14702e9e79c4cffdfbf05cc2516dfb2c0fcf136a96d89747cb73a875c9"
+                "296518b7b84f02a2910b0af37ccd41523c160c63e9e554face8bc8c1e54692db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aws-waf-token": {
+                    "ttl": 345600,
+                    "length": 250,
+                    "prevalence": 0.000006781270131895704,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bplans.com",
+                "articles.bplans.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/61df24fe4763\\/dbe64e68b7a4\\/827c057c45b2\\/captcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "61df24fe4763.2a45d33e.us-east-1.captcha"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.languages": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b3528b068fe18dd6bf5904d5108e402b729125df6df674d17bea2c6cf98184f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bplans.com",
+                "articles.bplans.com"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/stylesheet\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.captcha"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000475,
+            "cnames": [],
+            "responseHashes": [
+                "2998d81cfd55c682823a732f696790f3745c3c1b394ca6701cc91dda9dc54516"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bplans.com",
+                "articles.bplans.com",
+                "www.boilerjuice.com",
+                "www.couponchief.com",
+                "www.rentio.jp",
+                "www.uvmhealth.org",
+                "www.xe.gr"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/AmazonEmber-Light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.captcha"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000475,
+            "cnames": [],
+            "responseHashes": [
+                "7ba49badcc6d0141f4a12d364346e737e063627cad02365666f6ce39628a6f26"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bplans.com",
+                "articles.bplans.com",
+                "www.boilerjuice.com",
+                "www.couponchief.com",
+                "www.rentio.jp",
+                "www.uvmhealth.org",
+                "www.xe.gr"
+            ]
+        },
+        {
+            "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/challenge\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "3303198e064a.93199650.eu-west-1.token"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.webdriver": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bbb0b7891609e9cdbafd0fdfbe6930660906697a628eb3a4d50548dbfaa6783"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345601,
                     "length": 250,
-                    "prevalence": 0.000006561120114425934,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 }
             },
@@ -82,10 +209,10 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "878f063b4cf197e8a5d6f448f7e877dc2784f57b8ab4bf95d1e2975fd64ea2f2"
+                "b3528b068fe18dd6bf5904d5108e402b729125df6df674d17bea2c6cf98184f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -96,97 +223,73 @@
             ]
         },
         {
-            "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/stylesheet\\.css",
+            "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "static.captcha"
+                "3303198e064a.93199650.eu-west-1.token"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000459,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2998d81cfd55c682823a732f696790f3745c3c1b394ca6701cc91dda9dc54516"
+                "7fcbb04ab10ba16729481f43f54999856f8ccb1071537003574fc6baf3c7ba13"
             ],
-            "type": "Stylesheet",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boilerjuice.com",
-                "www.boilerjuice.com",
-                "www.bookfinder.com",
-                "www.couponchief.com",
-                "www.rentio.jp",
-                "www.uvmhealth.org",
-                "www.xe.gr"
+                "www.boilerjuice.com"
             ]
         },
         {
-            "rule": "awswaf\\.com\\/fonts\\/AmazonEmberLt\\/AmazonEmber-Light\\.woff2",
+            "rule": "awswaf\\.com\\/3303198e064a\\/eb65daac032b\\/41f3d0f4ab3a\\/verify",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "static.captcha"
+                "3303198e064a.93199650.eu-west-1.token"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000459,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "7ba49badcc6d0141f4a12d364346e737e063627cad02365666f6ce39628a6f26"
-            ],
-            "type": "Font",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boilerjuice.com",
-                "www.boilerjuice.com",
-                "www.bookfinder.com",
-                "www.couponchief.com",
-                "www.rentio.jp",
-                "www.uvmhealth.org",
-                "www.xe.gr"
+                "www.boilerjuice.com"
             ]
         },
         {
             "rule": "awswaf\\.com\\/97d067090164\\/bb2ff3da952f\\/challenge\\.js",
-            "cookies": 0.00000656,
-            "fingerprinting": 3,
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
             "subdomains": [
                 "97d067090164.edge.sdk",
                 "97d067090164.3d54e4e6.us-east-1.token"
             ],
             "apis": {
-                "Navigator.prototype.appName": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.webdriver": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.colorDepth": 1,
                 "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1,
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d930c86b0e83b5dfcd8ee2e9e68f610aa6033b276aa22df35302c175c478ac93"
+                "067f2c73f1904c6814fadd08926412ec3eda5ed2e7c6d64223015e3f9a654983"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345629,
+                    "ttl": 345633,
                     "length": 246,
-                    "prevalence": 0.000006561120114425934,
+                    "prevalence": 0.000006781270131895704,
                     "uniqueness": 1
                 }
             },
@@ -206,10 +309,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3f690f62451bdd400057ce251d354d127e3bfc5fedb8758c71f0bafbdeb5adc8"
+                "8dd77cc5eb860f3561b8e6a12177ff16926c1dc0f75534b9e03e669322a8d2f0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -229,7 +332,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -242,7 +345,7 @@
         },
         {
             "rule": "awswaf\\.com\\/22a3c9855714\\/0604ffe3e21b\\/677e8bff67cb\\/challenge\\.js",
-            "cookies": 0.0000131,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "22a3c9855714.5397ffe4.us-east-1.token"
@@ -266,17 +369,17 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6b7b6ecf25b078937e888154900e6215bf627b5da94df2d3fe0d9bb528752207"
+                "7bb9f294a19edd1fb6a4027b47e2785a905e6f893eeb40551d5939078020d111"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
-                    "ttl": 345601,
+                    "ttl": 345599,
                     "length": 242,
-                    "prevalence": 0.000013122240228851869,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 }
             },
@@ -298,7 +401,7 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b3528b068fe18dd6bf5904d5108e402b729125df6df674d17bea2c6cf98184f4"
@@ -320,10 +423,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1f7a5d9acdeeff8912831e96f5d3e48bba99f20add8a8750dac2d4300966b2b7"
+                "2e10440fdcc68fd86fcc8fd5791fc2db81ff679b37591eb1c4f8a26575bab214"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -342,7 +445,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -355,7 +458,7 @@
         },
         {
             "rule": "awswaf\\.com\\/6b9ee2806d56\\/141f3cd6fe33\\/challenge\\.js",
-            "cookies": 0.00000656,
+            "cookies": 0.00000678,
             "fingerprinting": 3,
             "subdomains": [
                 "6b9ee2806d56.us-west-2.sdk",
@@ -380,17 +483,17 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "19d3ccdd8d98fdea1c74b37f016a69300ee6868f3196982fa1599c808f5dc984"
+                "06abbe10dd0c5e91f7d5adc4ca03a751e54485e05af8037759d356269f6639ee"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345602,
-                    "length": 245,
-                    "prevalence": 0.000006561120114425934,
+                    "length": 250,
+                    "prevalence": 0.000006781270131895704,
                     "uniqueness": 1
                 }
             },
@@ -410,12 +513,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "1f50ee38b4f515aaf4f41dd456ef421fa64e6908909559bab20c5571791ac94e"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -433,10 +534,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f0e5ba5f04531e4284a5e4b6f9c27d1e472bb2b952b5a73aeb8c0e80f7f1961d"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -446,7 +549,7 @@
         },
         {
             "rule": "awswaf\\.com\\/df9c409c788f\\/b1342a1e3ab2\\/d5bd89fdf389\\/challenge\\.js",
-            "cookies": 0.00000656,
+            "cookies": 0.00000678,
             "fingerprinting": 3,
             "subdomains": [
                 "df9c409c788f.0dfe73b4.us-east-1.token"
@@ -470,17 +573,17 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "dddb58b85277f8f46e14698f2aff6685a8939497712a1665abe5bc04b3b1f762"
+                "51c02f93b0befacf6873c46a493438ed80ae6186fd76233b8ef631d8525ab71f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345600,
                     "length": 248,
-                    "prevalence": 0.000006561120114425934,
+                    "prevalence": 0.000006781270131895704,
                     "uniqueness": 1
                 }
             },
@@ -502,7 +605,7 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b3528b068fe18dd6bf5904d5108e402b729125df6df674d17bea2c6cf98184f4"
@@ -517,7 +620,7 @@
         },
         {
             "rule": "awswaf\\.com\\/0ef869591873\\/154dbc34503e\\/c8c414d5f04d\\/challenge\\.js",
-            "cookies": 0.0000131,
+            "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
                 "0ef869591873.fdc1f750.us-east-1.token"
@@ -541,17 +644,17 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b2aece8afe3b0ee27524cb6761f6c297033baeebfa949fd4d9f77034aaee536e"
+                "15a365db9415a00985aaeda91ea9e685cff5f11f651239a0e2a9ac4515e5d7f8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "aws-waf-token": {
                     "ttl": 345600,
                     "length": 237,
-                    "prevalence": 0.000013122240228851869,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 }
             },
@@ -573,10 +676,10 @@
                 "Navigator.prototype.languages": 2
             },
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "878f063b4cf197e8a5d6f448f7e877dc2784f57b8ab4bf95d1e2975fd64ea2f2"
+                "b3528b068fe18dd6bf5904d5108e402b729125df6df674d17bea2c6cf98184f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -595,10 +698,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a105ec36d7069373c9f3ccacfe429f39d5ca6ec7a408631d00826a68af0c6c94"
+                "3f3c857366f624551cdb27ad0f73e6ba6144bcbec17eb21c29d8744b850f98f4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -617,7 +720,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -631,7 +734,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000853,
+    "cookies": 0.0000882,
     "topInitiators": [
         {
             "domain": "first party",
@@ -639,16 +742,16 @@
         }
     ],
     "types": {
-        "Script": 20,
+        "Script": 24,
         "Stylesheet": 7,
         "Font": 7,
-        "Fetch": 8,
-        "Preflight": 8
+        "Fetch": 10,
+        "Preflight": 10
     },
     "nameservers": [
+        "ns-759.awsdns-30.net",
         "ns-1121.awsdns-12.org",
         "ns-1878.awsdns-42.co.uk",
-        "ns-43.awsdns-05.com",
-        "ns-759.awsdns-30.net"
+        "ns-43.awsdns-05.com"
     ]
 }

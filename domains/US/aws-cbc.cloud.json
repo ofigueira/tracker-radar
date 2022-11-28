@@ -4,18 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000197,
+    "prevalence": 0.0000203,
     "sites": 3,
     "subdomains": [
-        "cdn.gateway.now-plus-prod",
-        "origin.ntv.prod"
+        "cdn.gateway.now-plus-prod"
     ],
-    "cnames": [
-        {
-            "original": "metrics.n-tv.de",
-            "resolved": "origin.ntv.prod.aws-cbc.cloud"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
@@ -27,44 +21,39 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000131,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capital.de",
+                "www.rtl.de"
+            ]
+        },
+        {
+            "rule": "aws-cbc\\.cloud\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.gateway.now-plus-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "573ab0f7a4e689f5dcdd4a91b6775e6ffa36e6800278fbc77fd75e340391dd9b"
+                "d864b6005ca8cd7b9637485bccf4503632cb31c48c3ef7ec61b362f30700a65d",
+                "e5f6d29cff2b22460345f3bd7e8263bd69e36e17a9ed090c3739d1b509d3a78b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "capital.de",
-                "www.capital.de"
-            ]
-        },
-        {
-            "rule": "aws-cbc\\.cloud\\/count",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "origin.ntv.prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000131,
-            "cnames": [
-                {
-                    "original": "metrics.n-tv.de",
-                    "resolved": "origin.ntv.prod.aws-cbc.cloud"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "n-tv.de",
-                "www.n-tv.de"
+                "www.capital.de",
+                "www.rtl.de"
             ]
         }
     ],
@@ -73,18 +62,22 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
             "domain": "rtl.de",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "XHR": 2,
-        "Image": 2
+        "Preflight": 2,
+        "XHR": 3
     },
     "nameservers": [
-        "ns-102.awsdns-12.com",
         "ns-854.awsdns-42.net",
-        "ns-1520.awsdns-62.org",
-        "ns-1891.awsdns-44.co.uk"
+        "ns-102.awsdns-12.com",
+        "ns-1891.awsdns-44.co.uk",
+        "ns-1520.awsdns-62.org"
     ]
 }

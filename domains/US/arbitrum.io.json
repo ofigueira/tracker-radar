@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000459,
+    "prevalence": 0.0000475,
     "sites": 7,
     "subdomains": [
-        "arb1"
+        "arb1",
+        "bridge"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,20 +21,18 @@
                 "arb1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000197,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d1c3a10ef147efcb0e9c92c634acd62362cec3c41bacfb119fde95360d1f0968",
-                "b045fd0f70512cd9f6540d60c93c8d0f9318bf5be8e0f2164a0324ff88f24595"
+                "65595142c3534ca856838278b9c61da4729cfeddf113ffef4da4efe548c15e05"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aave.com",
-                "gmx.io",
-                "stargate.finance"
+                "gmx.io"
             ]
         },
         {
@@ -44,8 +43,8 @@
                 "arb1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000197,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -53,8 +52,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aave.com",
-                "gmx.io",
-                "stargate.finance"
+                "gmx.io"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/token-list-42161\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "b0b835b992a045d7eb8eb38433c4b2a7c15ef016ad98e556f97854d9f39ca4bd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uniswap.org",
+                "app.uniswap.org",
+                "www.uniswap.exchange"
             ]
         }
     ],
@@ -64,12 +85,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9272727272727272
+        },
+        {
+            "domain": "uniswap.org",
+            "prevalence": 0.07272727272727272
         }
     ],
     "types": {
-        "Fetch": 3,
-        "Preflight": 3
+        "Fetch": 5,
+        "Preflight": 2
     },
     "nameservers": [
         "arya.ns.cloudflare.com",
