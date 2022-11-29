@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [],
     "cnames": [
         {
@@ -21,9 +21,9 @@
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "d2\\.shared\\.global\\.fastly\\.net\\/px\\/xhr\\/api\\/v2\\/collector",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "d2\\.shared\\.global\\.fastly\\.net\\/px\\/client\\/main\\.min\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 3,
             "subdomains": [],
             "apis": {},
             "sites": 2,
@@ -35,13 +35,40 @@
                 }
             ],
             "responseHashes": [
-                "fef3397bce74c17bbc699d240549def4914fdef96d7db0bcbe43070f10096eb2"
+                "b50bbd5e83ddbb4503b727b42a60cc88e0ab5b487163978ebd3428e49dfa5726"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wayfair.com",
+                "www.wayfair.de"
+            ]
+        },
+        {
+            "rule": "d2\\.shared\\.global\\.fastly\\.net\\/px\\/xhr\\/api\\/v2\\/collector",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "prx.wayfair.com",
+                    "resolved": ".d2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "854e7462d0d796f5ab6b0e848c817a834b5ab29f815a787d18f4fccbfa5e4da3",
+                "5f03f7a9575a51e5a6f541c3863d31d83be32cd6e633b51a78914542d8d6c9da"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wayfair.de",
+                "wayfair.com",
+                "www.wayfair.com",
                 "www.wayfair.de"
             ]
         }
@@ -57,9 +84,16 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "XHR": 3
     },
     "nameservers": []
 }

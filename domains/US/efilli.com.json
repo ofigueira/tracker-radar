@@ -16,15 +16,21 @@
         {
             "rule": "efilli\\.com\\/efl\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 3
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.connection": 1,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "14423d389a5d4348619a0ab425ef9f136f7f1b84d361088fe4c24af4d3d093c5"
@@ -47,11 +53,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4bbbdaf7928273b2cda2d126aa0d90cbf411207e23bc7e4903f888deb238b3b4",
-                "79fb69857bd35cec1feeb51d121f037f60150a8aaad7527eb23186814cdca1ad"
+                "4bbbdaf7928273b2cda2d126aa0d90cbf411207e23bc7e4903f888deb238b3b4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -70,22 +75,43 @@
                 "cdn"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 3,
-                "Navigator.prototype.userAgent": 3
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8b9d910926a2f820a93978348e0b09aace69591b9293e1f4d0fa18745c9aa22a"
+                "ad9c45f87c0fd533af69c58ac2bc44ea369f3dc1de9a9007a91c784678754dd1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "shiftdelete.net",
-                "www.teknosa.com",
-                "www.webtekno.com"
+                "www.teknosa.com"
+            ]
+        },
+        {
+            "rule": "efilli\\.com\\/layouts\\/efilli\\.layouts\\.chunk\\.ef09c065\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c19006d6fa42559a8682ccc172accc18dd76d93dc3853b4a38d24f1417bd5a4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shiftdelete.net",
+                "www.teknosa.com"
             ]
         },
         {
@@ -111,42 +137,38 @@
             ]
         },
         {
-            "rule": "efilli\\.com\\/layouts\\/efilli\\.layouts\\.chunk\\.d7116e21\\.js",
+            "rule": "efilli\\.com\\/v1\\/error-log",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "riza"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "b23abaefc1a757d40efbe1b2511e3f3c464f6311c8e425c2b22719a9325e22cd"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "teknosa.com",
+                "webtekno.com",
                 "www.webtekno.com"
             ]
         },
         {
-            "rule": "efilli\\.com\\/layouts\\/assets\\/efilli-logo-animated-white\\.svg",
+            "rule": "efilli\\.com\\/v1\\/error-log",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "riza"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "7d78394a837e39acd2d8b883605ef6f18534968b6d7768727ee81d7c2adb6632"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -158,13 +180,24 @@
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        }
+    ],
     "types": {
-        "Script": 8,
-        "Fetch": 3,
-        "Image": 4
+        "Script": 7,
+        "Fetch": 5,
+        "Image": 2,
+        "Other": 2
     },
     "nameservers": [
-        "marge.ns.cloudflare.com",
-        "dakota.ns.cloudflare.com"
+        "dakota.ns.cloudflare.com",
+        "marge.ns.cloudflare.com"
     ]
 }

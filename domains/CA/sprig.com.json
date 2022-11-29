@@ -4,39 +4,43 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000718,
-    "sites": 7,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
-        "api",
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/6374cf81-659a-420a-82f4-675cef31bf69\\/events",
+            "rule": "sprig\\.com\\/shim\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "37ceab8b1987aa42a20a5fdf958d0ac879bfaf81ba7034cea03f12dc5910ee0d"
+                "2c3a6296be9490987d46f79a4032c430edd2bd0b9983b0e6e6215b437c25067e"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "salesforce.com",
-                "help.salesforce.com"
+                "webflow.com",
+                "www.hillspet.com",
+                "www.mercari.com",
+                "www.proxibid.com"
             ]
         },
         {
-            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/f481aea6-0038-4ef1-9815-e0b31522e4e3\\/events",
+            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/76982966-b8e3-439a-9731-5d18330daf23\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -44,7 +48,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -56,7 +60,7 @@
             ]
         },
         {
-            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/f481aea6-0038-4ef1-9815-e0b31522e4e3\\/events",
+            "rule": "sprig\\.com\\/sdk\\/1\\/visitors\\/76982966-b8e3-439a-9731-5d18330daf23\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -64,10 +68,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "bf53f9a7cc3a735e94026ea044f4531e17a385a48bbc9ee1b9b03a730e8fef67"
+                "3d7d1ba3c52f7d06e237f8486b2826c56a268b302d8e58565c884b4209e69099"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -76,45 +80,42 @@
                 "codecademy.com",
                 "www.codecademy.com"
             ]
-        },
-        {
-            "rule": "sprig\\.com\\/shim\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [],
-            "responseHashes": [
-                "d05a1b0e467abef6f9ee1bb1c760b474f1513ee31c1ac781ee4eeb45854e8ed9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hillspet.com",
-                "www.weebly.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "mercdn.net",
+            "prevalence": 0.0625
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.0625
+        },
+        {
+            "domain": "userleap.com",
+            "prevalence": 0.0625
+        }
+    ],
     "types": {
-        "Fetch": 4,
+        "Script": 4,
         "Preflight": 2,
-        "Script": 2
+        "Fetch": 2
     },
     "nameservers": [
+        "ns-647.awsdns-16.net",
         "ns-1076.awsdns-06.org",
-        "ns-15.awsdns-01.com",
         "ns-1691.awsdns-19.co.uk",
-        "ns-647.awsdns-16.net"
+        "ns-15.awsdns-01.com"
     ]
 }

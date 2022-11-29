@@ -7,15 +7,50 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000909,
-    "sites": 9,
+    "prevalence": 0.0012,
+    "sites": 12,
     "subdomains": [
+        "rum",
         "logs",
-        "rum"
+        "session-replay"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "e1df045a4e6549d4869b86164577cb568ecdc7abd5982c68e78fb9807d7d981d",
+                "70607c679fb5683b0b4a54840a654dc805676cc797c49a57ae51cec7cfba4963",
+                "ca65c839ce97c8a28962933cc7aaffe037963fdb84211a3efa67e699f904c77c",
+                "f5a4ed1852a8f8355b3641ff1bb9efc986fd24ffa0d848468306fb5dd4deb5d5",
+                "7ae1ce9c1442105c070639204b86f439b62117a6144ac88af0a0bfb988a9b3c6",
+                "48d564c7aa306986357a8dff11fb375a0338236339f6744cc1584323ad6cdab7",
+                "8b047fde32ffaddd22332a8d613057f081a2741e7f2b14550cb6b0167a99a496"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hashicorp.com",
+                "developer.hashicorp.com",
+                "opensea.io",
+                "www.jetstar.com",
+                "www.midjourney.com",
+                "www.shopify.com",
+                "www.wish.com",
+                "www.zoominfo.com"
+            ]
+        },
         {
             "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/logs",
             "cookies": 0,
@@ -25,7 +60,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Ping",
@@ -44,8 +79,8 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000505,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -54,11 +89,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "burger-king.ch",
-                "www.burger-king.ch",
+                "codecademy.com",
                 "www.codecademy.com",
-                "www.myfitnesspal.com",
-                "www.zoominfo.com"
+                "www.nbc.com"
             ]
         },
         {
@@ -70,11 +103,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "ca1d3dc9693e8e904e995f07a8b8a0d3f9edb74daabd216ad2975a0ca19ced31",
-                "030b9d3f8e2d587cb4f4dc9bba0a4731e4deb5f5d2d575446dfde564d2d3dd3e"
+                "53bd6eb7c93d6e5ecbcd157498ebd2c985b6603b02e9bcacf385b0d0d41bdab7",
+                "12d64d8e86dbe2a8873183134c6f533e1fed38839b70a444508fb776a006a7c9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -86,41 +119,55 @@
             ]
         },
         {
-            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "rum"
+                "session-replay"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000303,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "28cb31fa475ba0446d2f665176eab1514ac7fd129bcaa8e2518fb0289138b870",
-                "a7364e4fde93c1cb981c76a188a11da97adcc29b41e190da1597a29c8fb3fea7"
+                "42f129f8e8e4e2a3e9820975350568f2f866e92b6a34e14570c0fbf722429065",
+                "6d4038b698517d0180544c42b13b61d1d95ddaf928bdf42f6a51761b7a27816b"
             ],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gartentraum.de",
-                "www.gartentraum.de",
-                "www.wish.com"
+                "jetstar.com",
+                "www.midjourney.com",
+                "www.nbc.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9262295081967213
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.06557377049180328
+        },
+        {
+            "domain": "organic.ly",
+            "prevalence": 0.00819672131147541
+        }
+    ],
     "types": {
-        "Ping": 7,
-        "XHR": 3,
-        "Fetch": 3
+        "Fetch": 8,
+        "Ping": 5,
+        "XHR": 6
     },
     "nameservers": [
-        "ns-1264.awsdns-30.org",
         "ns-128.awsdns-16.com",
+        "ns-1264.awsdns-30.org",
         "ns-1907.awsdns-46.co.uk",
         "ns-560.awsdns-06.net"
     ]

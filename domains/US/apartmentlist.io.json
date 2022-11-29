@@ -8,7 +8,8 @@
     "sites": 2,
     "subdomains": [
         "snowplow-schemas",
-        "snowplow-collector"
+        "snowplow-collector",
+        "collector"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -48,15 +49,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_sp_ses.96c0": {
-                    "ttl": 1803,
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 0.5
                 },
                 "_sp_id.96c0": {
-                    "ttl": 63072003,
+                    "ttl": 63072006,
                     "length": 108,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 }
             },
@@ -107,20 +108,50 @@
                 "apartmentlist.com",
                 "www.apartmentlist.com"
             ]
+        },
+        {
+            "rule": "apartmentlist\\.io\\/g\\/collect",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ae89f397a9df1b40df07187deeaf66675c382c35863fcb9c786b349e7181dd89"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000040687620791374224
+            },
+            "exampleSites": [
+                "apartmentlist.com",
+                "www.apartmentlist.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Script": 2,
-        "XHR": 2,
+        "XHR": 4,
         "Preflight": 2
     },
     "nameservers": [
-        "ns-175.awsdns-21.com",
-        "ns-514.awsdns-00.net",
         "ns-1313.awsdns-36.org",
+        "ns-514.awsdns-00.net",
+        "ns-175.awsdns-21.com",
         "ns-1959.awsdns-52.co.uk"
     ]
 }

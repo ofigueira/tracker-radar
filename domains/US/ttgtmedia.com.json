@@ -18,13 +18,11 @@
         {
             "rule": "ttgtmedia\\.com\\/cmp\\/sourcepoint\\/gdprTCFv2-config\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -63,12 +61,14 @@
         },
         {
             "rule": "ttgtmedia\\.com\\/cmp\\/sourcepoint\\/ccpa-config\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -76,7 +76,14 @@
                 "504dccee9e7aa92cf5c6eeccde7dcea84e671df3603644cd9dcbeddef52903c0"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ccpa_cta": {
+                    "ttl": 31536015,
+                    "length": 4,
+                    "prevalence": 0.000013562540263791409,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "datasciencecentral.com",
@@ -86,13 +93,11 @@
         {
             "rule": "ttgtmedia\\.com\\/rms\\/ux\\/javascript\\/gpt-1\\.0\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -116,7 +121,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
@@ -219,28 +224,6 @@
             ]
         },
         {
-            "rule": "ttgtmedia\\.com\\/rms\\/ux\\/responsive\\/img\\/border_diagonal\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "aea69c588db0ede19cad9b2039ee17cf39235aba2d731fc62f8c39d197df0270"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theserverside.com",
-                "www.theserverside.com"
-            ]
-        },
-        {
             "rule": "ttgtmedia\\.com\\/rms\\/ux\\/responsive\\/img\\/iconRSS\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -265,17 +248,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Script": 8,
-        "Image": 15
+        "Image": 13
     },
     "nameservers": [
-        "ns10.techtarget.com",
-        "ns11.techtarget.com",
-        "ns12.techtarget.com",
         "ns13.techtarget.com",
+        "ns11.techtarget.com",
+        "ns15.techtarget.com",
         "ns14.techtarget.com",
-        "ns15.techtarget.com"
+        "ns12.techtarget.com",
+        "ns10.techtarget.com"
     ]
 }

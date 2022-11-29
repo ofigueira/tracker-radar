@@ -9,11 +9,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000475,
-    "sites": 7,
+    "prevalence": 0.0000543,
+    "sites": 8,
     "subdomains": [
         "btg",
         "mb",
+        "cdn-fs.ts",
+        "cdn-sp.ts",
+        "cdn-l3.ts",
         "auth"
     ],
     "cnames": [],
@@ -40,10 +43,7 @@
                 "Navigator.prototype.javaEnabled": 4,
                 "Screen.prototype.pixelDepth": 4,
                 "window.innerWidth": 4,
-                "window.innerHeight": 4,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.plugins": 1,
-                "window.devicePixelRatio": 1
+                "window.innerHeight": 4
             },
             "sites": 4,
             "prevalence": 0.0000271,
@@ -57,25 +57,25 @@
                 "AMCV_ED7001AC512D2ABD0A490D4C%40AdobeOrg": {
                     "ttl": 63158406,
                     "length": 264,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 },
                 "s_nr": {
-                    "ttl": 2592005,
+                    "ttl": 2592003,
                     "length": 17,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 },
                 "AMCVS_ED7001AC512D2ABD0A490D4C%40AdobeOrg": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 0.5
                 },
                 "s_cc": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 0.5
                 }
             },
@@ -154,22 +154,27 @@
             ]
         },
         {
-            "rule": "mtvnservices\\.com\\/accessToken",
+            "rule": "mtvnservices\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "auth"
+                "cdn-fs.ts",
+                "cdn-sp.ts",
+                "cdn-l3.ts"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "southpark.de",
+                "mtv.de",
+                "www.paramountplus.com",
                 "www.southpark.de",
                 "www.southparkstudios.com"
             ]
@@ -183,11 +188,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "da132a46af5ae3614a446316f0011be34f9aa62ea21e01e8d2f95db38abd63a1",
-                "ef2edadb0b6f0ff8feae2bc9752b57f2558779e41dee125ea4f3327f00ca48cf"
+                "c4f7e830918590b389670e81ff783ee3c007b5bb28d1247bbc8634d0b85da381",
+                "e4c26d7d7379434fe230b9efb9d52eed9d574fe24e938ab1596443943a2e4efe"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -199,7 +204,7 @@
             ]
         },
         {
-            "rule": "mtvnservices\\.com\\/access\\/status",
+            "rule": "mtvnservices\\.com\\/accessToken",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -207,28 +212,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "southpark.de",
-                "www.southpark.de",
-                "www.southparkstudios.com"
-            ]
-        },
-        {
-            "rule": "mtvnservices\\.com\\/access\\/authorization\\/southpark",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "auth"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -249,11 +233,53 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "southpark.de",
+                "www.southpark.de",
+                "www.southparkstudios.com"
+            ]
+        },
+        {
+            "rule": "mtvnservices\\.com\\/access\\/authorization\\/southpark",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "southpark.de",
+                "www.southpark.de",
+                "www.southparkstudios.com"
+            ]
+        },
+        {
+            "rule": "mtvnservices\\.com\\/access\\/status",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "53a956f94a0d4e1400088877b6405d78434ba450cb9ec054e7443bd9fb6c2957",
-                "8b8490cbafcf56b514f690b0e2fe535fd93a053913c53d5fbe56b6a7c404287a"
+                "94ff586ac8dc01ceb4d44e64261dc725cc9f5f07c9922f38b9b1d655941fe93b",
+                "4d943448786d3ec1bbd519b46fc1750f816b774d76f12b0b4d203069a4568ec3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -273,11 +299,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "06e36b80b97260fa18aacc8d2d808eabb8002f69a3829f58d8def6f620a57e9a",
-                "2b744a1a529c752e6f5b362cd6c0f6162088a4d50a525f8c45e2d72dd6a835d2"
+                "e308bcc29929b9b234df237d76f24a62aea0bc17b9c6fbd70b066289ad42e90f",
+                "c4bc4c5cc3f3e3d9871e38d8ea4355b70323244b2cb12c7aa67e4decf85a69d0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -297,7 +323,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "1e41a92189a1d80864f7d3c7749d8b2fc797802ef09c8b994b817749fe0042e0"
@@ -314,19 +340,37 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000407,
+    "cookies": 0.0000475,
+    "topInitiators": [
+        {
+            "domain": "cc.com",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3125
+        },
+        {
+            "domain": "cbsivideo.com",
+            "prevalence": 0.041666666666666664
+        },
+        {
+            "domain": "contagiousmedia.com",
+            "prevalence": 0.020833333333333332
+        }
+    ],
     "types": {
         "Script": 11,
         "Preflight": 11,
         "XHR": 2,
-        "Fetch": 9
+        "Fetch": 13
     },
     "nameservers": [
         "dns2.p09.nsone.net",
-        "ns0004.secondary.cloudflare.com",
-        "dns3.p09.nsone.net",
+        "ns0243.secondary.cloudflare.com",
         "dns4.p09.nsone.net",
-        "dns1.p09.nsone.net",
-        "ns0243.secondary.cloudflare.com"
+        "dns3.p09.nsone.net",
+        "ns0004.secondary.cloudflare.com",
+        "dns1.p09.nsone.net"
     ]
 }

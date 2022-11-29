@@ -9,17 +9,23 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000605,
-    "sites": 6,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "js.monitor"
+        "js.monitor",
+        "nouvelair-gw.westeurope.cloudapp"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "webapi.nouvelair.com",
+            "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0.000303,
+            "cookies": 0.000301,
             "fingerprinting": 2,
             "subdomains": [
                 "js.monitor"
@@ -33,24 +39,24 @@
                 "window.localStorage": 3,
                 "PerformanceTiming.prototype.navigationStart": 3
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "033e36eca33387ff8262c56403da0c1f9d6697eb5732d2f1516aab641052d504"
+                "ac4f3a99557d9c17b6ded0c6d4f0b267f4879cde9baec07a83910ab8c7059f77"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.0003026023804720597,
+                    "prevalence": 0.0003012350637614218,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.0003026023804720597,
+                    "prevalence": 0.0003012350637614218,
                     "uniqueness": 1
                 }
             },
@@ -59,20 +65,138 @@
                 "clevelandclinic.org",
                 "www.christies.com",
                 "www.generali.fr",
+                "www.lebara.fr",
+                "www.mi.com",
                 "www.suunto.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight\\/paginate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight\\/paginate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "84b12d0383cd7c859de5d476d95e4eafa22e2d22b31095b8c9b229eeb1ad0983"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/flight",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nouvelair-gw.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webapi.nouvelair.com",
+                    "resolved": "nouvelair-gw.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "654fa931d0d566e03b7c5c092caade2194f8c14e9859dfc3a43eb2aa15ecb397"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nouvelair.com",
+                "www.nouvelair.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000402,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "azureedge.net",
+            "prevalence": 0.42857142857142855
+        }
+    ],
     "types": {
-        "Script": 4
+        "Script": 6,
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
-        "ns3-39.azure-dns.org",
-        "ns1-39.azure-dns.com",
         "ns4-39.azure-dns.info",
-        "ns2-39.azure-dns.net"
+        "ns1-39.azure-dns.com",
+        "ns2-39.azure-dns.net",
+        "ns3-39.azure-dns.org"
     ]
 }

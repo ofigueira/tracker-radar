@@ -14,12 +14,41 @@
     "subdomains": [],
     "cnames": [
         {
+            "original": "api-auth.soundcloud.com",
+            "resolved": ".d3ad8414wy4gwn.cloudfront.net"
+        },
+        {
             "original": "api-v2.soundcloud.com",
             "resolved": ".d3ad8414wy4gwn.cloudfront.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/oauth\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-auth.soundcloud.com",
+                    "resolved": ".d3ad8414wy4gwn.cloudfront.net"
+                }
+            ],
+            "responseHashes": [
+                "6cf295a5e914e585ece53d96ff170330f701a0a38ae127342c6c4318c6ab815f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soundcloud.com",
+                "m.soundcloud.com"
+            ]
+        },
         {
             "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/announcements",
             "cookies": 0,
@@ -36,6 +65,31 @@
             ],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soundcloud.com",
+                "m.soundcloud.com"
+            ]
+        },
+        {
+            "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/payments\\/quotations\\/consumer-subscription",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-v2.soundcloud.com",
+                    "resolved": ".d3ad8414wy4gwn.cloudfront.net"
+                }
+            ],
+            "responseHashes": [
+                "11fa448b1d574a058b32d1cb3f128db1a2bb329b30055bd819e8f31848030e4c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -71,7 +125,7 @@
             ]
         },
         {
-            "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/payments\\/quotations\\/consumer-subscription",
+            "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/oauth\\/authorize",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -80,14 +134,12 @@
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "api-v2.soundcloud.com",
+                    "original": "api-auth.soundcloud.com",
                     "resolved": ".d3ad8414wy4gwn.cloudfront.net"
                 }
             ],
-            "responseHashes": [
-                "60f9ace4ada2b85f799072e4636bf8d18727356bde50dafd0bff299f52e6eabd"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -96,7 +148,7 @@
             ]
         },
         {
-            "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/tracks\\/76877503\\/comments",
+            "rule": "d3ad8414wy4gwn\\.cloudfront\\.net\\/oauth\\/authorize",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -105,14 +157,14 @@
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "api-v2.soundcloud.com",
+                    "original": "api-auth.soundcloud.com",
                     "resolved": ".d3ad8414wy4gwn.cloudfront.net"
                 }
             ],
             "responseHashes": [
-                "f856494423ccd70128cdec2f46dfa30f641b8259a0dd825b3dc64720e522f992"
+                "4c77c9989db2153d255199ca7a963821680eec0743ca093c569156950625d1fd"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -254,7 +306,7 @@
                 }
             ],
             "responseHashes": [
-                "3c0d675a52701932029e3540c5fef05ac0974db496386f31b0e335fbdddaa9fc"
+                "4630613b151e75fe0bb32ab415b7d29438ee30f09df131046980bcdeac19a1fd"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -270,10 +322,16 @@
     ],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "sndcdn.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "XHR": 8,
-        "Preflight": 6,
-        "Fetch": 6
+        "Preflight": 8,
+        "Fetch": 8
     },
     "nameservers": []
 }

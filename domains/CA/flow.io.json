@@ -4,14 +4,110 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000103,
-    "sites": 1,
+    "prevalence": 0.0002,
+    "sites": 2,
     "subdomains": [
+        "cdn",
+        "beacon",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "flow\\.io\\/flowjs\\/latest\\/flow\\.min\\.js",
+            "cookies": 0.0002,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "50fbfcb0f5612040ebea2cfdb6e901f79a31fdce5d780cea66a5fdf4187753cc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 11,
+                    "length": 9,
+                    "prevalence": 0.0001002104419280489,
+                    "uniqueness": 1
+                },
+                "_f60_session": {
+                    "ttl": 2724710400019,
+                    "length": 64,
+                    "prevalence": 0.0002004208838560978,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timex.com",
+                "www.uncommongoods.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/events\\/session_upserted",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_f60_session": 0.0002004208838560978
+            },
+            "exampleSites": [
+                "timex.com",
+                "www.uncommongoods.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/events\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_f60_session": 0.0002004208838560978,
+                "dy_fs_page": 0.0001002104419280489,
+                "_li_dcdm_c": 0.0001002104419280489,
+                "IR_gbd": 0.0001002104419280489
+            },
+            "exampleSites": [
+                "timex.com",
+                "www.uncommongoods.com"
+            ]
+        },
         {
             "rule": "flow\\.io\\/uncommongoods\\/experiences\\/canada\\/items\\/query",
             "cookies": 0,
@@ -21,10 +117,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000205,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "e8efc97b2dc5e165585c507cbb815cb359102399fd6ded56b3af342c8dfe15f8"
+                "47d5ddefa78e72e0e4a4b04c1c8c676928069a66fb4b77f4a66eacf2b3996a09"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -37,8 +133,20 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000103,
+    "cookies": 0.0002,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.1
+        }
+    ],
     "types": {
+        "Script": 2,
+        "Image": 4,
         "XHR": 2
     },
     "nameservers": [

@@ -7,12 +7,17 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "cs95619.wpc"
+        "cs95619.wpc",
+        "cs95619.adn"
     ],
     "cnames": [
         {
             "original": "dlcdnimgs.asus.com",
             "resolved": "cs95619.wpc.psicdn.net"
+        },
+        {
+            "original": "odinapi.asus.com",
+            "resolved": "cs95619.adn.psicdn.net"
         }
     ],
     "fingerprinting": 1,
@@ -88,9 +93,36 @@
                 }
             ],
             "responseHashes": [
-                "04d4236d257215a5d8016a4866b406b04fb2177b52f1ac0e60f20464d1ff40b6"
+                "b3e6df72da9f6cb9dae20ed212bd563d7771fcd6eedd7864ecc154a9cb767454"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asus.com",
+                "www.asus.com"
+            ]
+        },
+        {
+            "rule": "psicdn\\.net\\/apiv2\\/GetCookieNotice",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs95619.adn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "odinapi.asus.com",
+                    "resolved": "cs95619.adn.psicdn.net"
+                }
+            ],
+            "responseHashes": [
+                "617835dd21ccc6662f8c457c89ca47e7c68075117d9b3b994678b4c4fbddf5d4"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -104,7 +136,8 @@
     "cookies": 0.000201,
     "types": {
         "Stylesheet": 2,
-        "Script": 4
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": []
 }

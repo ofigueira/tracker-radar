@@ -9,15 +9,86 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000605,
-    "sites": 6,
+    "prevalence": 0.000802,
+    "sites": 8,
     "subdomains": [
-        "browser.pipe.aria",
-        "browser.events.data"
+        "wcpstatic",
+        "browser.events.data",
+        "browser.pipe.aria"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wcpstatic"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c688d3f2135b6b51617a306a0b1a665324402a00a6bceba475881af281503ad9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "bde9f721e9ca9de9f8f1bd6d75bc2235ebeafa98f84fd41d88cbc644db2c7bb1",
+                "5080c27fe6954b0717f07de19ef9f56e93359f89031947694e1ca52d36ec6151",
+                "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "help.minecraft.net",
+                "www.minecraft.net",
+                "www.trekbikes.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "browser.events.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
         {
             "rule": "microsoft\\.com\\/Collector\\/3\\.0\\/",
             "cookies": 0,
@@ -26,8 +97,8 @@
                 "browser.pipe.aria"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -38,31 +109,8 @@
             "exampleSites": [
                 "clevelandclinic.org",
                 "my.clevelandclinic.org",
-                "www.aberdeenshire.gov.uk"
-            ]
-        },
-        {
-            "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.000101,
-            "fingerprinting": 0,
-            "subdomains": [
-                "browser.events.data"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [
-                "cd31bb05d02b110c2810e0bdb18640229aaeed79fa22fb699d0cad2d2a64ecb7",
-                "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "minecraft.net",
-                "www.minecraft.net",
-                "www.trekbikes.com"
+                "www.aberdeenshire.gov.uk",
+                "www.mi.com"
             ]
         }
     ],
@@ -73,14 +121,34 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "azureedge.net",
+            "prevalence": 0.4375
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.375
+        },
+        {
+            "domain": "azure.com",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "dynamics.com",
+            "prevalence": 0.0625
+        }
+    ],
     "types": {
-        "XHR": 6
+        "Script": 2,
+        "XHR": 8,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns2-39.azure-dns.net",
         "ns3-39.azure-dns.org",
         "ns4-39.azure-dns.info",
-        "ns1-39.azure-dns.com",
-        "ns2-39.azure-dns.net"
+        "ns1-39.azure-dns.com"
     ]
 }

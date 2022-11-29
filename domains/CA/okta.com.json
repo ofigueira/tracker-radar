@@ -7,15 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000821,
-    "sites": 8,
+    "prevalence": 0.000601,
+    "sites": 6,
     "subdomains": [
-        "sas.customdomains",
-        "churchofjesuschrist.customdomains",
+        "astminternational.customdomains",
+        "benjaminmoore.customdomains",
         "ligonier.customdomains",
         "nikon.customdomains",
-        "wm.customdomains",
-        "benjaminmoore.customdomains"
+        "churchofjesuschrist.customdomains"
     ],
     "cnames": [
         {
@@ -23,8 +22,8 @@
             "resolved": "ligonier.customdomains.okta.com"
         },
         {
-            "original": "auth.sas.com",
-            "resolved": "sas.customdomains.okta.com"
+            "original": "iam.astm.org",
+            "resolved": "astminternational.customdomains.okta.com"
         },
         {
             "original": "id.churchofjesuschrist.org",
@@ -37,32 +36,91 @@
         {
             "original": "okta.benjaminmoore.com",
             "resolved": "benjaminmoore.customdomains.okta.com"
-        },
-        {
-            "original": "ssologin.wm.com",
-            "resolved": "wm.customdomains.okta.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.00041,
+            "cookies": 0.0002,
             "fingerprinting": 0,
             "subdomains": [
-                "sas.customdomains",
+                "astminternational.customdomains",
+                "benjaminmoore.customdomains"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "iam.astm.org",
+                    "resolved": "astminternational.customdomains.okta.com"
+                },
+                {
+                    "original": "okta.benjaminmoore.com",
+                    "resolved": "benjaminmoore.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "b5fafee6b1ac98b4ed9d778e7a744f6b893407e50c7e46058c567c84cb4d01ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "astm.org",
+                "www.benjaminmoore.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "astminternational.customdomains",
+                "ligonier.customdomains",
+                "nikon.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "iam.astm.org",
+                    "resolved": "astminternational.customdomains.okta.com"
+                },
+                {
+                    "original": "auth.ligonier.org",
+                    "resolved": "ligonier.customdomains.okta.com"
+                },
+                {
+                    "original": "login.nikonsso.com",
+                    "resolved": "nikon.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "astm.org",
+                "www.ligonier.org",
+                "www.nikonusa.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
                 "churchofjesuschrist.customdomains",
                 "ligonier.customdomains",
                 "nikon.customdomains"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.00041,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
-                {
-                    "original": "auth.sas.com",
-                    "resolved": "sas.customdomains.okta.com"
-                },
                 {
                     "original": "id.churchofjesuschrist.org",
                     "resolved": "churchofjesuschrist.customdomains.okta.com"
@@ -77,101 +135,40 @@
                 }
             ],
             "responseHashes": [
-                "674c3c2cb96d2020a7311acd13fb09e940ef500b3526db098ab773b969d4118e",
-                "4a0ad4827b50c10d37b8f1836b5c9d386f49e5bff1ecc61258e9236199f30a28"
+                "e94ea60cc6f69e9aefaee39c63a5af023161e46e99607ef19f4049045105fa78",
+                "449f7b4fb4cfac2eeb7c414dcf87adc4a108e56771368c8a3297a784f9ff75bb"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sas.com",
-                "www.churchofjesuschrist.org",
+                "churchofjesuschrist.org",
                 "www.ligonier.org",
                 "www.nikonusa.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.00041,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sas.customdomains",
-                "ligonier.customdomains",
-                "nikon.customdomains",
-                "wm.customdomains"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.00041,
-            "cnames": [
-                {
-                    "original": "auth.sas.com",
-                    "resolved": "sas.customdomains.okta.com"
-                },
-                {
-                    "original": "auth.ligonier.org",
-                    "resolved": "ligonier.customdomains.okta.com"
-                },
-                {
-                    "original": "login.nikonsso.com",
-                    "resolved": "nikon.customdomains.okta.com"
-                },
-                {
-                    "original": "ssologin.wm.com",
-                    "resolved": "wm.customdomains.okta.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sas.com",
-                "www.ligonier.org",
-                "www.nikonusa.com",
-                "www.wm.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000205,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benjaminmoore.customdomains",
-                "wm.customdomains"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000205,
-            "cnames": [
-                {
-                    "original": "okta.benjaminmoore.com",
-                    "resolved": "benjaminmoore.customdomains.okta.com"
-                },
-                {
-                    "original": "ssologin.wm.com",
-                    "resolved": "wm.customdomains.okta.com"
-                }
-            ],
-            "responseHashes": [
-                "0429a5b672bff7a2f933e49ed782fd0e53afa30d916d26d411240b8c381a9460"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benjaminmoore.com",
-                "www.wm.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000821,
+    "cookies": 0.000601,
+    "topInitiators": [
+        {
+            "domain": "oktacdn.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "nikon-cdn.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        }
+    ],
     "types": {
-        "Fetch": 4,
-        "Preflight": 4,
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 3,
+        "Fetch": 3
     },
     "nameservers": []
 }

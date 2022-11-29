@@ -7,18 +7,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000814,
-    "sites": 12,
+    "prevalence": 0.000115,
+    "sites": 17,
     "subdomains": [
         "cdn.registerdisney",
         "sw88",
+        "cdn.unid",
+        "unid",
+        "log",
+        "abcnews",
         "fastcast.semfs.engsvc",
-        "pedb8fde70-4375-4bc8-9756-aaf25fb5740a-44-202-80-158.fastcast.semfs.engsvc",
-        "pecc3ed084-7227-4480-9490-3bf79cf0532f-54-234-244-167.fastcast.semfs.engsvc",
-        "log"
+        "pe69a8325d-9cc6-4eeb-8793-e8a35796ae02-3-88-135-154.fastcast.semfs.engsvc",
+        "pedc1fe161-4918-4794-a098-5b1e97377d38-3-235-247-241.fastcast.semfs.engsvc",
+        "pee01d39f1-396a-417e-bcb7-7e53b466c406-54-224-200-74.fastcast.semfs.engsvc",
+        "pea1141618-a67c-453d-925d-450d721efafb-52-3-229-177.fastcast.semfs.engsvc"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "go\\.com\\/v4\\/OneID\\.js",
@@ -28,22 +33,22 @@
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Document.cookie getter": 3,
                 "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
                 "Document.cookie setter": 2
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "5edb6933114014006c4233253775f7f6de490509a86918309bd6d0fb3f8d63e2"
+                "2364063fd37dc73bb4a371341ceca7e9c35068dd975adb03389ac6990a287d3c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "SWID": {
-                    "ttl": 31536004,
+                    "ttl": 31536016,
                     "length": 36,
-                    "prevalence": 0.000013571651534275207,
+                    "prevalence": 0.000013562540263791409,
                     "uniqueness": 1
                 }
             },
@@ -66,7 +71,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "95d82c2502c5e733fb7a3043ceb08f05fe265745f665c8b32d0a64a591ef10af"
+                "066529c9cff9d01066dccdcbbddac7143f1eddc77106b8e3e56de57b90923a3a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -101,6 +106,179 @@
             ]
         },
         {
+            "rule": "go\\.com\\/js\\/unid\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.unid"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.language": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fce9a2f431448206e4f577fa3d9be6e3053d7995ba2bef6a853a809f70696e5d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "UNID": {
+                    "ttl": 157680005,
+                    "length": 36,
+                    "prevalence": 0.000013562540263791409,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kellyandryan.com",
+                "lionking.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/inner\\/",
+            "cookies": 0.00000678,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.unid"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "954928d2afcf38fd769a7b9002d0f3ed8edf21099ed4b7b6ab6606142c3f5f17"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kellyandryan.com",
+                "lionking.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v3\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unid"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kellyandryan.com",
+                "lionking.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v3\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unid"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kellyandryan.com",
+                "lionking.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/csp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unid",
+                "log"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kellyandryan.com",
+                "lionking.com",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/video\\/portableplayer",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abcnews"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "794683297c685a211a79fabc6ed9190b48c8862ae997d51b59908b77d6d26afb"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kesq.com",
+                "www.wxyz.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/configuration\\/syndication_csid-45248519",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abcnews"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "98ceb7c4df008cb007487dcc61b339b3c6aff5f3a59b346dd1901174afb99e28"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kesq.com",
+                "www.wxyz.com"
+            ]
+        },
+        {
             "rule": "go\\.com\\/v2\\/outer\\/DisneyID\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -114,7 +292,7 @@
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "0f7a5ac612d50ae7a04ffe20f16d22791098b40a0d118822e7c681aa3459da0d"
@@ -123,13 +301,13 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.com.ar",
-                "www.espn.com.ar",
+                "espn.ph",
+                "www.espn.ph",
                 "www.espnsoccernet.com"
             ]
         },
         {
-            "rule": "go\\.com\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/es-LA",
+            "rule": "go\\.com\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-PH",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -145,14 +323,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "71a1dd0ad161db7afbf5a7d8334e45fb1f3021d983b330d69fdcc5bde9207cb3"
+                "a0804acf357c6e7ede6cfc1a133793097e8db80dd4a96674c90578d42bd60932"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.com.ar",
-                "www.espn.com.ar"
+                "espn.ph",
+                "www.espn.ph"
             ]
         },
         {
@@ -167,7 +345,7 @@
                 "Document.cookie getter": 3
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "1df11a1d2bc17e9f23de253636d6ce0bbb26ce366438599e9feaba58425af395"
@@ -176,8 +354,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.com.ar",
-                "www.espn.com.ar",
+                "espn.ph",
+                "www.espn.ph",
                 "www.espnsoccernet.com"
             ]
         },
@@ -189,18 +367,19 @@
                 "fastcast.semfs.engsvc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "e9ec74aeceaf3e19892ba12d9f87a22f656cb8d2d970a7233cffb8d7f3297d35"
+                "66042fd041c75f274446a6f39defa23062de810debe018cc9e95a05c45af6dbc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.com.ar",
-                "www.espn.com.ar"
+                "espn.ph",
+                "www.espn.ph",
+                "www.wxyz.com"
             ]
         },
         {
@@ -208,8 +387,8 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pedb8fde70-4375-4bc8-9756-aaf25fb5740a-44-202-80-158.fastcast.semfs.engsvc",
-                "pecc3ed084-7227-4480-9490-3bf79cf0532f-54-234-244-167.fastcast.semfs.engsvc"
+                "pe69a8325d-9cc6-4eeb-8793-e8a35796ae02-3-88-135-154.fastcast.semfs.engsvc",
+                "pedc1fe161-4918-4794-a098-5b1e97377d38-3-235-247-241.fastcast.semfs.engsvc"
             ],
             "apis": {},
             "sites": 2,
@@ -220,37 +399,50 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.com.ar",
-                "www.espn.com.ar"
+                "espn.ph",
+                "www.espn.ph"
             ]
         },
         {
             "rule": "go\\.com\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-US",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn.registerdisney"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "Document.cookie getter": 2
-            },
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espnsoccernet.com",
+                "www.espnsoccernet.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v4\\/bundle\\/web\\/WDI-UK\\.TDS\\.AB3\\.NONBRANDED\\.WEB\\/en-UK",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2f8061f4d9ea4eb90e38186d9e9027e02944d2fcd2476a152dbe7513d09eedcb"
+                "6df854a598431aff6a16f11cc9775459417f68bd96ea051bccc92bf55bfb0a46"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013571651534275207
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espnsoccernet.com",
-                "www.espnsoccernet.com"
+                "shopdisney.co.uk",
+                "www.shopdisney.co.uk"
             ]
         },
         {
@@ -269,75 +461,149 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "SWID": 0.000006785825767137603
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "natgeotv.com",
+                "shopdisney.co.uk",
                 "www.shopdisney.co.uk"
             ]
         },
         {
-            "rule": "go\\.com\\/v4\\/bundle\\/web\\/WDI-UK\\.TDS\\.AB3\\.NONBRANDED\\.WEB\\/en-UK",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "go\\.com\\/widgets\\/nationalMap",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "cdn.registerdisney"
+                "abcnews"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3a679e5af86644b9b73deaf6d08f7a5d96faac56b51926ad2eecdf0703d38830"
+                "14e7eb3181794e9a15e3615072a3514a66e1c7a0701e1308e4e525805f732988"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_nr": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013562540263791409,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shopdisney.co.uk",
-                "www.shopdisney.co.uk"
+                "wxyz.com",
+                "www.wxyz.com"
             ]
         },
         {
-            "rule": "go\\.com\\/csp",
+            "rule": "go\\.com\\/widgets\\/generalstateresults",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "abcnews"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "94a75a008f64df9203f6053af57e9215a4d4f12e70862ce61c74c8fd026ed92d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "_nr": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013562540263791409,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wxyz.com",
+                "www.wxyz.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/FastcastService\\/pubsub\\/profiles\\/11001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "log"
+                "pee01d39f1-396a-417e-bcb7-7e53b466c406-54-224-200-74.fastcast.semfs.engsvc",
+                "pea1141618-a67c-453d-925d-450d721efafb-52-3-229-177.fastcast.semfs.engsvc"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
+            "responseHashes": [],
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "shopdisney.co.uk",
-                "www.shopdisney.co.uk"
+                "wxyz.com",
+                "www.wxyz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000543,
+    "cookies": 0.0000882,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4722222222222222
+        },
+        {
+            "domain": "espn.com",
+            "prevalence": 0.2777777777777778
+        },
+        {
+            "domain": "abcnews.com",
+            "prevalence": 0.1388888888888889
+        },
+        {
+            "domain": "nationalgeographic.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.027777777777777776
+        },
+        {
+            "domain": "espncdn.com",
+            "prevalence": 0.027777777777777776
+        }
+    ],
     "types": {
-        "Script": 11,
-        "XHR": 6,
-        "Document": 6,
-        "WebSocket": 2,
-        "Other": 2
+        "Script": 13,
+        "XHR": 11,
+        "Document": 14,
+        "Preflight": 2,
+        "Other": 3,
+        "WebSocket": 4
     },
     "nameservers": [
-        "ns4.twdcns.info",
         "ns3.twdcns.info",
         "ns6.twdcns.co.uk",
-        "ns5.twdcns.co.uk",
         "ns2.twdcns.com",
-        "ns1.twdcns.com"
+        "ns4.twdcns.info",
+        "ns1.twdcns.com",
+        "ns5.twdcns.co.uk"
     ]
 }

@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d3teiib5p3f439\\.cloudfront\\.net\\/css\\/design\\.css",
@@ -56,26 +56,6 @@
             ]
         },
         {
-            "rule": "d3teiib5p3f439\\.cloudfront\\.net\\/css\\/print\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "895e0e1aa1ea68b172e45e721f0ce54ecf96f3e360d71d1d41066edb1636c7ab"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "walkhighlands.co.uk",
-                "www.walkhighlands.co.uk"
-            ]
-        },
-        {
             "rule": "d3teiib5p3f439\\.cloudfront\\.net\\/js\\/newft\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -99,12 +79,13 @@
         },
         {
             "rule": "d3teiib5p3f439\\.cloudfront\\.net\\/js\\/cookie\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "Document.cookie getter": 2,
-                "Navigator.prototype.appVersion": 2
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -113,6 +94,33 @@
                 "3002d8ea105972d220419b58f4b08fe1c783dba0bbfb8ebe3d067718c3fa5619"
             ],
             "type": "Script",
+            "firstPartyCookies": {
+                "cookieconsent_dismissed": {
+                    "ttl": 31536001,
+                    "length": 3,
+                    "prevalence": 0.000013562540263791409,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walkhighlands.co.uk",
+                "www.walkhighlands.co.uk"
+            ]
+        },
+        {
+            "rule": "d3teiib5p3f439\\.cloudfront\\.net\\/css\\/print\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "895e0e1aa1ea68b172e45e721f0ce54ecf96f3e360d71d1d41066edb1636c7ab"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -165,7 +173,13 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Stylesheet": 4,
         "Image": 6,
@@ -173,8 +187,8 @@
     },
     "nameservers": [
         "ns-2010.awsdns-59.co.uk",
-        "ns-1297.awsdns-34.org",
         "ns-699.awsdns-23.net",
-        "ns-110.awsdns-13.com"
+        "ns-110.awsdns-13.com",
+        "ns-1297.awsdns-34.org"
     ]
 }

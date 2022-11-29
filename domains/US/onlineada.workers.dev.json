@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000095,
+    "prevalence": 0.0000949,
     "sites": 14,
     "subdomains": [
         "maxaccess-api",
         "fetch-maxaccess-cache"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "onlineada\\.workers\\.dev\\/api\\/variables\\/",
@@ -26,10 +26,10 @@
             "cnames": [],
             "responseHashes": [
                 "a86a21e0197981f6f10b1d219c5fd30067506f7fc6b350b29c8a02c4da51a46b",
+                "dc59da59301239f386ecfed45674e158d0541a9f99d574eefcf1bbd95c186f5f",
                 "22c43b1690f11703981980dcd35328286518e230609e185e638ecbceba947596",
                 "f9b462f836c8d7a2eea7e3c45db0839a8dd6022882df714742902df636bb07cc",
                 "3c044298076176dba7ec6152a663cdde99e8877ce55c47e59b97aa7eee04d55b",
-                "f0d8eadd43102728f13f4856f4f81d506e57cebab4505755338358327ca63b7b",
                 "06377ba9da4c2435591710fde39200e20cd2805157bdf2f1e2568a9fec27f7e4"
             ],
             "type": "XHR",
@@ -38,10 +38,10 @@
             "exampleSites": [
                 "applianceparts.com",
                 "encompass.com",
+                "gradolabs.com",
                 "lgparts.com",
                 "www.coldstonecreamery.com",
                 "www.ebth.com",
-                "www.pinkberry.com",
                 "www.worx.com"
             ]
         },
@@ -57,41 +57,48 @@
             "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
+                "aa5cbe4dce22c2d3682185b4171e4de37ef2bf67df7668dfdbfc05d877dfc067",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "c3bf8e28bd5e48b2881c763c8fe84188853ef7cc13bedaef05d7072ddf5f018f",
-                "d6a0efe5058b8ebcc3fc676f4d262189f19db2f46951536d53b01ffae250a6ae"
+                "0a6b9d4d66f657d647a07e6f078c5bdfc9c729a4ce75457f9e549f518750375a",
+                "c81d3d49243f215b7e7bf699729832bb5d9575cd1f6235adec520e87700f72d9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "applianceparts.com",
+                "gradolabs.com",
                 "lgparts.com",
                 "www.coldstonecreamery.com",
-                "www.pinkberry.com",
                 "www.worx.com"
             ]
         },
         {
-            "rule": "onlineada\\.workers\\.dev\\/api\\/alts\\/",
+            "rule": "onlineada\\.workers\\.dev\\/api\\/scripts\\/",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "maxaccess-api"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.product": 3,
+                "window.localStorage": 3,
+                "window.innerWidth": 3
+            },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "f53b8105a9ddff5611beedfcf66f7910cc1d1e5315476bc19d132ad13d4e9a27"
+                "15ef6adec7ee155b4f8f26481b392dcacf97963f97dc8260d3bc7a2f8c7c9cb7"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "applianceparts.com",
-                "lgparts.com",
+                "coldstonecreamery.com",
+                "www.coldstonecreamery.com",
                 "www.worx.com"
             ]
         }
@@ -99,8 +106,23 @@
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "maxaccess.io",
+            "prevalence": 0.8064516129032258
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.16129032258064516
+        },
+        {
+            "domain": "mavenoid.com",
+            "prevalence": 0.03225806451612903
+        }
+    ],
     "types": {
-        "XHR": 15
+        "XHR": 12,
+        "Script": 3
     },
     "nameservers": [
         "hans.ns.cloudflare.com",

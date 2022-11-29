@@ -7,14 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000339,
-    "sites": 5,
+    "prevalence": 0.0000746,
+    "sites": 11,
     "subdomains": [
         "engagement",
-        "zipservice"
+        "zipservice",
+        "mafo",
+        "aqt"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "adalliance\\.io\\/socket\\.io\\/",
@@ -25,7 +27,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -45,17 +47,91 @@
                 "zipservice"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.0000339,
             "cnames": [],
             "responseHashes": [
+                "c6e566ea979dfed9479f994c755f356621ed38aa1db5479b4807389d6530dc12",
                 "11744fa76f30088c68021c3db48a83a238283b342638810873a0e5456f3c9bf8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "toggo.de",
+                "chefkoch.de",
+                "www.chefkoch.de",
+                "www.rtl2.de",
+                "www.superrtl.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mafo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "f4a9f3e39ba53121a9d438d5ac53c1ce5046dfd03c540ffd8fbe510d5f491030"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefkoch.de",
+                "www.chefkoch.de",
+                "www.rtl2.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/mafo\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mafo"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "23d70a8e75c84f46add06693ec2cdb027d71529f771cf5222a929a0b855da949"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefkoch.de",
+                "www.chefkoch.de",
+                "www.rtl2.de"
+            ]
+        },
+        {
+            "rule": "adalliance\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aqt"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtl2.de",
+                "www.superrtl.de",
                 "www.toggo.de"
             ]
         }
@@ -63,13 +139,25 @@
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "emsservice.de",
+            "prevalence": 0.1111111111111111
+        }
+    ],
     "types": {
         "WebSocket": 3,
-        "Fetch": 2
+        "Fetch": 8,
+        "Document": 3,
+        "Script": 3
     },
     "nameservers": [
+        "ns1.your-server.de",
         "ns.second-ns.com",
-        "ns3.second-ns.de",
-        "ns1.your-server.de"
+        "ns3.second-ns.de"
     ]
 }

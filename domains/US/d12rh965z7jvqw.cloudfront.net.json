@@ -264,7 +264,7 @@
             "subdomains": [],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -406,7 +406,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -428,7 +428,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -507,9 +507,11 @@
         {
             "rule": "d12rh965z7jvqw\\.cloudfront\\.net\\/javascripts\\/common\\/common_footer\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -587,9 +589,12 @@
         {
             "rule": "d12rh965z7jvqw\\.cloudfront\\.net\\/javascripts\\/common\\/Prod\\/script\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -730,6 +735,12 @@
     ],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Stylesheet": 14,
         "Script": 38,
@@ -737,9 +748,9 @@
         "Font": 2
     },
     "nameservers": [
-        "ns-291.awsdns-36.com",
         "ns-1219.awsdns-24.org",
         "ns-1000.awsdns-61.net",
+        "ns-291.awsdns-36.com",
         "ns-1925.awsdns-48.co.uk"
     ]
 }
