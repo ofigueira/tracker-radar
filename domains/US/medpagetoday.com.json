@@ -7,16 +7,55 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
+    "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
+        "clf1",
         "geo",
-        "api",
-        "clf1"
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "medpagetoday\\.com\\/assets\\/scripts\\/js\\/hcp\\/uc\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "clf1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "855ddcafc3d3ec0e87287b63b0ef218cc499783e97b8729d277c343168c63e5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MP_GUID": {
+                    "ttl": 15552035,
+                    "length": 32,
+                    "prevalence": 0.00001361146085003573,
+                    "uniqueness": 1
+                },
+                "MP_IDM": {
+                    "ttl": 86432,
+                    "length": 1,
+                    "prevalence": 0.000006805730425017865,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cureus.com",
+                "www.kevinmd.com"
+            ]
+        },
         {
             "rule": "medpagetoday\\.com\\/info\\.js",
             "cookies": 0.0000136,
@@ -35,7 +74,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kevinmd.com",
+                "cureus.com",
                 "www.kevinmd.com"
             ]
         },
@@ -51,15 +90,16 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3ba1a0461812d036c32ead09e5b76ad4d91ee82515c0bbbb58eb4813bb58ba4d"
+                "5aa4780ce4d7eca6e612cced355a9ef6b82b5d5a52077756d0dd1c4146dc637a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000013562540263791409
+                "_ga": 0.00001361146085003573,
+                "_li_dcdm_c": 0.000006805730425017865
             },
             "exampleSites": [
-                "kevinmd.com",
+                "cureus.com",
                 "www.kevinmd.com"
             ]
         },
@@ -128,34 +168,63 @@
                 "kevinmd.com",
                 "www.kevinmd.com"
             ]
+        },
+        {
+            "rule": "medpagetoday\\.com\\/engagement\\/integration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1acd1258f7242bd209e757c7c6ad19e748accb2085a52b981401005759e80cfb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "MP_GUID": 0.00001361146085003573,
+                "dmd-sid": 0.00001361146085003573
+            },
+            "exampleSites": [
+                "kevinmd.com",
+                "www.kevinmd.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "googlesyndication.com",
-            "prevalence": 0.6666666666666666
-        },
-        {
-            "domain": "medpagetoday.s3.amazonaws.com",
-            "prevalence": 0.26666666666666666
+            "prevalence": 0.6
         },
         {
             "domain": "first party",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "medtargetsystem.com",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "hcn.health",
             "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 8,
         "Stylesheet": 2,
         "Font": 4
     },
     "nameservers": [
         "ns-354.awsdns-44.com",
-        "ns-1442.awsdns-52.org",
         "ns-924.awsdns-51.net",
+        "ns-1442.awsdns-52.org",
         "ns-1625.awsdns-11.co.uk"
     ]
 }

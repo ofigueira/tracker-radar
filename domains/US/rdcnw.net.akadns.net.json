@@ -9,13 +9,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000814,
-    "sites": 12,
+    "prevalence": 0.0000544,
+    "sites": 8,
     "subdomains": [
         "grp15-ias-rakuten-co-jp",
-        "secure-rat-rakuten-co-jp"
+        "secure-rat-rakuten-co-jp",
+        "api-ranking-rakuten-co-jp",
+        "grp10-ias-rakuten-co-jp"
     ],
     "cnames": [
+        {
+            "original": "api.ranking.rakuten.co.jp",
+            "resolved": "api-ranking-rakuten-co-jp.rdcnw.net.akadns.net"
+        },
+        {
+            "original": "grp10.ias.rakuten.co.jp",
+            "resolved": "grp10-ias-rakuten-co-jp.rdcnw.net.akadns.net"
+        },
         {
             "original": "grp15.ias.rakuten.co.jp",
             "resolved": "grp15-ias-rakuten-co-jp.rdcnw.net.akadns.net"
@@ -29,14 +39,14 @@
     "resources": [
         {
             "rule": "rdcnw\\.net\\.akadns\\.net\\/gw\\.js",
-            "cookies": 0.0000339,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "grp15-ias-rakuten-co-jp"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [
                 {
                     "original": "grp15.ias.rakuten.co.jp",
@@ -44,32 +54,30 @@
                 }
             ],
             "responseHashes": [
-                "5b34fa589322d6994dba5265170eb2fa20f7c80a9d62c034574cf25f65493f68",
                 "7ce1aba8389b0d51ead4a476e653cb76fde3637c1196550a949af9cf7e3aa751",
-                "d51ba018c2ef1edaa20d2e6a5a54e2cc2c9f84cae74cf2604062b2162f781489",
-                "24c267f73ca2fbc5fc7f0090933e6c088cd8728307da76d81890979e4a80ea96"
+                "ac29a52b33c8a2e48beea759b073453343f7798b8a88732f5f4ff83c1b4a06c6",
+                "baa1324a5225ede07ffa69ac6ac58d5245375ca8fe93c330a15f99ac3fd1c1cf"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rakuten.co.jp",
-                "item.rakuten.co.jp",
                 "product.rakuten.co.jp",
                 "search.rakuten.co.jp",
-                "travel.rakuten.co.jp"
+                "www.rakuten.co.jp"
             ]
         },
         {
             "rule": "rdcnw\\.net\\.akadns\\.net\\/",
-            "cookies": 0.0000271,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "secure-rat-rakuten-co-jp"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "secure.rat.rakuten.co.jp",
@@ -85,8 +93,61 @@
             "exampleSites": [
                 "rakuten.co.jp",
                 "network.mobile.rakuten.co.jp",
-                "www.rakuten-card.co.jp",
-                "www.rakuten-sec.co.jp"
+                "www.rakuten-card.co.jp"
+            ]
+        },
+        {
+            "rule": "rdcnw\\.net\\.akadns\\.net\\/q",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ranking-rakuten-co-jp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.ranking.rakuten.co.jp",
+                    "resolved": "api-ranking-rakuten-co-jp.rdcnw.net.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "a19c62b79d5ac80f8862796558eadf1998da578122658c1c932dde06709cff69"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rdcnw\\.net\\.akadns\\.net\\/adv\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "grp10-ias-rakuten-co-jp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "grp10.ias.rakuten.co.jp",
+                    "resolved": "grp10-ias-rakuten-co-jp.rdcnw.net.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "39d77ff07b1cf10f2b6469fef1b09034fb3a2a3cf105b98be99701dcdff07e50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten.co.jp"
             ]
         }
     ],
@@ -94,7 +155,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000678,
+    "cookies": 0.0000476,
     "topInitiators": [
         {
             "domain": "r10s.jp",
@@ -102,8 +163,9 @@
         }
     ],
     "types": {
-        "Document": 5,
-        "XHR": 4
+        "Document": 4,
+        "XHR": 3,
+        "Script": 4
     },
     "nameservers": []
 }

@@ -9,13 +9,18 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "api",
-        "unite"
+        "unite",
+        "analytics"
     ],
     "cnames": [
+        {
+            "original": "analytics.nike.com",
+            "resolved": "analytics.nike.com.edgekey.net"
+        },
         {
             "original": "api.nike.com",
             "resolved": "api.nike.com.edgekey.net"
@@ -49,7 +54,7 @@
                 }
             ],
             "responseHashes": [
-                "402e4a075afba1adfb88da52109397acb513673b9770b28e73996616a711cb98"
+                "2950c166784a8643ebd6ce8834f2a7d76cacc3ebb12a8ac8471287666a2f49ea"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -81,7 +86,7 @@
                 }
             ],
             "responseHashes": [
-                "bf40f28481695a98ac6ed958a1e262b775f8a5c825cb142deac9d006be1a75ad"
+                "7f16c51ab7f52cad0a165c505728c06c5774a4682f93144bd16698e94f34c2a7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -122,11 +127,90 @@
                 "nike.com",
                 "www.nike.com"
             ]
+        },
+        {
+            "rule": "nike\\.com\\.edgekey\\.net\\/auth\\/unite_session_cookies\\/v1",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "unite.nike.com",
+                    "resolved": "unite.nike.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
+        },
+        {
+            "rule": "nike\\.com\\.edgekey\\.net\\/v1\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "analytics.nike.com",
+                    "resolved": "analytics.nike.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
+        },
+        {
+            "rule": "nike\\.com\\.edgekey\\.net\\/v1\\/t",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "analytics.nike.com",
+                    "resolved": "analytics.nike.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "nikecdn.com",
@@ -136,7 +220,9 @@
     "types": {
         "Document": 2,
         "Script": 2,
-        "XHR": 2
+        "XHR": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

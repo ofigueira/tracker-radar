@@ -9,31 +9,35 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000702,
-    "sites": 7,
+    "prevalence": 0.000805,
+    "sites": 8,
     "subdomains": [
         "aws-sin-slb-internet-64392e0be8997725.elb",
         "04apyp8qj6.execute-api",
-        "cognito-identity"
+        "d-ic9wxv4cg5.execute-api"
     ],
     "cnames": [
+        {
+            "original": "raptor.sg.iproperty.com.my",
+            "resolved": "d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com"
+        },
         {
             "original": "ubt-sin.tripcdn.com",
             "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
-            "cookies": 0.000301,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -41,8 +45,8 @@
                 }
             ],
             "responseHashes": [
-                "e2a19048670f1406d37f35c69ef9a671dc1a98631a2e4a2a184ac90b4ddb8108",
-                "8f0b87b498037605435262a3b7df913a2228196142c0b712d08e0b3d77db0458"
+                "bfbfff5e4d57b11e2286c14428196db03ece41fab260ad823cd688d0997caff0",
+                "615980f9b499e831c0f4994d0633d9a686db4916305563735981c9da5a110cfd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -61,8 +65,8 @@
                 "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -75,6 +79,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "trip.com",
+                "au.trip.com",
                 "www.trip.com"
             ]
         },
@@ -126,25 +131,55 @@
             ]
         },
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/",
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/v1\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cognito-identity"
+                "d-ic9wxv4cg5.execute-api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "raptor.sg.iproperty.com.my",
+                    "resolved": "d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iproperty.com.my",
+                "www.iproperty.com.my"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/v1\\/graphql",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-ic9wxv4cg5.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "raptor.sg.iproperty.com.my",
+                    "resolved": "d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com"
+                }
+            ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "476ee7b5fa8cde684c464820ea5e8070e093fd83154c8b727376bc42831aafc4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rappler.com",
-                "www.rappler.com"
+                "iproperty.com.my",
+                "www.iproperty.com.my"
             ]
         }
     ],
@@ -152,36 +187,22 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
+            "prevalence": 0.7857142857142857
         },
         {
             "domain": "bonzai.co",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.21428571428571427
         }
     ],
     "types": {
         "XHR": 3,
-        "Preflight": 2,
+        "Preflight": 5,
         "Image": 2,
         "Fetch": 4
     },
-    "nameservers": [
-        "u6.amazonaws.com",
-        "pdns5.ultradns.info",
-        "u1.amazonaws.com",
-        "u3.amazonaws.com",
-        "u4.amazonaws.com",
-        "ns4.p31.dynect.net",
-        "pdns1.ultradns.net",
-        "u2.amazonaws.com",
-        "ns3.p31.dynect.net",
-        "u5.amazonaws.com",
-        "ns1.p31.dynect.net",
-        "ns2.p31.dynect.net",
-        "pdns3.ultradns.org"
-    ]
+    "nameservers": []
 }

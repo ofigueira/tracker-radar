@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000882,
-    "sites": 13,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
         "embed",
+        "counter",
+        "cdnlastmodified",
+        "api",
         "cdn"
     ],
     "cnames": [],
@@ -16,13 +19,16 @@
         {
             "rule": "scribblelive\\.com\\/widgets\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "embed"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "apis": {
+                "Navigator.prototype.appVersion": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "9857b4b059c3ef76bfd24ee1d9759b6ac2ad33ef459976d429d4d18c4a7b92d2"
@@ -34,13 +40,83 @@
                 "spectrumlocalnews.com",
                 "spectrumnews1.com",
                 "www.baynews9.com",
+                "www.chicagobears.com",
                 "www.mynews13.com",
                 "www.ny1.com"
             ]
         },
         {
+            "rule": "scribblelive\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "counter"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SLStatUid": 0.000006805730425017865,
+                "_li_dcdm_c": 0.000006805730425017865
+            },
+            "exampleSites": [
+                "chicagobears.com",
+                "www.startribune.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/3\\/0\\/2\\/0\\/4\\/4\\/7\\/recentposts\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlastmodified"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0012e003395c65ce8f0797fb3452b0fda8ba75d15d647dddce717603905d725"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagobears.com",
+                "www.chicagobears.com"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/v1\\/replies\\/context\\/stream\\/3020447\\/recent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e36d4dbd3a28e4760eaa231ec248f2ad4b020a0cf9f3ae2e6c62c7819ee52acd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagobears.com",
+                "www.chicagobears.com"
+            ]
+        },
+        {
             "rule": "scribblelive\\.com\\/modules\\/lib\\/addons\\.js",
-            "cookies": 0.00000678,
+            "cookies": 0.00000681,
             "fingerprinting": 1,
             "subdomains": [
                 "embed",
@@ -62,13 +138,13 @@
                 "SLStatUid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000006781270131895704,
+                    "prevalence": 0.000006805730425017865,
                     "uniqueness": 1
                 },
                 "SLStatHist": {
                     "ttl": null,
                     "length": 9,
-                    "prevalence": 0.000006781270131895704,
+                    "prevalence": 0.000006805730425017865,
                     "uniqueness": 1
                 }
             },
@@ -81,20 +157,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6521739130434783
+        },
+        {
+            "domain": "d11rmv9we9fli4.cloudfront.net",
+            "prevalence": 0.34782608695652173
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 10,
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-717.awsdns-25.net",
         "ns-1046.awsdns-02.org",
         "ns-1922.awsdns-48.co.uk",
-        "ns-309.awsdns-38.com"
+        "ns-309.awsdns-38.com",
+        "ns-717.awsdns-25.net"
     ]
 }

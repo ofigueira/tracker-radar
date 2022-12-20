@@ -7,14 +7,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000407,
-    "sites": 6,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
+        "kong-proxy-aws",
         "cp-toyota"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "toyota-europe\\.com\\/t1-finance\\/tfs\\/cars\\/gb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kong-proxy-aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lexus.co.uk",
+                "www.lexus.co.uk"
+            ]
+        },
+        {
+            "rule": "toyota-europe\\.com\\/t1-finance\\/tfs\\/cars\\/gb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kong-proxy-aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lexus.co.uk",
+                "www.lexus.co.uk"
+            ]
+        },
         {
             "rule": "toyota-europe\\.com\\/cp-toyota-sso\\/configuration\\.js",
             "cookies": 0,
@@ -23,20 +66,19 @@
                 "cp-toyota"
             ],
             "apis": {
-                "window.localStorage": 4
+                "window.localStorage": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5dd248868aca49b6f256f1f81f02b9e8ae6ee82f7d98e5e2280a8f6fbcad7665"
+                "b00faa03080e42f1730d068d5c9f097e9e856f8bd8b563b568c84007911aa466"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lexus.co.uk",
-                "www.lexus.co.uk",
                 "www.toyota.es",
                 "www.toyota.it"
             ]
@@ -44,7 +86,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000678,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
             "domain": "first party",
@@ -52,11 +94,13 @@
         }
     ],
     "types": {
-        "Script": 4
+        "Preflight": 2,
+        "Fetch": 2,
+        "Script": 3
     },
     "nameservers": [
-        "ns2.netnames.net",
-        "ns1.netnames.net",
-        "ns1.toyota-europe.com"
+        "pdns2.cscdns.net",
+        "ns1.toyota-europe.com",
+        "pdns1.cscdns.net"
     ]
 }

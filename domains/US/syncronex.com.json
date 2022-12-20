@@ -7,15 +7,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000543,
-    "sites": 8,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
         "cdn",
         "syncaccess-hag-cap",
         "syncaccess-hag-di",
-        "syncaccess-wn-pni"
+        "syncaccess-wn-kdm",
+        "syncaccess-wn-pni",
+        "syncaccess-on-ljw",
+        "syncaccess-wn-vvn",
+        "syncaccess-swc-tsln"
     ],
     "cnames": [
+        {
+            "original": "account.ljworld.com",
+            "resolved": "syncaccess-on-ljw.syncronex.com"
+        },
         {
             "original": "subscribe.cdapress.com",
             "resolved": "syncaccess-hag-cap.syncronex.com"
@@ -27,24 +35,32 @@
         {
             "original": "subscribe.dcourier.com",
             "resolved": "syncaccess-wn-pni.syncronex.com"
+        },
+        {
+            "original": "subscribe.kdminer.com",
+            "resolved": "syncaccess-wn-kdm.syncronex.com"
+        },
+        {
+            "original": "subscribe.verdenews.com",
+            "resolved": "syncaccess-wn-vvn.syncronex.com"
         }
     ],
     "fingerprinting": 3,
     "resources": [
         {
             "rule": "syncronex\\.com\\/libs\\/v1\\.9\\/syncLoginSdk\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.000034,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 5,
-            "prevalence": 0.0000339,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "5a21995e90774b36331d7ccee138038383630da031968796bd6baf16789c15a0"
@@ -52,31 +68,33 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ls.authorizationData": {
-                    "ttl": -86392,
+                    "ttl": -86388,
                     "length": 1,
-                    "prevalence": 0.000013562540263791409,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00003402865212508933,
+                    "uniqueness": 0.2
                 },
                 "authorizationData": {
-                    "ttl": -86392,
+                    "ttl": -86388,
                     "length": 1,
-                    "prevalence": 0.000013562540263791409,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00003402865212508933,
+                    "uniqueness": 0.2
                 },
                 ".ASPXAUTH": {
-                    "ttl": -86392,
+                    "ttl": -86388,
                     "length": 1,
-                    "prevalence": 0.000013562540263791409,
-                    "uniqueness": 0.5
+                    "prevalence": 0.00003402865212508933,
+                    "uniqueness": 0.2
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cdapress.com",
                 "dailyinterlake.com",
+                "kdminer.com",
                 "www.dcourier.com",
                 "www.journalgazette.net",
-                "www.nevadaappeal.com"
+                "www.ljworld.com",
+                "www.verdenews.com"
             ]
         },
         {
@@ -86,11 +104,14 @@
             "subdomains": [
                 "syncaccess-hag-cap",
                 "syncaccess-hag-di",
-                "syncaccess-wn-pni"
+                "syncaccess-wn-kdm",
+                "syncaccess-wn-pni",
+                "syncaccess-on-ljw",
+                "syncaccess-wn-vvn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [
                 {
                     "original": "subscribe.cdapress.com",
@@ -101,8 +122,20 @@
                     "resolved": "syncaccess-hag-di.syncronex.com"
                 },
                 {
+                    "original": "subscribe.kdminer.com",
+                    "resolved": "syncaccess-wn-kdm.syncronex.com"
+                },
+                {
                     "original": "subscribe.dcourier.com",
                     "resolved": "syncaccess-wn-pni.syncronex.com"
+                },
+                {
+                    "original": "account.ljworld.com",
+                    "resolved": "syncaccess-on-ljw.syncronex.com"
+                },
+                {
+                    "original": "subscribe.verdenews.com",
+                    "resolved": "syncaccess-wn-vvn.syncronex.com"
                 }
             ],
             "responseHashes": [],
@@ -112,31 +145,60 @@
             "exampleSites": [
                 "cdapress.com",
                 "dailyinterlake.com",
-                "www.dcourier.com"
+                "kdminer.com",
+                "www.dcourier.com",
+                "www.ljworld.com",
+                "www.verdenews.com"
+            ]
+        },
+        {
+            "rule": "syncronex\\.com\\/swc\\/TSLN\\/api\\/svcs\\/simplelogon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syncaccess-swc-tsln"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tsln.com",
+                "www.tsln.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000203,
+    "cookies": 0.000034,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5161290322580645
+            "domain": "syncronex.com",
+            "prevalence": 0.5121951219512195
         },
         {
-            "domain": "syncronex.com",
-            "prevalence": 0.4838709677419355
+            "domain": "first party",
+            "prevalence": 0.4146341463414634
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.07317073170731707
         }
     ],
     "types": {
-        "Script": 5,
-        "Document": 3
+        "Script": 9,
+        "Document": 6
     },
     "nameservers": [
         "ns-1086.awsdns-07.org",
         "ns-2032.awsdns-62.co.uk",
-        "ns-831.awsdns-39.net",
-        "ns-136.awsdns-17.com"
+        "ns-136.awsdns-17.com",
+        "ns-831.awsdns-39.net"
     ]
 }

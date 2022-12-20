@@ -9,19 +9,20 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.00202,
+    "sites": 20,
     "subdomains": [
-        "as.com.data",
+        "commerce",
+        "tomg1ddovp.data",
         "elpais.com.data",
+        "dictionary.data",
         "douglas.de.data",
         "kaspersky.de.data",
         "miles-and-more.com.data",
         "marketing.philips-hue.com.data",
         "science.org.data",
         "sony.com.data",
-        "wieistmeineip.de.data",
-        "commerce"
+        "wieistmeineip.de.data"
     ],
     "cnames": [
         {
@@ -41,10 +42,6 @@
             "resolved": "sony.com.data.adobedc.net"
         },
         {
-            "original": "smetrics.as.com",
-            "resolved": "as.com.data.adobedc.net"
-        },
-        {
             "original": "smetrics.elpais.com",
             "resolved": "elpais.com.data.adobedc.net"
         },
@@ -59,17 +56,64 @@
         {
             "original": "smetrics.science.org",
             "resolved": "science.org.data.adobedc.net"
+        },
+        {
+            "original": "sstats.paloaltonetworks.com",
+            "resolved": "tomg1ddovp.data.adobedc.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "adobedc\\.net\\/id",
-            "cookies": 0.000903,
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
-                "as.com.data",
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dildoking.de",
+                "www.lindt.de"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/collector\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dildoking.de",
+                "www.lindt.de"
+            ]
+        },
+        {
+            "rule": "adobedc\\.net\\/id",
+            "cookies": 0.00101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tomg1ddovp.data",
                 "elpais.com.data",
+                "dictionary.data",
                 "douglas.de.data",
                 "kaspersky.de.data",
                 "miles-and-more.com.data",
@@ -79,12 +123,12 @@
                 "wieistmeineip.de.data"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000903,
+            "sites": 12,
+            "prevalence": 0.00121,
             "cnames": [
                 {
-                    "original": "smetrics.as.com",
-                    "resolved": "as.com.data.adobedc.net"
+                    "original": "sstats.paloaltonetworks.com",
+                    "resolved": "tomg1ddovp.data.adobedc.net"
                 },
                 {
                     "original": "smetrics.elpais.com",
@@ -120,113 +164,76 @@
                 }
             ],
             "responseHashes": [
-                "08d987a03d61cdcd3ab533b4b1f14911fa1e162eb5131b00aa08e5d35d5ff6bc",
-                "387ae1b5d4d36ebe1cb1febd7eed5705d6e0bd5f7a29291495af68efbce8356b",
-                "84c062b447c2b1275b38e3ffde12c264be665153cf31c1052b2de497dd0107c1",
-                "5d5fc53d62940a16e47471719991cb6ceb49130907e9a9fd81c55e83049991a2",
-                "b6bf812ac3a62cbdd8415336cb780bf9d99d8234ee2ed47960a3ace34806ebfe",
-                "862c26ca67f3d80a7707d7fb5ce9b8697ec14aae8158e814f2c2693a654a700d",
-                "f07c8f039d06eab0ee885655336ccca1c8a2fb0d271a65e7777768b8e26eb8c3",
-                "fdefbd2e383fd1af96bfd1d6a0d17c5b4db83a5ef02e239bc6f9613a5fe22b98"
+                "2cccaa1e0a3b77e2498baf2f5c987f96c2af9784da0a1e68f7c6eb2b9ebb5bcf",
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+                "ce13f28945a73e0c60084ba8acf878b8b3daae612ef1d5d50c2cdbe3d8d9fb48",
+                "61c4fff92d16e1462e86e1a8b20db74a6db4622a0a552b24fd72843c5616fd5b",
+                "28517df781dbcb1084fc5ad9a177b295340deae87ab28634e94808bd1df7dc96",
+                "48bde464d1a7d201fdd79c462e245a228a3d19b1c98351c57aae6451d7ec34bd",
+                "3e6eb9223487d44c860bc44480f6721b15c9875408ab68db41a1d2a4a1411507",
+                "74b8e7374cc98247d94b4fd298a17c68c90f4c1506ea41779981647c28422874",
+                "1a5e37b30cb4813bbd126bfea343630ccaf6b2582648f9aecb081972425b3392",
+                "03b0cef30e91f34163ca7696dc425ebfc0c3326d4ad77000d14f3f8b3cb85c92"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "as.com",
+                "paloaltonetworks.com",
                 "elpais.com",
+                "www.dictionary.com",
                 "www.douglas.de",
+                "www.kaspersky.com",
                 "www.kaspersky.de",
                 "www.miles-and-more.com",
                 "www.philips-hue.com",
                 "www.science.org",
                 "www.sony.com",
+                "www.thesaurus.com",
                 "www.wieistmeineip.de"
-            ]
-        },
-        {
-            "rule": "adobedc\\.net\\/collector\\/tp2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "commerce"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dildoking.de",
-                "www.hammer.de",
-                "www.lindt.de",
-                "www.motea.com"
-            ]
-        },
-        {
-            "rule": "adobedc\\.net\\/collector\\/tp2",
-            "cookies": 0.000401,
-            "fingerprinting": 0,
-            "subdomains": [
-                "commerce"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
-            "cnames": [],
-            "responseHashes": [
-                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dildoking.de",
-                "www.hammer.de",
-                "www.lindt.de",
-                "www.motea.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0013,
+    "cookies": 0.00121,
     "topInitiators": [
         {
-            "domain": "unpkg.com",
-            "prevalence": 0.43902439024390244
+            "domain": "adobedtm.com",
+            "prevalence": 0.5135135135135135
         },
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.4146341463414634
+            "domain": "unpkg.com",
+            "prevalence": 0.24324324324324326
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.10810810810810811
         },
         {
             "domain": "kaspersky.com",
-            "prevalence": 0.07317073170731707
+            "prevalence": 0.05405405405405406
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.04878048780487805
+            "prevalence": 0.05405405405405406
         },
         {
             "domain": "asadcdn.com",
-            "prevalence": 0.024390243902439025
+            "prevalence": 0.02702702702702703
         }
     ],
     "types": {
-        "XHR": 9,
-        "Preflight": 4,
-        "Ping": 4
+        "Ping": 2,
+        "Preflight": 2,
+        "XHR": 12
     },
     "nameservers": [
+        "ns206.adobe.net",
         "ns201.adobe.net",
         "ns202.adobe.net",
-        "ns203.adobe.net",
         "ns204.adobe.net",
         "ns205.adobe.net",
-        "ns206.adobe.net"
+        "ns203.adobe.net"
     ]
 }

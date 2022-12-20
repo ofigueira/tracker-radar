@@ -9,16 +9,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000543,
+    "prevalence": 0.0000544,
     "sites": 8,
     "subdomains": [
         "api",
-        "mapproxy"
+        "mapproxy",
+        "mapproxy-eu"
     ],
     "cnames": [
         {
             "original": "api.groupon.com",
             "resolved": "api.groupon.com.edgekey.net"
+        },
+        {
+            "original": "mapproxy-eu.groupon.com",
+            "resolved": "mapproxy-eu.groupon.com.edgekey.net"
         },
         {
             "original": "mapproxy.groupon.com",
@@ -29,14 +34,14 @@
     "resources": [
         {
             "rule": "groupon\\.com\\.edgekey\\.net\\/ai\\/api\\/v1\\/placement",
-            "cookies": 0.0000203,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "api.groupon.com",
@@ -45,12 +50,12 @@
             ],
             "responseHashes": [
                 "499658eeb033f6b2371475770839bbc287b47f69f5083ea8a7fb44b2f8906ce7",
-                "61f4185a0a06b94441901130a9ca4b19b21101f12605d6f4f99a46cfa47b6d12"
+                "5ff05526428895b51374e1195aae07e990c4959dedaf3fad43ee0948830a7dee"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013562540263791409
+                "_li_dcdm_c": 0.00001361146085003573
             },
             "exampleSites": [
                 "groupon.com",
@@ -82,28 +87,54 @@
                 "groupon.de",
                 "www.groupon.it"
             ]
+        },
+        {
+            "rule": "groupon\\.com\\.edgekey\\.net\\/maps\\/api\\/js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mapproxy-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mapproxy-eu.groupon.com",
+                    "resolved": "mapproxy-eu.groupon.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.de",
+                "www.groupon.it"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000407,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
-            "domain": "grouponcdn.com",
-            "prevalence": 0.5
+            "domain": "databreakers.com",
+            "prevalence": 0.46153846153846156
         },
         {
-            "domain": "databreakers.com",
-            "prevalence": 0.3333333333333333
+            "domain": "grouponcdn.com",
+            "prevalence": 0.38461538461538464
         },
         {
             "domain": "first party",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
         "Fetch": 3,
-        "Image": 2
+        "Image": 2,
+        "Script": 2
     },
     "nameservers": []
 }

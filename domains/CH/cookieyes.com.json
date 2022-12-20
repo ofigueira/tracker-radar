@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000605,
+    "sites": 6,
     "subdomains": [
-        "log"
+        "log",
+        "directory",
+        "geoip"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +22,8 @@
                 "log"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -31,7 +33,53 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flipperzero.one",
+                "icalendrier.fr",
+                "loipe-gonten.ch",
                 "ycharts.com"
+            ]
+        },
+        {
+            "rule": "cookieyes\\.com\\/geoip\\/checker\\/result\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "directory"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "400b60f68747f7180d281aeda56eb18e34478452f3218b1df23b239e64a520f4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icalendrier.fr",
+                "ycharts.com"
+            ]
+        },
+        {
+            "rule": "cookieyes\\.com\\/geoip\\/checker\\/result\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "400b60f68747f7180d281aeda56eb18e34478452f3218b1df23b239e64a520f4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scaledagileframework.com",
+                "www.sliderrevolution.com"
             ]
         }
     ],
@@ -44,12 +92,14 @@
             "prevalence": 0.8333333333333334
         },
         {
-            "domain": "stagingv5.wpenginepowered.com",
+            "domain": "first party",
             "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Ping": 2
+        "Ping": 4,
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": [
         "dns1.registrar-servers.com",

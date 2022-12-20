@@ -9,34 +9,60 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "static"
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "mqcdn\\.com\\/shared\\/map_styles\\/global\\/here\\/production\\/vivid\\.json",
+            "rule": "mqcdn\\.com\\/sdk\\/mapquest-js\\/v1\\.3\\.2\\/mapquest\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "static"
+                "api"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.devicePixelRatio": 2
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "b8d3772117f049c1d5ad9dcf8b329c91aa77f7db02d60c79893be085b6fe3b46"
+                "62965b06b9998226ab1693ff1ed033cb0bb193da2b51581428cfc37bedf6b653"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mapquest.com",
-                "www.mapquest.com"
+                "hertz.ch",
+                "www.hertz.com"
+            ]
+        },
+        {
+            "rule": "mqcdn\\.com\\/sdk\\/mapquest-js\\/v1\\.3\\.2\\/mapquest\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "98fdeebfeb9a7dd0c5e3675185e5d10c41a510338c084d2eefd95d8fed950046"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hertz.ch",
+                "www.hertz.com"
             ]
         }
     ],
@@ -50,12 +76,13 @@
         }
     ],
     "types": {
-        "Fetch": 2
+        "Script": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
+        "ns-886.awsdns-46.net",
         "ns-1159.awsdns-16.org",
         "ns-1920.awsdns-48.co.uk",
-        "ns-428.awsdns-53.com",
-        "ns-886.awsdns-46.net"
+        "ns-428.awsdns-53.com"
     ]
 }

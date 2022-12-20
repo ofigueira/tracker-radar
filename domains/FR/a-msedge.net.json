@@ -4,12 +4,17 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000406,
+    "sites": 4,
     "subdomains": [
-        "c-bing-com.a-0001"
+        "c-bing-com.a-0001",
+        "api-msn-com.a-0003"
     ],
     "cnames": [
+        {
+            "original": "api.msn.com",
+            "resolved": "api-msn-com.a-0003.a-msedge.net"
+        },
         {
             "original": "c.bing.com",
             "resolved": "c-bing-com.a-0001.a-msedge.net"
@@ -19,23 +24,21 @@
     "resources": [
         {
             "rule": "a-msedge\\.net\\/c\\.gif",
-            "cookies": 0.000301,
+            "cookies": 0.000304,
             "fingerprinting": 0,
             "subdomains": [
                 "c-bing-com.a-0001"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000304,
             "cnames": [
                 {
                     "original": "c.bing.com",
                     "resolved": "c-bing-com.a-0001.a-msedge.net"
                 }
             ],
-            "responseHashes": [
-                "8f84c4ced509262009163e45994b45ed7ee9d4dbac88674be5f2db5c9e5be38e"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -44,11 +47,38 @@
                 "www.office.com",
                 "www.xbox.com"
             ]
+        },
+        {
+            "rule": "a-msedge\\.net\\/segments\\/recoitems\\/LiveRampObjectStoreCaller",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-msn-com.a-0003"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "api.msn.com",
+                    "resolved": "api-msn-com.a-0003.a-msedge.net"
+                }
+            ],
+            "responseHashes": [
+                "37d3bbf8dd241c04515a4d2fdafae36eca0f33d6bf1fbd95ba94e9ab1df22677"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msn.com",
+                "www.msn.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000304,
     "topInitiators": [
         {
             "domain": "office.net",
@@ -60,7 +90,8 @@
         }
     ],
     "types": {
-        "Image": 3
+        "Image": 3,
+        "Fetch": 2
     },
     "nameservers": []
 }

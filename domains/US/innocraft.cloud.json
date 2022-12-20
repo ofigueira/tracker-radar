@@ -4,18 +4,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000115,
-    "sites": 17,
+    "prevalence": 0.000136,
+    "sites": 20,
     "subdomains": [
         "alpharank",
         "monroehinge",
         "broadcastmed",
         "etfprod",
         "fastmail",
-        "cdn",
-        "thunderbird"
+        "web",
+        "berrythompson",
+        "thunderbird",
+        "cdn"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "demo-web.matomo.org",
+            "resolved": "web.innocraft.cloud"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
@@ -30,8 +37,8 @@
                 "fastmail"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -43,9 +50,61 @@
                 "daytradingz.com",
                 "monroeengineering.com",
                 "www.cedars-sinai.org",
+                "www.chkd.org",
                 "www.etf.com",
                 "www.fastmail.com",
                 "www.fastmail.help"
+            ]
+        },
+        {
+            "rule": "innocraft\\.cloud\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web",
+                "berrythompson"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "demo-web.matomo.org",
+                    "resolved": "web.innocraft.cloud"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "matomo.org",
+                "www.wentworthpuzzles.com"
+            ]
+        },
+        {
+            "rule": "innocraft\\.cloud\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "monroehinge",
+                "thunderbird"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "monroeaerospace.com",
+                "www.thunderbird.net"
             ]
         },
         {
@@ -55,16 +114,18 @@
             "subdomains": [
                 "monroehinge",
                 "broadcastmed",
-                "fastmail"
+                "fastmail",
+                "berrythompson"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "c8d512868091a6ede9dff81982031202731eae0adcc83adb064ecd26ccd94563",
-                "e9c72fbd656fb855ed3a0e370eee8811536f014f1abfd041a8cb98b4835fce8a",
-                "cfaa8d75e60b7c98640c6d00d8fb8a7b1b2c8f59c55f475b1d127ed2e990e2e7"
+                "5d3714d109e531e1706d635019116e73d1de66e4f583e8ec1d7ba83c5445b97b",
+                "76e3a9adf00143a3ed3c0b6c203ce20c47f6bbe9169f2821caef31fe800eb405",
+                "a91a40f9a50421d8729718d311b46d949574ddb98f77719ec23f342710579b4e",
+                "0441264a02044ad21785e86e27176ddcbd7d441975be56b62bc09a2378facc5a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -72,36 +133,39 @@
             "exampleSites": [
                 "monroeengineering.com",
                 "www.cedars-sinai.org",
+                "www.chkd.org",
                 "www.fastmail.help",
-                "www.fastmail.com"
+                "www.wentworthpuzzles.com"
             ]
         },
         {
             "rule": "innocraft\\.cloud\\/broadcastmed\\.innocraft\\.cloud\\/matomo\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Navigator.prototype.vendor": 2,
-                "Document.cookie getter": 2,
-                "window.name": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "NavigatorUAData.prototype.brands": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.platform": 2,
-                "Document.cookie setter": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 1
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.vendor": 3,
+                "Document.cookie getter": 3,
+                "window.name": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "NavigatorUAData.prototype.brands": 3,
+                "NavigatorUAData.prototype.platform": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.platform": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "2e64eda59a1c2536d3ea595cfb6bf8efff98957f13c01cf2cf5707b7d2ffd523"
@@ -109,22 +173,35 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.95.bb45": {
-                    "ttl": 33955211,
+                    "ttl": 33955208,
                     "length": 28,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.00001361146085003573,
                     "uniqueness": 1
                 },
                 "_pk_ses.95.bb45": {
-                    "ttl": 1816,
+                    "ttl": 1808,
                     "length": 1,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.00001361146085003573,
                     "uniqueness": 0.5
+                },
+                "_pk_id.78.7d32": {
+                    "ttl": 33955200,
+                    "length": 28,
+                    "prevalence": 0.000006805730425017865,
+                    "uniqueness": 1
+                },
+                "_pk_ses.78.7d32": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000006805730425017865,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cedars-sinai.org",
-                "www.cedars-sinai.org"
+                "www.cedars-sinai.org",
+                "www.chkd.org"
             ]
         },
         {
@@ -140,6 +217,7 @@
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
                 "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.mimeTypes": 2,
@@ -158,15 +236,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.3.5465": {
-                    "ttl": 33955201,
+                    "ttl": 33955202,
                     "length": 28,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.00001361146085003573,
                     "uniqueness": 1
                 },
                 "_pk_ses.3.5465": {
                     "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.00001361146085003573,
                     "uniqueness": 0.5
                 }
             },
@@ -184,8 +262,8 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
                 "Navigator.prototype.vendor": 2,
@@ -194,15 +272,16 @@
                 "window.name": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "NavigatorUAData.prototype.brands": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.javaEnabled": 1,
+                "Navigator.prototype.javaEnabled": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.platform": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2e64eda59a1c2536d3ea595cfb6bf8efff98957f13c01cf2cf5707b7d2ffd523"
@@ -212,72 +291,45 @@
                 "_pk_id.8.e903": {
                     "ttl": 33955202,
                     "length": 28,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.00001361146085003573,
                     "uniqueness": 1
                 },
                 "_pk_ses.8.e903": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 1,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.00001361146085003573,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fastmail.help",
-                "www.fastmail.help",
-                "www.fastmail.com"
-            ]
-        },
-        {
-            "rule": "innocraft\\.cloud\\/piwik\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thunderbird"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thunderbird.net",
-                "www.thunderbird.net"
+                "www.fastmail.help"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000543,
+    "cookies": 0.0000749,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.8095238095238095
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.13333333333333333
-        },
-        {
-            "domain": "fastmail.help",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.19047619047619047
         }
     ],
     "types": {
-        "Ping": 6,
-        "Script": 11,
-        "Image": 2
+        "Ping": 9,
+        "Image": 2,
+        "Script": 12
     },
     "nameservers": [
-        "ns-190.awsdns-23.com",
+        "ns-1863.awsdns-40.co.uk",
         "ns-1312.awsdns-36.org",
         "ns-914.awsdns-50.net",
-        "ns-1863.awsdns-40.co.uk"
+        "ns-190.awsdns-23.com"
     ]
 }

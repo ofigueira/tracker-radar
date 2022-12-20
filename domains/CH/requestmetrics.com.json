@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "in"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,14 +21,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.connection": 1
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.connection": 3
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "054e00228990a2c528afe7ed96e812302acb0c36d9baa66c406df90735b44679"
+                "75a9ebbe4038eaabe1a3e6767381a1284de9fc72e4342436a7fec727c081fb36"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,7 +37,52 @@
             "exampleSites": [
                 "alternativeto.net",
                 "fansmetrics.com",
-                "www.eatthis.com"
+                "www.berliner-zeitung.de",
+                "www.datacamp.com"
+            ]
+        },
+        {
+            "rule": "requestmetrics\\.com\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "in"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alternativeto.net",
+                "www.berliner-zeitung.de",
+                "www.datacamp.com"
+            ]
+        },
+        {
+            "rule": "requestmetrics\\.com\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "in"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alternativeto.net",
+                "www.berliner-zeitung.de",
+                "www.datacamp.com"
             ]
         }
     ],
@@ -45,14 +92,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "trackjs.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 4,
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
-        "dns1.registrar-servers.com",
-        "dns2.registrar-servers.com"
+        "dns2.registrar-servers.com",
+        "dns1.registrar-servers.com"
     ]
 }

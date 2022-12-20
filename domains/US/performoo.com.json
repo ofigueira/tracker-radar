@@ -4,17 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "tags-b",
-        "yaas-b-s"
+        "yaas-b-s",
+        "yaas-b-monitor",
+        "trac-b0"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "performoo\\.com\\/tag\\/vastos\\/2c9f986e7a86b9c1017a8a9217f10099",
+            "rule": "performoo\\.com\\/tag\\/am\\/2c9f986e80c3c4ce0180dc4284140574",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -27,36 +29,88 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "37a11efd43638240ff1ae325d3d0fbc44393430887d0dea0a7f74bbb86f30b7b"
+                "a19dffbabbb46855817541cf96ce82be0702b45162ab116a18609d4fa32b6baf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "firstpost.com",
-                "www.firstpost.com"
+                "moneycontrol.com",
+                "www.moneycontrol.com"
             ]
         },
         {
             "rule": "performoo\\.com\\/tcInitVast\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "yaas-b-s"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "529c87ffa7f5403d5fc86a498eaaf7f38a2fec04d9b5bb10667233bd9ddb115b"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "firstpost.com",
-                "www.firstpost.com",
-                "www.moneycontrol.com",
-                "www.news18.com"
+                "moneycontrol.com",
+                "www.moneycontrol.com"
+            ]
+        },
+        {
+            "rule": "performoo\\.com\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "yaas-b-s",
+                "yaas-b-monitor"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "Date.prototype.getTime": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5173e291ee585f3b1725a570b9e4cf7c845e9af4a43b5552607dca2bcb6fee71"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moneycontrol.com",
+                "www.moneycontrol.com"
+            ]
+        },
+        {
+            "rule": "performoo\\.com\\/capture",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trac-b0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moneycontrol.com",
+                "www.moneycontrol.com"
             ]
         }
     ],
@@ -70,10 +124,11 @@
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 6,
+        "Image": 2
     },
     "nameservers": [
-        "ns54.domaincontrol.com",
-        "ns53.domaincontrol.com"
+        "ns53.domaincontrol.com",
+        "ns54.domaincontrol.com"
     ]
 }

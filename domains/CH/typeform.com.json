@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000702,
-    "sites": 7,
+    "prevalence": 0.000605,
+    "sites": 6,
     "subdomains": [
         "embed",
+        "rudderstack.cdp.prod.data",
         "showbie"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "typeform\\.com\\/next\\/css\\/popup\\.css",
@@ -25,7 +26,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e1b0ae7a4891363c0798f66aae3fa1229d2efbcf59d1fbe35348e2eb8283dd08"
@@ -34,88 +35,89 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "quickline.ch",
-                "community.sunrise.ch",
+                "sunrise.ch",
+                "www.izotope.com",
                 "www.spain.info"
-            ]
-        },
-        {
-            "rule": "typeform\\.com\\/next\\/css\\/popover\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "embed"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "bace2a7a6a96060e2e269060bd9185939a2c7018472371707d8dc07fbe81fdb9"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "quickline.ch",
-                "community.sunrise.ch"
-            ]
-        },
-        {
-            "rule": "typeform\\.com\\/next\\/css\\/slider\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "embed"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "d4a29dfd4ab1e5cecd474325eade0fe0e47a06db1319e07d4dd24c1b6fd8ed3c"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "quickline.ch",
-                "community.sunrise.ch"
             ]
         },
         {
             "rule": "typeform\\.com\\/next\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "embed"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
-                "0f3177a35320166dbe9145941c74c6a35b6c906540d05f35260400734f84f894"
+                "771bdc735ed8cc8583090d7bc589c795d6e1536b034fee485cae502d80f0d6cb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mietrecht.ch",
-                "www.spain.info",
-                "www.zu-zweit.ch"
+                "fandom.com",
+                "www.izotope.com",
+                "www.mietrecht.ch",
+                "www.spain.info"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rudderstack.cdp.prod.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandom.com",
+                "diablo.fandom.com"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rudderstack.cdp.prod.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandom.com",
+                "diablo.fandom.com"
             ]
         },
         {
             "rule": "typeform\\.com\\/soccontact",
-            "cookies": 0.000201,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "showbie"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
@@ -129,17 +131,26 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "rudderlabs.com",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Stylesheet": 7,
-        "Script": 3,
-        "XHR": 2
+        "Stylesheet": 3,
+        "Script": 4,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-14.awsdns-01.com",

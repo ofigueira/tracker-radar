@@ -9,14 +9,15 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0013,
+    "prevalence": 0.00131,
     "sites": 13,
     "subdomains": [
-        "tagger",
-        "profiles.tagger",
         "cdn",
         "lefigaro.tagger",
-        "tagger-scmp"
+        "profiles.tagger",
+        "fox.tagger",
+        "tagger-scmp",
+        "tagger"
     ],
     "cnames": [
         {
@@ -24,58 +25,8 @@
             "resolved": "tagger-scmp.opecloud.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "opecloud\\.com\\/dbm\\/opecs\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mawdoo3.com",
-                "www.scmp.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/api\\/v1\\/adalliance\\/profile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000601,
-            "cnames": [],
-            "responseHashes": [
-                "7e239af6d04714dd2548fb8838f2f1b96abbda9957272d7f117eeb45317fc916",
-                "5c36edf6349fd4ea8700a9f409cc83fdaaf3d144ad5a75fa42e02ac74b78f573",
-                "7e340e7426d9d3f97369a4b6242275a08cd986bca050eaf8598ef3699a274624",
-                "c28d6f3c5a4a3b05b57ef0723465513d4c5451d8ff9ea742637db82e1270ce8c",
-                "f1cb198f668885e9b5570f7e0b9fadf36efcdb6c7f37e07bea538240f99d293d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "stern.de",
-                "www.brigitte.de",
-                "www.chefkoch.de",
-                "www.n-tv.de",
-                "www.rtl.de",
-                "www.stern.de"
-            ]
-        },
         {
             "rule": "opecloud\\.com\\/ope-lefigaro\\.js",
             "cookies": 0,
@@ -84,14 +35,14 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2
+                "window.localStorage": 5,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5
             },
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 5,
+            "prevalence": 0.000504,
             "cnames": [],
             "responseHashes": [
                 "d4b399d66779eeafbb7d56365d5d111987eb6cdf5273fd6262c34d4d1cc8c5aa"
@@ -100,7 +51,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lefigaro.fr",
+                "journaldesfemmes.fr",
+                "forums.commentcamarche.net",
+                "www.lefigaro.fr",
+                "www.linternaute.com",
                 "www.linternaute.fr"
             ]
         },
@@ -112,30 +66,77 @@
                 "lefigaro.tagger"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lefigaro.fr",
+                "journaldesfemmes.fr",
+                "www.linternaute.com",
                 "www.linternaute.fr"
             ]
         },
         {
+            "rule": "opecloud\\.com\\/api\\/v1\\/adalliance\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [],
+            "responseHashes": [
+                "897e60c153a3d829a9937d68c24647ee77f704ccb06f950b1a4e07aae9c97137",
+                "e3e386734d93840902a2c9cdfc895c50430947d16216c37510a19cb6036a1605",
+                "61598f1aa131c04838675761f076451b3928c6c7d445f224cad40edfd433c419",
+                "23916a2dc6140e87149e2f0e98f65e84600849fa9c95e3ecbb8b0946b05b931f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brigitte.de",
+                "www.chefkoch.de",
+                "www.n-tv.de",
+                "www.rtl.de",
+                "www.stern.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxsports.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
             "rule": "opecloud\\.com\\/scmp\\/v2\\/pixel\\.gif",
-            "cookies": 0.0002,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger-scmp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "tagger.ope.scmp.com",
@@ -146,7 +147,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.0004008819402685909
+                "_ga": 0.00040330711837063924
             },
             "exampleSites": [
                 "scmp.com",
@@ -155,14 +156,14 @@
         },
         {
             "rule": "opecloud\\.com\\/scmp\\/pcs\\.gif",
-            "cookies": 0.0002,
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -176,47 +177,43 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0002,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.391304347826087
+            "prevalence": 0.38095238095238093
         },
         {
             "domain": "opecloud.com",
-            "prevalence": 0.17391304347826086
+            "prevalence": 0.19047619047619047
         },
         {
             "domain": "i-scmp.com",
-            "prevalence": 0.17391304347826086
+            "prevalence": 0.19047619047619047
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.08695652173913043
+            "prevalence": 0.14285714285714285
         },
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.08695652173913043
+            "domain": "ccmbg.com",
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "kataweb.it",
-            "prevalence": 0.043478260869565216
-        },
-        {
-            "domain": "ocdn.eu",
-            "prevalence": 0.043478260869565216
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Image": 6,
-        "Fetch": 6,
-        "Script": 2,
-        "XHR": 2
+        "Script": 5,
+        "XHR": 3,
+        "Fetch": 5,
+        "Image": 6
     },
     "nameservers": [
-        "ns-1454.awsdns-53.org",
         "ns-1611.awsdns-09.co.uk",
-        "ns-353.awsdns-44.com",
-        "ns-899.awsdns-48.net"
+        "ns-899.awsdns-48.net",
+        "ns-1454.awsdns-53.org",
+        "ns-353.awsdns-44.com"
     ]
 }

@@ -4,16 +4,43 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000203,
+    "sites": 2,
     "subdomains": [
+        "cdn",
         "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "prisme\\.ai\\/v1\\/notifications",
+            "rule": "prisme\\.ai\\/wegobot_inject\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "e81c944844a0463ab7b6abddf9fa5e57c773d5c406b55260387fd5d19d80122e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "departement13.fr",
+                "www.quimper.bzh"
+            ]
+        },
+        {
+            "rule": "prisme\\.ai\\/parse\\/1\\/functions\\/Profile",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,7 +48,29 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "ffa3ec28557592061c3b90d512c81ed24e4c94b300087569bb7ff1ff9b573ea2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "departement13.fr",
+                "www.quimper.bzh"
+            ]
+        },
+        {
+            "rule": "prisme\\.ai\\/parse\\/1\\/functions\\/Profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -29,7 +78,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "departement13.fr",
-                "www.departement13.fr"
+                "www.quimper.bzh"
             ]
         },
         {
@@ -40,8 +89,29 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000304,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "departement13.fr",
+                "www.departement13.fr",
+                "www.quimper.bzh"
+            ]
+        },
+        {
+            "rule": "prisme\\.ai\\/v1\\/notifications",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000304,
             "cnames": [],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
@@ -51,7 +121,50 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "departement13.fr",
-                "www.departement13.fr"
+                "www.departement13.fr",
+                "www.quimper.bzh"
+            ]
+        },
+        {
+            "rule": "prisme\\.ai\\/parse\\/1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "departement13.fr",
+                "www.quimper.bzh"
+            ]
+        },
+        {
+            "rule": "prisme\\.ai\\/parse\\/1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "6516b756dbd26c6451caf0201de8adfc6873ce82d241117552e278ad3462f98d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "departement13.fr",
+                "www.quimper.bzh"
             ]
         }
     ],
@@ -69,12 +182,13 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Script": 2,
+        "Fetch": 7,
+        "Preflight": 7
     },
     "nameservers": [
         "ns-154-c.gandi.net",
-        "ns-238-b.gandi.net",
-        "ns-216-a.gandi.net"
+        "ns-216-a.gandi.net",
+        "ns-238-b.gandi.net"
     ]
 }

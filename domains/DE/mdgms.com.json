@@ -7,19 +7,52 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000505,
+    "sites": 5,
     "subdomains": [
-        "charts.comdirect"
+        "gateway",
+        "charts.comdirect",
+        "push.onvista",
+        "php5.s-broker"
     ],
     "cnames": [
         {
             "original": "charts.comdirect.de",
             "resolved": "charts.comdirect.mdgms.com"
+        },
+        {
+            "original": "idms.sbroker.de",
+            "resolved": "php5.s-broker.mdgms.com"
+        },
+        {
+            "original": "push.onvista.de",
+            "resolved": "push.onvista.mdgms.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "mdgms\\.com\\/extern\\/logo_image\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "798911c9c7093323d1848263fb46ea66b0db138d49eee7cf9ac196817710edf4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketscreener.com",
+                "de.marketscreener.com"
+            ]
+        },
         {
             "rule": "mdgms\\.com\\/charts\\/rebrush\\/homepage_resp\\.chart",
             "cookies": 0,
@@ -29,7 +62,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "charts.comdirect.de",
@@ -37,7 +70,7 @@
                 }
             ],
             "responseHashes": [
-                "9c1f75c15e40a47bccf8ebce27daecb3bd5caf475b691833acb5339b4339926c"
+                "68dec7eea970b36f58950938dc5f2d17dbbe8a47a3d27b1f51f3853cedbdc95d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -46,13 +79,133 @@
                 "comdirect.de",
                 "www.comdirect.de"
             ]
+        },
+        {
+            "rule": "mdgms\\.com\\/files\\/js-api\\/1\\.6\\.2\\/blank\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push.onvista"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "push.onvista.de",
+                    "resolved": "push.onvista.mdgms.com"
+                }
+            ],
+            "responseHashes": [
+                "9699c4a53bdf597b7c12c866412fce3c48912713676294443079fc674ac3ace8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onvista.de",
+                "www.onvista.de"
+            ]
+        },
+        {
+            "rule": "mdgms\\.com\\/meta\\/descriptor\\.csv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push.onvista"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "push.onvista.de",
+                    "resolved": "push.onvista.mdgms.com"
+                }
+            ],
+            "responseHashes": [
+                "35afc688f6af1650b35683bbeff113ad18c2d7993a9740e725282cd2757a4345"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onvista.de",
+                "www.onvista.de"
+            ]
+        },
+        {
+            "rule": "mdgms\\.com\\/system\\/timezone_offset_list\\.csv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push.onvista"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "push.onvista.de",
+                    "resolved": "push.onvista.mdgms.com"
+                }
+            ],
+            "responseHashes": [
+                "140042a3dffde69e759b795ea0a777ea8522f477e455228388f262c6407c0072"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onvista.de",
+                "www.onvista.de"
+            ]
+        },
+        {
+            "rule": "mdgms\\.com\\/charts\\/homepage\\.chart\\.small_neu",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "php5.s-broker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "idms.sbroker.de",
+                    "resolved": "php5.s-broker.mdgms.com"
+                }
+            ],
+            "responseHashes": [
+                "ec0e3e79fae4f5c8eae9aeab8e6762bed37eca2d415fc8c68b988cd9dc67a73b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sbroker.de",
+                "www.sbroker.de"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Image": 2
+        "Image": 6,
+        "Document": 2,
+        "XHR": 4
     },
-    "nameservers": []
+    "nameservers": [
+        "ns0243.secondary.cloudflare.com",
+        "ns0033.secondary.cloudflare.com",
+        "ns.is-asp.com"
+    ]
 }

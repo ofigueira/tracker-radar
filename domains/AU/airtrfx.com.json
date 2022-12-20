@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
         "em-frontend-assets",
         "openair-california",
@@ -163,11 +163,13 @@
                 "em-frontend-assets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 1
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 1,
+                "Date.prototype.getTimezoneOffset": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "82f54488f28476f39b1db567a013746476fcf75447fc759f436d497869f57cb5"
@@ -177,45 +179,55 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ausopen.com",
+                "www.staralliance.com",
                 "www.vietnamairlines.com"
             ]
         },
         {
             "rule": "airtrfx\\.com\\/components\\/em-cmp-lib-tracking\\/0\\.11\\.50\\/components\\/em-cmp-tracking\\/tracking\\.bundle\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 1,
             "subdomains": [
                 "em-frontend-assets"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 1
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "30b846501dc96d233d54b25e31385e4af043b09293eda78d70bb033cec8488fc"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "emcid": {
+                    "ttl": 315360017,
+                    "length": 11,
+                    "prevalence": 0.00010065425264217414,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ausopen.com",
+                "www.staralliance.com",
                 "www.vietnamairlines.com"
             ]
         },
         {
             "rule": "airtrfx\\.com\\/placementSettings\\/v1",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "fc-services-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -223,50 +235,55 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ausopen.com",
+                "www.staralliance.com",
                 "www.vietnamairlines.com"
             ]
         },
         {
             "rule": "airtrfx\\.com\\/placementSettings\\/v1",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "fc-services-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "048d833ce46df6a12c35c2473ca89c52dd58f57e32c65071daa0edc41fd9a2c9"
+                "c78e58eb12a6578e059fd230c90c49100d2124ac4a4ce6409512ee335d854b91",
+                "0446e0c80bf0301109cdaccbdeaff9f2856609ff19ecb24c24025ff215af4b35"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ausopen.com",
+                "www.staralliance.com",
                 "www.vietnamairlines.com"
             ]
         },
         {
             "rule": "airtrfx\\.com\\/",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "em-tr4ck-settings"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "82d0dacc9cab74be17f9261417f01aa27866dcd6552315a7a31d90109cfba99c"
+                "25a28b8754048f9b2ab628397b37cc7644fb026f5b1191d49d2eea960b3532c5",
+                "2e28f5cf77b88def7d88ba6ee2aec62e28cf3c594978e156518f1859735d334f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ausopen.com",
+                "www.staralliance.com",
                 "www.vietnamairlines.com"
             ]
         },
@@ -337,27 +354,31 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000503,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.625
+            "prevalence": 0.38461538461538464
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.375
+            "prevalence": 0.3076923076923077
+        },
+        {
+            "domain": "airtrfx.com",
+            "prevalence": 0.3076923076923077
         }
     ],
     "types": {
-        "Script": 14,
-        "Preflight": 6,
+        "Script": 16,
+        "Preflight": 7,
         "Fetch": 2,
-        "XHR": 6
+        "XHR": 8
     },
     "nameservers": [
         "ns-105.awsdns-13.com",
-        "ns-990.awsdns-59.net",
+        "ns-1283.awsdns-32.org",
         "ns-1770.awsdns-29.co.uk",
-        "ns-1283.awsdns-32.org"
+        "ns-990.awsdns-59.net"
     ]
 }

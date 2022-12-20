@@ -7,11 +7,34 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "sdki"
+        "sdki",
+        "sdk"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "truepush\\.com\\/sdk\\/v2\\.0\\.2\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdki"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c600adb1e3d6281621818ba058f98a8fa9ba43bd31a97c2cf98901400ba6f461"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opengenus.org",
+                "www.floodmap.net"
+            ]
+        },
         {
             "rule": "truepush\\.com\\/sdk\\/version\\.json",
             "cookies": 0,
@@ -30,7 +53,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "angelicalbalance.com",
+                "opengenus.org",
                 "www.floodmap.net"
             ]
         },
@@ -45,7 +68,9 @@
                 "Notification.permission": 2,
                 "window.name": 2,
                 "Navigator.prototype.permissions": 2,
-                "window.localStorage": 1
+                "window.localStorage": 2,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.language": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -57,14 +82,56 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "angelicalbalance.com",
+                "opengenus.org",
+                "www.floodmap.net"
+            ]
+        },
+        {
+            "rule": "truepush\\.com\\/api\\/v2\\/truepushSDKPlatfromDetails",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bb26329f6dbe7669b732c5dad2c9234ad356c6143dea8817ec7cdc9920ca4727"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opengenus.org",
+                "www.floodmap.net"
+            ]
+        },
+        {
+            "rule": "truepush\\.com\\/api\\/v2\\/truepushSDKPlatfromDetails",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opengenus.org",
                 "www.floodmap.net"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -72,13 +139,14 @@
         }
     ],
     "types": {
-        "XHR": 2,
-        "Script": 2
+        "Script": 4,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1697.awsdns-20.co.uk",
-        "ns-313.awsdns-39.com",
         "ns-611.awsdns-12.net",
+        "ns-313.awsdns-39.com",
+        "ns-1697.awsdns-20.co.uk",
         "ns-1515.awsdns-61.org"
     ]
 }

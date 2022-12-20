@@ -4,28 +4,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000122,
-    "sites": 18,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
-        "sdk.fdp.evertonfc",
-        "fdp.evertonfc",
-        "sso.evertonfc",
-        "events.fdp.evertonfc",
+        "sdk.fdp.ecb",
+        "sdk.fdp.formula-e",
+        "fdp.ecb",
+        "fdp.formula-e",
+        "cricketapi-ecb",
+        "events.fdp.ecb",
+        "events.fdp.formula-e",
+        "content-ecb",
         "translations.platform",
-        "cricketapi-icc",
         "footballapi",
         "translations.wr",
-        "cmsapi",
-        "api.icc.cdp",
-        "content-icc",
-        "resources.prod.atpmedia"
+        "cmsapi"
     ],
-    "cnames": [
-        {
-            "original": "sso.evertonfc.com",
-            "resolved": "sso.evertonfc.pulselive.com"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
@@ -33,12 +28,14 @@
             "cookies": 0.0000136,
             "fingerprinting": 3,
             "subdomains": [
-                "sdk.fdp.evertonfc"
+                "sdk.fdp.ecb",
+                "sdk.fdp.formula-e"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
+                "window.localStorage": 2,
                 "Navigator.prototype.webdriver": 2,
                 "Navigator.prototype.language": 2,
                 "Screen.prototype.colorDepth": 2,
@@ -51,7 +48,6 @@
                 "Date.prototype.getTimezoneOffset": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
                 "window.sessionStorage": 2,
-                "window.localStorage": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.appName": 2,
@@ -73,14 +69,21 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "42ff0c901598fb2fbdaabb9b1db784543bd342cc9ed5607b17eeebea7a96eb6f"
+                "2ea8f70aee74eb7cba6f8ee3addf571c337939889789d3d5ad39742a2446f269"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "fdp-fingerprint": {
+                    "ttl": 2592005,
+                    "length": 32,
+                    "prevalence": 0.00001361146085003573,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
+                "ecb.co.uk",
+                "www.fiaformulae.com"
             ]
         },
         {
@@ -88,132 +91,52 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "fdp.evertonfc"
+                "fdp.ecb",
+                "fdp.formula-e"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e9cbb7580d5fd1157553ea6dd4c133c245478be7e8ff382ab4224229742a060a"
+                "f0338e95e3818c6ac5cf994b60fa180c8c9d585994d327389dcf4b60ffb98d55"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
+                "ecb.co.uk",
+                "www.fiaformulae.com"
             ]
         },
         {
-            "rule": "pulselive\\.com\\/auth\\/realms\\/Everton\\/protocol\\/openid-connect\\/3p-cookies\\/step1\\.html",
+            "rule": "pulselive\\.com\\/\\/fixtures",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sso.evertonfc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "sso.evertonfc.com",
-                    "resolved": "sso.evertonfc.pulselive.com"
-                }
-            ],
-            "responseHashes": [
-                "8e08d6c979c3b89f8735ddec57645eea1633c985de66818d1c9d7a2478bcbd32"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/auth\\/realms\\/Everton\\/protocol\\/openid-connect\\/3p-cookies\\/step2\\.html",
-            "cookies": 0.00000678,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sso.evertonfc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "sso.evertonfc.com",
-                    "resolved": "sso.evertonfc.pulselive.com"
-                }
-            ],
-            "responseHashes": [
-                "20ae6a4a7d0d0a5cf52120dea92dcfc64fe95a1aa230399bbbeef27d2e5fe074"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/auth\\/realms\\/Everton\\/protocol\\/openid-connect\\/auth",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sso.evertonfc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "sso.evertonfc.com",
-                    "resolved": "sso.evertonfc.pulselive.com"
-                }
-            ],
-            "responseHashes": [
-                "70ec0c25263c5a7c549be2fad221c5459c1b602b1029dc9a36546527c8ce982f"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/consents",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.fdp.evertonfc"
+                "cricketapi-ecb"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4bcf8aca27134e408726e5cc544d4eaeb6daeee117faf2e1f5b20f98aec1c8ed"
+                "4e7f6ab894ef3deb3a99a0ad9877f758aa7299280b0ee2488c9211fd5b1fa7f6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
+                "ecb.co.uk",
+                "www.ecb.co.uk"
             ]
         },
         {
-            "rule": "pulselive\\.com\\/consents",
+            "rule": "pulselive\\.com\\/\\/fixtures",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "events.fdp.evertonfc"
+                "cricketapi-ecb"
             ],
             "apis": {},
             "sites": 2,
@@ -224,8 +147,118 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "evertonfc.com",
-                "www.evertonfc.com"
+                "ecb.co.uk",
+                "www.ecb.co.uk"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/consents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.fdp.ecb",
+                "events.fdp.formula-e"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f052031c65d916887b6665cf83988d0fee0dd95c68e14943da1d4bed39bf0e3c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.fiaformulae.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/consents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.fdp.ecb",
+                "events.fdp.formula-e"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.fiaformulae.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/\\/fixtures\\/35285\\/scoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricketapi-ecb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1a7d4e9ffc7d8cc26a87c6e490ac64b665c3163baa6b9d18640b02f209fc23b6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.ecb.co.uk"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/content\\/ecb\\/photo\\/EN\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content-ecb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7b01e9f660336794ea8290b1dab622f2c9a15d665c700d206d52534a7e0e0e4d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.ecb.co.uk"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/\\/fixtures\\/35576\\/scoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricketapi-ecb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f1894f848dd4027eb00cfafdbc43807223956c61a5c57d0999765dc317a55014"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.ecb.co.uk"
             ]
         },
         {
@@ -251,70 +284,6 @@
             ]
         },
         {
-            "rule": "pulselive\\.com\\/fixtures",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cricketapi-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "icc-cricket.com",
-                "www.icc-cricket.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/fixtures",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cricketapi-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "34297c605252890005d2118cdd5b5880b54630b360097af8266202304578b057"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "icc-cricket.com",
-                "www.icc-cricket.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/fixtures\\/101791\\/scoring",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cricketapi-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "eee406c871c6b687e906742df489eee84b55f69321ef32787d9bf52b386cb364"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "icc-cricket.com",
-                "www.icc-cricket.com"
-            ]
-        },
-        {
             "rule": "pulselive\\.com\\/premierleague\\/en\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -326,7 +295,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "306ad075bb0dc2da0f1c20aabb517489817cd42c97be818343d2212355432b66"
+                "0806a1ad42da8f4dc714af40c36c678d870a53ebd4e8533b818fe8df2ff8a45b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -337,7 +306,7 @@
             ]
         },
         {
-            "rule": "pulselive\\.com\\/football\\/players\\/49481\\/history",
+            "rule": "pulselive\\.com\\/football\\/broadcasting-schedule\\/fixtures",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -348,51 +317,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7790a0a9e1050265fa7382b7bc85442a6bd044f5f46a9dfb93251386034d0708"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "premierleague.com",
-                "www.premierleague.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/football\\/players\\/13565\\/history",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "footballapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "51b9877867d4fb86faf2988e154e7955b1fdb0a3305e19c1ab9a262565818935"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "premierleague.com",
-                "www.premierleague.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/football\\/players\\/4316\\/history",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "footballapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f62423c92b157ffbe5bbc300474164115da367a2a84dabddcb914885cd2f9e1c"
+                "81d4ca09a5af19c9909b54beb2a70c743d089e8338850662d10315eacd2774ce"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -436,51 +361,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bf5b62b7ddfa7da5cf20a8dd0a72cfb8c84b36aafc52af4f6108a00d55ba4668"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "premierleague.com",
-                "www.premierleague.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/content\\/PremierLeague\\/video\\/EN\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "footballapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8f50bfda274d2dd69d2a47e9215db5439655d238546e0a01ebfb00dfad8cad79"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "premierleague.com",
-                "www.premierleague.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/football\\/standings",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "footballapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c9c598e7ea7160fdd98a6676e6fae247f77a23404e3d4ad27c5629888db1cc80"
+                "febee464915a4a4c7395a9d07302eb9dd0374217ca8da1cc5d256576028739d8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -502,210 +383,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d1792f494cab483c634c9b6a0a4054670aa31020d9f8aaf1fd13785cce3939ca"
+                "10b4db14ee3df4a06143b4e21b9ce281fec666f26b36e73353a82a0e24ec8a29"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rugbyworldcup.com",
+                "world.rugby",
                 "www.world.rugby"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/rugby\\/rankings\\/wru",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmsapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4a756c7c1be27a7b3d40d577dcc6bf299b5304a265200e44c3211f687c1689ee"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rugbyworldcup.com",
-                "www.world.rugby"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/rugby\\/rankings\\/mru",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmsapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "67084b92dd2a18862ac77a85897d587845accdfc898442afe443041b36c9380a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rugbyworldcup.com",
-                "www.world.rugby"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/content\\/worldrugby\\/PHOTO\\/en",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmsapi"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "82c46ed3315148dcd16de6eba7c49cf61eb41a28b3cc992dd0e75d426164e811",
-                "dc5da4313dd759790a0fa53c85ef19167e1b15322929dd38efd21e16dd9f8596"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rugbyworldcup.com",
-                "www.rugbyworldcup.com",
-                "www.world.rugby"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/fixtures\\/100439\\/scoring",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.icc.cdp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "98655237c6d8148b93c7751efafffb39d7a9c6200ce6ac76de3a845cec05fd3b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t20worldcup.com",
-                "www.t20worldcup.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/content\\/icc\\/video\\/en\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "256c9f480797f29935727803685ea7cdc2870303821c989d097d73dd0facd502"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t20worldcup.com",
-                "www.t20worldcup.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/commentary\\/ICC\\/100439\\/EN\\/newerThan\\/1666967504891\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.icc.cdp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t20worldcup.com",
-                "www.t20worldcup.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/liveblog\\/ICC\\/3782\\/EN\\/newerThan\\/1666745685991\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t20worldcup.com",
-                "www.t20worldcup.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/atpmedia\\/en\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "translations.platform"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cb59325e54ebb3aa63ee915068c55071dc3a376178da4cafe959205612c263a3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tennistv.com",
-                "www.tennistv.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/photo-resources\\/2022\\/11\\/21\\/9ee3ca28-4868-4bf5-a898-ccc3e6e1a15a\\/DUB_3479\\.JPG",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "resources.prod.atpmedia"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f388c70459d5b99cb1b769e4bc523fab6255e78bb54827df091184da814e1c50"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tennistv.com",
-                "www.tennistv.com"
             ]
         },
         {
@@ -721,6 +406,28 @@
             "cnames": [],
             "responseHashes": [
                 "94b84f006e24c30544277216af06e7cd5f30ad9514c4a67aebb642bcaf2f0280"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.rugby",
+                "www.world.rugby"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/content\\/worldrugby\\/PHOTO\\/en",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmsapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "82c46ed3315148dcd16de6eba7c49cf61eb41a28b3cc992dd0e75d426164e811"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -759,25 +466,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9814814814814815
+            "prevalence": 0.9805825242718447
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.018518518518518517
+            "prevalence": 0.019417475728155338
         }
     ],
     "types": {
-        "Script": 12,
-        "Fetch": 11,
-        "Document": 6,
-        "XHR": 28,
-        "Preflight": 4,
-        "Image": 2
+        "Script": 10,
+        "Fetch": 6,
+        "XHR": 16,
+        "Preflight": 4
     },
     "nameservers": [
-        "ns-1815.awsdns-34.co.uk",
         "ns-494.awsdns-61.com",
-        "ns-1093.awsdns-08.org",
-        "ns-663.awsdns-18.net"
+        "ns-663.awsdns-18.net",
+        "ns-1815.awsdns-34.co.uk",
+        "ns-1093.awsdns-08.org"
     ]
 }

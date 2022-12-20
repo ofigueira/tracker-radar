@@ -4,23 +4,183 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "prod-assets.sealy.cloudfront",
-        "gtm-ph78mxk-main.gtm.svc",
         "gtm-ktpcrj4-main.gtm.svc",
+        "gtm-ph78mxk-main.gtm.svc",
+        "gtm-wzsf4b3-main.gtm.svc",
         "prod.metricsapi.svc",
-        "prod.retaillocator.cloudfront"
+        "prod.retaillocator.cloudfront",
+        "prod-assets.sealy.cloudfront",
+        "prod-assets.stearns.cloudfront"
     ],
     "cnames": [
         {
             "original": "assets-www.sealy.com",
             "resolved": "prod-assets.sealy.cloudfront.tsiaws.com"
+        },
+        {
+            "original": "assets-www.stearnsandfoster.com",
+            "resolved": "prod-assets.stearns.cloudfront.tsiaws.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "tsiaws\\.com\\/gtm\\.js",
+            "cookies": 0.000034,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gtm-ktpcrj4-main.gtm.svc",
+                "gtm-ph78mxk-main.gtm.svc",
+                "gtm-wzsf4b3-main.gtm.svc"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "NavigatorUAData.prototype.getHighEntropyValues": 5,
+                "Document.cookie setter": 5,
+                "PerformanceTiming.prototype.navigationStart": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "window.innerHeight": 3
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "5b7d5210ffd4c80beaae66544ad05e2cdd2c8330c4a949c5184d11e1fa564b69",
+                "18716b61f332534bbe9b6352ce3a83428b2582cc2ba252ca4d604b57471616fe",
+                "2d92e5f789fd6f763eaf925ade5caa2816d83618e66db5ed058bccd74d2ebfd5",
+                "d5c004dcb1fc9763041d3f4048c5550d32bd02389d9e52896ca20c78caa850b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_gcl_au": {
+                    "ttl": 7776003,
+                    "length": 25,
+                    "prevalence": 0.00003402865212508933,
+                    "uniqueness": 0.8
+                },
+                "pageCount": {
+                    "ttl": 1213,
+                    "length": 1,
+                    "prevalence": 0.00001361146085003573,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "help.tempurpedic.com",
+                "www.sealy.com",
+                "www.stearnsandfoster.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/metrics\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.metricsapi.svc"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "help.tempurpedic.com",
+                "www.sealy.com",
+                "www.stearnsandfoster.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/metrics\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.metricsapi.svc"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "5d3864d66c8d3c3026f6e3f671cf93132a0983ad02d9f9ff5ae1e180cb9b9a22",
+                "1b86da376b80648fb4c700763069ded84c1d4c141cbaf98ae7c7f18841b9e02d",
+                "587b0aed398bd3a8282dea41cff2d70b3f97ecf6f1b554e957b13528c2d4df87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "help.tempurpedic.com",
+                "www.sealy.com",
+                "www.stearnsandfoster.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/metrics\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.metricsapi.svc"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "www.sealy.com",
+                "www.stearnsandfoster.com",
+                "www.tempurpedic.com"
+            ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/api\\/locations\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.retaillocator.cloudfront"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "f5534f8f64114e6da3c22f5f5aa25c52e27253f470c5fd5934d673ca0cd248bf",
+                "9cf0052ffd7fdd3f14df7bbd1851a8f30eeb13e026b6ade6e6370fd499080020",
+                "0e511a26ed6867407d1533d2f5b8ac5f031c85300048e648113885f6117a0d19",
+                "852f00fa886a5122c4b0cf8c70e5816dfc72deb8f15e44501ed80c90c688e822"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempurpedic.com",
+                "help.tempurpedic.com",
+                "www.sealy.com",
+                "www.stearnsandfoster.com",
+                "www.tempurpedic.com"
+            ]
+        },
         {
             "rule": "tsiaws\\.com\\/media\\/images\\/MattressesV2_MobNav\\.original\\.width-200\\.jpg",
             "cookies": 0,
@@ -211,7 +371,7 @@
             ]
         },
         {
-            "rule": "tsiaws\\.com\\/media\\/images\\/Offer1_MobileNav\\.original\\.width-300\\.png",
+            "rule": "tsiaws\\.com\\/media\\/images\\/PPH5_OfferNav\\.original\\.width-300\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -238,7 +398,7 @@
             ]
         },
         {
-            "rule": "tsiaws\\.com\\/media\\/images\\/1a_1\\.original\\.width-300\\.png",
+            "rule": "tsiaws\\.com\\/media\\/images\\/PPBundle_OfferNav\\.original\\.width-300\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -289,145 +449,6 @@
             "exampleSites": [
                 "sealy.com",
                 "www.sealy.com"
-            ]
-        },
-        {
-            "rule": "tsiaws\\.com\\/gtm\\.js",
-            "cookies": 0.0000203,
-            "fingerprinting": 1,
-            "subdomains": [
-                "gtm-ph78mxk-main.gtm.svc",
-                "gtm-ktpcrj4-main.gtm.svc"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appVersion": 3,
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3,
-                "NavigatorUAData.prototype.getHighEntropyValues": 2,
-                "Document.cookie setter": 3,
-                "PerformanceTiming.prototype.navigationStart": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "window.innerHeight": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "cf45e5b51c05d9cecef50d830a87a6982e31eb011a50f53fd2e5e6535d6bcff6",
-                "ab48dde3d2b8685e58fc66c707a5356a54902b7bf8f1f401ae6f8fba471ffe57"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_gcl_au": {
-                    "ttl": 7776011,
-                    "length": 25,
-                    "prevalence": 0.000020343810395687112,
-                    "uniqueness": 1
-                },
-                "pageCount": {
-                    "ttl": 1211,
-                    "length": 1,
-                    "prevalence": 0.000013562540263791409,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sealy.com",
-                "www.sealy.com",
-                "www.tempurpedic.com"
-            ]
-        },
-        {
-            "rule": "tsiaws\\.com\\/api\\/metrics\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod.metricsapi.svc"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sealy.com",
-                "www.sealy.com",
-                "www.tempurpedic.com"
-            ]
-        },
-        {
-            "rule": "tsiaws\\.com\\/api\\/metrics\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod.metricsapi.svc"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "587b0aed398bd3a8282dea41cff2d70b3f97ecf6f1b554e957b13528c2d4df87",
-                "1b86da376b80648fb4c700763069ded84c1d4c141cbaf98ae7c7f18841b9e02d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sealy.com",
-                "www.sealy.com",
-                "www.tempurpedic.com"
-            ]
-        },
-        {
-            "rule": "tsiaws\\.com\\/api\\/metrics\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod.metricsapi.svc"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sealy.com",
-                "www.sealy.com",
-                "www.tempurpedic.com"
-            ]
-        },
-        {
-            "rule": "tsiaws\\.com\\/api\\/locations\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod.retaillocator.cloudfront"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "76961b1d78da0bd80df154226c9542822d033570570ea273e5d37f6a1fe905d6",
-                "364a2ea3030aa5b7063352b70ebc458767f7e318c9d90ec47bc60fdb39d8d579"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sealy.com",
-                "www.sealy.com",
-                "www.tempurpedic.com"
             ]
         },
         {
@@ -483,11 +504,38 @@
                 "sealy.com",
                 "www.sealy.com"
             ]
+        },
+        {
+            "rule": "tsiaws\\.com\\/media\\/images\\/instagram-icon\\.2e16d0ba\\.fill-32x32\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-assets.stearns.cloudfront"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets-www.stearnsandfoster.com",
+                    "resolved": "prod-assets.stearns.cloudfront.tsiaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stearnsandfoster.com",
+                "www.stearnsandfoster.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
             "domain": "first party",
@@ -495,16 +543,16 @@
         }
     ],
     "types": {
-        "Image": 24,
-        "Script": 3,
-        "Ping": 3,
-        "XHR": 6,
-        "Preflight": 3
+        "Script": 5,
+        "Ping": 5,
+        "XHR": 10,
+        "Preflight": 4,
+        "Image": 26
     },
     "nameservers": [
         "ns-1914.awsdns-47.co.uk",
+        "ns-622.awsdns-13.net",
         "ns-1351.awsdns-40.org",
-        "ns-494.awsdns-61.com",
-        "ns-622.awsdns-13.net"
+        "ns-494.awsdns-61.com"
     ]
 }

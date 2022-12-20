@@ -9,16 +9,22 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00132,
+    "sites": 13,
     "subdomains": [
         "profiles.tagger",
+        "cdn",
+        "fox.tagger",
         "lefigaro.tagger",
         "tagger",
-        "fox.tagger",
-        "dms.tagger"
+        "tagger-scmp"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "tagger.ope.scmp.com",
+            "resolved": "tagger-scmp.opecloud.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
@@ -29,44 +35,146 @@
                 "profiles.tagger"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 4,
+            "prevalence": 0.000406,
             "cnames": [],
             "responseHashes": [
-                "5c36edf6349fd4ea8700a9f409cc83fdaaf3d144ad5a75fa42e02ac74b78f573",
-                "7e340e7426d9d3f97369a4b6242275a08cd986bca050eaf8598ef3699a274624",
-                "c28d6f3c5a4a3b05b57ef0723465513d4c5451d8ff9ea742637db82e1270ce8c",
-                "f1cb198f668885e9b5570f7e0b9fadf36efcdb6c7f37e07bea538240f99d293d"
+                "b8bac947075d4e95432325eb41ea627015419994c94a58ff330c2b2ec6e520d2",
+                "297e935a9c606aa431309782f9d39ec44110123706f13dcb31d567725dcfe0d5",
+                "23916a2dc6140e87149e2f0e98f65e84600849fa9c95e3ecbb8b0946b05b931f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stern.de",
-                "www.chefkoch.de",
+                "chefkoch.de",
+                "www.kochbar.de",
                 "www.n-tv.de",
-                "www.rtl.de",
                 "www.stern.de"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
-            "cookies": 0.000201,
+            "rule": "opecloud\\.com\\/ope-fox\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Document.prototype.interestCohort": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000406,
+            "cnames": [],
+            "responseHashes": [
+                "dc4de7cf109fc35ad910bdb6f61a0a4f1c81af6ede5f4b4cd7c63986775d25fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxsports.com",
+                "www.foxnews.com",
+                "www.foxbusiness.com",
+                "www.fox.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
+            "cookies": 0.000406,
             "fingerprinting": 0,
             "subdomains": [
-                "lefigaro.tagger"
+                "fox.tagger"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000406,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr"
+                "foxnews.com",
+                "www.foxnews.com",
+                "www.foxbusiness.com",
+                "www.fox.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/dbmhm\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000304,
+            "cnames": [],
+            "responseHashes": [
+                "d9e59641a8f690d854acb9ef992583e66381ce366a15c647043024a105852f96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxbusiness.com",
+                "www.fox.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-lefigaro\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "d4b399d66779eeafbb7d56365d5d111987eb6cdf5273fd6262c34d4d1cc8c5aa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "www.linternaute.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
+            "cookies": 0.000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lefigaro.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linternaute.com",
+                "www.linternaute.com"
             ]
         },
         {
@@ -78,95 +186,111 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "journaldesfemmes.fr",
-                "www.kooora.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fox.tagger"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxnews.com",
-                "www.foxnews.com"
+                "linternaute.com",
+                "www.scmp.com"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/dms\\/v2\\/pixel\\.gif",
-            "cookies": 0.000201,
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/pixel\\.gif",
+            "cookies": 0.000203,
             "fingerprinting": 0,
             "subdomains": [
-                "dms.tagger"
+                "tagger-scmp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020100502512562814
+                "_ga": 0.00040551500405515005
             },
             "exampleSites": [
-                "kooora.com",
-                "www.kooora.com"
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/pcs\\.gif",
+            "cookies": 0.000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000302,
+    "cookies": 0.000507,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5384615384615384
+            "prevalence": 0.4642857142857143
+        },
+        {
+            "domain": "opecloud.com",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "i-scmp.com",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.07142857142857142
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.23076923076923078
+            "prevalence": 0.07142857142857142
+        },
+        {
+            "domain": "foxnews.com",
+            "prevalence": 0.03571428571428571
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.03571428571428571
         },
         {
-            "domain": "onetag-cdn.com",
-            "prevalence": 0.07692307692307693
-        },
-        {
-            "domain": "ocdn.eu",
-            "prevalence": 0.07692307692307693
+            "domain": "kataweb.it",
+            "prevalence": 0.03571428571428571
         }
     ],
     "types": {
-        "Fetch": 5,
-        "Image": 8
+        "Fetch": 4,
+        "Script": 6,
+        "Image": 15
     },
     "nameservers": [
+        "ns-1611.awsdns-09.co.uk",
         "ns-899.awsdns-48.net",
-        "ns-353.awsdns-44.com",
         "ns-1454.awsdns-53.org",
-        "ns-1611.awsdns-09.co.uk"
+        "ns-353.awsdns-44.com"
     ]
 }

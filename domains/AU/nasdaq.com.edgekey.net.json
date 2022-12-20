@@ -9,18 +9,23 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "nd"
+        "nd",
+        "api"
     ],
     "cnames": [
+        {
+            "original": "api.nasdaq.com",
+            "resolved": "api.nasdaq.com.edgekey.net"
+        },
         {
             "original": "nd.nasdaq.com",
             "resolved": "nd.nasdaq.com.edgekey.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "nasdaq\\.com\\.edgekey\\.net\\/js\\/forms2\\/js\\/forms2\\.min\\.js",
@@ -38,10 +43,95 @@
                     "resolved": "nd.nasdaq.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "0694124dd8cf871b521cf06ce0b2419ebbe18d3f45658b50c4b038b647fbc849"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/quote\\/basic",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nasdaq.com",
+                    "resolved": "api.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b1affadc269c3e008930c39d67dae3e99fcd63e5cf3ffb58883abba4635fac8f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/marketmovers",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nasdaq.com",
+                    "resolved": "api.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f16065def9ff667097f538f9797758f70d8fc70f9e58a4028cad6499eb36f586"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/index\\.php\\/form\\/getForm",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "nd.nasdaq.com",
+                    "resolved": "nd.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2c48c9d3e57c8d8033c99e4f48128b49ffd213d3e61fd5f083a95092e344734b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020130850528434828
+            },
             "exampleSites": [
                 "nasdaq.com",
                 "www.nasdaq.com"
@@ -50,7 +140,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "doubleclick.net",
@@ -62,7 +152,8 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 4
     },
     "nameservers": []
 }

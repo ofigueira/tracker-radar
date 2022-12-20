@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0002,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
         "services",
         "reports"
@@ -24,15 +24,61 @@
                 "services"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.platform": 2
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.platform": 3
             },
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "e19db3a5d5037a16ae4b34187d0e9aa28052b4e574d2a4825efc2424eb28b48f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ishares.com",
+                "www.jack-wolfskin.nl",
+                "www.newegg.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/service\\/viceEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reports"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ishares.com",
+                "www.jack-wolfskin.nl",
+                "www.newegg.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.17\\/reporter\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f42c90aacbbdecbe11b94005394997b94eb1f45e61cd0d2a40c8783ee7d60f60"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -43,20 +89,20 @@
             ]
         },
         {
-            "rule": "sdiapi\\.com\\/service\\/viceEvent",
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.17\\/reporter\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "reports"
+                "services"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+                "e400ef137b70766ec9b055d9380ccd64f842efbc4f09ca4f60f03c4dba9c757b"
             ],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -65,24 +111,27 @@
             ]
         },
         {
-            "rule": "sdiapi\\.com\\/service\\/viceEvent",
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.17\\/receiver\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "reports"
+                "services"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "SharedWorker.prototype.constructor": 1
+            },
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+                "cb53b0404d1604d53be8c52ad819cb13d104706aef72f7103c8b7e4a473f0593"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jack-wolfskin.nl",
+                "ishares.com",
                 "www.jack-wolfskin.nl"
             ]
         }
@@ -93,26 +142,30 @@
     "topInitiators": [
         {
             "domain": "blackrock.com",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "neweggimages.com",
+            "prevalence": 0.36363636363636365
         },
         {
             "domain": "baqend.com",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2,
-        "Fetch": 2
+        "Script": 7,
+        "XHR": 3,
+        "Document": 2
     },
     "nameservers": [
-        "ns1024.ui-dns.de",
-        "ns1024.ui-dns.biz",
+        "ns1024.ui-dns.com",
         "ns1024.ui-dns.org",
-        "ns1024.ui-dns.com"
+        "ns1024.ui-dns.de",
+        "ns1024.ui-dns.biz"
     ]
 }

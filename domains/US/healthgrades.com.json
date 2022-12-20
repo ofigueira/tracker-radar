@@ -4,16 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000142,
-    "sites": 21,
+    "prevalence": 0.000211,
+    "sites": 31,
     "subdomains": [
+        "baptisthealth.hrm",
         "scripts.cip",
+        "apps",
         "baptist-health.hrm",
-        "jeffersonhealth.hrm"
+        "jeffersonhealth.hrm",
+        "icrm-static.hospitals",
+        "webservices.hospitals"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "healthgrades\\.com\\/cdnr\\/cid3\\/acton\\/attachment\\/17698\\/f-005b\\/1\\/-\\/-\\/-\\/-\\/AoProcessForm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baptisthealth.hrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baptisthealth.net",
+                "www.brrh.com"
+            ]
+        },
         {
             "rule": "healthgrades\\.com\\/hgcrm-utm-v1\\.0\\.js",
             "cookies": 0,
@@ -22,8 +46,8 @@
                 "scripts.cip"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000543,
+            "sites": 12,
+            "prevalence": 0.0000817,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -31,40 +55,68 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "childrenswi.org",
+                "rightasrain.uwmedicine.org",
+                "uthealtheasttexas.com",
                 "www.aspirus.org",
+                "www.augustahealth.org",
                 "www.baptist-health.com",
                 "www.baptisthealth.com",
+                "www.conwaymedicalcenter.com",
                 "www.eehealth.org",
                 "www.hackensackmeridianhealth.org",
-                "www.lcmchealth.org",
+                "www.rsfh.com",
                 "www.thechristhospital.com"
             ]
         },
         {
-            "rule": "healthgrades\\.com\\/cdnr\\/cid3\\/acton\\/bn\\/tracker\\/30667",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "rule": "healthgrades\\.com\\/pes\\/hgpesb\\/assets\\/js\\/hgpesb\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "baptist-health.hrm"
+                "apps"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "91fd3cf808215829d00675f084f5cf32680ec50110d939f76786104fae95d4ef"
+                "f859f7a97fff4c4cae68f65e79f5b7772c134d6045e585b3ace8456dbb26674c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "baptist-health.com",
-                "www.baptist-health.com"
+                "uofmhealthwest.org",
+                "www.augustahealth.org"
             ]
         },
         {
-            "rule": "healthgrades\\.com\\/acton\\/bn\\/30667",
-            "cookies": 0.0000136,
+            "rule": "healthgrades\\.com\\/pes\\/hgpesb\\/assets\\/css\\/hgpesb\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4216deb8548f66600a29b0888b15b85832d6f66b3a1f85e340556997d759f3d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uofmhealthwest.org",
+                "www.augustahealth.org"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/cdnr\\/cid3\\/acton\\/bn\\/tracker\\/30667",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "baptist-health.hrm"
@@ -74,9 +126,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -116,7 +168,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0cb69b6926f46bf45f81210c77a164ec6c40d08c4acd97d12681648f76688761"
+                "937dd84b54c872530cca647e00dd8967e1ef2bb0107aa3781645be58b6b19c2d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -125,33 +177,119 @@
                 "jeffersonhealth.org",
                 "www.jeffersonhealth.org"
             ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/icrm-v1\\.2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "icrm-static.hospitals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25e97a35ce8b29504005d4277c6353241af209ca57e3647390c14a3b259a90ff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mymarinhealth.org",
+                "www.ummhealth.org"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/V5\\/icrm\\/pages\\/icrm_config\\/MGH\\/icrm\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webservices.hospitals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mymarinhealth.org",
+                "www.mymarinhealth.org"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/V5\\/icrm\\/ticket\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webservices.hospitals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mymarinhealth.org",
+                "www.ummhealth.org"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/V5\\/icrm\\/pages\\/icrm_config\\/UMMC\\/icrm\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webservices.hospitals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ummhealth.org",
+                "www.ummhealth.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000271,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.7307692307692307
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "first party",
-            "prevalence": 0.23076923076923078
+            "prevalence": 0.30952380952380953
         },
         {
-            "domain": "facebook.net",
-            "prevalence": 0.038461538461538464
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.023809523809523808
         }
     ],
     "types": {
-        "Script": 14,
-        "Image": 2
+        "Script": 26,
+        "Stylesheet": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-202.awsdns-25.com",
-        "ns-846.awsdns-41.net",
         "ns-1102.awsdns-09.org",
-        "ns-1962.awsdns-53.co.uk"
+        "ns-1962.awsdns-53.co.uk",
+        "ns-202.awsdns-25.com",
+        "ns-846.awsdns-41.net"
     ]
 }

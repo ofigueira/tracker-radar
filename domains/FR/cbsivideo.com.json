@@ -4,13 +4,22 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000304,
+    "sites": 3,
     "subdomains": [
         "doppler-config",
-        "doppler-tasks"
+        "doppler-tasks",
+        "cbsnus-live.fa-doppler-cbsn.ns1",
+        "doppler-beacons",
+        "live74dh3d6.airspace-a",
+        "livec0a3575.airspace-f"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "cbsn-us.cbsnstream.cbsnews.com",
+            "resolved": "cbsnus-live.fa-doppler-cbsn.ns1.cbsivideo.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -21,19 +30,18 @@
                 "doppler-config"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
-            "responseHashes": [
-                "1182829b8764d9c37d12c818408df6d0084c18e396764270bd61e2cbe19d669d"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbssports.com",
+                "cc.com",
                 "www.cbssports.com"
             ]
         },
@@ -46,7 +54,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
                 "1182829b8764d9c37d12c818408df6d0084c18e396764270bd61e2cbe19d669d"
@@ -55,7 +63,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbssports.com",
+                "cc.com",
                 "www.cbssports.com"
             ]
         },
@@ -68,10 +76,100 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000203,
             "cnames": [],
             "responseHashes": [
-                "e96d2749ff7009a0bafdc29fde117f4abb87d620fafdf1413c03ad6f65681ba4"
+                "f926049ad3cd267615e669f77d001cf7cdf1de987063ab51b8869a2cfa9911d1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cc.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/out\\/v1\\/55a8648e8f134e82a470f83d562deeca\\/master_11\\.m3u8",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cbsnus-live.fa-doppler-cbsn.ns1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [
+                {
+                    "original": "cbsn-us.cbsnstream.cbsnews.com",
+                    "resolved": "cbsnus-live.fa-doppler-cbsn.ns1.cbsivideo.com"
+                }
+            ],
+            "responseHashes": [
+                "004d7b59520a6dbd65c0795edeaea930077329ef39cda4576188b590d93ee14d"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbsnews.com",
+                "www.cbsnews.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-beacons"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doppler-beacons"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsivideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "live74dh3d6.airspace-a",
+                "livec0a3575.airspace-f"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000203,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -87,22 +185,28 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.6666666666666666
+            "domain": "rum.us-east-1.amazonaws.com",
+            "prevalence": 0.7586206896551724
         },
         {
-            "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.3333333333333333
+            "domain": "tiqcdn.com",
+            "prevalence": 0.13793103448275862
+        },
+        {
+            "domain": "southparkstudios.com",
+            "prevalence": 0.10344827586206896
         }
     ],
     "types": {
         "Script": 4,
-        "Fetch": 2
+        "Fetch": 6,
+        "Media": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1546.awsdns-01.co.uk",
         "ns-399.awsdns-49.com",
         "ns-883.awsdns-46.net",
+        "ns-1546.awsdns-01.co.uk",
         "ns-1327.awsdns-37.org"
     ]
 }
