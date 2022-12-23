@@ -7,17 +7,44 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
         "www",
+        "i1",
         "f2",
-        "cdn",
-        "i1"
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "vivocha\\.com\\/a\\/infocert\\/api\\/vivocha\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www",
+                "i1"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mediaDevices": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6fc2a5e1e6ff2b17c77412ee9e5e3accc79c5ef8f17babf700a3e3f5a32f0287"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "infocert.it",
+                "webmail.infocert.it"
+            ]
+        },
         {
             "rule": "vivocha\\.com\\/a\\/loccitane\\/api\\/vivocha\\.js",
             "cookies": 0,
@@ -68,15 +95,17 @@
         },
         {
             "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.60\\/js\\/vivocha_data\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "window.sessionStorage": 1,
-                "Document.cookie getter": 1
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -172,13 +201,16 @@
         },
         {
             "rule": "vivocha\\.com\\/w\\/f2\\/7\\.0\\.23\\/legacy\\/vivocha_data\\.js",
-            "cookies": 0,
+            "cookies": 0.00000678,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -232,7 +264,10 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "vvcu": 0.00002032644266926845,
+                "vvct": 0.00002032644266926845
+            },
             "exampleSites": [
                 "loccitane.com",
                 "www.loccitane.com"
@@ -310,7 +345,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
@@ -318,14 +353,14 @@
         }
     ],
     "types": {
-        "Script": 18,
+        "Script": 20,
         "Document": 4,
         "Fetch": 2
     },
     "nameservers": [
         "ns-420.awsdns-52.com",
+        "ns-661.awsdns-18.net",
         "ns-1821.awsdns-35.co.uk",
-        "ns-1065.awsdns-05.org",
-        "ns-661.awsdns-18.net"
+        "ns-1065.awsdns-05.org"
     ]
 }

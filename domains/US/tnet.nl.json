@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
-        "accounts"
+        "accounts",
+        "apm"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "tnet\\.nl\\/static\\/assets\\/js\\/login_v2\\.js",
@@ -37,7 +38,7 @@
                 "ssoLastChecked": {
                     "ttl": 300,
                     "length": 13,
-                    "prevalence": 0.00001361146085003573,
+                    "prevalence": 0.000013550961779512302,
                     "uniqueness": 0.5
                 }
             },
@@ -46,19 +47,65 @@
                 "noordhollandsdagblad.nl",
                 "www.noordhollandsdagblad.nl"
             ]
+        },
+        {
+            "rule": "tnet\\.nl\\/tl\\/validate\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accounts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "noordhollandsdagblad.nl",
+                "www.noordhollandsdagblad.nl"
+            ]
+        },
+        {
+            "rule": "tnet\\.nl\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wort.lu",
+                "www.wort.lu"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "agnoplay.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Document": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "elliot.ns.cloudflare.com",

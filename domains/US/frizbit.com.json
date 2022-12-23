@@ -8,6 +8,7 @@
     "sites": 2,
     "subdomains": [
         "cdn",
+        "e",
         "rb"
     ],
     "cnames": [],
@@ -15,23 +16,20 @@
     "resources": [
         {
             "rule": "frizbit\\.com\\/js\\/frizbit\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.languages": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
                 "window.indexedDB": 2,
-                "Notification.permission": 2,
-                "Navigator.prototype.appVersion": 2
+                "Notification.permission": 1,
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -40,35 +38,10 @@
                 "05b20b60af3ef783f03cdea4713a6da3a76e00679c9cee6676a6ba85c043b6a6"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "__tld__": {
-                    "ttl": 3,
-                    "length": 4,
-                    "prevalence": 0.00001361146085003573,
-                    "uniqueness": 0.5
-                },
-                "frzbt.test": {
-                    "ttl": 3,
-                    "length": 4,
-                    "prevalence": 0.00001361146085003573,
-                    "uniqueness": 0.5
-                },
-                "frzbt.user.aid": {
-                    "ttl": 31536003,
-                    "length": 42,
-                    "prevalence": 0.00001361146085003573,
-                    "uniqueness": 1
-                },
-                "frzbt.user.id": {
-                    "ttl": 31536001,
-                    "length": 42,
-                    "prevalence": 0.000006805730425017865,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "correos.es",
+                "unilibro.it",
                 "www.unilibro.it"
             ]
         },
@@ -90,7 +63,29 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "correos.es",
+                "unilibro.it",
+                "www.unilibro.it"
+            ]
+        },
+        {
+            "rule": "frizbit\\.com\\/api\\/v1\\/config\\/website\\/807bac3c2df9e723\\/0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "83bbb0a07265b42275b05e8d2225bd274b91b3ef2715ebfc0449f1a6365a01e8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unilibro.it",
                 "www.unilibro.it"
             ]
         },
@@ -112,31 +107,27 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "correos.es",
+                "unilibro.it",
                 "www.unilibro.it"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0,
     "topInitiators": [
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.5
-        },
-        {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "prevalence": 1
         }
     ],
     "types": {
         "Script": 2,
         "Stylesheet": 2,
-        "Fetch": 2
+        "Fetch": 4
     },
     "nameservers": [
-        "alexandra.ns.cloudflare.com",
-        "roman.ns.cloudflare.com"
+        "roman.ns.cloudflare.com",
+        "alexandra.ns.cloudflare.com"
     ]
 }
