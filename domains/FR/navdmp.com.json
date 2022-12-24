@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000304,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "tag",
+        "usr"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -26,7 +28,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000304,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -39,6 +41,103 @@
                 "www.bose.fr",
                 "www.bose.com"
             ]
+        },
+        {
+            "rule": "navdmp\\.com\\/universal\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d257a75764e746d9a1aafb79d8e47744cb44ee1af115ab2adbd0012c69cf676c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "nvgTLD50826": {
+                    "ttl": 4,
+                    "length": 13,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "nvg50826": {
+                    "ttl": 31536008,
+                    "length": 34,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "nvgTLD18894": {
+                    "ttl": 8,
+                    "length": 13,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                },
+                "nvg18894": {
+                    "ttl": 31536010,
+                    "length": 34,
+                    "prevalence": 0.00010039152695512498,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idntimes.com",
+                "www.lanacion.com.ar"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/usr",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "51d28983ad55a415dd1da257c49c7e66e78ba4c7d458d67a62bfea79c0d6f467"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idntimes.com",
+                "www.lanacion.com.ar"
+            ]
+        },
+        {
+            "rule": "navdmp\\.com\\/req",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e6340844af1c0a02b8150c4bc93d54d679f716452d6a97cd99ed45786e97ed8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idntimes.com",
+                "www.lanacion.com.ar"
+            ]
         }
     ],
     "categories": [
@@ -48,19 +147,24 @@
         "Audience Measurement"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "demdex.net",
-            "prevalence": 0.8
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.16666666666666666
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Image": 3
+        "Image": 3,
+        "Script": 6
     },
     "nameservers": [
         "uma.ns.cloudflare.com",

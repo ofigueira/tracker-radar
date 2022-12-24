@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000406,
-    "sites": 4,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
+        "p1",
+        "epib.spxl",
         "json.spxl",
         "uuee.spxl"
     ],
@@ -14,34 +16,103 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "socy\\.es\\/p1\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "as.com",
+                "en.as.com"
+            ]
+        },
+        {
+            "rule": "socy\\.es\\/pixel\\/js\\/EPI_015_906_559\\/",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "epib.spxl"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.width": 2,
+                "window.innerWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.height": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1f23a3c544910c22655b2d5e70f609e86c1c9615f67b510c5ed91d06d2a43a1e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__bs_id": {
+                    "ttl": 31536010,
+                    "length": 27,
+                    "prevalence": 0.00020078305391024997,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epe.es",
+                "www.elperiodico.com"
+            ]
+        },
+        {
             "rule": "socy\\.es\\/pixel\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "epib.spxl",
                 "json.spxl",
                 "uuee.spxl"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000304,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "1de939044f706f638e45423451b3b077c52c47c71edfe8ed6d42e8902fc87d3f"
+                "9bb8c43d7671559a35d3615c20ac071c7f2355a64f02dd128da39e69456f2d62",
+                "1de939044f706f638e45423451b3b077c52c47c71edfe8ed6d42e8902fc87d3f",
+                "85144c62e5605924b240021c947c832a034787a6958adef1b1f2df8f108198f8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__bs_id": 0.00020279862096937742
+                "_ga": 0.00040156610782049993,
+                "_gid": 0.00020078305391024997,
+                "__pid": 0.00020078305391024997,
+                "__bs_id": 0.00040156610782049993
             },
             "exampleSites": [
-                "abc.es",
+                "epe.es",
+                "www.abc.es",
                 "www.elmundo.es",
+                "www.elperiodico.com",
                 "www.marca.com"
             ]
         },
         {
             "rule": "socy\\.es\\/pixel\\/js\\/UUEE_234_934_884\\/",
-            "cookies": 0.000203,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "uuee.spxl"
@@ -60,7 +131,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "1f23a3c544910c22655b2d5e70f609e86c1c9615f67b510c5ed91d06d2a43a1e"
@@ -68,9 +139,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "__bs_id": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 19,
-                    "prevalence": 0.00020279862096937742,
+                    "prevalence": 0.00020078305391024997,
                     "uniqueness": 1
                 }
             },
@@ -83,24 +154,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000203,
+    "cookies": 0.000402,
     "topInitiators": [
         {
             "domain": "socy.cloud",
-            "prevalence": 0.4
+            "prevalence": 0.4444444444444444
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.4
+            "prevalence": 0.2222222222222222
         },
         {
             "domain": "first party",
-            "prevalence": 0.2
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
-        "XHR": 3,
-        "Script": 2
+        "Fetch": 2,
+        "Script": 4,
+        "XHR": 5
     },
     "nameservers": [
         "ns2.dondominio.com",

@@ -7,54 +7,117 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000202,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "ws"
+        "via"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "batch\\.com\\/web\\/2\\.3\\.0\\/ev\\/7AF4E98D883F44F78D902F4A6640E303",
+            "rule": "batch\\.com\\/v3\\/bootstrap\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "via"
+            ],
+            "apis": {
+                "console.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b2c5088f01c894ad5d188136cbe177398409c73afc86e0b9c3360f10ef8351ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wamiz.de",
+                "www.tudorwatch.com"
+            ]
+        },
+        {
+            "rule": "batch\\.com\\/manifest\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ws"
+                "via"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "cc25aee5de6e71a85e536808136f81b52513f7570a81cf0ff6294a70ab3c9ca4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rosemood.de",
-                "www.rosemood.de"
+                "wamiz.de",
+                "www.rosemood.de",
+                "www.tudorwatch.com"
             ]
         },
         {
-            "rule": "batch\\.com\\/web\\/2\\.3\\.0\\/ev\\/7AF4E98D883F44F78D902F4A6640E303",
+            "rule": "batch\\.com\\/3\\.4\\.0\\/sdk\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "ws"
+                "via"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1,
+                "window.indexedDB": 1,
+                "Navigator.prototype.permissions": 1,
+                "Notification.permission": 1,
+                "window.sessionStorage": 1,
+                "Navigator.prototype.language": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "4f5b8fc2985a4e5deb449c650816d0e7ac45f06f9b87d4e5d83861735c72a989"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "rosemood.de",
-                "www.rosemood.de"
+                "wamiz.de",
+                "www.tudorwatch.com"
+            ]
+        },
+        {
+            "rule": "batch\\.com\\/v3\\/worker\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "via"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c1a1ce0134d316eeec3ada5dd516f822f584eb902780a47a7c228aba2cfc191d"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wamiz.de",
+                "www.decathlon.de"
             ]
         }
     ],
@@ -64,16 +127,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.875
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 4,
+        "Fetch": 3,
+        "Other": 2
     },
     "nameservers": [
         "ns-11.awsdns-01.com",

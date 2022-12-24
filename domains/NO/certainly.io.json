@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "app"
+        "app",
+        "scripts"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,20 +21,114 @@
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e2abc3b33ea57e304f3afb169f5a99a1a6a7c7ede26685ac699644263952fdcb"
+                "105af05282ba28f67257a26262139f79c47b514e38059493b50ac152b5fe2c0d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ishavskraft.no",
-                "minside.ishavskraft.no"
+                "quadlockcase.eu",
+                "www.rosendahl.com"
+            ]
+        },
+        {
+            "rule": "certainly\\.io\\/extensions\\/certainly_popups\\/certainly_popups\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f1a0c192ff9aac9174e9734b22a5b8101fc112c6cffef58eaa7697240b8668cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "quadlockcase.eu",
+                "www.rosendahl.com"
+            ]
+        },
+        {
+            "rule": "certainly\\.io\\/webbot\\/api\\/webchat\\/b2829af4-9db0-4e21-8448-2225eb85a73f\\/configuration\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3b75229d898d666767432ace8e03a836fe7fc3deb71862ba3c8d2c94b8d18101"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "quadlockcase.eu",
+                "www.quadlockcase.eu"
+            ]
+        },
+        {
+            "rule": "certainly\\.io\\/extensions\\/certainly_input_blocker\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c352525637908304b05fbf30f2b5fbb85b4528809f6990e93f31b1462b0978ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "quadlockcase.eu",
+                "www.rosendahl.com"
+            ]
+        },
+        {
+            "rule": "certainly\\.io\\/webbot\\/api\\/webchat\\/806f449d-8eaa-494c-9627-9307f00655d6\\/configuration\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fd0bd6c9a51289088047ff25cb56d7b4ad9a56c2b1d96ba69816a604928079f1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rosendahl.com",
+                "www.rosendahl.com"
             ]
         }
     ],
@@ -43,16 +138,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns3-06.azure-dns.org",
-        "ns1-06.azure-dns.com",
         "ns2-06.azure-dns.net",
+        "ns1-06.azure-dns.com",
+        "ns3-06.azure-dns.org",
         "ns4-06.azure-dns.info"
     ]
 }

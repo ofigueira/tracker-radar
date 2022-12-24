@@ -7,25 +7,26 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000304,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "geo",
-        "speedtest"
+        "speedtest",
+        "st.nyc"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "dailymotion\\.com\\/cookie\\.js",
-            "cookies": 0.000304,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "geo"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000304,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "407c0ea74212ba3a966ae1d7cf3c8ecf68e6071c8b6194fa830e4560ec13635b"
@@ -35,20 +36,23 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tecadmin.net",
-                "www.leparisien.fr",
+                "www.asiaone.com",
                 "www.marketscreener.com"
             ]
         },
         {
             "rule": "dailymotion\\.com\\/latencies\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "speedtest"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
-            "prevalence": 0.000203,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "72b2181e58d5c45800d66d36702794ca5ae5bf1fbc20f106442b7eac3191a623"
@@ -58,7 +62,28 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "tecadmin.net",
-                "www.leparisien.fr"
+                "www.asiaone.com"
+            ]
+        },
+        {
+            "rule": "dailymotion\\.com\\/speedtest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedtest",
+                "st.nyc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asiaone.com",
+                "www.asiaone.com"
             ]
         }
     ],
@@ -67,27 +92,24 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000304,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "dmvs-apac.com",
-            "prevalence": 0.3
-        },
-        {
-            "domain": "sportslocalmedia.com",
-            "prevalence": 0.3
+            "prevalence": 0.42857142857142855
         },
         {
             "domain": "dmcdn.net",
-            "prevalence": 0.2
+            "prevalence": 0.35714285714285715
         },
         {
-            "domain": "first party",
-            "prevalence": 0.2
+            "domain": "sportslocalmedia.com",
+            "prevalence": 0.21428571428571427
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 5,
+        "WebSocket": 2
     },
     "nameservers": [
         "a.dailymotion.com",

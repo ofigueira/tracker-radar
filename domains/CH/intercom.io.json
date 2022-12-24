@@ -9,11 +9,13 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00272,
+    "prevalence": 0.00271,
     "sites": 27,
     "subdomains": [
         "api-iam",
-        "api-iam.eu"
+        "api-iam.eu",
+        "shopify",
+        "iis"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -28,61 +30,86 @@
             ],
             "apis": {},
             "sites": 28,
-            "prevalence": 0.00282,
+            "prevalence": 0.00281,
             "cnames": [],
             "responseHashes": [
-                "8d14fe6361aff1aa61829031fc69728605b2dce5dddbc7726bdae48b054cc6ee",
-                "0ef0ee00956525cf8369c27f63f5a92cb70dd5e791a151152219c9c8f15b8e7f",
-                "80cb4f8ab9310953c6acfd1e6c18bf2ea09732c945ac90357324e0a7a8ddfa9f",
-                "4ebdbc4506ac956c889404ada9af73a2476e5376efa3c88fadfb9d1613047acc",
-                "79699e49b828efe7186194e9bc58ced62c910b84c24f970f14f2aeb53f055827",
-                "cbe56b1025d5d749940466cd364a5024676173e3f12e7b86e7e41c55a5a40b65",
-                "ac6c212965cb2c86e4849c948801a6ecf102ecf8be0d31485f1cccf4d2fc7011",
-                "9bc21370239a7f9d64da60f5aef02363c41b51cb2bf3b326f81277372e1e5780",
-                "06f339417ce724b2e82faf250e7a415f2b464c777a3b708801e7a228b0a597fd",
-                "9c1ba4fcd7c77c0e063d7f881fa54bc5defe65c23b238739a31489d1b33c2c5d",
-                "63b6c86cfa6b54e91014830183ae1daf13334b099413d6d4d6ef74ff43a21d7e",
-                "ace7a935fae97ade378260e2eddd14fc6e48c3491ecdcf36dff2cf16e3eec5d9",
-                "10231f178a8190945dbc42b0aba540c17aeb24043f66f7ef15f604e6a6d22cb5",
-                "d7b16bf55d5c0b5002acd43bc9e0f0d97c336983ec34767b265b26fe06f77eb8",
-                "791de39e2f262359a6af83811988c052bfbc7c8a1b3753e9c726dad58cc2b197",
-                "57c93e8826f258025027832121fee8c3f28a50a8ecaed70e574a410ae41c193e",
-                "e8e59e9202878c35f80ac3942f57d9c53a97353cc18de1e78bf38267d38d0c1e",
-                "3972d25e8b3bdec5beb63814c4c567bfa017332c0116ad22a4c659a4182681a3",
-                "e6f04bd7c4204c48436cd2da8d3d97ed38c69f8fd84f8c818acfd49ad4ef5507",
-                "450212fbdf63438793f62fd3ab98ce1f227721707cce68da568f3dcd71d45d52",
-                "2a1e9fdd9549bc97de276680f305d4af5d3f40baf269e8635f60a2d1f053d57c",
-                "2bdb8f9167a34ca815430d8984263dcdd769830123d45605941a22a86f664722",
-                "f2d06238a9a5298b6bedbc2b98fc3a627e7e1e16a6980dcac7eb9f6db0035be1",
-                "7b7a548d11c71ffa1e6bccd4d57e5eb24944feafd160fb2af126f7c0b4f1aede",
-                "eb0da5042637eb5ddb220e002bb5a7e18f5c3fb01c8febb7e71f3a00da2678b2",
-                "6d5a876cea04108db7ead15dd755e9eea6c631a58bdaaf3ef5e0ca2b497af0c8",
-                "e09891d1b12ed9f02d0ceba1a7cc98148dc7456abffb64318d2c640911a806c9"
+                "89733907913ecac1fbede1b88d7a09471ed7dd9c19e90ed781dd081ab8781a4d",
+                "3d5f146c2bc020c84a24044850337926182a2a9f54b6d4799e99a5c084e18a4a",
+                "d5e389ea5d128e854728dc8b42b3a2fc96a6d92b9d02f2123370f94de71be28d",
+                "27cb6f1a1950928560c8ff685520ad449f2c0cd34a49b19f88257a65c19e0295",
+                "c5580e5f0b6b9a41b8c297141fb97598d31fcf9d0776089ac0524657d573c206",
+                "bd3053c516f66c1178e77b7009bf97a441f461c1c2640ac4c6c9d7b789b2caf7",
+                "b0431e99dedf6fbc6be62f29b9a06830d3dbc52a7cfd0cdc37ea439bbf72085b",
+                "ac0f8fdcd91abb393270c3a4caf18b8334ffa530006f6c711efe7473352fe4b2",
+                "e023e3f09d876bd21173c22378d457d8a58ee3ab840fc582966b796dd3cd1d0e",
+                "6c7aeddc5f176cbd787da991bd8b6fe6e3cf08cabcf47eeb666aac0e0fb50ee8",
+                "bbba666ec422adc13a10ba73c696c7dec0c0afe9d388e04318e8bc85090e70bd",
+                "b345d25a5e211caaf8df7037f871d858659255ad9e7217a1f4a134103f4bf891",
+                "16886237388e1454c1b667043f11e1814f506c2c4bd2c57f94dd37251b8dbf92",
+                "adb19f7def3685685add734c40ada2b953354ee7b0df168bb02a39884e6c21e8",
+                "5ee14495c706e7d4756867180222a46559f33a327a4843aaabe7d571d99097f6",
+                "4494f8291a97d93496c27cd2a886e4290e09c522511c75d6b0477d661434671c",
+                "96cabd8b4744b4063de0ca33c869ed23ab4e555f5ee4ed92e841718aa13bafcb",
+                "e2e7ca68173434b2c2381fcc76e2e502502eee5fe91ffd9738e83a172e2e9d50",
+                "8f97af5ec500de13285682a4b469d39cd585aa111d88ab4a112a771772e48c33",
+                "26daa93a5a4dcf5771026e114ac576c0dfa0dfff4903c031cf993a8303176947",
+                "0baa7f3a0506538d6378bc07fbc4b3eb47332043d7d6ca23cd3ed2cb5822e5f7",
+                "dc8593df8846c1fa3ca1d8027223e50e3daec775ca6b007ab50cf9eb5bae5dbc",
+                "e2df603c4925e23e77ab2f4979901a5d471dea31babb19828f22e72a7255fd14",
+                "fee840f59c65e85dc8dd185d2d832ed47f315a9292272525044d2655b0b9f572",
+                "8b58d3aa850aca3f54f0ffa780443e4acb9e41f3b6f8b087f14a261f67e7540d",
+                "1c5eef275889b97fedc344b5353e1ee2d3743fbfcb02068b3f212573c75b96ba",
+                "4af0ff7bd0df5fa1d84a6316cc43455d64068259957416a444e96bbb511b3f0f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "foursquare.com",
-                "www.myfonts.com",
+                "muckrack.com",
+                "tabak.kkiosk.ch",
                 "www.ortho-team.ch",
+                "www.qare.fr",
+                "www.norrona.com",
+                "motionarray.com",
+                "www.mentimeter.com",
                 "www.hoststar.ch",
-                "blog.logrocket.com",
-                "crypto.com",
-                "www.storyblocks.com",
+                "www.deine-tierwelt.de",
                 "logrocket.com",
                 "openclassrooms.com",
-                "motionarray.com",
-                "viac.ch",
+                "theorg.com",
+                "www.storyblocks.com",
                 "snyk.io",
-                "muckrack.com",
-                "neho.ch",
+                "www.kingnature.ch",
+                "www.mongodb.com",
+                "viac.ch",
                 "www.qobuz.com",
-                "www.jamesedition.com",
-                "www.swissactivities.com",
-                "www.norrona.com",
-                "www.mentimeter.com",
-                "www.kingnature.ch"
+                "www.myfonts.com"
+            ]
+        },
+        {
+            "rule": "intercom\\.io\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "shopify",
+                "iis"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71d34d1d6e2b3fc1b8ead18dfdc3626289e351fb95fc9dc8a02fce6e54ddb478"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kkiosk.ch",
+                "tabak.kkiosk.ch"
             ]
         }
     ],
@@ -92,28 +119,37 @@
     "topInitiators": [
         {
             "domain": "intercomcdn.com",
-            "prevalence": 0.7078651685393258
+            "prevalence": 0.6989247311827957
         },
         {
             "domain": "first party",
-            "prevalence": 0.19101123595505617
+            "prevalence": 0.1935483870967742
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.07865168539325842
+            "prevalence": 0.06451612903225806
         },
         {
             "domain": "segment.com",
-            "prevalence": 0.02247191011235955
+            "prevalence": 0.021505376344086023
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.010752688172043012
+        },
+        {
+            "domain": "d17h7hjnfv5s46.cloudfront.net",
+            "prevalence": 0.010752688172043012
         }
     ],
     "types": {
-        "XHR": 28
+        "XHR": 28,
+        "Script": 2
     },
     "nameservers": [
-        "ns-1867.awsdns-41.co.uk",
-        "ns-661.awsdns-18.net",
         "ns-97.awsdns-12.com",
-        "ns-1478.awsdns-56.org"
+        "ns-661.awsdns-18.net",
+        "ns-1478.awsdns-56.org",
+        "ns-1867.awsdns-41.co.uk"
     ]
 }

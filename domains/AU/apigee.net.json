@@ -9,12 +9,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.0014,
+    "sites": 14,
     "subdomains": [
         "cisco-dsc-prod",
         "adsk-prod",
-        "onegov-production",
+        "snswprod-prod",
         "bgl-web-prod",
         "costco-prd",
         "mns-00.dn",
@@ -26,12 +26,12 @@
             "resolved": "costco-prd.apigee.net"
         },
         {
-            "original": "api.marksandspencer.com",
-            "resolved": "mns-00.dn.apigee.net"
+            "original": "api.g.service.nsw.gov.au",
+            "resolved": "snswprod-prod.apigee.net"
         },
         {
-            "original": "api.onegov.nsw.gov.au",
-            "resolved": "onegov-production.apigee.net"
+            "original": "api.marksandspencer.com",
+            "resolved": "mns-00.dn.apigee.net"
         },
         {
             "original": "api.prod.bunnings.com.au",
@@ -46,7 +46,7 @@
             "resolved": "cisco-dsc-prod.apigee.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "apigee\\.net\\/v1\\/netid",
@@ -57,7 +57,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "dsc.cisco.com",
@@ -65,7 +65,7 @@
                 }
             ],
             "responseHashes": [
-                "8f6e603f85633fb942f28092083b933a6b8805c378c2a83e07355b3f758c7121"
+                "b569937f441fd0e8ce499463317398c11f697ebe236b42bc1768861b4fd9c34d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -77,14 +77,14 @@
         },
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
-            "cookies": 0.000201,
+            "cookies": 0.0002,
             "fingerprinting": 0,
             "subdomains": [
                 "adsk-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "developer.api.autodesk.com",
@@ -101,30 +101,192 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/FuelCheckApp\\/v1\\/fuel\\/prices\\/currenttrend",
-            "cookies": 0.000201,
+            "rule": "apigee\\.net\\/jsonapi\\/menu_items\\/global-footer-mobile",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "onegov-production"
+                "snswprod-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
-                    "original": "api.onegov.nsw.gov.au",
-                    "resolved": "onegov-production.apigee.net"
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
                 }
             ],
             "responseHashes": [
-                "ab0700d91f83e5d28c6e26f7c37eaa69bcab4cb5d73bc5ded6d5c93ab1986d73"
+                "641a6fa9f6ad190dc8f47c70735a619c36331c5f0bd875317a950449f32f328d"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nsw.gov.au",
-                "www.fuelcheck.nsw.gov.au"
+                "free-rego-check.service.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/menu_items\\/global-footer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "8fa4fef9e72a6103b9f91506b277e319ed47cf2653999d69a2d6d0a9530ac02b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "free-rego-check.service.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/menu_items\\/global-footer-secondary",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "86b88df5c1c84c272d8ca5838121d51f62b4e320b05200ed650a262471a3a8db"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "free-rego-check.service.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/menu_items\\/global-footer-social",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "4b9a8a1037478f0b1027e38423e2ec18d7f35c9d2e9db439458e9d566fce7449"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "free-rego-check.service.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/menu_items\\/global-header",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "7eca16d1ee55c21b0c62ba8df9325dca62a54ea1a62da0fe18fcec48aee1b892"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "free-rego-check.service.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/menu_items\\/global-header-account",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "7df76a62d571eafc88e654431a39952c3051fd2ccaf075755fde0ad808d88d21"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "free-rego-check.service.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/jsonapi\\/global-nav-app",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snswprod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0002,
+            "cnames": [
+                {
+                    "original": "api.g.service.nsw.gov.au",
+                    "resolved": "snswprod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "848d61f2ae8b63e46f861d53ff060ac1167be82835349f0263d6e2f236770b0e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "free-rego-check.service.nsw.gov.au"
             ]
         },
         {
@@ -136,7 +298,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.prod.bunnings.com.au",
@@ -154,14 +316,14 @@
         },
         {
             "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
-            "cookies": 0.000201,
+            "cookies": 0.0002,
             "fingerprinting": 0,
             "subdomains": [
                 "bgl-web-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.prod.bunnings.com.au",
@@ -169,7 +331,7 @@
                 }
             ],
             "responseHashes": [
-                "015aaf871a3e909b3d9ac602f16f0025d387125653abeb0fdb38d3e0d97b5e20"
+                "d18629e692835bff2ff268085ffba0c8659761b5eceddb6ddfe6a30676e88f9f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -188,7 +350,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.prod.bunnings.com.au",
@@ -206,14 +368,14 @@
         },
         {
             "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
-            "cookies": 0.000201,
+            "cookies": 0.0002,
             "fingerprinting": 0,
             "subdomains": [
                 "bgl-web-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.prod.bunnings.com.au",
@@ -221,7 +383,7 @@
                 }
             ],
             "responseHashes": [
-                "1eaaf2c61c0f8f08beac6afd2eba9c07ae594cd6631b2140e858b4cdbad3567d"
+                "59f2565db1441f79b14c6e9d99d8b20a88eeda747e1abd1f7444e0ce34bb1611"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -240,16 +402,14 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.costco.com",
                     "resolved": "costco-prd.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "eb2fea1f3758a3948159c2c49441bfb657563f956660f263335862afdff91fcb"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -267,7 +427,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.marksandspencer.com",
@@ -292,7 +452,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [
                 {
                     "original": "api.marksandspencer.com",
@@ -319,10 +479,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "b7fdf233274366d992e3049d8009b7d2b59bdd83b210e08c1003a1049c02af22"
+                "3c910530835d4be25fd24295e2cd649f5cc3338243f64562b449cff6e9b72474"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -341,10 +501,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.0002,
             "cnames": [],
             "responseHashes": [
-                "438fdb17f0bfe9ab1b92bd6b3fe7ec968f6fce310a14a670d6d0096e7a7dcdea"
+                "d343849cbd4cab3917476e4a0a5b593c8ac56381b9cb50f720305fd94cf226be"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -359,35 +519,36 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000805,
+    "cookies": 0.000701,
     "topInitiators": [
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.4666666666666667
         },
         {
             "domain": "first party",
-            "prevalence": 0.35714285714285715
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.13333333333333333
         },
         {
             "domain": "appdynamics.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
         "Script": 2,
         "Document": 2,
-        "XHR": 14,
-        "Preflight": 6
+        "Fetch": 14,
+        "Preflight": 6,
+        "XHR": 12
     },
     "nameservers": [
-        "ns-1907.awsdns-46.co.uk",
         "ns-116.awsdns-14.com",
         "ns-1441.awsdns-52.org",
+        "ns-1907.awsdns-46.co.uk",
         "ns-670.awsdns-19.net"
     ]
 }

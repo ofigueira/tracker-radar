@@ -4,15 +4,40 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000507,
-    "sites": 5,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
-        "chatwindow.api",
-        "chat-window"
+        "chat-window",
+        "chatwindow.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "kmblabs\\.com\\/KMBotUI_ULWB\\/kmbotui\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "chat-window"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9799bf857799fd5fc059a8e01eb784ba7872ae181492f21d92db8e502deb70d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nestenn.com",
+                "www.century21.fr"
+            ]
+        },
         {
             "rule": "kmblabs\\.com\\/config",
             "cookies": 0,
@@ -22,12 +47,12 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000507,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "11a159ec0e2d313f4859d097c6ea8439f0e1d0cb084b3305d0251c634937bd9c",
                 "1ff656602f3d42d4e0838fc148d9f3537ebd0f8b59a82ebb2b13a56af6f06e13",
-                "0c7dd88e807de976218abf1fdc0a3c8841cc23d9b0ae29bd270d195f41e88aca",
+                "054ee2be8b7c0925ec62da8629b816db071bfa7ed3f317a0eede9cc1754cd48b",
                 "c6ee16fd8d5e72b9df8027a6e67bfa0c50a0b3048be314f825dc64476fb2d09b"
             ],
             "type": "Fetch",
@@ -37,7 +62,7 @@
                 "adecco.fr",
                 "www.cegos.fr",
                 "www.century21.fr",
-                "www.guy-hoquet.com",
+                "www.emploi.sncf.com",
                 "www.laforet.com"
             ]
         },
@@ -50,7 +75,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000507,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -60,33 +85,8 @@
                 "adecco.fr",
                 "www.cegos.fr",
                 "www.century21.fr",
-                "www.guy-hoquet.com",
+                "www.emploi.sncf.com",
                 "www.laforet.com"
-            ]
-        },
-        {
-            "rule": "kmblabs\\.com\\/KMBotUI_ULWB\\/kmbotui\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "chat-window"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000203,
-            "cnames": [],
-            "responseHashes": [
-                "9799bf857799fd5fc059a8e01eb784ba7872ae181492f21d92db8e502deb70d2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "century21.fr",
-                "www.guy-hoquet.com"
             ]
         }
     ],
@@ -94,6 +94,10 @@
     "performance": {},
     "cookies": 0,
     "topInitiators": [
+        {
+            "domain": "d1986lffsl15jz.cloudfront.net",
+            "prevalence": 0.2857142857142857
+        },
         {
             "domain": "kick-my-bot.s3-eu-west-1.amazonaws.com",
             "prevalence": 0.2857142857142857
@@ -104,17 +108,13 @@
         },
         {
             "domain": "first party",
-            "prevalence": 0.2857142857142857
-        },
-        {
-            "domain": "d1986lffsl15jz.cloudfront.net",
             "prevalence": 0.14285714285714285
         }
     ],
     "types": {
+        "Script": 2,
         "Fetch": 5,
-        "Preflight": 5,
-        "Script": 2
+        "Preflight": 5
     },
     "nameservers": [
         "ns10.ovh.net",

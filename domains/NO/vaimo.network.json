@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "security-hub"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "vaimo\\.network\\/static\\/dbmv2\\/frontend_module\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "security-hub"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f3ff2265f4a91cfde252cf117167976415181dd1e293163f3b6c0cff8adc3aed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "suunto.com",
+                "www.xn--verkty-fya.no"
+            ]
+        },
         {
             "rule": "vaimo\\.network\\/api\\/v2\\.1\\/dbm",
             "cookies": 0,
@@ -20,18 +46,20 @@
                 "security-hub"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000203,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "77d8b3311674100e6130d78f03a69095c5ee9b05847d88394a19477b8c40cad5"
+                "74f0b13b4dab51122fa16756d8f178c7c0f27276bc976014089bd7331f3fb915",
+                "ed7288dbb5246522280161e8c7d1eabf9aeab5ae1c7b7464ca7435ac2be4c3af"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "suunto.com",
-                "www.suunto.com"
+                "www.suunto.com",
+                "www.xn--verkty-fya.no"
             ]
         }
     ],
@@ -40,19 +68,20 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "azure.com",
+            "domain": "first party",
             "prevalence": 0.6666666666666666
         },
         {
-            "domain": "first party",
+            "domain": "azure.com",
             "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 2
+        "Script": 2,
+        "XHR": 3
     },
     "nameservers": [
-        "hera.ns.cloudflare.com",
-        "major.ns.cloudflare.com"
+        "major.ns.cloudflare.com",
+        "hera.ns.cloudflare.com"
     ]
 }

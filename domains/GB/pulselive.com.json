@@ -4,15 +4,152 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000602,
+    "sites": 6,
     "subdomains": [
+        "sdk.fdp.ecb",
+        "sdk.fdp.evertonfc",
+        "fdp.ecb",
+        "fdp.evertonfc",
+        "events.fdp.ecb",
+        "events.fdp.evertonfc",
         "cricketapi-ecb",
+        "cricketapi-icc",
         "footballapi"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "pulselive\\.com\\/sdk-client-web\\/latest\\/client\\.min\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 3,
+            "subdomains": [
+                "sdk.fdp.ecb",
+                "sdk.fdp.evertonfc"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.plugins": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.productSub": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cfac5ca4781e883ee38a059ba732a5ae95270015bc0d06551b99aa0d6e101812"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fdp-fingerprint": {
+                    "ttl": 2592006,
+                    "length": 32,
+                    "prevalence": 0.00010037137408411121,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.evertonfc.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/widget-resources\\/import-map\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fdp.ecb",
+                "fdp.evertonfc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b5a277106a37b05c793ac8f7800454f26e25d50d4474307b251c250d69375f6a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.evertonfc.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/consents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.fdp.ecb",
+                "events.fdp.evertonfc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a91305bfd995f3d885add33a49d100fafbbf95152cabdf1161d2036c8ff1550a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.evertonfc.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/consents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.fdp.ecb",
+                "events.fdp.evertonfc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecb.co.uk",
+                "www.evertonfc.com"
+            ]
+        },
         {
             "rule": "pulselive\\.com\\/\\/fixtures",
             "cookies": 0,
@@ -22,7 +159,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -42,10 +179,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5bf37fbfc9f8010024e7b7b8249bdb6a30e259b6adddec5ee1a611b17af0ba50"
+                "3ee78b0eef72b70b75209b80a3f3cb6b158a3d227225cbb956b8c94c6f3efa5b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -53,6 +190,90 @@
             "exampleSites": [
                 "ecb.co.uk",
                 "www.ecb.co.uk"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/fixtures",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricketapi-icc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b283d787ee89df23ca465bf60b1f6a4e7cbebd37eef22d4c9fa14b3616acb270"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icc-cricket.com",
+                "www.icc-cricket.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/fixtures",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricketapi-icc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icc-cricket.com",
+                "www.icc-cricket.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/fixtures\\/101696\\/scoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricketapi-icc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d4322560b35afaf9807d03d36d2f58adf37a85cfeeac020766576b523f903697"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icc-cricket.com",
+                "www.icc-cricket.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/fixtures\\/101696\\/scoring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricketapi-icc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icc-cricket.com",
+                "www.icc-cricket.com"
             ]
         },
         {
@@ -64,10 +285,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0fe26c134c72abe5db9d6b44c8468fdd6685be051394b209ac5749ebc6d84df1"
+                "def1d241b0d38002616bdb5da1ead7adb1986102a077f588e34939a796d347d1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -86,7 +307,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "7b01e9f660336794ea8290b1dab622f2c9a15d665c700d206d52534a7e0e0e4d"
@@ -108,10 +329,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "febee464915a4a4c7395a9d07302eb9dd0374217ca8da1cc5d256576028739d8"
+                "6dbd1013b64caf56086e56cab2b232fc836ea4f2a1d36d8ec4f929f5b4fd979d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,20 +345,22 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.96
+            "prevalence": 0.9354838709677419
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.04
+            "prevalence": 0.06451612903225806
         }
     ],
     "types": {
-        "Preflight": 2,
-        "XHR": 8
+        "Script": 2,
+        "Fetch": 2,
+        "XHR": 14,
+        "Preflight": 8
     },
     "nameservers": [
         "ns-663.awsdns-18.net",
