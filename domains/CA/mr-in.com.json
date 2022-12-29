@@ -4,17 +4,22 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000501,
-    "sites": 5,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
         "outside",
         "dell-prod.actioniq",
+        "thd-ca-poc-prod",
         "thd"
     ],
     "cnames": [
         {
             "original": "meta-events.trailforks.com",
             "resolved": "outside.mr-in.com"
+        },
+        {
+            "original": "mr.homedepot.ca",
+            "resolved": "thd-ca-poc-prod.mr-in.com"
         },
         {
             "original": "mr.homedepot.com",
@@ -37,7 +42,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "mr.pinkbike.com",
@@ -62,16 +67,51 @@
             ]
         },
         {
-            "rule": "mr-in\\.com\\/v1\\/t",
+            "rule": "mr-in\\.com\\/v1\\/p",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "thd-ca-poc-prod",
                 "thd"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [
+                {
+                    "original": "mr.homedepot.ca",
+                    "resolved": "thd-ca-poc-prod.mr-in.com"
+                },
+                {
+                    "original": "mr.homedepot.com",
+                    "resolved": "thd.mr-in.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homedepot.ca",
+                "www.homedepot.com"
+            ]
+        },
+        {
+            "rule": "mr-in\\.com\\/v1\\/p",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "thd-ca-poc-prod",
+                "thd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "mr.homedepot.ca",
+                    "resolved": "thd-ca-poc-prod.mr-in.com"
+                },
                 {
                     "original": "mr.homedepot.com",
                     "resolved": "thd.mr-in.com"
@@ -84,7 +124,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "homedepot.com",
+                "homedepot.ca",
                 "www.homedepot.com"
             ]
         }
@@ -95,19 +135,20 @@
     "topInitiators": [
         {
             "domain": "metarouter.io",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.5
         },
         {
             "domain": "thdstatic.com",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "first party",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
         "Fetch": 4,
+        "Preflight": 2,
         "XHR": 2
     },
     "nameservers": []

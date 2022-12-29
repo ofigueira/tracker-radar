@@ -11,9 +11,9 @@
     "sites": 2,
     "subdomains": [
         "www",
+        "login",
         "coordinator.cm",
-        "location",
-        "login"
+        "location"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -41,20 +41,38 @@
             ]
         },
         {
-            "rule": "bloomberg\\.com\\/coordination",
-            "cookies": 0.0000136,
+            "rule": "bloomberg\\.com\\/user-info",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "coordinator.cm"
+                "login"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "498892fdb52486671944d39a320daebc8ac1a7db032514f1507118834a4a9c95"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomberg.co.jp",
+                "www.bloomberg.co.jp"
+            ]
+        },
+        {
+            "rule": "bloomberg\\.com\\/user-info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -79,6 +97,28 @@
                 "1b28198d91713aa890caba2881a528dce345c12a98eb11f1023712def6ff8634"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomberg.co.jp",
+                "www.bloomberg.co.jp"
+            ]
+        },
+        {
+            "rule": "bloomberg\\.com\\/coordination",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "coordinator.cm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f455e2924045689e54679d61e10fc9522e312be897d019a50495f086f318f835"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -129,46 +169,6 @@
                 "bloomberg.co.jp",
                 "www.bloomberg.co.jp"
             ]
-        },
-        {
-            "rule": "bloomberg\\.com\\/user-info",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "login"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bloomberg.co.jp",
-                "www.bloomberg.co.jp"
-            ]
-        },
-        {
-            "rule": "bloomberg\\.com\\/user-info",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "login"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bloomberg.co.jp",
-                "www.bloomberg.co.jp"
-            ]
         }
     ],
     "categories": [],
@@ -187,17 +187,17 @@
     "types": {
         "Stylesheet": 2,
         "Fetch": 6,
+        "Preflight": 2,
         "Script": 2,
-        "XHR": 2,
-        "Preflight": 2
+        "XHR": 2
     },
     "nameservers": [
-        "dns1.p01.nsone.net",
-        "dns4.p01.nsone.net",
         "dns3.p01.nsone.net",
-        "pdns1.ultradns.net",
-        "dns2.p01.nsone.net",
         "pdns3.ultradns.org",
-        "pdns5.ultradns.info"
+        "dns1.p01.nsone.net",
+        "pdns5.ultradns.info",
+        "dns2.p01.nsone.net",
+        "pdns1.ultradns.net",
+        "dns4.p01.nsone.net"
     ]
 }

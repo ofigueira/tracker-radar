@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0002,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "eucs28v2",
-        "uscs16v2"
+        "uscs3v2",
+        "uscs16v2",
+        "stats"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -19,21 +21,87 @@
             "fingerprinting": 0,
             "subdomains": [
                 "eucs28v2",
-                "uscs16v2"
+                "uscs3v2"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kent.ca",
+                "www.classicfirearms.com"
+            ]
+        },
+        {
+            "rule": "ksearchnet\\.com\\/cs\\/v2\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eucs28v2",
+                "uscs3v2",
+                "uscs16v2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "7e27dd258b3ae743bd9bdc6103c4e21f086e73daf56d788558901655dd176787"
+                "2576f96e7c2856121085242842043d3074dce0f5843739744b36615192edc5d6",
+                "66fd32fe5ed1dd62dd6bb30140e0e5adbeda2e124b3ff8c6db8921c8d74f7956"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kent.ca",
+                "www.classicfirearms.com",
                 "www.stokesstores.com"
+            ]
+        },
+        {
+            "rule": "ksearchnet\\.com\\/analytics\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kent.ca",
+                "www.classicfirearms.com"
+            ]
+        },
+        {
+            "rule": "ksearchnet\\.com\\/analytics\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kent.ca",
+                "www.classicfirearms.com"
             ]
         }
     ],
@@ -42,17 +110,22 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "klevu.com",
+            "prevalence": 0.6
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 4,
+        "Fetch": 5
     },
     "nameservers": [
-        "ns-1795.awsdns-32.co.uk",
-        "ns-377.awsdns-47.com",
         "ns-698.awsdns-23.net",
+        "ns-377.awsdns-47.com",
+        "ns-1795.awsdns-32.co.uk",
         "ns-1305.awsdns-35.org"
     ]
 }

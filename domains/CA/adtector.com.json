@@ -6,13 +6,15 @@
     ],
     "prevalence": 0.0001,
     "sites": 1,
-    "subdomains": [],
+    "subdomains": [
+        "trk"
+    ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "adtector\\.com\\/tectScript\\.js",
-            "cookies": 0.0002,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
@@ -26,7 +28,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "02a7addf22d01c6491c45ddce9d323af4e927544140d0a4053d7300aede2048b"
@@ -36,10 +38,32 @@
                 "user_id": {
                     "ttl": null,
                     "length": 12,
-                    "prevalence": 0.0002004208838560978,
+                    "prevalence": 0.00020098482564566376,
                     "uniqueness": 0.5
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endy.com",
+                "ca.endy.com"
+            ]
+        },
+        {
+            "rule": "adtector\\.com\\/api\\/setClientInfo\\/44",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "dbe587ff1b0a69bc49a4280f00dc3c9152a3325d227dfa73f09fda4a5d2710cc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "endy.com",
@@ -53,14 +77,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "toby.ns.cloudflare.com",
-        "naomi.ns.cloudflare.com"
+        "naomi.ns.cloudflare.com",
+        "toby.ns.cloudflare.com"
     ]
 }

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
-        "accounts"
+        "accounts",
+        "apm"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "tnet\\.nl\\/static\\/assets\\/js\\/login_v2\\.js",
@@ -37,7 +38,7 @@
                 "ssoLastChecked": {
                     "ttl": 300,
                     "length": 13,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.000013550961779512302,
                     "uniqueness": 0.5
                 }
             },
@@ -61,13 +62,30 @@
             "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lastarticles": 0.000006781270131895704,
-                "last_aid": 0.000006781270131895704
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "noordhollandsdagblad.nl",
                 "www.noordhollandsdagblad.nl"
+            ]
+        },
+        {
+            "rule": "tnet\\.nl\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wort.lu",
+                "www.wort.lu"
             ]
         }
     ],
@@ -77,12 +95,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "agnoplay.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
         "Script": 2,
-        "Document": 2
+        "Document": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "elliot.ns.cloudflare.com",

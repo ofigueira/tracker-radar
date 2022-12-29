@@ -7,13 +7,16 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000702,
-    "sites": 7,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "cdn",
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "coindesk-production.us",
         "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu",
+        "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
-        "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu"
+        "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
@@ -27,52 +30,45 @@
         {
             "original": "auth.pearle.nl",
             "resolved": "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu.auth0.com"
+        },
+        {
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.finder.com",
+            "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\/auth0\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [],
-            "responseHashes": [
-                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gymshark.com",
-                "www.gymshark.com"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000301,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "coindesk-production.us",
                 "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu",
+                "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
                 "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [
+                {
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
                 {
                     "original": "auth.eyewish.nl",
                     "resolved": "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu.auth0.com"
+                },
+                {
+                    "original": "login.finder.com",
+                    "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -84,21 +80,52 @@
                 }
             ],
             "responseHashes": [
-                "0d40da99f9717ae89a81ad5810404c5c2e7504eae455d10342b3b405e319c519"
+                "20ccb7f5ce5ea19800103236b9a317350865d24a6984bfa72fafa5106dac8c7e",
+                "ef09e350d3b69639fc841b1622d22bf0525474e23bc6a02680736700c9141f75",
+                "dd28e40659da04e161f5cafafb3a2431756034e5745e64a71836ce8636ec09cd"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eyewish.nl",
+                "arduino.cc",
+                "www.coindesk.com",
+                "www.eyewish.nl",
+                "www.finder.com",
                 "www.native-instruments.com",
                 "www.pearle.nl"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "honeywellhome.com",
+                "www.resideo.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000602,
     "topInitiators": [
         {
             "domain": "first party",
@@ -110,11 +137,11 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Document": 3
+        "Document": 6,
+        "Script": 2
     },
     "nameservers": [
-        "monroe.ns.cloudflare.com",
-        "kolton.ns.cloudflare.com"
+        "kolton.ns.cloudflare.com",
+        "monroe.ns.cloudflare.com"
     ]
 }

@@ -7,12 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
+        "ads",
         "s",
         "smartapp-tvplayer3-prod",
-        "ads",
         "polityka-prywatnosci",
         "api"
     ],
@@ -20,27 +20,25 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "tvp\\.pl\\/files\\/TVPlayer2\\/polyfills-for-browser\\/1\\.3\\.0\\/polyfills\\.min\\.js",
+            "rule": "tvp\\.pl\\/ad\\.xml",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "s"
+                "ads"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0eddb43929626299c85a1533077273d3df44f6ef5b0eab11f816de0da7940152"
+                "4cdf584e81e8388ad12c98f051e1b8325d2c9f3ba0867232d5e496a7d6edf5bd"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dziennikbaltycki.pl",
-                "www.tvp.info"
+                "bankier.pl",
+                "www.bankier.pl"
             ]
         },
         {
@@ -77,7 +75,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "40b486ac5dd8d7c7e7b525b0f6841243c010296240cdfcdcddfd2732daed40d9"
+                "5bfdb7dbe0496b9e91882938e3034c96c1cca8e2cf5aef8f4cb22c6032f05f77"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -166,6 +164,9 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
             },
@@ -173,7 +174,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "285f131de6c3dc06d8d5e06d9f50097b763e455a21e4bc2fe543850fc8b74580"
+                "d7780ac4c6d6f0737bf7a41ed318a28afbb19df214443d0c79fe64d562fbad24"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -195,7 +196,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cc992badc134abf309c4337a3e554cd7f3b66225e3ffe36d7e85751fa0183543"
+                "aed702e81511ee8469eb1c76a5732189812c60028d01af484d1a463167ee1758"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -343,8 +344,32 @@
             ]
         },
         {
-            "rule": "tvp\\.pl\\/__\\/_1669155445\\/ad\\.xml",
-            "cookies": 0.0000136,
+            "rule": "tvp\\.pl\\/files\\/js\\/responsive_footer_billboard_gao_lib\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e8f53c2a0b724cb148edf96db9e94a0e826174db7d1cbfac3a4232ff8feaa1b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvp.info",
+                "www.tvp.info"
+            ]
+        },
+        {
+            "rule": "tvp\\.pl\\/files\\/x\\/ogf\\/tikllzm\\/xajkevmjdv\\/x_button\\.png",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ads"
@@ -354,7 +379,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "fa453171d19d2db6bf9bad630d79948f108641b0c156b6f3e2b926de4e80a9ab"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -376,7 +401,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a754737a45225e9571239701519bd41690486e583b85a23c971ef91e12eee523"
+                "f648bf359514e1508a48284f72387ed2ee56e3e7435ec77e78aee73b92c44472"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -393,22 +418,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9879518072289156
+            "prevalence": 0.975
         },
         {
-            "domain": "privacy-center.org",
-            "prevalence": 0.012048192771084338
+            "domain": "imasdk.googleapis.com",
+            "prevalence": 0.025
         }
     ],
     "types": {
-        "Script": 12,
+        "XHR": 6,
         "Image": 8,
-        "XHR": 4,
+        "Script": 12,
         "Other": 8
     },
     "nameservers": [
         "dns-a.itvp.pl",
-        "dns-c.itvp.pl",
-        "dns-b.itvp.pl"
+        "dns-b.itvp.pl",
+        "dns-c.itvp.pl"
     ]
 }

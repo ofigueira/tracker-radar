@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00251,
-    "sites": 25,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
         "production-klarna-il-shopify-osm.s3",
         "aaaab5376f71745aead16628a4cb494f-0452ca34d48149fb.elb",
-        "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb",
+        "cognito-identity",
+        "firehose",
         "web-chat-tag-cdn.s3"
     ],
     "cnames": [
@@ -29,24 +30,20 @@
         {
             "original": "hz.linternaute.com",
             "resolved": "aaaab5376f71745aead16628a4cb494f-0452ca34d48149fb.elb.eu-west-1.amazonaws.com"
-        },
-        {
-            "original": "mediaweb.musicradio.com",
-            "resolved": "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1.amazonaws.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/ffcb34645ba24ad723d6bc0f63fc78fc8b45d14b\\/258\\.index\\.js",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/ebb4b9f8edac84b7e417f4fb67c62ab4f62a1b17\\/258\\.index\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "production-klarna-il-shopify-osm.s3"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000601,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "329173b311eb02ebad5191d3b7314d7ffaeb93d00504f46009f4392bbad28e8d"
@@ -56,39 +53,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blnts.com",
-                "ca.tilley.com",
                 "ca.tommyguns.com",
                 "urban-planet.com",
-                "west49.com",
-                "www.tiptop.ca"
+                "www.yandy.com"
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/ffcb34645ba24ad723d6bc0f63fc78fc8b45d14b\\/906\\.index\\.js",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/ebb4b9f8edac84b7e417f4fb67c62ab4f62a1b17\\/906\\.index\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "production-klarna-il-shopify-osm.s3"
             ],
             "apis": {
-                "window.localStorage": 6
+                "window.localStorage": 4
             },
-            "sites": 6,
-            "prevalence": 0.000601,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "bc012753ecbdecffc79fc9acee9af698b02128e0c4b1171a980954f90c770ffb"
+                "f9f574812107aa49dc1106ec1367ba864c919f429ed9d60b120ef66b72341038"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blnts.com",
-                "ca.tilley.com",
                 "ca.tommyguns.com",
                 "urban-planet.com",
-                "west49.com",
-                "www.tiptop.ca"
+                "www.yandy.com"
             ]
         },
         {
@@ -99,8 +92,8 @@
                 "aaaab5376f71745aead16628a4cb494f-0452ca34d48149fb.elb"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000902,
+            "sites": 8,
+            "prevalence": 0.000804,
             "cnames": [
                 {
                     "original": "hz.journaldesfemmes.fr",
@@ -125,7 +118,6 @@
                 "journaldesfemmes.fr",
                 "cuisine.journaldesfemmes.fr",
                 "forums.commentcamarche.net",
-                "sante-medecine.journaldesfemmes.fr",
                 "sante.journaldesfemmes.fr",
                 "www.commentcamarche.net",
                 "www.journaldesfemmes.fr",
@@ -134,30 +126,46 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/player\\/image\\.aspx",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb"
+                "cognito-identity"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
-            "cnames": [
-                {
-                    "original": "mediaweb.musicradio.com",
-                    "resolved": "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1.amazonaws.com"
-                }
-            ],
+            "prevalence": 0.000201,
+            "cnames": [],
             "responseHashes": [
-                "ec32ca12dbbdd7a2b223c778f579f71503d08bff553439beacd786e78c4f27fc"
+                "8784ea548e37c2cbd9febd1e07f2e299e8f80eb9cc1f597fd40851f0553dffc8"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "classicfm.com",
-                "www.smoothradio.com"
+                "datacamp.com",
+                "www.datacamp.com"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cognito-identity",
+                "firehose"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "datacamp.com",
+                "www.datacamp.com"
             ]
         },
         {
@@ -175,17 +183,17 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a5d718bdd3acd439a3ad3005cc30cb79a10aef7c89b61763d758095fefcecce8"
+                "1a4dd8aacd19dcc1c5bbfa7acfde3e83fedf3fdf52ef9eb9bad27924ee6c6d4c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hellofresh.ca",
-                "www.hellofresh.com"
+                "hellofresh.com",
+                "www.hellofresh.ca"
             ]
         },
         {
@@ -197,7 +205,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "174ff92fb7b592b2fd52bf19f95808b5246c19b8d91ec406804e9643d7b30283"
@@ -206,8 +214,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hellofresh.ca",
-                "www.hellofresh.com"
+                "hellofresh.com",
+                "www.hellofresh.ca"
             ]
         },
         {
@@ -219,7 +227,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "d06141ec275947347b74c779418a8aebaa00e4c3228ea6c0fbfdfc4f72ddd7a2"
@@ -228,8 +236,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hellofresh.ca",
-                "www.hellofresh.com"
+                "hellofresh.com",
+                "www.hellofresh.ca"
             ]
         }
     ],
@@ -237,51 +245,40 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.4186046511627907
+            "domain": "ccmbg.com",
+            "prevalence": 0.45161290322580644
         },
         {
-            "domain": "ccmbg.com",
-            "prevalence": 0.37209302325581395
+            "domain": "first party",
+            "prevalence": 0.3548387096774194
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.13953488372093023
-        },
-        {
-            "domain": "d5zu2f4xvqanl.cloudfront.net",
-            "prevalence": 0.023255813953488372
-        },
-        {
-            "domain": "d3odp2r1osuwn0.cloudfront.net",
-            "prevalence": 0.023255813953488372
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.023255813953488372
+            "prevalence": 0.1935483870967742
         }
     ],
     "types": {
-        "Script": 18,
-        "Ping": 9,
-        "Image": 2
+        "Script": 14,
+        "Ping": 8,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "u6.amazonaws.com",
-        "pdns1.ultradns.net",
-        "pdns5.ultradns.info",
-        "u2.amazonaws.com",
+        "u4.amazonaws.com",
         "ns3.p31.dynect.net",
-        "pdns3.ultradns.org",
         "ns4.p31.dynect.net",
+        "u6.amazonaws.com",
+        "pdns5.ultradns.info",
         "u1.amazonaws.com",
-        "ns2.p31.dynect.net",
-        "ns1.p31.dynect.net",
-        "u5.amazonaws.com",
+        "u2.amazonaws.com",
+        "pdns3.ultradns.org",
         "u3.amazonaws.com",
-        "u4.amazonaws.com"
+        "u5.amazonaws.com",
+        "pdns1.ultradns.net",
+        "ns2.p31.dynect.net",
+        "ns1.p31.dynect.net"
     ]
 }

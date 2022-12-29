@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "cdn-csp",
-        "beacon-cdn-custom"
+        "beacon-cdn-custom",
+        "cdn-csp"
     ],
     "cnames": [
         {
@@ -28,15 +28,95 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "walmart\\.com\\.akadns\\.net\\/rum\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "21ce3cdbfffbd8e4363c0faa3fa8ad7ef91631f0aec5f0e6f9c2f0d687e1a151"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/rum\\.gif",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "photos3.walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/tap\\.gif",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
             "rule": "walmart\\.com\\.akadns\\.net\\/c\\/r\\/gl",
-            "cookies": 0.0002,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn-csp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "csp.walmart.com",
@@ -56,14 +136,14 @@
         },
         {
             "rule": "walmart\\.com\\.akadns\\.net\\/rum\\.gif",
-            "cookies": 0.0002,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "beacon-cdn-custom"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0002,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "beacon.walmart.com",
@@ -86,14 +166,24 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "walmartimages.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "wal.co",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
+        "Script": 2,
+        "Image": 5,
         "Other": 2,
         "Ping": 2
     },

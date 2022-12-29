@@ -7,35 +7,13 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "geoip",
         "auth",
+        "geoip",
         "eua"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "instiengage\\.com\\/json\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "geoip"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "1e52f92eeb50351a4f205aa3d95385065c94666c6a67f05d743083c2e1ec756e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "itsfoss.com",
-                "mydramalist.com"
-            ]
-        },
         {
             "rule": "instiengage\\.com\\/auth\\/index\\.html",
             "cookies": 0,
@@ -51,6 +29,28 @@
                 "32dcb7b5d0e79583353a56225e4d8097e004103102d584e245d1b96547f9948d"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itsfoss.com",
+                "mydramalist.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/json\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1e52f92eeb50351a4f205aa3d95385065c94666c6a67f05d743083c2e1ec756e"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -99,8 +99,10 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "74c2b4ce739aeabbc08f2501a7a1da4b215ac8dd0d6565d54af2dcd98b9423eb"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -119,10 +121,8 @@
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "8b8797b8146a4a70401674a582f4bdddb93979f853fa4b6f8a92cd5302522f09"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -145,11 +145,11 @@
         }
     ],
     "types": {
-        "XHR": 2,
         "Document": 2,
+        "XHR": 2,
         "Script": 2,
-        "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "carl.ns.cloudflare.com",

@@ -11,53 +11,41 @@
     "sites": 2,
     "subdomains": [
         "sdk.me.bca",
-        "me.bca",
         "bca.cdp",
-        "me.ttd"
+        "me.bca"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "meiro\\.io\\/",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "sdk.me.bca"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "window.innerHeight": 2
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f82c83c1682c881333dee381b6bcb07387c21ea90e4ba65700e44547f1a92c89"
+                "871440d1c821ce6611f701d3bfc5bfea7a26f53524daed6cb57daaa990eb884e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bca.co.id",
-                "www.bca.co.id"
-            ]
-        },
-        {
-            "rule": "meiro\\.io\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "me.bca"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "meiro_user_id_js": {
+                    "ttl": 63072000,
+                    "length": 36,
+                    "prevalence": 0.000013550961779512302,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bca.co.id",
@@ -86,6 +74,26 @@
         },
         {
             "rule": "meiro\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "me.bca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bca.co.id",
+                "www.bca.co.id"
+            ]
+        },
+        {
+            "rule": "meiro\\.io\\/",
             "cookies": 0.00000678,
             "fingerprinting": 0,
             "subdomains": [
@@ -103,30 +111,6 @@
                 "bca.co.id",
                 "www.bca.co.id"
             ]
-        },
-        {
-            "rule": "meiro\\.io\\/tradedesk_sync",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "me.ttd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "meiro_user_id_js": 0.000006781270131895704
-            },
-            "exampleSites": [
-                "bca.co.id",
-                "www.bca.co.id"
-            ]
         }
     ],
     "categories": [],
@@ -140,13 +124,12 @@
     ],
     "types": {
         "Script": 2,
-        "Preflight": 2,
         "Fetch": 4,
-        "Image": 2
+        "Preflight": 2
     },
     "nameservers": [
-        "ns2.digitalocean.com",
         "ns1.digitalocean.com",
+        "ns2.digitalocean.com",
         "ns3.digitalocean.com"
     ]
 }

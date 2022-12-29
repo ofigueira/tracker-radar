@@ -7,11 +7,14 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000401,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
-        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
-        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
+        "coindesk-production.us",
+        "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
+        "cdn",
+        "cdn.eu"
     ],
     "cnames": [
         {
@@ -19,27 +22,28 @@
             "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
         },
         {
-            "original": "login.arduino.cc",
-            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+            "original": "login.finder.com",
+            "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "coindesk-production.us",
+                "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
-                    "original": "login.arduino.cc",
-                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                    "original": "login.finder.com",
+                    "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -47,28 +51,82 @@
                 }
             ],
             "responseHashes": [
-                "c2e3a945a76e8e29e18788c98d9c764e21ea57f334253b94d053e0544e00f69a"
+                "f9202ed906f1748a747327e3231861de231fca650d3c353a54bde95df32e0129",
+                "95e77f1c14ca8bda1f97099bed204ebccaced6dbf64bce32817ddb963f1f64b3"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arduino.cc",
+                "coindesk.com",
+                "www.finder.com",
                 "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/lock\\/11\\.33\\.0\\/de\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8fa55d736b479b70f89f281d097ac3d322e536e3941e12e5bc297fe8d42af091"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rocksresort.com",
+                "www.rocksresort.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/client\\/OrgqPPDk7oZ0b8b0NLQ7a6lXWwHdCjU9\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "506b8377c31bf1bb9e987c8b5addbcaf018aa1eb911beb0f8cc43b2769621afd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rocksresort.com",
+                "www.rocksresort.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "topInitiators": [
         {
+            "domain": "laax.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Script": 4
     },
-    "nameservers": []
+    "nameservers": [
+        "kolton.ns.cloudflare.com",
+        "monroe.ns.cloudflare.com"
+    ]
 }

@@ -13,13 +13,23 @@
     "sites": 10,
     "subdomains": [
         "isgprivacy",
+        "news-ipv4",
         "sports-global",
-        "sports-global-ipv4"
+        "sports-global-ipv4",
+        "ctd"
     ],
     "cnames": [
         {
+            "original": "feeds-cbsn.cbsnews.com",
+            "resolved": "news-ipv4.cbsi.map.fastly.net"
+        },
+        {
             "original": "graphql-cdn-site.cbssports.com",
             "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
+        },
+        {
+            "original": "media.startrek.com",
+            "resolved": "ctd.cbsi.map.fastly.net"
         },
         {
             "original": "production-cmp.isgprivacy.cbsi.com",
@@ -49,22 +59,22 @@
                 }
             ],
             "responseHashes": [
-                "8b07891e0fbb15d1733584c68604b994215fd392a276c12707daf3b742dc2c95"
+                "ad6c004c443d6c1ac8a66e25a5973b3d49fddcb31dc4574c6504e8f1df66aaeb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "247sports.com",
                 "comicbook.com",
                 "popculture.com",
                 "pluto.tv",
-                "www.bellator.com",
                 "www.cbsnews.com",
                 "www.cbssports.com",
                 "www.etonline.com",
                 "www.last.fm",
                 "www.mtv.com",
-                "www.sho.com"
+                "www.startrek.com"
             ]
         },
         {
@@ -90,16 +100,43 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "247sports.com",
                 "comicbook.com",
                 "popculture.com",
                 "pluto.tv",
-                "www.bellator.com",
                 "www.cbsnews.com",
                 "www.cbssports.com",
                 "www.etonline.com",
                 "www.last.fm",
                 "www.mtv.com",
-                "www.sho.com"
+                "www.startrek.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/2\\.1\\/rundown\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news-ipv4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "feeds-cbsn.cbsnews.com",
+                    "resolved": "news-ipv4.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "fcf43225a5c04da05748f36c21ca197030bcdf699ee89befd8387b94ed2aab9f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbsnews.com",
+                "www.cbsnews.com"
             ]
         },
         {
@@ -172,10 +209,8 @@
                     "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "d293e6dad443406acbb8a9b595c7e9c8ac3ef994a975d722de4dfc8dd0a2bcd5"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -199,13 +234,40 @@
                     "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "10bcf344c80506580b0712c3fa67b2b9013fb087d2169fe4b3672466b6e4cf80"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbssports.com",
                 "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/2022\\/12\\/05\\/2134493763719\\/st_pro_set_a_course_119_stcom-486ea33d_clip-15s_1518330_3928\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "media.startrek.com",
+                    "resolved": "ctd.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "startrek.com",
+                "www.startrek.com"
             ]
         }
     ],
@@ -220,26 +282,27 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9789473684210527
+            "prevalence": 0.9473684210526315
         },
         {
             "domain": "cbsistatic.com",
-            "prevalence": 0.015789473684210527
+            "prevalence": 0.039473684210526314
         },
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.005263157894736842
+            "prevalence": 0.013157894736842105
         }
     ],
     "types": {
         "Script": 20,
+        "Fetch": 4,
         "Font": 4,
-        "Fetch": 2,
-        "Preflight": 2
+        "Preflight": 2,
+        "Media": 2
     },
     "nameservers": []
 }

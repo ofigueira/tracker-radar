@@ -7,12 +7,12 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
         "servicenowsignon.customdomains",
+        "wm.customdomains",
         "sas.customdomains",
-        "nikon.customdomains",
         "churchofjesuschrist.customdomains"
     ],
     "cnames": [
@@ -25,8 +25,8 @@
             "resolved": "churchofjesuschrist.customdomains.okta.com"
         },
         {
-            "original": "login.nikonsso.com",
-            "resolved": "nikon.customdomains.okta.com"
+            "original": "ssologin.wm.com",
+            "resolved": "wm.customdomains.okta.com"
         },
         {
             "original": "ssosignon.servicenow.com",
@@ -41,8 +41,7 @@
             "fingerprinting": 0,
             "subdomains": [
                 "servicenowsignon.customdomains",
-                "sas.customdomains",
-                "nikon.customdomains"
+                "wm.customdomains"
             ],
             "apis": {},
             "sites": 3,
@@ -53,12 +52,47 @@
                     "resolved": "servicenowsignon.customdomains.okta.com"
                 },
                 {
+                    "original": "ssologin.wm.com",
+                    "resolved": "wm.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "b2cde401a21348c30b86ab842bb9c801f18f82509af5cf15a4030bfad16bb10d",
+                "087c02cb3d20490496ab57c7264b20b312320a4b32bb7c1e26c66febb5ba1b12"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "servicenow.com",
+                "www.wm.com",
+                "your.servicenow.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servicenowsignon.customdomains",
+                "sas.customdomains",
+                "wm.customdomains"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [
+                {
+                    "original": "ssosignon.servicenow.com",
+                    "resolved": "servicenowsignon.customdomains.okta.com"
+                },
+                {
                     "original": "auth.sas.com",
                     "resolved": "sas.customdomains.okta.com"
                 },
                 {
-                    "original": "login.nikonsso.com",
-                    "resolved": "nikon.customdomains.okta.com"
+                    "original": "ssologin.wm.com",
+                    "resolved": "wm.customdomains.okta.com"
                 }
             ],
             "responseHashes": [],
@@ -68,34 +102,35 @@
             "exampleSites": [
                 "servicenow.com",
                 "support.sas.com",
-                "www.nikonusa.com"
+                "www.sas.com",
+                "www.wm.com"
             ]
         },
         {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "rule": "okta\\.com\\/api\\/v1\\/users\\/me",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "servicenowsignon.customdomains"
+                "sas.customdomains"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "ssosignon.servicenow.com",
-                    "resolved": "servicenowsignon.customdomains.okta.com"
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
                 }
             ],
             "responseHashes": [
-                "553f4de797c6260d8387f68791a49b7ff7c8305c58488f829d82d771059d9ef8"
+                "f3b4d4508a2f6f3b32d03af088e754630f77ce0211d193b418dfc8e7177cb520"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "servicenow.com",
-                "www.servicenow.com"
+                "sas.com",
+                "www.sas.com"
             ]
         },
         {
@@ -104,8 +139,7 @@
             "fingerprinting": 0,
             "subdomains": [
                 "sas.customdomains",
-                "churchofjesuschrist.customdomains",
-                "nikon.customdomains"
+                "churchofjesuschrist.customdomains"
             ],
             "apis": {},
             "sites": 3,
@@ -118,14 +152,10 @@
                 {
                     "original": "id.churchofjesuschrist.org",
                     "resolved": "churchofjesuschrist.customdomains.okta.com"
-                },
-                {
-                    "original": "login.nikonsso.com",
-                    "resolved": "nikon.customdomains.okta.com"
                 }
             ],
             "responseHashes": [
-                "b4e02651d1728bc5c3120df5017c343ded54645a86a107b18c154bc6d01b00a4"
+                "20c68378e64bfda6e4abb355a0c6776f72c8a910527ebe54dded4478c0f5e343"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -133,30 +163,30 @@
             "exampleSites": [
                 "sas.com",
                 "www.churchofjesuschrist.org",
-                "www.nikonusa.com"
+                "www.sas.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000603,
     "topInitiators": [
         {
-            "domain": "azureedge.net",
-            "prevalence": 0.3333333333333333
-        },
-        {
             "domain": "oktacdn.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.5714285714285714
         },
         {
-            "domain": "nikon-cdn.com",
-            "prevalence": 0.3333333333333333
+            "domain": "appdynamics.com",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "azureedge.net",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Preflight": 3,
-        "XHR": 2,
+        "XHR": 5,
+        "Preflight": 4,
         "Fetch": 3
     },
     "nameservers": []

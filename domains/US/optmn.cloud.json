@@ -37,11 +37,15 @@
         {
             "rule": "optmn\\.cloud\\/hb\\/playmaker-adapter\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 5,
             "prevalence": 0.0000339,
             "cnames": [],
@@ -62,16 +66,18 @@
         {
             "rule": "optmn\\.cloud\\/hb\\/walla-adapter\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 3
+            },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "ddc97cbd838c1e207781cd79cbe8fe22d6a1777e7b991fa17827ffa561dd87d4"
+                "425685b6df28b4f52e5a33d805cf40030e2645c1afb72ff34a05d2e3e782f92a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -80,6 +86,39 @@
                 "maariv.co.il",
                 "m.maariv.co.il",
                 "www.maariv.co.il"
+            ]
+        },
+        {
+            "rule": "optmn\\.cloud\\/hb\\/publisherdeskcom-adapter\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 7,
+                "Navigator.prototype.userAgent": 6,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 9,
+            "prevalence": 0.000061,
+            "cnames": [],
+            "responseHashes": [
+                "56c3cd04be0894d842472f75cfd1f06059ee1fdfacc51189696e6aac2740aa5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationaltoday.com",
+                "sportsnaut.com",
+                "sportspyder.com",
+                "thegrio.com",
+                "www.dreadcentral.com",
+                "www.goalcast.com",
+                "www.maxim.com",
+                "www.toddstarnes.com",
+                "www.washingtonexaminer.com"
             ]
         },
         {
@@ -94,7 +133,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "0321e47532a9287a87b5eb35b5261e0a9d38707f5e9d3fec2dda4f87dfb204f4"
+                "e976023606aa51419be4b62dcda2791fb409c90b95f2665c4b33bf78c4447509"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -103,36 +142,6 @@
                 "slobodnadalmacija.hr",
                 "sportske.jutarnji.hr",
                 "www.jutarnji.hr"
-            ]
-        },
-        {
-            "rule": "optmn\\.cloud\\/hb\\/publisherdeskcom-adapter\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Document.cookie getter": 6,
-                "Navigator.prototype.userAgent": 5,
-                "Date.prototype.getTime": 4
-            },
-            "sites": 6,
-            "prevalence": 0.0000407,
-            "cnames": [],
-            "responseHashes": [
-                "455f15159fba344488b43086880e5d06535c10d562142c1c65be30bfd959e1c5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sportsnaut.com",
-                "thegrio.com",
-                "www.goalcast.com",
-                "www.maxim.com",
-                "www.toddstarnes.com",
-                "www.washingtonexaminer.com"
             ]
         },
         {
@@ -197,9 +206,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -215,14 +222,14 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5555555555555556
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.17777777777777778
+            "prevalence": 0.5333333333333333
         },
         {
             "domain": "tpdads.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "googletagmanager.com",
             "prevalence": 0.17777777777777778
         },
         {
@@ -231,7 +238,7 @@
         }
     ],
     "types": {
-        "Script": 25
+        "Script": 28
     },
     "nameservers": [
         "cleo.ns.cloudflare.com",

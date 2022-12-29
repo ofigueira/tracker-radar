@@ -12,9 +12,14 @@
     "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "nd"
+        "nd",
+        "api"
     ],
     "cnames": [
+        {
+            "original": "api.nasdaq.com",
+            "resolved": "api.nasdaq.com.edgekey.net"
+        },
         {
             "original": "nd.nasdaq.com",
             "resolved": "nd.nasdaq.com.edgekey.net"
@@ -48,6 +53,89 @@
                 "nasdaq.com",
                 "www.nasdaq.com"
             ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/quote\\/basic",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nasdaq.com",
+                    "resolved": "api.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "46554ea3731caf28ac41ec31a36ac89cb4c930eb05eebe40fc6a2861b3e738bf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/api\\/marketmovers",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.nasdaq.com",
+                    "resolved": "api.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2c1c28e42337783878d52c46fe976dee67cedd465b87e6b6f9cc6da55cc13475"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
+        },
+        {
+            "rule": "nasdaq\\.com\\.edgekey\\.net\\/index\\.php\\/form\\/getForm",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "nd.nasdaq.com",
+                    "resolved": "nd.nasdaq.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b6d3843f780f0f64e2581654459968c08e0ca8d9250ccadbe97e0431bb12db56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020074274816822243
+            },
+            "exampleSites": [
+                "nasdaq.com",
+                "www.nasdaq.com"
+            ]
         }
     ],
     "categories": [],
@@ -56,15 +144,12 @@
     "topInitiators": [
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.5
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 4
     },
     "nameservers": []
 }

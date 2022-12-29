@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "sdk"
+        "sdk",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,7 +22,8 @@
             ],
             "apis": {
                 "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -48,8 +50,74 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ce770559878e7f5503a16ffc5c2517c131c271876434ce9cc763ff6c5e92295b"
+            ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laurageller.com",
+                "www.laurageller.com"
+            ]
+        },
+        {
+            "rule": "formtoro\\.com\\/components\\/formtoro\\/p-72f60933\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79a89eb620c7168184323d0fd42f060094bcc7e62d25c912072ff8ad62f72c8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laurageller.com",
+                "www.laurageller.com"
+            ]
+        },
+        {
+            "rule": "formtoro\\.com\\/session\\/start",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89d7cf54c6d524e8d7d676fb303057ab5827dae7b65371641f37f630e77e938b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laurageller.com",
+                "www.laurageller.com"
+            ]
+        },
+        {
+            "rule": "formtoro\\.com\\/session\\/start",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -64,11 +132,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "intelligems.io",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 6,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns73.domaincontrol.com",

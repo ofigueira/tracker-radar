@@ -7,12 +7,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000701,
-    "sites": 7,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "e-10832",
         "e-10875",
+        "e-10220",
         "static",
+        "engine",
         "e-4669",
         "e-9701",
         "e-11076",
@@ -32,11 +34,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "e-10832",
-                "e-10875"
+                "e-10875",
+                "e-10220"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "meeple.geekdo.com",
@@ -49,7 +52,36 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boardgamegeek.com",
-                "coinmarketcap.com"
+                "coinmarketcap.com",
+                "wetransfer.com"
+            ]
+        },
+        {
+            "rule": "adzerk\\.net\\/api\\/v2",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e-10832",
+                "e-10220"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "meeple.geekdo.com",
+                    "resolved": "e-10832.adzerk.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boardgamegeek.com",
+                "wetransfer.com"
             ]
         },
         {
@@ -57,14 +89,15 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "static"
+                "static",
+                "engine"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
+                "Date.prototype.getTime": 3,
                 "Document.cookie getter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0002,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "c88b748226e610c650313f48af58dac4f3c0d4b75a5364efabc3119648771f3f"
@@ -74,7 +107,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "distrowatch.com",
-                "www.allegiantair.com"
+                "www.allegiantair.com",
+                "www.eros.com"
             ]
         },
         {
@@ -91,8 +125,8 @@
             "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "d1c6df14833dd38df42249de8428f1937f5c017058a369013f77da559268cff0",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "81b653e6cdc08ac177acc6698b78e83edd7a532bbc972e1e6e255e1d80c008c6",
+                "772270e2aaf37cc155f36d10cf0dfbcaa836e5fd7f0af9d5c3f1cb046aa349a2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -105,16 +139,17 @@
         },
         {
             "rule": "adzerk\\.net\\/i\\.gif",
-            "cookies": 0.000301,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "e-4669",
                 "e-9701",
-                "e-10457"
+                "e-10457",
+                "e-11076"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -125,35 +160,45 @@
             "exampleSites": [
                 "distrowatch.com",
                 "stockhouse.com",
-                "unsplash.com"
+                "unsplash.com",
+                "www.allegiantair.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000701,
+    "cookies": 0.000703,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7272727272727273
+            "prevalence": 0.625
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.125
         },
         {
             "domain": "geekdo-static.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.0625
+        },
+        {
+            "domain": "wetransfer.net",
+            "prevalence": 0.0625
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.0625
         },
         {
             "domain": "casalemedia.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Script": 5,
-        "Image": 3
+        "Preflight": 3,
+        "XHR": 2,
+        "Script": 6,
+        "Image": 4
     },
     "nameservers": [
         "ns-106.awsdns-13.com",

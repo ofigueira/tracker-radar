@@ -10,8 +10,8 @@
         "session.cdn",
         "marketing",
         "cma.cdn",
-        "et.cdn",
-        "formservice.cdn"
+        "formservice.cdn",
+        "et.cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,11 +25,13 @@
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "Navigator.prototype.connection": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.connection": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -39,16 +41,22 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "landingurl": {
+                    "ttl": null,
+                    "length": 35,
+                    "prevalence": 0.000013550961779512302,
+                    "uniqueness": 1
+                },
                 "CMP_NO-ACT": {
-                    "ttl": 3605,
+                    "ttl": 3602,
                     "length": 308,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.000013550961779512302,
                     "uniqueness": 1
                 },
                 "act_history": {
-                    "ttl": 31536006,
+                    "ttl": 31536008,
                     "length": 36,
-                    "prevalence": 0.000013562540263791409,
+                    "prevalence": 0.000013550961779512302,
                     "uniqueness": 1
                 }
             },
@@ -70,7 +78,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4d315edf6617be7f614b8afaa5012ae1544c1535ec4e6056a8eb44cffefc6ec5"
+                "a75476921f70fff1674c318e4e8ad84142dee92db09bafe2e14cc6000a3b69ba"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -97,28 +105,8 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013562540263791409
+                "_li_dcdm_c": 0.000013550961779512302
             },
-            "exampleSites": [
-                "hear.com",
-                "www.hear.com"
-            ]
-        },
-        {
-            "rule": "audibene\\.net\\/services\\/collector\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "et.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hear.com",
                 "www.hear.com"
@@ -138,6 +126,26 @@
             "responseHashes": [
                 "eb10515cc0e8822718e31d73af1bdc214fb278b15233fe33044d6e9ac1074538"
             ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hear.com",
+                "www.hear.com"
+            ]
+        },
+        {
+            "rule": "audibene\\.net\\/services\\/collector\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "et.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -169,9 +177,9 @@
         "Fetch": 8
     },
     "nameservers": [
-        "ns-1967.awsdns-53.co.uk",
         "ns-1469.awsdns-55.org",
-        "ns-426.awsdns-53.com",
-        "ns-657.awsdns-18.net"
+        "ns-1967.awsdns-53.co.uk",
+        "ns-657.awsdns-18.net",
+        "ns-426.awsdns-53.com"
     ]
 }
