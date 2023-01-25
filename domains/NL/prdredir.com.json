@@ -4,25 +4,65 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000504,
+    "sites": 5,
     "subdomains": [
-        "rtg",
-        "scripts"
+        "scripts",
+        "rtg"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "prdredir\\.com\\/scripts\\/k_alibaba\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 2,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.webkitTemporaryStorage": 1,
+                "Performance.prototype.memory": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "ec2a0c229546fdc2d2ba5ae6e3486bdfb1e83eb37c53b5e28015cf9a82995e82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__user_id": {
+                    "ttl": 31536015,
+                    "length": 25,
+                    "prevalence": 0.00010087763542822556,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alibaba.com",
+                "www.alibaba.com"
+            ]
+        },
+        {
             "rule": "prdredir\\.com\\/sync",
-            "cookies": 0.000301,
+            "cookies": 0.000303,
             "fingerprinting": 0,
             "subdomains": [
                 "rtg"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -30,9 +70,10 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__user_id": 0.00020080321285140563,
-                "_ym_d": 0.00010040160642570282,
-                "_schn": 0.00010040160642570282
+                "__user_id": 0.00020175527085645111,
+                "_ym_d": 0.00010087763542822556,
+                "_schn": 0.00010087763542822556,
+                "__tid": 0.00010087763542822556
             },
             "exampleSites": [
                 "alibaba.com",
@@ -42,7 +83,7 @@
         },
         {
             "rule": "prdredir\\.com\\/scripts\\/k_movavi\\.js",
-            "cookies": 0.000201,
+            "cookies": 0.000202,
             "fingerprinting": 1,
             "subdomains": [
                 "scripts"
@@ -56,13 +97,18 @@
                 "window.name": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [
-                "b9359a84fe59ef7a4a690f8da6cf0b79423fa90c9a1b67375ff2143d1a7e3595"
-            ],
+            "responseHashes": [],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__tid": {
+                    "ttl": 31536013,
+                    "length": 33,
+                    "prevalence": 0.00020175527085645111,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "movavi.com",
@@ -72,31 +118,35 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000303,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5
+            "prevalence": 0.375
         },
         {
             "domain": "alicdn.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.25
         },
         {
             "domain": "trmit.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.125
+        },
+        {
+            "domain": "mediamathrdrt.com",
+            "prevalence": 0.125
         },
         {
             "domain": "first party",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Image": 3,
-        "Script": 2
+        "Script": 4,
+        "Image": 3
     },
     "nameservers": [
-        "porter.ns.cloudflare.com",
-        "nataly.ns.cloudflare.com"
+        "nataly.ns.cloudflare.com",
+        "porter.ns.cloudflare.com"
     ]
 }

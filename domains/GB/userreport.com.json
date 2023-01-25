@@ -9,14 +9,14 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.001,
-    "sites": 10,
+    "prevalence": 0.00116,
+    "sites": 13,
     "subdomains": [
+        "tag",
+        "visitanalytics",
         "audex",
         "sak",
         "cdn",
-        "tag",
-        "visitanalytics",
         "cdw-dcl",
         "pdw-adf"
     ],
@@ -24,15 +24,77 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "userreport\\.com\\/server\\.html",
+            "cookies": 0.000445,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5
+            },
+            "sites": 6,
+            "prevalence": 0.000535,
+            "cnames": [],
+            "responseHashes": [
+                "41c12262453783f916105c53e3513dcf49cfae58b805b09c92eeac8d43b8b022"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 3,
+                    "length": 9,
+                    "prevalence": 0.00044543429844097997,
+                    "uniqueness": 0.2
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketscreener.com",
+                "www.croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red",
+                "www.topgear.com",
+                "yts.mx"
+            ]
+        },
+        {
+            "rule": "userreport\\.com\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "visitanalytics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000267,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketscreener.com",
+                "www.topgear.com",
+                "yts.mx"
+            ]
+        },
+        {
             "rule": "userreport\\.com\\/sync\\/init\\/amazon",
-            "cookies": 0.000201,
+            "cookies": 0.000178,
             "fingerprinting": 0,
             "subdomains": [
                 "audex"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -45,14 +107,14 @@
         },
         {
             "rule": "userreport\\.com\\/sync\\/put\\/amazon",
-            "cookies": 0.000201,
+            "cookies": 0.000178,
             "fingerprinting": 0,
             "subdomains": [
                 "audex"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -75,7 +137,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
                 "80fdae715543d8a5323eba880cd053f8263240941ff057c7251accc824cd5273"
@@ -96,21 +158,21 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3,
-                "window.innerWidth": 3,
-                "window.innerHeight": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "window.devicePixelRatio": 3,
-                "Navigator.prototype.appVersion": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "window.name": 3
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "window.innerWidth": 5,
+                "window.innerHeight": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "window.devicePixelRatio": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "window.name": 5
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000445,
             "cnames": [],
             "responseHashes": [
                 "d9490eae5e266f6af8c69b614b88bb2ef104decdd9fa7ce1363e9a78e2ee347a"
@@ -119,8 +181,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
-                "www.croxyproxy.com",
+                "croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
             ]
         },
@@ -132,8 +196,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000267,
             "cnames": [],
             "responseHashes": [
                 "6b8117a56d756ce4021f0773d384069aac7187ab701e9226c5f78e355e304e6e"
@@ -142,8 +206,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
-                "www.croxyproxy.com"
+                "croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red"
             ]
         },
         {
@@ -154,8 +219,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000445,
             "cnames": [],
             "responseHashes": [
                 "9464552e64337889ef3a9dc120396d91f87b2015ad60a8bc0b61d846839f28af"
@@ -164,44 +229,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
-                "www.croxyproxy.com",
-                "yts.mx"
-            ]
-        },
-        {
-            "rule": "userreport\\.com\\/server\\.html",
-            "cookies": 0.000201,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tag"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "41c12262453783f916105c53e3513dcf49cfae58b805b09c92eeac8d43b8b022"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {
-                "cookies.js": {
-                    "ttl": 6,
-                    "length": 9,
-                    "prevalence": 0.00020074274816822243,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "croxyproxy.net",
-                "www.croxyproxy.com",
+                "croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
             ]
         },
@@ -213,8 +244,8 @@
                 "visitanalytics"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 6,
+            "prevalence": 0.000535,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -223,8 +254,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
+                "croxyproxy.com",
                 "www.croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
             ]
         },
@@ -236,17 +270,19 @@
                 "cdw-dcl"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 6,
+            "prevalence": 0.000535,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
-                "www.croxyproxy.net",
+                "croxyproxy.com",
                 "www.croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
             ]
         },
@@ -258,8 +294,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000445,
             "cnames": [],
             "responseHashes": [
                 "7d8c62049816b4a834204bb3a79b014f88a6c6dc916e7ab26abf0d40c2e69ed4"
@@ -268,8 +304,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
-                "www.croxyproxy.com",
+                "croxyproxy.com",
+                "www.croxyproxy.net",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
             ]
         },
@@ -281,8 +319,8 @@
                 "audex"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000445,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -291,9 +329,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
+                "croxyproxy.com",
                 "www.croxyproxy.net",
-                "www.croxyproxy.com",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
             ]
         },
@@ -305,8 +344,8 @@
                 "cdw-dcl"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000401,
+            "sites": 5,
+            "prevalence": 0.000445,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -315,10 +354,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "croxyproxy.net",
+                "croxyproxy.com",
                 "www.croxyproxy.net",
-                "www.croxyproxy.com",
+                "www.croxy.red",
+                "www.topgear.com",
                 "yts.mx"
+            ]
+        },
+        {
+            "rule": "userreport\\.com\\/immediate\\/launcher\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sak"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000178,
+            "cnames": [],
+            "responseHashes": [
+                "ef9752c0dd61f72ae84fc2798ecb81a0b504de55932d9fd5b0d98b770510a185"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deliciousmagazine.co.uk",
+                "www.topgear.com"
             ]
         },
         {
@@ -330,7 +397,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -352,38 +419,42 @@
         "Audience Measurement"
     ],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000713,
     "topInitiators": [
         {
-            "domain": "amazon-adsystem.com",
-            "prevalence": 0.3076923076923077
+            "domain": "first party",
+            "prevalence": 0.375
         },
         {
-            "domain": "first party",
-            "prevalence": 0.3076923076923077
+            "domain": "amazon-adsystem.com",
+            "prevalence": 0.25
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.15384615384615385
+            "prevalence": 0.125
         },
         {
             "domain": "adform.net",
-            "prevalence": 0.15384615384615385
+            "prevalence": 0.125
+        },
+        {
+            "domain": "adscale.de",
+            "prevalence": 0.0625
         },
         {
             "domain": "permutive.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Image": 21,
-        "Script": 13,
-        "Document": 3
+        "Document": 6,
+        "Image": 31,
+        "Script": 22
     },
     "nameservers": [
-        "ns-187.awsdns-23.com",
-        "ns-548.awsdns-04.net",
+        "ns-1439.awsdns-51.org",
         "ns-1806.awsdns-33.co.uk",
-        "ns-1439.awsdns-51.org"
+        "ns-187.awsdns-23.com",
+        "ns-548.awsdns-04.net"
     ]
 }

@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000506,
+    "sites": 7,
     "subdomains": [
-        "yotrack.cdn"
+        "yotrack.cdn",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -18,13 +19,15 @@
         {
             "rule": "ybn\\.io\\/yotrack\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "yotrack.cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000217,
             "cnames": [],
             "responseHashes": [
                 "9b06b7f56438263caf57ccc8cccafbbc6b0ade530c6932af486897c9fe4c8ce2"
@@ -34,7 +37,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "budgetblinds.com",
-                "mrelectric.com"
+                "mrelectric.com",
+                "www.flooringamerica.com"
+            ]
+        },
+        {
+            "rule": "ybn\\.io\\/yo-corp-swap\\/1\\.4\\.2\\/yo-corp-swap\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000145,
+            "cnames": [],
+            "responseHashes": [
+                "c4531d02469b41f35b3af1f7eeabee3dec4cd177ba26fa80c939342b42537057"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rebath.com",
+                "www.rebath.com"
             ]
         }
     ],
@@ -48,13 +76,12 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 5
     },
     "nameservers": [
         "dns1.name-services.com",
-        "dns3.name-services.com",
-        "dns2.name-services.com",
         "dns5.name-services.com",
-        "dns4.name-services.com"
+        "dns4.name-services.com",
+        "dns2.name-services.com"
     ]
 }
