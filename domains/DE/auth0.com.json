@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000529,
+    "sites": 6,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
     ],
     "cnames": [
@@ -21,25 +22,34 @@
         {
             "original": "login.arduino.cc",
             "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.ireland.com",
+            "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000201,
+            "cookies": 0.000264,
             "fingerprinting": 0,
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000264,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
                     "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
                 },
                 {
                     "original": "auth.native-instruments.com",
@@ -47,22 +57,114 @@
                 }
             ],
             "responseHashes": [
-                "21d3120f440a2e69a0165c4a093693e2e3df3d424fbe6d77ab480ad3b36b14c7"
+                "d8bb718e4824375a1e12b0aaded654ae75e48bb48ede23618778ce30c75b6fa5",
+                "8cfc577722dcd29d26b9bdd2de313471a167a3419b48c9fe86d82e359bae1a7e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "arduino.cc",
+                "www.ireland.com",
                 "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/usernamepassword\\/challenge",
+            "cookies": 0.000176,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000176,
+            "cnames": [
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/client\\/NoHUbkPTHIyq4HDAb7n2cnOZx8xZiKaj\\.js",
+            "cookies": 0.000176,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000176,
+            "cnames": [
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [
+                "d3479aa9952c8c0c7ab819f3687130f5c9d4fb86a840e9954a94da1c2ca2745f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/usernamepassword\\/challenge",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000176,
+            "cnames": [
+                {
+                    "original": "login.ireland.com",
+                    "resolved": "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ireland.com",
+                "www.ireland.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000264,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.16666666666666666
+        }
+    ],
     "types": {
-        "Document": 2
+        "Document": 3,
+        "Preflight": 2,
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

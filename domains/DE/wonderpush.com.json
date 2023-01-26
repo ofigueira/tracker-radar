@@ -7,14 +7,100 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000441,
+    "sites": 5,
     "subdomains": [
-        "cdn.by"
+        "cdn.by",
+        "measurements-api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "wonderpush\\.com\\/sdk\\/1\\.1\\/wonderpush-loader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.by"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000352,
+            "cnames": [],
+            "responseHashes": [
+                "77739da5d7f08eb8f3c4570bb628aa068acd7f2942abf1a1a1c3aee68ebc9041"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meilenoptimieren.com",
+                "www.biathlonworld.com",
+                "www.reutlingen.de",
+                "www.schule-und-familie.de"
+            ]
+        },
+        {
+            "rule": "wonderpush\\.com\\/sdk\\/1\\.1\\.33\\.13\\/wonderpush\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.by"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.indexedDB": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.permissions": 3,
+                "Navigator.prototype.language": 3,
+                "Notification.permission": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "Navigator.prototype.languages": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000264,
+            "cnames": [],
+            "responseHashes": [
+                "59e0ea7d539401a1f3cd924bf43e2b04e351e53735cdcb6385d2bb67071cf287"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meilenoptimieren.com",
+                "www.biathlonworld.com",
+                "www.schule-und-familie.de"
+            ]
+        },
+        {
+            "rule": "wonderpush\\.com\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "measurements-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000264,
+            "cnames": [],
+            "responseHashes": [
+                "aa2f199c342cc40b239712d224f89b787d92c3a1898c24377524117f1bbf6878",
+                "67e618d9703a5d4478951b364ad4508083c191dbbddd9a94ca0cdafbc43c5feb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meilenoptimieren.com",
+                "www.biathlonworld.com",
+                "www.schule-und-familie.de"
+            ]
+        },
         {
             "rule": "wonderpush\\.com\\/sdk\\/1\\.1\\/wonderpush-loader\\.min\\.js",
             "cookies": 0,
@@ -26,17 +112,51 @@
                 "window.localStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000176,
             "cnames": [],
             "responseHashes": [
-                "07c55f70206257d11dc9c5c3a0bc8f8b1056866a7422adf1542e9768944eab30"
+                "77739da5d7f08eb8f3c4570bb628aa068acd7f2942abf1a1a1c3aee68ebc9041"
             ],
-            "type": "Script",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "reutlingen.de",
-                "www.schule-und-familie.de"
+                "meilenoptimieren.com",
+                "tamaris.com"
+            ]
+        },
+        {
+            "rule": "wonderpush\\.com\\/sdk\\/1\\.1\\.33\\.13\\/wonderpush\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.by"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.indexedDB": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.permissions": 1,
+                "Navigator.prototype.language": 1,
+                "Notification.permission": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Navigator.prototype.languages": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000176,
+            "cnames": [],
+            "responseHashes": [
+                "59e0ea7d539401a1f3cd924bf43e2b04e351e53735cdcb6385d2bb67071cf287"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meilenoptimieren.com",
+                "tamaris.com"
             ]
         }
     ],
@@ -46,16 +166,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.08333333333333333
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 7,
+        "XHR": 3,
+        "Other": 4
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e4.googledomains.com",
         "ns-cloud-e2.googledomains.com",
-        "ns-cloud-e3.googledomains.com",
-        "ns-cloud-e4.googledomains.com"
+        "ns-cloud-e3.googledomains.com"
     ]
 }

@@ -7,14 +7,50 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000267,
+    "sites": 3,
     "subdomains": [
-        "counter"
+        "snippet",
+        "counter",
+        "apv-static"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "tldw\\.me\\/tv\\/0\\.41\\.79\\/tvp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "snippet"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Date.prototype.getTime": 3,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "window.name": 3,
+                "URL.createObjectURL": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000267,
+            "cnames": [],
+            "responseHashes": [
+                "e8b046a2471f7dad9cc5d41ebdb76fa6dc4ce032f59911048a0882f80c417f8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ausopen.com",
+                "www.carsguide.com.au",
+                "www.fis-ski.com"
+            ]
+        },
         {
             "rule": "tldw\\.me\\/_\\.gif",
             "cookies": 0,
@@ -23,16 +59,61 @@
                 "counter"
             ],
             "apis": {},
+            "sites": 3,
+            "prevalence": 0.000267,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ausopen.com",
+                "www.carsguide.com.au",
+                "www.fis-ski.com"
+            ]
+        },
+        {
+            "rule": "tldw\\.me\\/videos\\/v-838ea3a0-1cd4-449d-2496994-8af2-fcf6040fa1c1-s301\\.08-309\\.92tvl\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apv-static"
+            ],
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [],
-            "type": "Ping",
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "carsguide.com.au",
                 "www.carsguide.com.au"
+            ]
+        },
+        {
+            "rule": "tldw\\.me\\/videos\\/v-98fa7244-1b66-48cb-2538197-9dfd-390bceea0ecb-s2360\\.0-2368\\.0tvl\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000178,
+            "cnames": [],
+            "responseHashes": [
+                "fcec7889db7f879ec4e2e2cfd31422195c3537074c13dd554b03d00277bc1143"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fis-ski.com",
+                "www.fis-ski.com"
             ]
         }
     ],
@@ -42,18 +123,20 @@
     "topInitiators": [
         {
             "domain": "minute.ly",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5
         },
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Ping": 2
+        "Script": 3,
+        "Ping": 3,
+        "Media": 4
     },
     "nameservers": [
-        "leah.ns.cloudflare.com",
-        "ray.ns.cloudflare.com"
+        "ray.ns.cloudflare.com",
+        "leah.ns.cloudflare.com"
     ]
 }

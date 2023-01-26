@@ -4,16 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000145,
     "sites": 2,
     "subdomains": [
         "webview",
         "app",
         "cdn-v1",
-        "socket"
+        "socket",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "intelliticks\\.com\\/cuemath\\/script\\.min\\.js",
@@ -23,10 +24,11 @@
                 "webview"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [
                 "a5f77a534b51e520c434864730d2d5fab44fe906f474b81744241c22a64d209f"
@@ -48,12 +50,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4d4452ecaf3624c6921918c445ee58a7e8cccec519e4d13c194dee3910529c71"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "landing_page": 0.000007225642359605769,
+                "last_page": 0.000007225642359605769
+            },
             "exampleSites": [
                 "cuemath.com",
                 "www.cuemath.com"
@@ -68,9 +75,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "d4797a98d21316f3bec7b4fb50bf77a02d486920b612ab6fed380d35e1f58f79"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -88,9 +97,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "184696cc848139d0a298f331b1686169f5a8048c5b155bc3f3e81ed7b07c26fb"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -102,15 +113,22 @@
         {
             "rule": "intelliticks\\.com\\/prod\\/20220507\\/client\\/all-v2-lite\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn-v1"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "343b52ab02a49f4876d4c2c0adeb0bcaf71a0799f824956a9b20c40ac65d350c"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -122,15 +140,20 @@
         {
             "rule": "intelliticks\\.com\\/prod\\/20220507\\/client\\/client\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn-v1"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "154aa5424af3b82717c692cb95930e017ffbd7c2f42090255484369ea1b96f76"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -148,7 +171,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -168,10 +191,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cuemath.com",
+                "www.cuemath.com"
+            ]
+        },
+        {
+            "rule": "intelliticks\\.com\\/prod\\/common\\/assets\\/chat_icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000145,
+            "cnames": [],
+            "responseHashes": [
+                "a30ff01e7cc94cd5b9632509477948f63e387619ebe7791fb2953ba36f959b34"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -186,17 +231,22 @@
     "topInitiators": [
         {
             "domain": "qumath.in",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "learnosity.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
         "Script": 6,
         "Document": 2,
         "Stylesheet": 4,
-        "WebSocket": 4
+        "WebSocket": 4,
+        "Image": 2
     },
     "nameservers": [
-        "beau.ns.cloudflare.com",
-        "candy.ns.cloudflare.com"
+        "candy.ns.cloudflare.com",
+        "beau.ns.cloudflare.com"
     ]
 }

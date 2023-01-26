@@ -4,14 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000061,
-    "sites": 9,
+    "prevalence": 0.00013,
+    "sites": 18,
     "subdomains": [
         "vod-gcs-cedexis",
         "vod-gcs-google",
-        "vod-gcs-fastly",
+        "syncbak-mediastore-fastly",
+        "vod-gcs-akamai",
         "vod-gcs-lumen",
-        "availability-edgecast.syncbak-mediastore-cedexis"
+        "availability-fastly.syncbak-mediastore-cedexis",
+        "vod-gcs-fastly",
+        "availability-cloudfront.syncbak-mediastore-cedexis",
+        "availability-edgecast.syncbak-mediastore-cedexis",
+        "vod-gcs-edgecast"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -25,7 +30,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -45,7 +50,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [],
             "type": "Media",
@@ -57,18 +62,71 @@
             ]
         },
         {
-            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "rule": "cbsaavideo\\.com\\/measurements\\/r20\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "vod-gcs-google",
-                "vod-gcs-fastly",
-                "vod-gcs-lumen",
-                "availability-edgecast.syncbak-mediastore-cedexis"
+                "syncbak-mediastore-fastly",
+                "vod-gcs-akamai"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000407,
+            "sites": 3,
+            "prevalence": 0.0000217,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.cbs.com",
+                "www.paramountplus.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vod-gcs-lumen",
+                "syncbak-mediastore-fastly"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000217,
+            "cnames": [],
+            "responseHashes": [
+                "3f7cd636f2b4d285468bb4f8516e69edd13d866bb57e4537ee35ea8761a35a6a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.cbs.com",
+                "www.paramountplus.com"
+            ]
+        },
+        {
+            "rule": "cbsaavideo\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "availability-fastly.syncbak-mediastore-cedexis",
+                "vod-gcs-fastly",
+                "availability-cloudfront.syncbak-mediastore-cedexis",
+                "vod-gcs-google",
+                "availability-edgecast.syncbak-mediastore-cedexis",
+                "vod-gcs-edgecast",
+                "vod-gcs-lumen",
+                "vod-gcs-akamai"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000867,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -77,12 +135,18 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bet.com",
+                "paramountplus.com",
+                "southpark.cc.com",
                 "www.bet.com",
                 "www.cc.com",
                 "www.cmt.com",
-                "www.logotv.com",
-                "www.mtv.de"
+                "www.mtv.com",
+                "www.mtv.de",
+                "www.paramountnetwork.com",
+                "www.paramountplus.com",
+                "www.smithsonianchannel.com",
+                "www.southpark.de",
+                "www.southparkstudios.com"
             ]
         }
     ],
@@ -91,22 +155,32 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.7931034482758621
+            "domain": "cedexis.com",
+            "prevalence": 0.4895833333333333
         },
         {
-            "domain": "cedexis.com",
-            "prevalence": 0.20689655172413793
+            "domain": "first party",
+            "prevalence": 0.3645833333333333
+        },
+        {
+            "domain": "cbsivideo.com",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "cc.com",
+            "prevalence": 0.0625
         }
     ],
     "types": {
         "Media": 4,
-        "Fetch": 6
+        "Image": 3,
+        "XHR": 3,
+        "Fetch": 12
     },
     "nameservers": [
-        "ns-956.awsdns-55.net",
-        "ns-154.awsdns-19.com",
+        "ns-1404.awsdns-47.org",
         "ns-1961.awsdns-53.co.uk",
-        "ns-1404.awsdns-47.org"
+        "ns-956.awsdns-55.net",
+        "ns-154.awsdns-19.com"
     ]
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000289,
+    "sites": 4,
     "subdomains": [
         "exposure.api"
     ],
@@ -20,8 +20,8 @@
                 "exposure.api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 4,
+            "prevalence": 0.0000289,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -30,6 +30,7 @@
             "exampleSites": [
                 "rtbf.be",
                 "auvio.rtbf.be",
+                "www.dhnet.be",
                 "www.rtbf.be"
             ]
         },
@@ -42,10 +43,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [
-                "e62b44dcb37d96c23c2c5e199a58607437bec9f5b2e8deaff5899dbf2d86788e"
+                "0b72197516b82a02aaf50938fe583fd962ca53ea15994d23ba29a92e77a834fa"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -53,6 +54,28 @@
             "exampleSites": [
                 "rtbf.be",
                 "auvio.rtbf.be"
+            ]
+        },
+        {
+            "rule": "redbee\\.live\\/v2\\/customer\\/RTBF\\/businessunit\\/Auvio\\/auth\\/anonymous",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "exposure.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000145,
+            "cnames": [],
+            "responseHashes": [
+                "5b87b3c63a85ad9c8590849992fb3c0baf4398d17532c45524870d22c6c56632"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dhnet.be",
+                "www.rtbf.be"
             ]
         }
     ],
@@ -62,17 +85,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "rtbf.be",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Preflight": 3,
-        "Fetch": 2
+        "Preflight": 4,
+        "Fetch": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1-09.azure-dns.com",
-        "ns2-09.azure-dns.net",
         "ns3-09.azure-dns.org",
-        "ns4-09.azure-dns.info"
+        "ns4-09.azure-dns.info",
+        "ns2-09.azure-dns.net",
+        "ns1-09.azure-dns.com"
     ]
 }

@@ -4,17 +4,64 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000178,
+    "sites": 2,
     "subdomains": [
-        "service"
+        "service",
+        "service2"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "mtcaptcha\\.com\\/mtcv1\\/client\\/iframe\\.html",
+            "rule": "mtcaptcha\\.com\\/mtcv1\\/client\\/mtcaptcha\\.min\\.js",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "service"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000178,
+            "cnames": [],
+            "responseHashes": [
+                "1e6bdcc8e1b525e60fd7d63b6ff1edb79a3b85c92631ce1ea195379c2235c061"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cellularnews.com",
+                "www.cgtrader.com"
+            ]
+        },
+        {
+            "rule": "mtcaptcha\\.com\\/mtcv1\\/client\\/mtcaptcha2\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "service2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000178,
+            "cnames": [],
+            "responseHashes": [
+                "8d0ecc966da9e16df75d933fcf8c00b96dfa7bd2c78caa58813eddb944def133"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cellularnews.com",
+                "www.cgtrader.com"
+            ]
+        },
+        {
+            "rule": "mtcaptcha\\.com\\/mtcv1\\/client\\/iframe\\.html",
+            "cookies": 0.000178,
             "fingerprinting": 2,
             "subdomains": [
                 "service"
@@ -22,21 +69,43 @@
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Navigator.prototype.maxTouchPoints": 1
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
                 "504511397d74741a1253315cfd754c36a38f69b5527d3edcf0f421766a62ce51"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mtv1Pulse": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.00017826900793297085,
+                    "uniqueness": 1
+                },
+                "mtv1ConfSum": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.00017826900793297085,
+                    "uniqueness": 0.5
+                },
+                "jsV": {
+                    "ttl": null,
+                    "length": 19,
+                    "prevalence": 0.00017826900793297085,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020098482564566376
+                "IR_gbd": 0.00017826900793297085,
+                "jsV": 0.0003565380158659417
             },
             "exampleSites": [
                 "cgtrader.com",
@@ -52,15 +121,15 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
-                "faab229e830b11d23cc72a7cd3177431c95742a9b64e55d76aa906313ab9fabd"
+                "2281071855a2ece8600222a12c936223df69a36853dea49217ff2dcf40d65221"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00020098482564566376
+                "IR_gbd": 0.00017826900793297085
             },
             "exampleSites": [
                 "cgtrader.com",
@@ -76,10 +145,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
-                "e97b291d3ea64910ab33c3b0b381a7334ffa4ad55e4e9589543673ac4ebeda9e"
+                "b9e37d8eb8a969deb783d70e4510ae67424c1a8f887ba1022c97e981dbf9c02e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -98,10 +167,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
-                "8da82b24705cc2b4b7cde65f977a1f9d2936e1399fc1d7e583a06c023776504b"
+                "1d61267c703e355496d08ba3fd153970f124e89ab6759069dcb247e1333be7a2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -114,7 +183,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000891,
     "topInitiators": [
         {
             "domain": "first party",
@@ -122,13 +191,14 @@
         }
     ],
     "types": {
+        "Script": 4,
         "Document": 2,
         "XHR": 6
     },
     "nameservers": [
-        "ns-248.awsdns-31.com",
         "ns-1406.awsdns-47.org",
         "ns-952.awsdns-55.net",
-        "ns-1543.awsdns-00.co.uk"
+        "ns-1543.awsdns-00.co.uk",
+        "ns-248.awsdns-31.com"
     ]
 }

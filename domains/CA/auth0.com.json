@@ -7,23 +7,39 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00152,
+    "sites": 17,
     "subdomains": [
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants",
         "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2",
+        "accounts-cd-ejbhnbvunkzho5ah.edge.carfax",
         "coindesk-production.us",
         "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
+        "iberostar.eu",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
         "cdn"
     ],
     "cnames": [
         {
+            "original": "auth.carfax.com",
+            "resolved": "accounts-cd-ejbhnbvunkzho5ah.edge.carfax.auth0.com"
+        },
+        {
             "original": "auth.native-instruments.com",
             "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
         },
         {
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
             "original": "login.finder.com",
             "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.make.co",
+            "resolved": "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants.auth0.com"
         },
         {
             "original": "oauth.airmiles.ca",
@@ -34,21 +50,37 @@
     "resources": [
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000402,
+            "cookies": 0.000713,
             "fingerprinting": 0,
             "subdomains": [
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants",
                 "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2",
+                "accounts-cd-ejbhnbvunkzho5ah.edge.carfax",
                 "coindesk-production.us",
                 "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
+                "iberostar.eu",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 8,
+            "prevalence": 0.000713,
             "cnames": [
+                {
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "login.make.co",
+                    "resolved": "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants.auth0.com"
+                },
                 {
                     "original": "oauth.airmiles.ca",
                     "resolved": "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2.auth0.com"
+                },
+                {
+                    "original": "auth.carfax.com",
+                    "resolved": "accounts-cd-ejbhnbvunkzho5ah.edge.carfax.auth0.com"
                 },
                 {
                     "original": "login.finder.com",
@@ -60,17 +92,26 @@
                 }
             ],
             "responseHashes": [
+                "4fa3bcc604ffc6c6ebfa9c652ee0d61c30661b5aa609369ae0c933de0dd28e45",
+                "09ebe3759322ae60252fc9f8672ea27520c55dd583481f18f44507410eb702f2",
                 "20ccb7f5ce5ea19800103236b9a317350865d24a6984bfa72fafa5106dac8c7e",
-                "c393a453d89edf2f5cb3cf5fc893c4789c5a97fb683156472849b9c45675ce41",
-                "778cf4daa717fd726167826eac35c97b56918c6e439a82137f7104ce789f276d"
+                "aa9a3097669ef188034c9912023e8f022f2f329622a94bd1e66e26048a1e253b",
+                "d794a5766378ce081d8856e6421d0584fee7de8e3d7c2616db0e9fb7bea766da",
+                "e04fc3160975f715a84b296a57cd8cf016b13946783efeb0a746606383cfb700"
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "session_page_site_origin": 0.00008913450396648542
+            },
             "exampleSites": [
-                "airmiles.ca",
+                "arduino.cc",
+                "makezine.com",
+                "www.airmiles.ca",
+                "www.carfax.com",
                 "www.coindesk.com",
                 "www.finder.com",
+                "www.iberostar.com",
                 "www.native-instruments.com"
             ]
         },
@@ -88,7 +129,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000178,
             "cnames": [],
             "responseHashes": [
                 "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
@@ -100,20 +141,57 @@
                 "denverpost.com",
                 "www.mercurynews.com"
             ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.12\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000178,
+            "cnames": [],
+            "responseHashes": [
+                "ff43488279c9b2869622b74bed3f5e02a8ade6110680368d78a566533fe4b91e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ey.com",
+                "www.eytaxcalculators.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000502,
+    "cookies": 0.000802,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7857142857142857
+        },
+        {
+            "domain": "auth0.com",
+            "prevalence": 0.07142857142857142
+        },
+        {
+            "domain": "ey.com",
+            "prevalence": 0.07142857142857142
+        },
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
-        "Document": 4,
-        "Script": 2
+        "Document": 8,
+        "Script": 4
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",
