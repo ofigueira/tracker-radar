@@ -11,9 +11,9 @@
     "sites": 22,
     "subdomains": [
         "tm",
+        "page-context",
         "udr",
         "tracker.bt",
-        "page-context",
         "logger",
         "privacy-sandbox",
         "ads"
@@ -56,6 +56,36 @@
                 "www.receiteria.com.br",
                 "www.voeazul.com.br",
                 "www.voegol.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/api\\/get-page-context",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "page-context"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000434,
+            "cnames": [],
+            "responseHashes": [
+                "69a21998b5178d78d06a8ff06ada149d61c60c2463d258942f9c1619ec61f3c7",
+                "5fe1d73235e457102c9098ecd236e2da9107ed61ed8ee6c39c8bbf78a6b9cc18",
+                "576ecd1f105c13e53727461456f913dcef9fb0aeb64276fbd6a5174a5adba535",
+                "7cfcffb9138647bb09a3cefb53264870bea96f4074249beab50a8e9f8831d08f",
+                "e2cfd462d7ebff6c7740ddff291974a5a511b28c2844482c32f6ff5c33488c0e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jus.com.br",
+                "olhardigital.com.br",
+                "www.gazetadopovo.com.br",
+                "www.infoescola.com",
+                "www.ingresso.com",
+                "www.receiteria.com.br"
             ]
         },
         {
@@ -173,36 +203,6 @@
             ]
         },
         {
-            "rule": "uol\\.com\\.br\\/api\\/get-page-context",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "page-context"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000434,
-            "cnames": [],
-            "responseHashes": [
-                "69a21998b5178d78d06a8ff06ada149d61c60c2463d258942f9c1619ec61f3c7",
-                "5fe1d73235e457102c9098ecd236e2da9107ed61ed8ee6c39c8bbf78a6b9cc18",
-                "576ecd1f105c13e53727461456f913dcef9fb0aeb64276fbd6a5174a5adba535",
-                "7cfcffb9138647bb09a3cefb53264870bea96f4074249beab50a8e9f8831d08f",
-                "e2cfd462d7ebff6c7740ddff291974a5a511b28c2844482c32f6ff5c33488c0e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jus.com.br",
-                "olhardigital.com.br",
-                "www.gazetadopovo.com.br",
-                "www.infoescola.com",
-                "www.ingresso.com",
-                "www.receiteria.com.br"
-            ]
-        },
-        {
             "rule": "uol\\.com\\.br\\/v1\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -308,7 +308,10 @@
             ],
             "type": "Document",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "DEretargeting": 0.000014450867052023121,
+                "dynad_rt": 0.000014450867052023121
+            },
             "exampleSites": [
                 "voeazul.com.br",
                 "www.voeazul.com.br"
@@ -352,15 +355,15 @@
     ],
     "types": {
         "Document": 26,
+        "XHR": 8,
         "Fetch": 11,
         "Script": 8,
-        "XHR": 8,
         "Preflight": 2,
         "Image": 2
     },
     "nameservers": [
-        "charles.uol.com.br",
+        "eliot.uol.com.br",
         "borges.uol.com.br",
-        "eliot.uol.com.br"
+        "charles.uol.com.br"
     ]
 }
