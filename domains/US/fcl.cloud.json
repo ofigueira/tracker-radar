@@ -7,28 +7,36 @@
     "prevalence": 0.0000289,
     "sites": 4,
     "subdomains": [
+        "omni-search-ui.edge.soar",
         "services.prod.websites",
-        "identity-auth-ui.edge.soar",
-        "omni-search-ui.edge.soar"
+        "identity-auth-ui.edge.soar"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "fcl\\.cloud\\/config\\/v2\\/fetch",
+            "rule": "fcl\\.cloud\\/sdk\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "services.prod.websites"
+                "omni-search-ui.edge.soar"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.innerWidth": 2,
+                "Event.prototype.timeStamp": 2
+            },
             "sites": 2,
             "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [
-                "6c12589d2ae06d6fa6197b78cd99f74fe6dc4fc2b766dc7bfdd1ab6dc47c9313"
+                "081e45a74e5b790579e7f355c41a81e852fd994cbbd0e25eacc3566acbe642a9"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,30 +69,6 @@
             ]
         },
         {
-            "rule": "fcl\\.cloud\\/fc-menu\\/v1",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "services.prod.websites"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
-            "responseHashes": [
-                "c3217a90b0c7e49440abd2e968c76538154cb1b698a54f6fabd90425f91c535a",
-                "7b958ba161034bcff3083afeb4100f8366e3b4abacad5199f2374df26bde8e24"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "flightcentre.ca",
-                "www.flightcentre.ca",
-                "www.flightcentre.com.au"
-            ]
-        },
-        {
             "rule": "fcl\\.cloud\\/bootstrap\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -105,6 +89,48 @@
             "exampleSites": [
                 "flightcentre.ca",
                 "www.flightcentre.ca",
+                "www.flightcentre.com.au"
+            ]
+        },
+        {
+            "rule": "fcl\\.cloud\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-search-ui.edge.soar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000145,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.ca",
+                "www.flightcentre.com.au"
+            ]
+        },
+        {
+            "rule": "fcl\\.cloud\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-search-ui.edge.soar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000145,
+            "cnames": [],
+            "responseHashes": [
+                "c1e660a180c3f678d25bf31cef29e66af30dc12b1e4ad858013ac4591675d4df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.ca",
                 "www.flightcentre.com.au"
             ]
         },
@@ -165,7 +191,7 @@
             "prevalence": 0.0000217,
             "cnames": [],
             "responseHashes": [
-                "806b621aac1f6e36f90bb6ab85ef6ebb85093911fdab53f7896d30fe58b4edea",
+                "53794b35fda4e362428f8f4738644e8fbeba43f7a93aa6ee05f771feb3663737",
                 "b8fbb9ed4f3f2e54670dc40cb94d78a102bdb83bcc524c8b1f5cf1b834bcff93"
             ],
             "type": "Fetch",
@@ -178,74 +204,48 @@
             ]
         },
         {
-            "rule": "fcl\\.cloud\\/sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "omni-search-ui.edge.soar"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.innerWidth": 2,
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "081e45a74e5b790579e7f355c41a81e852fd994cbbd0e25eacc3566acbe642a9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "flightcentre.ca",
-                "www.flightcentre.com.au"
-            ]
-        },
-        {
-            "rule": "fcl\\.cloud\\/config",
+            "rule": "fcl\\.cloud\\/config\\/v2\\/fetch",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "omni-search-ui.edge.soar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "flightcentre.ca",
-                "www.flightcentre.com.au"
-            ]
-        },
-        {
-            "rule": "fcl\\.cloud\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "omni-search-ui.edge.soar"
+                "services.prod.websites"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000145,
             "cnames": [],
             "responseHashes": [
-                "c1e660a180c3f678d25bf31cef29e66af30dc12b1e4ad858013ac4591675d4df"
+                "6c12589d2ae06d6fa6197b78cd99f74fe6dc4fc2b766dc7bfdd1ab6dc47c9313"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flightcentre.ca",
+                "www.flightcentre.com.au"
+            ]
+        },
+        {
+            "rule": "fcl\\.cloud\\/fc-menu\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services.prod.websites"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000217,
+            "cnames": [],
+            "responseHashes": [
+                "c3217a90b0c7e49440abd2e968c76538154cb1b698a54f6fabd90425f91c535a",
+                "7b958ba161034bcff3083afeb4100f8366e3b4abacad5199f2374df26bde8e24"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.ca",
+                "www.flightcentre.ca",
                 "www.flightcentre.com.au"
             ]
         },
@@ -288,15 +288,15 @@
         }
     ],
     "types": {
-        "XHR": 10,
         "Script": 9,
+        "XHR": 10,
         "Preflight": 5,
         "Fetch": 3
     },
     "nameservers": [
-        "ns-1914.awsdns-47.co.uk",
-        "ns-148.awsdns-18.com",
         "ns-1456.awsdns-54.org",
-        "ns-895.awsdns-47.net"
+        "ns-148.awsdns-18.com",
+        "ns-895.awsdns-47.net",
+        "ns-1914.awsdns-47.co.uk"
     ]
 }
