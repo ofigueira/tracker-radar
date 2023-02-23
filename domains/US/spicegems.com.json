@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000173,
-    "sites": 24,
+    "prevalence": 0.000156,
+    "sites": 23,
     "subdomains": [
         "spa",
         "cdnbspa",
+        "conditional-redirect",
         "cdnbevi"
     ],
     "cnames": [],
@@ -25,7 +26,7 @@
                 "window.indexedDB": 2
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "a0634a3c80948c25b4c2dce266422178087d5e0877e377f9a0ce23e1431add0b"
@@ -47,7 +48,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "a0634a3c80948c25b4c2dce266422178087d5e0877e377f9a0ce23e1431add0b"
@@ -61,6 +62,30 @@
             ]
         },
         {
+            "rule": "spicegems\\.com\\/js\\/scripttags\\/bape\\/static\\/country-redirect\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "conditional-redirect"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6e601bf14cb8de8fda38d40937a08f2902483491d56930bd379017ea9868e8f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bape.com",
+                "us.bape.com"
+            ]
+        },
+        {
             "rule": "spicegems\\.com\\/js\\/serve\\/100-pure\\.myshopify\\.com\\/v1\\/index_99602e25ae2e7e10924237471ecaa82a862e256a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -69,7 +94,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "6fee19819c03dffa1b95df1a2e54fcb2e849e3c4999c038a7699d06d48164822"
@@ -81,31 +106,6 @@
                 "100percentpure.com",
                 "www.100percentpure.com"
             ]
-        },
-        {
-            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/sexyland-2\\.myshopify\\.com\\/index_736cbcf02c5bacfb6df25d2f28071b6fd9d957a4\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdnbspa"
-            ],
-            "apis": {
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.indexedDB": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "45a15712a9540fcc542b95e2e7e81c9d45bc8bc8423ebeebb67d3038d8357bf6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sexyland.com.au",
-                "www.sexyland.com.au"
-            ]
         }
     ],
     "categories": [],
@@ -114,7 +114,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9642857142857143
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.03571428571428571
         }
     ],
     "types": {
@@ -122,9 +126,9 @@
     },
     "nameservers": [
         "ns4.linode.com",
-        "ns5.linode.com",
         "ns3.linode.com",
         "ns2.linode.com",
-        "ns1.linode.com"
+        "ns1.linode.com",
+        "ns5.linode.com"
     ]
 }

@@ -7,15 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000867,
-    "sites": 12,
+    "prevalence": 0.000088,
+    "sites": 13,
     "subdomains": [
-        "api",
+        "rockwell2015",
         "assurant2017rd",
         "timkenco2020index-farm",
         "boeing2015",
         "csx2019ir",
         "firstamerican2017ir",
+        "safg2022ipo",
         "merck2016rd"
     ],
     "cnames": [
@@ -27,30 +28,28 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "q4web\\.com\\/q4proxy\\/v1\\/",
-            "cookies": 0,
+            "rule": "q4web\\.com\\/feed\\/StockQuote\\.svc\\/GetStockQuoteList",
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "rockwell2015"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "bfc7f09c413464d344a37b53853e3dec898af2afde7dfd45033f2634969a2e5a"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "americanexpress.com",
-                "about.americanexpress.com"
+                "rockwellautomation.com",
+                "www.rockwellautomation.com"
             ]
         },
         {
             "rule": "q4web\\.com\\/feed\\/StockQuote\\.svc\\/GetFullStockQuoteList",
-            "cookies": 0.0000145,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "assurant2017rd",
@@ -58,7 +57,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "investors.timken.com",
@@ -66,8 +65,8 @@
                 }
             ],
             "responseHashes": [
-                "5654f54a9270031e2baeb771502f8697eb6fd8806545debd932eabc75bb2f676",
-                "f66658f742cc67d0d811f86ae6b23fc5ba7195d9e1bf538658c401ed0e98e0fe"
+                "6ac39a1f8f5c6c2375ec89394c92b0c0c218c7d2fa5edc68f3cb8d25b2167d8b",
+                "f3c2f3857f64b37c0ed0e3a0b2d897850f6d5d290c213f8751a9cd937b50e64b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -80,7 +79,7 @@
         },
         {
             "rule": "q4web\\.com\\/feed\\/StockQuote\\.svc\\/GetStockQuoteList",
-            "cookies": 0.0000289,
+            "cookies": 0.0000271,
             "fingerprinting": 0,
             "subdomains": [
                 "boeing2015",
@@ -89,12 +88,12 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
-                "74e5da9c543b80691b12a2828adc2a15ad170be32cd47c032c15912ef1d50af4",
-                "f847946827eba48938f594708f33c18f7d14dcbc5173dc03950834924b20a286",
-                "91d3fc4b36d4eef70151a288ce92ae705a7239e555ed7824e9bff776a47c16d3"
+                "3dc49a1e3f233342610313a9d72c11516806dec2090437689d48707efbd7e1f9",
+                "f2ce4096466fca191668a1dabeedcc0eec6bb57f5c226658b8753669e2b5136a",
+                "dc7c6f3c6594cdcd61daea4d6c9a7695b3571a417ffa8ed81b2d8141dae01cd6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -107,31 +106,54 @@
             ]
         },
         {
+            "rule": "q4web\\.com\\/feed\\/PressRelease\\.svc\\/GetPressReleaseList",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "safg2022ipo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "70e491ba7f87f2a435f51b4082fd6b178175eb0d9728daaee30abe9c23e8241b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "corebridgefinancial.com",
+                "www.corebridgefinancial.com"
+            ]
+        },
+        {
             "rule": "q4web\\.com\\/js\\/typescript\\/dist\\/index\\.js",
-            "cookies": 0.0000145,
+            "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
                 "merck2016rd",
                 "timkenco2020index-farm"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.product": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
                 "Navigator.prototype.language": 1,
                 "Navigator.prototype.doNotTrack": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
                 "Navigator.prototype.cookieEnabled": 1,
                 "Screen.prototype.width": 1,
                 "Screen.prototype.height": 1,
                 "Screen.prototype.colorDepth": 1,
-                "Document.cookie getter": 1,
                 "Document.cookie setter": 1,
-                "Navigator.prototype.product": 1,
                 "window.sessionStorage": 1,
                 "window.innerWidth": 1,
                 "window.innerHeight": 1
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "investors.timken.com",
@@ -139,20 +161,20 @@
                 }
             ],
             "responseHashes": [
-                "2f3f761a741ed4d920980bdeed3bdc3aef38f58c0cd0209a2aedc475ee8fc982"
+                "c6a8c757c59b2df0c50814b344398dedb725eaf508722c9a22136defbb030cf6"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__uxq412__ses.e502": {
-                    "ttl": 1806,
+                    "ttl": 1803,
                     "length": 1,
-                    "prevalence": 0.0000072254335260115605,
+                    "prevalence": 0.000006768601809924124,
                     "uniqueness": 1
                 },
                 "__uxq412__id.e502": {
-                    "ttl": 63072006,
+                    "ttl": 63072003,
                     "length": 108,
-                    "prevalence": 0.0000072254335260115605,
+                    "prevalence": 0.000006768601809924124,
                     "uniqueness": 1
                 }
             },
@@ -173,7 +195,7 @@
                 "Navigator.prototype.appName": 1
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "ef9453f74b2617d43dcef4242cf5845101fcfb57289c81bceb20042b0023a192"
@@ -196,7 +218,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "investors.timken.com",
@@ -207,34 +229,6 @@
                 "64deea8d3844605b4884ce523931c6582ee35e02eec9c531047a8201cc768a58"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "merck.com",
-                "www.timken.com"
-            ]
-        },
-        {
-            "rule": "q4web\\.com\\/x0k461\\/e6c1b\\/xc9",
-            "cookies": 0.0000145,
-            "fingerprinting": 0,
-            "subdomains": [
-                "merck2016rd",
-                "timkenco2020index-farm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "investors.timken.com",
-                    "resolved": "timkenco2020index-farm.q4web.com"
-                }
-            ],
-            "responseHashes": [
-                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -257,7 +251,7 @@
                 "window.localStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "investors.timken.com",
@@ -265,7 +259,7 @@
                 }
             ],
             "responseHashes": [
-                "a39a8dd5aebd29796ea78f60cbcca4fefe75cfee9cc62243e4484add819e878b"
+                "f9fe51cd2e7ce62a473593b3c91841ea5866affab6d05459e6cf40c9e31599c9"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -276,15 +270,43 @@
             ]
         },
         {
+            "rule": "q4web\\.com\\/x0k461\\/e6c1b\\/xc9",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "merck2016rd",
+                "timkenco2020index-farm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "investors.timken.com",
+                    "resolved": "timkenco2020index-farm.q4web.com"
+                }
+            ],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "merck.com",
+                "www.timken.com"
+            ]
+        },
+        {
             "rule": "q4web\\.com\\/Stock-Quote-Iframe",
-            "cookies": 0.0000145,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "timkenco2020index-farm"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "investors.timken.com",
@@ -309,7 +331,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "investors.timken.com",
@@ -317,7 +339,7 @@
                 }
             ],
             "responseHashes": [
-                "219f6695e51406e88439030f6dfc813dfec54159fb0b4a36f8b84973d623e9ad"
+                "4b6e200fad47141caa638bbb4add4be5bd36fe32a2b61a1e180a7fbe63bb828f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -330,30 +352,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000723,
+    "cookies": 0.000088,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.8461538461538461
         },
         {
             "domain": "q4cdn.com",
-            "prevalence": 0.2857142857142857
-        },
-        {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.15384615384615385
         }
     ],
     "types": {
+        "Fetch": 2,
         "XHR": 11,
         "Script": 6,
         "Document": 6
     },
     "nameservers": [
+        "ns-431.awsdns-53.com",
         "ns-1098.awsdns-09.org",
-        "ns-792.awsdns-35.net",
         "ns-1686.awsdns-18.co.uk",
-        "ns-431.awsdns-53.com"
+        "ns-792.awsdns-35.net"
     ]
 }
