@@ -4,17 +4,16 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000706,
-    "sites": 7,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
-        "assets",
-        "pbel5-ciam",
-        "pbel1-ciam"
+        "pbel1-ciam",
+        "assets"
     ],
     "cnames": [
         {
-            "original": "connect.chronodrive.com",
-            "resolved": "pbel5-ciam.reach5.co"
+            "original": "auth.parcasterix.fr",
+            "resolved": "pbel1-ciam.reach5.co"
         },
         {
             "original": "sso.futuroscope.com",
@@ -24,7 +23,38 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "reach5\\.co\\/hassets\\/sdk\\/identity\\.fr\\.d8b8956194194141e406\\.js",
+            "rule": "reach5\\.co\\/identity\\/v1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pbel1-ciam"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sso.futuroscope.com",
+                    "resolved": "pbel1-ciam.reach5.co"
+                },
+                {
+                    "original": "auth.parcasterix.fr",
+                    "resolved": "pbel1-ciam.reach5.co"
+                }
+            ],
+            "responseHashes": [
+                "168fc02a6d3ccbf0959512e29a766091f9279388fd89a1691ca5104e69b1c890"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "futuroscope.com",
+                "www.parcasterix.fr"
+            ]
+        },
+        {
+            "rule": "reach5\\.co\\/hassets\\/sdk\\/identity\\.fr\\.11e8034cab3201235d8c\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -33,110 +63,49 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.appName": 3,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 3
             },
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "d715adc354769070fee3c5e63378c53f1fbda034f353831f05812527cf78a9dd"
+                "7081a12cc2d78aa1962617c7428d6e018a51c808a6bccf70f2bbae1410ec8fea"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "om.fr",
-                "www.glenat.com",
+                "glenat.com",
+                "www.hachette.fr",
                 "www.livredepoche.com"
-            ]
-        },
-        {
-            "rule": "reach5\\.co\\/identity\\/v1\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pbel5-ciam",
-                "pbel1-ciam"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [
-                {
-                    "original": "connect.chronodrive.com",
-                    "resolved": "pbel5-ciam.reach5.co"
-                },
-                {
-                    "original": "sso.futuroscope.com",
-                    "resolved": "pbel1-ciam.reach5.co"
-                }
-            ],
-            "responseHashes": [
-                "8d2264f23e22ea90c3d42d287bb14d1e6311c85e5c5f0dc6b494dfa293abfc81"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chronodrive.com",
-                "www.futuroscope.com"
-            ]
-        },
-        {
-            "rule": "reach5\\.co\\/oauth\\/authorize",
-            "cookies": 0.000202,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pbel5-ciam",
-                "pbel1-ciam"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [
-                {
-                    "original": "connect.chronodrive.com",
-                    "resolved": "pbel5-ciam.reach5.co"
-                },
-                {
-                    "original": "sso.futuroscope.com",
-                    "resolved": "pbel1-ciam.reach5.co"
-                }
-            ],
-            "responseHashes": [
-                "4a654acbc636bb11d35a5922f24b1e4bef729eff6041ed9753ed3f4277861162"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chronodrive.com",
-                "www.futuroscope.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000202,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "reach5.net",
-            "prevalence": 0.6
+            "prevalence": 0.5
+        },
+        {
+            "domain": "unpkg.com",
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "first party",
-            "prevalence": 0.4
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Script": 3,
         "Fetch": 2,
-        "Document": 2
+        "Script": 3
     },
     "nameservers": [
-        "ns-63.awsdns-07.com",
         "ns-1972.awsdns-54.co.uk",
-        "ns-1447.awsdns-52.org",
-        "ns-1015.awsdns-62.net"
+        "ns-63.awsdns-07.com",
+        "ns-1015.awsdns-62.net",
+        "ns-1447.awsdns-52.org"
     ]
 }

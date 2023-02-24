@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "app-preprod",
+        "pro"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,21 +25,23 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2,
-                "window.localStorage": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 1
             },
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "d4485feaa366b2fb1fb249b7c8d7a5b1a270f396b09a8defdd2f2a78d75ce35f"
+                "3bc10897eb690f614061b4fa048325f39cd9ce4d1c27b969460483bb6ba3a841"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "historia.fr",
+                "bebasket.fr",
+                "www.historia.fr",
                 "www.lhistoire.fr"
             ]
         },
@@ -49,8 +53,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "0024b4ce72866df3fe3ea249ef03b3fc01d4235f500549f8af972600fd07a09a"
@@ -59,7 +63,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "historia.fr",
+                "bebasket.fr",
+                "www.historia.fr",
                 "www.laprovence.com",
                 "www.lhistoire.fr"
             ]
@@ -72,8 +77,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "9256440c6f0a9ffb738977f7c938fe882f231926c96d52fd3be567005e57e068"
@@ -82,33 +87,102 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "historia.fr",
+                "bebasket.fr",
+                "www.historia.fr",
                 "www.laprovence.com",
                 "www.lhistoire.fr"
+            ]
+        },
+        {
+            "rule": "jokerly\\.com\\/event\\.server\\/v1\\/events",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-preprod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "ace76eaa33319417de6150f090c8ae07123575b698e3b74c46d1d1e6f803d2a3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bebasket.fr",
+                "www.bebasket.fr",
+                "www.laprovence.com"
+            ]
+        },
+        {
+            "rule": "jokerly\\.com\\/event\\.server\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-preprod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bebasket.fr",
+                "www.laprovence.com"
+            ]
+        },
+        {
+            "rule": "jokerly\\.com\\/Okidak\\/tr\\.htm",
+            "cookies": 0.000301,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pro"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "cbcba1faf99dd18dc16ae90cb6004a4692918061dc94e8c627fa3827334bc5b7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bebasket.fr",
+                "www.bebasket.fr",
+                "www.laprovence.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.9
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.4
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 5,
-        "Stylesheet": 3
+        "Script": 7,
+        "Stylesheet": 4,
+        "XHR": 6,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns1097.ui-dns.org",
         "ns1097.ui-dns.de",
         "ns1097.ui-dns.biz",
-        "ns1097.ui-dns.org",
         "ns1097.ui-dns.com"
     ]
 }

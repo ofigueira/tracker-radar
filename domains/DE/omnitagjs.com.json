@@ -9,14 +9,18 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00626,
-    "sites": 71,
+    "prevalence": 0.00703,
+    "sites": 70,
     "subdomains": [
         "hb-api",
+        "fo-api",
+        "fo-static",
+        "fo-ssp",
+        "tracking",
         "visitor"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "omnitagjs\\.com\\/hb-api\\/prebid\\/v1",
@@ -26,62 +30,168 @@
                 "hb-api"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00247,
+            "sites": 34,
+            "prevalence": 0.00342,
             "cnames": [],
             "responseHashes": [
-                "d54ba3e8f5f84eaa004e7067cefa154af9df6dea5887f9ed08728ab7a4f0b62f",
-                "fcd005ad78e61dd8f2429d85743fc7efec066929b88620c5fefcfe109a0dc6e5",
-                "5d8389c4bec7523a72747af3361ffc74cd7d32b43ef5f2630520513e77fc5025",
-                "53a633822a3cba3659db832011573bc8fb9ec44d0e6b8d64958762c3c5f07a68",
-                "ab97ef5b52fd3063c5a542e9de995e225daa6424be44486a153f8a9f42a7ec74",
-                "d9e27f23ab29b21e6879cd3a0c3c7de4ce681d5f368df11a722411970f62d381",
-                "baa2cb75c85c9fe1768a2ca0f3be6ead4991ac8a40e45a4f30cfbd7fe4b4496c",
-                "814cfb5544e9a3329a8df69600a7c0b7743c20b72974dd784357d721004c20ff",
-                "bb114ddd6dc8074994099deb7e8917ae5627d245e2976186cc2deb0991c29c03",
-                "d5dd08afa51ff2a56e358f9e81fcc99a185cd07dbd0e9cfd61820c652b2562cc",
-                "c8626879a5ffee0ab41292145dfbebc223cd5edfee9ba684d84742a4254ea8bf",
-                "4c45c4dcb782b973e56f5944ecc371ab1f1d8dfed4a534a0bd0685176d5fa15a",
-                "303bde9069aacb1f10deb25c18a94f1e8e66f177c63be0778d540121522b9e48",
-                "16c76e1d894cb3596293379573535e696a9cdf01960335bb5c8125e1b6217286",
-                "754df89c322d35712f1a848d4428c44c862e19f8643bc5d519fc04baec0659e8",
-                "14a60f7165775ff3cd1da98b2b9fed91347a58c193ae0a1a46733d2c33bef2b3",
-                "343cc00ddfc1f8a5c2b5f9b4d986996a69ba01b905d45c9b77e03a52316a29c0",
-                "bdc32f71ff5f781084d28913c9c5a58a45d045e870f50a71f5d53b37849f2f31",
-                "6658f853125c08e754b2588a03184568e189f881e09f3c0efba69348c5d8bbb1",
-                "af6076ba3132d9df44cb3386ca991676a4fc1a21dcb648eefb240045a7fbc098",
-                "197c8ca5e026592991b962bd86aae2cd5f52d096c77bc991402b8c5a3a33d5ac",
-                "fb04c31bb0409f3e59289bca32e3d2f5b959992ce697dfa3cd9d6533ce6f74f2",
-                "f604eaf2c180f65072765bb602ac82fe06d4e7104861de4b3083bc7e9a0a00e0",
-                "3d9af813b401c9dc6af4ff486a404799c2d132feefae1376781d127de7e86bbd"
+                "07d9940c77428cca1e264aeb0f2acacd0eb31447a4ce2fad13f9c769e4fbcd85",
+                "980e1dc8087fdf723a3b7c65c7bd4b44b4b2a690801fe1014e9f5460f202aed6",
+                "45e611dd415db4300d25f660df905eaf561e489dcd1f18b7bc7360d81d8297a3",
+                "dd836ef0d2d0d8e13957b5a0e2e977577c4cb07e1afc76a5f9ce6b7b6f8195b4",
+                "877a631a4f3610f4241340203d9ff3a959bcafb7e67a8e1cfb244fa9ba12b18c",
+                "0c03250eefe6436fe264b326147c3df512d2e8c1115be8b51390f1557c6ef365",
+                "f94f49d4466b3a57ed574413d6557a8dc3f4def4b4e16a009024d629d8ef21b6",
+                "9231747063868702e5c90ce054e0c7303b0ad2329d0357a9360a2af6b6973950",
+                "1142af81bb29c1cc0e0d87360ff104983a20b06869cfff3696fdac69bc619d01",
+                "20b311bb8665d9187e8851113fde73d8abded85f5b41a69c3cb466b5ce95c55f",
+                "d75525de2ff1d554f93367ee4a14f71745eb87440b7a67809f434862256e26b0",
+                "a4b66763e70c2e706a1bf00fa212a9a12185083dd0eed9d75c8d35fe71d53b1a",
+                "b57beb8ae2fd70f9df4ff29a5c816060cb57b17587cc453d527ae0d1973034a6",
+                "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+                "07a49678cd5cb8e2b9b9b7c1b24bd89ca06082ddb45b241bf7afb0a7651aad4f",
+                "610f0e05fd3dbaf45b75e23615ffdb455456c9d6ab637aadbfb848da4b0ee2e0",
+                "7fcfbcd494f738ae57fc72f69c7027d2fbe23609ecce927ea9c5454053cef469",
+                "b085853d347edddc118ab1a04c3b06ac477b0ee37aa067073f851c97dd1eb90a",
+                "5a90e710abade448ea600adee75728ae2adafd22a6ff6c9d2cac14aaf4c0672f",
+                "a5f226a2939d19a6d70632d274c704286a07b0edf64edeec2f2048a3eb28b3bb",
+                "a7a21b56d8a7c914be584bca15f8a9d9eacf08ffc3dd4512e63b2149e4c8fc8e",
+                "36962e217156c8c3735c4251961f6019cc2de75fec09c98d82a764d097999cc5",
+                "8a245d0ca0b3dabab24f53b5a12085e2344bd8167990e0321319c9d56830b721",
+                "bdb1c8fba8af3b82b9be072d0cc371df7ad352052aba9cf5899e86138b1ec063",
+                "3c494185f3c1b2333a6dd4b943ee66f0f0566619700d2efde1a2dec0cd0eb27f",
+                "f13d57131d4f4bf68df144f6e51d33328a3091be9fffa3b477471bdde4afb19a",
+                "ef9314b238a66dffef53a73a280f1e9792f862d37af369d33691bea692a14960",
+                "126e8fb1f861d32fb057e98e46948e707b66de8af3b574975f85e8a71574675f",
+                "c45fd84d972768e47e8276b4b634b6dfd3b13dede6cb159bce13d2e6d1f0eed3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0005287275290800141,
-                "IR_gbd": 0.00008812125484666901
+                "lotame_domain_check": 0.0006027122049221497,
+                "IR_gbd": 0.00010045203415369161
             },
             "exampleSites": [
                 "cplusplus.com",
                 "nypost.com",
                 "www.tumblr.com",
-                "pagesix.com",
-                "pythonexamples.org",
-                "www.blutdruck-und-bluthochdruck.de",
-                "www.kodinerds.net",
-                "ratgeber.immowelt.de",
-                "wordlegame.org",
-                "pureinfotech.com",
-                "www.xe.com",
-                "www.computerhope.com",
-                "www.myinstants.com",
-                "www.dexerto.com",
                 "www.weltfussball.de",
-                "www.iplocation.net",
-                "www.konpasu.de",
-                "www.wochenblick.at",
-                "www.manualscat.com",
-                "www.lebensmittelunvertraeglichkeiten.de"
+                "pokemondb.net",
+                "www.idealwatch.de",
+                "www.blengaone.de",
+                "www.hausverwaltung-ratgeber.de",
+                "www.rapidtables.com",
+                "exceljet.net",
+                "uni-24.de",
+                "www.dexerto.com",
+                "www.staumelder-karte.de",
+                "codycrosslosungen.com",
+                "www.kodinerds.net",
+                "wordlegame.org",
+                "samagame.com",
+                "www.behindthename.com",
+                "www.xe.com",
+                "www.iplocation.net"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/fo-api\\/ot\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fo-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "d5655da93dee16001cf4757076cfb391a967125d749bcaa818fb3f0930c7c2e7",
+                "011dd04fdcaa0fff024692bae7df3a971b2a10eab47541264216d71ef49bd294",
+                "9d8c5055de2aa7ab51a1ea7db1361f677ff2bed9ee6c1079f9a87f89b2fa7d66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "kochenkinderleicht.com",
+                "www.blutdruck-und-bluthochdruck.de"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/ot_multi_template\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fo-static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "7334b55fe59b2c74d7ddbe5ef5e43b48c7502c4937f6db62619ff7480ce23f5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "kochenkinderleicht.com",
+                "www.blutdruck-und-bluthochdruck.de"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/fo-ssp\\/marketplace",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fo-ssp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "218b70bea6b6d6425c1efdbe94dfe848031bb5fd7878dfb84bf82f7cc09f904a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "kochenkinderleicht.com",
+                "www.blutdruck-und-bluthochdruck.de"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/tracking\\/pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "b79f422fe396f004168faae4424b618ee2024c434c5f78b341c9da42c04db1c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "kochenkinderleicht.com",
+                "www.blutdruck-und-bluthochdruck.de"
             ]
         },
         {
@@ -92,8 +202,8 @@
                 "visitor"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000352,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -102,10 +212,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wukihow.com",
-                "monsterhunterworld.wiki.fextralife.com",
-                "www.manualscat.com",
-                "www.myinstants.com"
+                "fextralife.com",
+                "cplusplus.com",
+                "www.thingiverse.com"
             ]
         },
         {
@@ -116,8 +225,8 @@
                 "visitor"
             ],
             "apis": {},
-            "sites": 38,
-            "prevalence": 0.00335,
+            "sites": 32,
+            "prevalence": 0.00321,
             "cnames": [],
             "responseHashes": [
                 "b79f422fe396f004168faae4424b618ee2024c434c5f78b341c9da42c04db1c5"
@@ -126,26 +235,48 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.mycare.de",
-                "www.taschenkaufhaus.de",
-                "www.asi-reisen.de",
-                "www.fender.com",
-                "www.sweetwater.com",
-                "www.kfzteile24.de",
-                "www.fluege.de",
-                "www.hellomagazine.com",
-                "www.reifendirekt.de",
+                "www.1stdibs.com",
                 "www.bogensportwelt.de",
-                "www.chili-shop24.de",
-                "www.klimaworld.com",
-                "www.medpets.de",
+                "www.flypgs.com",
+                "www.sweetwater.com",
+                "www.giesswein.com",
+                "www.juniqe.de",
                 "www.kinguin.net",
-                "www.travelcircus.de",
                 "www.praktischarzt.de",
+                "www.fender.com",
+                "www.farfetch.com",
+                "www.kfzteile24.de",
+                "www.justspices.de",
+                "www.anker.com",
+                "de.aliexpress.com",
+                "www.knivesandtools.de",
+                "www.ostermann.de",
+                "www.ischgl.com",
+                "www.auto.de",
                 "anker.com",
-                "www.lebenskraftpur.de",
-                "www.wunderkarten.de",
-                "www.farfetch.com"
+                "www.aliexpress.com"
+            ]
+        },
+        {
+            "rule": "omnitagjs\\.com\\/fo-ssp\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fo-ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "50ce4017e6f657f4d6f12b41a88b3bd66b06c1846e64ae63c066e7a4f0d98b96"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kochenkinderleicht.com",
+                "www.blutdruck-und-bluthochdruck.de"
             ]
         },
         {
@@ -156,8 +287,8 @@
                 "visitor"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000264,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -166,9 +297,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "memesbams.com",
-                "www.dailydot.com",
-                "www.thegearpage.net"
+                "tomshardware.com",
+                "www.ukr.net"
             ]
         }
     ],
@@ -181,54 +311,55 @@
     "topInitiators": [
         {
             "domain": "criteo.com",
-            "prevalence": 0.45348837209302323
+            "prevalence": 0.3
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "ezodn.com",
-            "prevalence": 0.11627906976744186
-        },
-        {
-            "domain": "buysellads.net",
-            "prevalence": 0.10465116279069768
+            "prevalence": 0.12727272727272726
         },
         {
             "domain": "themoneytizer.com",
-            "prevalence": 0.05813953488372093
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "sascdn.com",
+            "prevalence": 0.03636363636363636
+        },
+        {
+            "domain": "buysellads.net",
+            "prevalence": 0.03636363636363636
         },
         {
             "domain": "spotim.market",
-            "prevalence": 0.046511627906976744
+            "prevalence": 0.03636363636363636
         },
         {
             "domain": "rubiconproject.com",
-            "prevalence": 0.046511627906976744
-        },
-        {
-            "domain": "nextmillmedia.com",
-            "prevalence": 0.03488372093023256
-        },
-        {
-            "domain": "smartadserver.com",
-            "prevalence": 0.023255813953488372
+            "prevalence": 0.03636363636363636
         },
         {
             "domain": "topsrvimp.com",
-            "prevalence": 0.023255813953488372
+            "prevalence": 0.03636363636363636
         },
         {
-            "domain": "m2.ai",
-            "prevalence": 0.011627906976744186
+            "domain": "imonomy.com",
+            "prevalence": 0.02727272727272727
         }
     ],
     "types": {
-        "XHR": 28,
-        "Image": 42,
-        "Document": 3
+        "XHR": 38,
+        "Script": 10,
+        "Image": 39,
+        "Document": 2
     },
     "nameservers": [
         "ns-1215.awsdns-23.org",
+        "ns-342.awsdns-42.com",
         "ns-1878.awsdns-42.co.uk",
-        "ns-874.awsdns-45.net",
-        "ns-342.awsdns-42.com"
+        "ns-874.awsdns-45.net"
     ]
 }
