@@ -9,9 +9,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000173,
-    "sites": 24,
+    "prevalence": 0.000149,
+    "sites": 22,
     "subdomains": [
+        "api",
+        "ping",
+        "v3",
         "js",
         "cdn",
         "gh-stable"
@@ -24,34 +27,129 @@
         {
             "original": "taplytics-umami.seamless.com",
             "resolved": "gh-stable.taplytics.com"
+        },
+        {
+            "original": "tl.foxbusiness.com",
+            "resolved": "v3.taplytics.com"
+        },
+        {
+            "original": "tl.foxnews.com",
+            "resolved": "v3.taplytics.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "taplytics\\.com\\/jssdk\\/34c3ab59aa2e43688b7e00293b792632\\.min\\.js",
-            "cookies": 0.0000289,
-            "fingerprinting": 1,
+            "rule": "taplytics\\.com\\/public_api\\/v2\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "js"
+                "api"
             ],
-            "apis": {
-                "window.innerWidth": 2
-            },
-            "sites": 5,
-            "prevalence": 0.0000361,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lordandtaylor.com",
+                "www.influenster.com"
+            ]
+        },
+        {
+            "rule": "taplytics\\.com\\/public_api\\/v2\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "6c25ed7d8219b16aa2be0db31e2d1d6189fc5943ff803371741224947d578162",
-                "3acc5f0f6e581aca70528370b9de5518c6bbbb6d5217afd17d8c29d89a33231e",
-                "9d1280ec7926d4c0de770a5180238b8aa95b00e958e78e47179b28f11b3338dd"
+                "9238968fd3d5886002a458045b01b281587b3d61b650d7d052e27d81b4bee8ac"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lordandtaylor.com",
+                "www.influenster.com"
+            ]
+        },
+        {
+            "rule": "taplytics\\.com\\/public_api\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1e3464ced4271304904cc9ae288fe212ebc63d728cea00ad815b2844e2676425"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lordandtaylor.com",
+                "www.influenster.com"
+            ]
+        },
+        {
+            "rule": "taplytics\\.com\\/public_api\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lordandtaylor.com",
+                "www.influenster.com"
+            ]
+        },
+        {
+            "rule": "taplytics\\.com\\/jssdk\\/34c3ab59aa2e43688b7e00293b792632\\.min\\.js",
+            "cookies": 0.0000271,
+            "fingerprinting": 1,
+            "subdomains": [
+                "v3",
+                "js"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [
+                {
+                    "original": "tl.foxnews.com",
+                    "resolved": "v3.taplytics.com"
+                }
+            ],
+            "responseHashes": [
+                "3a170f4c6587f23af4c039939db7734d6dcd4970eab5c9ce9712d569ba31211a",
+                "3e4ede17a585d3f25b81266e22689988789458db9efc8d0d6f819f4f4ff45ac8",
+                "9dc4850b1a780ae7786041b946c85d18b9a72335b43eaf44d59c139f85eb1434"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "foxnews.com",
-                "foxnewspro.com",
                 "my.foxnews.com",
                 "www.foxnews.com",
                 "www.foxweather.com"
@@ -59,15 +157,25 @@
         },
         {
             "rule": "taplytics\\.com\\/page",
-            "cookies": 0.0000506,
+            "cookies": 0.0000406,
             "fingerprinting": 0,
             "subdomains": [
+                "v3",
                 "js"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000506,
-            "cnames": [],
+            "sites": 6,
+            "prevalence": 0.0000406,
+            "cnames": [
+                {
+                    "original": "tl.foxnews.com",
+                    "resolved": "v3.taplytics.com"
+                },
+                {
+                    "original": "tl.foxbusiness.com",
+                    "resolved": "v3.taplytics.com"
+                }
+            ],
             "responseHashes": [
                 "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
             ],
@@ -76,7 +184,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "foxnews.com",
-                "foxnewspro.com",
                 "my.foxnews.com",
                 "video.foxbusiness.com",
                 "www.foxbusiness.com",
@@ -95,7 +202,7 @@
                 "window.localStorage": 3
             },
             "sites": 4,
-            "prevalence": 0.0000289,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "04fcaf6c71472469b867b3ff7a0a7ff42e7f7a827fc949395a1536a425822d04"
@@ -112,18 +219,23 @@
         },
         {
             "rule": "taplytics\\.com\\/jssdk\\/c6fa58f573c545fcb9cfbe84c8bd6a48\\.min\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
-                "js"
+                "v3"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
-            "cnames": [],
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "tl.foxbusiness.com",
+                    "resolved": "v3.taplytics.com"
+                }
+            ],
             "responseHashes": [
-                "81433f4860333e3dd571877d3b1f9f4f6a3820c1afa5c46d9151bf617d25ba88",
-                "e75365d0e785803ee0cbf74ee9a92ba3ab06e8884d783f08e4fa195c4c36e170"
+                "de50a62272b610ed3c6a711e801fbf4dfd226d4e7bf496283892045ea9521b35",
+                "311e18909b43205ccf4535c821be7a77a2e9493f31059bcbc42e95205a319cad"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -136,14 +248,14 @@
         },
         {
             "rule": "taplytics\\.com\\/jssdk\\/40d5efc3779f4354a9ca53f89d0d3605\\.min\\.js",
-            "cookies": 0.0000145,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "gh-stable"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "taplytics-umami.grubhub.com",
@@ -155,26 +267,28 @@
                 }
             ],
             "responseHashes": [
-                "eb56676b7be716e919906d92a8acf1e53be39ff0a38623fd91d8bbde157dcf4c"
+                "0d67005450bc7b279eef5748a95cc9d86d6a4c50cf09ab1e8df3d53c4bfeb5d0",
+                "8bda695bd72ed0fa6aff9250f834011d929f6598bb286fc689b0ec4e4b6e9345"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grubhub.com",
+                "www.grubhub.com",
                 "www.seamless.com"
             ]
         },
         {
             "rule": "taplytics\\.com\\/identify",
-            "cookies": 0.0000145,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "gh-stable"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "taplytics-umami.grubhub.com",
@@ -193,87 +307,36 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grubhub.com",
+                "www.grubhub.com",
                 "www.seamless.com"
-            ]
-        },
-        {
-            "rule": "taplytics\\.com\\/syncLoader\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "d680e1245a07cf243fbfa92094e30e27a1d89b7ae9cffdbcb63151d97d4d3536"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyandcompany.com",
-                "www.nyandcompany.com"
-            ]
-        },
-        {
-            "rule": "taplytics\\.com\\/jssdk\\/8f9e579058c249a3a97d6a4dcc2fe8be\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "js"
-            ],
-            "apis": {
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "704515ff34705a249c00dcc58d0a0b8c4ff73851b58f589bf654787f82e554e4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyandcompany.com",
-                "www.nyandcompany.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000088,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5517241379310345
+            "prevalence": 0.5789473684210527
         },
         {
             "domain": "foxnews.com",
-            "prevalence": 0.20689655172413793
+            "prevalence": 0.21052631578947367
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.13793103448275862
+            "prevalence": 0.15789473684210525
         },
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.06896551724137931
-        },
-        {
-            "domain": "shopify.com",
-            "prevalence": 0.034482758620689655
+            "domain": "getelevar.com",
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
-        "Script": 18,
-        "Fetch": 9
+        "Preflight": 4,
+        "Fetch": 13,
+        "Script": 14
     },
     "nameservers": [
         "ben.ns.cloudflare.com",

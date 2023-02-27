@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000403,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "pix-stats",
         "reporterre-stats",
+        "matomo.wp.afnor",
         "stats.normandie"
     ],
     "cnames": [
@@ -25,14 +26,14 @@
     "resources": [
         {
             "rule": "cloud-ed\\.fr\\/piwik\\.php",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "pix-stats"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "analytics.pix.fr",
@@ -56,11 +57,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "reporterre-stats",
+                "matomo.wp.afnor",
                 "stats.normandie"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "stats.reporterre.net",
@@ -75,21 +77,58 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "reporterre.net",
+                "www.boutique.afnor.org",
                 "www.normandie.fr"
+            ]
+        },
+        {
+            "rule": "cloud-ed\\.fr\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reporterre-stats",
+                "matomo.wp.afnor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "stats.reporterre.net",
+                    "resolved": "reporterre-stats.cloud-ed.fr"
+                }
+            ],
+            "responseHashes": [
+                "39be01466ad4f01753a2ae6f56bce12159da055356185a46a0fdeaa8c2b54f2b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reporterre.net",
+                "www.boutique.afnor.org"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000502,
     "topInitiators": [
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Ping": 4
+        "Ping": 5,
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "dns0.vtech.fr",
+        "dns3.vtech.fr"
+    ]
 }

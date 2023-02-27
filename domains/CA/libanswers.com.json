@@ -4,14 +4,20 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000178,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "region-ca",
-        "yorku"
+        "v2",
+        "chat-ca"
     ],
-    "cnames": [],
-    "fingerprinting": 1,
+    "cnames": [
+        {
+            "original": "unequestion.bib.umontreal.ca",
+            "resolved": "region-ca.libanswers.com"
+        }
+    ],
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "libanswers\\.com\\/load_chat\\.php",
@@ -19,29 +25,56 @@
             "fingerprinting": 0,
             "subdomains": [
                 "region-ca",
-                "yorku"
+                "v2"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000267,
-            "cnames": [],
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "unequestion.bib.umontreal.ca",
+                    "resolved": "region-ca.libanswers.com"
+                }
+            ],
             "responseHashes": [
-                "9e9eb6bd7ea9d01474eab694ab52189ecc82e88182282bdc97466569e4946358",
-                "3f6e74e2b07987f60081710427067cc6eeb2e55ab4cf5f97001f2fdfdfe796fa"
+                "224e07e740eddfb8968ed68a755e30cf2539af8a68a6b4b982629a70e9202cec",
+                "4465a617be36249696d11a5fbb643eacc4c9a129ad1ab3275ed02232e115a9c8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "epl.ca",
-                "www.epl.ca",
-                "www.library.yorku.ca"
+                "umontreal.ca",
+                "physicalsciences.library.cornell.edu",
+                "www.epl.ca"
+            ]
+        },
+        {
+            "rule": "libanswers\\.com\\/widget_status",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat-ca"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "umontreal.ca",
+                "www.epl.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000891,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -49,7 +82,8 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 3,
+        "XHR": 2
     },
     "nameservers": [
         "ns-140.awsdns-17.com",

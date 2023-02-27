@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000178,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "route",
-        "logging"
+        "cdata",
+        "logging",
+        "content"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,24 +23,50 @@
                 "route"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4,
+                "Date.prototype.getTime": 4,
                 "window.devicePixelRatio": 1,
                 "Element.prototype.getClientRects": 1
             },
-            "sites": 2,
-            "prevalence": 0.000178,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e83d62272288286a4d09714476f188ab6b920237ed921bc51664f644851623fd"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "allfreeknitting.com",
-                "www.maketecheasier.com"
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thewordfinder.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/js\\/Carambola_layer_152\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d81eb1606ab2d7888ce10f1e84ff0716c920129938c81955738616da704002f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreeknitting.com",
+                "www.linguee.fr"
             ]
         },
         {
@@ -49,8 +77,8 @@
                 "logging"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000267,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -60,36 +88,102 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "allfreeknitting.com",
-                "www.allfreeknitting.com",
+                "www.linguee.fr",
+                "www.maketecheasier.com",
+                "www.thewordfinder.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetInContentInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linguee.fr",
+                "www.maketecheasier.com",
+                "www.thewordfinder.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/GetInContentInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linguee.fr",
                 "www.maketecheasier.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/js\\/Carambola_layer_160\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e83d62272288286a4d09714476f188ab6b920237ed921bc51664f644851623fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maketecheasier.com",
+                "www.thewordfinder.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000891,
+    "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "d1m2oaypgnddv2.cloudfront.net",
-            "prevalence": 0.5454545454545454
+            "domain": "doubleclick.net",
+            "prevalence": 0.5294117647058824
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.2727272727272727
+            "domain": "d1m2oaypgnddv2.cloudfront.net",
+            "prevalence": 0.35294117647058826
         },
         {
             "domain": "first party",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.11764705882352941
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 3
+        "Script": 8,
+        "XHR": 4,
+        "Fetch": 3,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-1630.awsdns-11.co.uk",
+        "ns-264.awsdns-33.com",
         "ns-1002.awsdns-61.net",
         "ns-1183.awsdns-19.org",
-        "ns-264.awsdns-33.com"
+        "ns-1630.awsdns-11.co.uk"
     ]
 }

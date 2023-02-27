@@ -9,49 +9,34 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000178,
-    "sites": 2,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "toiassets",
-        "geoapi"
+        "geoapi",
+        "agi-static",
+        "jssocdn",
+        "locate"
     ],
     "cnames": [
+        {
+            "original": "agi-static.indiatimes.com",
+            "resolved": "agi-static.indiatimes.com.edgekey.net"
+        },
         {
             "original": "geoapi.indiatimes.com",
             "resolved": "geoapi.indiatimes.com.edgekey.net"
         },
         {
-            "original": "toiassets.indiatimes.com",
-            "resolved": "toiassets.indiatimes.com.edgekey.net"
+            "original": "jssocdn.indiatimes.com",
+            "resolved": "jssocdn.indiatimes.com.edgekey.net"
+        },
+        {
+            "original": "locate.indiatimes.com",
+            "resolved": "locate.indiatimes.com.edgekey.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "indiatimes\\.com\\.edgekey\\.net\\/assets\\/homedesktop\\.750502af\\.chunk\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toiassets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000178,
-            "cnames": [
-                {
-                    "original": "toiassets.indiatimes.com",
-                    "resolved": "toiassets.indiatimes.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "timesofindia.com",
-                "m.timesofindia.com"
-            ]
-        },
         {
             "rule": "indiatimes\\.com\\.edgekey\\.net\\/",
             "cookies": 0,
@@ -60,8 +45,8 @@
                 "geoapi"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000267,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "geoapi.indiatimes.com",
@@ -77,22 +62,115 @@
             "exampleSites": [
                 "timesofindia.com",
                 "m.timesofindia.com",
+                "timesofindia.indiatimes.com",
                 "www.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/cms-common\\/ibeat\\.min\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "agi-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "agi-static.indiatimes.com",
+                    "resolved": "agi-static.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_iibeat_session": {
+                    "ttl": 15768028,
+                    "length": 36,
+                    "prevalence": 0.00010056315366049879,
+                    "uniqueness": 1
+                },
+                "_iibeat_vt": {
+                    "ttl": 2592028,
+                    "length": 8,
+                    "prevalence": 0.00010056315366049879,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/crosswalk_sdk\\/sdk\\/jsso_crosswalk_legacy_0\\.6\\.22\\.min\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [
+                "jssocdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "jssocdn.indiatimes.com",
+                    "resolved": "jssocdn.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "indiatimes\\.com\\.edgekey\\.net\\/service\\/locate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "locate.indiatimes.com",
+                    "resolved": "locate.indiatimes.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesofindia.com",
+                "timesofindia.indiatimes.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000178,
+    "cookies": 0.000201,
     "topInitiators": [
         {
+            "domain": "toiimg.com",
+            "prevalence": 0.9
+        },
+        {
             "domain": "doubleclick.net",
-            "prevalence": 1
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Stylesheet": 2,
-        "Script": 3
+        "Script": 8,
+        "XHR": 2
     },
     "nameservers": []
 }

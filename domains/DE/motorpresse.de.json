@@ -4,14 +4,41 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000352,
-    "sites": 4,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
+        "plausible",
         "backend"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "motorpresse\\.de\\/api\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "plausible"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000603,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "runnersworld.de",
+                "www.cavallo.de",
+                "www.flugrevue.de",
+                "www.mountainbike-magazin.de",
+                "www.outdoor-magazin.com",
+                "www.runnersworld.de"
+            ]
+        },
         {
             "rule": "motorpresse\\.de\\/consent-mapping\\/script\\.js",
             "cookies": 0,
@@ -21,10 +48,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000352,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "01ba0f417f8c2fb2bcbb329f4162a2c2d9ef45faccf0c5726db1529b6d8a8fbe"
+                "bf9b97f2d4c0dd2e26485d14d536a1c63f80ac0dd5d0c0e55c5ab971587d24f9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,6 +62,35 @@
                 "www.aero.de",
                 "www.caraworld.de"
             ]
+        },
+        {
+            "rule": "motorpresse\\.de\\/js\\/script\\.local\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "plausible"
+            ],
+            "apis": {
+                "window.localStorage": 5,
+                "Navigator.prototype.webdriver": 5,
+                "window.innerWidth": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "119b36014dc2ae860cd397a3b7aabe2fa239cb54949b38679e68b02a52bc0fbb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cavallo.de",
+                "www.flugrevue.de",
+                "www.mountainbike-magazin.de",
+                "www.outdoor-magazin.com",
+                "www.runnersworld.de"
+            ]
         }
     ],
     "categories": [],
@@ -43,11 +99,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9090909090909091
+        },
+        {
+            "domain": "bike-x.de",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 4
+        "XHR": 6,
+        "Script": 9
     },
     "nameservers": [
         "ns15.domserver.de",

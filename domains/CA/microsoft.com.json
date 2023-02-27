@@ -9,10 +9,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00116,
-    "sites": 13,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "wcpstatic",
+        "www",
+        "target",
         "c1",
         "browser.events.data",
         "browser.pipe.aria"
@@ -22,18 +24,18 @@
     "resources": [
         {
             "rule": "microsoft\\.com\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0.0000891,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "wcpstatic"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.000178,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
@@ -41,10 +43,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "MSCC": {
-                    "ttl": 86404,
+                    "ttl": 86402,
                     "length": 2,
-                    "prevalence": 0.00008913450396648542,
-                    "uniqueness": 1
+                    "prevalence": 0.00020112630732099757,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -54,43 +56,111 @@
             ]
         },
         {
+            "rule": "microsoft\\.com\\/library\\/svy\\/minecraft\\/broker\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8ac5e872b12556c367704d34698c1bfb51f7b63773c03b9bcd87cdd3e0b0c4af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/rest\\/v1\\/delivery",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "target"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f1121de3ffcd56bfdde88b5958f73a7f7f1b7480d0bec639a6ab92118051f61d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/library\\/svy\\/minecraft\\/broker-config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2c28515941486163aaa49d1b0ac152511472ed2f8e961c3da26c59502d4a256c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minecraft.net",
+                "www.minecraft.net"
+            ]
+        },
+        {
             "rule": "microsoft\\.com\\/c\\.gif",
-            "cookies": 0.000267,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "c1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000267,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "8f84c4ced509262009163e45994b45ed7ee9d4dbac88674be5f2db5c9e5be38e"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "minecraft.net",
-                "help.minecraft.net",
                 "www.minecraft.net"
             ]
         },
         {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.000267,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "browser.events.data"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000446,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "8e78bc8b8e84a3fac87eb4e91840921dd9db1ccd708a80de079d9b9dbdc7f676",
-                "be21cd633be15788cc1c8655413108127715d636d05ed4e750a4fb033434da56",
-                "ceed1c60fa29d6c6043e9df3ac81dd7adcbdd05264eef30e851190c20bd7cf39",
+                "1eeb21db7650c724b6d25f5d72d74be1963ea6ab7dc8b15529be8e59d0162854",
+                "3f5bcac355abdab6606dbc8face4a471e1f5cd36a00991675bbccc4340c65a44",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
@@ -98,7 +168,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "minecraft.net",
-                "help.minecraft.net",
                 "takelessons.com",
                 "www.minecraft.net",
                 "www.trekbikes.com"
@@ -113,7 +182,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000178,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -133,7 +202,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000446,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -157,35 +226,39 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000267,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5454545454545454
+            "prevalence": 0.5882352941176471
         },
         {
             "domain": "azureedge.net",
-            "prevalence": 0.24242424242424243
+            "prevalence": 0.23529411764705882
         },
         {
             "domain": "azure.com",
-            "prevalence": 0.18181818181818182
+            "prevalence": 0.11764705882352941
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.029411764705882353
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.030303030303030304
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
-        "Script": 2,
-        "Image": 3,
-        "XHR": 10,
+        "Script": 6,
+        "XHR": 11,
+        "Image": 2,
         "Preflight": 2
     },
     "nameservers": [
         "ns3-39.azure-dns.org",
-        "ns4-39.azure-dns.info",
         "ns1-39.azure-dns.com",
+        "ns4-39.azure-dns.info",
         "ns2-39.azure-dns.net"
     ]
 }

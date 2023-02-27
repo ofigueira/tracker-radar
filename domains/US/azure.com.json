@@ -9,50 +9,51 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00233,
-    "sites": 322,
+    "prevalence": 0.0023,
+    "sites": 340,
     "subdomains": [
+        "js.monitor",
         "northeurope-2.in.applicationinsights",
+        "eastus2-0.in.applicationinsights",
         "uksouth-1.in.applicationinsights",
         "eastus-8.in.applicationinsights",
         "centralus-2.in.applicationinsights",
         "westeurope-5.in.applicationinsights",
-        "centralus-0.in.applicationinsights",
         "uksouth-0.in.applicationinsights",
         "southcentralus-0.in.applicationinsights",
-        "southcentralus-3.in.applicationinsights",
         "australiaeast-1.in.applicationinsights",
+        "southcentralus-3.in.applicationinsights",
         "eastus2-3.in.applicationinsights",
-        "eastus-3.in.applicationinsights",
         "westeurope-1.in.applicationinsights",
         "australiasoutheast-0.in.applicationinsights",
+        "westus2-2.in.applicationinsights",
         "westus-0.in.applicationinsights",
         "germanywestcentral-0.in.applicationinsights",
         "canadacentral-0.in.applicationinsights",
         "eastus-2.in.applicationinsights",
         "westeurope-2.in.applicationinsights",
-        "eastus-1.in.applicationinsights",
+        "centralus-0.in.applicationinsights",
         "northcentralus-0.in.applicationinsights",
-        "eastus2-0.in.applicationinsights",
         "eastus-6.in.applicationinsights",
         "eastus-5.in.applicationinsights",
+        "eastus-3.in.applicationinsights",
         "northeurope-3.in.applicationinsights",
+        "westus3-1.in.applicationinsights",
         "westeurope-4.in.applicationinsights",
         "westeurope-3.in.applicationinsights",
+        "westus2-1.in.applicationinsights",
         "dt-appgw-prod.eastus2.cloudapp",
-        "js.monitor",
-        "westus2-2.in.applicationinsights",
-        "prod-23.centralus.logic",
         "k8s-prod-azure-1.eastus.cloudapp",
         "prod-abeka.eastus.cloudapp",
+        "arsa-prod-appgw-public.eastus2.cloudapp",
         "benefitsgov-production-v2.eastus.cloudapp",
         "dxf-smart-home-waf.westeurope.cloudapp",
         "qwestflexprod.uksouth.cloudapp",
         "escc-matomo.westeurope.cloudapp",
         "finnet-matomo.westeurope.cloudapp",
-        "sentry-edenred.westeurope.cloudapp",
         "agw-hjl-weu-p-01.westeurope.cloudapp",
         "wafweblaliga.westeurope.cloudapp",
+        "prodsolb.eastus.cloudapp",
         "premera.westus2.cloudapp",
         "waf-msh-prd.westus.cloudapp",
         "production-n-toggo.westeurope.cloudapp",
@@ -78,6 +79,10 @@
         {
             "original": "chatbot.cheshirewestandchester.gov.uk",
             "resolved": "qwestflexprod.uksouth.cloudapp.azure.com"
+        },
+        {
+            "original": "content.services.aerolineas.com.ar",
+            "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
         },
         {
             "original": "crm.welcomepickups.com",
@@ -108,82 +113,79 @@
             "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
         },
         {
-            "original": "sentry.edenred.fr",
-            "resolved": "sentry-edenred.westeurope.cloudapp.azure.com"
-        },
-        {
             "original": "services.bosch-smarthome.com",
             "resolved": "dxf-smart-home-waf.westeurope.cloudapp.azure.com"
         },
         {
             "original": "static.abeka.com",
             "resolved": "prod-abeka.eastus.cloudapp.azure.com"
+        },
+        {
+            "original": "store.ltw.org",
+            "resolved": "prodsolb.eastus.cloudapp.azure.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "azure\\.com\\/\\/v2\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
+            "cookies": 0.000555,
+            "fingerprinting": 2,
             "subdomains": [
-                "northeurope-2.in.applicationinsights",
-                "uksouth-1.in.applicationinsights",
-                "eastus-8.in.applicationinsights",
-                "centralus-2.in.applicationinsights",
-                "westeurope-5.in.applicationinsights",
-                "centralus-0.in.applicationinsights",
-                "uksouth-0.in.applicationinsights",
-                "southcentralus-0.in.applicationinsights",
-                "southcentralus-3.in.applicationinsights",
-                "australiaeast-1.in.applicationinsights",
-                "eastus2-3.in.applicationinsights",
-                "eastus-3.in.applicationinsights",
-                "westeurope-1.in.applicationinsights",
-                "australiasoutheast-0.in.applicationinsights",
-                "westus-0.in.applicationinsights",
-                "germanywestcentral-0.in.applicationinsights",
-                "canadacentral-0.in.applicationinsights",
-                "eastus-2.in.applicationinsights",
-                "westeurope-2.in.applicationinsights",
-                "eastus-1.in.applicationinsights",
-                "northcentralus-0.in.applicationinsights",
-                "eastus2-0.in.applicationinsights",
-                "eastus-6.in.applicationinsights",
-                "eastus-5.in.applicationinsights",
-                "northeurope-3.in.applicationinsights",
-                "westeurope-4.in.applicationinsights",
-                "westeurope-3.in.applicationinsights"
+                "js.monitor"
             ],
-            "apis": {},
-            "sites": 55,
-            "prevalence": 0.000397,
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 98,
+                "window.sessionStorage": 98,
+                "Navigator.prototype.userAgent": 98,
+                "Document.cookie getter": 82,
+                "window.localStorage": 91,
+                "Document.cookie setter": 82,
+                "Navigator.prototype.onLine": 88
+            },
+            "sites": 107,
+            "prevalence": 0.000724,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
+            "responseHashes": [
+                "04c0e76669750440eedbda5b14314f0c3f3f28fb7f6dc719c95ef606af8f8ca6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.0005482604575605794,
+                    "uniqueness": 1
+                },
+                "ai_user": {
+                    "ttl": 31536000,
+                    "length": 47,
+                    "prevalence": 0.0005008799241911467,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.goengineer.com",
+                "www.familjensjurist.se",
+                "www.northwell.edu",
+                "www.lme.com",
+                "www.evo.com",
+                "faithlife.com",
                 "www.gravely.com",
-                "www.protective.com",
-                "www.reservations.com",
-                "www.northerner.com",
-                "www.sonesta.com",
-                "www.enbw.com",
-                "keeptradecut.com",
-                "www.toto.nl",
-                "www.qiagen.com",
-                "www.musicmagpie.co.uk",
-                "www.boerse-online.de",
-                "www.americancampus.com",
-                "www.roadscholar.org",
-                "www.decluttr.com",
-                "ffx.co.uk",
-                "www.raymourflanigan.com",
+                "operations.nfl.com",
+                "www.umassmed.edu",
+                "www.skyharbor.com",
+                "www.scribblemaps.com",
+                "my.bswhealth.com",
+                "mysteriousuniverse.org",
+                "www.brownells.com",
                 "jetsmart.com",
-                "www.acma.gov.au",
-                "photo.walgreens.com"
+                "www.libraccio.it",
+                "www.lichtblick.de",
+                "www.roompot.nl",
+                "www.customs.govt.nz",
+                "blacklapel.com",
+                "www.selco.org"
             ]
         },
         {
@@ -192,59 +194,59 @@
             "fingerprinting": 0,
             "subdomains": [
                 "northeurope-2.in.applicationinsights",
+                "eastus2-0.in.applicationinsights",
                 "uksouth-1.in.applicationinsights",
                 "eastus-8.in.applicationinsights",
                 "centralus-2.in.applicationinsights",
                 "westeurope-5.in.applicationinsights",
-                "centralus-0.in.applicationinsights",
                 "uksouth-0.in.applicationinsights",
                 "southcentralus-0.in.applicationinsights",
-                "southcentralus-3.in.applicationinsights",
                 "australiaeast-1.in.applicationinsights",
+                "southcentralus-3.in.applicationinsights",
                 "eastus2-3.in.applicationinsights",
-                "eastus-3.in.applicationinsights",
                 "westeurope-1.in.applicationinsights",
                 "australiasoutheast-0.in.applicationinsights",
+                "westus2-2.in.applicationinsights",
                 "westus-0.in.applicationinsights",
                 "germanywestcentral-0.in.applicationinsights",
                 "canadacentral-0.in.applicationinsights",
                 "eastus-2.in.applicationinsights",
                 "westeurope-2.in.applicationinsights",
-                "eastus-1.in.applicationinsights",
+                "centralus-0.in.applicationinsights",
                 "northcentralus-0.in.applicationinsights",
-                "eastus2-0.in.applicationinsights",
                 "eastus-6.in.applicationinsights",
                 "eastus-5.in.applicationinsights",
+                "eastus-3.in.applicationinsights",
                 "northeurope-3.in.applicationinsights",
+                "westus3-1.in.applicationinsights",
                 "westeurope-4.in.applicationinsights",
-                "westeurope-3.in.applicationinsights"
+                "westeurope-3.in.applicationinsights",
+                "westus2-1.in.applicationinsights"
             ],
             "apis": {},
-            "sites": 55,
-            "prevalence": 0.000397,
+            "sites": 56,
+            "prevalence": 0.000379,
             "cnames": [],
             "responseHashes": [
+                "76dc829025cdfa2c12dfaf8863662fc69c15a5a16535f2835bc9c5e0d14942b6",
                 "a0371d4fc59a21c844b13e45055c533e2410c7238808a8378e5f57d13f1db958",
                 "2d4e6fc4cc086cf99949cb1d9c45ece2336d1a1b457fe7eb3136377bdf285aa2",
                 "a4e2dd95d0548168577efb2431f913e7a42e310d919c18571906f9a8e5351e52",
-                "bd38b5fc88e88bfda855b553aa66a0c4971adf7b35b5bcf1c8d022a461ed0039",
-                "2f23b2666bd15c31198a9d5b64023a0f24ccddbe7282a76e8743c331f7c5ef29",
-                "257a956a04c6d4e9bb0c4452c175d5f032370c558d260f946109cfaee680906c",
-                "69b17dc8f5311c1bf1a4b18b01d4d7ea5b59b452e71b14052320b3f50ed07d02",
-                "bf7504672f38813f51643096c46438c8111cc83034b7a81f377488c5a4f87926",
-                "76dc829025cdfa2c12dfaf8863662fc69c15a5a16535f2835bc9c5e0d14942b6",
-                "1c300fc217f6dcd4dde779b410f9c36ea1960f27eb203f0475b6451e20ce760a",
-                "d8b2e6d81fc8696b7f958409739986682dd201580920a45fc8ffe0b803df02e4",
-                "fc7b7e92726f4f516f4fa4710b1af4fdfa32580b2654a774bf96e45c147c096a",
-                "43f9cea186c6a97cf28dc6183d6f81e945bc8aada8bb2a77042d9c9e4423d067",
-                "202f50229347a82b54f1ea61db1da9cf154cc6c319ac11b6715dadf8b426dcee",
-                "f3c49eee24e94b0a8aa77f5fca67338aeb92f8606f9b87a606a35715f1feea51",
-                "df72134aea7b64c3d53ab89b5fc08bd7e911463ef99ef16dc0614c0fdbb012ba",
                 "2f06451e2da9bcec5593f0e5f8be5aaf93a584def5560838666f6ddcc0f90a19",
+                "513fa9efcd57db663d3a04059d0e6758f2c0b42d54082c3353a8340cdb41effa",
+                "5a397a451fad6e5faf73e204d0018707d04812fbbb6208d2ee9cf5a577293546",
+                "5ec369dfc73030917b8847957add73eca4df911861adf41769312b4eb3f6e309",
+                "f3c49eee24e94b0a8aa77f5fca67338aeb92f8606f9b87a606a35715f1feea51",
+                "5883cecb5ce5f0c36615a97d0c9cef0ba19c1ea52ecd7486d22a94d2cd2ed06c",
+                "bd38b5fc88e88bfda855b553aa66a0c4971adf7b35b5bcf1c8d022a461ed0039",
                 "e60a1bb1e0e9f39d31e1a723d53840e58f1ef33ac06a36f6604223083e07eeb5",
-                "42c583e67cffdb37cb76663703b56f1fdb621fe1994e26f5b3051123173243b4",
-                "4f6351ec3a9d02611d2d93c8e306482708f2851047d93763b6df22a725bee6ce",
-                "99a6406f564cb2b87729a09eb67d3a84ea2360986bcf8505ffb73a64b0583423",
+                "202f50229347a82b54f1ea61db1da9cf154cc6c319ac11b6715dadf8b426dcee",
+                "df72134aea7b64c3d53ab89b5fc08bd7e911463ef99ef16dc0614c0fdbb012ba",
+                "bd4fbcf996ba2a97826bd5bf2dd45977e911ee82f6c976867f4f77ce1295d468",
+                "1c300fc217f6dcd4dde779b410f9c36ea1960f27eb203f0475b6451e20ce760a",
+                "1f0f4af44df1a60d311ba964776c635cfc1fd86409116eeecaf2fc792cead181",
+                "2f23b2666bd15c31198a9d5b64023a0f24ccddbe7282a76e8743c331f7c5ef29",
+                "023edbc035405ed6115ca11bf43fdde906b3a4322a3c2c697d944fd130544a1e",
                 "63aea80289fa67a39b7f44f5256cf4ab5e31f14101d27271a2491d9c510c3e60",
                 "0d52a21811031ec0a927d99d1da03d6c5929a46cd6eca42b0ef830d0ef04016a",
                 "6b5d1f7b11742017a79d8a6747bd9490e3b2e24929e0f8dbe28661a41145262e"
@@ -253,26 +255,92 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "jetsmart.com",
+                "asm.org",
+                "www.roadscholar.org",
+                "www.dart.org",
+                "www.cineplex.com",
+                "keeptradecut.com",
+                "service.vattenfall.de",
+                "www.skyexpress.gr",
+                "www.skyharbor.com",
+                "jp.translink.com.au",
+                "www.acma.gov.au",
+                "eurojackpot.nederlandseloterij.nl",
+                "www.activeandfitdirect.com",
                 "www.aspensnowmass.com",
-                "www.northerner.com",
-                "www.lovethesales.com",
-                "www.salahtimes.com",
-                "ffx.co.uk",
-                "bowl.com",
-                "www.santamonica.gov",
-                "smartway.tn.gov",
-                "blacklapel.com",
-                "www.qiagen.com",
-                "www.decluttr.com",
                 "www.premierhealth.com",
-                "freightliner.com",
-                "www.ahlsell.se",
-                "reservations.com",
+                "www.ukpowernetworks.co.uk",
+                "www.ivanti.com",
+                "www.tangeroutlet.com",
+                "www.interflora.co.uk",
+                "www.sonesta.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "northeurope-2.in.applicationinsights",
+                "eastus2-0.in.applicationinsights",
+                "uksouth-1.in.applicationinsights",
+                "eastus-8.in.applicationinsights",
+                "centralus-2.in.applicationinsights",
+                "westeurope-5.in.applicationinsights",
+                "uksouth-0.in.applicationinsights",
+                "southcentralus-0.in.applicationinsights",
+                "australiaeast-1.in.applicationinsights",
+                "southcentralus-3.in.applicationinsights",
+                "eastus2-3.in.applicationinsights",
+                "westeurope-1.in.applicationinsights",
+                "australiasoutheast-0.in.applicationinsights",
+                "westus2-2.in.applicationinsights",
+                "westus-0.in.applicationinsights",
+                "germanywestcentral-0.in.applicationinsights",
+                "canadacentral-0.in.applicationinsights",
+                "eastus-2.in.applicationinsights",
+                "westeurope-2.in.applicationinsights",
+                "centralus-0.in.applicationinsights",
+                "northcentralus-0.in.applicationinsights",
+                "eastus-6.in.applicationinsights",
+                "eastus-5.in.applicationinsights",
+                "eastus-3.in.applicationinsights",
+                "northeurope-3.in.applicationinsights",
+                "westus3-1.in.applicationinsights",
+                "westeurope-4.in.applicationinsights",
+                "westeurope-3.in.applicationinsights",
+                "westus2-1.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 56,
+            "prevalence": 0.000379,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ffx.co.uk",
                 "www.larosas.com",
                 "www.skyexpress.gr",
-                "www.mybenefitscenter.com",
+                "www.santamonica.gov",
+                "www.sonesta.com",
+                "www.premierhealth.com",
+                "www.miamiandbeaches.com",
+                "www.salahtimes.com",
+                "service.vattenfall.de",
+                "www.tangeroutlet.com",
+                "www.abeka.com",
+                "www.boerse-online.de",
+                "www.enbw.com",
+                "jetsmart.com",
+                "www.interflora.co.uk",
+                "blog.davey.com",
                 "www.protective.com",
-                "www.toto.nl"
+                "www.skyharbor.com",
+                "www.statsforspotify.com",
+                "www.goengineer.com"
             ]
         },
         {
@@ -283,8 +351,8 @@
                 "dt-appgw-prod.eastus2.cloudapp"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 5,
+            "prevalence": 0.0000338,
             "cnames": [
                 {
                     "original": "dynatrace.att.com",
@@ -292,75 +360,20 @@
                 }
             ],
             "responseHashes": [
-                "d1e513b3cd47f83fc78cc16ab8ffbea6920508ea92571b8400e3612122a53d44"
+                "97c3183186c0a730a76daef1807135a5600fd9111b861c8243fdd712bda5603a",
+                "82a5bcca4fb97d378b54d54ac1ca238a02c166589017dee6d83e8a6b47213a17",
+                "5e6bb75f67752b4f83454d3c8c6571eba809fba676471cca0e31f7e8ac6d6876",
+                "e1fec47156420ce5178ff800ea1a755bdb0d8c2ce6d94999cb61be021032d67a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "att.com",
-                "www.att.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0.0006,
-            "fingerprinting": 2,
-            "subdomains": [
-                "js.monitor"
-            ],
-            "apis": {
-                "Navigator.prototype.onLine": 82,
-                "window.sessionStorage": 93,
-                "Document.cookie getter": 83,
-                "Navigator.prototype.userAgent": 93,
-                "Document.cookie setter": 83,
-                "window.localStorage": 90,
-                "PerformanceTiming.prototype.navigationStart": 93
-            },
-            "sites": 103,
-            "prevalence": 0.000744,
-            "cnames": [],
-            "responseHashes": [
-                "ac4f3a99557d9c17b6ded0c6d4f0b267f4879cde9baec07a83910ab8c7059f77"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ai_user": {
-                    "ttl": 31536000,
-                    "length": 47,
-                    "prevalence": 0.0005563583815028902,
-                    "uniqueness": 1
-                },
-                "ai_session": {
-                    "ttl": 1800,
-                    "length": 50,
-                    "prevalence": 0.0005997109826589596,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "usnews.com",
-                "www.roompot.nl",
-                "www.umassmed.edu",
-                "www.scribblemaps.com",
-                "www.nikon.co.uk",
-                "www.libraccio.it",
-                "faithlife.com",
-                "www.lme.com",
-                "www.helen.fi",
-                "operations.nfl.com",
-                "www.goengineer.com",
-                "www.abeka.com",
-                "www.papamurphys.com",
-                "www.toto.nl",
-                "www.christies.com",
-                "www.perthmint.com",
-                "www.roadscholar.org",
-                "bowl.com",
-                "www.1aauto.com",
-                "www.nyrr.org"
+                "m.att.com",
+                "www.att.com",
+                "www.att.net",
+                "www.wireless.att.com"
             ]
         },
         {
@@ -372,7 +385,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -386,70 +399,28 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/workflows\\/bd84997466814b1fa9b92132339f3e14\\/triggers\\/manual\\/paths\\/invoke",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-23.centralus.logic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eddiebygiddy.com",
-                "getmegiddy.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/workflows\\/bd84997466814b1fa9b92132339f3e14\\/triggers\\/manual\\/paths\\/invoke",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-23.centralus.logic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eddiebygiddy.com",
-                "getmegiddy.com"
-            ]
-        },
-        {
             "rule": "azure\\.com\\/scripts\\/c\\/ms\\.analytics-web-3\\.2\\.6\\.gbl\\.min\\.js",
-            "cookies": 0.0000361,
+            "cookies": 0.0000271,
             "fingerprinting": 2,
             "subdomains": [
                 "js.monitor"
             ],
             "apis": {
-                "Navigator.prototype.product": 5,
-                "Document.cookie getter": 5,
-                "Navigator.prototype.language": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Document.cookie setter": 5,
-                "Date.prototype.getTimezoneOffset": 5,
-                "window.localStorage": 5,
-                "window.sessionStorage": 5,
-                "Date.prototype.getTime": 5,
-                "Navigator.prototype.appVersion": 5,
-                "window.innerHeight": 5,
-                "window.innerWidth": 5
+                "Navigator.prototype.product": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie setter": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.appVersion": 4,
+                "window.innerHeight": 4,
+                "window.innerWidth": 4
             },
             "sites": 5,
-            "prevalence": 0.0000361,
+            "prevalence": 0.0000338,
             "cnames": [],
             "responseHashes": [
                 "e99b7d33558265d01cc2bd4e0b3d49bbb976cce5cf18df95baa4b8f699d4190f"
@@ -459,20 +430,20 @@
                 "MicrosoftApplicationsTelemetryDeviceId": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.000036127167630057806,
+                    "prevalence": 0.000027074590496818735,
                     "uniqueness": 1
                 },
                 "ai_session": {
-                    "ttl": 1804,
+                    "ttl": 1803,
                     "length": 50,
-                    "prevalence": 0.000036127167630057806,
+                    "prevalence": 0.000027074590496818735,
                     "uniqueness": 1
                 },
                 "MSFPC": {
                     "ttl": 31536000,
                     "length": 4,
-                    "prevalence": 0.000036127167630057806,
-                    "uniqueness": 0.2
+                    "prevalence": 0.000027074590496818735,
+                    "uniqueness": 0.25
                 }
             },
             "firstPartyCookiesSent": {},
@@ -486,63 +457,63 @@
         },
         {
             "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.gbl\\.min\\.js",
-            "cookies": 0.0000289,
+            "cookies": 0.0000406,
             "fingerprinting": 2,
             "subdomains": [
                 "js.monitor"
             ],
             "apis": {
-                "Navigator.prototype.onLine": 19,
-                "window.localStorage": 20,
-                "Navigator.prototype.userAgent": 21,
-                "PerformanceTiming.prototype.navigationStart": 21,
-                "window.sessionStorage": 4,
-                "Document.cookie getter": 4,
-                "Document.cookie setter": 4
+                "Navigator.prototype.onLine": 25,
+                "window.localStorage": 24,
+                "Navigator.prototype.userAgent": 25,
+                "PerformanceTiming.prototype.navigationStart": 25,
+                "window.sessionStorage": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6
             },
-            "sites": 21,
-            "prevalence": 0.000152,
+            "sites": 27,
+            "prevalence": 0.000183,
             "cnames": [],
             "responseHashes": [
-                "7cd6ddfa4cc8e26e55a9e61a04030f2ad0b662993067cb8aaab74d8661114516"
+                "f192939d027339d0bcab500923da08ba7b80b06e6a999aad746cbc6324a10981"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ai_user": {
                     "ttl": 31536000,
                     "length": 47,
-                    "prevalence": 0.00002167630057803468,
+                    "prevalence": 0.0000406118857452281,
                     "uniqueness": 1
                 },
                 "ai_session": {
                     "ttl": 1800,
                     "length": 50,
-                    "prevalence": 0.000028901734104046242,
+                    "prevalence": 0.0000406118857452281,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.cetaphil.com",
-                "www.blackanddeckerappliances.com",
-                "uk.crucial.com",
-                "www.skil.com",
-                "www.sylvania-automotive.com",
-                "www.remingtonproducts.com",
-                "www.alaskausa.org",
-                "www.schoolsfirstfcu.org",
-                "www.instanthome.com",
-                "www.sanus.com",
-                "www.healthspan.co.uk",
-                "www.omen.com",
-                "www.haier-europe.com",
-                "www.quakeroats.com",
-                "us.britax.com",
                 "www.ericsson.com",
+                "www.skil.com",
+                "www.pyrexhome.com",
                 "instantpot.com",
-                "www.maxi-cosi.de",
+                "www.alaskausa.org",
+                "www.corelle.com",
                 "www.rainx.com",
-                "egopowerplus.com"
+                "www.murdochs.com",
+                "www.instanthome.com",
+                "www.remingtonproducts.com",
+                "www.omen.com",
+                "www.victorinox.com",
+                "www.medela.us",
+                "www.joelosteen.com",
+                "www.lovethegarden.com",
+                "www.cetaphil.com",
+                "www.haier-europe.com",
+                "egopowerplus.com",
+                "us.britax.com",
+                "www.gatecity.bank"
             ]
         },
         {
@@ -554,7 +525,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "geo.api.overdrive.com",
@@ -582,7 +553,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -609,7 +580,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -636,7 +607,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -663,7 +634,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -690,7 +661,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -717,7 +688,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -744,7 +715,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -771,7 +742,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -798,7 +769,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -825,7 +796,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -852,7 +823,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -879,7 +850,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.abeka.com",
@@ -898,6 +869,168 @@
             ]
         },
         {
+            "rule": "azure\\.com\\/api\\/home_info_sections",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "e960a8fc120024770958f958a5c2bc9f3e282a1f5d6eb08e78479c8a8880c148"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/help_categories",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "f0aa80184309b35213c63d0a7913bc31b833dde3d97495af7be69da3cc824b94"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/alerts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/footer_content",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "f8f54759cd6f5fa4604ea55f0129b3e197ddac30d26a1e05ba16a63cb3846a89"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/bank_financing",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "ea04e376195f28f4f966fc82b45f26d4a048229ca65f98216677ce0511b8c862"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/home_page_container",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "29016d598d1b158ca72833332ee53e1ed4c0c41bcc2d5ef622acdc5ef790d0b6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
+            ]
+        },
+        {
             "rule": "azure\\.com\\/v1\\/emergency_banner",
             "cookies": 0,
             "fingerprinting": 0,
@@ -906,7 +1039,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "api.benefits.gov",
@@ -933,7 +1066,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "services.bosch-smarthome.com",
@@ -960,7 +1093,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "chatbot.cheshirewestandchester.gov.uk",
@@ -968,7 +1101,7 @@
                 }
             ],
             "responseHashes": [
-                "f7e2590f47a6d262569c5fd0cd16f011ebde3883ed809271c0f2793b1a60bd27"
+                "3afa725a281bce03c2bc33b7e82a4a5f72bbd2e035b4bc07a0178cdb9246b4a5"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -987,7 +1120,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "chatbot.cheshirewestandchester.gov.uk",
@@ -995,7 +1128,7 @@
                 }
             ],
             "responseHashes": [
-                "17c8d225ed440d459d5346ecfb4d44a7cacb7c2ba92c57533b79b1f756e4fed8"
+                "6386db9a3bdbf1a3ddb0ff4c11916dba8760dc5bfd404a82355fe37caa86a48d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1014,7 +1147,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "chatbot.cheshirewestandchester.gov.uk",
@@ -1022,7 +1155,7 @@
                 }
             ],
             "responseHashes": [
-                "efbb5334aea17e1d55d68fa5b8e8e877545ca297969c9e5b3b2747c35ff07d72"
+                "42b0cde08369aeebd1b59fc104ff39a07e438738349a2554c6b07cbe994a94dc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1041,7 +1174,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "chatbot.cheshirewestandchester.gov.uk",
@@ -1060,49 +1193,6 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0.0000145,
-            "fingerprinting": 2,
-            "subdomains": [
-                "js.monitor"
-            ],
-            "apis": {
-                "Navigator.prototype.onLine": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "window.localStorage": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {
-                "ai_user": {
-                    "ttl": 31536000,
-                    "length": 47,
-                    "prevalence": 0.000014450867052023121,
-                    "uniqueness": 1
-                },
-                "ai_session": {
-                    "ttl": 1800,
-                    "length": 50,
-                    "prevalence": 0.000014450867052023121,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "christies.com",
-                "www.christies.com"
-            ]
-        },
-        {
             "rule": "azure\\.com\\/matomo\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -1112,7 +1202,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "matomo.eastsussex.gov.uk",
@@ -1124,6 +1214,7 @@
                 }
             ],
             "responseHashes": [
+                "864fc1fbb0d419e3c7be7e9ab7e47218e1c5c3b679e04b5189f8620327979559",
                 "a98bcbffd5d9ea7bf01dfdc4d0b7f0c75bfcefffa62a51e237082f7d05d18987"
             ],
             "type": "Script",
@@ -1145,7 +1236,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
                     "original": "matomo.eastsussex.gov.uk",
@@ -1162,39 +1253,12 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000072254335260115605
+                "lotame_domain_check": 0.000006768647624204684
             },
             "exampleSites": [
                 "eastsussex.gov.uk",
                 "www.eastsussex.gov.uk",
                 "www.finanzen.ch"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/7\\/envelope\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sentry-edenred.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "sentry.edenred.fr",
-                    "resolved": "sentry-edenred.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edenred.fr",
-                "www.edenred.fr"
             ]
         },
         {
@@ -1206,16 +1270,14 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "api.juridischloket.nl",
                     "resolved": "agw-hjl-weu-p-01.westeurope.cloudapp.azure.com"
                 }
             ],
-            "responseHashes": [
-                "f6520676a4f3064ec48c7cb3730f9daa1d85dd3a5da1cfe38478bc898e9490b7"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1233,7 +1295,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -1258,7 +1320,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -1285,7 +1347,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -1293,7 +1355,7 @@
                 }
             ],
             "responseHashes": [
-                "e1ab501df5b30f9286cff3cc09bd93ac4a167a0c9da82957e2bc5744656d6200"
+                "ebebfe470908d30e287bc06fd898972f7ea7b0fb102f245050dbbd93ea94c426"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1312,7 +1374,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -1337,32 +1399,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "apim.laliga.com",
-                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "laliga.com",
-                "www.laliga.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/news",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wafweblaliga.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -1370,7 +1407,7 @@
                 }
             ],
             "responseHashes": [
-                "52d859a5992a241d7f9383f09a69092cd655a64e1d8c9ea3aa9f2558193401dd"
+                "d81c2ebaeb8d893f6f302bf325fd5479287168f0b21b48ed73080d59897cd5da"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1381,15 +1418,1036 @@
             ]
         },
         {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/news",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/SubscribeWidgetPage\\.aspx",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "959ee03e5b1f9bf4ab270a72d0a5e3db5f68421278303b2e56b7dbe9175ead08"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/jquery-3\\.5\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "6150a35c0f486c46cadf0e230e2aa159c7c23ecfbb5611b64ee3f25fcbff341f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/jquery-migrate-1\\.4\\.1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "c68a880944aa03082e88bbe6c7df7747ee45f506fa777e76fb41709a0ba5a935"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jscripts\\/formvalidate\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "37725139d83a6f5ab2deee460f645c0b015f7f5af9a10756eb347e8af87ff9b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jscripts\\/core\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "20bae7567e224a9761017824c6447f403e7f71b25aa4a2d266b06096d246f43a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jscripts\\/date\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "22572f365f1014e30cb5674e5e274e35bc58f8df37a3b663bf0433891b7d0108"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.studioonline\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "beff62d394d20669cc58415d9f9e9d24ecb2c934d0a59b86436fb93931008377"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/jquery-ui-1\\.12\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "28ce75d953678c4942df47a11707a15e3c756021cf89090e3e6aa7ad6b6971c3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.mask\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "fe908cd3da779542f6d46d2c1342085a1faca88743a2765c2fbcf79f3ea51f73"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.qtip\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "cd2dbebc6cbfe0e5dbd04302e446497ba08c615f30ff8d4f5a8d7ed4e9c000df"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.pagination\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "dc690e6fe3086b952f8c66a48d0ef85b54b1966ad38a62e7b2a567fdce025a3e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.watermark\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "9b8645f91233dc768f443504dd7d0d739acbea2179ce029fc64c2d91bf07eb3d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.linq\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "75caead04980b830c69a6ac24042b37e570c89e89c387380b440f8eb3a6ddfae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.creditCardValidator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "9a7b46a5fe72cce1b0b06ef9883e9f6d06b38e3b08c76a00c6a368b514c43e04"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/accounting\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "1b1589c7a7e1338b07b9164daf283dd9f7cb658cba9752c2e872b813d3b7e5e4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.blockUI\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "7cf61ac49db51c71cc2075931783858316d7e1df8806fd6fa0136a01e8ccb81b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jscripts\\/dsso\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "c65a976b8bfc5f43567fdf624f69389bc2ceb7712d6d798fa983f6d225b69704"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/scripts\\/animations\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "dc2795d43cdbdcb0dc9fcb3efb00cdca10039090f69792a5034606c607f2b424"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/jquery-ui-1\\.12\\.1\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "a7ac54f58ba507b13621ceb6fcf5fe879f5ac9bdcf049d16153110c6ad048c7c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/jquery-ui\\.override\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "a888aed09a9b709648042e3e0fcc2d99ce68278eca06c0e394004ab9c017e7f6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/jquery\\/plugins\\/jquery\\.qtip\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "52f72d7e7e72d2ce6c1cb238fa471a45f68a642b4bafbf4148092535cfd8a813"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/includes\\/slider\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "92e905fb79aec047f90a53cc026874afbeaa994c807449c94456a6f6affe5883"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/includes\\/so-progress-indicator\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "7485ed632d4271e9ed5f59bae0f20ddea509e124f859aa13e8db3dddcde7a1ea"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/includes\\/so-style-childSponsorship\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "46ec6f1627ccc03351d11d3e8a31457348955e1f55bb9b401f8f9ffd7f21dc29"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/includes\\/z-so-style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "fca7aa0b2749bc70b1bdbd5c241dcb3f7283aa273837d6e979c4b73cea48c9ce"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/z-ltw-style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "d4306d6208c8e1c008bd113b7bf411641b6841552cb761f5ac3fd7d5e2eba1cb"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/zz-ltw-style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "e24b0f4178a35dfff2782f7313bf5372996ac236a5586086a24d7402ec12d8ee"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/zzz-ltw-style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "8a8e76fc55ed93b420f3470400eee772eb10c6073752ba653541ac3f367853d2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/WebResource\\.axd",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "40732e9dcfa704cf615e4691bb07aecfd1cc5e063220a46e4a7ff6560c77f5db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/ScriptResource\\.axd",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "398cdf1b27ef247e5bc77805f266bb441e60355463fc3d1776f41aae58b08cf1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/images\\/mail\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "3412ed0a99287c959acf21d8dbeb383aa9bf6c97182bdc7fc32880f0ba49d21f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/webfonts\\/Fonts\\/scalasanswebpro-bold-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "01876fb02551c75a1b9accb395e3dafc6dd60361fbb24ad7e21e9af2c8e00b50"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/webfonts\\/Fonts\\/5cf4946d-aae7-4079-93b3-ac9452752a62\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "79ab35c925a779f8fc5ca8c6af4667ace245362c06f596eb6ae8bae0e1bf8b5c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/webfonts\\/Fonts\\/scalasanswebpro-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "0dc41e56288e464727d1f8a116568939cbf028c4b20c7c428f394039fdfad144"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/App_Themes\\/Skin_1\\/webfonts\\/Fonts\\/af745fda-4cc8-4904-8641-070dcaf1b5ab\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "228bd3559b927dcd2041623ccf84478c06478eef03f7deecabdd13a344978a7d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/ClientScriptHelper\\.asmx\\/MediaIDByZipCountry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodsolb.eastus.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "store.ltw.org",
+                    "resolved": "prodsolb.eastus.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "656eb2ef68e41a8776b4ad98c9b8ade89e8eccd7cf3a5b67919848f50eafa0e9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltw.org",
+                "www.ltw.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/scripts\\/c\\/ms\\.shared\\.analytics\\.mectrl-3\\.2\\.6\\.gbl\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.monitor"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "7d145b10d4a03fc22a08b2228f403779414c838430ce718ba52fb23e15837e55"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "microsoftedgeinsider.com",
+                "www.microsoftedgeinsider.com"
+            ]
+        },
+        {
             "rule": "azure\\.com\\/api\\/v1\\.0\\/environment\\/information",
-            "cookies": 0.0000145,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "premera.westus2.cloudapp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "member-edge.premera.com",
@@ -1397,7 +2455,7 @@
                 }
             ],
             "responseHashes": [
-                "1438e55d547de4960caae229f226e2a2edcd816fe832c8f417cabc34be2c15a7"
+                "6f1c69504e89610b998a1fffd59786e5b64b124e9e742c5023a36f60814ddc4b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1416,7 +2474,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "msh.sheahomes.com",
@@ -1443,7 +2501,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1451,7 +2509,7 @@
                 }
             ],
             "responseHashes": [
-                "b37851f614746f7682c3bcf3849bd056a9117387a10df25f48be20d5d082a818"
+                "1220e5f83497ba510a50ef2c164da767d5bc4464e8cbfeac976f06734aa0a6a0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1470,7 +2528,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1495,7 +2553,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1520,7 +2578,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1528,7 +2586,7 @@
                 }
             ],
             "responseHashes": [
-                "319b5b712d6e351f7be266ff7936c9a42429eac51f3f1b7ba8c1d6551fcefece"
+                "06ff65aa0a82177e187873dddfd39227f13dfecd7dd2b65711d98d9696659a0c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1547,7 +2605,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1555,7 +2613,7 @@
                 }
             ],
             "responseHashes": [
-                "f217d57c7178d1afd886724b01ca722920822f1cf705ad1acf93f19a23539375"
+                "dbc87e52a7ffc420acc6e26162a76380815b0521f61bd275849866d684b5557e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1568,13 +2626,13 @@
         {
             "rule": "azure\\.com\\/toggo-gujAd\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "production-n-toggo.westeurope.cloudapp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1582,7 +2640,7 @@
                 }
             ],
             "responseHashes": [
-                "e76c3455e7a6a58876b4e2135ea84bc7fb6f27c8cac9f28dd8df5d46ecc5930d"
+                "ec5cf062cd9d254cd6f2412cd8ec5ce2cbfaee9bbf877993b520306428e5cb6b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1601,7 +2659,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1626,7 +2684,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1634,7 +2692,7 @@
                 }
             ],
             "responseHashes": [
-                "eff6beff4b7d822991d3630fb7f538eb38126892866cd05e57d0b4ce13a3aef9"
+                "bc43b5a8a041c7d9a663cf5209c4ad8a6e9538bd80722018b12ea5fbc3c5d692"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1653,7 +2711,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1661,7 +2719,34 @@
                 }
             ],
             "responseHashes": [
-                "f21ccc25b8fbcd02bd5fd0bc20425e8fa6ad9d09b4ba00f2954728c3c44dd125"
+                "0bd791a7ec3b3176bbe1234c353a16f1498d7962603dd690d489e140a5811e80"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/assetstore\\/game",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-n-toggo.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "production-n.toggo.de",
+                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "a40c4da046306e2c534e10f4c4733227120ded2442f56a636b942426a0017599"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1680,7 +2765,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1705,59 +2790,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/game",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "5cfb34b5ed216a7b3f98ce1fabb5153b9b6881dddffb02792ac00ec3f91a2827"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/mixed_assets",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1782,7 +2815,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "production-n.toggo.de",
+                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/assetstore\\/mixed_assets",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-n-toggo.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "production-n.toggo.de",
@@ -1790,7 +2848,7 @@
                 }
             ],
             "responseHashes": [
-                "1f8da4a0226ce903c97c1c52e31c222d5b58f02aa4a6536b81823a36ce78a08f"
+                "def09a7f2c068ef6cd4b1d957d3bbae48db40e364df2ef73d6c1fcafb00df70e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1809,7 +2867,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000145,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "crm.welcomepickups.com",
@@ -1830,63 +2888,64 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00121,
+    "cookies": 0.00117,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6736292428198434
-        },
-        {
-            "domain": "msecnd.net",
-            "prevalence": 0.07049608355091384
-        },
-        {
-            "domain": "azureedge.net",
-            "prevalence": 0.057441253263707574
+            "prevalence": 0.6956521739130435
         },
         {
             "domain": "windows.net",
-            "prevalence": 0.04960835509138381
+            "prevalence": 0.0639386189258312
         },
         {
-            "domain": "channelsight.com",
-            "prevalence": 0.015665796344647518
+            "domain": "azureedge.net",
+            "prevalence": 0.05115089514066496
         },
         {
-            "domain": "listrakbi.com",
-            "prevalence": 0.015665796344647518
+            "domain": "msecnd.net",
+            "prevalence": 0.04603580562659847
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.015665796344647518
+            "prevalence": 0.017902813299232736
         },
         {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.007832898172323759
+            "domain": "channelsight.com",
+            "prevalence": 0.015345268542199489
         },
         {
-            "domain": "doubleclick.net",
-            "prevalence": 0.007832898172323759
+            "domain": "listrakbi.com",
+            "prevalence": 0.015345268542199489
         },
         {
-            "domain": "bigcommerce.com",
-            "prevalence": 0.007832898172323759
+            "domain": "pub.network",
+            "prevalence": 0.0076726342710997444
+        },
+        {
+            "domain": "market-b2c-components-production.azurewebsites.net",
+            "prevalence": 0.005115089514066497
+        },
+        {
+            "domain": "quantummetric.com",
+            "prevalence": 0.005115089514066497
         }
     ],
     "types": {
-        "Preflight": 75,
-        "XHR": 78,
-        "Script": 140,
+        "Script": 190,
+        "XHR": 92,
+        "Preflight": 74,
         "Ping": 5,
-        "Image": 18,
-        "Stylesheet": 6,
-        "Font": 4,
-        "Fetch": 18
+        "Image": 20,
+        "Stylesheet": 26,
+        "Font": 12,
+        "Fetch": 16,
+        "Document": 2
     },
     "nameservers": [
         "ns2-39.azure-dns.net",
-        "ns4-39.azure-dns.info",
         "ns3-39.azure-dns.org",
-        "ns1-39.azure-dns.com"
+        "ns1-39.azure-dns.com",
+        "ns4-39.azure-dns.info"
     ]
 }

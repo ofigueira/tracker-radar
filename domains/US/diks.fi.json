@@ -4,14 +4,139 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000723,
-    "sites": 1,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
+        "sso.prod",
         "coral"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "sso.ksml.fi",
+            "resolved": "sso.prod.diks.fi"
+        },
+        {
+            "original": "sso.savonsanomat.fi",
+            "resolved": "sso.prod.diks.fi"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "diks\\.fi\\/assets\\/jankko-sso-client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sso.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "sso.ksml.fi",
+                    "resolved": "sso.prod.diks.fi"
+                },
+                {
+                    "original": "sso.savonsanomat.fi",
+                    "resolved": "sso.prod.diks.fi"
+                }
+            ],
+            "responseHashes": [
+                "a3eb4ea34989ce97bf9b8d0cc5963fb580d3f4745a12f54e1e54c9b5921637eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.ksml.fi",
+                "www.savonsanomat.fi"
+            ]
+        },
+        {
+            "rule": "diks\\.fi\\/refreshSession",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "sso.ksml.fi",
+                    "resolved": "sso.prod.diks.fi"
+                },
+                {
+                    "original": "sso.savonsanomat.fi",
+                    "resolved": "sso.prod.diks.fi"
+                }
+            ],
+            "responseHashes": [
+                "10028f5fa72c9ddcc40101b3db718bff6442da50b82f1f81cc8f0898b2db8850"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.ksml.fi",
+                "www.savonsanomat.fi"
+            ]
+        },
+        {
+            "rule": "diks\\.fi\\/assets\\/js\\/count\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "coral"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "305705fc54f335a4cce39cb68ab059e7202c19f0ff03d3336ebd3e6fcdcf0518"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.ksml.fi",
+                "www.savonsanomat.fi"
+            ]
+        },
+        {
+            "rule": "diks\\.fi\\/assets\\/js\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "coral"
+            ],
+            "apis": {
+                "window.indexedDB": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "98a960ffbebaae9ccabcba52980f6521319a2835127e0a455af84839ca6b9722"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ksml.fi",
+                "www.savonsanomat.fi"
+            ]
+        },
         {
             "rule": "diks\\.fi\\/api\\/story\\/count\\.js",
             "cookies": 0,
@@ -20,24 +145,26 @@
                 "coral"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000145,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "073df85770819f332bf5ca67abc63d2a5a5fe0a044e2a47c9a5ad0c8073d8e16"
+                "bc0cfb0d058b23cde1bdaff59577b2dc521fa964bdc34cc31a8129e2783140f3",
+                "c7332f8b4724dc1ec09afac2e4490519d3d4345c8a51515f21622ea56579e4f3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ksml.fi",
-                "www.ksml.fi"
+                "www.ksml.fi",
+                "www.savonsanomat.fi"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000723,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
@@ -45,12 +172,13 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 11,
+        "Fetch": 3
     },
     "nameservers": [
+        "ns-458.awsdns-57.com",
         "ns-1887.awsdns-43.co.uk",
         "ns-1069.awsdns-05.org",
-        "ns-458.awsdns-57.com",
         "ns-945.awsdns-54.net"
     ]
 }

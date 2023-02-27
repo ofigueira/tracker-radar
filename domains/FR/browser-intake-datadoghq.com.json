@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000907,
-    "sites": 9,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
         "rum",
         "logs"
@@ -25,26 +25,24 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000605,
+            "prevalence": 0.000603,
             "cnames": [],
             "responseHashes": [
-                "d46fa581a04dc28ea732abb93bb5b12947ad64371930f63a0793599bba7f0ca8",
-                "6d7cfb83c92fb6104f226b0e52f3ab942170fd4af31aec488a89a2983d169c37",
-                "23c3562b813552edd5780c00519778f213a7e2ce4b67bd8985c0a812441b6e1e",
-                "42b358a3e52c803c44101ddf2d09e704066e66540ce9a716692ab03c1f58dc61",
-                "a054f02cceb0691c8449b03627f0ae6093060942891634c99d2a8375e07d3b15"
+                "9317dee25c045716182fcde46c641eb7ca02618943bfdbe2f1a5260f50527646",
+                "64a09fca5bcc00f05d0d756c2746d3eb123b3c2da2e09eec8f040fbddb672b26",
+                "7baaf58500f2b599149f5d0ef86368c573f87cf965dcbe815c14e772a04d2597",
+                "5a3a1ed11e5ded64c632053945feb84854707cc71a9d31c89debe4ed8395524e",
+                "eb95985333815493ab0fa9f0ef2b26b65936e12a85527765cc9fd9ed87fbc338"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.00010078613182826043
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hashicorp.com",
+                "clickup.com",
                 "developer.hashicorp.com",
-                "www.deckshop.pro",
-                "www.midjourney.com",
-                "www.sweetwater.com",
+                "www.ghacks.net",
+                "www.nbcnews.com",
+                "www.today.com",
                 "www.zoominfo.com"
             ]
         },
@@ -57,19 +55,65 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "83adf7177d71743536ac483714db3bc881bca7ec02940cc9eebea7c0cbd95364",
-                "bafc076c13dcce3edb52549cc528a173c46aee89cddd3a13aaec4cbcf6854d50"
+                "d6d85e71332b103f4727747e46d6e7c7bb1b2ea91167581204fd0a70dd5bd871",
+                "5704e7d616014b9a51fa31b72a2d73e8119834a65f67c8d45fafc0da320320c7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lafourche.fr",
-                "www.backmarket.com",
-                "www.backmarket.fr"
+                "www.backmarket.fr",
+                "www.backmarket.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "codecademy.com",
+                "www.codecademy.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "09a8e3115f9f3a3f9cda1aa7b4d4c6ad928c04eedf1df79e1161dd5b8858c85f",
+                "59bba3c39c3c9289ae856d9b363a54fb3f613433ed5cdc5161ddddd6016bc7c1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "codecademy.com",
+                "www.codecademy.com",
+                "www.today.com"
             ]
         }
     ],
@@ -78,20 +122,30 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.6071428571428571
+            "domain": "first party",
+            "prevalence": 0.5949367088607594
         },
         {
-            "domain": "first party",
-            "prevalence": 0.32142857142857145
+            "domain": "nbcnews.com",
+            "prevalence": 0.16455696202531644
+        },
+        {
+            "domain": "mutinycdn.com",
+            "prevalence": 0.12658227848101267
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.08860759493670886
         },
         {
             "domain": "d1eh9yux7w8iql.cloudfront.net",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.02531645569620253
         }
     ],
     "types": {
-        "Fetch": 9
+        "Fetch": 9,
+        "Ping": 2,
+        "XHR": 3
     },
     "nameservers": [
         "ns-1264.awsdns-30.org",

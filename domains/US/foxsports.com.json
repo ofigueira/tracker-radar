@@ -9,15 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000434,
-    "sites": 6,
+    "prevalence": 0.0000541,
+    "sites": 8,
     "subdomains": [
         "statics",
         "www",
-        "api"
+        "api",
+        "api.nova",
+        "b"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "foxsports\\.com\\/static\\/orion\\/style\\/css\\/scorestrip-external\\.css",
@@ -28,7 +30,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "5ef396c9f4fed253140d4b558ebe371daa676537f846d837bd865f0fab851d6d"
@@ -44,24 +46,24 @@
         },
         {
             "rule": "foxsports\\.com\\/static\\/orion\\/scorestrip\\.js",
-            "cookies": 0.0000217,
+            "cookies": 0.0000135,
             "fingerprinting": 2,
             "subdomains": [
                 "statics"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Event.prototype.timeStamp": 3,
-                "Navigator.prototype.product": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3,
-                "window.localStorage": 3,
-                "window.innerWidth": 3,
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
                 "window.innerHeight": 1,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 2
             },
             "sites": 3,
-            "prevalence": 0.0000217,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "8d91f20a7679de22dd361e8e099a1966ef02aa65b053afbb8050415399fbc8e8"
@@ -77,18 +79,17 @@
         },
         {
             "rule": "foxsports\\.com\\/accounts\\/favorites-modal\\/location\\/",
-            "cookies": 0.00000723,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "2f7e2541fe965f413227ae1bba0a1fadbe056fb378e5ff93c48e35b077664520",
-                "7eb68b1245e073190adcb27e90d07ad75607b1ec0330136729e4739774d19864"
+                "2f7e2541fe965f413227ae1bba0a1fadbe056fb378e5ff93c48e35b077664520"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -96,8 +97,7 @@
             "exampleSites": [
                 "iheart.com",
                 "foxsportsradio.iheart.com",
-                "www.fox6now.com",
-                "www.q13fox.com"
+                "www.fox6now.com"
             ]
         },
         {
@@ -108,8 +108,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000289,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "5ba921098f68e0faa0d1587bcce34d4504a0c034287882abdaa19f2a858f8ea1"
@@ -120,37 +120,81 @@
             "exampleSites": [
                 "iheart.com",
                 "foxsportsradio.iheart.com",
-                "www.fox6now.com",
-                "www.q13fox.com"
+                "www.fox6now.com"
+            ]
+        },
+        {
+            "rule": "foxsports\\.com\\/v1\\/p",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.nova"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "12f71cb993958eefc4bdb41d7dbbda490779a9c7aba448f7be52bb63912e0254"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "westminsterkennelclub.org",
+                "www.westminsterkennelclub.org"
+            ]
+        },
+        {
+            "rule": "foxsports\\.com\\/id",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "b"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b4c4efdbfd1cce9ba45fd5894d8cb376e027d211e954f95895363f989e511ce2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "westminsterkennelclub.org",
+                "www.westminsterkennelclub.org"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000289,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8888888888888888
+            "prevalence": 0.75
         },
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.1111111111111111
+            "domain": "segment.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
         "Stylesheet": 3,
         "Script": 3,
-        "XHR": 8
+        "XHR": 8,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns03.dns.fox",
-        "ns04.foxdoua.com",
-        "ns02.dns.fox",
         "ns03.foxdoua.com",
+        "ns04.foxdoua.com",
+        "ns02.foxdoua.com",
         "ns04.dns.fox",
         "ns01.foxdoua.com",
+        "ns02.dns.fox",
         "ns01.dns.fox",
-        "ns02.foxdoua.com"
+        "ns03.dns.fox"
     ]
 }
