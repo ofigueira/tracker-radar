@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
+        "55c74eee6fcf46b1a0517a610f8d289a.apm.vpce.gdw55e",
         "mpb-production-elk.apm.europe-west2.gcp"
     ],
     "cnames": [],
@@ -17,6 +18,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "55c74eee6fcf46b1a0517a610f8d289a.apm.vpce.gdw55e",
                 "mpb-production-elk.apm.europe-west2.gcp"
             ],
             "apis": {},
@@ -30,7 +32,28 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mpb.com",
+                "godaddy.com",
+                "www.mpb.com"
+            ]
+        },
+        {
+            "rule": "elastic-cloud\\.com\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "55c74eee6fcf46b1a0517a610f8d289a.apm.vpce.gdw55e",
+                "mpb-production-elk.apm.europe-west2.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
                 "www.mpb.com"
             ]
         }
@@ -41,11 +64,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "unpkg.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-729.awsdns-27.net",

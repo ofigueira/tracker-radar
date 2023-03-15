@@ -9,13 +9,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "passport",
-        "dmtags"
+        "cdb-search-platform-api",
+        "dmtags",
+        "auth.scotiaonline",
+        "passport"
     ],
     "cnames": [
+        {
+            "original": "auth.scotiaonline.scotiabank.com",
+            "resolved": "auth.scotiaonline.scotiabank.com.edgekey.net"
+        },
+        {
+            "original": "cdb-search-platform-api.scotiabank.com",
+            "resolved": "cdb-search-platform-api.scotiabank.com.edgekey.net"
+        },
         {
             "original": "dmtags.scotiabank.com",
             "resolved": "dmtags.scotiabank.com.edgekey.net"
@@ -27,6 +37,138 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/category",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdb-search-platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "cdb-search-platform-api.scotiabank.com",
+                    "resolved": "cdb-search-platform-api.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "help.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/contentsquare\\/canada\\/a397c330ed1de\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dmtags"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "dmtags.scotiabank.com",
+                    "resolved": "dmtags.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ac7d15a6cf5a0295670098d32df8e0b53ce57ac19524747853b91b9032040bbe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "help.scotiabank.com",
+                "www.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/category",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdb-search-platform-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "cdb-search-platform-api.scotiabank.com",
+                    "resolved": "cdb-search-platform-api.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c733440e11be8bd45c6a80166dcc7e4625890bfcd6eee748c4c5ef144721e5f9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "help.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/v2\\/authentications\\/sso\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth.scotiaonline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "auth.scotiaonline.scotiabank.com",
+                    "resolved": "auth.scotiaonline.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "help.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/v2\\/authentications\\/sso\\/log",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth.scotiaonline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "auth.scotiaonline.scotiabank.com",
+                    "resolved": "auth.scotiaonline.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b751c487ea069efe6387b33cdff4b44ff434594bfcae51449dba93743f4dc14c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "help.scotiabank.com"
+            ]
+        },
         {
             "rule": "scotiabank\\.com\\.edgekey\\.net\\/oauth2\\/v1\\/authorize",
             "cookies": 0.0000135,
@@ -43,9 +185,7 @@
                     "resolved": "passport.scotiabank.com.edgekey.net"
                 }
             ],
-            "responseHashes": [
-                "464d1975623109bd3529c09ea31ea5fb9cd1c32e2d7f857bd834d2404ecbd0bd"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -138,10 +278,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000271,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "Document": 2,
-        "Script": 6
+        "Preflight": 4,
+        "Script": 9,
+        "Fetch": 4,
+        "Document": 2
     },
     "nameservers": []
 }

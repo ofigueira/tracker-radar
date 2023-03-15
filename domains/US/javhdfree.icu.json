@@ -8,15 +8,20 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "javhdfree\\.icu\\/asset\\/default\\/player\\/base\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.plugins": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -28,27 +33,6 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "javforyou.net",
-                "javhd.icu"
-            ]
-        },
-        {
-            "rule": "javhdfree\\.icu\\/asset\\/jquery\\/slim-3\\.2\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "417d0329eaa9821a2e43e63818ed12b2f5275afae0a56625bf7971242ef9fe37"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "javforyou.net",
                 "javhd.icu"
             ]
         }
@@ -63,8 +47,7 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 2
     },
     "nameservers": [
         "memphis.ns.cloudflare.com",

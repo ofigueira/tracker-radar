@@ -18,6 +18,10 @@
         {
             "original": "api.hackster.io",
             "resolved": "dualstack.j.sni.global.fastly.net"
+        },
+        {
+            "original": "litium.revolutionrace.de",
+            "resolved": "j.sni.global.fastly.net"
         }
     ],
     "fingerprinting": 2,
@@ -39,7 +43,7 @@
                 }
             ],
             "responseHashes": [
-                "3790ef4454c1e4001105bab2320dab36d3befde8ad1a9e81d0082f55a8b98a31"
+                "f2eb2e74def91803ca80f9d403e54866988096b1cf5d5d5e88dc858fadfc5db5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -47,6 +51,54 @@
             "exampleSites": [
                 "hackster.io",
                 "www.hackster.io"
+            ]
+        },
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "litium.revolutionrace.de",
+                    "resolved": "j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revolutionrace.de",
+                "www.revolutionrace.de"
+            ]
+        },
+        {
+            "rule": "j\\.sni\\.global\\.fastly\\.net\\/graphql",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "litium.revolutionrace.de",
+                    "resolved": "j.sni.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a17fa4be96973fe22afb5deaba7d62215dcbb4fe838c4181831ea23d75318af0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revolutionrace.de",
+                "www.revolutionrace.de"
             ]
         }
     ],
@@ -61,19 +113,25 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000402,
+    "cookies": 0.000502,
     "topInitiators": [
         {
             "domain": "hackster-cdn.online",
-            "prevalence": 0.75
+            "prevalence": 0.5714285714285714
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.25
+            "domain": "cloudflare.com",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "cdn-sitegainer.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

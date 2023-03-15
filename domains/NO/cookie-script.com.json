@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00231,
-    "sites": 23,
+    "prevalence": 0.00311,
+    "sites": 31,
     "subdomains": [
         "geo",
         "cdn"
@@ -21,8 +21,8 @@
                 "geo"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "96022c8e725a2aeeaa85644f941281674ee3dee296d3be9026671b8cc617dc9d"
@@ -32,19 +32,20 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "veeam.com",
-                "helpcenter.veeam.com",
                 "www.veeam.com"
             ]
         },
         {
             "rule": "cookie-script\\.com\\/s\\/20b2d4a2df42ec4af7f11f9cb7c763a3\\.js",
-            "cookies": 0,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -59,27 +60,78 @@
                 "operaen.no",
                 "www.operaen.no"
             ]
+        },
+        {
+            "rule": "cookie-script\\.com\\/iabtcf\\/sdk_cmp\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "2ff6940ff97066f73b6bb94b44620867558a80fe67f05a8c61683d1611fed296"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "au.dk",
+                "www.solskjerming-as.no",
+                "www.spaceweatherlive.com"
+            ]
+        },
+        {
+            "rule": "cookie-script\\.com\\/iabtcf\\/vendor-list\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "eec24698047d7bfa844d3e4983cce7a4f59abaaff393a0d0d2224113584362c3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "au.dk",
+                "www.solskjerming-as.no",
+                "www.spaceweatherlive.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00151,
+    "cookies": 0.00191,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
+            "prevalence": 0.6176470588235294
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.25
+            "prevalence": 0.29411764705882354
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.058823529411764705
+        },
+        {
+            "domain": "aucdn.dk",
+            "prevalence": 0.029411764705882353
         }
     ],
     "types": {
-        "Script": 5
+        "Script": 7,
+        "XHR": 3
     },
     "nameservers": [
-        "ns1.digitalocean.com",
         "ns2.digitalocean.com",
-        "ns3.digitalocean.com"
+        "ns3.digitalocean.com",
+        "ns1.digitalocean.com"
     ]
 }

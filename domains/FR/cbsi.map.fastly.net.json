@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
         "isgprivacy",
         "sports-global",
@@ -34,14 +34,14 @@
     "resources": [
         {
             "rule": "cbsi\\.map\\.fastly\\.net\\/dist\\/optanon-v1\\.1\\.0\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "isgprivacy"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [
                 {
                     "original": "production-cmp.isgprivacy.cbsi.com",
@@ -52,9 +52,17 @@
                 "ad6c004c443d6c1ac8a66e25a5973b3d49fddcb31dc4574c6504e8f1df66aaeb"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "OptanonAlertBoxClosed": {
+                    "ttl": null,
+                    "length": 24,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "comicbook.com",
                 "pluto.tv",
                 "southpark.cc.com",
                 "www.cbsnews.com",
@@ -70,8 +78,8 @@
                 "isgprivacy"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 6,
+            "prevalence": 0.000603,
             "cnames": [
                 {
                     "original": "production-cmp.isgprivacy.cbsi.com",
@@ -79,44 +87,18 @@
                 }
             ],
             "responseHashes": [
-                "1f20383492c9827226a2c595ecc305bacf0e24c7cadfce9751c10d36f9f1e2f1"
+                "9dc711ab054916bca7ccde23fc3232cd55edc63084739d1ddc77c9e5a7d0c849"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "comicbook.com",
                 "pluto.tv",
                 "southpark.cc.com",
                 "www.cbsnews.com",
                 "www.cbssports.com",
                 "www.last.fm"
-            ]
-        },
-        {
-            "rule": "cbsi\\.map\\.fastly\\.net\\/cps\\/shamanBanner\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "isgprivacy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "production-cmp.isgprivacy.cbsi.com",
-                    "resolved": "isgprivacy.cbsi.map.fastly.net"
-                }
-            ],
-            "responseHashes": [
-                "f68de1154c83e3206f95049b34cd8f25626dc9f80039e682cb50d635141e0fae"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbsnews.com",
-                "www.cbssports.com"
             ]
         },
         {
@@ -189,10 +171,8 @@
                     "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "1590a3b39185b3ed80d56994eabccebc07aea5d09252f0d737fee51aa4a76059"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -216,8 +196,10 @@
                     "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "2b99b468423f05411be649111df1cf5109cf5ff73d507782386bc7336241f49b"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -241,26 +223,30 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9
+            "prevalence": 0.8985507246376812
         },
         {
             "domain": "cbsistatic.com",
-            "prevalence": 0.06
+            "prevalence": 0.043478260869565216
+        },
+        {
+            "domain": "aswpsdkus.com",
+            "prevalence": 0.028985507246376812
         },
         {
             "domain": "southparkstudios.com",
-            "prevalence": 0.02
+            "prevalence": 0.014492753623188406
         },
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.02
+            "prevalence": 0.014492753623188406
         }
     ],
     "types": {
         "Script": 12,
         "Font": 4,
-        "Fetch": 2,
-        "Preflight": 2
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

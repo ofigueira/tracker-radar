@@ -14,12 +14,17 @@
     "subdomains": [
         "isgprivacy",
         "sports-global",
-        "sports-global-ipv4"
+        "sports-global-ipv4",
+        "ctd"
     ],
     "cnames": [
         {
             "original": "graphql-cdn-site.cbssports.com",
             "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
+        },
+        {
+            "original": "media.startrek.com",
+            "resolved": "ctd.cbsi.map.fastly.net"
         },
         {
             "original": "production-cmp.isgprivacy.cbsi.com",
@@ -34,7 +39,7 @@
     "resources": [
         {
             "rule": "cbsi\\.map\\.fastly\\.net\\/dist\\/optanon-v1\\.1\\.0\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [
                 "isgprivacy"
@@ -52,7 +57,14 @@
                 "ad6c004c443d6c1ac8a66e25a5973b3d49fddcb31dc4574c6504e8f1df66aaeb"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "OptanonAlertBoxClosed": {
+                    "ttl": null,
+                    "length": 24,
+                    "prevalence": 0.00010035122930255896,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "comicbook.com",
@@ -60,12 +72,12 @@
                 "pluto.tv",
                 "southpark.cc.com",
                 "www.cbsnews.com",
-                "www.cc.com",
                 "www.cbssports.com",
                 "www.channel5.com",
                 "www.etonline.com",
                 "www.last.fm",
-                "www.mtv.com"
+                "www.mtv.com",
+                "www.startrek.com"
             ]
         },
         {
@@ -85,7 +97,7 @@
                 }
             ],
             "responseHashes": [
-                "1f20383492c9827226a2c595ecc305bacf0e24c7cadfce9751c10d36f9f1e2f1"
+                "9dc711ab054916bca7ccde23fc3232cd55edc63084739d1ddc77c9e5a7d0c849"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -97,11 +109,11 @@
                 "southpark.cc.com",
                 "www.cbsnews.com",
                 "www.cbssports.com",
-                "www.cc.com",
                 "www.channel5.com",
                 "www.etonline.com",
                 "www.last.fm",
-                "www.mtv.com"
+                "www.mtv.com",
+                "www.startrek.com"
             ]
         },
         {
@@ -112,8 +124,8 @@
                 "isgprivacy"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "production-cmp.isgprivacy.cbsi.com",
@@ -121,16 +133,13 @@
                 }
             ],
             "responseHashes": [
-                "f68de1154c83e3206f95049b34cd8f25626dc9f80039e682cb50d635141e0fae"
+                "10e5f4529c5ca7015857a07bc5b3b1750bb8b96fd16860f34891567ebf6dd9a8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbsnews.com",
-                "www.cbssports.com",
-                "www.cc.com",
-                "www.etonline.com",
                 "www.mtv.com"
             ]
         },
@@ -204,10 +213,8 @@
                     "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "bea1f9e92c2681c21cbd341dcdcd7fc76a0d4ab7080ddf8d12d38177f4874219"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -231,13 +238,65 @@
                     "resolved": "sports-global-ipv4.cbsi.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e14ad898e026957bc7bf99f5c597281cbc0b7e95d6bd13cfffd6279ec1a1aa02"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cbssports.com",
                 "www.cbssports.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/2021\\/04\\/20\\/1887823427538\\/pod-episode-14-michelle-yeoh-9181fb09_clip-15s_697480_3928\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "media.startrek.com",
+                    "resolved": "ctd.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "startrek.com",
+                "www.startrek.com"
+            ]
+        },
+        {
+            "rule": "cbsi\\.map\\.fastly\\.net\\/2023\\/03\\/12\\/2181317699671\\/p23papd2630trl305-stcom_pt-128407_papd-215_24_2023-03-07_211235-20835a76_clip-15s_1789957_3928\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "media.startrek.com",
+                    "resolved": "ctd.cbsi.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "startrek.com",
+                "www.startrek.com"
             ]
         }
     ],
@@ -256,26 +315,31 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9242424242424242
+            "prevalence": 0.9102564102564102
         },
         {
             "domain": "cbsistatic.com",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.038461538461538464
+        },
+        {
+            "domain": "aswpsdkus.com",
+            "prevalence": 0.02564102564102564
         },
         {
             "domain": "southparkstudios.co.uk",
-            "prevalence": 0.015151515151515152
+            "prevalence": 0.01282051282051282
         },
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.015151515151515152
+            "prevalence": 0.01282051282051282
         }
     ],
     "types": {
-        "Script": 27,
+        "Script": 24,
         "Font": 4,
+        "Preflight": 2,
         "Fetch": 2,
-        "Preflight": 2
+        "Media": 4
     },
     "nameservers": []
 }

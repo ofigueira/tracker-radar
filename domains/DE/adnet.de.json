@@ -16,27 +16,69 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "adnet\\.de\\/adp\\.php",
-            "cookies": 0.0001,
+            "rule": "adnet\\.de\\/ad3_async\\.js",
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "ad"
             ],
             "apis": {
-                "window.localStorage": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "0de7a49f6d21fbef846aba4bd271502d7ec9489bfbb3fd96f5ff7cf19140875e"
+                "434baafa65a57e81b3c94343c245738aa24f08b6d2380aa44a8a8bde96e387ef"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wie-sagt-man-noch.de",
-                "www.wie-sagt-man-noch.de"
+                "reitschuster.de",
+                "www.blick-aktuell.de"
+            ]
+        },
+        {
+            "rule": "adnet\\.de\\/adj3_async\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reitschuster.de",
+                "www.blick-aktuell.de"
+            ]
+        },
+        {
+            "rule": "adnet\\.de\\/adj3_async\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "20eb3651ec93b046b1098d3a9f2ae38dedfffcf3ef8b597dc2c0e75f22e32a0e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reitschuster.de",
+                "www.blick-aktuell.de"
             ]
         }
     ],
@@ -45,16 +87,18 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.8
+            "domain": "cookiebot.com",
+            "prevalence": 0.6
         },
         {
-            "domain": "cookiebot.com",
-            "prevalence": 0.2
+            "domain": "first party",
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns.adnet.de",

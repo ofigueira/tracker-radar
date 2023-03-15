@@ -4,19 +4,51 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "prod-data.acquisition"
+        "prod-data.acquisition",
+        "public-treatment.prod-experimentation"
     ],
     "cnames": [
         {
             "original": "data.grammarly.com",
             "resolved": "prod-data.acquisition.grammarlyaws.com"
+        },
+        {
+            "original": "treatment.grammarly.com",
+            "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "grammarlyaws\\.com\\/api\\/mimic",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-data.acquisition"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "data.grammarly.com",
+                    "resolved": "prod-data.acquisition.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [
+                "36c8e41dfb67e5ddbe57d83c9f70189462ae93a6ae1bcac345ed1edb7ebff7bd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "demo.grammarly.com"
+            ]
+        },
         {
             "rule": "grammarlyaws\\.com\\/api\\/mimic",
             "cookies": 0,
@@ -43,30 +75,55 @@
             ]
         },
         {
-            "rule": "grammarlyaws\\.com\\/api\\/mimic",
-            "cookies": 0.0000135,
+            "rule": "grammarlyaws\\.com\\/treatment\\/log",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prod-data.acquisition"
+                "public-treatment.prod-experimentation"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [
                 {
-                    "original": "data.grammarly.com",
-                    "resolved": "prod-data.acquisition.grammarlyaws.com"
+                    "original": "treatment.grammarly.com",
+                    "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grammarly.com",
+                "www.grammarly.com"
+            ]
+        },
+        {
+            "rule": "grammarlyaws\\.com\\/treatment\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-treatment.prod-experimentation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "treatment.grammarly.com",
+                    "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
                 }
             ],
             "responseHashes": [
-                "06227fa7a140dd27abe710bc19e31c5d0d8da42774deb8cdb2fa08e40d170e9c"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grammarly.com",
-                "demo.grammarly.com"
+                "www.grammarly.com"
             ]
         }
     ],
@@ -80,13 +137,13 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "ns-1706.awsdns-21.co.uk",
-        "ns-756.awsdns-30.net",
+        "ns-264.awsdns-33.com",
         "ns-1273.awsdns-31.org",
-        "ns-264.awsdns-33.com"
+        "ns-756.awsdns-30.net"
     ]
 }

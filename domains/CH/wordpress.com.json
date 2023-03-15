@@ -9,14 +9,43 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
+        "public-api",
         "r-login"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "wordpress\\.com\\/wp-admin\\/rest-proxy\\/",
+            "cookies": 0.000302,
+            "fingerprinting": 1,
+            "subdomains": [
+                "public-api"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.vendor": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "82d7db2beaf0bed1398411ac2509f5fb4ca0564af181a066c77bec4b835b93bb"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bikexchange.com",
+                "taxes-impots-suisse.com",
+                "titanicverein.ch"
+            ]
+        },
         {
             "rule": "wordpress\\.com\\/remote-login\\.php",
             "cookies": 0,
@@ -29,14 +58,14 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9231ddc7b3ca8a51716ee3e083af316ef2c9bfba42894418fb75588b0a37faae"
+                "f15453707050ec7b6067df6a763bd58b97349d8a1ec230eaa2e4c4b9321aa56f"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lamiacucina.blog",
-                "legor.ch"
+                "fujixweekly.com",
+                "taxes-impots-suisse.com"
             ]
         }
     ],
@@ -45,19 +74,27 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9873417721518988
+            "prevalence": 0.7924528301886793
+        },
+        {
+            "domain": "wp.com",
+            "prevalence": 0.1320754716981132
+        },
+        {
+            "domain": "videopress.com",
+            "prevalence": 0.05660377358490566
         },
         {
             "domain": "pubmine.com",
-            "prevalence": 0.012658227848101266
+            "prevalence": 0.018867924528301886
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 5
     },
     "nameservers": [
         "ns1.wordpress.com",

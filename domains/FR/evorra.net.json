@@ -9,34 +9,61 @@
     "subdomains": [
         "p27",
         "p22",
+        "api.p27",
         "api.p22"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "evorra\\.net\\/lib\\/prod\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "p27",
+                "p22"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1c861fa4ed0b4c54a20480c77a334bbc8d7bdf6a60315e3d756f8f1b74709ac1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gfinityesports.com",
+                "www.petitfute.com"
+            ]
+        },
+        {
             "rule": "evorra\\.net\\/lib\\/sp\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 2,
             "subdomains": [
                 "p27",
                 "p22"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
@@ -46,16 +73,28 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_tr_ses.d06a": {
-                    "ttl": 1805,
+                "_tr_ses.d113": {
+                    "ttl": 1806,
                     "length": 1,
-                    "prevalence": 0.00010045203415369161,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                },
+                "_tr_id.d113": {
+                    "ttl": 33669006,
+                    "length": 108,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                },
+                "_tr_ses.d06a": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00010046212577858148,
                     "uniqueness": 1
                 },
                 "_tr_id.d06a": {
-                    "ttl": 33669005,
+                    "ttl": 33669004,
                     "length": 108,
-                    "prevalence": 0.00010045203415369161,
+                    "prevalence": 0.00010046212577858148,
                     "uniqueness": 1
                 }
             },
@@ -70,40 +109,69 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "api.p27",
                 "api.p22"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gfinityesports.com",
+                "www.petitfute.com"
+            ]
+        },
+        {
+            "rule": "evorra\\.net\\/spin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.p27",
+                "api.p22"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
             "responseHashes": [
-                "dc8ea1a18e3b2a73ee5cbd3d2f726ea7d6598388b7a0371e624c5f55249b2aad"
+                "cbb9767e6a0e8060bb19e7a98c6684aebf8d3357cbc7cafe75795e441cfdce30",
+                "75b52d9f2b552e9ba713857c7b9a7ff1581a11d86cd721b4753414c452669a73"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "petitfute.com",
+                "gfinityesports.com",
+                "www.gfinityesports.com",
                 "www.petitfute.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
+            "domain": "vntsm.com",
             "prevalence": 0.5
         },
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4,
+        "Preflight": 2,
+        "XHR": 3
     },
     "nameservers": [
         "ns-311.awsdns-38.com",

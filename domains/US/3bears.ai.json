@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "3bears\\.ai\\/api\\/v2\\/visits",
@@ -20,18 +21,20 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "8108f024d646f75659ae3ee1bfcb2102e4a1e6a62cc45ccf57972137abb67ece"
+                "ee0520507438aad3c60a9acaddee91dcb341e0da22b13af58c83fb5e186298fa",
+                "ce8ed2da7af0562c89f1c058ff88f187f7cd3981511535ce309e1faadfa7b5f2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wix.com",
-                "support.wix.com"
+                "support.wix.com",
+                "www.pumpkin.care"
             ]
         },
         {
@@ -42,8 +45,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -51,7 +54,32 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wix.com",
-                "support.wix.com"
+                "support.wix.com",
+                "www.pumpkin.care"
+            ]
+        },
+        {
+            "rule": "3bears\\.ai\\/static\\/js\\/3bears\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "30bda0a202332f2a55f9f9ffb5ce4c10fb9a50d4563e3795bb9777e4cefedc6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pumpkin.care",
+                "www.pumpkin.care"
             ]
         }
     ],
@@ -60,22 +88,23 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "parastorage.com",
             "prevalence": 0.5
         },
         {
-            "domain": "parastorage.com",
+            "domain": "cookielaw.org",
             "prevalence": 0.5
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Fetch": 3,
+        "Preflight": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns-186.awsdns-23.com",
-        "ns-1664.awsdns-16.co.uk",
         "ns-1258.awsdns-29.org",
-        "ns-775.awsdns-32.net"
+        "ns-775.awsdns-32.net",
+        "ns-186.awsdns-23.com",
+        "ns-1664.awsdns-16.co.uk"
     ]
 }

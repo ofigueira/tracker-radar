@@ -7,7 +7,8 @@
     "prevalence": 0.0000406,
     "sites": 6,
     "subdomains": [
-        "imgtoolkit"
+        "imgtoolkit",
+        "stat"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,18 +21,92 @@
                 "imgtoolkit"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "baf9f5e529c4f342aec7b5f9cec8562955e2133fcbdc463af12a6a99ead478a2"
+                "baf9f5e529c4f342aec7b5f9cec8562955e2133fcbdc463af12a6a99ead478a2",
+                "80308ed3118c2399d2d593e7bb118d01154796bdc20fc1aca76e4b3db000d177"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "deutscheoperberlin.de",
-                "staatstheater-hannover.de"
+                "staatstheater-hannover.de",
+                "www.planetarium-bochum.de"
+            ]
+        },
+        {
+            "rule": "culturebase\\.org\\/piwik\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "stat"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "7e9cb92f9f03690019d620e3199949ce5fbbd21980bedcaca05eaaf51c175b58"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.37.4482": {
+                    "ttl": 33955205,
+                    "length": 28,
+                    "prevalence": 0.00001354261182811717,
+                    "uniqueness": 1
+                },
+                "_pk_ses.37.4482": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00001354261182811717,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "planetarium-bochum.de",
+                "www.planetarium-bochum.de"
+            ]
+        },
+        {
+            "rule": "culturebase\\.org\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "planetarium-bochum.de",
+                "www.planetarium-bochum.de"
             ]
         }
     ],
@@ -45,11 +120,13 @@
         }
     ],
     "types": {
-        "Image": 2
+        "Image": 3,
+        "Script": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "ns.inwx.de",
         "ns3.inwx.de",
+        "ns.inwx.de",
         "ns2.inwx.de"
     ]
 }

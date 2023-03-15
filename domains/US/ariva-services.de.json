@@ -7,9 +7,9 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
+        "prodo-api",
         "bfw-sso-prod",
-        "bfw-api-prod",
-        "prodo-api"
+        "bfw-api-prod"
     ],
     "cnames": [
         {
@@ -21,8 +21,33 @@
             "resolved": "bfw-sso-prod.ariva-services.de"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ariva-services\\.de\\/clientjs\\/ProdoClient\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodo-api"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "9c49998a153aa03aca80c9471d19fc3d9a273159759d40c8bc82d06fa6e1e2f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ariva.de",
+                "www.faz.net"
+            ]
+        },
         {
             "rule": "ariva-services\\.de\\/auth\\/realms\\/boerse-frankfurt\\/\\.well-known\\/openid-configuration",
             "cookies": 0,
@@ -144,59 +169,7 @@
                 }
             ],
             "responseHashes": [
-                "05afe949f984a0df759829fe6c47571982c5dfd8edd25c79d40a0bffac0f8381"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boerse-frankfurt.de",
-                "www.boerse-frankfurt.de"
-            ]
-        },
-        {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfw-api-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.boerse-frankfurt.de",
-                    "resolved": "bfw-api-prod.ariva-services.de"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boerse-frankfurt.de",
-                "www.boerse-frankfurt.de"
-            ]
-        },
-        {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfw-api-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "api.boerse-frankfurt.de",
-                    "resolved": "bfw-api-prod.ariva-services.de"
-                }
-            ],
-            "responseHashes": [
-                "02fb30c97b2040061123bd2736688e5011e03edc483ea0ea3bb693b32f457ac9"
+                "22dfcf69afc5593633a6caece238b2b5ec65685df51efb018c75b5a16d07a858"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -248,7 +221,7 @@
                 }
             ],
             "responseHashes": [
-                "4d1f2a25b9c426be4cdfb56f09be41d80fc397a96d776f8e74211db6fc59135b"
+                "484b27a027ef3de9ed1aaeb911d8e1ed4e2e117236194e3ce76b132b18bc6706"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -286,7 +259,32 @@
             ]
         },
         {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/price_information\\/short",
+            "rule": "ariva-services\\.de\\/v1\\/data\\/price_information",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfw-api-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "api.boerse-frankfurt.de",
+                    "resolved": "bfw-api-prod.ariva-services.de"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boerse-frankfurt.de",
+                "www.boerse-frankfurt.de"
+            ]
+        },
+        {
+            "rule": "ariva-services\\.de\\/v1\\/data\\/price_information",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -336,23 +334,80 @@
             ]
         },
         {
-            "rule": "ariva-services\\.de\\/clientjs\\/ProdoClient\\.js",
+            "rule": "ariva-services\\.de\\/v1\\/data\\/price_information\\/short",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prodo-api"
+                "bfw-api-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000135,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "api.boerse-frankfurt.de",
+                    "resolved": "bfw-api-prod.ariva-services.de"
+                }
+            ],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "faz.net",
-                "www.faz.net"
+                "boerse-frankfurt.de",
+                "www.boerse-frankfurt.de"
+            ]
+        },
+        {
+            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfw-api-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "api.boerse-frankfurt.de",
+                    "resolved": "bfw-api-prod.ariva-services.de"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boerse-frankfurt.de",
+                "www.boerse-frankfurt.de"
+            ]
+        },
+        {
+            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfw-api-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "api.boerse-frankfurt.de",
+                    "resolved": "bfw-api-prod.ariva-services.de"
+                }
+            ],
+            "responseHashes": [
+                "233ce2cd2adeccdf0fce6ef9469cb8db8ff4191adaa0f02d8f769fe6b9ef24d2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boerse-frankfurt.de",
+                "www.boerse-frankfurt.de"
             ]
         }
     ],
@@ -361,15 +416,19 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "ariva-test.s3.eu-central-1.amazonaws.com",
+            "prevalence": 0.5714285714285714
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
+        "Script": 2,
         "XHR": 12,
-        "Preflight": 10,
-        "Fetch": 2,
-        "Script": 2
+        "Preflight": 12,
+        "Fetch": 4
     },
     "nameservers": [
         "ens2.ariva.de",

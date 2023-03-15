@@ -7,16 +7,44 @@
     "prevalence": 0.0000609,
     "sites": 9,
     "subdomains": [
-        "cdn",
-        "engine5"
+        "engine5",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "behamics\\.com\\/christ\\/behamics\\.js",
+            "rule": "behamics\\.com\\/api\\/getmessage",
+            "cookies": 0.0000339,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engine5"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000339,
+            "cnames": [],
+            "responseHashes": [
+                "2c6e11540333667776c4e41ce40ee31fbaa5af7a1c81635ff5d0d8a2cbf15b0f",
+                "e01eeca7e06d9b61fbbb73b4c268eab7787b779a70f519a6c98b0feae608ddae",
+                "5235956f155b4a8b0fb6b096db9d781fe8ac0118a96519e3c08534d7c10ab106",
+                "2abbb5d96823d5cd9b3a913a28b3306071ca5d4bb1accbb71e67bcffbafdf1f6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christ.de",
+                "www.coop.ch",
+                "www.fust.ch",
+                "www.manor.ch",
+                "www.ochsnersport.ch"
+            ]
+        },
+        {
+            "rule": "behamics\\.com\\/coopch\\/behamics\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
@@ -24,6 +52,7 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
+                "window.innerHeight": 1,
                 "window.innerWidth": 2,
                 "Navigator.prototype.connection": 2
             },
@@ -31,18 +60,18 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "7999aa32cfe5fbcae42c16580cf01de495d8b740382ddc3b47ca19612330ec6b"
+                "80707c625552ddc2c0a593da33e11497151229d8eb79ba14ad949b287a2f4b59"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "christ.de",
-                "www.christ.de"
+                "coop.ch",
+                "www.coop.ch"
             ]
         },
         {
-            "rule": "behamics\\.com\\/christ\\/behamics\\.css",
+            "rule": "behamics\\.com\\/coopch\\/behamics\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -53,44 +82,14 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "2d63191ed122606fc19580b86608a90b18c648d840f7c4a3bed94402a05c4764"
+                "2a114f45515eddad7059919193e5df32355f1fb71828c1d8ee277d6dd9dfbd66"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "christ.de",
-                "www.christ.de"
-            ]
-        },
-        {
-            "rule": "behamics\\.com\\/api\\/getmessage",
-            "cookies": 0.0000406,
-            "fingerprinting": 0,
-            "subdomains": [
-                "engine5"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000406,
-            "cnames": [],
-            "responseHashes": [
-                "3e5fe7661db87c9b8939881566cbb7372d0854fa1c273f17764c4ed4d5dea57c",
-                "45d1bfc137fb33d279767823aff560172931f72362b81d6616f5cdcb8b49db0f",
-                "0e50db7ecc6ac918111a06c311cbd5ed37652dc8ceb6aca2958f05c50b30b557",
-                "14abfd446804cee63faf2d3d8b10b4cf24354967375f6871353afa810250afce",
-                "c0f405e4ab387a0796456fa92db7e132466e42168cfa65c83a62cd3530834221"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "christ.de",
-                "www.christ.de",
-                "www.coop.ch",
-                "www.fust.ch",
-                "www.manor.ch",
-                "www.ochsnersport.ch"
+                "coop.ch",
+                "www.coop.ch"
             ]
         },
         {
@@ -111,7 +110,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "463ab5dc72d155fa243d5de42ae7dcac220775cd20500676401fd97816c4a813"
+                "b8f1312d5cb8b2dd953c5d1bfc92542839de33d06fe8b2fce5b09f114903372b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -250,11 +249,11 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.5454545454545454
+            "prevalence": 0.45454545454545453
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.36363636363636365
         },
         {
             "domain": "first party",
@@ -262,9 +261,9 @@
         }
     ],
     "types": {
+        "XHR": 5,
         "Script": 8,
-        "Stylesheet": 8,
-        "XHR": 6
+        "Stylesheet": 8
     },
     "nameservers": [
         "ns.udag.de",

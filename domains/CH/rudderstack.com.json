@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "glassdoor-dataplane",
+        "codota-dataplane",
         "tailscaleakz.dataplane",
         "global-dataplane"
     ],
@@ -19,11 +20,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "glassdoor-dataplane"
+                "glassdoor-dataplane",
+                "codota-dataplane"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -32,8 +34,8 @@
             "exampleSites": [
                 "glassdoor.ch",
                 "fr.glassdoor.ch",
-                "www.glassdoor.com",
-                "www.glassdoor.de"
+                "www.glassdoor.de",
+                "www.tabnine.com"
             ]
         },
         {
@@ -41,11 +43,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "glassdoor-dataplane"
+                "glassdoor-dataplane",
+                "codota-dataplane"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000401,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -56,8 +59,8 @@
             "exampleSites": [
                 "glassdoor.ch",
                 "fr.glassdoor.ch",
-                "www.glassdoor.com",
-                "www.glassdoor.de"
+                "www.glassdoor.de",
+                "www.tabnine.com"
             ]
         },
         {
@@ -66,6 +69,77 @@
             "fingerprinting": 0,
             "subdomains": [
                 "tailscaleakz.dataplane",
+                "global-dataplane",
+                "codota-dataplane"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tailscale.com",
+                "www.classicfm.com",
+                "www.smoothradio.com",
+                "www.tabnine.com"
+            ]
+        },
+        {
+            "rule": "rudderstack\\.com\\/v1\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tailscaleakz.dataplane",
+                "global-dataplane",
+                "codota-dataplane"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tailscale.com",
+                "www.classicfm.com",
+                "www.smoothradio.com",
+                "www.tabnine.com"
+            ]
+        },
+        {
+            "rule": "rudderstack\\.com\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global-dataplane"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "classicfm.com",
+                "www.smoothradio.com"
+            ]
+        },
+        {
+            "rule": "rudderstack\\.com\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
                 "global-dataplane"
             ],
             "apis": {},
@@ -77,30 +151,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tailscale.com",
-                "www.smoothradio.com"
-            ]
-        },
-        {
-            "rule": "rudderstack\\.com\\/v1\\/page",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tailscaleakz.dataplane",
-                "global-dataplane"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tailscale.com",
+                "classicfm.com",
                 "www.smoothradio.com"
             ]
         }
@@ -111,17 +162,21 @@
     "topInitiators": [
         {
             "domain": "rudderlabs.com",
-            "prevalence": 1
+            "prevalence": 0.7272727272727273
+        },
+        {
+            "domain": "d16xvuom8mr9m8.cloudfront.net",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "Preflight": 6,
-        "XHR": 6
+        "Preflight": 10,
+        "XHR": 10
     },
     "nameservers": [
-        "ns-89.awsdns-11.com",
-        "ns-936.awsdns-53.net",
         "ns-1554.awsdns-02.co.uk",
-        "ns-1084.awsdns-07.org"
+        "ns-1084.awsdns-07.org",
+        "ns-89.awsdns-11.com",
+        "ns-936.awsdns-53.net"
     ]
 }

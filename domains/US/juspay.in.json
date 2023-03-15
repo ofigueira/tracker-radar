@@ -7,35 +7,39 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
         "payments",
-        "logs"
+        "logs",
+        "public.releases"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "juspay\\.in\\/web\\/PIL\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "payments"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "9f5badb15b35905379f19dee4bf67ac8e1c06ffe1a6d7f64a44d75da68b16b0e"
+                "4f160d5d13ec9be32e09d1164c10d04f1cad3781db5984605c218d282e316a01"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "myvi.in",
-                "www.tataplay.com"
+                "www.tataplay.com",
+                "www.zee5.com"
             ]
         },
         {
@@ -46,8 +50,8 @@
                 "logs"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -57,7 +61,58 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "myvi.in",
-                "www.myvi.in"
+                "www.myvi.in",
+                "www.zee5.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/hyper-sdk-web\\/JuspayPaymentsInterface\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public.releases"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "366a064c5d5d71d8ba2b6389d8c97ebf433a8ee9c5d66dd771e7926624962737"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zee5.com",
+                "www.zee5.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/hyper-sdk-web\\/3\\.0\\.6\\/hyper\\.html",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "public.releases"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 1,
+                "window.localStorage": 1,
+                "window.innerWidth": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.name": 1,
+                "window.sessionStorage": 1,
+                "URL.createObjectURL": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zee5.com",
+                "www.zee5.com"
             ]
         }
     ],
@@ -71,8 +126,9 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Ping": 2
+        "Script": 5,
+        "Ping": 3,
+        "Document": 2
     },
     "nameservers": [
         "ns-633.awsdns-15.net",

@@ -9,18 +9,19 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00983,
-    "sites": 98,
+    "prevalence": 0.00943,
+    "sites": 94,
     "subdomains": [
-        "production-klarna-il-shopify-osm.s3",
         "o9tt6h08li.execute-api",
+        "production-klarna-il-shopify-osm.s3",
         "cognito-identity",
+        "firehose",
         "comms-mat.s3",
-        "savills-auth-redirect-prod.s3",
         "3fzst3kk8h.execute-api",
         "6n2x6wg3fc.execute-api",
+        "botcore.s3",
         "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb",
-        "visitor-chat.s3",
+        "sqs",
         "i98xu2nhdj.execute-api",
         "ucbprelivefiles.s3"
     ],
@@ -33,6 +34,28 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/v1\\/event",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o9tt6h08li.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "229b8c95fee538880c57404ff5b275ff40e95f1b4feb254015b24c85164ec444"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonos.com",
+                "forum.ovoenergy.com"
+            ]
+        },
+        {
             "rule": "eu-west-1\\.amazonaws\\.com\\/44241829bcc56116e10834fcdc3b3f3426feef24\\/258\\.index\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -40,8 +63,8 @@
                 "production-klarna-il-shopify-osm.s3"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000702,
+            "sites": 9,
+            "prevalence": 0.000903,
             "cnames": [],
             "responseHashes": [
                 "329173b311eb02ebad5191d3b7314d7ffaeb93d00504f46009f4392bbad28e8d"
@@ -50,11 +73,13 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alpkit.com",
                 "avon.uk.com",
+                "alpkit.com",
+                "cashgenerator.co.uk",
                 "www.militarykit.com",
                 "www.planetorganic.com",
                 "www.routeone.co.uk",
+                "www.stovesupermarket.co.uk",
                 "www.vapesuperstore.co.uk",
                 "www.zwift.com"
             ]
@@ -67,10 +92,10 @@
                 "production-klarna-il-shopify-osm.s3"
             ],
             "apis": {
-                "window.localStorage": 7
+                "window.localStorage": 9
             },
-            "sites": 7,
-            "prevalence": 0.000702,
+            "sites": 9,
+            "prevalence": 0.000903,
             "cnames": [],
             "responseHashes": [
                 "6412a479a6b68b7ac31bf7a02752d6ad72de113aa7573825061a0de4505c7cad"
@@ -79,35 +104,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alpkit.com",
                 "avon.uk.com",
+                "alpkit.com",
+                "cashgenerator.co.uk",
                 "www.militarykit.com",
                 "www.planetorganic.com",
                 "www.routeone.co.uk",
+                "www.stovesupermarket.co.uk",
                 "www.vapesuperstore.co.uk",
                 "www.zwift.com"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/v1\\/event",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "o9tt6h08li.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e1b77e77df49764d4a82f980457b5d0b4f8775a777f79681f89f1cee77be1488"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sonos.com",
-                "forum.ovoenergy.com"
             ]
         },
         {
@@ -115,51 +120,38 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cognito-identity"
+                "cognito-identity",
+                "firehose"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.00171,
+            "sites": 24,
+            "prevalence": 0.00241,
             "cnames": [],
-            "responseHashes": [
-                "f9b697920bbb7fcedb0666cec54dffa8f2ba136185cc92668a5e30c13d6aa769",
-                "d85729b1be225da5755ec9b5352303d6f8314e27f430a3578b59c8c9a0c4b284",
-                "75b18a0dd5d4c4c75b94e06a5989cc3204523c90da5173540f1a78b055b18858",
-                "714401ca106fdf274e75190c9046fe7344f71e4f8eda5681060440146eecb053",
-                "494f9143aa9c480779bf0c58a7f9956f472fa031deac1364bbe2526a86eb6d92",
-                "f9f49c04e834c2f902fa4a6d3532775c0a6c4fa5c3931816decd709c92d10f97",
-                "21be725ea0cfbaed583fbb1331efc08dcfc9893da20cfb2c1d0da75f360cb464",
-                "0b9e384692a6e02a7b03a6f69c7e539cfba878bec40db341c6b5dd1d7cce8e56",
-                "8d4bdf1efe396f446f10be3ea678755d955920faba4e98ed6212d50fac9b54d2",
-                "042a5d239f79fb1b8dbfdda640a6987a90e9cc0d38a1d36a74185b46ded5f7dc",
-                "5a91beb831453bd3b7079a1d37a96b741c0c68578c1cbb742aaa69b3644c55c0",
-                "7c645c63b5cef76d1d2d565be74d944351b20dbfbcb7131afbb981c1468d17e3",
-                "daf7366c8ea6495149ece448d0a320145ecad6fff0b94f915a5e0eab6d48e2ee",
-                "e44a7246d0a0cfb11d7eb9b76a1d9f9e397379a4530e2dcc60e50e4e0ae8794f",
-                "3a8343252322167f607bbdbb321ecbc171fa743adcb5e494f8d85262ce2d6120",
-                "06aca0b6ab4909ef4e82d77e97e2540bc3006aa57f66ff6142576d8cac23536a"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nowtv.com",
-                "help.nowtv.com",
-                "markselectrical.co.uk",
-                "smarty.co.uk",
-                "uk.webuy.com",
-                "www.circle-fashion.com",
-                "www.claires.com",
-                "www.finefoodspecialist.co.uk",
-                "www.greatlittlebreaks.com",
-                "www.hollisterco.com",
+                "www.avfc.co.uk",
                 "www.hughes.co.uk",
-                "www.jessops.com",
-                "www.kwik-fit.com",
-                "www.notonthehighstreet.com",
                 "www.rac.co.uk",
+                "miro.com",
+                "www.jessops.com",
+                "new.siemens.com",
+                "www.nobodyschild.com",
+                "www.greatlittlebreaks.com",
+                "nowtv.com",
                 "www.sky.com",
-                "www.sportsshoes.com"
+                "markselectrical.co.uk",
+                "www.claires.com",
+                "uk.webuy.com",
+                "smarty.co.uk",
+                "www.sportsshoes.com",
+                "mysky.sky.com",
+                "www.kwik-fit.com",
+                "www.nevisport.com",
+                "www.brightnetwork.co.uk",
+                "help.nowtv.com"
             ]
         },
         {
@@ -173,27 +165,46 @@
             "sites": 19,
             "prevalence": 0.00191,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "7f23d2abf636211714d46d4269b24be761b8708472506d83da3794215a6dda54",
+                "08606dd497ce9df394db49f683e857f589fc06a4277cf67d4f93bbd5f54cbee4",
+                "ac1a41f4315e1eddbd40adc3eab871a405a4045b14c895f5ac5f79f92e3a56bf",
+                "97f00120feddded0cda6eac23553109ca092491d6988f1575419e8c51ee5559d",
+                "d969dffd8d22329881e318a67f8d2affcda3092285c0c0f9731ef1dc25b06970",
+                "e33c978c6e4bc4254046ed6dbff8965866377104bb398eaa81d75e0f1af84b1d",
+                "39e9558b93c0e16fc38aaf1031bcf2462294dffaedd586848b93d6b7689b8f83",
+                "338feb8329d964f4b8b17b70cb6f2afeb196e5081b53af0f2b0ddb77b619c1f5",
+                "a8e9d14973fc7d408e7d3a835ceab99699662f25bd1a571b9bb5b1e2dd6df755",
+                "d6aa52279a67ca062ef6fbc34e25545dac517edef7253085059a93ce31eeaa02",
+                "bb9638ce15d13d110aed2202bc15313e219f906a66e51de8240715e7cf93a75c",
+                "9a672e70b58d35c158a1e4778b3c7a01b9d842f1393d226699f18f95d1686204",
+                "1934bc958777800a85291e55dc3c2a2f7f5a7e44f69eaa964ad0f368f37a99e0",
+                "bf9f2330db5e1fb23ed98f2c49681dc599d7e65dfdba249c0bc3ec97a10fc85a",
+                "4ca7ff03cce3181ac4540111d0db5a0cdcdc39d079f3a4b5ceda141554951565",
+                "e4cb05b2b1f49e12d149ea2992056067efc24b7091690dfc3792bba15aa82b93",
+                "66e04d52f7194b1a7ce928c7e2333724c2685af482207117c3f3593391e63ccf",
+                "6605b5c4a2b2146fadb6ef4dfada362d0d9149dd884c175d3ba66a169c96d3b6"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nowtv.com",
+                "help.nowtv.com",
                 "markselectrical.co.uk",
-                "miro.com",
-                "new.siemens.com",
+                "mysky.sky.com",
                 "smarty.co.uk",
                 "uk.webuy.com",
-                "uktvplay.co.uk",
-                "www.circle-fashion.com",
+                "www.avfc.co.uk",
                 "www.claires.com",
-                "www.finefoodspecialist.co.uk",
                 "www.greatlittlebreaks.com",
-                "www.hollisterco.com",
                 "www.hughes.co.uk",
                 "www.jessops.com",
                 "www.kwik-fit.com",
+                "www.nevisport.com",
+                "www.nobodyschild.com",
                 "www.notonthehighstreet.com",
+                "www.penshop.co.uk",
                 "www.rac.co.uk",
                 "www.sky.com",
                 "www.sportsshoes.com"
@@ -207,12 +218,14 @@
                 "cognito-identity"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "8125de07516d3cc1c17612425ae625ea84fc0cd351d06c76d2f1306b06d84acf",
-                "53d5fa32739d867de2dd5284f41506743c34f84eb708ad710d881c3052967cad"
+                "4abf929f8fad6a49aa6dceadbaf5742f951b2d58cd317fcbc9ab5c345f8b7368",
+                "bc0e36e722c4b8dad1af0144ecdb79c1f5f106df09eee71b71fa756ad2ab97e8",
+                "29aedca8d516fa79528108aeeed30eed563569373015a5bea11798b3313af8ed",
+                "d0a0885d5eb53b3e25dd80f73b8124d3a895f7ef8b60ef06ca9579aea15c921d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -220,11 +233,13 @@
             "exampleSites": [
                 "miro.com",
                 "new.siemens.com",
-                "uktvplay.co.uk"
+                "uktvplay.co.uk",
+                "www.brightnetwork.co.uk",
+                "www.hendy.co.uk"
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/Training-Materials\\/Carousels\\/Carousel_Images\\/Hygiene\\.png",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/Training-Materials\\/Carousels\\/Carousel_Images\\/MFA2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -235,7 +250,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9c1aefea5ed186e157a8bd16a06f7fe0ddd9782219b00482e8a820e63e3dbde8"
+                "f65719e8484af981fa525e57318f49200cace7f6a3aec3c2191684d0d3efaad4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -356,7 +371,7 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/Training-Materials\\/Carousels\\/Carousel_Images\\/MFA2\\.png",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/Training-Materials\\/Carousels\\/Carousel_Images\\/Hygiene\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -367,7 +382,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "f65719e8484af981fa525e57318f49200cace7f6a3aec3c2191684d0d3efaad4"
+                "9c1aefea5ed186e157a8bd16a06f7fe0ddd9782219b00482e8a820e63e3dbde8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -378,31 +393,6 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/auth-redirect\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "savills-auth-redirect-prod.s3"
-            ],
-            "apis": {
-                "window.sessionStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "ef581d39b45eb1680e5b9011d8a6ee98f893ddee89840f5858d2f58cc176cca0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "savills.com",
-                "www.savills.co.uk"
-            ]
-        },
-        {
             "rule": "eu-west-1\\.amazonaws\\.com\\/mnc_lead_insert",
             "cookies": 0,
             "fingerprinting": 0,
@@ -410,8 +400,8 @@
                 "3fzst3kk8h.execute-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -419,6 +409,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smolproducts.com",
+                "www.serenataflowers.com",
                 "www.wrenkitchens.com"
             ]
         },
@@ -430,8 +421,8 @@
                 "6n2x6wg3fc.execute-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -439,6 +430,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smolproducts.com",
+                "www.serenataflowers.com",
                 "www.wrenkitchens.com"
             ]
         },
@@ -450,8 +442,8 @@
                 "3fzst3kk8h.execute-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
@@ -459,6 +451,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smolproducts.com",
+                "www.serenataflowers.com",
                 "www.wrenkitchens.com"
             ]
         },
@@ -470,64 +463,42 @@
                 "6n2x6wg3fc.execute-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "86cf35272d0e41fc44df7894d1974682ce025c7feb8ae0dcf41e5d8df9271bfe"
+                "cd9cfac616d9d874ffbb0f7409b146f278662411b72cecdea6ff6df5e2305a1a",
+                "d4fd9e94d596ee0f7589f281ced995ff403f725d7448f874718ddc795b787077"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smolproducts.com",
+                "www.serenataflowers.com",
                 "www.wrenkitchens.com"
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/df9e9749fad4029c418fcebdee2381d9e8d1b88c\\/258\\.index\\.js",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/732-canesten\\/assets\\/styles\\/standard\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "production-klarna-il-shopify-osm.s3"
+                "botcore.s3"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "329173b311eb02ebad5191d3b7314d7ffaeb93d00504f46009f4392bbad28e8d"
+                "d40fb14ed986dc8ad9e9d426a0a63f7992d8df7be23627b53998a1d5dc2ae0a2"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sweetdreamers.co.uk",
-                "uk.eufy.com"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/df9e9749fad4029c418fcebdee2381d9e8d1b88c\\/906\\.index\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "production-klarna-il-shopify-osm.s3"
-            ],
-            "apis": {
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8e41b50ce3f964f522751ee6a198dd5562f3646e2e8c386fe35639f59dfc2b4f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sweetdreamers.co.uk",
-                "uk.eufy.com"
+                "canesten.co.uk",
+                "www.canesten.co.uk"
             ]
         },
         {
@@ -538,8 +509,8 @@
                 "prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "mediaweb.musicradio.com",
@@ -547,18 +518,16 @@
                 }
             ],
             "responseHashes": [
-                "71a35cee48e7d7786f041f4b931f19de777727109d26c39a87d37824b8c8e063",
-                "6ff5279c3156423996ab86943cded909ccade9ed6d658ef26bd3cc350277ce16",
-                "338cd70a5a5f466a46149e5d33dccb09973cc3e26587ee28a4f792429494465b",
-                "f1a68b993a89f1b476d2cf78f44a237d35602585d2e6557328110276a55c7ac7",
-                "478643794d3ce6b3c9d9bb8f9184aedced0858f37de451c2667e1eefa0bda4ae"
+                "a9b156b4204ceceb35c3e0f7e470184137cc283a9dbd059b5b49b5b2e41dfa4b",
+                "abe0eb127bf9b07a3ffa60f0c94380895e59d476252ce1e6fff7d10e363e5317",
+                "282d01b5895a6c7a3f9939d22e90cc1a7c3e4527646b8da3a4c3bd9112e7cdbb",
+                "3e8f5007ebdb111b8ef2d628d672d48b277d76290bc016707edb3e29b7ea6f5a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "capitalfm.com",
-                "www.capitalxtra.com",
                 "www.classicfm.com",
                 "www.heart.co.uk",
                 "www.lbc.co.uk",
@@ -566,25 +535,25 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/uploads\\/cb\\/1631884607-3616\\.png",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/505055843994\\/prod_analytics_eu",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "visitor-chat.s3"
+                "sqs"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d560adb746798ad6085632c16db59ab58c89b67c46c64ea94a2968512c0a811b"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pentagon-group.co.uk",
-                "www.pentagon-group.co.uk"
+                "hendy.co.uk",
+                "www.hendy.co.uk"
             ]
         },
         {
@@ -632,6 +601,50 @@
             ]
         },
         {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/panopoly_image_original\\/public\\/jesus_-_then_and_now_carousel\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucbprelivefiles.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "88d9d683079753b33737d998c86680500dde46200b62e130ed58edad6530bea5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ucb.co.uk",
+                "www.ucb.co.uk"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/panopoly_image_original\\/public\\/header_image-1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucbprelivefiles.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1b80f9a440c8bfbd0125e8e80a498d57f6334da951cc5cb43276ffe3ca6ee15e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ucb.co.uk",
+                "www.ucb.co.uk"
+            ]
+        },
+        {
             "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/panopoly_image_original\\/public\\/general\\/header_image_0\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -644,6 +657,28 @@
             "cnames": [],
             "responseHashes": [
                 "de1897a0519d8bccf5ca1e512c8d3b0dac8d7a8cb18d4bbde943faae7a4635ec"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ucb.co.uk",
+                "www.ucb.co.uk"
+            ]
+        },
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/panopoly_image_original\\/public\\/header_image_0\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucbprelivefiles.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6ec3a7677b300a35b11d4f2a311fb27ee7d548ea147c7fd6289886705dd238e4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -676,28 +711,6 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page_square\\/public\\/bm_fb_profile_photo\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ucbprelivefiles.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "061cd38f27499b174d6b2d638aee2bafc04b8880bea6d521a5befc642aa1b487"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ucb.co.uk",
-                "www.ucb.co.uk"
-            ]
-        },
-        {
             "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/icon_ucb2_white_46px\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -720,7 +733,7 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page__403-424_\\/public\\/mb_radio_pull_through\\.jpg",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page__403-424_\\/public\\/presenter_headers_600x600px_saskia_q\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -731,7 +744,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "68cc26b3a23e81299dfe42986852839c288d62a729ba87cc759cc864117577c3"
+                "bcad8c251ac2a6b9ded21341c863ef2a0a4977b584ed0a76269ec6eb25985333"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -874,7 +887,7 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page_crop\\/public\\/ucb_player_animation_banner_animation_sq\\.png",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page_crop\\/public\\/home_page_block_-_square_0\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -885,7 +898,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a1df55842b9cdb9d59b6fe1e4da26c033ca8a5283d1c929011a03f62438efaa2"
+                "53e1ad304cf5e940053f5f53055ee0e4fab74395b03a8d86467a7755bc544cd0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -918,7 +931,7 @@
             ]
         },
         {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page_crop\\/public\\/home_page_block_-_square\\.png",
+            "rule": "eu-west-1\\.amazonaws\\.com\\/s3fs-public\\/styles\\/home_page_crop\\/public\\/ucb_player_animation_banner_animation_sq\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -929,7 +942,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9321b634921e0ff01bc0489901e3842bf0237aa47f7d3c58f5a26b88f3bf05a0"
+                "a1df55842b9cdb9d59b6fe1e4da26c033ca8a5283d1c929011a03f62438efaa2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1058,66 +1071,53 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7621483375959079
+            "prevalence": 0.7063711911357341
         },
         {
             "domain": "smct.io",
-            "prevalence": 0.05115089514066496
+            "prevalence": 0.0664819944598338
         },
         {
             "domain": "cookiebot.com",
-            "prevalence": 0.05115089514066496
+            "prevalence": 0.060941828254847646
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.030690537084398978
+            "prevalence": 0.0332409972299169
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.015345268542199489
+            "domain": "d2bgjx2gb489de.cloudfront.net",
+            "prevalence": 0.030470914127423823
         },
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 0.010230179028132993
-        },
-        {
-            "domain": "production-strike-static-assets.s3-eu-west-1.amazonaws.com",
-            "prevalence": 0.010230179028132993
+            "prevalence": 0.0110803324099723
         },
         {
             "domain": "personifyxpassets.com",
-            "prevalence": 0.010230179028132993
+            "prevalence": 0.0110803324099723
         },
         {
-            "domain": "noibu.com",
-            "prevalence": 0.0076726342710997444
+            "domain": "googletagmanager.com",
+            "prevalence": 0.0110803324099723
         },
         {
-            "domain": "thinkwebcontent.com",
-            "prevalence": 0.0076726342710997444
+            "domain": "dssqrheg7wcqy.cloudfront.net",
+            "prevalence": 0.008310249307479225
+        },
+        {
+            "domain": "impel.io",
+            "prevalence": 0.008310249307479225
         }
     ],
     "types": {
-        "Script": 20,
-        "XHR": 23,
-        "Preflight": 23,
-        "Fetch": 3,
-        "Image": 62,
-        "Ping": 2
+        "XHR": 27,
+        "Script": 18,
+        "Preflight": 30,
+        "Fetch": 5,
+        "Image": 63,
+        "Stylesheet": 2,
+        "Ping": 4
     },
-    "nameservers": [
-        "u3.amazonaws.com",
-        "pdns3.ultradns.org",
-        "pdns1.ultradns.net",
-        "ns2.p31.dynect.net",
-        "ns4.p31.dynect.net",
-        "u1.amazonaws.com",
-        "ns3.p31.dynect.net",
-        "pdns5.ultradns.info",
-        "ns1.p31.dynect.net",
-        "u6.amazonaws.com",
-        "u4.amazonaws.com",
-        "u2.amazonaws.com",
-        "u5.amazonaws.com"
-    ]
+    "nameservers": []
 }

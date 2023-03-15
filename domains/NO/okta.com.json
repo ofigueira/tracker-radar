@@ -7,16 +7,17 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000401,
+    "prevalence": 0.000402,
     "sites": 4,
     "subdomains": [
-        "sas.customdomains",
-        "servicenowsignon.customdomains"
+        "servicenowsignon.customdomains",
+        "schibsted",
+        "logon.customdomains"
     ],
     "cnames": [
         {
-            "original": "auth.sas.com",
-            "resolved": "sas.customdomains.okta.com"
+            "original": "logon.bcg.com",
+            "resolved": "logon.customdomains.okta.com"
         },
         {
             "original": "ssosignon.servicenow.com",
@@ -27,23 +28,24 @@
     "resources": [
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "sas.customdomains",
-                "servicenowsignon.customdomains"
+                "servicenowsignon.customdomains",
+                "schibsted",
+                "logon.customdomains"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
-                {
-                    "original": "auth.sas.com",
-                    "resolved": "sas.customdomains.okta.com"
-                },
                 {
                     "original": "ssosignon.servicenow.com",
                     "resolved": "servicenowsignon.customdomains.okta.com"
+                },
+                {
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
                 }
             ],
             "responseHashes": [],
@@ -51,8 +53,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sas.com",
-                "developer.servicenow.com"
+                "servicenow.com",
+                "schibsted.com",
+                "www.bcg.com"
             ]
         },
         {
@@ -60,7 +63,8 @@
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "servicenowsignon.customdomains"
+                "servicenowsignon.customdomains",
+                "schibsted"
             ],
             "apis": {},
             "sites": 2,
@@ -72,14 +76,14 @@
                 }
             ],
             "responseHashes": [
-                "6c2119a2814b0b9339ee18738175ed41b1392dc6ee637c127cd2f6ce470b7c70"
+                "3012658e486107c16ad5f8d67e7d1232c70ff979b50fbaaf5182cbaf8b0884e1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "servicenow.com",
-                "www.servicenow.com"
+                "schibsted.com"
             ]
         }
     ],
@@ -88,30 +92,26 @@
     "cookies": 0.000301,
     "topInitiators": [
         {
-            "domain": "first party",
+            "domain": "azureedge.net",
             "prevalence": 0.5
         },
         {
             "domain": "oktacdn.com",
-            "prevalence": 0.25
-        },
-        {
-            "domain": "azureedge.net",
-            "prevalence": 0.25
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Preflight": 2,
+        "Preflight": 3,
         "XHR": 2
     },
     "nameservers": [
-        "ns-1459.awsdns-54.org",
         "edns5.ultradns.com",
-        "ns-684.awsdns-21.net",
         "edns5.ultradns.biz",
-        "edns5.ultradns.net",
+        "ns-1563.awsdns-03.co.uk",
         "edns5.ultradns.org",
+        "ns-684.awsdns-21.net",
         "ns-285.awsdns-35.com",
-        "ns-1563.awsdns-03.co.uk"
+        "edns5.ultradns.net",
+        "ns-1459.awsdns-54.org"
     ]
 }

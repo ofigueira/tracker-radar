@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000301,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
         "static",
-        "utils-tcncomments"
+        "utils-tcncomments",
+        "vcdn",
+        "nolink-vcdn01"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -69,9 +71,71 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "13e47b7fd015dd934c17b7c3a5d2f1586a2c1959a41d666bdf2c87ff9257d14b"
+                "62071c267016c773466de251c9026259160389a0171bac1d462c531b37c91812"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticinonews.ch",
+                "www.ticinonews.ch"
+            ]
+        },
+        {
+            "rule": "gruppocdt\\.ch\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "utils-tcncomments"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticinonews.ch",
+                "www.ticinonews.ch"
+            ]
+        },
+        {
+            "rule": "gruppocdt\\.ch\\/api\\/v1\\/videos\\/ec5f5f5f-1530-43d2-a989-3c5e77c630b1\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticinonews.ch",
+                "www.ticinonews.ch"
+            ]
+        },
+        {
+            "rule": "gruppocdt\\.ch\\/cdhksync\\/2023\\/03\\/14\\/ec5f5f5f-1530-43d2-a989-3c5e77c630b1\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nolink-vcdn01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f8a5218ec628ca02fa3d49d5e97a645666542fa94b760527ee99244bc5c0fd08"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -82,17 +146,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9878048780487805
+        },
+        {
+            "domain": "jwpcdn.com",
+            "prevalence": 0.012195121951219513
         }
     ],
     "types": {
         "Script": 2,
         "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "WebSocket": 2,
+        "Media": 4
     },
     "nameservers": [
         "b7.uberns.com",

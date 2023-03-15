@@ -4,32 +4,77 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000203,
-    "sites": 3,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "cis"
+        "sdk",
+        "cis",
+        "collector"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "mpianalytics\\.com\\/v2\\/pulse\\.min\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "cd7f386baae520c16e3d6bd135166c80ba976e7fbbdb28123b3f16ebe1bc8c5d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pulse2data": {
+                    "ttl": 63072015,
+                    "length": 528,
+                    "prevalence": 0.00001354261182811717,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jofogas.hu",
+                "www.willhaben.at"
+            ]
+        },
+        {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
-            "cookies": 0.00000677,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "cis"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "509374fd9a4d16fd8c01fa2a546ee77eab5fe9667bf962ea9315fe112bdf5d75",
+                "eb97929b60142fd936387790e6575bbfdf4550b57a8f813c7cb303167c25c12a"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jofogas.hu",
-                "www.subito.it"
+                "www.subito.it",
+                "www.willhaben.at"
             ]
         },
         {
@@ -40,8 +85,8 @@
                 "cis"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -49,31 +94,77 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jofogas.hu",
+                "www.subito.it",
+                "www.willhaben.at"
+            ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:subito",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subito.it",
                 "www.subito.it"
+            ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:willhabenat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "willhaben.at",
+                "www.willhaben.at"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000339,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.9333333333333333
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 2,
+        "Fetch": 7,
+        "Preflight": 3
     },
     "nameservers": [
-        "ns-2030.awsdns-61.co.uk",
-        "ns-221.awsdns-27.com",
         "ns-1257.awsdns-29.org",
+        "ns-221.awsdns-27.com",
+        "ns-2030.awsdns-61.co.uk",
         "ns-597.awsdns-10.net"
     ]
 }

@@ -12,6 +12,7 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
+        "gui-ipv6",
         "events.api",
         "csp"
     ],
@@ -23,10 +24,41 @@
         {
             "original": "events.api.godaddy.com",
             "resolved": "events.api.godaddy.com.edgekey.net"
+        },
+        {
+            "original": "gui.godaddy.com",
+            "resolved": "gui-ipv6.godaddy.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/pcjson\\/applicationheader",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gui-ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "gui.godaddy.com",
+                    "resolved": "gui-ipv6.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "af83752d24abb2c0ec7e0c2f01741831ee78a8ff913747b8f17e468ea9bc51ba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
+                "account.godaddy.com"
+            ]
+        },
         {
             "rule": "godaddy\\.com\\.edgekey\\.net\\/image\\.aspx",
             "cookies": 0.000201,
@@ -36,14 +68,16 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "events.api.godaddy.com",
                     "resolved": "events.api.godaddy.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -62,7 +96,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "events.api.godaddy.com",
@@ -132,31 +166,6 @@
                 "godaddy.com",
                 "www.godaddy.com"
             ]
-        },
-        {
-            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "csp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "csp.godaddy.com",
-                    "resolved": "csp.godaddy.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "godaddy.com",
-                "www.godaddy.com"
-            ]
         }
     ],
     "categories": [],
@@ -165,16 +174,15 @@
     "topInitiators": [
         {
             "domain": "wsimg.com",
-            "prevalence": 0.8
+            "prevalence": 0.8269230769230769
         },
         {
             "domain": "unpkg.com",
-            "prevalence": 0.2
+            "prevalence": 0.17307692307692307
         }
     ],
     "types": {
-        "Fetch": 10,
-        "Preflight": 2
+        "Fetch": 12
     },
     "nameservers": []
 }

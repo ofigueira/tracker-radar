@@ -4,13 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000406,
+    "sites": 6,
     "subdomains": [
-        "szero"
+        "szero",
+        "js",
+        "loma-prod01",
+        "noflake-aggregator-http"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "narvar\\.com\\/packs\\/js\\/shop_now\\.js",
@@ -20,15 +23,16 @@
                 "szero"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "console.memory": 2,
+                "window.localStorage": 3,
+                "console.memory": 3,
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "76bf171ac2b61e9ce82227a9455f4a4aaf0a2b88076ca0442e05fa82b90053fe"
+                "2ff6b78df3f736a06f7d7ea7b84a8231b6e4ae364fa4e3b38b53bd495f965fc6",
+                "005d046909de9e80e3e25da33571ac90a233890c19efb6b8acb0441dc873382f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -38,6 +42,122 @@
                 "www.dollskill.com",
                 "www.stio.com"
             ]
+        },
+        {
+            "rule": "narvar\\.com\\/loveinfaith\\/en\\/LiF%20PDP%20Embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.vendor": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "843f54bd52ffd03932edb775b5aee4c25e25bb274654f40f99b773ff4e6fae0a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loveinfaith.life",
+                "www.loveinfaith.life"
+            ]
+        },
+        {
+            "rule": "narvar\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "loma-prod01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "aa98c3c86f14004f6f69406f76cfe2a3a18dc0e3a86f492b75c89ac6268570c7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loveinfaith.life",
+                "www.loveinfaith.life"
+            ]
+        },
+        {
+            "rule": "narvar\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "loma-prod01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loveinfaith.life",
+                "www.loveinfaith.life"
+            ]
+        },
+        {
+            "rule": "narvar\\.com\\/noflake",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "noflake-aggregator-http"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loveinfaith.life",
+                "www.loveinfaith.life"
+            ]
+        },
+        {
+            "rule": "narvar\\.com\\/noflake",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "noflake-aggregator-http"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loveinfaith.life",
+                "www.loveinfaith.life"
+            ]
         }
     ],
     "categories": [],
@@ -46,11 +166,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 5,
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "ns-1423.awsdns-49.org",

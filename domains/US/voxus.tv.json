@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
-        "targeting"
+        "targeting",
+        "white-label-ads",
+        "api",
+        "white-label-ads-embed"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -24,7 +27,8 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "f2acfa516b0662a5599195be699c9dc6021f0460a1dd5c249ae42185c76a121d"
+                "ec41c3e2f33aeff847bdebe19e08f03c9acffa08c40dcd581ad60e2ddfcc8cd7",
+                "22520da968a420874ae371d2a46b78ce6fdd2dee15fff67890aa1d8e5befa39a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -40,11 +44,12 @@
             "cookies": 0.0000135,
             "fingerprinting": 3,
             "subdomains": [
-                "targeting"
+                "targeting",
+                "white-label-ads"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
                 "Document.cookie getter": 2,
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
@@ -67,8 +72,8 @@
                 "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.productSub": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 4,
+            "prevalence": 0.0000271,
             "cnames": [],
             "responseHashes": [
                 "ccf00d1923b0131a10e0c6d26f95e5dee6ebf8621a27e83c5a2f68a2e0093142"
@@ -78,7 +83,124 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "globo.com",
+                "oglobo.globo.com",
+                "www.guiadacarreira.com.br",
                 "www.sympla.com.br"
+            ]
+        },
+        {
+            "rule": "voxus\\.tv\\/verify\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_dmp_": 0.000006771305914058585,
+                "voxusmediamanager_id": 0.000006771305914058585
+            },
+            "exampleSites": [
+                "globo.com",
+                "oglobo.globo.com"
+            ]
+        },
+        {
+            "rule": "voxus\\.tv\\/renderer\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "white-label-ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c331b28fa8e70e19f128b0097541bcb0694ceecae080ac0fa88807a8ce454446"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiadacarreira.com.br",
+                "www.guiadacarreira.com.br"
+            ]
+        },
+        {
+            "rule": "voxus\\.tv\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "white-label-ads-embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "22899437a55538570aae64f5e3979ea08077e27399f9e07a0f67acbbf668e0f2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiadacarreira.com.br",
+                "www.guiadacarreira.com.br"
+            ]
+        },
+        {
+            "rule": "voxus\\.tv\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "white-label-ads-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6dba3b4ae0ea6b8a67d062086b8473b3c45da006dff1e3e034a6052821dbdbcb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiadacarreira.com.br",
+                "www.guiadacarreira.com.br"
+            ]
+        },
+        {
+            "rule": "voxus\\.tv\\/utils\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "white-label-ads-embed"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "3844fb0a9983a2649446f92b77db1c4d2e95b8736850b76dc4ca8dcea0af1f6d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiadacarreira.com.br",
+                "www.guiadacarreira.com.br"
             ]
         }
     ],
@@ -87,20 +209,21 @@
     "cookies": 0.0000135,
     "topInitiators": [
         {
-            "domain": "voxus.com.br",
-            "prevalence": 0.8
+            "domain": "first party",
+            "prevalence": 0.5714285714285714
         },
         {
-            "domain": "glbimg.com",
-            "prevalence": 0.2
+            "domain": "voxus.com.br",
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
-        "Document": 3,
-        "Script": 2
+        "Document": 7,
+        "Script": 8,
+        "XHR": 2
     },
     "nameservers": [
-        "jamie.ns.cloudflare.com",
-        "noel.ns.cloudflare.com"
+        "noel.ns.cloudflare.com",
+        "jamie.ns.cloudflare.com"
     ]
 }

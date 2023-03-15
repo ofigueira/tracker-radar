@@ -4,20 +4,26 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
+        "hegnarmedia.auth",
+        "nhst.auth",
         "ny-post-decider.cdn",
         "ny-post-ny-post.cdn",
         "ny-post-page-six.cdn",
-        "nhst.auth",
-        "hegnarmedia.auth",
+        "national-review-national-review-production.cdn",
+        "assets",
         "hegnarmedia-bors-prod.cdn"
     ],
     "cnames": [
         {
             "original": "bors.finansavisen.no",
             "resolved": "hegnarmedia-bors-prod.cdn.zephr.com"
+        },
+        {
+            "original": "z2r.nationalreview.com",
+            "resolved": "national-review-national-review-production.cdn.zephr.com"
         },
         {
             "original": "zephr-v4.decider.com",
@@ -32,20 +38,47 @@
             "resolved": "ny-post-page-six.cdn.zephr.com"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "zephr\\.com\\/zephr\\/sso",
+            "cookies": 0.000703,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hegnarmedia.auth",
+                "nhst.auth"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.000703,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finansavisen.no",
+                "www.dn.no",
+                "www.europower.no",
+                "www.fiskeribladet.no",
+                "www.finansavisen.no",
+                "www.intrafish.no",
+                "www.kapital.no"
+            ]
+        },
+        {
             "rule": "zephr\\.com\\/zephr\\/features",
-            "cookies": 0.000301,
+            "cookies": 0.000402,
             "fingerprinting": 0,
             "subdomains": [
                 "ny-post-decider.cdn",
                 "ny-post-ny-post.cdn",
-                "ny-post-page-six.cdn"
+                "ny-post-page-six.cdn",
+                "national-review-national-review-production.cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "zephr-v4.decider.com",
@@ -58,10 +91,15 @@
                 {
                     "original": "zephr-v4.pagesix.com",
                     "resolved": "ny-post-page-six.cdn.zephr.com"
+                },
+                {
+                    "original": "z2r.nationalreview.com",
+                    "resolved": "national-review-national-review-production.cdn.zephr.com"
                 }
             ],
             "responseHashes": [
-                "19325d3afc6878dcf98e05f964704dc833dd37872e8fcf216944e84fede6bf47"
+                "19325d3afc6878dcf98e05f964704dc833dd37872e8fcf216944e84fede6bf47",
+                "c2b07bf5d0dc1f6ffbfccab9f090fac8bc4a859b78091584b4bf0f4db5736f64"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -69,32 +107,54 @@
             "exampleSites": [
                 "decider.com",
                 "nypost.com",
-                "pagesix.com"
+                "pagesix.com",
+                "www.nationalreview.com"
             ]
         },
         {
-            "rule": "zephr\\.com\\/zephr\\/sso",
-            "cookies": 0.000602,
-            "fingerprinting": 0,
+            "rule": "zephr\\.com\\/zephr-browser\\/1\\.3\\.9\\/zephr-browser\\.umd\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "nhst.auth",
-                "hegnarmedia.auth"
+                "assets"
             ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
+            "responseHashes": [
+                "fcac0e1a4f11bbf64e60b1305ef1b935ff5c41e49d150c42ca8d8d6464dc240f"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dn.no",
-                "www.finansavisen.no",
-                "www.fiskeribladet.no",
-                "www.intrafish.no",
-                "www.kapital.no",
-                "www.upstreamonline.com"
+                "chicagotribune.com",
+                "www.nydailynews.com"
+            ]
+        },
+        {
+            "rule": "zephr\\.com\\/tribune\\/zephr-minify\\.1\\.0\\.1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ed6b237b687782c7d85630dec9239d26965f826b0b1a64d2817b4dec65db486a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagotribune.com",
+                "www.nydailynews.com"
             ]
         },
         {
@@ -114,7 +174,7 @@
                 }
             ],
             "responseHashes": [
-                "f643bf256fb92dae347dff34911cf9e6f561073838d7c3ae88fa1de0803c2340"
+                "ed1f0d358a8db826e8a18a406f169926640f079d1bba93da81d7f8fb31849ef8"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -125,51 +185,80 @@
             ]
         },
         {
-            "rule": "zephr\\.com\\/server\\/components",
-            "cookies": 0,
+            "rule": "zephr\\.com\\/plugins\\/public\\/blueconic\\/segments",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "hegnarmedia-bors-prod.cdn"
+                "national-review-national-review-production.cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "bors.finansavisen.no",
-                    "resolved": "hegnarmedia-bors-prod.cdn.zephr.com"
+                    "original": "z2r.nationalreview.com",
+                    "resolved": "national-review-national-review-production.cdn.zephr.com"
                 }
             ],
-            "responseHashes": [
-                "ea075c981c390c78cb52aa5317cb124279c295587a5cc125a33446e13a80434c"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalreview.com",
+                "www.nationalreview.com"
+            ]
+        },
+        {
+            "rule": "zephr\\.com\\/plugins\\/public\\/blueconic\\/segments",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "national-review-national-review-production.cdn"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "z2r.nationalreview.com",
+                    "resolved": "national-review-national-review-production.cdn.zephr.com"
+                }
+            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "finansavisen.no",
-                "www.finansavisen.no"
+                "nationalreview.com",
+                "www.nationalreview.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000903,
+    "cookies": 0.0011,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6363636363636364
+        },
+        {
+            "domain": "d14pdm1b7fi5kh.cloudfront.net",
+            "prevalence": 0.36363636363636365
         }
     ],
     "types": {
-        "Other": 3,
-        "Document": 8,
+        "Document": 9,
+        "Other": 4,
+        "Script": 4,
+        "Preflight": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns-1113.awsdns-11.org",
-        "ns-877.awsdns-45.net",
         "ns-1991.awsdns-56.co.uk",
-        "ns-46.awsdns-05.com"
+        "ns-1113.awsdns-11.org",
+        "ns-46.awsdns-05.com",
+        "ns-877.awsdns-45.net"
     ]
 }
