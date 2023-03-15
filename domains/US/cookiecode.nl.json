@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "cookiecode\\.nl\\/cn\\/style\\/memori\\.nl\\/",
@@ -46,7 +47,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "bb3af290b3f9eef8b3c81d9e907df8379f5b83a92158c81a544beca6ba199188"
+                "1bcdeed54957a5fd75b7de0c7ecec5eacbf0278c789987f3264b6c4b4d48c037"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -77,6 +78,118 @@
                 "memori.nl",
                 "www.memori.nl"
             ]
+        },
+        {
+            "rule": "cookiecode\\.nl\\/dist\\/latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "042a75b92ce283a14cf68b49ba400a0c908c8cae3a6cd6fb8a2b82430b00487a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moestuinforum.nl",
+                "www.moestuinforum.nl"
+            ]
+        },
+        {
+            "rule": "cookiecode\\.nl\\/api\\/config\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "60f96bf0b756dd322d50d49eb13ddaecde1dbd19111724e066aa69d5a18cf82a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moestuinforum.nl",
+                "www.moestuinforum.nl"
+            ]
+        },
+        {
+            "rule": "cookiecode\\.nl\\/api\\/config\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moestuinforum.nl",
+                "www.moestuinforum.nl"
+            ]
+        },
+        {
+            "rule": "cookiecode\\.nl\\/script\\/notify\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moestuinforum.nl",
+                "www.moestuinforum.nl"
+            ]
+        },
+        {
+            "rule": "cookiecode\\.nl\\/template\\/banner-classic\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "c0d119ea0b813b050b1febb6c9c5461e827f46acdcf19f23384ea3b7280f0f09"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moestuinforum.nl",
+                "www.moestuinforum.nl"
+            ]
         }
     ],
     "categories": [],
@@ -85,15 +198,22 @@
     "topInitiators": [
         {
             "domain": "praivacy.eu",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
         }
     ],
     "types": {
         "Stylesheet": 2,
-        "XHR": 4
+        "XHR": 8,
+        "Script": 2,
+        "Preflight": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "lola.ns.cloudflare.com",
-        "tom.ns.cloudflare.com"
+        "tom.ns.cloudflare.com",
+        "lola.ns.cloudflare.com"
     ]
 }

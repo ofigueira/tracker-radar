@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000339,
+    "sites": 5,
     "subdomains": [
         "tp",
+        "il",
         "letterbox-web"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "srgssr\\.ch\\/assets\\/javascripts\\/player-api\\.min\\.js",
@@ -39,6 +40,28 @@
             ]
         },
         {
+            "rule": "srgssr\\.ch\\/integrationlayer\\/2\\.0\\/mediaComposition\\/byUrn\\/urn:rsi:video:16089289\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "il"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "b97cc10cd8fa388d39bf5f753f968617aa9bb5eec5ff07933aa5005664a152f3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsi.ch",
+                "www.rsi.ch"
+            ]
+        },
+        {
             "rule": "srgssr\\.ch\\/akahd\\/token",
             "cookies": 0,
             "fingerprinting": 0,
@@ -50,7 +73,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "a8580414077d451d08e7b16e802abf0547a7cacd701802f401293ddbe872a82b"
+                "96d4a43a43a397a1c182ac48c4498613225d5d7e91b8921b57aa312ca6b1f800"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -71,7 +94,9 @@
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "2da5101135443a055159c841907c43a53c203913ac444fdf27d7204c34c5a748"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -83,21 +108,52 @@
         {
             "rule": "srgssr\\.ch\\/v\\/3\\.18\\/letterbox\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "letterbox-web"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.languages": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaSource.isTypeSupported": 1,
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c8bcb4b72b73bd70e98d7a02d0befdbd10079d88a356f69057288de1032b51a8"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rts.ch",
                 "www.rts.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/images\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "il"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6b35361d7f65e7a26a5f9fa2b96eda6478b272ac44b92b8d4d1b4bcc81563191"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "srf.ch",
+                "www.srf.ch"
             ]
         }
     ],
@@ -112,11 +168,12 @@
     ],
     "types": {
         "Script": 4,
-        "Fetch": 2,
-        "Stylesheet": 2
+        "Fetch": 4,
+        "Stylesheet": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns3.srgssr.ch",
-        "ns4.srgssr.ch"
+        "ns4.srgssr.ch",
+        "ns3.srgssr.ch"
     ]
 }

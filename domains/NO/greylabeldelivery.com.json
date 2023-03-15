@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0014,
-    "sites": 14,
+    "prevalence": 0.00171,
+    "sites": 17,
     "subdomains": [
         "tms-global.intel.com",
-        "tms.oracle.com",
-        "tags.asics.com",
         "tags.focus.de",
-        "tags.chip.de"
+        "tags.chip.de",
+        "tags.asics.com",
+        "webtags.logitech.com",
+        "tms.oracle.com"
     ],
     "cnames": [
         {
@@ -33,6 +34,10 @@
         {
             "original": "tms.oracle.com",
             "resolved": "tms.oracle.com.greylabeldelivery.com"
+        },
+        {
+            "original": "webtags.logitech.com",
+            "resolved": "webtags.logitech.com.greylabeldelivery.com"
         }
     ],
     "fingerprinting": 2,
@@ -54,7 +59,7 @@
                 }
             ],
             "responseHashes": [
-                "a3ec385386e69658e739312077c954dc7cb47b7d8abae4dd462fcbeff04efb87"
+                "c7285b7c5c59e3a71c96ce88ec97db6706b83f67563f10b56509a4493390b1f1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -81,7 +86,7 @@
                 }
             ],
             "responseHashes": [
-                "4916ec991cb38c8468777d6b5463196d3c21fb98fecf948bb2b2179f3f996794"
+                "944d6b252ee6b68ad355b2ac5ddb1beb15eba5ce9adeb5c139b44697282450e7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -89,68 +94,6 @@
             "exampleSites": [
                 "intel.com",
                 "www.intel.com"
-            ]
-        },
-        {
-            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.sync\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "tms.oracle.com",
-                "tags.asics.com"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "tms.oracle.com",
-                    "resolved": "tms.oracle.com.greylabeldelivery.com"
-                },
-                {
-                    "original": "tags.asics.com",
-                    "resolved": "tags.asics.com.greylabeldelivery.com"
-                }
-            ],
-            "responseHashes": [
-                "9f09abe2941737c3db7f7c5399764eb31ec817d2f348706eaa4daad12d6a214a",
-                "0cc2663d5cbb0cecdded795b171af45952a900717ab17d68cdb8cc8d558a11b3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oracle.com",
-                "www.asics.com",
-                "www.oracle.com"
-            ]
-        },
-        {
-            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.js",
-            "cookies": 0.000301,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tms.oracle.com"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "tms.oracle.com",
-                    "resolved": "tms.oracle.com.greylabeldelivery.com"
-                }
-            ],
-            "responseHashes": [
-                "f40d6d28dc2d9fe792bc801e30f106a0a8b0a6d9f66974b8f67b6ce7c3f9d80d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oracle.com",
-                "community.oracle.com",
-                "www.oracle.com"
             ]
         },
         {
@@ -177,7 +120,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "focus.de",
-                "praxistipps.focus.de"
+                "www.focus.de"
             ]
         },
         {
@@ -233,40 +176,107 @@
                 "chip.de",
                 "www.chip.de"
             ]
+        },
+        {
+            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.sync\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tags.asics.com",
+                "webtags.logitech.com",
+                "tms.oracle.com"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [
+                {
+                    "original": "tags.asics.com",
+                    "resolved": "tags.asics.com.greylabeldelivery.com"
+                },
+                {
+                    "original": "webtags.logitech.com",
+                    "resolved": "webtags.logitech.com.greylabeldelivery.com"
+                },
+                {
+                    "original": "tms.oracle.com",
+                    "resolved": "tms.oracle.com.greylabeldelivery.com"
+                }
+            ],
+            "responseHashes": [
+                "d1521821fd7878457b99d041e168b62cfbb6d1cf214c5d7503c5f47bb98255e3",
+                "0d1ff43bdd9bddd215d0877a81f8bd82e8315ea68e8b92aedebf1a315d2dbb04"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asics.com",
+                "www.logitech.com",
+                "www.oracle.com"
+            ]
+        },
+        {
+            "rule": "greylabeldelivery\\.com\\/main\\/prod\\/utag\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "webtags.logitech.com",
+                "tms.oracle.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "webtags.logitech.com",
+                    "resolved": "webtags.logitech.com.greylabeldelivery.com"
+                },
+                {
+                    "original": "tms.oracle.com",
+                    "resolved": "tms.oracle.com.greylabeldelivery.com"
+                }
+            ],
+            "responseHashes": [
+                "119d0ffab5894973b39f3f97fbdb46899f20de862fe29cb70953a4af25df0b28"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "logitech.com",
+                "www.oracle.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0014,
+    "cookies": 0.00171,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "domain": "yottaa.com",
+            "prevalence": 0.46153846153846156
         },
         {
-            "domain": "yottaa.com",
-            "prevalence": 0.3333333333333333
+            "domain": "first party",
+            "prevalence": 0.3076923076923077
         },
         {
             "domain": "sp-prod.net",
-            "prevalence": 0.16666666666666666
-        },
-        {
-            "domain": "oraclecloud.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "computer-bild.de",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Script": 16
+        "Script": 15
     },
     "nameservers": [
-        "ns-183.awsdns-22.com",
         "ns-529.awsdns-02.net",
         "ns-1253.awsdns-28.org",
+        "ns-183.awsdns-22.com",
         "ns-1920.awsdns-48.co.uk"
     ]
 }

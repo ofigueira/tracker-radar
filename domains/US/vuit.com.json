@@ -87,7 +87,7 @@
             ],
             "apis": {
                 "window.indexedDB": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1,
+                "HTMLMediaElement.prototype.canPlayType": 2,
                 "window.localStorage": 2,
                 "window.sessionStorage": 2
             },
@@ -129,14 +129,13 @@
         },
         {
             "rule": "vuit\\.com\\/lib\\/js-cookie\\/src\\/js\\.cookie\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -145,14 +144,7 @@
                 "55b0a4a2ab61a84eef7acffed553b8bd6daca362fbce16f8b9a9cb3cb72b8789"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "ssid": {
-                    "ttl": 2588410,
-                    "length": 36,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ktbs.com",
@@ -282,7 +274,7 @@
                 "www"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -299,7 +291,7 @@
             ]
         },
         {
-            "rule": "vuit\\.com\\/lib\\/bowser\\/bowser\\.min\\.js",
+            "rule": "vuit\\.com\\/lib\\/bowser\\/src\\/bowser\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -312,7 +304,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8ac6fb0a62b73e876b46951720e896895392378eee3ab30a48535ab7b58b4fe4"
+                "4059cb769ba91ec77e08b78fe69673ead637cfa14b1394bef41c928854a2d51d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -372,16 +364,16 @@
         },
         {
             "rule": "vuit\\.com\\/js\\/player-setup-flowplayer\\.js",
-            "cookies": 0.00000677,
+            "cookies": 0.0000135,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.userAgent": 1
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -392,24 +384,46 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ssid": {
-                    "ttl": 2588404,
+                    "ttl": 2592013,
                     "length": 36,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.00001354261182811717,
                     "uniqueness": 1
                 },
                 "dwidio": {
                     "ttl": null,
-                    "length": 88,
-                    "prevalence": 0.000006768647624204684,
-                    "uniqueness": 1
+                    "length": 120,
+                    "prevalence": 0.00001354261182811717,
+                    "uniqueness": 0.5
                 },
                 "loc": {
-                    "ttl": 86405,
+                    "ttl": 86415,
                     "length": 136,
-                    "prevalence": 0.000006768647624204684,
+                    "prevalence": 0.00001354261182811717,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ktbs.com",
+                "www.wfmz.com"
+            ]
+        },
+        {
+            "rule": "vuit\\.com\\/api\\/services\\/AdCtx",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ktbs.com",
@@ -423,27 +437,28 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.5
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.25
         },
         {
             "domain": "vuit.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.25
         }
     ],
     "types": {
         "Stylesheet": 6,
         "Script": 24,
-        "Image": 2
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns3.dnsmadeeasy.com",
         "ns2.dnsmadeeasy.com",
-        "ns4.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com",
         "ns1.dnsmadeeasy.com",
-        "ns0.dnsmadeeasy.com"
+        "ns4.dnsmadeeasy.com"
     ]
 }

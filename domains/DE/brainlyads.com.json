@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000703,
+    "sites": 7,
     "subdomains": [
-        "hb"
+        "hb",
+        "report2.hb"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "brainlyads\\.com\\/pbjs_wrapper\\.v2\\.0\\.js",
@@ -23,14 +24,16 @@
                 "hb"
             ],
             "apis": {
-                "window.localStorage": 6,
-                "Document.cookie getter": 6
+                "window.localStorage": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "6e35ad8d51867e9886794295f9dea0a06c118f753fe0f20d04341e14236db3b3"
+                "9f86fe644e1155cc82751510c9ca29d520f04dd9fb51d4549a209f46badc7592",
+                "196994f3e2ef107eec8862e2d50308840c8a900574917c03bc9fb2872e965127"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,7 +42,6 @@
                 "flickr.com",
                 "www.flickr.com",
                 "www.metatube.com",
-                "www.mogelpower.de",
                 "www.moviejones.de",
                 "www.pravda-tv.com"
             ]
@@ -52,14 +54,15 @@
                 "hb"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.cookieEnabled": 6,
-                "window.sessionStorage": 6,
-                "window.localStorage": 6,
-                "Document.cookie getter": 6
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "window.sessionStorage": 5,
+                "window.localStorage": 5,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 1
             },
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "2e5bbe0db988c50dea5c53c023989c9a277f991a15ac2d5a4eba4e79db7bf7ea"
@@ -71,9 +74,52 @@
                 "flickr.com",
                 "www.flickr.com",
                 "www.metatube.com",
-                "www.mogelpower.de",
                 "www.moviejones.de",
                 "www.pravda-tv.com"
+            ]
+        },
+        {
+            "rule": "brainlyads\\.com\\/json-parts\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ddea90bec0a2361c88e8cd92abbde3fc203c33a6e009a2f695b3d34368b5895b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moviejones.de",
+                "www.moviejones.de"
+            ]
+        },
+        {
+            "rule": "brainlyads\\.com\\/statistics\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "report2.hb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5de9a25fdbc5b287881503d1d2f83468953ea75a6a755f1c089d7db343510f91"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thegearpage.net",
+                "www.thegearpage.net"
             ]
         }
     ],
@@ -83,14 +129,20 @@
     "topInitiators": [
         {
             "domain": "powerad.ai",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 12
+        "Script": 10,
+        "Fetch": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns36.domaincontrol.com",
-        "ns35.domaincontrol.com"
+        "ns35.domaincontrol.com",
+        "ns36.domaincontrol.com"
     ]
 }

@@ -4,60 +4,140 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "tm-eu"
+        "tm-eu",
+        "smpl"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "beiersdorf\\.com\\/gtm\\.js",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 1,
             "subdomains": [
                 "tm-eu"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "8e2dc32c7579e8f85b20ec7c074c8eec9b0fe5acf457e5b0ac63c83a4098751c"
+                "7465ebb0137dab9c9d5f0d3f8f0ea30aab1f376859538e75f83cd147d6165af2",
+                "29c0d28460f6e9f9b43a0e33363a6caa599563b2f66365169b6bfac34713dc2a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_uconfig": {
                     "ttl": 15552002,
-                    "length": 65,
-                    "prevalence": 0.00010026067776218167,
-                    "uniqueness": 1
+                    "length": 66,
+                    "prevalence": 0.00020120724346076458,
+                    "uniqueness": 0.5
                 },
                 "_sconfig": {
-                    "ttl": 1802,
-                    "length": 170,
-                    "prevalence": 0.00010026067776218167,
-                    "uniqueness": 1
+                    "ttl": 1801,
+                    "length": 113,
+                    "prevalence": 0.00020120724346076458,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nivea.ch",
-                "www.nivea.ch"
+                "www.nivea.ch",
+                "www.nivea.de"
+            ]
+        },
+        {
+            "rule": "beiersdorf\\.com\\/static\\/smpl\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "smpl"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "76039a26bb3656600240ac08bc5f0ce450661977af129ab9c746ea4efe45a1a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nivea.ch",
+                "www.nivea.de"
+            ]
+        },
+        {
+            "rule": "beiersdorf\\.com\\/com\\.beiersdorf\\.simplicity\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smpl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nivea.ch",
+                "www.nivea.de"
+            ]
+        },
+        {
+            "rule": "beiersdorf\\.com\\/com\\.beiersdorf\\.simplicity\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smpl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nivea.ch",
+                "www.nivea.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -65,12 +145,14 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 5,
+        "Ping": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns6.netnames.net",
         "ns1.netnames.net",
+        "ns2.netnames.net",
         "ns5.netnames.net",
-        "ns2.netnames.net"
+        "ns6.netnames.net"
     ]
 }

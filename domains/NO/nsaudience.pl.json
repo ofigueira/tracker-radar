@@ -10,7 +10,8 @@
     "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [
-        "atm.api.dmp"
+        "atm.api.dmp",
+        "gdpr.api.dmp"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,22 +25,44 @@
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 2,
-                "NavigatorUAData.prototype.brands": 2
+                "Navigator.prototype.userAgent": 1,
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "NavigatorUAData.prototype.brands": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "bed28bbeb64bd6c3b9bc9f0ea9a202953e975d8ec7d7e6b324d12e1ee16a9df6"
+                "a0084dc93023028b3ff1ef119529c44aa8c8fad523ffa9ccbcc0fc2e7a60a907"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "interia.pl",
-                "wydarzenia.interia.pl"
+                "dziennikbaltycki.pl",
+                "www.interia.pl"
+            ]
+        },
+        {
+            "rule": "nsaudience\\.pl\\/frontend\\/agreement\\/custom\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gdpr.api.dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7ea141c16c36f99a3659992a1c410031d1b06c2231b8ccfcc40b515e1040e860"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldenline.pl",
+                "www.goldenline.pl"
             ]
         }
     ],
@@ -49,14 +72,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Document": 2
     },
     "nameservers": [
-        "dns200.anycast.me",
-        "ns200.anycast.me"
+        "ns200.anycast.me",
+        "dns200.anycast.me"
     ]
 }

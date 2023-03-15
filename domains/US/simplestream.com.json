@@ -7,26 +7,27 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
-        "mm-dev"
+        "mm-dev",
+        "mm-v2"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "simplestream\\.com\\/ssmp\\/init-v1\\.0\\.9\\.js",
+            "rule": "simplestream\\.com\\/ssmp\\/init-videojs-v1\\.0\\.0-gbnews\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "mm-dev"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "221699cf6df724a96c89b51355695db931e0977590a1f6fc90ea6a7bfddd7cd0"
+                "ad507940278e5dd7f2acfe7b25fba3d3140c1202210df36aac59c06493913da3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -110,16 +111,110 @@
                 "mm-dev"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.userAgent": 1
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "2f1acff51151eaf05a0973af3d01cf063df7bdcbccacdda76e6d569cb63ad19d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gbnews.uk",
+                "www.gbnews.uk"
+            ]
+        },
+        {
+            "rule": "simplestream\\.com\\/ssmp\\/api\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mm-v2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "6aa50e7d2a39ffd6655e1eb2ee02df0f700565a939bdea3e7533fbbe5466b53d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gbnews.uk",
+                "www.gbnews.uk"
+            ]
+        },
+        {
+            "rule": "simplestream\\.com\\/ssmp\\/videojs7\\/7\\.15\\.4\\/video\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "mm-dev"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "56b006f8cac7a576f1beb66045b98c7a0ea318984ae271b32211f0bb95acd773"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gbnews.uk",
+                "www.gbnews.uk"
+            ]
+        },
+        {
+            "rule": "simplestream\\.com\\/ssmp\\/videojs7\\/videojs-contrib-ads\\/videojs\\.ads\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mm-dev"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "81d170348c4dbd60e34b3eb1a226e86b8932cf575e26d65c1e31289ea1d18dbc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gbnews.uk",
+                "www.gbnews.uk"
+            ]
+        },
+        {
+            "rule": "simplestream\\.com\\/ssmp\\/videojs7\\/videojs-contrib-ads\\/videojs\\.ima\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mm-dev"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "49ed2df6825661cb5e318d5b5da5c39387c8e1a08a886ec9a679639a9a8d4fb2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -135,16 +230,25 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "cloudflare.com",
+            "prevalence": 0.8095238095238095
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "gbnews.com",
+            "prevalence": 0.09523809523809523
         }
     ],
     "types": {
-        "Script": 4,
-        "Stylesheet": 6
+        "Script": 10,
+        "Stylesheet": 6,
+        "XHR": 2
     },
     "nameservers": [
-        "ns66.domaincontrol.com",
-        "ns65.domaincontrol.com"
+        "ns65.domaincontrol.com",
+        "ns66.domaincontrol.com"
     ]
 }

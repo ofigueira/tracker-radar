@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "cpro"
     ],
@@ -16,47 +16,36 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "baidustatic\\.com\\/js\\/logo\\/css\\/logo-sm\\.css",
+            "rule": "baidustatic\\.com\\/cpro\\/ui\\/cm\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "cpro"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Document.cookie getter": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "503aeafa6ff32a486168dec325ef89dc41f381745150e807a911009b5ea422b7"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "csdn.net",
-                "blog.csdn.net"
-            ]
-        },
-        {
-            "rule": "baidustatic\\.com\\/js\\/logo\\/js\\/logo\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cpro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "65913f31dd2fa488a4060686e7f52d2114941952bffebf9cae2656d2276910bd"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "csdn.net",
-                "blog.csdn.net"
+                "www.163.com"
             ]
         }
     ],
@@ -66,15 +55,18 @@
     "topInitiators": [
         {
             "domain": "baidu.com",
-            "prevalence": 0.8
+            "prevalence": 0.5
         },
         {
             "domain": "first party",
-            "prevalence": 0.2
+            "prevalence": 0.25
+        },
+        {
+            "domain": "126.net",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Stylesheet": 2,
         "Script": 2
     },
     "nameservers": [

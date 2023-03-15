@@ -4,24 +4,29 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "retailads\\.net\\/ts\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0001,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "c45a84e5e0ff6ed83afd426788be38a5cbc442dc6cce4631bfd5c22fdd1fc8df"
@@ -31,21 +36,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "asiastreetfood.com",
+                "www.koffer-direkt.de",
+                "www.myinstants.com",
                 "www.springlane.de"
+            ]
+        },
+        {
+            "rule": "retailads\\.net\\/tb\\.php",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myinstants.com",
+                "www.myinstants.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "redintelligence.net",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "futalis.de",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Document": 2
     },
     "nameservers": [
         "ns1.your-server.de",

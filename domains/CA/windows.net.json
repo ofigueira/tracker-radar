@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00483,
-    "sites": 48,
+    "prevalence": 0.00563,
+    "sites": 56,
     "subdomains": [
         "launchpad-eventhubs.servicebus",
-        "prodmg2.blob.core",
-        "edqprofservus.blob.core"
+        "insitez.blob.core",
+        "edqprofservus.blob.core",
+        "prodmg2.blob.core"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -27,42 +28,79 @@
                 "launchpad-eventhubs.servicebus"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cheapoair.com",
+                "cheapoair.ca",
+                "www.cheapoair.ca",
                 "www.cheapoair.com"
             ]
         },
         {
-            "rule": "windows\\.net\\/newsletterwidget\\/mngcep\\/mg2nw\\.min\\.js",
+            "rule": "windows\\.net\\/metrics-hub\\/messages",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "prodmg2.blob.core"
+                "launchpad-eventhubs.servicebus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheapoair.ca",
+                "www.cheapoair.com"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/widget\\/IzCode\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "insitez.blob.core"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Screen.prototype.availWidth": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.product": 2
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "eabc0f4a5b76ceb76d11713e56e77dc230f3672c9df4c43a79089fa69b056033"
+                "03f7d7571ae37f9d26d065270f3d71557cafd78a265b47a7a76eded98ef7affe"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_iz_sd_ss_": {
+                    "ttl": null,
+                    "length": 104,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                },
+                "_iz_uh_ps_": {
+                    "ttl": 31536005,
+                    "length": 120,
+                    "prevalence": 0.00020092425155716296,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "denverpost.com",
-                "www.mercurynews.com"
+                "commonsensemedia.org",
+                "www.hubinternational.com"
             ]
         },
         {
@@ -73,8 +111,8 @@
                 "edqprofservus.blob.core"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "78ed2e962e56cd80fb63b9ebb9914c92881be6a441b792f98533973ec25005fa"
@@ -83,7 +121,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "petsmart.ca",
+                "cuisinart.ca",
+                "www.petsmart.ca",
                 "www.petsmart.com",
                 "www.timex.com"
             ]
@@ -96,8 +135,8 @@
                 "edqprofservus.blob.core"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "ba6afb54e221709b8deb4a95dcf8aa9e5501c0444fa26e31f89dd909e5721d60"
@@ -106,7 +145,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "petsmart.ca",
+                "cuisinart.ca",
+                "www.petsmart.ca",
                 "www.petsmart.com",
                 "www.timex.com"
             ]
@@ -119,8 +159,8 @@
                 "edqprofservus.blob.core"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
                 "5027acee4ab82f7921c46453eeea5ab9c262457c74698f07394c0a5c74ffd6cb"
@@ -129,9 +169,37 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "petsmart.ca",
+                "cuisinart.ca",
+                "www.petsmart.ca",
                 "www.petsmart.com",
                 "www.timex.com"
+            ]
+        },
+        {
+            "rule": "windows\\.net\\/newsletterwidget\\/mngcep\\/mg2nw\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prodmg2.blob.core"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.product": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "eabc0f4a5b76ceb76d11713e56e77dc230f3672c9df4c43a79089fa69b056033"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denverpost.com",
+                "www.eastbaytimes.com",
+                "www.mercurynews.com"
             ]
         }
     ],
@@ -139,54 +207,59 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000503,
+    "cookies": 0.000402,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.96875
+            "prevalence": 0.9320987654320988
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.011363636363636364
+            "prevalence": 0.015432098765432098
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.012345679012345678
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.009259259259259259
+        },
+        {
+            "domain": "fareportal.com",
+            "prevalence": 0.006172839506172839
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.0030864197530864196
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.002840909090909091
+            "prevalence": 0.0030864197530864196
         },
         {
             "domain": "msecnd.net",
-            "prevalence": 0.002840909090909091
+            "prevalence": 0.0030864197530864196
         },
         {
             "domain": "customsearch.ai",
-            "prevalence": 0.002840909090909091
+            "prevalence": 0.0030864197530864196
         },
         {
             "domain": "instanthome.com",
-            "prevalence": 0.002840909090909091
-        },
-        {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.002840909090909091
-        },
-        {
-            "domain": "azureedge.net",
-            "prevalence": 0.002840909090909091
-        },
-        {
-            "domain": "pranmcpkx.com",
-            "prevalence": 0.002840909090909091
+            "prevalence": 0.0030864197530864196
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Script": 5,
-        "Stylesheet": 6
+        "Fetch": 3,
+        "Preflight": 2,
+        "Script": 9,
+        "Stylesheet": 8
     },
     "nameservers": [
-        "ns1-39.azure-dns.com",
-        "ns2-39.azure-dns.net",
         "ns3-39.azure-dns.org",
-        "ns4-39.azure-dns.info"
+        "ns1-39.azure-dns.com",
+        "ns4-39.azure-dns.info",
+        "ns2-39.azure-dns.net"
     ]
 }

@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "events.api"
+        "events.api",
+        "csp"
     ],
     "cnames": [
+        {
+            "original": "csp.godaddy.com",
+            "resolved": "csp.godaddy.com.edgekey.net"
+        },
         {
             "original": "events.api.godaddy.com",
             "resolved": "events.api.godaddy.com.edgekey.net"
@@ -24,7 +29,7 @@
     "resources": [
         {
             "rule": "godaddy\\.com\\.edgekey\\.net\\/image\\.aspx",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "events.api"
@@ -75,11 +80,36 @@
                 "godaddy.com",
                 "www.godaddy.com"
             ]
+        },
+        {
+            "rule": "godaddy\\.com\\.edgekey\\.net\\/eventbus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "csp.godaddy.com",
+                    "resolved": "csp.godaddy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godaddy.com",
+                "www.godaddy.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "wsimg.com",
@@ -87,7 +117,7 @@
         }
     ],
     "types": {
-        "Fetch": 4
+        "Fetch": 6
     },
     "nameservers": []
 }

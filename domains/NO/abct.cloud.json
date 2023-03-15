@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "prod-hegnar"
     ],
@@ -17,10 +17,41 @@
         {
             "original": "static.kapital.no",
             "resolved": "prod-hegnar.abct.cloud"
+        },
+        {
+            "original": "ws.finansavisen.no",
+            "resolved": "prod-hegnar.abct.cloud"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "abct\\.cloud\\/api\\/articles\\.rss",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-hegnar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ws.finansavisen.no",
+                    "resolved": "prod-hegnar.abct.cloud"
+                }
+            ],
+            "responseHashes": [
+                "90e6e0bbd686ad1e5e8c291042bfca4102f41602fda16ddebdc55ef316fa957e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finansavisen.no",
+                "bors.finansavisen.no"
+            ]
+        },
         {
             "rule": "abct\\.cloud\\/static\\/style\\.css",
             "cookies": 0,
@@ -42,7 +73,7 @@
                 }
             ],
             "responseHashes": [
-                "eef8297797f29a21225500641255b3b60a0456454c7ff01b69c22a762a61f0e1"
+                "0f8d634f6708cc50bbf47688e5ca9fa048cf63ca6e7f3d4a45879c1ba688c915"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -73,7 +104,7 @@
                 }
             ],
             "responseHashes": [
-                "7d5d49118d14afe70da8458280f45788cc7305099bf2a707950941358c0459c0"
+                "a90e08cb2afbd953762f31a030f9db553248e766ec6e7a21bdbe92d5d647a79e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -113,19 +144,51 @@
                 "finansavisen.no",
                 "www.kapital.no"
             ]
+        },
+        {
+            "rule": "abct\\.cloud\\/static\\/device-tracking\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod-hegnar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "static.finansavisen.no",
+                    "resolved": "prod-hegnar.abct.cloud"
+                },
+                {
+                    "original": "static.kapital.no",
+                    "resolved": "prod-hegnar.abct.cloud"
+                }
+            ],
+            "responseHashes": [
+                "79f378501d9242294400f06d28cd0b59b363177774734562eca1cc1261459dba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finansavisen.no",
+                "www.kapital.no"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
+        "Fetch": 2,
         "Stylesheet": 2,
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
         "ns-foo.linpro.net",
-        "ns-bar.i.bitbit.net",
+        "ns-zoo.i.bitbit.net",
         "ns-zoo.linpro.net",
-        "ns-zoo.i.bitbit.net"
+        "ns-bar.i.bitbit.net"
     ]
 }

@@ -9,14 +9,38 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000602,
-    "sites": 6,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
-        "analytics"
+        "brain",
+        "analytics",
+        "gateway"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "foresee\\.com\\/state\\/att\\/3ca6df3b-5406-4d31-917e-cf49ca7967b2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "brain"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "506c7c4254e7a93d69629e6fb723ae21790948ac59c5e7e79f2c081b2c969146"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "att.com",
+                "www.att.com"
+            ]
+        },
         {
             "rule": "foresee\\.com\\/ingest\\/events",
             "cookies": 0,
@@ -25,17 +49,16 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [
-                "8eefa322436955a85812c082e3ed2399efd61cef81bf4e07d4bee01146e21e62"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cdc.gov",
+                "www.delta.com",
                 "www.imf.org",
                 "www.nhlbi.nih.gov"
             ]
@@ -48,17 +71,46 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "8eefa322436955a85812c082e3ed2399efd61cef81bf4e07d4bee01146e21e62"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cdc.gov",
+                "www.delta.com",
                 "www.imf.org",
                 "www.nhlbi.nih.gov"
+            ]
+        },
+        {
+            "rule": "foresee\\.com\\/sites\\/delta\\/production\\/gateway\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1eb8b3fe8d02be7e2025d74126f8d90478a9e951a6505a15152d39bd8c2d65ed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delta.com",
+                "www.delta.com"
             ]
         }
     ],
@@ -69,21 +121,30 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000604,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5185185185185185
+        },
+        {
+            "domain": "onelink-translations.com",
+            "prevalence": 0.4074074074074074
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.07407407407407407
         }
     ],
     "types": {
-        "XHR": 3,
-        "Preflight": 3
+        "XHR": 6,
+        "Preflight": 4,
+        "Script": 2
     },
     "nameservers": [
-        "ns-1388.awsdns-45.org",
         "ns-1710.awsdns-21.co.uk",
         "ns-29.awsdns-03.com",
+        "ns-1388.awsdns-45.org",
         "ns-880.awsdns-46.net"
     ]
 }

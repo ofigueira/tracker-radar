@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0015,
-    "sites": 15,
+    "prevalence": 0.00201,
+    "sites": 20,
     "subdomains": [
-        "api"
+        "api",
+        "events",
+        "api.tiles"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -38,10 +40,34 @@
             ]
         },
         {
-            "rule": "mapbox\\.com\\/mapbox-gl-js\\/plugins\\/mapbox-gl-rtl-text\\/v0\\.1\\.0\\/mapbox-gl-rtl-text\\.js",
+            "rule": "mapbox\\.com\\/events\\/v2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapcarta.com",
+                "oralb.com",
+                "www.diamantrad.com"
+            ]
+        },
+        {
+            "rule": "mapbox\\.com\\/mapbox-gl-js\\/v2\\.9\\.1\\/mapbox-gl\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.tiles",
                 "api"
             ],
             "apis": {},
@@ -49,14 +75,45 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "940d76290c4c416304fa9941090b59d6533bc7a63adb5f6a91cafacbcb8c1da4"
+                "eed561eaa922858a23c9eb66a3952067537e28cdb2e9b1915f3dc5fcae8a0350"
             ],
-            "type": "Other",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "luftlinie.org",
-                "www.luftlinie.org"
+                "diamantrad.com",
+                "www.icrc.org"
+            ]
+        },
+        {
+            "rule": "mapbox\\.com\\/mapbox-gl-js\\/v2\\.9\\.1\\/mapbox-gl\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api.tiles",
+                "api"
+            ],
+            "apis": {
+                "URL.createObjectURL": 2,
+                "window.devicePixelRatio": 1,
+                "WebGLRenderingContext.prototype.getExtension": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "CanvasRenderingContext2D.prototype.getImageData": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "550e24733aa3427d63e67cf676629475b6ce13edbe56e1b9d408b3870b226c77"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diamantrad.com",
+                "www.icrc.org"
             ]
         },
         {
@@ -64,11 +121,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "api",
+                "api.tiles"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "05ef764a445a127daa8f63973596f1fecd08320f37a6b74297214ea18310075a"
@@ -78,7 +136,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nendaz.ch",
-                "www.veysonnaz.ch"
+                "www.veysonnaz.ch",
+                "www.visitnorway.de"
             ]
         },
         {
@@ -113,21 +172,39 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7894736842105263
+            "prevalence": 0.5897435897435898
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "nestimg.com",
-            "prevalence": 0.21052631578947367
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "talus.ch",
+            "prevalence": 0.05128205128205128
+        },
+        {
+            "domain": "pricespider.com",
+            "prevalence": 0.02564102564102564
+        },
+        {
+            "domain": "locally.com",
+            "prevalence": 0.02564102564102564
         }
     ],
     "types": {
-        "Other": 4,
-        "Stylesheet": 4
+        "Other": 2,
+        "Fetch": 3,
+        "Stylesheet": 7,
+        "Script": 2
     },
     "nameservers": [
-        "ns-447.awsdns-55.com",
-        "ns-553.awsdns-05.net",
         "ns-1742.awsdns-25.co.uk",
-        "ns-1401.awsdns-47.org"
+        "ns-1401.awsdns-47.org",
+        "ns-553.awsdns-05.net",
+        "ns-447.awsdns-55.com"
     ]
 }

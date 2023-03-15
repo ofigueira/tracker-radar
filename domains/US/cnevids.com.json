@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000345,
-    "sites": 51,
+    "prevalence": 0.000454,
+    "sites": 67,
     "subdomains": [
-        "player"
+        "player",
+        "blinkinglights"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "cnevids\\.com\\/embedjs\\/557f3c6661646d1df1150000\\/playlist\\/559d8aaa61646d79fd100000\\.js",
@@ -25,13 +26,14 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.appName": 2
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "13f590aedf195578255e3362cd25fbc0e6e4c615b988bfc10bf32ea6f56b31f7"
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -49,68 +51,77 @@
                 "player"
             ],
             "apis": {},
-            "sites": 37,
-            "prevalence": 0.00025,
+            "sites": 45,
+            "prevalence": 0.000305,
             "cnames": [],
             "responseHashes": [
                 "03ff523d8d45e57536b6526719b59b4eccc208860c67f6cc452af56ea9f31f30",
-                "2cb22f7e0f988f885893b895efb9cd5514d4061c7b793d05c2b6373d50873f7e",
-                "f3ba591e57a7d2e13639e429db8e5d89842ec7a56a04cc695bb7ae868a5822e8",
-                "6ab847d85707c01a52be481ce42a47bea4cf0c5c255a162c2264ed72ef8916e6",
-                "8f64878f01b2b78204bfba6a7f93cce1425fc595581a8f53ece742e66dd51ef9",
-                "a783f3a25aa93dfc1aa5cd2137991ce84f5ef4c8539e3f2b98c0a832cb67ac4e",
-                "9172e54a029bd6beac82e5685f0d11e81d4b29ea2afd3b5a3c7070f4b073d7f1",
+                "056631a837705ef04f8aaf47b206137aec6a3bd3d0904c8c4a9c58718671c8b2",
+                "7bfae019ba9f9461f561f2cb15eef7d3addd5975f7a0cfdde436c19fddc0aa1d",
+                "41292239c2185aa49ba532777ed6ae5a0170f827488f840e772de9c3dfde6401",
+                "82f3834d998aae8cd5b9c9e5b1334404bac616f33a47072dbf034b6e177a4baf",
+                "66ca6af0e68b5dd5aea800e42ff8e1a11e9ceb1b595a81634ca870a007d4df76",
+                "d9f304733d6db943ec7026fb4bf16831af96ed3828400510a42bda53524a2cfe",
+                "13809d7274dbc14075af886cc94e7a7b5b31b5399757b54606aedf18853a1640",
+                "acc4afe788f77b81e752d1d4c6ca81832b90e4d3c13cd9e178ab8af23105cb7a",
+                "3a528dd355d7b21cda40ec7f3cdcf8f76ddd0414a6011108916f2c4ff9c22e75",
+                "15bdab8faf466db0522b8e11b85d832812c9fad7520f4d3f3caaf1fc8d581661",
                 "e3b92e0d31b6b3a039937a51e7d637ef4776f5b1c25c7034d2eb23470c36214f",
-                "62c1c17781343da57ad86f5db57a3c4c0e4402ce789a84acfb9a8df706f08ebc",
-                "0ce0ea81340f97cee43c9a534a7861a82b1f0c51a9e445e8d79b4c82a547cf2f",
-                "fe9a5cd7d9e69d45e516303225a174914808350faa37b61093ac8ddc19022742",
-                "d6e6a297b99f629382eeb629c526860b3ca5b581334c4d1017c4475e81d8d202",
-                "e1bf5c2ff15ee27c9be2b6ffb7991da80771802805c30f9ea8cc3c534175bd85",
-                "b5c0bb66e9cb099111e7f52d6968ec9b1a21ef8f37d4d8097c749a689cbf0e36",
-                "3bb42ab43a58820dd1553736210671fc163fef477896c14c95db766923ccbbc7",
-                "69e1f739930a530f7a420abee6b21d6615641f84c93ae8afb4d5e830fb5d7678",
+                "5d3dd1ed509633da1a613e195396c0a877a20d274011520c4ec2f1aa645eb872",
+                "c00c5003aedc2b45e8671d36db3039b270678f45bc920974ba4925955f7c940d",
+                "1e7f52b8b4accfec3017379ab9e7cd8b3e8b285b20b59f61ee7f9eabf5ca42f2",
+                "50bcc0fb66a5f0e811641db7b87cd5efc7a7ef25c5639dfb532bd18513722b33",
+                "d30e501b5ff94d14e293b75a83f75b254e82c40f413fe30eca7b78e2b9b3c37d",
+                "b6dd58b00a43fae41efb2cf7cc28681133a2046304fd8b6b6720dd4ac8c4950c",
+                "f744b498b54c18d0f78d9ba2e3ce80e1707ec5d9956fad089120f982cae2197d",
+                "b4f70d3b952d8735eb9165b9f50fe26d6e21d3cd2a537878bc6374985d34a521",
+                "63064dcbaa4cf674254eb0c998d4e1d094dc636f2619fd614b005b5b24d8b905",
                 "5072d27215a4d25e4982ccb527c04d009516c2ccf74f8230a86ced96b566bce9",
-                "ca62eeddef1c2851798ce19a427d3f08a9cd95921e6c2e5595ba6a368b989965",
-                "10c7fd69f5f07446219f9a79bb0d611a73badab25669c6463f47928cb31491b5",
-                "18d65145c8828d4ea443159a303c475ea31ddb814e0c2fc9f09fccb9c4d96021",
-                "e8774837f52dbdce6787a27cfc243040f00f6f2a55b5c18d3a09e34f5cb1445e",
-                "0708e9c1719071bbd6ab25c1a4a8a866b79a70407275d3bee0796787d6e1d259",
-                "b0c3d779c30f6918043e9bc877dc7ce3f87ebcb3a8d3968d57dcab2c917c267d",
-                "d46f5f31b6ab00e788ca5ee2b3ec70c0333b70e52d648081de366178478e3f57",
-                "2f447f375a057d3451093bde140989a1f67501f31ac5bfa02bed2be670a927f2",
-                "56bbfc3f7b88b79ea4d6eeaa73065cff2cd5145a96f66c55a01e30ae2d7cfb7e",
-                "8bb0abcdeb6842ea6db2435947da1b8d0e850377cb9b1c5a8c13b2933c1c2280",
-                "fe49bbe41edd7acd12cec27083b26f4329ced8637be405eb3dacc6d977439ffd",
-                "d25e879fe764530bca9ac8312a0a88f01801da33d42bbf5807f61df923e6d39f",
-                "71d20f10f4703dc9f2ad70eac16f0b7c76145a2aaefa5f18d4bb47bb66ad8383",
-                "5fe1248e8b15a6e2fc31b8ba0c74400421aa420fe09e2d0a0429a011dce216b4",
-                "97d8021523f4dbb3793a48cb66814f073fd4db845c35e72f8a33e55b9d4d72ef",
-                "4fec9f0990033e76b3e95bbcd0fbf5fcf33df79248f59fd166249888b6f41dbd"
+                "7bfd6e0842612c72ba821cf06cdc68bd8d7ded01a6aacc5ed16d3734d0e06a45",
+                "32c14c84f61f428f7dc71499d6202cb436e97728d3df4228ecf9937f067e3813",
+                "87d185c90cad20a5793b6499371788b0ad5a2f34417fb2607e07fabd5230f8c8",
+                "36c11a1070eb6bd8a1d0419566cca9f10065da8f4d2c1a0b4b25d63d7e31f3b1",
+                "c027b49a8913d8663e7721f07b15f99260165afca12eea1c32a055c318342bd2",
+                "5bf0de9758f6d25fb19e48abeca0ddfb4fe695f6e7ba3c63f8f7a33f9095f660",
+                "56be2939796322a0b0a5e700d21850cbbd3f9afb3e96a4fcd979542b64ae8233",
+                "06ef5b6e2cb90097a9e72c51d5b28428181fbaeb6e27b25c29cbe8c86cfc7f61",
+                "dad179637d5f994e9ac6f01a60fd125e0d5d4a47103afd0192741330086817ea",
+                "14efc7d0ebd8fe9b57fec60f28bdbf3d7517a62b67acbdbd971e2eab2e96fdf8",
+                "4840d6a9f49f27cb86e0e4cbd2bea9ab64ea59968947538899a8efeb3e605b6f",
+                "b869581adbe8a7b9ee7c41a1555714b4c1c14da87d533afebf71375b586e42e1",
+                "34b361f3e226076d2b3da440018abde0d7ebcf5de535a86a2acc71994098323d",
+                "573f97684b9a6f40cf1f0d21c1e9ddf7123512ceec874e56cd8adfc5881cfd88",
+                "4f54d5cc6ec0cf40d529f17617f972d1a41bab9629af1deb0bf44ccfdeda0bc8",
+                "61a4da71acb278a9437ade4b68284dd8c18a33979ae0d6785a81fcf0caba0007",
+                "80efbafd00e9b40c8e5761a5a15293dad599fba0f9625d7151cf93d347f071e0",
+                "13fc8ddcc72bcc3c77845b0c1dee80b66a56720924ec4ee77b9f1949f570c4be",
+                "b72704780c12009d0d4fab7939906974b8e4e050aeb95715d4a168b5328032e7",
+                "df5d5a1ce8d84dd49debd0e89088ae49ea2b85a1c41ec2c9202d42143535ddb1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.traveler.es",
-                "www.revistavanityfair.es",
-                "self.com",
-                "www.gqjapan.jp",
-                "www.glamour.de",
-                "www.revistagq.com",
-                "www.vogue.de",
                 "www.gqmagazine.fr",
-                "www.architecturaldigest.com",
-                "nutritiondata.self.com",
-                "www.cntraveller.com",
-                "www.self.com",
-                "www.gq.com.mx",
-                "www.lacucinaitaliana.com",
-                "www.vanityfair.it",
+                "www.vogue.in",
+                "www.vanityfair.com",
+                "www.gq-magazin.de",
+                "www.vogue.com",
                 "www.vogue.co.jp",
-                "www.glamour.com",
-                "wired.jp",
-                "www.gqitalia.it",
-                "www.glamourmagazine.co.uk"
+                "www.allure.com",
+                "www.lacucinaitaliana.it",
+                "www.cntraveller.com",
+                "www.vogue.es",
+                "www.gq.com.mx",
+                "www.them.us",
+                "www.vogue.mx",
+                "www.gq-magazine.co.uk",
+                "www.gqjapan.jp",
+                "www.epicurious.com",
+                "www.self.com",
+                "www.traveler.es",
+                "www.tatler.com",
+                "www.revistagq.com"
             ]
         },
         {
@@ -121,8 +132,8 @@
                 "player"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Navigator.prototype.userAgent": 1,
-                "Document.cookie getter": 1,
                 "Navigator.prototype.appName": 1
             },
             "sites": 2,
@@ -138,6 +149,242 @@
                 "epicurious.com",
                 "www.epicurious.com"
             ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63ff239ccab1ef314fd1938b\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gq-magazin.de",
+                "www.gq-magazin.de"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63ff23e436fb5f05a2ade3ad\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gq.com.mx",
+                "www.gq.com.mx"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63ff20fdcab1ef3122d1938d\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revistavanityfair.es",
+                "www.revistavanityfair.es"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63ff20680b117e5615990d31\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanityfair.fr",
+                "www.vanityfair.fr"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63f8ed5dcab1ef1d68106344\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanityfair.com",
+                "www.vanityfair.com"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/livestream",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "blinkinglights"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanityfair.it",
+                "www.vogue.de"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63fdec9a0b117e7b3365462f\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vogue.de",
+                "www.vogue.de"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63ff23015aa7da2acfc2d47e\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vogue.in",
+                "www.vogue.in"
+            ]
+        },
+        {
+            "rule": "cnevids\\.com\\/script\\/video\\/63ff227c36fb5f0599ade3b3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "435872cf25f37023d3b35a2d8cd14e3d7c43c264ea4ba5f8e432586b23016c40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vogue.mx",
+                "www.vogue.mx"
+            ]
         }
     ],
     "categories": [],
@@ -146,17 +393,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9734513274336283
+        },
+        {
+            "domain": "d2c8v52ll5s99u.cloudfront.net",
+            "prevalence": 0.02654867256637168
         }
     ],
     "types": {
-        "Script": 4,
-        "Fetch": 37
+        "Script": 20,
+        "Fetch": 47
     },
     "nameservers": [
         "ns-694.awsdns-22.net",
-        "ns-1440.awsdns-52.org",
+        "ns-1574.awsdns-04.co.uk",
         "ns-371.awsdns-46.com",
-        "ns-1574.awsdns-04.co.uk"
+        "ns-1440.awsdns-52.org"
     ]
 }

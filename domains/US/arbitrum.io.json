@@ -7,7 +7,9 @@
     "prevalence": 0.0000406,
     "sites": 6,
     "subdomains": [
-        "arb1"
+        "arb1",
+        "bridge",
+        "tokenlist"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,22 +22,18 @@
                 "arb1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "cb3dab07ecc1096903ee6f77c17a47f7cc3c996406d9446c5456ac957856dd0b",
-                "32ada3855ab0789a2c8a0de4db0761f7bf097c3c599efc80cf004512d5d66cd0",
-                "020453bd6580e93e160240818890c3534c9c5f8128720bdf71062a53b66db29d"
+                "376d4470dde46ad2a1f502b037bf8e2bb49d97e233cfed9fa4f2afda86c27ab0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aave.com",
-                "app.camelot.exchange",
-                "bridge.pancakeswap.finance",
-                "synapseprotocol.com"
+                "www.vela.exchange"
             ]
         },
         {
@@ -46,8 +44,8 @@
                 "arb1"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000271,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -55,9 +53,49 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aave.com",
-                "app.camelot.exchange",
-                "bridge.pancakeswap.finance",
-                "synapseprotocol.com"
+                "www.vela.exchange"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/token-list-42161\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bridge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uniswap.org",
+                "app.uniswap.org"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/ArbTokenLists\\/arbed_arb_whitelist_era\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tokenlist"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "db77a6314e159a8b5c9eb4decdbe9684a738894e0112281587658c0ce97a6683"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uniswap.org",
+                "app.uniswap.org"
             ]
         }
     ],
@@ -67,16 +105,12 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9333333333333333
-        },
-        {
-            "domain": "unpkg.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 1
         }
     ],
     "types": {
-        "Fetch": 4,
-        "Preflight": 4
+        "Fetch": 6,
+        "Preflight": 2
     },
     "nameservers": [
         "arya.ns.cloudflare.com",

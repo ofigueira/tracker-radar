@@ -7,14 +7,36 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "tracking-na"
+        "tracking-na",
+        "essearchapi-na"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "hawksearch\\.com\\/api\\/trackevent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-na"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adameve.com",
+                "www.blackdiamondequipment.com",
+                "www.wholesalemarine.com"
+            ]
+        },
         {
             "rule": "hawksearch\\.com\\/api\\/trackevent",
             "cookies": 0,
@@ -38,46 +60,45 @@
             ]
         },
         {
-            "rule": "hawksearch\\.com\\/api\\/trackevent",
-            "cookies": 0,
+            "rule": "hawksearch\\.com\\/api\\/v2\\/search",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking-na"
+                "essearchapi-na"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "656b49385c7488e9bc52fd620067887393745675c8c414a5b3677c13d11a9bec"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adameve.com",
-                "www.blackdiamondequipment.com"
+                "wholesalemarine.com",
+                "www.wholesalemarine.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000302,
+    "cookies": 0.000301,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
+            "prevalence": 0.8571428571428571
         },
         {
             "domain": "googletagmanager.com",
             "prevalence": 0.14285714285714285
-        },
-        {
-            "domain": "bigcommerce.com",
-            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
+        "Preflight": 3,
         "XHR": 2,
-        "Preflight": 2
+        "Fetch": 2
     },
     "nameservers": [
         "ns-101.awsdns-12.com",

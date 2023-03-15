@@ -4,10 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000474,
-    "sites": 7,
+    "prevalence": 0.0000542,
+    "sites": 8,
     "subdomains": [
-        "storage-pu",
+        "cdn",
         "ecommerce-scripts",
         "ecommerce-events"
     ],
@@ -19,24 +19,46 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "storage-pu"
+                "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.localStorage": 2
+                "Document.cookie getter": 1,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "1ef5312a631153a905a62c1ea5ca93c60a84b75d2acf7fb20d488be4e8bafebc"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pit-pit.com",
                 "nl.pit-pit.com"
+            ]
+        },
+        {
+            "rule": "adscale\\.com\\/static\\/ecom_js\\/chubbies\\/add_item_to_cart\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "103a976198fa436fd6d676a330cef57d08a8cf24739c0d8e7fea753c5cf3688a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chubbiesshorts.com",
+                "www.chubbiesshorts.com"
             ]
         },
         {
@@ -56,20 +78,20 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "bd9dcf24dbcad2fcfdf7e380977ea7ddee7c63b5c651b3d81c3f12887e8a1cf9"
+                "46120bc1fa2abc74c79c17552072d4877b3dea432f9e86334207941d7ed89938"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "adscale_ad_link": {
-                    "ttl": 7776007,
+                    "ttl": 7776004,
                     "length": 35,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.00001354261182811717,
                     "uniqueness": 1
                 },
                 "adscale_ad_link_ts": {
-                    "ttl": 7776007,
+                    "ttl": 7776004,
                     "length": 13,
-                    "prevalence": 0.000013537295248409367,
+                    "prevalence": 0.00001354261182811717,
                     "uniqueness": 1
                 }
             },
@@ -108,15 +130,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.6
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.2
         },
         {
             "domain": "transcend.io",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 6,
         "XHR": 2
     },
     "nameservers": [

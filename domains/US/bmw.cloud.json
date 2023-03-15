@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
         "prod.cosy",
-        "sf-mco.aws"
+        "bmw.sf-mco.aws"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "sf-confi.bmw.com",
+            "resolved": "bmw.sf-mco.aws.bmw.cloud"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -21,68 +26,18 @@
                 "prod.cosy"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "41cf4ae508628c2a348a77a745fe581f750b25f6f560e49494ccbe78bca97005",
-                "d9a443058292fc1caa509810970d3463d02ee171711f5a35eaeae3069901c4b6"
+                "41cf4ae508628c2a348a77a745fe581f750b25f6f560e49494ccbe78bca97005"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bmw.de",
-                "www.bmw.de",
-                "www.bmw.it"
-            ]
-        },
-        {
-            "rule": "bmw\\.cloud\\/frontend-components\\/PRECON\\/sf_cf_finance_bundle-min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sf-mco.aws"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "aeac6f53b1aa6a5df5ba710f6dd3df28ae3f559030b208f6fec571e5df7f6240"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bmw.de",
-                "www.bmw.it"
-            ]
-        },
-        {
-            "rule": "bmw\\.cloud\\/frontend-components\\/PRECON\\/sf_cf_finance_bundle-min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sf-mco.aws"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bmw.de",
-                "www.bmw.it"
+                "www.bmw.de"
             ]
         },
         {
@@ -128,6 +83,60 @@
                 "bmw.co.uk",
                 "www.bmw.co.uk"
             ]
+        },
+        {
+            "rule": "bmw\\.cloud\\/configuration-service\\/configuration\\/app\\/confi\\/channels\\/PRECON\\/brands\\/bmwCar\\/countries\\/DE\\/languages\\/de\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bmw.sf-mco.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "sf-confi.bmw.com",
+                    "resolved": "bmw.sf-mco.aws.bmw.cloud"
+                }
+            ],
+            "responseHashes": [
+                "9e24034770e287c2ad2a55e1a303367d8c103a0e4471ee9060de603d75d4e0e5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.de",
+                "www.bmw.de"
+            ]
+        },
+        {
+            "rule": "bmw\\.cloud\\/configuration-service\\/configuration\\/app\\/confi\\/channels\\/PRECON\\/brands\\/bmwCar\\/countries\\/DE\\/languages\\/de\\/labels",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bmw.sf-mco.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "sf-confi.bmw.com",
+                    "resolved": "bmw.sf-mco.aws.bmw.cloud"
+                }
+            ],
+            "responseHashes": [
+                "ccc6bc34e1a04f64754cd5badb9e7eef706e463690211483270c37501946a275"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bmw.de",
+                "www.bmw.de"
+            ]
         }
     ],
     "categories": [],
@@ -136,23 +145,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.6190476190476191
         },
         {
-            "domain": "baqend.com",
-            "prevalence": 0.2
+            "domain": "bmw.cloud",
+            "prevalence": 0.38095238095238093
         }
     ],
     "types": {
-        "Image": 5,
-        "Script": 2,
-        "Fetch": 2,
-        "XHR": 2
+        "Image": 4,
+        "XHR": 2,
+        "Fetch": 4
     },
     "nameservers": [
         "ns3.brandshelter.info",
-        "ns2.brandshelter.de",
         "ns4.brandshelter.net",
+        "ns2.brandshelter.de",
         "ns5.brandshelter.us",
         "ns1.brandshelter.com"
     ]

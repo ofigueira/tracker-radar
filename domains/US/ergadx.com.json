@@ -7,12 +7,39 @@
     "prevalence": 0.0000271,
     "sites": 4,
     "subdomains": [
+        "tg1",
         "cdn",
+        "servt",
         "cpm"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ergadx\\.com\\/api\\/adserver\\/spt",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tg1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "870cd5268074b03d488ffaf912fa2a923938af4e306bac39a9dfc664429d56ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lokmat.com",
+                "epaper.lokmat.com"
+            ]
+        },
         {
             "rule": "ergadx\\.com\\/js\\/35\\/lokmat-ads\\.js",
             "cookies": 0,
@@ -38,6 +65,28 @@
             ]
         },
         {
+            "rule": "ergadx\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lokmat.com",
+                "epaper.lokmat.com"
+            ]
+        },
+        {
             "rule": "ergadx\\.com\\/hb",
             "cookies": 0,
             "fingerprinting": 0,
@@ -49,7 +98,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "6aeb68ef72f47b65663610e5db881d5ad59864ed005f25a74fc85f5d3653577b"
+                "c308dc1f2d1d08cfa9828e2b3fd976ff4822d495e5d7d05c0d2c520dbe0b01a5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -88,19 +137,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.6
         },
         {
             "domain": "enewspapr.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.2
+        },
+        {
+            "domain": "aniview.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 6,
+        "Image": 2,
         "XHR": 2
     },
     "nameservers": [
-        "josh.ns.cloudflare.com",
-        "diva.ns.cloudflare.com"
+        "diva.ns.cloudflare.com",
+        "josh.ns.cloudflare.com"
     ]
 }

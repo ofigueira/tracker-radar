@@ -7,7 +7,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000812,
+    "prevalence": 0.0000813,
     "sites": 12,
     "subdomains": [
         "smetrics",
@@ -16,7 +16,8 @@
         "oidc.idp.clogin",
         "signin",
         "signin-static-js",
-        "dynatrace"
+        "dynatrace",
+        "geolink-igw.cloud"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -33,10 +34,11 @@
             "prevalence": 0.0000406,
             "cnames": [],
             "responseHashes": [
-                "68e7a0f08f045c12f6137f787be2f08761d870422ebd4fbb3438f1e5e4dc1f32",
-                "ddc55c08ae1cf0e66ddcf6235f73891db569585a8171c54362978dd89d401b6a",
-                "a37797e817be7256f5490877a1e905e1b5608e6812a1a29e3c15148b9342c49b",
-                "3cc17a6bb2896d6c71668cd63420d10083eec22a988919db5bb98d40efaa1424"
+                "5d41f362b7ec1cfe15b406ad8195fe1a40a27541277e89db43c97f4819c309c5",
+                "8fb2316709f5c83fa797a18c034f70344ef0aca4a6970125675aa9a3e56e3319",
+                "cc605a0d5430b22952e567b84fe441349aa075d4791f339dcf9467080eb24c21",
+                "1f269e9f596556b2be73b9bf8091fde9cc8c6452e5d9ac9e6f0d5a9574ae2c17",
+                "2aba7bb1510d0d6052727e4721eed076d9f46f65c5d7d5e7fec1759483fde3cd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -136,7 +138,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "143fd6b117588cbd1c102c4e71039a73fc4340297ace4f9c67e8f24358aeb396"
+                "b1d1548f87db04dd62ab83a5b2d03101496d51fb49ad72b00c7184b0b5ea8f45"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -155,8 +157,6 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1,
                 "window.sessionStorage": 3,
                 "window.localStorage": 1,
                 "Navigator.prototype.userAgent": 1
@@ -165,7 +165,7 @@
             "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "d4d3db43cb865e76fae754826670b55a347d9342cae3563975e5de0c1e602012"
+                "f9663458019cdc22eaada21215cad3f01719456f0b1f06cb8260a83419922ab1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -184,57 +184,56 @@
                 "signin-static-js"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.appCodeName": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.productSub": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.vendorSub": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.webdriver": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "window.outerHeight": 2,
-                "window.outerWidth": 2,
-                "window.screenX": 2,
-                "window.screenY": 2,
-                "window.devicePixelRatio": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "Screen.prototype.colorDepth": 2,
-                "BarProp.prototype.visible": 2,
-                "RTCPeerConnection.prototype.constructor": 1,
-                "RTCPeerConnectionIceEvent.prototype.candidate": 1,
                 "DeviceOrientationEvent.prototype.alpha": 1,
                 "DeviceOrientationEvent.prototype.beta": 1,
                 "DeviceOrientationEvent.prototype.gamma": 1,
-                "CanvasRenderingContext2D.prototype.getImageData": 1,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "CanvasRenderingContext2D.prototype.measureText": 2,
+                "window.matchMedia(\"prefers-color-scheme\")": 1,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 1,
                 "Navigator.prototype.mediaDevices": 1,
                 "MediaDevices.prototype.enumerateDevices": 1,
-                "window.matchMedia(\"prefers-color-scheme\")": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "CanvasRenderingContext2D.prototype.getImageData": 1,
+                "CanvasRenderingContext2D.prototype.measureText": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
                 "WebGLRenderingContext.prototype.getExtension": 2,
                 "WebGLRenderingContext.prototype.getContextAttributes": 2,
                 "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "window.localStorage": 1,
                 "window.sessionStorage": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "window.outerHeight": 1,
+                "window.outerWidth": 1,
+                "window.screenX": 1,
+                "window.screenY": 1,
+                "window.devicePixelRatio": 1,
+                "BarProp.prototype.visible": 1,
+                "Navigator.prototype.userAgent": 1,
                 "Document.cookie getter": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.pixelDepth": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
                 "Date.prototype.getTime": 1,
+                "Navigator.prototype.vendor": 1,
                 "Navigator.prototype.storage": 1,
+                "Navigator.prototype.appCodeName": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.productSub": 1,
+                "Navigator.prototype.vendorSub": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.webdriver": 1,
                 "Screen.prototype.orientation": 1,
                 "Document.cookie setter": 1
             },
@@ -326,7 +325,7 @@
                 "signin"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000135,
@@ -410,40 +409,6 @@
                 "directv.com",
                 "stream.directv.com",
                 "www.firstnet.com"
-            ]
-        },
-        {
-            "rule": "att\\.com\\/scripts\\/ssaf_universal_client\\/prod\\/ssaf-uc\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 2,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "window.innerHeight": 2,
-                "window.innerWidth": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000203,
-            "cnames": [],
-            "responseHashes": [
-                "3998a59b7f14f76cd48fb8eb10929b876dbab54be1a11d1a2c31aaecdf9a9a4b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "directv.com",
-                "stream.directv.com",
-                "www.directv.com"
             ]
         },
         {
@@ -535,6 +500,111 @@
             ]
         },
         {
+            "rule": "att\\.com\\/scripts\\/ssaf_universal_client\\/prod\\/ssaf-uc\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "window.sessionStorage": 4,
+                "window.localStorage": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "09429f61898e08a45c6349174ce8f0bcba4fb79a4f5c37e171d592feb94e1d79"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "stream.directv.com",
+                "www.consumercellular.com",
+                "www.directv.com"
+            ]
+        },
+        {
+            "rule": "att\\.com\\/__imp_apg__\\/api\\/dip\\/v1\\/dip",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "signin-static-js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "1ea177adb8a19911a33c724b76f6931ff69c538b90465bf9774d9104219248eb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "stream.directv.com"
+            ]
+        },
+        {
+            "rule": "att\\.com\\/__imp_apg__\\/api\\/imp\\/v1\\.0\\/report\\/",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "signin-static-js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directv.com",
+                "stream.directv.com"
+            ]
+        },
+        {
+            "rule": "att\\.com\\/bf\\/fc09f351-c4e7-46dc-afb8-cd98de60285e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynatrace"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "4af197277b9dad66d3ee947c00bc9c4a67a18f7912cde827ba82272a3582457a",
+                "febe9636d2dafa72db84cfc1c4db96df4c7fad4f2e44e384c4e584d8a6474cf3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dtCookie": 0.000006771305914058585
+            },
+            "exampleSites": [
+                "directv.com",
+                "stream.directv.com",
+                "www.consumercellular.com"
+            ]
+        },
+        {
             "rule": "att\\.com\\/ssaf\\/ssafc\\/v1\\/controllerdata",
             "cookies": 0.0000135,
             "fingerprinting": 0,
@@ -577,84 +647,18 @@
             ]
         },
         {
-            "rule": "att\\.com\\/__imp_apg__\\/api\\/dip\\/v1\\/dip",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "signin-static-js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "a7afd16707f820715d64cd07cb25d3bc56119f78d5d8c9746f3ecd29b9fb2585"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "directv.com",
-                "stream.directv.com"
-            ]
-        },
-        {
-            "rule": "att\\.com\\/__imp_apg__\\/api\\/imp\\/v1\\.0\\/report\\/",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "signin-static-js"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "directv.com",
-                "stream.directv.com"
-            ]
-        },
-        {
-            "rule": "att\\.com\\/bf\\/fc09f351-c4e7-46dc-afb8-cd98de60285e",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dynatrace"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c831ae96c89694b60e49335bd2d99158ae1bbe66f0a8dcbc9d1fd4e639aec313"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "dtCookie": 0.000006768647624204684
-            },
-            "exampleSites": [
-                "directv.com",
-                "stream.directv.com"
-            ]
-        },
-        {
             "rule": "att\\.com\\/scripts\\/adobe\\/prod\\/mbox-contents\\.js",
-            "cookies": 0,
+            "cookies": 0.00000677,
             "fingerprinting": 2,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Date.prototype.getTime": 1,
-                "WebGLRenderingContext.prototype.getExtension": 1,
-                "WebGLRenderingContext.prototype.getParameter": 1,
+                "Date.prototype.getTime": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
                 "window.sessionStorage": 1,
                 "Navigator.prototype.userAgent": 1,
                 "Date.prototype.getTimezoneOffset": 1,
@@ -679,6 +683,110 @@
             ]
         },
         {
+            "rule": "att\\.com\\/msapi\\/ixp-allocation-manager-service\\/v1\\/allocations",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "611291d77cb1cf6dcf7ff2f66f241b147e72b143fce95e8e0d809b256524a9eb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "consumercellular.com",
+                "www.consumercellular.com"
+            ]
+        },
+        {
+            "rule": "att\\.com\\/qi74G3lPM\\/GSqPkrFOQ\\/OdvY9\\/oC1U\\/9J1cpG2Lab5VaV\\/YyZNWVcPAQ\\/JTAhaS\\/4TFn4",
+            "cookies": 0.0000135,
+            "fingerprinting": 3,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.outerWidth": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "speechSynthesis.__proto__.getVoices": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Navigator.prototype.plugins": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.storage": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.webdriver": 2,
+                "window.devicePixelRatio": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Navigator.prototype.connection": 2,
+                "Performance.prototype.memory": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "fcd6acab1a311e89ae1aef024707e986871eff4071c584de3e93970c5fc4a23d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "consumercellular.com",
+                "www.consumercellular.com"
+            ]
+        },
+        {
+            "rule": "att\\.com\\/mapservice\\/quadkeytile",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geolink-igw.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "643517fa7a24a89ac63b19a70c92be7f2414c845e530ffd557a70c6fd2dc406b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "consumercellular.com",
+                "www.consumercellular.com"
+            ]
+        },
+        {
             "rule": "att\\.com\\/static\\/ciam\\/en\\/common\\/js\\/keepAlive\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -686,8 +794,8 @@
                 "signin"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "33a050282e9356be2f2d8538f376fcbc4c7bbc778c4517375b44dad46d48389e"
@@ -697,6 +805,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "directv.com",
+                "www.directv.com",
                 "www.firstnet.com"
             ]
         },
@@ -793,6 +902,28 @@
             ]
         },
         {
+            "rule": "att\\.com\\/scripts\\/foresee_global\\/foresee-trigger-global-sr\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstnet.com",
+                "www.firstnet.com"
+            ]
+        },
+        {
             "rule": "att\\.com\\/scripts\\/adobe\\/prod\\/marketing\\.min\\.js",
             "cookies": 0.0000135,
             "fingerprinting": 1,
@@ -809,29 +940,7 @@
             "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "04c52b7664933bde97b6987db49d9558bccb142a3a65a4a810ccfb9b5044534b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "firstnet.com",
-                "www.firstnet.com"
-            ]
-        },
-        {
-            "rule": "att\\.com\\/scripts\\/foresee_global\\/foresee-trigger-global-sr\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "691d29729044e64a8272b5e6bd71a2635e19e1a04c0823e5f78e5f6088e46f53"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1248,37 +1357,45 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8470588235294118
+            "prevalence": 0.6605504587155964
+        },
+        {
+            "domain": "bing.com",
+            "prevalence": 0.1834862385321101
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.07058823529411765
-        },
-        {
-            "domain": "yimg.com",
-            "prevalence": 0.047058823529411764
+            "prevalence": 0.05504587155963303
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.03529411764705882
+            "prevalence": 0.045871559633027525
+        },
+        {
+            "domain": "yimg.com",
+            "prevalence": 0.03669724770642202
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.01834862385321101
         }
     ],
     "types": {
-        "XHR": 14,
-        "Script": 71,
-        "Image": 4,
+        "XHR": 17,
+        "Script": 73,
+        "Image": 6,
         "Document": 4,
         "Stylesheet": 2,
         "Font": 4,
-        "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": [
-        "a4-64.akam.net",
-        "a1-187.akam.net",
-        "a22-67.akam.net",
         "a5-66.akam.net",
-        "a2-64.akam.net",
-        "a11-65.akam.net"
+        "a22-67.akam.net",
+        "a11-65.akam.net",
+        "a1-187.akam.net",
+        "a4-64.akam.net",
+        "a2-64.akam.net"
     ]
 }

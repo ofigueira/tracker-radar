@@ -11,7 +11,7 @@
     "sites": 6,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "eforms\\.com\\/widget",
@@ -34,6 +34,53 @@
                 "opendocs.com",
                 "powerofattorney.com"
             ]
+        },
+        {
+            "rule": "eforms\\.com\\/cdn-cgi\\/scripts\\/7d0fa10a\\/cloudflare-static\\/rocket-loader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "ccf00d1923b0131a10e0c6d26f95e5dee6ebf8621a27e83c5a2f68a2e0093142"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "billofsale.net",
+                "freeforms.com",
+                "opendocs.com",
+                "powerofattorney.com"
+            ]
+        },
+        {
+            "rule": "eforms\\.com\\/cdn-cgi\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000271,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "billofsale.net",
+                "freeforms.com",
+                "opendocs.com",
+                "powerofattorney.com"
+            ]
         }
     ],
     "categories": [],
@@ -41,12 +88,17 @@
     "cookies": 0.0000406,
     "topInitiators": [
         {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.625
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.375
         }
     ],
     "types": {
-        "Script": 4
+        "Script": 8,
+        "XHR": 4
     },
     "nameservers": [
         "elliot.ns.cloudflare.com",
