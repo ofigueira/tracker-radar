@@ -4,48 +4,55 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000503,
+    "sites": 5,
     "subdomains": [
+        "cdn-prod",
         "cdn-prod.eu",
+        "app",
         "app.eu"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "securiti\\.ai\\/consent\\/cookie-consent\\.css",
+            "rule": "securiti\\.ai\\/consent\\/cookie-consent-sdk\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
+                "cdn-prod",
                 "cdn-prod.eu"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b08259e3c3f7b18a6f81fdd52d97198d7df94634144aaced415bfb1061883bcc"
+                "5f3c2a64703e9c99b5cca4e73997fdf57e237fef1a0a354366884eebd742f710"
             ],
-            "type": "Stylesheet",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dell.com",
-                "www.hertz.no",
-                "www.hertz.com"
+                "xfinity.com",
+                "www.dollar.com"
             ]
         },
         {
             "rule": "securiti\\.ai\\/core\\/v1\\/utils\\/geo\\/location",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
+                "app",
                 "app.eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "a01bcbbba60239814c91d678fac76c2ccea6d707e200ed1d361fe0e6da8e3c6a"
@@ -54,23 +61,53 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "xfinity.com",
+                "www.dell.com",
+                "www.dollar.com"
+            ]
+        },
+        {
+            "rule": "securiti\\.ai\\/consent\\/cookie-consent\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-prod.eu"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "375e2d7e020535997b8d4449690205ff687fa48cb8deb51dfd29646d85b35f35"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "dell.com",
-                "www.dell.com"
+                "www.dollar.com",
+                "www.hertz.no",
+                "www.hertz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "dollarcars4rent.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Stylesheet": 3,
-        "XHR": 2
+        "Script": 2,
+        "XHR": 3,
+        "Stylesheet": 4
     },
     "nameservers": [
         "elly.ns.cloudflare.com",

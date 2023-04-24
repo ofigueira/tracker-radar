@@ -4,12 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000677,
-    "sites": 10,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "tracking",
         "asgard",
-        "csp-reporter"
+        "tracking",
+        "thg-horizon"
     ],
     "cnames": [
         {
@@ -17,16 +17,47 @@
             "resolved": "asgard.thg.com"
         },
         {
-            "original": "csp.thehut.net",
-            "resolved": "csp-reporter.thg.com"
+            "original": "horizon-api.de.myprotein.com",
+            "resolved": "thg-horizon.thg.com"
+        },
+        {
+            "original": "horizon-api.www.myprotein.com",
+            "resolved": "thg-horizon.thg.com"
         },
         {
             "original": "userexperience.thehut.net",
             "resolved": "tracking.thg.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "thg\\.com\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asgard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "asgard.thehut.net",
+                    "resolved": "asgard.thg.com"
+                }
+            ],
+            "responseHashes": [
+                "6af533783d40fb6566eeea44fb7cf07831e1f16c518c58be3e193b978966066c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myprotein.com",
+                "de.myprotein.com"
+            ]
+        },
         {
             "rule": "thg\\.com\\/Tracker\\/track\\/t",
             "cookies": 0,
@@ -36,7 +67,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000339,
+            "prevalence": 0.000034,
             "cnames": [
                 {
                     "original": "userexperience.thehut.net",
@@ -66,16 +97,14 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000339,
+            "prevalence": 0.000034,
             "cnames": [
                 {
                     "original": "userexperience.thehut.net",
                     "resolved": "tracking.thg.com"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -88,54 +117,56 @@
             ]
         },
         {
-            "rule": "thg\\.com\\/product",
+            "rule": "thg\\.com\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "asgard"
+                "thg-horizon"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "asgard.thehut.net",
-                    "resolved": "asgard.thg.com"
+                    "original": "horizon-api.de.myprotein.com",
+                    "resolved": "thg-horizon.thg.com"
+                },
+                {
+                    "original": "horizon-api.www.myprotein.com",
+                    "resolved": "thg-horizon.thg.com"
                 }
             ],
-            "responseHashes": [
-                "3ccfcbdc9dfb24c6580bb255f2cb409ad58bf4bfdcf4e6b9f05d5dbe1f9c5bed",
-                "bcf236ebe14d8e341a46fb65555607ba85a4e0c5ea25b5c09064ce16045aca28"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "myprotein.com",
-                "de.myprotein.com",
                 "www.myprotein.com"
             ]
         },
         {
-            "rule": "thg\\.com\\/blogs",
+            "rule": "thg\\.com\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "csp-reporter"
+                "thg-horizon"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "csp.thehut.net",
-                    "resolved": "csp-reporter.thg.com"
+                    "original": "horizon-api.de.myprotein.com",
+                    "resolved": "thg-horizon.thg.com"
+                },
+                {
+                    "original": "horizon-api.www.myprotein.com",
+                    "resolved": "thg-horizon.thg.com"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
+            "responseHashes": [],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -152,16 +183,14 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "userexperience.thehut.net",
                     "resolved": "tracking.thg.com"
                 }
             ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -178,30 +207,27 @@
     "topInitiators": [
         {
             "domain": "thcdn.com",
-            "prevalence": 0.7307692307692307
+            "prevalence": 0.8695652173913043
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.19230769230769232
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.13043478260869565
         }
     ],
     "types": {
+        "XHR": 2,
         "Script": 13,
-        "XHR": 3,
-        "Other": 2
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns03.thg-ns.net",
-        "ns04.thg-ns.net",
-        "dns3.p05.nsone.net",
-        "ns02.thg-ns.net",
-        "dns2.p05.nsone.net",
         "dns1.p05.nsone.net",
-        "dns4.p05.nsone.net",
-        "ns01.thg-ns.net"
+        "ns04.thg-ns.net",
+        "dns2.p05.nsone.net",
+        "ns01.thg-ns.net",
+        "ns02.thg-ns.net",
+        "ns03.thg-ns.net",
+        "dns3.p05.nsone.net",
+        "dns4.p05.nsone.net"
     ]
 }

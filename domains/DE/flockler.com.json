@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000703,
-    "sites": 7,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "plugins"
+        "plugins",
+        "fl-1.cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,20 +21,89 @@
                 "plugins"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 1
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "8b5161af3eefa217d10c145081f97c8dbca3fef1884c609db8b2d025d3767407"
+                "68ac632733d08f7020b695e747bcb01777b9e1455b96812aaa851daf2a9788c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "france.fr",
+                "studentenwerk.sh",
+                "www.france.fr",
                 "www.ktm-bikes.at",
+                "www.sozialwahl.de",
+                "www.vdi.de"
+            ]
+        },
+        {
+            "rule": "flockler\\.com\\/embed\\/iframe\\/18713f0566b0c4f138b9844272b05538\\/1872897ded80e45dce6a2ba4b63c221b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "plugins"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "363cca1d14436eae3890ed4691168fc9aa41f3bbd7e395a11a3f6043942e2b2b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sozialwahl.de",
+                "www.sozialwahl.de"
+            ]
+        },
+        {
+            "rule": "flockler\\.com\\/embed\\/embed-v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fl-1.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c9b01612be543e240943fc5c9aa93b897f99891dad9734339292788023c7ac17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sozialwahl.de",
+                "www.vdi.de"
+            ]
+        },
+        {
+            "rule": "flockler\\.com\\/embed\\/loading\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fl-1.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3068dd76e03775dde195822d2d4a6d58ea5dbd0d552cb817a0cb0a73561c92a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sozialwahl.de",
                 "www.vdi.de"
             ]
         }
@@ -44,14 +114,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 7,
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
-        "dns1.stabletransit.com",
-        "dns2.stabletransit.com"
+        "dns2.stabletransit.com",
+        "dns1.stabletransit.com"
     ]
 }

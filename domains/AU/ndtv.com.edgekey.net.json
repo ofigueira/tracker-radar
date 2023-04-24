@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "alerts",
-        "drop"
+        "sports",
+        "ipv6"
     ],
     "cnames": [
         {
@@ -21,11 +22,15 @@
             "resolved": "alerts.ndtv.com.edgekey.net"
         },
         {
-            "original": "drop.ndtv.com",
-            "resolved": "drop.ndtv.com.edgekey.net"
+            "original": "sdata.ndtv.com",
+            "resolved": "ipv6.ndtv.com.edgekey.net"
+        },
+        {
+            "original": "sports.ndtv.com",
+            "resolved": "sports.ndtv.com.edgekey.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "ndtv\\.com\\.edgekey\\.net\\/images\\/web\\.png",
@@ -35,8 +40,8 @@
                 "alerts"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "alerts.ndtv.com",
@@ -51,30 +56,56 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ndtv.com",
-                "food.ndtv.com",
                 "www.ndtv.com"
             ]
         },
         {
-            "rule": "ndtv\\.com\\.edgekey\\.net\\/homepage\\/images\\/svg_sprite\\.svg",
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/multisportsapi\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "drop"
+                "sports"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "drop.ndtv.com",
-                    "resolved": "drop.ndtv.com.edgekey.net"
+                    "original": "sports.ndtv.com",
+                    "resolved": "sports.ndtv.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "de698375e3beecf4a82eae97dbf67f77c6724f515cf9c1b567a9083ccb29b97f"
+                "9419e9e4dad0cf7640b86e13aa18232bc12d680f4dcfb9d1982c6d2fcbb58ffa"
             ],
-            "type": "Image",
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/sportz\\/cricket\\/xml\\/standing_5157\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sdata.ndtv.com",
+                    "resolved": "ipv6.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f31942fd05e4fdab84c267866b14611b574d3f937b9c67a28c791054b0a8cbce"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -93,7 +124,9 @@
         }
     ],
     "types": {
-        "Image": 5
+        "Image": 2,
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

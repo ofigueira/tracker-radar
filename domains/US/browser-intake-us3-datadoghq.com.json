@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000271,
-    "sites": 4,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "rum"
+        "rum",
+        "session-replay"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,20 +21,48 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000203,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "83289c653d51e7126bf017d4e8968e3621ce4e5943f2c53ba595584d0b959bfa",
-                "76d1038167b235d08b3fb0d8756c71a015eed2ca426875c9d71efa2d7954be68"
+                "340560899f040536c69ddd71251124a5072249f02da244959f832990ad815438",
+                "e9213adbc034ff8b6fbfb84be36d71545f0032bf76911de167db25f6b4f03e0a",
+                "632acfe67dfc33ae14c16d88ccc3d287a17e2858b5cdfdcb64c784cf9fbebf6f",
+                "ffa3289d4f2d25bd1423fc29f783fe46584d10b420b32918f6cefcf9bcd4f261"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006807073911208528
+            },
+            "exampleSites": [
+                "cannacabana.com",
+                "spanx.com",
+                "www.mec.ca",
+                "www.officemax.co.nz",
+                "www.trainerroad.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-us3-datadoghq\\.com\\/api\\/v2\\/replay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-replay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c6cfd9b165a03b82016c1b2b2748528252d6860b7227b0d8c220379b688eb522"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cannacabana.com",
-                "www.templeandwebster.com.au",
-                "www.trainerroad.com"
+                "www.officemax.co.nz"
             ]
         }
     ],
@@ -42,21 +71,26 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.52
+            "domain": "shopify.com",
+            "prevalence": 0.62
         },
         {
-            "domain": "shopify.com",
-            "prevalence": 0.48
+            "domain": "first party",
+            "prevalence": 0.36
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.02
         }
     ],
     "types": {
-        "Fetch": 3
+        "Fetch": 5,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1-08.azure-dns.com",
-        "ns3-08.azure-dns.org",
         "ns2-08.azure-dns.net",
-        "ns4-08.azure-dns.info"
+        "ns4-08.azure-dns.info",
+        "ns1-08.azure-dns.com",
+        "ns3-08.azure-dns.org"
     ]
 }

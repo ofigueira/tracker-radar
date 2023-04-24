@@ -7,14 +7,43 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "t1"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "daumcdn\\.net\\/kas\\/static\\/kp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "NavigatorUAData.prototype.getHighEntropyValues": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "14750345aa3a19fb669eae01b05b888429e558ec1a47af947880590e657e3d58"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flyscoot.com",
+                "www.airasia.com",
+                "www.flyscoot.com",
+                "www.vietjetair.com"
+            ]
+        },
         {
             "rule": "daumcdn\\.net\\/tessera\\/s\\.gif",
             "cookies": 0,
@@ -23,16 +52,19 @@
                 "t1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "be515b0e9ad546d83e67741a518d7acc31974bc261627f3ecb9b7764f7dab573"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "airasia.com",
-                "www.airasia.com"
+                "flyscoot.com",
+                "www.airasia.com",
+                "www.vietjetair.com"
             ]
         }
     ],
@@ -42,11 +74,16 @@
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4444444444444444
         }
     ],
     "types": {
-        "Image": 2
+        "Script": 4,
+        "Image": 3
     },
     "nameservers": [
         "ns2.daum.net",

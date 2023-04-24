@@ -4,49 +4,52 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00131,
-    "sites": 13,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
-        "2n3oi4s",
-        "hn2roq5"
+        "naouzqe",
+        "hn2roq5",
+        "su6k7ok"
     ],
     "cnames": [
+        {
+            "original": "api.copaair.com",
+            "resolved": "su6k7ok.impervadns.net"
+        },
         {
             "original": "apis.airtransat.com",
             "resolved": "hn2roq5.impervadns.net"
         },
         {
-            "original": "cms.arcteryx.com",
-            "resolved": "2n3oi4s.impervadns.net"
+            "original": "login.accor.com",
+            "resolved": "naouzqe.impervadns.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "impervadns\\.net\\/en\\/jsonapi\\/node\\/message",
+            "rule": "impervadns\\.net\\/as\\/authorization\\.oauth2",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "2n3oi4s"
+                "naouzqe"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "cms.arcteryx.com",
-                    "resolved": "2n3oi4s.impervadns.net"
+                    "original": "login.accor.com",
+                    "resolved": "naouzqe.impervadns.net"
                 }
             ],
-            "responseHashes": [
-                "b85fd14c270f2d9e4e470cd3369cafa2c5f3c0d459bb4109a3b0455da34f0b34"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arcteryx.com",
-                "www.arcteryx.com"
+                "accor.com",
+                "all.accor.com"
             ]
         },
         {
@@ -66,12 +69,12 @@
                 }
             ],
             "responseHashes": [
-                "463859837e4e87041ecba15a51b7f6373aaa10c3cf5d1ec0df5cda09c58e610e"
+                "31eda9510201c39a79332e8ca30cb88af921fd6ff7ad4321a24ffa68bb37745e"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.0004018485031143259
+                "_ga": 0.000502108857200241
             },
             "exampleSites": [
                 "airtransat.com",
@@ -80,7 +83,7 @@
         },
         {
             "rule": "impervadns\\.net\\/_Incapsula_Resource",
-            "cookies": 0.0001,
+            "cookies": 0.000201,
             "fingerprinting": 3,
             "subdomains": [
                 "hn2roq5"
@@ -95,10 +98,17 @@
                 }
             ],
             "responseHashes": [
-                "da55bc9bdedd2ad670f94c1c65f2852187f48b208d68826c1cb15f182675b010"
+                "f838e6cbd1bbfdcd87a7d793436baac7051c831fb7dd4f76de5c3edef920ca72"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "___utmvc": {
+                    "ttl": 43,
+                    "length": 2842,
+                    "prevalence": 0.0001004217714400482,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "airtransat.com",
@@ -121,7 +131,9 @@
                     "resolved": "hn2roq5.impervadns.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -129,11 +141,38 @@
                 "airtransat.com",
                 "www.transat.com"
             ]
+        },
+        {
+            "rule": "impervadns\\.net\\/copacom\\/catalog\\/booking-airports",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "su6k7ok"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.copaair.com",
+                    "resolved": "su6k7ok.impervadns.net"
+                }
+            ],
+            "responseHashes": [
+                "2239e3369bd2dad38f3e5cc3e95622af50ad2504ba7231558d0ee1c7ea877056"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "copaair.com",
+                "www.copaair.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00131,
+    "cookies": 0.00121,
     "topInitiators": [
         {
             "domain": "googletagmanager.com",
@@ -141,10 +180,10 @@
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Document": 2,
+        "Document": 4,
         "Script": 2,
-        "Image": 2
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns1.impervadns.net",

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000302,
+    "sites": 3,
     "subdomains": [
-        "prod.apm.eu-west-1.aws"
+        "prod.apm.eu-west-1.aws",
+        "wtr-ecom-logging-prod.apm.eu-west-1.aws"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -30,8 +31,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "very.co.uk",
+                "littlewoods.com",
                 "www.very.co.uk"
+            ]
+        },
+        {
+            "rule": "found\\.io\\/intake\\/v2\\/rum\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.apm.eu-west-1.aws",
+                "wtr-ecom-logging-prod.apm.eu-west-1.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "littlewoods.com",
+                "www.very.co.uk",
+                "www.waitrose.com"
             ]
         }
     ],
@@ -41,11 +64,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "very.co.uk",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 3
     },
     "nameservers": [
         "ns-1367.awsdns-42.org",

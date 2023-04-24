@@ -4,48 +4,59 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "eu"
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "serviceform\\.com\\/statistics-endpoint",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "serviceform\\.com\\/analytics\\/sf-pixel\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
             "subdomains": [
-                "eu"
+                "www"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.language": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sfpxs": {
+                    "ttl": 1209606,
+                    "length": 20,
+                    "prevalence": 0.00010055304172951231,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "remax.no",
-                "www.remax.no"
+                "exvent.no",
+                "www.exvent.no"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
+            "domain": "first party",
             "prevalence": 1
         }
     ],
     "types": {
-        "XHR": 2
+        "Script": 2
     },
     "nameservers": [
         "guy.ns.cloudflare.com",

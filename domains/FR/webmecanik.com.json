@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
         "prixtel.automation",
         "dns-prixtel.automation",
         "dns-esante.automation",
+        "dns-medisite.automation",
         "dns-normandie.automation"
     ],
     "cnames": [
@@ -22,6 +23,10 @@
             "resolved": "dns-esante.automation.webmecanik.com"
         },
         {
+            "original": "mtc.medisite.fr",
+            "resolved": "dns-medisite.automation.webmecanik.com"
+        },
+        {
             "original": "webmecanik.prixtel.com",
             "resolved": "dns-prixtel.automation.webmecanik.com"
         }
@@ -30,12 +35,13 @@
     "resources": [
         {
             "rule": "webmecanik\\.com\\/mtc\\.js",
-            "cookies": 0.000402,
+            "cookies": 0.000503,
             "fingerprinting": 2,
             "subdomains": [
                 "prixtel.automation",
                 "dns-prixtel.automation",
                 "dns-esante.automation",
+                "dns-medisite.automation",
                 "dns-normandie.automation"
             ],
             "apis": {
@@ -49,6 +55,73 @@
                 "window.localStorage": 1,
                 "Document.cookie setter": 1
             },
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [
+                {
+                    "original": "webmecanik.prixtel.com",
+                    "resolved": "dns-prixtel.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.e-sante.fr",
+                    "resolved": "dns-esante.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
+                },
+                {
+                    "original": "automation.normandie-tourisme.fr",
+                    "resolved": "dns-normandie.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [
+                "bfb53729a41d6f5692aaed6b023fa90b8aee99d8fca2cbb741814d4dcbf0450b",
+                "7efef70bb89ad96cf2d6011f3b02c50df0c370650973f2692c4ae07dfa7753ff",
+                "b339d3057f0693117e2a84e710f20528804528c8311d2d3c1b54af9524f189aa",
+                "8487ac385f652a790f09b930637705e50bcbd2f8f006031e953f8ca3c4c6852f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mtc_id": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
+                },
+                "mtc_sid": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
+                },
+                "mautic_device_id": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.0001005126143330988,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prixtel.com",
+                "assistance.prixtel.com",
+                "www.e-sante.fr",
+                "www.medisite.fr",
+                "www.normandie-tourisme.fr"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/mtc\\/event",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-prixtel.automation",
+                "dns-esante.automation",
+                "dns-medisite.automation",
+                "dns-normandie.automation"
+            ],
+            "apis": {},
             "sites": 4,
             "prevalence": 0.000402,
             "cnames": [
@@ -61,64 +134,8 @@
                     "resolved": "dns-esante.automation.webmecanik.com"
                 },
                 {
-                    "original": "automation.normandie-tourisme.fr",
-                    "resolved": "dns-normandie.automation.webmecanik.com"
-                }
-            ],
-            "responseHashes": [
-                "8f8a30c1d44d96103cc7f4e5af3b2e2edf3c204d6db621f6724ce633a558be50",
-                "0cda4b045d505e61aa4f26837a926725264db49707b3eb69af9adaee1bb87276",
-                "1dde63f2d22172047a0b3c1ce3f94472ca7b749ce835486b9c4bb086aee4b7fe"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "mtc_id": {
-                    "ttl": null,
-                    "length": 8,
-                    "prevalence": 0.00010046212577858148,
-                    "uniqueness": 1
-                },
-                "mtc_sid": {
-                    "ttl": null,
-                    "length": 23,
-                    "prevalence": 0.00010046212577858148,
-                    "uniqueness": 1
-                },
-                "mautic_device_id": {
-                    "ttl": null,
-                    "length": 23,
-                    "prevalence": 0.00010046212577858148,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "prixtel.com",
-                "assistance.prixtel.com",
-                "www.e-sante.fr",
-                "www.normandie-tourisme.fr"
-            ]
-        },
-        {
-            "rule": "webmecanik\\.com\\/mtc\\/event",
-            "cookies": 0.000301,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dns-prixtel.automation",
-                "dns-esante.automation",
-                "dns-normandie.automation"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "webmecanik.prixtel.com",
-                    "resolved": "dns-prixtel.automation.webmecanik.com"
-                },
-                {
-                    "original": "mtc.e-sante.fr",
-                    "resolved": "dns-esante.automation.webmecanik.com"
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
                 },
                 {
                     "original": "automation.normandie-tourisme.fr",
@@ -126,8 +143,9 @@
                 }
             ],
             "responseHashes": [
-                "416b8997d2776da40f8ef7cd4720e143d870e2154400b5b674828f446cca33cd",
-                "83055f38e77b876f960cbfc5d5722b4415558c46c86f3b77c9c0db52388ea8b6"
+                "e07f7fbd440a70d6095ab8f0815dc13e9a94170ebae31d10fd89d57e415332ae",
+                "1222fdd023bdf2d42e92d008f31c40500734be47dd9b576291a0d8746a1d6671",
+                "eb837f346c1c5114314b481316773096d1fa35446c3229b9d9407006a0ad29e3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -135,21 +153,23 @@
             "exampleSites": [
                 "prixtel.com",
                 "www.e-sante.fr",
+                "www.medisite.fr",
                 "www.normandie-tourisme.fr"
             ]
         },
         {
             "rule": "webmecanik\\.com\\/mtc\\/event",
-            "cookies": 0.000201,
+            "cookies": 0.000302,
             "fingerprinting": 0,
             "subdomains": [
                 "dns-prixtel.automation",
                 "dns-esante.automation",
+                "dns-medisite.automation",
                 "dns-normandie.automation"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
                     "original": "webmecanik.prixtel.com",
@@ -158,6 +178,10 @@
                 {
                     "original": "mtc.e-sante.fr",
                     "resolved": "dns-esante.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
                 },
                 {
                     "original": "automation.normandie-tourisme.fr",
@@ -171,35 +195,68 @@
             "exampleSites": [
                 "prixtel.com",
                 "www.e-sante.fr",
+                "www.medisite.fr",
                 "www.normandie-tourisme.fr"
+            ]
+        },
+        {
+            "rule": "webmecanik\\.com\\/form\\/generate\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dns-esante.automation",
+                "dns-medisite.automation"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "mtc.e-sante.fr",
+                    "resolved": "dns-esante.automation.webmecanik.com"
+                },
+                {
+                    "original": "mtc.medisite.fr",
+                    "resolved": "dns-medisite.automation.webmecanik.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-sante.fr",
+                "www.medisite.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000301,
+    "cookies": 0.000402,
     "topInitiators": [
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
         },
         {
             "domain": "webmecanik.com",
-            "prevalence": 0.3333333333333333
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 3,
-        "Preflight": 3
+        "Script": 7,
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
-        "ns-21-c.gandi.net",
         "ns-235-a.gandi.net",
-        "ns-134-b.gandi.net"
+        "ns-134-b.gandi.net",
+        "ns-21-c.gandi.net"
     ]
 }

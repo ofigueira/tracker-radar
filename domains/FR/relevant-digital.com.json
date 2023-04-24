@@ -7,7 +7,8 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "dexerto-cdn"
+        "dexerto-cdn",
+        "worker11-api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,28 +24,74 @@
                 "Document.cookie getter": 2,
                 "window.sessionStorage": 2,
                 "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 1,
                 "Navigator.prototype.cookieEnabled": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1,
                 "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.userAgent": 1,
                 "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1
+                "Screen.prototype.width": 1,
+                "Navigator.prototype.language": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "5b4882b9b9f113f4241d7a1c047bb093a58f6bc7a569f2673afb62ba0adc379c"
+                "00c3f172459e9a8bb50088c5b483550bdc9c05ffd25c43120e06932240135143"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "dexerto.com",
+                "www.dexerto.fr"
+            ]
+        },
+        {
+            "rule": "relevant-digital\\.com\\/analytics\\/geo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "worker11-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "f5240246c5740980a2db5cb4769e9c0851e1235dc31f2fe29b809982f34b8d8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "dexerto.fr",
+                "www.dexerto.com"
+            ]
+        },
+        {
+            "rule": "relevant-digital\\.com\\/analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "worker11-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0001005126143330988
+            },
+            "exampleSites": [
+                "dexerto.com",
                 "www.dexerto.com"
             ]
         }
@@ -59,7 +106,8 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns1.planeetta.net",

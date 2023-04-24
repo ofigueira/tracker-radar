@@ -9,24 +9,19 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00121,
+    "sites": 12,
     "subdomains": [
         "accor-group-prod-prod",
         "ee-prod-prod-02",
-        "costco-prd",
+        "adsk-prod",
         "mns-00.dn",
-        "se-prod-prod",
         "fandom-prod"
     ],
     "cnames": [
         {
             "original": "api.accor.com",
             "resolved": "accor-group-prod-prod.apigee.net"
-        },
-        {
-            "original": "api.costco.com",
-            "resolved": "costco-prd.apigee.net"
         },
         {
             "original": "api.ee.co.uk",
@@ -37,11 +32,11 @@
             "resolved": "mns-00.dn.apigee.net"
         },
         {
-            "original": "api.se.com",
-            "resolved": "se-prod-prod.apigee.net"
+            "original": "developer.api.autodesk.com",
+            "resolved": "adsk-prod.apigee.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\.0\\/authorization",
@@ -110,7 +105,7 @@
                 }
             ],
             "responseHashes": [
-                "73cdaf6f0114cb06fa0adb6adcd6791ecfb004c73bc49e62cbacf4bb47077cce"
+                "1087f19ec6fa4c8f2a8dc49a7506d2d67ce39fe23596f51c2b3a61c69432d9ef"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -122,7 +117,7 @@
         },
         {
             "rule": "apigee\\.net\\/v1\\/identity\\/authorize",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "ee-prod-prod-02"
@@ -146,30 +141,28 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/warehouseLocatorMobile\\/v1\\/warehouses\\.json",
-            "cookies": 0,
+            "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
-                "costco-prd"
+                "adsk-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.costco.com",
-                    "resolved": "costco-prd.apigee.net"
+                    "original": "developer.api.autodesk.com",
+                    "resolved": "adsk-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "3bdcf76c7068bf095d9b368f5096384191c4952927960dedd493209631b237fe"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "costco.com",
-                "www.costco.com"
+                "autodesk.com",
+                "help.autodesk.com"
             ]
         },
         {
@@ -225,58 +218,6 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "se-prod-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.se.com",
-                    "resolved": "se-prod-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "se.com",
-                "www.se.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/customer-support\\/chat-configuration\\/configurations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "se-prod-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.se.com",
-                    "resolved": "se-prod-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [
-                "52afc8ad7da5423e2ca37ccbc56dd9c0dade0303a5ef559d194227d093054c8c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "se.com",
-                "www.se.com"
-            ]
-        },
-        {
             "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
             "cookies": 0,
             "fingerprinting": 0,
@@ -288,7 +229,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e2b2edd13154c8cf9d0e20fa553b2e8a8501ea232b1eb8bc04909077dc53c5bd"
+                "201c08c673e515bfd2084deaa0dbf1c0062ddbf2c11d43d02e2527c5fc6b176c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -310,7 +251,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a340f75be5f47d3546377ee164a44fc958bd9aede3f2b342ab9cceab6f8b647f"
+                "e5e97eb50e900d2479ca8c7b6af2e24ebb9688eae1f7463e01efa41ab84bc344"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -325,26 +266,21 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000401,
+    "cookies": 0.000604,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
-        },
-        {
-            "domain": "go-mpulse.net",
-            "prevalence": 0.3
+            "prevalence": 0.7142857142857143
         },
         {
             "domain": "mparticle.com",
-            "prevalence": 0.2
+            "prevalence": 0.2857142857142857
         }
     ],
     "types": {
-        "Document": 4,
-        "Preflight": 6,
-        "XHR": 10,
-        "Fetch": 2
+        "Document": 6,
+        "Preflight": 4,
+        "XHR": 8
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.0011,
-    "sites": 11,
+    "prevalence": 0.00161,
+    "sites": 16,
     "subdomains": [
         "star.cdn.nintendo",
-        "api.wsj"
+        "api.wsj",
+        "dl.gmx"
     ],
     "cnames": [
         {
@@ -23,9 +24,13 @@
         {
             "original": "api.wsj.net",
             "resolved": "api.wsj.net.edgekey.net"
+        },
+        {
+            "original": "dl.gmx.net",
+            "resolved": "dl.gmx.net.edgekey.net"
         }
     ],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "net\\.edgekey\\.net\\/v1\\/js\\/account_en_USA\\.js",
@@ -70,30 +75,101 @@
                     "resolved": "api.wsj.net.edgekey.net"
                 }
             ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barrons.com",
+                "www.barrons.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/api\\/dylan\\/quotes\\/v2\\/comp\\/quoteByDialect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.wsj"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "api.wsj.net",
+                    "resolved": "api.wsj.net.edgekey.net"
+                }
+            ],
             "responseHashes": [
-                "3296656bed02d11490f978fe93c7e8fff6f19d980fb9d5c88c7698be3ba5856f"
+                "6b47f3360b86e8b858b7588b48797c3f2f42887279ece731ecd9c3f5fe3395e8",
+                "3254a109f5fbf539cc9218cf56568a2d569a42937e42d00096e2a75763d32e02"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wsj.com",
+                "barrons.com",
+                "www.barrons.com",
                 "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "net\\.edgekey\\.net\\/tcf\\/live\\/v1\\/js\\/tcf-api\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dl.gmx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "dl.gmx.net",
+                    "resolved": "dl.gmx.net.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "aef4596ca7046bacbcc6c307f3311c676bfb038a06271cc2e64616bc9c18eb99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmx.net",
+                "www.gmx.net"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000302,
     "topInitiators": [
         {
+            "domain": "quickbooks.com",
+            "prevalence": 0.5045871559633027
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.4724770642201835
+        },
+        {
+            "domain": "comcast.com",
+            "prevalence": 0.013761467889908258
+        },
+        {
+            "domain": "gearwom.de",
+            "prevalence": 0.0045871559633027525
+        },
+        {
+            "domain": "stmllc.wpenginepowered.com",
+            "prevalence": 0.0045871559633027525
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 2
+        "Script": 4,
+        "Preflight": 2,
+        "Fetch": 3
     },
     "nameservers": []
 }

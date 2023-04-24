@@ -4,43 +4,78 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "us-individualizer",
-        "us-api"
+        "publicapi",
+        "us-publicapi",
+        "www",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "databreakers\\.com\\/v1\\/individualizer",
+            "rule": "databreakers\\.com\\/v2\\/gatherer-data-provider",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us-individualizer"
+                "publicapi",
+                "us-publicapi"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "902663c7b2dbade1a4efdc253bd8efee1fc143c991cb4cf86d73389b2af588b5"
+                "17513755d5768c6c4c23e4cc068f10f49dcc24ffb31c0d5d60b12e95f0e267d5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "groupon.com",
+                "groupon.ca",
                 "www.groupon.com"
             ]
         },
         {
-            "rule": "databreakers\\.com\\/v1\\/groupon_us\\/dataPoint",
+            "rule": "databreakers\\.com\\/cookie-maker",
+            "cookies": 0.0001,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a66a4234a18b524b8faabaf4948005802ad4ce37e7ab65e9c210252be8c7657c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "db_ui": {
+                    "ttl": 157680000,
+                    "length": 36,
+                    "prevalence": 0.0001004217714400482,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.ca",
+                "www.groupon.com"
+            ]
+        },
+        {
+            "rule": "databreakers\\.com\\/v1\\/groupon_ca\\/dataPoint",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us-api"
+                "api"
             ],
             "apis": {},
             "sites": 2,
@@ -53,14 +88,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "groupon.com",
-                "www.groupon.com"
+                "groupon.ca",
+                "www.groupon.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
@@ -68,7 +103,8 @@
         }
     ],
     "types": {
-        "XHR": 4
+        "XHR": 4,
+        "Document": 2
     },
     "nameservers": [
         "ns2.ignum.cz",

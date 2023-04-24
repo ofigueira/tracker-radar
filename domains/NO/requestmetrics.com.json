@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000301,
+    "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "in"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -15,26 +16,52 @@
         {
             "rule": "requestmetrics\\.com\\/agent\\/current\\/rm\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "window.localStorage": 3,
                 "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.connection": 1
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.language": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.devicePixelRatio": 1
             },
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "f5741eb8f68c5252ae7705d6b405e1301a3a5c0f0bf1091da0dbee7d2348e55f"
+                "75fc97f2f0ff1099403113163929445e1457716fff1a9252b50898689809fd16"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "alternativeto.net",
+                "techraptor.net",
+                "www.eatthis.com"
+            ]
+        },
+        {
+            "rule": "requestmetrics\\.com\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "in"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "techraptor.net",
                 "www.eatthis.com"
             ]
@@ -50,7 +77,8 @@
         }
     ],
     "types": {
-        "Script": 3
+        "Script": 3,
+        "XHR": 2
     },
     "nameservers": [
         "dns1.registrar-servers.com",

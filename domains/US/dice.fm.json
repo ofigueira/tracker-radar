@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "widgets"
+        "widgets",
+        "events-api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,15 +24,59 @@
                 "Navigator.prototype.product": 2,
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "4371a44cd24c62bbcf6ae04fa042508c6f5d4a2baf7fdfaf3f7b6aa6f9771a28"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roughtrade.com",
+                "www.roughtrade.com"
+            ]
+        },
+        {
+            "rule": "dice\\.fm\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "817fa07b25b01b2b9cc7ba2008c8c5c7f6a110c09c45b91c24ced2299a1e3387"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roughtrade.com",
+                "www.roughtrade.com"
+            ]
+        },
+        {
+            "rule": "dice\\.fm\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -50,7 +95,9 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "amir.ns.cloudflare.com",
