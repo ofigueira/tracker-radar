@@ -9,12 +9,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000521,
-    "sites": 77,
+    "prevalence": 0.000565,
+    "sites": 83,
     "subdomains": [
         "82nqbo4ztg.execute-api",
         "hlb-public-main-nlb-612f255f65d4dfdf.elb",
+        "tds-afl-data.s3",
         "news-networkeditorial.s3",
+        "k8s-infrastr-nginxext-ff1d54d30d-dc8a55b2479619ce.elb",
+        "cognito-identity",
         "s3",
         "gadgetguy-assets.s3",
         "hnnz-assets.s3",
@@ -22,17 +25,23 @@
         "d-maiw32tky3.execute-api",
         "2izdf50zr2.execute-api",
         "collab-prod.s3",
+        "zitcha-snowplow.s3",
+        "pillowtalks3.s3",
         "cf-www-trs-online-components.s3",
-        "cognito-identity",
+        "pa7fysgn9d.execute-api",
+        "soundmediagroupau.s3",
         "yrfpohh3u5.execute-api",
-        "assets-iconic-live.s3",
-        "thepokies.s3",
-        "mytyresite-images.s3"
+        "mytyresite-images.s3",
+        "weatherwatch-assets.s3"
     ],
     "cnames": [
         {
             "original": "fix.telstra.com",
             "resolved": "hlb-public-main-nlb-612f255f65d4dfdf.elb.ap-southeast-2.amazonaws.com"
+        },
+        {
+            "original": "l.ffx.io",
+            "resolved": "k8s-infrastr-nginxext-ff1d54d30d-dc8a55b2479619ce.elb.ap-southeast-2.amazonaws.com"
         },
         {
             "original": "loc.api.nine.com.au",
@@ -53,8 +62,8 @@
                 "82nqbo4ztg.execute-api"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000813,
+            "sites": 13,
+            "prevalence": 0.0000885,
             "cnames": [
                 {
                     "original": "loc.api.nine.com.au",
@@ -62,7 +71,7 @@
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "7bb57035e9f7413a431c3f6b2861a67c5ae77ba3727883d23f6b6cd9df89136a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -71,6 +80,7 @@
                 "nine.com.au",
                 "9now.nine.com.au",
                 "celebrity.nine.com.au",
+                "coach.nine.com.au",
                 "honey.nine.com.au",
                 "kitchen.nine.com.au",
                 "ninemsn.com.au",
@@ -91,7 +101,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "fix.telstra.com",
@@ -112,13 +122,13 @@
         {
             "rule": "ap-southeast-2\\.amazonaws\\.com\\/staticimports\\/import\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "hlb-public-main-nlb-612f255f65d4dfdf.elb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "fix.telstra.com",
@@ -126,7 +136,7 @@
                 }
             ],
             "responseHashes": [
-                "2c4a892d24ab497a8f37c74807c2ff2e8610c5dbc249c8ea528111d292dd771b"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -137,6 +147,28 @@
             ]
         },
         {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/data\\/afl\\/rounds\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tds-afl-data.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "61bacda2666d7d64a1232ed154c8c049f0902ba62b1f933f1beca01e990741a2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afl.com.au",
+                "tipping.afl.com.au"
+            ]
+        },
+        {
             "rule": "ap-southeast-2\\.amazonaws\\.com\\/bob\\/images\\/rea-logo\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -144,8 +176,8 @@
                 "news-networkeditorial.s3"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000542,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "ec4a8bf5365dfc45611040e192c42961cdcc7c73f02b470e5d9470cec7d00a32"
@@ -157,11 +189,67 @@
                 "adelaidenow.com.au",
                 "www.couriermail.com.au",
                 "www.dailytelegraph.com.au",
-                "www.geelongadvertiser.com.au",
                 "www.goldcoastbulletin.com.au",
                 "www.heraldsun.com.au",
                 "www.thechronicle.com.au",
                 "www.themercury.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k8s-infrastr-nginxext-ff1d54d30d-dc8a55b2479619ce.elb",
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "l.ffx.io",
+                    "resolved": "k8s-infrastr-nginxext-ff1d54d30d-dc8a55b2479619ce.elb.ap-southeast-2.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afr.com",
+                "www.afr.com",
+                "www.stockland.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k8s-infrastr-nginxext-ff1d54d30d-dc8a55b2479619ce.elb",
+                "cognito-identity"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "l.ffx.io",
+                    "resolved": "k8s-infrastr-nginxext-ff1d54d30d-dc8a55b2479619ce.elb.ap-southeast-2.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+                "0e3be4069ad690e6ca088f8769b42304f631593ac5c42022aa81a50b5102c8b6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afr.com",
+                "www.afr.com",
+                "www.stockland.com.au"
             ]
         },
         {
@@ -173,7 +261,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "46780406cc7f12f8d646e8f742bf0ddee62c13ce3b9bf724f4c1903eded9740e"
@@ -196,7 +284,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "4a41332b619f08bf6a90fdfa04abcb25660f7f827d898bdd193a554e84a5114f"
@@ -219,7 +307,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "b5ba1930353bc931e6bc9fee5ccaecdb66c3b60056560fddd6bdeb79a020163c"
@@ -242,7 +330,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "82d60b8054c7a60c4a74f7b09efe1f8052e8c8c3888df061ac25df27ce52d861"
@@ -265,7 +353,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "a10a2373b63b37281a7abeac611933f286b51362238e6c64f25592eb371f1e1a"
@@ -288,7 +376,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "9728ca68a5ed6ce4ad21bef5ee82c387878d5c83eaffbe43e42afb42fb9ff174"
@@ -311,7 +399,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "cdd051c14b6b7fcfbc90fb12c6e8a2df39383d5594975fee23e05d2b4236a118"
@@ -334,7 +422,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "dde1ae2664098dceeba324e9e04fa1e097591ae5892fe91efc1003a9b1b349c0"
@@ -357,7 +445,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000203,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "eabf201e1224cb12ba175479b2f12cd3e301e48f803e992423729e152e099b99"
@@ -372,28 +460,6 @@
             ]
         },
         {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2021\\/01\\/07220055\\/gg-grapevine-image\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gadgetguy-assets.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "11b7771610e0afbeffe6a75223be6f52b3c8f1463e2c652ba700025324cc01cc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gadgetguy.com.au",
-                "www.gadgetguy.com.au"
-            ]
-        },
-        {
             "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2021\\/04\\/01150703\\/GG-website-logo%400\\.5x\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -402,7 +468,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f31801024598e20909303b8fc009c92c665aa21e8ed9896c6e8768381695a459"
@@ -424,7 +490,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5850f2afbe7acdb1c09fa6245387a23ac531cff0499dda5cc33fcc27bec09664"
@@ -438,7 +504,7 @@
             ]
         },
         {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2023\\/03\\/01155842\\/2023-GadgetGuy-Reader-Survey\\.jpg",
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2023\\/03\\/28213959\\/Lenovo-ThinkPhone-by-Motorola-review-100x67\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -446,10 +512,120 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "45628b77bc439a3ce71e596b60d0af20613a286f3a6c204816a23fe6e4b94eda"
+                "af17460dd224fbf1916091072ddbe39101751d0ee61737445682d342f857fa74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetguy.com.au",
+                "www.gadgetguy.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2023\\/03\\/30121047\\/Moto-G53-5G-launch-100x67\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gadgetguy-assets.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "76197ff5ef81c16f71e3cb0a966470542af04405dffc36dadb1fcaed4c187c6d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetguy.com.au",
+                "www.gadgetguy.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2023\\/01\\/31222520\\/Apple-HomePod-2nd-generation-review-100x67\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gadgetguy-assets.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5be010aaea9efc81ab89a6d9ddeb66c40cff17376f5e703bd41c10df95612d8b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetguy.com.au",
+                "www.gadgetguy.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2023\\/04\\/19113813\\/LG-G3-OLED-TV-2023-100x67\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gadgetguy-assets.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ef50e5a714ca1b6283b5b8db6e5562da8c3f364491e37a205451c11867ccd38f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetguy.com.au",
+                "www.gadgetguy.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2023\\/04\\/17165123\\/Age-of-Darkness-competition-100x67\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gadgetguy-assets.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "70b36205e5601ca78af98657c246a9ef6134cd7e3e2e74b71750fdb1121d4005"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gadgetguy.com.au",
+                "www.gadgetguy.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wordpress\\/wp-content\\/uploads\\/2021\\/01\\/07220055\\/gg-grapevine-image\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gadgetguy-assets.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "11b7771610e0afbeffe6a75223be6f52b3c8f1463e2c652ba700025324cc01cc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -468,7 +644,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7fe8ae5f0ac46b18ca6c6283cd06a8ff5c234060fdc65340787c2318a74423af"
@@ -490,7 +666,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "353cfe7b9d3f738a1f4d010bf840902f4c385af029733c145f459ea1fc8be41d"
@@ -512,7 +688,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c33e03f2a4d2fd8c55acfe6981b708830dad2aeac9a69802e33dfea0742e968f"
@@ -534,7 +710,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "2d9ca4d7b206cbb7a4a567b56f2be097ae9d2b11333fd91b9a29874d51f712e5"
@@ -556,7 +732,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7a07752662dc1ac05d1443ee9072e82b97e960cbbd604bba3974817c2dc5b7ea"
@@ -578,7 +754,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "web-api.hungryjacks.com.au",
@@ -586,7 +762,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -603,57 +779,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "web-api.hungryjacks.com.au",
-                    "resolved": "d-maiw32tky3.execute-api.ap-southeast-2.amazonaws.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hungryjacks.com.au",
-                "www.hungryjacks.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/api\\/v1\\/app",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d-maiw32tky3.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [
-                {
-                    "original": "web-api.hungryjacks.com.au",
-                    "resolved": "d-maiw32tky3.execute-api.ap-southeast-2.amazonaws.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hungryjacks.com.au",
-                "www.hungryjacks.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/api\\/v1\\/app",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "d-maiw32tky3.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "web-api.hungryjacks.com.au",
@@ -670,6 +796,78 @@
             ]
         },
         {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/api\\/v1\\/app",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-maiw32tky3.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "web-api.hungryjacks.com.au",
+                    "resolved": "d-maiw32tky3.execute-api.ap-southeast-2.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hungryjacks.com.au",
+                "www.hungryjacks.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/api\\/v1\\/app",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d-maiw32tky3.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "web-api.hungryjacks.com.au",
+                    "resolved": "d-maiw32tky3.execute-api.ap-southeast-2.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hungryjacks.com.au",
+                "www.hungryjacks.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/na2-cloudinary\\/assets\\/stripchat-command\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f416a4daef18a46f75d8a0e7090bedd0521329d4c7569f1d45ecaa39b45837a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "naughtyads.com.au",
+                "www.naughtyads.com.au"
+            ]
+        },
+        {
             "rule": "ap-southeast-2\\.amazonaws\\.com\\/na2-cloudinary\\/assets\\/try-a-sugar-baby-pink-blonde\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -678,7 +876,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "766f57cd52766b815efbcf5bc7f6c2e9f26b4be0645ae0a307b72e4c92471249"
@@ -700,10 +898,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a338f5b9ef8625064005c360df7799fb0515a30a264e2da17ab6df9e61e32247"
+                "a97f21680a2c6f335136b01cfb1b8e42e5ecc6f7e8a4ee18afa3def2184cbb8f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -722,7 +920,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -742,10 +940,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "05dcfd3ae77a4fdfc99f987f82be529a45e01362f64fd46a159b44228518ddaa"
+                "8f70f172b649971f580d27889a71f51991abbc3e70ce59a96517f24053d9821c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -764,7 +962,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -773,6 +971,28 @@
             "exampleSites": [
                 "newsroom.co.nz",
                 "www.newsroom.co.nz"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/c5b6f02269e0a4a0927d2a45f442ad347283268b0a84e45b32215e728e2ac849\\/f_marketingpicFull\\/u_1c47c68049eb960dae71f73335ebbf8c6eebc0ffe07998f8d9f7454cefbf381d\\/img_8illasd8hf_ce67ddc192bd9a8bc0415644c5a643101d8d059958dbbd9e7fa88ba08cb76787\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fc-apse2-00-pics-bkt-00.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac0da0fd82d75186f196d833412592c426d547690b2d8443c148c051daf2a42b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nickscali.com.au",
+                "www.nickscali.com.au"
             ]
         },
         {
@@ -786,10 +1006,10 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4bf59aa69e70bf7ac47996313c79dc18b193e864d12e9b7c2167dcf451d05b69"
+                "8a78611f60883844b99b79f02753c93cc6df24903c8aaf891f2d24dc78e7b8a7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -797,6 +1017,214 @@
             "exampleSites": [
                 "noelleeming.co.nz",
                 "www.noelleeming.co.nz"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/snowplow-zitcha\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "zitcha-snowplow.s3"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e89e1861f1050742b223daeeed0b2503669695fa024e5eb9d46f72eaa0dded32"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_ses.3144": {
+                    "ttl": 1811,
+                    "length": 1,
+                    "prevalence": 0.000013614147822417056,
+                    "uniqueness": 0.5
+                },
+                "_sp_id.3144": {
+                    "ttl": 63072011,
+                    "length": 152,
+                    "prevalence": 0.000013614147822417056,
+                    "uniqueness": 1
+                },
+                "_sp_ses.bcd1": {
+                    "ttl": 1817,
+                    "length": 1,
+                    "prevalence": 0.000006807073911208528,
+                    "uniqueness": 1
+                },
+                "_sp_id.bcd1": {
+                    "ttl": 63072017,
+                    "length": 152,
+                    "prevalence": 0.000006807073911208528,
+                    "uniqueness": 1
+                },
+                "_sp_ses.621b": {
+                    "ttl": 1808,
+                    "length": 1,
+                    "prevalence": 0.000006807073911208528,
+                    "uniqueness": 1
+                },
+                "_sp_id.621b": {
+                    "ttl": 63072008,
+                    "length": 152,
+                    "prevalence": 0.000006807073911208528,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "noelleeming.co.nz",
+                "www.noelleeming.co.nz",
+                "www.thewarehouse.co.nz",
+                "www.warehousestationery.co.nz"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/WebImages\\/135072-Blush_SWATCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pillowtalks3.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de14bb876f35282e7b1e69bbbd414e1a7d430474034839aaad1497f73932cc26"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pillowtalk.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/WebImages\\/135072-LightBlue_SWATCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pillowtalks3.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e4a34716b36a5894ad666432c603cfc9cf82adaddeab954c9daed32bb9e0347"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pillowtalk.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/WebImages\\/135072-Charcoal_SWATCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pillowtalks3.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "584c28772aa56c8be3950487832f6578e633f1dbd77eede3492efe13eeb0eefa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pillowtalk.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/WebImages\\/135072-Green_SWATCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pillowtalks3.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "991e1232f8821ac4db38806415a8528ecd2032fc5fbfe1224e0d04bd5f06d490"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pillowtalk.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/WebImages\\/135072-Grey_SWATCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pillowtalks3.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "66dc8766869c20a6e18bbff08ddd72f4a7c8df866bcc7e2c3dec83519cf27f8c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pillowtalk.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/WebImages\\/135072-Navy_SWATCH\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pillowtalks3.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8095ac21f33686ccd5c35f3f3a1f7e8f19229c1669de26afff0ddb0619050174"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pillowtalk.com.au",
+                "www.pillowtalk.com.au"
             ]
         },
         {
@@ -810,7 +1238,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c9427611e2745cef0fae30d138cbc82a23ea121285546c188c3265e6c23c0dd7"
@@ -832,7 +1260,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a52975a7d10d52d6816b6e5be9713aa008e02fe1e111e0e39aa79871f6b3d4e5"
@@ -854,7 +1282,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "7702d435cc0c5e51148f571be4c3113145a843086830913451d9611f663cfa14"
@@ -876,7 +1304,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ff58265cf997294435eea618b41f160db3867ccb1f34019a956af2dd5528f074"
@@ -890,45 +1318,47 @@
             ]
         },
         {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/",
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/v1\\/productsWithUpdatedPricing",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cognito-identity"
+                "pa7fysgn9d.execute-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "stockland.com.au",
-                "www.stockland.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cognito-identity"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "15bcc03a2130d22ad05be3044176e719a15c0e0bf237b0123585d8db63e93048"
+                "ef573fbb6d4d145cad81977b7ee6ef107fd9f7ad56988b6899b022b7780c9a89"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stockland.com.au",
-                "www.stockland.com.au"
+                "salvosstores.com.au",
+                "www.salvosstores.com.au"
+            ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/monthly_2022_03\\/IMG_E4671\\.thumb\\.JPG\\.1884c8fc244456e6b1363edadb1f56e5\\.JPG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "soundmediagroupau.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2a441825cbb0c9dc4e567b16d5f4ad10023d263816c48e84c140642e477d6dd8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stereonet.com",
+                "www.stereonet.com"
             ]
         },
         {
@@ -940,7 +1370,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -960,7 +1390,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "640f58103b80912c546327b0c70ade4d50d3e5895e1ba9f4d4794663f4fbc28e"
@@ -974,2339 +1404,6 @@
             ]
         },
         {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/ravelin\\/ravelin-1\\.2\\.0-core%2Btrack%2Bencrypt%2Bpromise\\.min\\.js",
-            "cookies": 0.0000135,
-            "fingerprinting": 3,
-            "subdomains": [
-                "assets-iconic-live.s3"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appVersion": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3e8eea876896088cb2b5bc38d850864f0302871b1c793abde11b6b8364b00657"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ravelinSessionId": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                },
-                "ravelinDeviceId": {
-                    "ttl": 31536023,
-                    "length": 40,
-                    "prevalence": 0.00001354261182811717,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "theiconic.com.au",
-                "www.theiconic.com.au"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/thepokies-logo\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "94f9724b2242e605406b2231b3d0852b309a8ae4586e275c6bd30f0d7379bb02"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/thepokies_logo\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "476b2b08626f714e19a70de71406f7f5539bfab651dc69f06ec308f18b2059aa"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/icons\\/cashier\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "717d7447b0981ec1d9a63ac9816232d02d101569afa33bbf403156003e3145c4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/icons\\/vip\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ee6c088624b18bd08c57ce8687e28f3d9abeaa944c31c4aa8df1968d7d54b932"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/icons\\/rewards\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "7a39a3f5d9d59450c10fa0f3768eb56802f36f07dc7dbe0b619301a784c1d2e4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/icons\\/settings\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "dd8b2ed7730391d682a3ef3d51864e3c51da86fe0274a1d7867c98602701674e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/misc_images\\/icons\\/logout\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bce7b9eb07b254b0bf1ad4b46b7dc066d413f7adff58c88650c8039c8ca6c68f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-aristocrat\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "7f17877009a82a55647d5ca804af3b2d1a24ad6b5467686670351c28e43e6b58"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-belatra\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ef6c8c716f839b3861a6adcb49200f82119113d75f401c6e28e01a41b13dfcb4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-bgaming\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b3296c1eddf704bf001c56b68ebda036f3e48c81ba505a0ef860f2ced57515f3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-booming\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4bf9059b178e4ed87878f2e81b97e3f5cc292980b8fc435a0263e2b0cc85d2e3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-booongo\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c22777e40ace2ec424acd94be50f0f67a58ff81aa4f50bf47dca5f234fbd12bf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-egt\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "239b772c214f6d9d01e669efa5ae5a06312131e782743e0db118c87f141b8407"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-evolution\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "cb46d9ee777c1c76012903cdaf29f7165e661e33fe90252f3704f109e87fd674"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-evoplay\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fde6086d53ebf01068ce22d336a140caeeac0dfba22380a890ecf454d5530ff1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-hacksaw\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "08ec84a67bb5c0148d5aad8d46e804f1dcf445623ee5d1c752d09d2ffaa92b00"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-microgaming\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "f9a8fc3d791f6bc1080d30eeb008abf3376e80d0b3a95e75975cb93d69ce116c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-netent\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "aa0f538ce1d9e49ca146c50995e37f4f13f917dfcc319d41e7885b03f1747eae"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-nolimitcity\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4e30a9ab3997d75e0a53601750b61440a776baba3e9aeb41ae3e8e8f24db3f5a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-playngo\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "97d1cae88dc6f2390eb8d0cdc74cc44c56411f03cf1297d3ac5c5afb81ae4591"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-playson\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e9553ee34bc16b18c9037eb430d0d25c83ffc6fa1d0db4312952a306525d9365"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-playtech\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "9e8bb7a309c7ad92525f4b39a8f4e7c48ea572203ff786d35ebe01d6435443e6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-pragmatic\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c1f9cb8768f2d1692ebe464f0d4545391965df85ed8023933bdc6531c938c06e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-pushgaming\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "78019819f1ee843841308a48d4040b6c650cfaa1b29ea659807ebe81ff1dfe64"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-quickspin\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d44565b0b8ad144db8179a51c5cd28a4aac3ac1352ecdf3244c9e9e79c30b00f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-reevo\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "f1e40d8a163d3bc054130b05405cefb19aac68c8750f82d7cfbda1e8f126ca4b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-relaxgaming\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "196fdfc764235e91f1a4f3f633cb318954e0ec4411d74e185f4893bdee20b4d5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-wazdan\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5396d0b78b0a20413f5444d3cd256e6f950e6bd06f4ca33530a08cc70a729755"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/provider_images\\/thepokies-yggdrasil\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d8b39a1aed0c17dcf207ae2d70875a44752baafa1ac7efb2559d128b3b526997"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/signup10bonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "946af7cf681622006f87066996c22254ba2e518bab8e3efb1f0bc819b8a4ca46"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/dailybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "77a754ba176c265731fe289f9d46f745cdbafc4a66d7a5301b5f03228aa0053d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/mondaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4b988288ff1a25faeaeebef5ea940de060a103cdc92d867ff3fa72f0465fc620"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/tuesdaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b09cf84fc8c12530be41b908fdf5da1e5ea21a14acf1d72e9c336164b483a360"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/wednesdaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1bdc930bab1871ba9e410734e5226f88a4e9c66771bf92593e590c78bc79b3ba"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/thursdaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "870a3e3e2ca481996b4ceb3356d6e21a3bd29862e3187c3d5ef5ecc4a90c407f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/fridaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "11547f712eae0186601ea0b6a28fba5522ee1d14de9686eb22a859b86daa9e65"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/saturdaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c5131e619ac3f9af75761de45e8721210e69e7fbc88691aa3cd345c5373afa43"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/slider_images\\/sundaybonus\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1e909a1aca4a201e0481c3aacde8a9e6d522ac057c11a3696570f699f713b1c2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/relax-money-train-2\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5a03e0de995555a44a81b8b05d2bc193ef689f47293bc79c012e577b01b0984c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-wanted-dead-or-a-wild\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "10bbba94e360147a4ac88d189c425bd05984ad3b521c0f2838edcf885c84f853"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/wheres-the-gold-slot-machine\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4f08f37bd915fc742745706622e53e32fb0a43dd40e47eb683f2a8e44d84c032"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/nolimitcity-mental-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "eb78ec6a0402875de2a88a37586a0afab0d7808a256ea5116c9aa8d49b98dee9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/pragmaticplaylive-sweet-bonanza-candyland-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5fcc4a4889624d554926f3e32d0f535202e8c13b3817a213c40626c173ae954e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-dork-unit\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "19ef843f26891ddeb90a23db7be3d1ea466488783839d4140bf2510c0c38259b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/relax-snake-arena\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "5c9b952a07a28166e3cf836289fff5d06324c10bcf70aac44e6c6d1712b4119e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/big-red-slot-machine-online-pokie-game-free-no-download-aristocrat\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "88cc677f884f62ed40b248e1f64ec0ca8789907e84837f37381be1a201d91d2a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/booongo-15-dragon-pearls-hold-and-win\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "29db73e1c63c70cdbba7cf99df2e066057e2db5bfdf29648e1048ea921235311"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/nolimitcity-book-of-shadows-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "b6ec96c3146d44869903743dc22bae4909bc0dcc7d8e8b674ea4e865c215ef23"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playson-buffalo-power-holdand-win\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e162d93b001f2f42768f09148bda2e5bae3ea9c6a8bc9b8e9a0cc7f35139274e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/nolimitcity-punk-toilet\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ff7a50c99658e121dd4c653fcdec551a9f1e5281a50e67a394a0d62213321efd"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/booongo-sun-of-egypt-2\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6e194a677e07fe51bba99486fda7bcbc27bcf8cae9dd1de109f7136defe36577"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/playson-wolf-power-megaways-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4595cefe173d407263cdb737a84fbd7edee2bf2e9d64cd7d74bb0f5c3855af4b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/netent-deadoralive2fb-not-mobile-sw\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "238432cc516441340f2029fcf644df4f146435271dd2cc3c17cf3ac7f3755a15"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-joker-bombs\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "16fcca7c5d4a3a72556862dc073490650bacaaa5abeae49f80596c26695fac65"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/push-gaming-razor-shark\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "742a178cb538e637d715bfc53d0b5bb6d186ee27323388285d88a78ea116f0b4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/quickspin-eastern-emeralds-megaways\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "93ad8ec090f85388f14876a05cb339e180c650d77650fe5db0624db10f6cadde"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/pragmatic-roulette-lobby\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "25a9245b4c341530c45f03d9dccb319b927ba90fefb347c7a55814eca3c39495"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/nolimitcity-xways-hoarder-xsplit\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "213797088e3cf1409c99321be18a154982fb0ddb9ca9101b6f1fb9e3c807cfa9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/netent-narcos\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "80f5c327d275254112baa0ee78d70ab0c51350299cd9407b1a787ba7d391baab"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/pragmatic-baccarat-lobby\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0b0ea0b6cf973baab36f7acb6aad4f057205510d1b31717c76fb26319f862ad9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/netent-deadoralive-not-mobile-sw\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "34443d897a54f0690deac8842173d6bd3289fcf45fcf8a093d66e28e9a440931"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-born-wild\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "7dbd1c8ef4b4938fb8a6c894fdfb66316cd0582e4b52d753731b642b10aab298"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/pragmatic-blackjack-lobby\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "997cb80ba12689103c129f70ab0fd3d8c0036964406232d75846027d96ff041f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-hand-of-anubis\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "cbfa5ec5e14103cfb83a3c4333fda7c0782dd9d2ea54d0f842aa053c5c852db4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/playson-solar-queen-megaways-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "02b9f3329da62a0e4cc09f8e70d867c52b7b2a5ae9ca1cb34fa3505528902add"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/nolimitcity-the-rave\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "27f85cc3e1b14c492ddc115142bf75191771ef8d9d803d1334aa7bbbc92a6f89"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-chaos-crew\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "d254dcd462774355254db6507f212de6840a53ba67698d44c1cda80f82c1fc31"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playson-buffalo-power-megaways\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6a4278747da1a86a059b687c060e0ba5c84f15a496375c741aba8910e58a4908"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/nolimitcity-road-rage\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "8e51993a8354c5110c1a39be3cacf9192bb92b32093855472e8c7993f2960f67"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/pushgaming-jammin-jars-2\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "6c997c6f783d4f318531058688ae533d045f5aaa81245f37485105fb058be6d0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playson-wolf-power-hold-and-win\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fd202ed41c10b3fca33fda3b09efacd395c76955616a0a2db422f0a2acd812e1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/quickspin-sticky-bandits-3-most-wanted\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "cf5ec104d1f048ad4988a39243061e34d89f7b0caea4e4ed8f57ffe6d53c200f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-cash-quest\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "78f28913f5bbc0c067ad6b0fc45bf8a50eeae46e51daa12d0de16d400dc5fd1a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-hopnpop\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "06ce810c174dfa24bdae0aeba9079f82a63d99f0dc3a3b1d29c686dc182f9240"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/relax-iron-bank\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "89b7f11db78c62eb7523d6175b359f961ce52c25372eb40ab2bbdb5b6ea7d4d3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/pushgaming-big-bamboo-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "f34f7c4b9161f061fc35778b08cb26beaf2dd7b208da73936c9b8078ba4e4d5b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/nolimitcity-infectious-5-xways\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "11202bda21499dcecfb9c21a0746154062bf61925a19c79b3178748520e8330b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/netent-lostrelics\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "fbf9f98af611eb08667521dae90dd6414435c53fb2c208a2b5e20e4308ea2586"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/netent-starburst-xxxtreme\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ed9e5379638548d80f6fe2a3e1017275bdf5b3dfb725f78b5983622789bc5d88"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playson-eagle-power-hold-and-win\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "0b95441becc853c1f9c7c1f6ee652a1e4ad4298a7e8cceb6a6d4477f3d8acad0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-double-rainbow\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1c2d5df53e3a89e0a79c9f76b5caa8940bf246aa00ad5d371a64e442f6e0ea48"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/quickspin-eastern-emeralds\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2968f466a7400c404417c0dbfb2a3f65cd9b6cec2eb91caf3ca7f92213697cf2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playson-diamond-wins-hold-and-win\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "e2438739469bc6308ceb21a612a1340f3887305e5ce4e51095a5cd7a7cf254bf"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/nolimitcity-serial\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2c8cd0fd24ec944494787212b01e8529ef144d31250d9713ee716d6ae57fac2b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/push-retro-tapes\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "613c341c2e02c0c437f9a9a51ddaeb0cfd4e5fbbb53a0dab886a67638722cca0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/playson-pearl-beauty-holdand-win\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "71b3fd69b256afb7683278cfd5c2be9e6c82fb5378efb442f622534b18b93669"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/nolimitcity-rock-bottom\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "bc1f5f6931c6a88451e05274c0e4b12ba9d6310ce5e0370c2de749c067854859"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/relax-wild-chapo\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "9804a7800659d7f083ae1ef57488abecdcd39469b88e39b058e10b3b85bf7f14"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/nolimitcity-tombstone-r\\.i\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "32a1002457fce283466ab38ea657549df558cfc8057b23d464bfa7e2cb484892"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/relaxgaming-dead-mans-trail-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "a11a09b7abb45885fe6e480eeddc8a995fe7f7bbd816aeb4c0aff950fb292958"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/netent-secretofthestones-not-mobile-sw\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c33d68631b3425c46bf463ad6ea110867bef32e112f73213086bb07e7aba33eb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/nolimitcity-east-coast-vs-west-coast\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "187b9e9859133e05707dce51228d7228d1e598854c9a6859f8150468eda6e661"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/nolimitcity-tombstone\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "360b66ed3dc62eaf72a919ff39ee6f4a9d4adf3589453fefa442269baa7fb382"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-gronks-gems\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "2540ffed16977a7ecc25df0d56d2ce1889c75b956fe1e7f70d20e3892b00668e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/quickspin-sticky-bandits-wild-return\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "ffcb3cd4e6f7aec0e1a708ba2e596c602feb38c1839ce5466ce1a8bb31d3ff11"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/playson-royal-coins-hold-and-win-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "8d94237a347c78120bb495ba1975c936e168084258abe76eb88c8f7c18c3cdb5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/default\\/netent-spacewars\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "993222ca83c1ed7f1e4555f3335f8bcdb26db7458bc0e06fc3802c5c2654d7ca"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/nolimitcity-the-border\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "75ae08e9b928dfbb5ca41ee48bdff4746cd4a4bfa5add2cdf4a8f9644bf98cf0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/playson-book-of-gold-2-double-hit-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "c9d9a5b7f2bd4107428a7db56a975ff427a9565375ec980d4c31935f8375bdc9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s2\\/playson-lion-gems-hold-and-win-0001\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3b261bf72989f9cc23c645c148571ec0d6fa9dd0209169adbdfbe45135ebea4f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/push-gaming-jammin-jars\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "1dc14ded2b14ccaf37cf186539bc68731572867ea7bc59e98ecfdabeeeafc86d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playson-legend-of-cleopatra-megaways\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "4a4e49c8cccee89aa1fd4f7289577572f20bacff9a0473ca9339f6e9769ee48c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/hacksaw-cubes-2\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "3d14721078355527c17d4390d7e5dfa8eb6b582d1c9ecef6094e482d33e2de02"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
-            "rule": "ap-southeast-2\\.amazonaws\\.com\\/game_images\\/s\\/playngo-bookof-dead\\.webp",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "thepokies.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000135,
-            "cnames": [],
-            "responseHashes": [
-                "645a11d32137a30a6308f12d0099979001401a37724472c39d1fe544b752fce7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thepokies50.net",
-                "www.thepokies50.net"
-            ]
-        },
-        {
             "rule": "ap-southeast-2\\.amazonaws\\.com\\/production\\/delivery\\/web\\/v2\\.0\\/ad0eb748-2303-4494-a38a-da7086f0d183\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -3317,10 +1414,10 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "39fc74204688ece53b2b041e1aaf2cfd1f28b2c5ab3d7c8a3206af48a515913c"
+                "34e982bfb7a6b082635b3938726ac1490cf8b4a43ac2bb1197445320c4b07edf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3339,7 +1436,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "52292697a615d3ad314913d59ebad8059cbcae5ca90bd10f34681f54b4d23347"
@@ -3361,7 +1458,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "6369580f917623707d553e0f22b4913e2b54bbbfaf0125719f22d1344377f131"
@@ -3383,7 +1480,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "5f5de5b5c5e3579df390ecf6c9f9d6afc877ffb98de60d04abcac789b1e5523b"
@@ -3405,7 +1502,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "bea41906c248906eb0d0a707265e1e0382da5e9ba492083871c00ec615bdc0dc"
@@ -3429,10 +1526,10 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b0790a1f578fb2b2b5c88085fb38e829d3edd91bb0c2213e93edc6b15bf6da55"
+                "f3e3cb62e979b07f0b3e9676072263c0f16a971ed0555c7f7534039ed3f7bf5b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3441,77 +1538,95 @@
                 "warehousestationery.co.nz",
                 "www.warehousestationery.co.nz"
             ]
+        },
+        {
+            "rule": "ap-southeast-2\\.amazonaws\\.com\\/wp-content\\/uploads\\/2023\\/04\\/19113641\\/Screenshot-2023-04-19-at-9\\.23\\.07-AM-1024x670\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "weatherwatch-assets.s3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "85029a5568946dc4a02f8669bb880dfe26e8c585b9110e46a6ab5a444c730136"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weatherwatch.co.nz",
+                "www.weatherwatch.co.nz"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000135,
+    "cookies": 0.0000476,
     "topInitiators": [
         {
-            "domain": "thepokies59.net",
-            "prevalence": 0.48598130841121495
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.40186915887850466
+            "prevalence": 0.8765743073047859
         },
         {
             "domain": "9cdn.net",
-            "prevalence": 0.04205607476635514
+            "prevalence": 0.05037783375314862
         },
         {
             "domain": "freshchat.com",
-            "prevalence": 0.018691588785046728
+            "prevalence": 0.02518891687657431
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.018691588785046728
+            "prevalence": 0.017632241813602016
         },
         {
             "domain": "jsdelivr.net",
-            "prevalence": 0.009345794392523364
+            "prevalence": 0.010075566750629723
         },
         {
             "domain": "d3pbdxdl8c65wb.cloudfront.net",
-            "prevalence": 0.009345794392523364
+            "prevalence": 0.010075566750629723
         },
         {
             "domain": "wufoo.com",
-            "prevalence": 0.004672897196261682
-        },
-        {
-            "domain": "lighthouselabs.eu",
-            "prevalence": 0.004672897196261682
+            "prevalence": 0.005037783375314861
         },
         {
             "domain": "9now.com.au",
-            "prevalence": 0.002336448598130841
+            "prevalence": 0.0025188916876574307
+        },
+        {
+            "domain": "humm-au.com",
+            "prevalence": 0.0025188916876574307
         }
     ],
     "types": {
-        "XHR": 18,
+        "XHR": 24,
         "Stylesheet": 4,
-        "Script": 18,
-        "Image": 265,
+        "Script": 20,
+        "Image": 84,
+        "Preflight": 13,
         "Fetch": 6,
-        "Preflight": 12,
         "Font": 4
     },
     "nameservers": [
-        "pdns3.ultradns.org",
-        "pdns1.ultradns.net",
-        "u5.amazonaws.com",
-        "u3.amazonaws.com",
-        "ns4.p31.dynect.net",
-        "pdns5.ultradns.info",
         "u1.amazonaws.com",
-        "ns3.p31.dynect.net",
-        "u6.amazonaws.com",
-        "ns2.p31.dynect.net",
-        "u2.amazonaws.com",
+        "pdns3.ultradns.org",
+        "u3.amazonaws.com",
         "u4.amazonaws.com",
-        "ns1.p31.dynect.net"
+        "ns1.p31.dynect.net",
+        "u2.amazonaws.com",
+        "u5.amazonaws.com",
+        "pdns5.ultradns.info",
+        "pdns1.ultradns.net",
+        "ns4.p31.dynect.net",
+        "ns2.p31.dynect.net",
+        "ns3.p31.dynect.net",
+        "u6.amazonaws.com"
     ]
 }

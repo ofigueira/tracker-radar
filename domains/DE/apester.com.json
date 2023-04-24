@@ -7,17 +7,20 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000803,
+    "sites": 8,
     "subdomains": [
         "static",
         "sdk",
         "events",
+        "sdk-canary-b",
+        "strip",
+        "display",
         "renderer",
         "interaction"
     ],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "apester\\.com\\/js\\/sdk\\/latest\\/apester-sdk\\.js",
@@ -27,15 +30,16 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "NavigatorUAData.prototype.platform": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3
+                "Navigator.prototype.userAgent": 7,
+                "NavigatorUAData.prototype.platform": 7,
+                "Navigator.prototype.platform": 7,
+                "Navigator.prototype.language": 7,
+                "Screen.prototype.height": 7,
+                "Screen.prototype.width": 7,
+                "window.innerHeight": 3
             },
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -44,6 +48,10 @@
             "exampleSites": [
                 "itsfoss.com",
                 "linuxhandbook.com",
+                "www.eishockey.net",
+                "www.realtotal.de",
+                "www.serienjunkies.de",
+                "www.vfl-bochum.de",
                 "www.vip.de"
             ]
         },
@@ -55,11 +63,12 @@
                 "sdk"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
-                "3413d49ecefc2c8d3f97147dfce320626e4fe8cc742b56b556f74727f2ea6555"
+                "1ee287a803dc2ab3f8d9d902418e52d438592874fdecc4984c14b60301a902a8",
+                "348373ced59c9a9632c81c123dff4df7c5013f76cd6217383fe8d04b2f16687c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -67,6 +76,10 @@
             "exampleSites": [
                 "itsfoss.com",
                 "linuxhandbook.com",
+                "www.eishockey.net",
+                "www.realtotal.de",
+                "www.serienjunkies.de",
+                "www.vfl-bochum.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
@@ -79,8 +92,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -89,7 +102,10 @@
             "exampleSites": [
                 "itsfoss.com",
                 "linuxhandbook.com",
-                "www.idowa.de",
+                "www.eishockey.net",
+                "www.realtotal.de",
+                "www.serienjunkies.de",
+                "www.vfl-bochum.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
@@ -102,8 +118,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000502,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -114,24 +130,28 @@
             "exampleSites": [
                 "itsfoss.com",
                 "linuxhandbook.com",
-                "www.idowa.de",
+                "www.eishockey.net",
+                "www.realtotal.de",
+                "www.serienjunkies.de",
+                "www.vfl-bochum.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.8ece0bdf9b9e11722fd9\\.monStyles\\.min\\.js",
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.736d76e1ce10589613e7\\.monStyles\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sdk"
+                "sdk",
+                "sdk-canary-b"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 8,
+            "prevalence": 0.000803,
             "cnames": [],
             "responseHashes": [
-                "bd55adb555ae5607de704bf2794c3e0a9d4a7636e540c5250540030ce7830afd"
+                "f93888fff72ea0af02ccec49d32381b4a2fb09ce67a15f1b937e33e2219fd427"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -139,34 +159,44 @@
             "exampleSites": [
                 "itsfoss.com",
                 "linuxhandbook.com",
+                "www.eishockey.net",
+                "www.realtotal.de",
+                "www.serienjunkies.de",
+                "www.vfl-bochum.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/assets\\/iconRightArrow\\.svg",
+            "rule": "apester\\.com\\/js\\/sdk\\/v2\\.0\\/apester-javascript-sdk\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "sdk"
+                "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 1
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [
-                "8bc418848596026ead6a4739824a5f15a7d1c37d9ff91606ef6347a321c3f7ff"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
+                "realtotal.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/assets\\/logoWhite\\.svg",
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.74180e0f0a601998b947\\.StripElement\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -177,14 +207,404 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c4a0fb4da7f6db6ea3be9b26968272fd292b94084b4f85652c21a91e106613ff"
+                "1fad5aa84ed3a901eb51a3775229c4560f1b8708fd4755295e3ff551b5c3bc44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a28b757d76383fb2940d4610edf66c3f4e77246edca3b8e51f72c4a503a726b7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.c95b444a9e8da87d3916\\.StripListener\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "44ff0520397f012993f4b16eae5a83bddb7912c92c3137aac1c35ec4197aa3ff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/css\\/6\\.a049a127\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "70e72bcc82742bcaed9241d6b376d5a508bbc4ad7e9a2648ed1ea16a4dbba096"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/css\\/main\\.830f2264\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5318861fef63eb0ae98b9e7d3d8d89629c6a1b06d6b5d73ba2ab5ae85459009e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/6\\.e8ebbe8d\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "042b57e6bd357e2b7980062ec45c5a96114ad9e940b4a665934f11cf06d31f89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/main\\.3fb6d561\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6f0dd85b32a2ce83cf4fe8671ddd48f5db0d3c02b48f2bcfa0eccf8af5976423"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/media\\/arrow-right\\.40a1b827\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c502102bcb5c672db8aea934f6c4730d22a3b184146c2f6aeb4430f337c4258d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/strip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "display"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/strip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "display"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "25986fac40f59246b562af17a040a5fde7729c1e23c454a06ae17fd7b64a415c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/media\\/apester-logo-shape\\.05b4a4ff\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9455f430c39368eb2e6f4df803766a77d3a26549ac34e598fe636690fe9655b5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/service-worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "91758c61cca53bfd69c2fc11bb3f21f9237f4a712d8d49f4d16757818b8cd208"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.68d2b5e2f3a299afa68e\\.Monetization\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk",
+                "sdk-canary-b"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "46d0e62d657cb1a762b46fa6f95881ec63a2b770bddce655f028ad7800eb544c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.40625b1581742a6f2de2\\.adsbygoogle\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk",
+                "sdk-canary-b"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "27bd58ace81298f73ac767552b641e3d40596160ecfe85847e179dfd717916ce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.109ec8cb36b41a1b4c31\\.AniviewMulti\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk",
+                "sdk-canary-b"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9c2dd7f826f2ec86c79be733767124a0476dcb58fd29fba0e71a2a76f8474f56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.legacy\\.f6e2e931472a5bcec65b\\.Magnite\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk",
+                "sdk-canary-b"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "7dd8c542c80495d2ad723b9786749d376229fe1154d7cc5de5891616753e89e1",
+                "05e0c4b047038bf0386f34289490de7746a8dce5e8bd591ccdd9dbc6ba11475c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/precache-manifest\\.5f4385dbf2940db474854de2b25f8eeb\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b7063364fb47ebb03640b47bdf8038e762243b6124b58a5ad0663e17b15a8e31"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
             ]
         },
         {
@@ -195,8 +615,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "5e76c85f466ea1d63394b8cc0bc66a7e7e1eca012fe93aff25db58ddb09bd368"
@@ -205,82 +625,79 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
+                "serienjunkies.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/main\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/main\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "renderer"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Screen.prototype.availHeight": 4,
-                "Screen.prototype.availWidth": 4,
-                "window.localStorage": 4,
-                "window.innerHeight": 4,
-                "window.innerWidth": 4,
-                "Navigator.prototype.language": 4,
-                "PerformanceTiming.prototype.navigationStart": 3
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.availHeight": 3,
+                "Screen.prototype.availWidth": 3,
+                "window.localStorage": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.language": 3,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0f9bd0879ac2d4a01e6416b82d0bcc83b4653594ab4455f2ae93920d38395aa8"
+                "b563b84afa57af9ea69fec8e15de99a8e4743fd452643b483f3253729d28373e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
+                "serienjunkies.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/runtime\\.64de9141f671123d5a85\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/runtime\\.9805a9f9f5a9102743a3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "61b2fb9138a2b81cf2cffb78bd39448335931d380b1e1acfa0f8ddcaff6a1d13"
+                "4fc8ce8f88d3bc7d79e812c3e64d32bc2519bfaac271bd3ff4dccb4a543bfbb7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
+                "serienjunkies.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendor\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendor\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "renderer"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Event.prototype.timeStamp": 2
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 3
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "22a5958dc9e0d640cb42c749917c3c52f1b77736545e70ce03fc36b2d735a4a1"
@@ -289,22 +706,339 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
+                "serienjunkies.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/adsbygoogle\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/static\\/css\\/6\\.a049a127\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "70e72bcc82742bcaed9241d6b376d5a508bbc4ad7e9a2648ed1ea16a4dbba096"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/css\\/main\\.830f2264\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5318861fef63eb0ae98b9e7d3d8d89629c6a1b06d6b5d73ba2ab5ae85459009e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/runtime~main\\.be95a0c5\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "818a7a47775e2ec8baefeb4974781e78730154c4dcd792768c0342e9d0ec2472"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/runtime~story\\.aae26a87\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e84b6214c4f69558c36c05cb000612dce9f3c88aa3a6863f02e189d850d8c763"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/runtime~strip\\.5f15c33a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "29a5b3848715901e78c08769b82b1d09ec2efd5e54e8c69e5ba410f724a70848"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/story\\.07bf0c24\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fe16b22eac499622b08e431097cd28c97993cb59cb92fbfeb4e3ca0fa7d5c4a2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/strip\\.8b55e402\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a42e6884ea5b341405bd98b960fdf0c985271da9a3bd4e3c3694951aa5f34c0f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/main\\.3fb6d561\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/js\\/6\\.e8ebbe8d\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/media\\/apester-logo-shape\\.05b4a4ff\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9455f430c39368eb2e6f4df803766a77d3a26549ac34e598fe636690fe9655b5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/static\\/media\\/arrow-right\\.40a1b827\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c502102bcb5c672db8aea934f6c4730d22a3b184146c2f6aeb4430f337c4258d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a28b757d76383fb2940d4610edf66c3f4e77246edca3b8e51f72c4a503a726b7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/apester-detatched-strip\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "31b747c126806e66905e6c7d4e12da2c95edb7fafbe5b65dfd6f42fd1c3df826"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/apester-detatched-story\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "strip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8f479f505de39a72b3d4c7c3f129b2d496029380268cf3a8a87aafd60cbfef03"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/adsbygoogle\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "d6b87189f2250ea0dcdbb2ddace715469013a7f2c2b5d3861df3fb449839c621"
@@ -313,8 +1047,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
+                "serienjunkies.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
@@ -327,8 +1060,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "93f389802e0b01b5557630ca3cb9409c869b1899b19cb8f37f27ce0af6970238"
@@ -337,456 +1070,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
+                "serienjunkies.de",
                 "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~3d8d2281\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~EEFeedback~MainLayout~VideoFrameContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~0ecdca87\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/AnimationComponent\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableInteractiveElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~CoverButton~SeeMore~Utility~textElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/videoElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableVideoElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {
-                "window.innerHeight": 2,
-                "window.innerWidth": 2
-            },
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableBUTTONElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableImageElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableStickerElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/stylableTextElement\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/cookie\\/bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 4,
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "8bc07128346828549f0e7d8f4f8a5cdfff19779ae01bd916d5ca047b5565135f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "idowa.de",
-                "www.idowa.de",
-                "www.vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.c185e7116924c4c0deb5\\.Monetization\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "8b570b1e8bd29d31e654234a68f68c2ddef7b03cb9c31d481416a1f6c1486432"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.40625b1581742a6f2de2\\.adsbygoogle\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "27bd58ace81298f73ac767552b641e3d40596160ecfe85847e179dfd717916ce"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/web-sdk\\.legacy\\.9c6fb0711e1d2dbb9a02\\.Magnite\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "0c0b08dda59d0f0118080a3e2c23ff0d07fc12e9e08d386ca73043197ad0dd5d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vip.de",
-                "www.weltfussball.de"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~EEFeedback~MainLayout~VideoFrameContainer\\.64de9141f671123d5a85\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "renderer"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "4741b8a9d3a130a0e20a55e17a06d355b7a322eb44416777a87eb7d6a86c81aa"
@@ -795,20 +1093,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/EEFeedback~MainLayout~VideoFrameContainer\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/EEFeedback~MainLayout~VideoFrameContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "2142d0f9baa2beaea7355ae1b98bcf996a0cd5938e8313646504d4e082dd1f62"
@@ -817,42 +1116,44 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~VideoFrameContainer\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~VideoFrameContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "098fa7c41f109f5495cc106d656d989cc55cd9b1c6b81f3cb7fe317812781d74"
+                "2db0c28e5d27a11b8310a1b9b15b1807bf3ad399adc67934aeb9581531f12922"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~monContainer\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/MainLayout~monContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "2edc0139fb7423281f18b12da23556200b138f90cd23b985005bc3bdd56a6189"
@@ -861,12 +1162,361 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/MainLayout\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/MainLayout\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "5bea46953f4c3657128cf96646ceba131fdb6fabc882f71b61f470334d880a4e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~3d8d2281\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~AnimationComponent~Autoplay~CountDownSummary~NoResultSummary~PersonalitySummary~PollSummary~~0ecdca87\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/AnimationComponent\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableInteractiveElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~CoverButton~SeeMore~Utility~textElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/videoElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableVideoElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {
+                "window.innerHeight": 3,
+                "window.innerWidth": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableBUTTONElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableImageElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableStickerElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/stylableTextElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/SeeMoreAnimation\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -877,18 +1527,18 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "e65180509fb0c800656e26724f2c10c37fa148fd4e566100ef1f5dbc5721811f"
+                "51fb3743d8d015c990270f3bc1cbeb245b16192b2f25acf698d8fafa907eadfc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
-                "www.weltfussball.de"
+                "serienjunkies.de",
+                "www.vip.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/ShareExpandableBuuton\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -897,6 +1547,28 @@
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "303768b0ba098157db89f58338471baeb628516c388bfa52b515850b9d83a281"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/textElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "7cda7299f30dbad2a1834430448d896c3133a61a72ffb16a8a69289006b2213d"
@@ -905,23 +1577,24 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/imageContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "renderer"
             ],
             "apis": {
-                "window.innerHeight": 2,
-                "window.innerWidth": 2
+                "window.innerHeight": 3,
+                "window.innerWidth": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "d296743ecbe68f6fac64742318657b50131fba4ef904d8bc4335320477d2f9b2"
@@ -930,12 +1603,13 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~ProgressBar~SeeMore~stylableInteractiveElement\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -952,22 +1626,44 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
-                "www.weltfussball.de"
+                "serienjunkies.de",
+                "www.vip.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/vendors~monContainer\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/SeeMore\\.9805a9f9f5a9102743a3\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c6d46117f13784e5a4932190bd22259a83b188af2f63bbd43764c8fb0a7e2f5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/v2\\/static\\/vendors~monContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "renderer"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 3
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e1fc4bd045280071a9e8448eaadeee58eeaef58c7f83523f456c9add1487fb40"
@@ -976,20 +1672,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/monContainer\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/monContainer\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "0371d0d8dfbb6839a2f6a2f8db5fe712a0730ad651d9b04bb7563e9178f9dba6"
@@ -998,20 +1695,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/v2\\/static\\/Statistics-init\\.64de9141f671123d5a85\\.bundle\\.js",
+            "rule": "apester\\.com\\/v2\\/static\\/Statistics-init\\.9805a9f9f5a9102743a3\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "renderer"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "062e8651e39e90a8e4dfc1347423c2883872b84ef48765623ae7b3d3ce5131e5"
@@ -1020,12 +1718,39 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vip.de",
+                "serienjunkies.de",
+                "www.vip.de",
                 "www.weltfussball.de"
             ]
         },
         {
-            "rule": "apester\\.com\\/interaction-stats\\/6242de8ffb9d86002a4a6b88",
+            "rule": "apester\\.com\\/cookie\\/bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "ca4afd75eb6e187dc56f98c28cdbf6a31aa882252cfa56a04a46074d7a952ab2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "serienjunkies.de",
+                "www.vip.de",
+                "www.weltfussball.de"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/interaction-stats\\/6242dd5dfb9d86002a4a66ad",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1036,7 +1761,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "724e3e383d92d97b3e325445fdd9d648ccd8cac971524723560a72045df792bb"
+                "eeab197aef895f8d3d0b0358990f1c84c548a821e7bed05b7ba7a63cdcc1725d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1053,27 +1778,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.631578947368421
+            "prevalence": 0.5333333333333333
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.3684210526315789
+            "prevalence": 0.4666666666666667
         }
     ],
     "types": {
-        "Script": 59,
-        "Preflight": 5,
-        "XHR": 5,
+        "Script": 97,
+        "Preflight": 10,
+        "XHR": 8,
+        "Document": 5,
+        "Stylesheet": 7,
         "Image": 4,
-        "Stylesheet": 4,
-        "Document": 4,
-        "Other": 56,
-        "Fetch": 2
+        "Fetch": 34,
+        "Other": 46
     },
     "nameservers": [
-        "ns-cloud-c1.googledomains.com",
-        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c4.googledomains.com",
         "ns-cloud-c3.googledomains.com",
-        "ns-cloud-c4.googledomains.com"
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c1.googledomains.com"
     ]
 }

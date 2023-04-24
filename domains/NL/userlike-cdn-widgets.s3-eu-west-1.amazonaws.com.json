@@ -9,43 +9,26 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "userlike-cdn-widgets\\.s3-eu-west-1\\.amazonaws\\.com\\/umm-manifest\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bonusan.com",
-                "www.hsleiden.nl"
-            ]
-        },
         {
             "rule": "userlike-cdn-widgets\\.s3-eu-west-1\\.amazonaws\\.com\\/8fb8f346cff58ab68dd5fbee46f60d762cc1c109919501d834a01664bbff3787\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "826f4d411f2f309f47f8aa0d4ad7e353dadf2d8f771d858f0dcde1678806f4b1"
+                "43890c633718d896c21a236286ffed93efb07c830aff943f9f95feeb0bc1dd5b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -53,6 +36,27 @@
             "exampleSites": [
                 "nt2.nl",
                 "www.nt2school.nl"
+            ]
+        },
+        {
+            "rule": "userlike-cdn-widgets\\.s3-eu-west-1\\.amazonaws\\.com\\/umm-manifest\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "f1ab72b66bdaf10b4842130060e802e60ca738a887f22d840c9e8e86e6891ae2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nt2school.nl",
+                "www.statista.com",
+                "www.veja-store.com"
             ]
         }
     ],
@@ -64,17 +68,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.625
+        },
+        {
+            "domain": "b-cdn.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Script": 2
+        "Script": 2,
+        "Fetch": 3
     },
     "nameservers": [
+        "ns-1961.awsdns-53.co.uk",
         "ns-56.awsdns-07.com",
         "ns-777.awsdns-33.net",
-        "ns-1228.awsdns-25.org",
-        "ns-1961.awsdns-53.co.uk"
+        "ns-1228.awsdns-25.org"
     ]
 }

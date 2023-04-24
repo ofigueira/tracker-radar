@@ -9,16 +9,16 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "api.prismaconnect",
-        "static-lefigaro"
+        "static-lefigaro",
+        "player-video.lefigaro"
     ],
     "cnames": [
         {
-            "original": "api.prismaconnect.fr",
-            "resolved": "api.prismaconnect.fr.edgekey.net"
+            "original": "player-video.lefigaro.fr",
+            "resolved": "player-video.lefigaro.fr.edgekey.net"
         },
         {
             "original": "static.lefigaro.fr",
@@ -28,57 +28,30 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "fr\\.edgekey\\.net\\/ping",
+            "rule": "fr\\.edgekey\\.net\\/figanalytics\\/figanalytics-short-ttl\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api.prismaconnect"
+                "static-lefigaro"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "api.prismaconnect.fr",
-                    "resolved": "api.prismaconnect.fr.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cuisineactuelle.fr",
-                "www.femmeactuelle.fr",
-                "www.programme-tv.net"
-            ]
-        },
-        {
-            "rule": "fr\\.edgekey\\.net\\/ping",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.prismaconnect"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [
-                {
-                    "original": "api.prismaconnect.fr",
-                    "resolved": "api.prismaconnect.fr.edgekey.net"
+                    "original": "static.lefigaro.fr",
+                    "resolved": "static-lefigaro.fr.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "9408be658ddfc6ec2f04f3a6c48fac9258c99351aa21c76cd51121d230921161"
+                "e15e71dca711f561635df8e00f5f650af1c982e2d2af3377572c352b6e236993"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cuisineactuelle.fr",
-                "www.femmeactuelle.fr",
-                "www.programme-tv.net"
+                "lefigaro.fr",
+                "www.lefigaro.fr"
             ]
         },
         {
@@ -205,6 +178,33 @@
                 "lefigaro.fr",
                 "www.lefigaro.fr"
             ]
+        },
+        {
+            "rule": "fr\\.edgekey\\.net\\/player-short-polling",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player-video.lefigaro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "player-video.lefigaro.fr",
+                    "resolved": "player-video.lefigaro.fr.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6f7552fd5eaaf4bc2585e517533af0ee752a57335c88297d78bd90550d75d26c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "www.lefigaro.fr"
+            ]
         }
     ],
     "categories": [],
@@ -213,21 +213,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
-        },
-        {
-            "domain": "pmdstatic.net",
-            "prevalence": 0.3
+            "prevalence": 0.8333333333333334
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.1
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Preflight": 3,
-        "Fetch": 3,
-        "Font": 10
+        "Script": 2,
+        "Font": 10,
+        "Fetch": 2
     },
     "nameservers": []
 }

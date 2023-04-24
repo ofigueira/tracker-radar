@@ -13,7 +13,8 @@
     "sites": 2,
     "subdomains": [
         "alerts",
-        "ipv6"
+        "ipv6",
+        "sports"
     ],
     "cnames": [
         {
@@ -23,9 +24,21 @@
         {
             "original": "cdn.ndtv.com",
             "resolved": "ipv6.ndtv.com.edgekey.net"
+        },
+        {
+            "original": "edata.ndtv.com",
+            "resolved": "ipv6.ndtv.com.edgekey.net"
+        },
+        {
+            "original": "sdata.ndtv.com",
+            "resolved": "ipv6.ndtv.com.edgekey.net"
+        },
+        {
+            "original": "sports.ndtv.com",
+            "resolved": "sports.ndtv.com.edgekey.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "ndtv\\.com\\.edgekey\\.net\\/images\\/web\\.png",
@@ -78,14 +91,127 @@
                 "ndtv.com",
                 "www.ndtv.com"
             ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/multisportsapi\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sports"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sports.ndtv.com",
+                    "resolved": "sports.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5c5fbca6114dfe56668ec42a4a37db8c0ac77d88c0afde6c8bc02730b3942281"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/sportz\\/cricket\\/xml\\/standing_5157\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sdata.ndtv.com",
+                    "resolved": "ipv6.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d91ef1ff2b1bf375482bcd9f4f2279cb4db555fa0ea5525878823572973b3b0f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/cricket\\/iccCricketwebfeedNew\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "edata.ndtv.com",
+                    "resolved": "ipv6.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ee80b4311986a9cf711c2d153781950728f7ca1981739b27ec555b1da1d99c71"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/cricket\\/graph\\/rrlko04192023222198\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "edata.ndtv.com",
+                    "resolved": "ipv6.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0001,
+    "topInitiators": [
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 1
+        }
+    ],
     "types": {
         "Image": 2,
-        "Script": 2
+        "Script": 8,
+        "XHR": 2
     },
     "nameservers": []
 }

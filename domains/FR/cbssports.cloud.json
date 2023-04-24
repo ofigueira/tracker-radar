@@ -4,17 +4,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
-        "video-api.prod.video",
-        "torq"
+        "video-api.prod.video"
     ],
     "cnames": [
-        {
-            "original": "torq.cbssports.com",
-            "resolved": "torq.cbssports.cloud"
-        },
         {
             "original": "video-api.cbssports.com",
             "resolved": "video-api.prod.video.cbssports.cloud"
@@ -22,6 +17,33 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api.prod.video"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "video-api.cbssports.com",
+                    "resolved": "video-api.prod.video.cbssports.cloud"
+                }
+            ],
+            "responseHashes": [
+                "10afbd94d2673f8b0f125ef9e5c9a3fa1df4686f06ea18db1827f9d106bd6d36"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cbssports.com",
+                "www.cbssports.com"
+            ]
+        },
         {
             "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1\\/",
             "cookies": 0,
@@ -46,58 +68,6 @@
                 "cbssports.com",
                 "www.cbssports.com"
             ]
-        },
-        {
-            "rule": "cbssports\\.cloud\\/vms\\/fms\\/proxy\\/v1\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "video-api.prod.video"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "video-api.cbssports.com",
-                    "resolved": "video-api.prod.video.cbssports.cloud"
-                }
-            ],
-            "responseHashes": [
-                "fc9e8fc29ff1fa665bbccf2c66afa06cff5ad78c3a4969966b689053bd76ae28"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbssports.com",
-                "www.cbssports.com"
-            ]
-        },
-        {
-            "rule": "cbssports\\.cloud\\/torq\\/handler\\/info",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "torq"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "torq.cbssports.com",
-                    "resolved": "torq.cbssports.cloud"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cbssports.com",
-                "www.cbssports.com"
-            ]
         }
     ],
     "categories": [],
@@ -106,18 +76,21 @@
     "topInitiators": [
         {
             "domain": "rum.us-east-1.amazonaws.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "cbsistatic.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Preflight": 2,
         "Fetch": 2,
-        "XHR": 2
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-113.awsdns-14.com",
         "ns-1343.awsdns-39.org",
-        "ns-1856.awsdns-40.co.uk",
-        "ns-953.awsdns-55.net"
+        "ns-113.awsdns-14.com",
+        "ns-953.awsdns-55.net",
+        "ns-1856.awsdns-40.co.uk"
     ]
 }

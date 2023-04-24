@@ -10,12 +10,13 @@
     "prevalence": 0.00151,
     "sites": 15,
     "subdomains": [
-        "emarketeer.eu",
+        "cdn",
+        "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants",
         "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
+        "cnet-prod-cd-n90idjtqkgdqweek.edge.tenants.us",
         "dr-prod-cd-etu2agozgmf6idyg.edge.tenants.eu",
         "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
-        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
-        "cdn"
+        "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
     ],
     "cnames": [
         {
@@ -27,34 +28,73 @@
             "resolved": "naf-cd-qf7uhj9homrrm574.edge.tenants.eu.auth0.com"
         },
         {
+            "original": "login.cnet.com",
+            "resolved": "cnet-prod-cd-n90idjtqkgdqweek.edge.tenants.us.auth0.com"
+        },
+        {
             "original": "login.dr.dk",
             "resolved": "dr-prod-cd-etu2agozgmf6idyg.edge.tenants.eu.auth0.com"
         },
         {
             "original": "login.finder.com",
             "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.make.co",
+            "resolved": "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000602,
+            "rule": "auth0\\.com\\/ulp\\/react-components\\/1\\.68\\.2\\/css\\/main\\.cdn\\.min\\.css",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "emarketeer.eu",
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "bc0e0714a566a0ca84b759ee4756381e1b57b142a4f8886c228a280c328baa44"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "openai.com",
+                "platform.openai.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/authorize",
+            "cookies": 0.000704,
+            "fingerprinting": 0,
+            "subdomains": [
+                "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants",
                 "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
+                "cnet-prod-cd-n90idjtqkgdqweek.edge.tenants.us",
                 "dr-prod-cd-etu2agozgmf6idyg.edge.tenants.eu",
                 "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000602,
+            "sites": 7,
+            "prevalence": 0.000704,
             "cnames": [
+                {
+                    "original": "login.make.co",
+                    "resolved": "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants.auth0.com"
+                },
                 {
                     "original": "id.naf.no",
                     "resolved": "naf-cd-qf7uhj9homrrm574.edge.tenants.eu.auth0.com"
+                },
+                {
+                    "original": "login.cnet.com",
+                    "resolved": "cnet-prod-cd-n90idjtqkgdqweek.edge.tenants.us.auth0.com"
                 },
                 {
                     "original": "login.dr.dk",
@@ -70,87 +110,48 @@
                 }
             ],
             "responseHashes": [
-                "51d51ed1eee323b08a5828a1090ed14461d396b9574f00f5274004ae69ca6cff",
-                "c1218dd2ee0ed535ce8e60972927bacc7e40d40369b163f49e1ed4caa6882148"
+                "aec9bf44487886a939fb3974771ae10c75a6056a888fb8b61138c8d0760fcaed",
+                "a88f4caaf5604063a763aafdcc2a93e144a05e94592d2738fb665a43d2f0322c",
+                "46df68d717584b8d89d3ace5b37affaa3219a49921bdc0ef5585405fd67cff5c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "emarketeer.com",
+                "makezine.com",
                 "nye.naf.no",
+                "www.cnet.com",
                 "www.dr.dk",
                 "www.finder.com",
                 "www.naf.no",
                 "www.native-instruments.com"
             ]
-        },
-        {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\.4\\/auth0\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "battlefy.com",
-                "www.carsguide.com.au"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/ulp\\/react-components\\/1\\.66\\.5\\/css\\/main\\.cdn\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "9c9c960287f02697cc0d063f27483835605855ea7f7fa2c6da3089a71ee2887b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "openai.com",
-                "platform.openai.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000602,
+    "cookies": 0.000704,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9166666666666666
+            "prevalence": 0.7692307692307693
+        },
+        {
+            "domain": "auth0.com",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "dvh1deh6tagwk.cloudfront.net",
+            "prevalence": 0.07692307692307693
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.08333333333333333
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Document": 6,
-        "Script": 2,
-        "Stylesheet": 2
+        "Stylesheet": 2,
+        "Document": 7
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",

@@ -9,24 +9,37 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000704,
+    "sites": 7,
     "subdomains": [
         "unagi",
         "unagi-eu",
-        "fls-eu"
+        "fls-na",
+        "fls-eu",
+        "unagi-na",
+        "payments-de",
+        "payments",
+        "apay-us"
     ],
     "cnames": [
         {
-            "original": "fls-eu.amazon.pl",
+            "original": "fls-eu.amazon.eg",
             "resolved": "fls-eu.amazon.com"
         },
         {
-            "original": "unagi.amazon.pl",
+            "original": "fls-eu.amazon.se",
+            "resolved": "fls-eu.amazon.com"
+        },
+        {
+            "original": "unagi.amazon.eg",
+            "resolved": "unagi-eu.amazon.com"
+        },
+        {
+            "original": "unagi.amazon.se",
             "resolved": "unagi-eu.amazon.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.csa\\.prod",
@@ -37,11 +50,15 @@
                 "unagi-eu"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [
                 {
-                    "original": "unagi.amazon.pl",
+                    "original": "unagi.amazon.se",
+                    "resolved": "unagi-eu.amazon.com"
+                },
+                {
+                    "original": "unagi.amazon.eg",
                     "resolved": "unagi-eu.amazon.com"
                 }
             ],
@@ -52,9 +69,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abebooks.co.uk",
+                "rarerecordscollector.com",
                 "www.abebooks.com",
-                "www.amazon.pl"
+                "www.amazon.se",
+                "www.amazon.eg"
             ]
         },
         {
@@ -62,14 +80,19 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "fls-na",
                 "fls-eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
-                    "original": "fls-eu.amazon.pl",
+                    "original": "fls-eu.amazon.se",
+                    "resolved": "fls-eu.amazon.com"
+                },
+                {
+                    "original": "fls-eu.amazon.eg",
                     "resolved": "fls-eu.amazon.com"
                 }
             ],
@@ -80,8 +103,78 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "amazon.pl",
-                "www.amazon.pl"
+                "rarerecordscollector.com",
+                "www.amazon.se",
+                "www.amazon.eg"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/1\\/events\\/com\\.amazon\\.csm\\.nexusclient\\.prod",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unagi-na",
+                "unagi-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rarerecordscollector.com",
+                "www.amazon.se",
+                "www.amazon.eg"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/gp\\/widgets\\/sessionstabilizer",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments-de",
+                "payments"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "19f97b721526b1b9fa6b146f5cd4240406cad50a5bba5f4e4a4a2472b2f11a20"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stetson.eu",
+                "www.mathway.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.com\\/cs\\/uedata",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apay-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mathway.com",
+                "www.mathway.com"
             ]
         }
     ],
@@ -94,34 +187,47 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "ssl-images-amazon.com",
-            "prevalence": 0.6363636363636364
+            "prevalence": 0.5
         },
         {
-            "domain": "abebookscdn.com",
-            "prevalence": 0.18181818181818182
+            "domain": "d3u8ewz6c11pt5.cloudfront.net",
+            "prevalence": 0.2037037037037037
         },
         {
             "domain": "first party",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "payments-amazon.com",
+            "prevalence": 0.09259259259259259
+        },
+        {
+            "domain": "media-amazon.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "abebookscdn.com",
+            "prevalence": 0.018518518518518517
         },
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.018518518518518517
         }
     ],
     "types": {
-        "Ping": 5
+        "Ping": 10,
+        "XHR": 4
     },
     "nameservers": [
         "ns2.p31.dynect.net",
-        "pdns6.ultradns.co.uk",
-        "ns4.p31.dynect.net",
         "ns3.p31.dynect.net",
-        "ns1.p31.dynect.net",
-        "pdns1.ultradns.net"
+        "ns4.p31.dynect.net",
+        "pdns1.ultradns.net",
+        "pdns6.ultradns.co.uk",
+        "ns1.p31.dynect.net"
     ]
 }

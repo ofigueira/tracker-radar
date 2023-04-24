@@ -4,74 +4,136 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "deploy"
+        "deploy",
+        "collect",
+        "cacheorcheck",
+        "fonts"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "mopinion\\.com\\/js\\/pastease\\.js",
-            "cookies": 0.0001,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "deploy"
             ],
             "apis": {
+                "Document.cookie getter": 4,
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "674bf0a560f5a34d40ae4c5a81d0b6ff2f3cbacadd3f2d7d4c5e2f305b94d95d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acm.org",
+                "forum.kpn.com",
+                "min.lowell.no",
+                "www.svb.nl"
+            ]
+        },
+        {
+            "rule": "mopinion\\.com\\/assets\\/surveys\\/2\\.0\\/js\\/survey\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "collect"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.innerWidth": 2,
+                "document.fonts.check": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7163978696a6a18f6de65a7ab46e69abee0958f5e5e61b78bf228573273bf96a"
+                "1d14e728b244768bd4b9a17df4d25d3d028d49596617ad85c5b24ad5de967b5b"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "Pastease.passive.chance.5haz54t1xnkp3ytl7as6rdefbvm1nyq7": {
-                    "ttl": 2592007,
-                    "length": 10,
-                    "prevalence": 0.00010039152695512498,
-                    "uniqueness": 1
-                },
-                "Pastease.passive.activated.5haz54t1xnkp3ytl7as6rdefbvm1nyq7": {
-                    "ttl": 2592007,
-                    "length": 1,
-                    "prevalence": 0.00010039152695512498,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "acm.org",
-                "www.nav.com"
+                "www.svb.nl"
+            ]
+        },
+        {
+            "rule": "mopinion\\.com\\/survey\\/public\\/json-config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cacheorcheck"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ca7acc4ee67dc9423ec12144df74d887a12c776f4cd482bbe47bc313bf2ff7df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acm.org",
+                "www.svb.nl"
+            ]
+        },
+        {
+            "rule": "mopinion\\.com\\/css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fonts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "acm.org",
+                "www.svb.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.75
-        },
-        {
-            "domain": "tiqcdn.com",
-            "prevalence": 0.25
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "XHR": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns-134.awsdns-16.com",
         "ns-1425.awsdns-50.org",
-        "ns-1628.awsdns-11.co.uk",
-        "ns-869.awsdns-44.net"
+        "ns-134.awsdns-16.com",
+        "ns-869.awsdns-44.net",
+        "ns-1628.awsdns-11.co.uk"
     ]
 }

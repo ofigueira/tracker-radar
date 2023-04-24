@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "static"
+        "static",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,23 +21,73 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 5,
+                "window.localStorage": 5,
+                "window.sessionStorage": 5,
+                "Navigator.prototype.language": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "708b793956643bf22e5bd930eadc1db00c59aaba64a9f0b0ad501dfab4df9b2d"
+                "e395843186efd4ab5d0d6697cb6775007f7a06af91ac8c2c7b83cbe5015f94d7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "snusbolaget.se",
+                "haypp.com",
+                "www.haypp.com",
+                "www.hemtex.se",
+                "www.nordicnest.de",
                 "www.snusbolaget.se"
+            ]
+        },
+        {
+            "rule": "redeal\\.se\\/api\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d43651933afeb144f1dddc48f624bd75a7ac7804abff3c7750f54fd1573163a5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haypp.com",
+                "www.hemtex.se",
+                "www.nordicnest.de"
+            ]
+        },
+        {
+            "rule": "redeal\\.se\\/api\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haypp.com",
+                "www.hemtex.se",
+                "www.nordicnest.de"
             ]
         }
     ],
@@ -46,11 +97,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 5,
+        "XHR": 3,
+        "Preflight": 3
     },
     "nameservers": [
         "ns1.loopia.se",

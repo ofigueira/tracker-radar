@@ -7,14 +7,41 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000603,
+    "sites": 6,
     "subdomains": [
-        "embed"
+        "embed",
+        "rudderstack.cdp.prod.data"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "typeform\\.com\\/next\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "fbbf536bef37756df49ad4d23557ff6bfcc4b7279557d9360bdc70487481d132"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auto-gpt.ai",
+                "www.dorcelstore.com",
+                "www.lanef.com",
+                "www.ornikar.com"
+            ]
+        },
         {
             "rule": "typeform\\.com\\/embed\\.js",
             "cookies": 0,
@@ -38,24 +65,72 @@
                 "autosphere.fr",
                 "www.services-eau-france.fr"
             ]
+        },
+        {
+            "rule": "typeform\\.com\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rudderstack.cdp.prod.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dorcelstore.com",
+                "www.dorcelstore.com"
+            ]
+        },
+        {
+            "rule": "typeform\\.com\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rudderstack.cdp.prod.data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dorcelstore.com",
+                "www.dorcelstore.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7272727272727273
+        },
+        {
+            "domain": "rudderlabs.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-14.awsdns-01.com",
-        "ns-1725.awsdns-23.co.uk",
         "ns-788.awsdns-34.net",
-        "ns-1444.awsdns-52.org"
+        "ns-1444.awsdns-52.org",
+        "ns-1725.awsdns-23.co.uk"
     ]
 }

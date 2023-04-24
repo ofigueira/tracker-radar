@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "rum"
     ],
@@ -23,18 +23,44 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "cf5b9c9d4cb355717dc1167bae1f7738a88a58a411c21363cc78949bfea448ff"
+                "902cc3aa53907c402aa275d9a4f1dc26aace593dc3a4b6fb97e2a6acabad2a71",
+                "b8900df8f7bbb5e92a0bf75f3c7cb11b7b739f3e7a640799631310764c69fb96",
+                "6869f7f5c34b4b225dac45ac64dce0612f52367976becf03c2f047b6813887de"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "greyhound.com",
-                "www.greyhound.com"
+                "www.greyhound.com",
+                "www.milb.com",
+                "www.mlb.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.eu\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e98da01fe34559c87356474dff565e2cb6f8cf1427983a6e32d48a1057c853d7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milb.com",
+                "www.mlb.com"
             ]
         }
     ],
@@ -43,16 +69,25 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "mlbstatic.com",
+            "prevalence": 0.38235294117647056
+        },
+        {
+            "domain": "datadome.co",
+            "prevalence": 0.35294117647058826
+        },
+        {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 1
+            "prevalence": 0.2647058823529412
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 4,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
         "ns-cloud-e1.googledomains.com",
         "ns-cloud-e4.googledomains.com"
     ]

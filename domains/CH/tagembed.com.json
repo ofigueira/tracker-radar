@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000101,
+    "prevalence": 0.0001,
     "sites": 1,
     "subdomains": [
-        "cdn"
+        "widget",
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "tagembed\\.com\\/embed\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "56ad8c34666d61513953a2b4e33d88d7dae5825efb4da2972ad082347ff8cc6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcz.ch",
+                "www.fcz.ch"
+            ]
+        },
         {
             "rule": "tagembed\\.com\\/app\\/js\\/slackdown\\.js",
             "cookies": 0,
@@ -33,6 +59,48 @@
                 "fcz.ch",
                 "www.fcz.ch"
             ]
+        },
+        {
+            "rule": "tagembed\\.com\\/app\\/expost\\/updateexpirypost",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcz.ch",
+                "www.fcz.ch"
+            ]
+        },
+        {
+            "rule": "tagembed\\.com\\/app\\/expost\\/updateexpirypost",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d770a68a9d33cd2783fc9db9efbc92aae9d68d0f3080feba10469537398293b2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcz.ch",
+                "www.fcz.ch"
+            ]
         }
     ],
     "categories": [],
@@ -45,7 +113,9 @@
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "imani.ns.cloudflare.com",

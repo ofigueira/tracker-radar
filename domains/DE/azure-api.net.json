@@ -12,9 +12,14 @@
     "prevalence": 0.000502,
     "sites": 5,
     "subdomains": [
+        "davisgateway-apiman-prd",
         "uiapim2b80e30deb7e"
     ],
     "cnames": [
+        {
+            "original": "davis.vattenfall.de",
+            "resolved": "davisgateway-apiman-prd.azure-api.net"
+        },
         {
             "original": "internal.api.union-investment.de",
             "resolved": "uiapim2b80e30deb7e.azure-api.net"
@@ -23,7 +28,59 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "azure-api\\.net\\/beta\\/web\\/portrait\\/fundindex",
+            "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.3\\/Inhalte\\/GetDateien",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "davisgateway-apiman-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "davis.vattenfall.de",
+                    "resolved": "davisgateway-apiman-prd.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.de",
+                "service.vattenfall.de"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/api\\/digitalinterface\\/1\\.3\\/Inhalte\\/GetDateien",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "davisgateway-apiman-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "davis.vattenfall.de",
+                    "resolved": "davisgateway-apiman-prd.azure-api.net"
+                }
+            ],
+            "responseHashes": [
+                "07b1a1e5f612cd86ab5b88bf234eb58dbbc29131f401247b95dd3450b17d9b19"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.de",
+                "service.vattenfall.de"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/beta\\/web\\/funddata\\/fundindex",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -39,7 +96,7 @@
                 }
             ],
             "responseHashes": [
-                "b81fb3784e11708c7c1f0f41623831954e43fb6f92f8bc58026b9c71df4188f3"
+                "80df60bc8597a366ce3133c4a73f76c303534820537c9391dd04e8ee77b1e14d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -50,7 +107,7 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/beta\\/web\\/portrait\\/fundindex",
+            "rule": "azure-api\\.net\\/beta\\/web\\/funddata\\/fundindex",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -85,8 +142,9 @@
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Preflight": 4,
+        "XHR": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns1-05.azure-dns.com",

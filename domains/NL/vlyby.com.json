@@ -7,7 +7,9 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "vtrack",
+        "v2track"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -27,26 +29,73 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 1,
                 "Navigator.prototype.cookieEnabled": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
                 "Navigator.prototype.language": 1,
-                "Navigator.prototype.vendor": 1
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.connection": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6154637037044f078dc9a01bd04e2b2bf15c48b56e5735524cf5ef18aa227a8f"
+                "cee19839849514fee89465fd40c4dfd3640ee9682e1e296bd2cc998ed0de0523"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "geenstijl.nl",
+                "www.routenet.nl"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/vtrack",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vtrack"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geenstijl.nl",
+                "www.geenstijl.nl",
+                "www.routenet.nl"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geenstijl.nl",
+                "www.geenstijl.nl",
                 "www.routenet.nl"
             ]
         },
@@ -78,16 +127,21 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "mmcdn.nl",
-            "prevalence": 0.6666666666666666
+            "domain": "consentmanager.net",
+            "prevalence": 0.6428571428571429
         },
         {
-            "domain": "consentmanager.net",
-            "prevalence": 0.3333333333333333
+            "domain": "first party",
+            "prevalence": 0.21428571428571427
+        },
+        {
+            "domain": "mmcdn.nl",
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Script": 2,
+        "Image": 6,
         "Media": 2
     },
     "nameservers": [

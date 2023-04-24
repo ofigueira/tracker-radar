@@ -13,6 +13,7 @@
     "sites": 2,
     "subdomains": [
         "alerts",
+        "sports",
         "ipv6"
     ],
     "cnames": [
@@ -21,11 +22,15 @@
             "resolved": "alerts.ndtv.com.edgekey.net"
         },
         {
-            "original": "cdn.ndtv.com",
+            "original": "sdata.ndtv.com",
             "resolved": "ipv6.ndtv.com.edgekey.net"
+        },
+        {
+            "original": "sports.ndtv.com",
+            "resolved": "sports.ndtv.com.edgekey.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "ndtv\\.com\\.edgekey\\.net\\/images\\/web\\.png",
@@ -55,7 +60,34 @@
             ]
         },
         {
-            "rule": "ndtv\\.com\\.edgekey\\.net\\/common\\/onemin\\/storyUpdateNew\\.json",
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/multisportsapi\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sports"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "sports.ndtv.com",
+                    "resolved": "sports.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9419e9e4dad0cf7640b86e13aa18232bc12d680f4dcfb9d1982c6d2fcbb58ffa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/sportz\\/cricket\\/xml\\/standing_5157\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -66,12 +98,14 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "cdn.ndtv.com",
+                    "original": "sdata.ndtv.com",
                     "resolved": "ipv6.ndtv.com.edgekey.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Script",
+            "responseHashes": [
+                "f31942fd05e4fdab84c267866b14611b574d3f937b9c67a28c791054b0a8cbce"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -82,10 +116,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "types": {
         "Image": 2,
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": []
 }
