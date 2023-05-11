@@ -4,13 +4,13 @@ These domains were identified by crawling the top sites on the internet, and loo
 - Domain and entity data is automatically generated using the [Tracker Radar Detector](https://github.com/duckduckgo/tracker-radar-detector)
 
 - [**Domains**](#Domains): Automatically generated domain data files.
-- [**Entities**](#entities): Automatically generated data on entities or companies that control the domain. 
+- [**Entities**](#entities): Automatically generated data on entities or companies that control the domain.
 - [**Build data**](#build-data): Static files used to build the domain data files. This includes data on privacy policies, surrogate definitions, categories, and more.
-- [**Breakage data**](#breakage-data): Static files defining broken sites or requests that can cause breakage. 
+- [**Breakage data**](#breakage-data): Static files defining broken sites or requests that can cause breakage.
 
 ## Development
 
-- The domain and entity data is automatically generated using [Tracker Radar Detector](https://github.com/duckduckgo/tracker-radar-detector). 
+- The domain and entity data is automatically generated using [Tracker Radar Detector](https://github.com/duckduckgo/tracker-radar-detector).
 - New development and bug fixes, other than broken sites, are handled internally.
 
 ## Domains
@@ -78,7 +78,7 @@ An optional array of resources that can cause breakage if blocked.
 |||
 |--|--|
 |**rule**|A regex to match against the request URL|
-|**domains**|An optional list of domains that this breaking rule applies to| 
+|**domains**|An optional list of domains that this breaking rule applies to|
 |**types**|An optional list of request types that this breaking rule applies to|
 
 #### Surrogates
@@ -89,7 +89,7 @@ An optional array of resources and replacement function names to prevent site br
 |**rule**|A regex to match against the request URL|
 |**replaceWith**|Name of replacement function to serve in place to avoid site breakage (NOTE: These are not currently included in the Tracker Radar data)|
 
-#### Source 
+#### Source
 An array of the organizations or processes which identified the domain. Currently the only value in all domains is DDG, but more may be added in the future.
 
 #### Owner
@@ -140,7 +140,7 @@ Categories assigned to each domain, attempting to describe its observed purpose 
 ---
 
 ## Entities
-A list of companies and their properties. One file per company. 
+A list of companies and their properties. One file per company.
 
 Each entity is defined using the following fields:
 
@@ -172,6 +172,7 @@ Generated files created while building Tracker Radar
 |---|---|
 |[api_fingerprint_weights](/build-data/generated/api_fingerprint_weights.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher weight means that an API is more likely to be used for fingerprinting|
 |[tracking-parameters](/build-data/generated/tracking_parameters.json)|An object listing how prevalent a parameter is used in third party requests and cookies.|
+|[dataBySite](/build-data/generated/dataBySite.json)|Data keyed down to site. Currently this contains information on the level of fingerprinting attributed to requests, in terms of number of standard deviations above the mean (0 being the mean, 1 being one standard deviation above the mean, and so on).|
 
 ### Tracking parameters
 
@@ -199,10 +200,10 @@ Tracking parameters are found by generating parameter values, and adding these t
 
 ### /static/breaking
 
-We use three [breakage files](/build-data/static/breaking): two temporary breakage files meant for quick fixes and one long-term breakage file for requests. 
+We use three [breakage files](/build-data/static/breaking): two temporary breakage files meant for quick fixes and one long-term breakage file for requests.
 
 ### Temporary breakage data
-Temporary breakage data is meant for quick fixes to address major site breakage. Temporary breakage entries will have a corresponding issue to find a long-term solution. 
+Temporary breakage data is meant for quick fixes to address major site breakage. Temporary breakage entries will have a corresponding issue to find a long-term solution.
 
 |Name|Use|
 |---|---|
@@ -222,13 +223,13 @@ Temporary breakage data is meant for quick fixes to address major site breakage.
 |Name|Use|
 |---|---|
 |**rule**| A regex rule that will match on the request. These should be as specific as possible to fix the issue. |
-|**domains**| An optional list of domains that this breaking rule should apply to.| 
+|**domains**| An optional list of domains that this breaking rule should apply to.|
 |**requestTypes**| An optional list of request types that this breaking rule should apply to.|
 |**reason**|<ul><li>**category**: List of [breakage categories](#breakage-categories)</li><li>**links**: List of links back to pull request where this breaking entry was added or changed</li></ul>|
 
 ### Site
 
-The site breaking entries are key/value mapping a site domain to a breakage category. 
+The site breaking entries are key/value mapping a site domain to a breakage category.
 
 |Name|Use|
 |---|---|
