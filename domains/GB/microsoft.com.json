@@ -9,12 +9,13 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
         "browser.pipe.aria",
-        "edge-auth",
-        "browser.events.data"
+        "c3ca046c0ca985a263d8e91482a92c0e.measure",
+        "browser.events.data",
+        "edge-auth"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -27,8 +28,8 @@
                 "browser.pipe.aria"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000503,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -37,33 +38,32 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nhsbsa.nhs.uk",
-                "faq.nhsbsa.nhs.uk",
+                "clevelandclinic.org",
                 "my.clevelandclinic.org",
                 "rnid.org.uk",
                 "www.aberdeenshire.gov.uk"
             ]
         },
         {
-            "rule": "microsoft\\.com\\/js\\/ms_auth_client\\.min\\.js",
+            "rule": "microsoft\\.com\\/apc\\/trans\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "edge-auth"
+                "c3ca046c0ca985a263d8e91482a92c0e.measure"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "46b346f8b2469e2a81cb80304e10cbb34ec4a3b33b0e59aebffc473d642fcc67"
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "benzinga.com",
-                "www.salon.com"
+                "forestresearch.gov.uk",
+                "www.forestresearch.gov.uk"
             ]
         },
         {
@@ -78,7 +78,7 @@
             "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "03aebfac166da79b5b1949ae2255bc650db82407ac13be3fc7989a703cc80ee8",
+                "a5c0ee313fb2e48f10484f6b092b136c695ea77440a5857abdf6375f027e3285",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
@@ -88,6 +88,52 @@
                 "minecraft.net",
                 "www.minecraft.net",
                 "www.trekbikes.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/js\\/ms_auth_client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "edge-auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "46b346f8b2469e2a81cb80304e10cbb34ec4a3b33b0e59aebffc473d642fcc67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newsweek.com",
+                "www.salon.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newsweek.com",
+                "www.newsweek.com"
             ]
         }
     ],
@@ -101,30 +147,39 @@
     "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "azureedge.net",
-            "prevalence": 0.47368421052631576
+            "domain": "first party",
+            "prevalence": 0.3181818181818182
         },
         {
-            "domain": "first party",
-            "prevalence": 0.42105263157894735
+            "domain": "azureedge.net",
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "atmrum.net",
+            "prevalence": 0.2727272727272727
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.045454545454545456
+        },
+        {
+            "domain": "d275im4r3zngba.cloudfront.net",
+            "prevalence": 0.045454545454545456
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "XHR": 8,
-        "Script": 2
+        "XHR": 9,
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns1-39.azure-dns.com",
         "ns2-39.azure-dns.net",
-        "ns4-39.azure-dns.info",
-        "ns3-39.azure-dns.org"
+        "ns3-39.azure-dns.org",
+        "ns4-39.azure-dns.info"
     ]
 }

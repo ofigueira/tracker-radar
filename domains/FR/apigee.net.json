@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000503,
-    "sites": 5,
+    "prevalence": 0.000606,
+    "sites": 6,
     "subdomains": [
+        "adsk-prod",
         "mns-00.dn",
         "fandom-prod"
     ],
@@ -19,10 +20,39 @@
         {
             "original": "api.marksandspencer.com",
             "resolved": "mns-00.dn.apigee.net"
+        },
+        {
+            "original": "developer.api.autodesk.com",
+            "resolved": "adsk-prod.apigee.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adsk-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "developer.api.autodesk.com",
+                    "resolved": "adsk-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autodesk.com",
+                "help.autodesk.com"
+            ]
+        },
         {
             "rule": "apigee\\.net\\/phoenix-eventcollector\\/v1\\/event\\/mparticle",
             "cookies": 0,
@@ -32,7 +62,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "api.marksandspencer.com",
@@ -57,7 +87,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "api.marksandspencer.com",
@@ -84,10 +114,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "5c2e00154b71b2a8c3e84ff585fbc09b43a825d525313b5df3c28809e5f5b4bd"
+                "03881c55b2018976bca84850ed9e6ba291f5a03b822dbc3d46f05e8e25dce79c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -106,10 +136,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "e5e97eb50e900d2479ca8c7b6af2e24ebb9688eae1f7463e01efa41ab84bc344"
+                "d275e41a8d6e67b30c2f4f43cbcfe5be0007dead42aa47629d379967d994ea8d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,7 +154,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000202,
     "topInitiators": [
         {
             "domain": "first party",
@@ -136,6 +166,7 @@
         }
     ],
     "types": {
+        "Document": 2,
         "Preflight": 2,
         "XHR": 6
     },

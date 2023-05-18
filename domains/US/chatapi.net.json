@@ -4,16 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000134,
     "sites": 2,
     "subdomains": [
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "chatapi\\.net\\/integration\\/widgets\\/config\\/0cbc4feb-795f-4238-b9b4-82d42c998c82",
+            "rule": "chatapi\\.net\\/webchat\\/widget\\/chat\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -21,36 +21,41 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000134,
             "cnames": [],
             "responseHashes": [
-                "b88e4c345b792d82d1af56b865cb518b1c48d36816ce162ca719c9391fd804b8"
+                "3a7a48f1015548712281f8eccafb56757db231cbf0a63e5ab34514c1af1c162f"
             ],
-            "type": "Fetch",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "snp.nl",
+                "acstechnologies.com",
                 "www.snp.nl"
             ]
         },
         {
-            "rule": "chatapi\\.net\\/integration\\/widgets\\/config\\/0cbc4feb-795f-4238-b9b4-82d42c998c82",
+            "rule": "chatapi\\.net\\/webchat\\/widget\\/js\\/chat\\.8ce2f916\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000134,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "6136ea8150dd5326c23e3bd6fc61f24dc18e754bd3408043c55947b6c23f9d39"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "snp.nl",
+                "acstechnologies.com",
                 "www.snp.nl"
             ]
         }
@@ -61,12 +66,16 @@
     "topInitiators": [
         {
             "domain": "respond.io",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Document": 2,
+        "Script": 2
     },
     "nameservers": [
         "phil.ns.cloudflare.com",

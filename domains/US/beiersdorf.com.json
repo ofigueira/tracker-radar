@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000202,
+    "sites": 3,
     "subdomains": [
         "tm-eu",
         "smpl"
@@ -15,7 +15,7 @@
     "resources": [
         {
             "rule": "beiersdorf\\.com\\/gtm\\.js",
-            "cookies": 0,
+            "cookies": 0.0000134,
             "fingerprinting": 1,
             "subdomains": [
                 "tm-eu"
@@ -23,19 +23,33 @@
             "apis": {
                 "Navigator.prototype.userAgent": 3,
                 "Navigator.prototype.appVersion": 3,
+                "Document.cookie getter": 3,
                 "Date.prototype.getTime": 3,
-                "Document.cookie getter": 2,
-                "NavigatorUAData.prototype.getHighEntropyValues": 1
+                "NavigatorUAData.prototype.getHighEntropyValues": 1,
+                "Document.cookie setter": 2
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000202,
             "cnames": [],
             "responseHashes": [
-                "35e8ba1b68a5db17ac8fa9b8065be7d585c3d4c03b6a077ed9b222bb0b0cf803",
-                "33ac231544780c3c09a67af132d80d0b6b9492c93a34861fd642c7c348f8ae3d"
+                "77673ccd6df71fc7674ecf42789d885c949b4c006fd115661f14b8f5db759df0",
+                "527144f2994287c085f7b72d1cb9a22902da239904ef63a08e0c2a4c05ed14d6"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_uconfig": {
+                    "ttl": 15552005,
+                    "length": 233,
+                    "prevalence": 0.000013433818294173752,
+                    "uniqueness": 1
+                },
+                "_sconfig": {
+                    "ttl": 1804,
+                    "length": 85,
+                    "prevalence": 0.000013433818294173752,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eucerin.de",
@@ -51,21 +65,21 @@
                 "smpl"
             ],
             "apis": {
-                "Navigator.prototype.language": 3,
-                "Navigator.prototype.doNotTrack": 3,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
                 "Date.prototype.getTimezoneOffset": 3,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "window.innerWidth": 1,
-                "window.innerHeight": 1
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000202,
             "cnames": [],
             "responseHashes": [
                 "76039a26bb3656600240ac08bc5f0ce450661977af129ab9c746ea4efe45a1a0"
@@ -75,7 +89,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eucerin.de",
-                "www.eucerin.de",
+                "www.eucerinus.com",
                 "www.nivea.de"
             ]
         },
@@ -88,7 +102,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000202,
             "cnames": [],
             "responseHashes": [
                 "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
@@ -98,7 +112,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eucerin.de",
-                "www.eucerin.de",
+                "www.eucerinus.com",
                 "www.nivea.de"
             ]
         },
@@ -111,7 +125,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -119,29 +133,82 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eucerin.de",
-                "www.eucerin.de",
+                "www.eucerinus.com",
                 "www.nivea.de"
+            ]
+        },
+        {
+            "rule": "beiersdorf\\.com\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tm-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000134,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eucerinus.com",
+                "www.eucerinus.com"
+            ]
+        },
+        {
+            "rule": "beiersdorf\\.com\\/g\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tm-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000134,
+            "cnames": [],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eucerinus.com",
+                "www.eucerinus.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000134,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.38461538461538464
+        },
+        {
+            "domain": "google-analytics.com",
+            "prevalence": 0.38461538461538464
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.23076923076923078
         }
     ],
     "types": {
         "Script": 6,
-        "Ping": 3,
-        "Preflight": 3
+        "Ping": 5,
+        "Preflight": 3,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1.netnames.net",
-        "ns2.netnames.net",
         "ns5.netnames.net",
-        "ns6.netnames.net"
+        "ns1.netnames.net",
+        "ns6.netnames.net",
+        "ns2.netnames.net"
     ]
 }

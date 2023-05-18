@@ -7,12 +7,22 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
-        "servicenowsignon.customdomains"
+        "servicenowsignon.customdomains",
+        "logon.customdomains",
+        "churchofjesuschrist.customdomains"
     ],
     "cnames": [
+        {
+            "original": "id.churchofjesuschrist.org",
+            "resolved": "churchofjesuschrist.customdomains.okta.com"
+        },
+        {
+            "original": "logon.bcg.com",
+            "resolved": "logon.customdomains.okta.com"
+        },
         {
             "original": "ssosignon.servicenow.com",
             "resolved": "servicenowsignon.customdomains.okta.com"
@@ -37,7 +47,7 @@
                 }
             ],
             "responseHashes": [
-                "25bf704a3d26ee98a4aa61702391ce5f30611c1c73fad7632f8afc26b4debef5"
+                "e621c9b6fce0c1ffb59edda50dbb884521d0f0fc9c13a3b7f6f301bdc0067141"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -46,19 +56,88 @@
                 "servicenow.com",
                 "www.servicenow.com"
             ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servicenowsignon.customdomains",
+                "logon.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "ssosignon.servicenow.com",
+                    "resolved": "servicenowsignon.customdomains.okta.com"
+                },
+                {
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "servicenow.com",
+                "www.bcg.com",
+                "www.servicenow.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logon.customdomains",
+                "churchofjesuschrist.customdomains",
+                "servicenowsignon.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "logon.bcg.com",
+                    "resolved": "logon.customdomains.okta.com"
+                },
+                {
+                    "original": "id.churchofjesuschrist.org",
+                    "resolved": "churchofjesuschrist.customdomains.okta.com"
+                },
+                {
+                    "original": "ssosignon.servicenow.com",
+                    "resolved": "servicenowsignon.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bcg.com",
+                "www.churchofjesuschrist.org",
+                "www.servicenow.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000403,
     "topInitiators": [
         {
-            "domain": "jquery.com",
+            "domain": "azureedge.net",
             "prevalence": 1
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "edns5.ultradns.biz",

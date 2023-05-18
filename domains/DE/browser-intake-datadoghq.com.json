@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0012,
-    "sites": 12,
+    "prevalence": 0.000806,
+    "sites": 8,
     "subdomains": [
-        "rum"
+        "rum",
+        "logs",
+        "session-replay"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,30 +25,68 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "68c5a8817235373db768fb13ac6731ec1b9e1493e9e7d6deba396f94cfe05741",
-                "e68179686a376b9153a2a2c8d39dc94e290558a30bbe122cafcd46719550a754",
-                "e506e0eade1a87b2889911cdf9e92bfa7c6d5ad4c2162c1626d139599c213189",
-                "9840562a04ff2663321c08ea38f7eee8c51d6b01eef273d3af8ab88185cf3ad0",
-                "7c999cb8afc25caae233641829b735c93ade9b75a05940cf07e5248deba900ae",
-                "c56ab79ad13989466ed508625910749cb379c8408459d1254b9ae51384963305",
-                "abe88c8ed9546e83a7d0d77d8d99b1b23bbc1646bd54e079e2f02c3eee22b70d"
+                "fd7167387f02604cebc1775687ddf6a86f44ce5ebb6c9b0503cea152a7ae967d",
+                "82c2ae5dcc11455a9cae2643b9459c461f903b16b0af4bb3b66603b699574bdc",
+                "cae18de56655d5aa6d2d807865c50386ffac0a3b774e6a23319b07ceada124e4",
+                "52d605e3352c75495979f9da42fc516b6ce435db4ab0f4d259bf3c7cc262720b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "scribd.com",
+                "clickup.com",
                 "developer.hashicorp.com",
                 "www.digikey.com",
                 "www.gartentraum.de",
-                "www.lot-tissimo.com",
-                "www.midjourney.com",
-                "www.mytheresa.com",
                 "www.zoominfo.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "c8c429a4982465b3f3f111f62165b163ac6f6c5e4794e0ab31c5fee2d950251d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "replit.com",
+                "www.backmarket.de"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "codecademy.com",
+                "www.codecademy.com"
             ]
         },
         {
@@ -58,18 +98,41 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "3eaa0c0d7b1ef51e845c4ca8f9d1a2e31ece16464a493f93b83403d223e37d3f",
+                "5a8e85387587b9e5d541a020d0dcd0a4fa327e783b3a272515788ca259520275"
             ],
-            "type": "Ping",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "myfitnesspal.com",
-                "www.myfitnesspal.com",
-                "zapier.com"
+                "codecademy.com",
+                "www.codecademy.com",
+                "www.zoominfo.com"
+            ]
+        },
+        {
+            "rule": "browser-intake-datadoghq\\.com\\/api\\/v2\\/replay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-replay"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b4095269eda1710f48df7a46ae2fea9c2ba8c80b87a3fc3988aa7c3e50402f8b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digikey.com",
+                "www.gartentraum.de"
             ]
         }
     ],
@@ -78,34 +141,27 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.47619047619047616
-        },
-        {
             "domain": "first party",
-            "prevalence": 0.38095238095238093
+            "prevalence": 0.7738095238095238
         },
         {
-            "domain": "zapier-deployment.com",
-            "prevalence": 0.09523809523809523
-        },
-        {
-            "domain": "scribdassets.com",
-            "prevalence": 0.023809523809523808
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.21428571428571427
         },
         {
             "domain": "d1eh9yux7w8iql.cloudfront.net",
-            "prevalence": 0.023809523809523808
+            "prevalence": 0.011904761904761904
         }
     ],
     "types": {
-        "Fetch": 8,
-        "Ping": 3
+        "Fetch": 7,
+        "Ping": 2,
+        "XHR": 5
     },
     "nameservers": [
         "ns-1264.awsdns-30.org",
-        "ns-560.awsdns-06.net",
+        "ns-128.awsdns-16.com",
         "ns-1907.awsdns-46.co.uk",
-        "ns-128.awsdns-16.com"
+        "ns-560.awsdns-06.net"
     ]
 }

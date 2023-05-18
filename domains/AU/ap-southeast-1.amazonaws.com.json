@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000502,
-    "sites": 5,
+    "prevalence": 0.000905,
+    "sites": 9,
     "subdomains": [
-        "aws-sin-slb-internet-64392e0be8997725.elb"
+        "aws-sin-slb-internet-64392e0be8997725.elb",
+        "04apyp8qj6.execute-api"
     ],
     "cnames": [
         {
@@ -20,10 +21,64 @@
             "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aws-sin-slb-internet-64392e0be8997725.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aws-sin-slb-internet-64392e0be8997725.elb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "525586a14df16b766865c1d6c12433c5a432e714aea6a071ab39458024cd54dd",
+                "a69059e6fc91353b11ca287ae2980584885c84da4f3ef4db08b3a50404e3d624"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "au.trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bf\\.gif",
             "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
@@ -39,14 +94,34 @@
                 }
             ],
             "responseHashes": [
-                "87d9fbc5c457d6f70a8dc675f2e94da9a1abce2e0089e2d836309866d797b931"
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "trip.com",
                 "www.trip.com"
+            ]
+        },
+        {
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/dev\\/row",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "04apyp8qj6.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bhg.com.au",
+                "www.bhg.com.au"
             ]
         }
     ],
@@ -54,19 +129,26 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000302,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9629629629629629
+            "prevalence": 0.8157894736842105
         },
         {
-            "domain": "vidgyor.com",
-            "prevalence": 0.037037037037037035
+            "domain": "bonzai.co",
+            "prevalence": 0.15789473684210525
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
-        "XHR": 2
+        "Preflight": 2,
+        "XHR": 3,
+        "Image": 2,
+        "Fetch": 2
     },
     "nameservers": []
 }

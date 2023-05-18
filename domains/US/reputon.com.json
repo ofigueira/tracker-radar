@@ -4,37 +4,107 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000873,
+    "sites": 13,
     "subdomains": [
+        "cdn.tmnls",
         "cdn.grw",
-        "grw"
+        "cdn.etsy",
+        "cdn.amzrw",
+        "grw",
+        "tmnls"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "reputon\\.com\\/assets\\/widget\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "cdn.grw"
+                "cdn.tmnls",
+                "cdn.grw",
+                "cdn.etsy",
+                "cdn.amzrw"
             ],
             "apis": {
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "window.innerWidth": 1
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.innerWidth": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 10,
+            "prevalence": 0.0000672,
             "cnames": [],
             "responseHashes": [
-                "02b7d0eee608c260c9a90f0b61966c71f61e4357c8d6ae2681679c0c219eb27d"
+                "68fd09554bfb41243e72ffefdf5a1e13c27a50f377a60f395082b405768e124b",
+                "a8680c8cd00cca955911e87e51f54cefce41a53b79c91a2ae64182449f652103",
+                "0c252388980bb6105ca63aaef6f2e659ac1789f3b127536a6a4c399dcfe9e05b",
+                "3c152ab367f5a51f843957493b2ddd495dedad46c5ff2af20232596a9c4f56ad",
+                "ed0750f932d7fad2e968e02a070d70adea67e8209b2f6f0e8b23824850a5a51a"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "als-gardencenter.com",
+                "burgertuning.com",
+                "cardiomiracle.com",
+                "doublewoodsupplements.com",
+                "happygardens.com",
+                "kamerastore.com",
+                "senior.com",
+                "tkcustom.com",
+                "www.bioliteenergy.com",
+                "www.progressiveautomations.com"
+            ]
+        },
+        {
+            "rule": "reputon\\.com\\/app\\/storefront\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "grw",
+                "tmnls"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000336,
+            "cnames": [],
+            "responseHashes": [
+                "657d652a7d106558213d7e900054ca314f280b03145953629e1377f8b3acb56f",
+                "809882b8784af1c85965ae43f2e16fbb36216461b246efd8aade36f169440ca0",
+                "711d656cb3f2c49e32100514ff72aed602d25512a5c9cea283f4baf7bbc9e686",
+                "859faf430b25802af346b53258ef1b036d4f980f8ebe739cdebabcbce75f8ac6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgertuning.com",
+                "doublewoodsupplements.com",
+                "kamerastore.com",
+                "senior.com",
+                "www.progressiveautomations.com"
+            ]
+        },
+        {
+            "rule": "reputon\\.com\\/img\\/google_g_logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.grw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000134,
+            "cnames": [],
+            "responseHashes": [
+                "0cf576a5dab9315daac7ffe29d29ed585e0ff9850e59408d0f25f38dc1da037b"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -43,20 +113,20 @@
             ]
         },
         {
-            "rule": "reputon\\.com\\/app\\/storefront\\/widget",
+            "rule": "reputon\\.com\\/img\\/google_logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "grw"
+                "cdn.grw"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000134,
             "cnames": [],
             "responseHashes": [
-                "1183a6f6c19ff3da2563b2739b195553b0e54a8c563d1eda07beb2bde6a79f3c"
+                "973e5fa5a9a0e4163843526a59abd390e5ed0b2817cdc9eafcd8f2a9cab7c5c3"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -71,21 +141,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.7
         },
         {
             "domain": "shopify.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.3
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 10,
+        "XHR": 5,
+        "Image": 4
     },
     "nameservers": [
-        "ns-92.awsdns-11.com",
-        "ns-923.awsdns-51.net",
         "ns-1121.awsdns-12.org",
-        "ns-1581.awsdns-05.co.uk"
+        "ns-92.awsdns-11.com",
+        "ns-1581.awsdns-05.co.uk",
+        "ns-923.awsdns-51.net"
     ]
 }

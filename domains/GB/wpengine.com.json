@@ -7,12 +7,20 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000705,
-    "sites": 7,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "badmainstage"
+        "badmainstage",
+        "dashlaneblog",
+        "cbxmarketing",
+        "xrxland"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "about.crunchbase.com",
+            "resolved": "cbxmarketing.wpengine.com"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -40,21 +48,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "badmainstage"
+                "badmainstage",
+                "dashlaneblog"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "a4b8dafe55ed03839707604c4871f19dfa4d9e35e9a9048a664e8fbd5a5ceddc"
+                "5028e0a6414a477820a8d7bca36511bd1867fa776673fcd4a85534b9a9fb169f",
+                "3dae1cf19173b2f3a9c7a1309d17e2dc54c7db4f68c74893e86a2ead95324996"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bad.org.uk",
-                "www.bad.org.uk"
+                "www.bad.org.uk",
+                "www.dashlane.com"
             ]
         },
         {
@@ -102,6 +113,28 @@
             ]
         },
         {
+            "rule": "wpengine\\.com\\/wp-json\\/wp\\/v2\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "badmainstage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "935ea4d25faa7c02b7746458853ce9ca3775a642c89e36c98c223819e5318e7f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bad.org.uk",
+                "www.bad.org.uk"
+            ]
+        },
+        {
             "rule": "wpengine\\.com\\/menu\\/primary-menu\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -122,25 +155,31 @@
             ]
         },
         {
-            "rule": "wpengine\\.com\\/wp-json\\/wp\\/v2\\/events",
+            "rule": "wpengine\\.com\\/wp-includes\\/js\\/jquery\\/jquery\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "badmainstage"
+                "cbxmarketing",
+                "xrxland"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "828f10c8050373a7cb3da053bea10016561ff278c7461b0074cd0c5754af7753"
+            "cnames": [
+                {
+                    "original": "about.crunchbase.com",
+                    "resolved": "cbxmarketing.wpengine.com"
+                }
             ],
-            "type": "Fetch",
+            "responseHashes": [
+                "cc7403bab52ed166e24ea9324241045af370be482f5b594468f4a6ac6e7e7981"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bad.org.uk",
-                "www.bad.org.uk"
+                "crunchbase.com",
+                "www.support.xerox.com"
             ]
         }
     ],
@@ -150,14 +189,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9659090909090909
+        },
+        {
+            "domain": "d38muu3h4xeqr1.cloudfront.net",
+            "prevalence": 0.03409090909090909
         }
     ],
     "types": {
-        "Fetch": 12
+        "Fetch": 13,
+        "Script": 2
     },
     "nameservers": [
-        "kara.ns.cloudflare.com",
-        "jim.ns.cloudflare.com"
+        "jim.ns.cloudflare.com",
+        "kara.ns.cloudflare.com"
     ]
 }

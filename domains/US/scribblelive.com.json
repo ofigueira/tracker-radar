@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000953,
-    "sites": 14,
+    "prevalence": 0.0000873,
+    "sites": 13,
     "subdomains": [
         "embed",
+        "cdn",
         "counter",
-        "api",
-        "cdn"
+        "cdnlove",
+        "cdnlastmodified"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -18,13 +19,16 @@
         {
             "rule": "scribblelive\\.com\\/widgets\\/embed\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "embed"
             ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000476,
+            "apis": {
+                "Navigator.prototype.appVersion": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000403,
             "cnames": [],
             "responseHashes": [
                 "9857b4b059c3ef76bfd24ee1d9759b6ac2ad33ef459976d429d4d18c4a7b92d2"
@@ -35,63 +39,15 @@
             "exampleSites": [
                 "spectrumnews1.com",
                 "spectrumlocalnews.com",
-                "tg24.sky.it",
                 "www.baynews9.com",
                 "www.mynews13.com",
                 "www.ny1.com",
-                "www.varesenews.com"
-            ]
-        },
-        {
-            "rule": "scribblelive\\.com\\/",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "counter"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "SLStatUid": 0.000006807073911208528,
-                "_li_dcdm_c": 0.000006807073911208528
-            },
-            "exampleSites": [
-                "sky.it",
-                "www.startribune.com"
-            ]
-        },
-        {
-            "rule": "scribblelive\\.com\\/v1\\/stream\\/3029578\\/lastmodified",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "480df5c71e9c75b9359cc03cae1eded0ff05f09fe7ec11b69a323b5b3790fbf3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sky.it",
-                "tg24.sky.it"
+                "www.telegraaf.nl"
             ]
         },
         {
             "rule": "scribblelive\\.com\\/modules\\/lib\\/addons\\.js",
-            "cookies": 0.00000681,
+            "cookies": 0.00000672,
             "fingerprinting": 1,
             "subdomains": [
                 "embed",
@@ -103,7 +59,7 @@
                 "Document.cookie setter": 1
             },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000134,
             "cnames": [],
             "responseHashes": [
                 "166649193d90560233250b64997ee3d72819d624770cc32ff752ba1a975cda69"
@@ -113,13 +69,13 @@
                 "SLStatUid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000006807073911208528,
+                    "prevalence": 0.000006716909147086876,
                     "uniqueness": 1
                 },
                 "SLStatHist": {
                     "ttl": null,
                     "length": 9,
-                    "prevalence": 0.000006807073911208528,
+                    "prevalence": 0.000006716909147086876,
                     "uniqueness": 1
                 }
             },
@@ -128,30 +84,103 @@
                 "startribune.com",
                 "www.startribune.com"
             ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/",
+            "cookies": 0.0000134,
+            "fingerprinting": 0,
+            "subdomains": [
+                "counter"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000134,
+            "cnames": [],
+            "responseHashes": [
+                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SLStatUid": 0.000013433818294173752,
+                "_li_dcdm_c": 0.000006716909147086876
+            },
+            "exampleSites": [
+                "startribune.com",
+                "www.telegraaf.nl"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/likes\\/event\\/3031886",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlove"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000134,
+            "cnames": [],
+            "responseHashes": [
+                "e29d68b5f161ae07c897ad6f9d80aa2438c21d58254f555e2fbf99522cbcbaab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telegraaf.nl",
+                "www.telegraaf.nl"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/lastmodified\\/3031886",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlastmodified"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000134,
+            "cnames": [],
+            "responseHashes": [
+                "915f7d98931a692a3a0e9e35b9d66199fbd758eacc8d511f7a28df659c478e73"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telegraaf.nl",
+                "www.telegraaf.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000134,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9615384615384616
+            "prevalence": 0.6923076923076923
         },
         {
-            "domain": "varesenews.it",
-            "prevalence": 0.038461538461538464
+            "domain": "d11rmv9we9fli4.cloudfront.net",
+            "prevalence": 0.23076923076923078
+        },
+        {
+            "domain": "vocstatic.com",
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Script": 9,
+        "Script": 10,
         "Image": 2,
         "XHR": 2
     },
     "nameservers": [
-        "ns-717.awsdns-25.net",
         "ns-1046.awsdns-02.org",
         "ns-1922.awsdns-48.co.uk",
+        "ns-717.awsdns-25.net",
         "ns-309.awsdns-38.com"
     ]
 }

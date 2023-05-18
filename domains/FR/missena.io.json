@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000603,
-    "sites": 6,
+    "prevalence": 0.000707,
+    "sites": 7,
     "subdomains": [
-        "ad"
+        "ad",
+        "events",
+        "chat"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,14 +25,14 @@
                 "window.localStorage": 6
             },
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
-                "caa66e6db65fbadd0b03d18c631a19de9a6909e3a667bd1747320de596718efa",
-                "ca979186ba7efabe2f9722ca4e7128c1b2f5d2c0bafd3fa54f0c49e03daf6156",
-                "0ba1f566aba8c19fe11db34aae9ecb3a20872ba6a1173d796270fdc38f19686b",
-                "2d887b0cc7d8fb7902da586a11a340c9856eefc09fff190a0f2a463a0396a31b",
-                "42533a022eda0e599d5382958619eedd06d17382e501f86bcd35d3047fe4acf2"
+                "e930d4a6fd9959dc885e1c3500998493de72beff576bb843a2d0aea66098c208",
+                "6cdb86fe7307c6239b6bc549bff4f215a5d97515ee13c12cf6f3695c40eb788c",
+                "3cf062782ca1338d98f6a82bd3d35e5ef099a5c9eea70dcb595ef633772adbb8",
+                "0570d19bca04ebf64041b3c73e37b798685b86a3acd70f8bcab425bb67a8e895",
+                "f5c0c5b900aa191a1976cbd3ca6f57db3c748aa1266a988afcd21e68c7f13520"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,32 +41,119 @@
                 "air-journal.fr",
                 "www.canalturf.com",
                 "www.droitissimo.com",
-                "www.minutefacile.com",
+                "www.freenews.fr",
                 "www.supertoinette.com",
                 "www.turfomania.fr"
+            ]
+        },
+        {
+            "rule": "missena\\.io\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "air-journal.fr",
+                "www.freenews.fr"
+            ]
+        },
+        {
+            "rule": "missena\\.io\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "air-journal.fr",
+                "www.freenews.fr"
+            ]
+        },
+        {
+            "rule": "missena\\.io\\/prebid\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 2,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "0c977b58c238405762487c897c663686ef5861a2b6d5bdaf2d6fd887f62d4424"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592025,
+                    "length": 16,
+                    "prevalence": 0.00010101010101010101,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "air-journal.fr",
+                "www.freenews.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.5
+        },
+        {
+            "domain": "themoneytizer.com",
+            "prevalence": 0.25
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.125
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Script": 6
+        "Script": 8,
+        "Preflight": 2,
+        "Ping": 2
     },
     "nameservers": [
-        "ns-1328.awsdns-38.org",
-        "ns-224.awsdns-28.com",
         "ns-2019.awsdns-60.co.uk",
-        "ns-544.awsdns-04.net"
+        "ns-224.awsdns-28.com",
+        "ns-544.awsdns-04.net",
+        "ns-1328.awsdns-38.org"
     ]
 }

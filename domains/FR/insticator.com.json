@@ -7,32 +7,35 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
+    "prevalence": 0.000202,
     "sites": 2,
     "subdomains": [
+        "geoip",
         "event"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "insticator\\.com\\/v1\\/event",
+            "rule": "insticator\\.com\\/json\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "event"
+                "geoip"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "1e52f92eeb50351a4f205aa3d95385065c94666c6a67f05d743083c2e1ec756e"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mydramalist.com",
-                "www.allkpop.com"
+                "www.sherdog.com"
             ]
         },
         {
@@ -44,15 +47,37 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "allkpop.com",
-                "www.allkpop.com"
+                "mydramalist.com",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "insticator\\.com\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mydramalist.com",
+                "www.sherdog.com"
             ]
         }
     ],
@@ -66,8 +91,8 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "lola.ns.cloudflare.com",
