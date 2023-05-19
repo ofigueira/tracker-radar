@@ -171,7 +171,7 @@ Generated files created while building Tracker Radar
 |File|Use|
 |---|---|
 |[api_fingerprint_weights](/build-data/generated/api_fingerprint_weights.json)|An object mapping browser APIs to their likelihood to be used for fingerprinting. Higher weight means that an API is more likely to be used for fingerprinting|
-|[dataBySite](/build-data/generated/dataBySite.json)|Data keyed down to site. Currently this contains information on the level of fingerprinting attributed to requests, in terms of number of standard deviations above the mean (0 being the mean, 1 being one standard deviation above the mean, and so on).|
+|[data_by_site](/build-data/generated/data_by_site.json)|Data keyed down to site. Currently this contains information on the level of fingerprinting attributed to requests, in terms of number of standard deviations above the mean (0 being the mean, 1 being one standard deviation above the mean, and so on).|
 |[tracking-parameters](/build-data/generated/tracking_parameters.json)|An object listing how prevalent a parameter is used in third party requests and cookies.|
 
 ### Tracking parameters
