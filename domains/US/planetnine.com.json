@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000134,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "go"
+        "go",
+        "resources",
+        "config"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "f7c19858164a86dd5aecdd55b1002c5a4ca959616b3a8289a649373f10b85351"
@@ -43,16 +45,115 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "51c22dc5c9dad96c198c6f6e87aa6bbe5501bad3cd7689bc4e2ca8c70b431717"
+                "bf490c783b3dcb588c73035bf9498047fe7ef4067331ff5a74b1372b9a1b9adc"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "topgear.nl",
+                "www.podiuminfo.nl"
+            ]
+        },
+        {
+            "rule": "planetnine\\.com\\/scripts\\/podiuminfo\\.nl\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "847f4fba1a65df308e814595b4f61854fe3d10bf892788c95cad1860c1c5ecfb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podiuminfo.nl",
+                "www.podiuminfo.nl"
+            ]
+        },
+        {
+            "rule": "planetnine\\.com\\/player\\/test\\/Pnvp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f869f87774b58bbf7021f3ff819b40e2943bb8ad8f352dab1f61ad3d5922e3f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podiuminfo.nl",
+                "www.podiuminfo.nl"
+            ]
+        },
+        {
+            "rule": "planetnine\\.com\\/prebid\\/prebid7\\.42\\.0\\.pn\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7a7e2ebbde020760ec662384f7686b9970925e443f1368f2a5426cc88c456541"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podiuminfo.nl",
+                "www.podiuminfo.nl"
+            ]
+        },
+        {
+            "rule": "planetnine\\.com\\/api\\/config\\/podiuminfo\\.nl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e0b61a7cb0bcd82cb7a6644f34666c2788735c11a2b78b999a4b47578e3f177"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podiuminfo.nl",
                 "www.podiuminfo.nl"
             ]
         },
@@ -65,11 +166,9 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -85,18 +184,20 @@
     "topInitiators": [
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.7142857142857143
+            "prevalence": 0.75
         },
         {
             "domain": "first party",
-            "prevalence": 0.2857142857142857
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 6
+        "Fetch": 6,
+        "Script": 6,
+        "XHR": 2
     },
     "nameservers": [
-        "ns02.hostnet.nl",
-        "ns01.hostnet.nl"
+        "ns01.hostnet.nl",
+        "ns02.hostnet.nl"
     ]
 }

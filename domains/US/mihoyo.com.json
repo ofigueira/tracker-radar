@@ -4,30 +4,30 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000269,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "sentry-api",
-        "upload-bbs"
+        "webstatic",
+        "sentry-api"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "mihoyo\\.com\\/api\\/15\\/envelope\\/",
-            "cookies": 0.0000134,
+            "rule": "mihoyo\\.com\\/dora\\/lib\\/sentry-lazy\\/1\\.3\\.0\\/sentry-lazy\\.global\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sentry-api"
+                "webstatic"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0d6e8562d4f681408ca259ffd543e64313c6fb96eb283aa0a1f1fac97be1ab0b"
+                "2344bcf171928d58d59e34f5935b17cef79284e6fa405edfaad839c9a1799df3"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -36,47 +36,72 @@
             ]
         },
         {
-            "rule": "mihoyo\\.com\\/upload\\/2022\\/03\\/31\\/b7891af2dc37658d169ad89ac817af6f_3659134063737916527\\.png",
+            "rule": "mihoyo\\.com\\/dora\\/lib\\/sentry\\/7\\.19\\.0\\/sentry-tracing\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "upload-bbs"
+                "webstatic"
             ],
-            "apis": {},
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6fa95e11368d49965b2e9bc6637c64c409cf4a35e55150c18768843bfba11073"
+                "317abeabc89780e10dc4b55beb895fe511a3b989ea5cadc91828e14587b0eaab"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hoyolab.com",
-                "www.hoyolab.com"
+                "hoyoverse.com",
+                "account.hoyoverse.com"
+            ]
+        },
+        {
+            "rule": "mihoyo\\.com\\/api\\/15\\/envelope\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hoyoverse.com",
+                "account.hoyoverse.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000672,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.6470588235294118
         },
         {
             "domain": "hoyoverse.com",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.35294117647058826
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Image": 2
+        "Script": 4,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns4.dnsv5.com",
-        "ns3.dnsv5.com"
+        "ns3.dnsv5.com",
+        "ns4.dnsv5.com"
     ]
 }

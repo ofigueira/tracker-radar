@@ -4,14 +4,66 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000672,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "account.prod",
+        "feature-flags-proxy.prod",
         "at.prod"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "account.e.jimdo.com",
+            "resolved": "account.prod.jimdo.systems"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "jimdo\\.systems\\/openid\\/authorize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "account.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "account.e.jimdo.com",
+                    "resolved": "account.prod.jimdo.systems"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jimdo.com",
+                "www.jimdo.com"
+            ]
+        },
+        {
+            "rule": "jimdo\\.systems\\/feature-flags",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "feature-flags-proxy.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jimdo.com",
+                "www.jimdo.com"
+            ]
+        },
         {
             "rule": "jimdo\\.systems\\/anon",
             "cookies": 0,
@@ -21,7 +73,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -43,7 +95,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -67,12 +119,14 @@
         }
     ],
     "types": {
+        "Document": 2,
+        "Fetch": 2,
         "Ping": 4
     },
     "nameservers": [
         "ns-1558.awsdns-02.co.uk",
-        "ns-538.awsdns-03.net",
         "ns-297.awsdns-37.com",
+        "ns-538.awsdns-03.net",
         "ns-1278.awsdns-31.org"
     ]
 }

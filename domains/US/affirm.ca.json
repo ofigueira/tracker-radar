@@ -4,10 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000134,
+    "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "api-cf",
+        "cdn1",
         "www",
         "tracker"
     ],
@@ -15,37 +15,59 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "affirm\\.ca\\/api\\/v2\\/session\\/touch_track",
-            "cookies": 0.0000134,
-            "fingerprinting": 0,
+            "rule": "affirm\\.ca\\/js\\/v2\\/affirm\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
             "subdomains": [
-                "api-cf"
+                "cdn1"
             ],
-            "apis": {},
+            "apis": {
+                "console.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "21345e1a7a9efcd31d03e3220e316fb22337fcd6a1b7771a5aa8f745b94475ac"
+                "97a48bdb3f534d1c6f3d23dbbec0cf86394349f1c55b2782291535dff2acd214"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1684586454,
+                    "length": 1,
+                    "prevalence": 0.00001361563074409422,
+                    "uniqueness": 0.5
+                },
+                "tracker_device": {
+                    "ttl": 157680021,
+                    "length": 36,
+                    "prevalence": 0.00001361563074409422,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "labaie.com",
-                "www.transdepot.net"
+                "bowerswilkins.com",
+                "www.labaie.com"
             ]
         },
         {
             "rule": "affirm\\.ca\\/api\\/v2\\/cookie_sent",
-            "cookies": 0.0000202,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000202,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8",
@@ -55,9 +77,54 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "labaie.com",
-                "www.labaie.com",
-                "www.transdepot.net"
+                "bowerswilkins.com",
+                "www.bowerswilkins.com",
+                "www.labaie.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.ca\\/api\\/promos\\/v2\\/9TWOVWZA2VU0OFD8",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41e6bdb8b5e7c0f21c7447eaf904ecebe55e208623fa7b04c5dab49b053e6026"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bowerswilkins.com",
+                "www.bowerswilkins.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.ca\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "70f07df8529a5da355e70cb8fd1a2c6cdbe6dec83a5332bfcf06f5a917e6e607"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bowerswilkins.com",
+                "www.bowerswilkins.com",
+                "www.labaie.com"
             ]
         },
         {
@@ -69,7 +136,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "94ea7cbdcfa6f7b85ecaf1bedc519ed1ac665831a5d785ce5043c32f791d4ad8"
@@ -81,51 +148,30 @@
                 "labaie.com",
                 "www.labaie.com"
             ]
-        },
-        {
-            "rule": "affirm\\.ca\\/collect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracker"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "70f07df8529a5da355e70cb8fd1a2c6cdbe6dec83a5332bfcf06f5a917e6e607"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "labaie.com",
-                "www.labaie.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000134,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6153846153846154
+            "prevalence": 0.7272727272727273
         },
         {
-            "domain": "affirm.com",
-            "prevalence": 0.38461538461538464
+            "domain": "paybright.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
+        "Script": 2,
         "Fetch": 7,
-        "Ping": 2
+        "Ping": 3
     },
     "nameservers": [
-        "ns-586.awsdns-09.net",
-        "ns-1368.awsdns-43.org",
         "ns-1548.awsdns-01.co.uk",
-        "ns-149.awsdns-18.com"
+        "ns-149.awsdns-18.com",
+        "ns-586.awsdns-09.net",
+        "ns-1368.awsdns-43.org"
     ]
 }

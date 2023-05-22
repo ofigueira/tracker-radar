@@ -4,67 +4,100 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000605,
-    "sites": 9,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
+        "reco",
         "ct.reco",
+        "lrt.reco",
         "swi.reco",
         "peach-static",
         "ct.pilot",
+        "lrt.pilot",
         "swi.pilot",
-        "pipe-collect",
-        "reco"
+        "pipe-collect"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "ebu\\.io\\/index\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "5b098bcc791181ac23d7cac43280d1154563c4cb0fd72e65ef92e72349798c54"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/static\\/js\\/main\\.3d9be8de\\.js",
+            "rule": "ebu\\.io\\/news-reco-ct\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "ct.reco",
-                "swi.reco"
+                "reco"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.matchMedia(\"prefers-color-scheme\")": 2
+                "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c4350603a0042c78b0b29dde4a23b972fdd7b0282d2c175490ba6e45606dcca0"
+                "3ead6f0cf5840fdefb774cf280be52e5bf8ec413ed26ffb9bf088de766db33c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e0ce6e564bec4caf0120980461f4358be18255fa821f6a8788c92b02aa26466a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/static\\/js\\/main\\.32c15dd3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {
+                "window.matchMedia(\"prefers-color-scheme\")": 4,
+                "Navigator.prototype.userAgent": 3,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e7c766c2c4adb419dae275f5bea1801186bc119a76bfaeccbb0a97af69e28a6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
                 "www.swissinfo.ch"
             ]
         },
@@ -74,11 +107,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "ct.reco",
+                "lrt.reco",
                 "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "300b710fb7b3e9f5786a885c0307ef77383d5f96f03aa7a4981b0a3aaa46ba6d"
@@ -88,29 +122,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
                 "www.swissinfo.ch"
             ]
         },
         {
             "rule": "ebu\\.io\\/peach-collector\\.min\\.js",
-            "cookies": 0.0000202,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "peach-static"
             ],
             "apis": {
-                "Navigator.prototype.doNotTrack": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.vendor": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Date.prototype.getTimezoneOffset": 3,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Navigator.prototype.doNotTrack": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.vendor": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.language": 4,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "window.localStorage": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000202,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "8b0b939fbd41dd4c28af02518c7b66a8a87a3925dbfc2cc740a823c8482c1ddc"
@@ -118,403 +154,81 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pc_c": {
-                    "ttl": 851049159,
+                    "ttl": 850736236,
                     "length": 36,
-                    "prevalence": 0.000006716909147086876,
+                    "prevalence": 0.00000680781537204711,
                     "uniqueness": 1
                 },
                 "_pc_t": {
-                    "ttl": 851049159,
+                    "ttl": 850736236,
                     "length": 16,
-                    "prevalence": 0.000006716909147086876,
+                    "prevalence": 0.00000680781537204711,
                     "uniqueness": 1
                 },
                 "_pc_lr": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000006716909147086876,
+                    "prevalence": 0.00000680781537204711,
                     "uniqueness": 1
                 },
                 "_pc_st": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000006716909147086876,
+                    "prevalence": 0.00000680781537204711,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
                 "urplay.se",
+                "www.lrt.lt",
                 "www.swissinfo.ch"
             ]
         },
         {
-            "rule": "ebu\\.io\\/assets\\/logos\\/lrt\\.svg",
+            "rule": "ebu\\.io\\/api\\/recommendations\\/render\\/a93444d0-36ff-4f4a-a10a-6b5310a4588d\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ct.reco",
-                "swi.reco"
+                "ct.pilot"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b148989c549c6e1e4bbb1565a42c5da7830e335ddc99164b62839e54764a0f"
+                "f5098594c7e8f6f440c5752d7a0bde6426d13a24a9779fff6ee7ea160587f6a5"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
-                "www.swissinfo.ch"
+                "ct24.ceskatelevize.cz"
             ]
         },
         {
-            "rule": "ebu\\.io\\/assets\\/flags\\/lt\\.svg",
+            "rule": "ebu\\.io\\/themes\\/ct\\/default\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ct.reco",
-                "swi.reco"
+                "ct.reco"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "de34bbf715907a4daf0fe7aef59b7616a811180378863150eb658f04e0ecfea9"
+                "edb5440f1aace678d24a178141dc541cf9e1a6c0964b673a63b85c3bcdec3d2b"
             ],
-            "type": "Image",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/br\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "f9c06e95efc9b99aab03958e3f11231c9d5525b8c8c43283572546c26831622c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/de\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "b894916080c8cb55efdadb672a865efad4b871a2b9afcc8c9bcf1e2e4a4251e2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/lsm\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "3d56679cbe1a2860be980289d102dfbdb272211b3c6f038f4430ab2d4e64de3d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/lv\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "fbb254983f8299a531780e1431cb5e9b4d8aa749de2bd5eecd6aca2a7d3dc265"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/afp\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "d87456fdfda803d4cf40c8180c342b5fd0f6b748e0f03ee7bc22b4c0cd066e70"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/fr\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "3ee3f39bce3f53fa72d0534e354550793a0a7c9a849e716ff3790d97d4ab7062"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/yle\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "4b448f18d170cf73703eda2f86b31b5fd5605b0ffde6419887118f364dcf0376"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/fi\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "2f57f5b4ec3968d3127d25c1ba8973b593df0bfa8171a12d7c9f399a038ca071"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/franceinfo\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "c8da35e0690ed3ea3d5542a39c8d49d7e0109790d7da105207d710bfa2e8328e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/rte\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "a430fa575c58efc213867c7215dd523f848d8c973cdf7f649c3da51269a0b0a8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/ie\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "24fafcb8550dfbcf12418a465f94665846d9682667e63038d00170ef327c1cff"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/rtve\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "790eb0738de17b55e1b8adf77c6c4119cad766044c0bd26ecaa5e18b0ecfdfe4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/es\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "9a8a1dec96c3737bc35afb7ba06f74e9aee6bab25757f9737c72ea6431c89323"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/ch\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "0356eb35beb3a3c69cdaf658b4700376c27a90c838b128521000b8908eb938da"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
+                "ct24.ceskatelevize.cz"
             ]
         },
         {
@@ -523,11 +237,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "ct.reco",
+                "lrt.reco",
                 "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "c45e6c58bad7850589065e4fec0d4db8c37c48e37a630c3860f7af13ba94a31b"
@@ -537,6 +252,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
                 "www.swissinfo.ch"
             ]
         },
@@ -546,11 +263,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "ct.reco",
+                "lrt.reco",
                 "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "dd1a047e993b37a03893fffc75542699c3f79a729ad3dc839c1fa8b4c94b95f9"
@@ -560,75 +278,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/rtbf\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "9ba9f8b58d92a427f9fecba9415361f03c6df40a653fc933ecb3a9135aacdc77"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/flags\\/be\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "38874c4ffcf92901319235c817d5a4c27bcf0141bcfb6839244837532752c38a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/assets\\/logos\\/ebu_esn\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.reco",
-                "swi.reco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
-            "cnames": [],
-            "responseHashes": [
-                "261a0e19b0f56b4b58cc33b5cb2f1a976f114f6fcc55b5b747193bdd10bb263e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
                 "www.swissinfo.ch"
             ]
         },
@@ -641,8 +292,8 @@
                 "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "3e5e03445ac28579b0f6b45e0994a645c626e30d802f3b036e835b19e8100516"
@@ -652,6 +303,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
                 "www.swissinfo.ch"
             ]
         },
@@ -664,35 +316,11 @@
                 "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "1d7c3fc0594c8fb856d9fd0a13a752dfaf8643c8b073582909c88be24e7e416f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ceskatelevize.cz",
-                "www.swissinfo.ch"
-            ]
-        },
-        {
-            "rule": "ebu\\.io\\/api\\/resizer",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ct.pilot",
-                "swi.pilot"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000202,
-            "cnames": [],
-            "responseHashes": [
-                "ad1a549c4f131a873df0fd63008b343e4e9b17f83bcbe58646667037c211aa75",
-                "a47f69f6926c84980879a67b561b0eb3215bd260f59fbca2a5b67b6b148aefe9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -704,50 +332,654 @@
             ]
         },
         {
-            "rule": "ebu\\.io\\/v3\\/collect",
-            "cookies": 0.0000134,
+            "rule": "ebu\\.io\\/assets\\/logos\\/rtvslo\\.svg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pipe-collect"
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "60db65606f3a244cfe9590e0d200cb8e96c5fdbfb9eb2fbaaeefd64684f76408"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "urplay.se",
-                "www.dw.com"
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
             ]
         },
         {
-            "rule": "ebu\\.io\\/v3\\/collect",
-            "cookies": 0.0000134,
+            "rule": "ebu\\.io\\/assets\\/flags\\/si\\.svg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pipe-collect"
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000134,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "36e01650ef668e4be2b9cc5c6ad7d3cd06afd1971701dff48bf433b04f9aa8fa"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "urplay.se",
-                "www.dw.com"
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/afp\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d87456fdfda803d4cf40c8180c342b5fd0f6b748e0f03ee7bc22b4c0cd066e70"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/fr\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "3ee3f39bce3f53fa72d0534e354550793a0a7c9a849e716ff3790d97d4ab7062"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/rte\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "a430fa575c58efc213867c7215dd523f848d8c973cdf7f649c3da51269a0b0a8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/ie\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "24fafcb8550dfbcf12418a465f94665846d9682667e63038d00170ef327c1cff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/lrt\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b148989c549c6e1e4bbb1565a42c5da7830e335ddc99164b62839e54764a0f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/lt\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "de34bbf715907a4daf0fe7aef59b7616a811180378863150eb658f04e0ecfea9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/br\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f9c06e95efc9b99aab03958e3f11231c9d5525b8c8c43283572546c26831622c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/de\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "b894916080c8cb55efdadb672a865efad4b871a2b9afcc8c9bcf1e2e4a4251e2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/lsm\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "3d56679cbe1a2860be980289d102dfbdb272211b3c6f038f4430ab2d4e64de3d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/lv\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "fbb254983f8299a531780e1431cb5e9b4d8aa749de2bd5eecd6aca2a7d3dc265"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/yle\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4b448f18d170cf73703eda2f86b31b5fd5605b0ffde6419887118f364dcf0376"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/fi\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2f57f5b4ec3968d3127d25c1ba8973b593df0bfa8171a12d7c9f399a038ca071"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/franceinfo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c8da35e0690ed3ea3d5542a39c8d49d7e0109790d7da105207d710bfa2e8328e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/rtve\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "790eb0738de17b55e1b8adf77c6c4119cad766044c0bd26ecaa5e18b0ecfdfe4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/es\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9a8a1dec96c3737bc35afb7ba06f74e9aee6bab25757f9737c72ea6431c89323"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/swi\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "af88aefdf9db13cff311413cc8326477da8eb5e8feb336f17e517aa6efee91e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/ch\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "0356eb35beb3a3c69cdaf658b4700376c27a90c838b128521000b8908eb938da"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/rtbf\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9ba9f8b58d92a427f9fecba9415361f03c6df40a653fc933ecb3a9135aacdc77"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/be\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "38874c4ffcf92901319235c817d5a4c27bcf0141bcfb6839244837532752c38a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/ebu_esn\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco",
+                "lrt.reco",
+                "swi.reco"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "261a0e19b0f56b4b58cc33b5cb2f1a976f114f6fcc55b5b747193bdd10bb263e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/logos\\/rtp\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e6c6be0ec9aff69e71bb93b964811cb85c637f2051f2c372d8e675e707b7f94"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/assets\\/flags\\/pt\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1083914c2a91ed8550813040b3201e315c0b1df0efb27f5ada075ab43460c619"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/api\\/resizer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.pilot",
+                "lrt.pilot",
+                "swi.pilot"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "0d41bb9383353e0e450460933f00cdd1766ef20f17b25bdd7883d4bc6f15529d",
+                "4c23139a1415ddb6c24afb6ae4c622ab91e974ac989a3750cc337b7ab1e28ba0",
+                "049c7108dcd0b4ca2aa9396e1c2f4fd042a0af7f75faf5e1db35fa881e62e7ba"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz",
+                "www.lrt.lt",
+                "www.swissinfo.ch"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/themes\\/ct\\/tv_sans\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ct.reco"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "70ca9656eba4875e0eb686af55a6746802dd85d7be1de0528a7dd069ab7c0db4"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceskatelevize.cz",
+                "ct24.ceskatelevize.cz"
             ]
         },
         {
             "rule": "ebu\\.io\\/bundle\\.min\\.js",
-            "cookies": 0.0000134,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "peach-static"
@@ -764,7 +996,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "56f3fd19f76064c8c285ae4d3f3aeccfb8bef2517b4b8cd312e16e400a1d52f3"
@@ -772,27 +1004,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pc_c": {
-                    "ttl": 851041737,
+                    "ttl": 850835515,
                     "length": 36,
-                    "prevalence": 0.000013433818294173752,
+                    "prevalence": 0.00001361563074409422,
                     "uniqueness": 1
                 },
                 "_pc_t": {
-                    "ttl": 851041737,
+                    "ttl": 850835515,
                     "length": 16,
-                    "prevalence": 0.000013433818294173752,
+                    "prevalence": 0.00001361563074409422,
                     "uniqueness": 0.5
                 },
                 "_pc_lr": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000013433818294173752,
+                    "prevalence": 0.00001361563074409422,
                     "uniqueness": 1
                 },
                 "_pc_st": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000013433818294173752,
+                    "prevalence": 0.00001361563074409422,
                     "uniqueness": 1
                 }
             },
@@ -800,6 +1032,106 @@
             "exampleSites": [
                 "dw.com",
                 "www.dw.com"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/v3\\/collect",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pipe-collect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "urplay.se",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/v3\\/collect",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pipe-collect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dw.com",
+                "urplay.se",
+                "www.dw.com"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/peach-collector-1\\.2\\.12\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "peach-static"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e52904e8b52ba00ed47939e4f9c0bc3b1791e1b75e84e620002350dccf1c1cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pc_c": {
+                    "ttl": 850821143,
+                    "length": 36,
+                    "prevalence": 0.00001361563074409422,
+                    "uniqueness": 1
+                },
+                "_pc_t": {
+                    "ttl": 850821143,
+                    "length": 16,
+                    "prevalence": 0.00001361563074409422,
+                    "uniqueness": 0.5
+                },
+                "_pc_lr": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00001361563074409422,
+                    "uniqueness": 1
+                },
+                "_pc_st": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.00001361563074409422,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ardaudiothek.de",
+                "www.ardaudiothek.de"
             ]
         },
         {
@@ -813,7 +1145,7 @@
                 "window.innerHeight": 2
             },
             "sites": 2,
-            "prevalence": 0.0000134,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "deb0a02bf93fc776ba2dabd9d9e781dad720e8f7d973f1752c66f00eaab8d0cc"
@@ -825,33 +1157,105 @@
                 "francetvinfo.fr",
                 "www.francetvinfo.fr"
             ]
+        },
+        {
+            "rule": "ebu\\.io\\/api\\/recommendations\\/render\\/028440df-8345-4254-b5d4-0b8294efba2c\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lrt.pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "82adc54448b4706d19db45829b859d9e03f528f14c42398aa2a68cb1c44d3c4f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrt.lt",
+                "www.lrt.lt"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/api\\/recommendations\\/render\\/13353db8-9f44-4e0e-a0d9-a49261ce1996\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lrt.pilot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b9c2f1909a6068a8c470293784245b42e4c3cc29e8eb57ce77e331d9e39fe403"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrt.lt",
+                "www.lrt.lt"
+            ]
+        },
+        {
+            "rule": "ebu\\.io\\/themes\\/lrt\\/default\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lrt.reco"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c613e3f05a84c734cc8d437d9da80e8aa869471fe1c2997fd6bb3a5fe10c616"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrt.lt",
+                "www.lrt.lt"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000047,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.86
+            "prevalence": 0.9130434782608695
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.14
+            "prevalence": 0.06956521739130435
+        },
+        {
+            "domain": "google-analytics.com",
+            "prevalence": 0.017391304347826087
         }
     ],
     "types": {
-        "Document": 2,
-        "Script": 9,
-        "Stylesheet": 2,
-        "Image": 49,
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 17,
+        "Document": 4,
+        "Stylesheet": 8,
+        "Fetch": 6,
+        "Image": 100,
+        "Font": 2,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
-        "ns-969.awsdns-57.net",
-        "ns-247.awsdns-30.com",
+        "ns-1851.awsdns-39.co.uk",
         "ns-1116.awsdns-11.org",
-        "ns-1851.awsdns-39.co.uk"
+        "ns-247.awsdns-30.com",
+        "ns-969.awsdns-57.net"
     ]
 }
