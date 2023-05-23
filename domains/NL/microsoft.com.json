@@ -9,12 +9,14 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.000803,
-    "sites": 8,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
         "browser.pipe.aria",
         "eu-mobile.events.data",
-        "browser.events.data"
+        "ec532dbfbc3de61e970d4aecec35f911.measure",
+        "browser.events.data",
+        "edge-auth"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -29,7 +31,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -45,18 +47,40 @@
             ]
         },
         {
+            "rule": "microsoft\\.com\\/apc\\/trans\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ec532dbfbc3de61e970d4aecec35f911.measure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comptia.org",
+                "www.comptia.org"
+            ]
+        },
+        {
             "rule": "microsoft\\.com\\/OneCollector\\/1\\.0\\/",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "browser.events.data"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000301,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "cfb7e99d01199ed17f9a6bebed98c04e123dd73834735f41abf4de06b287c667",
+                "9270122d3ca386cb24b9893f2f37628503a9b0d68ad7f9715f784500d80e94a7",
                 "afd588d7d1c94d797ef932006d524de973f6fc54556e62f0f340412c87f99d58"
             ],
             "type": "XHR",
@@ -67,6 +91,52 @@
                 "www.minecraft.net",
                 "www.trekbikes.com"
             ]
+        },
+        {
+            "rule": "microsoft\\.com\\/js\\/ms_auth_client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "edge-auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "46b346f8b2469e2a81cb80304e10cbb34ec4a3b33b0e59aebffc473d642fcc67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newsweek.com",
+                "www.salon.com"
+            ]
+        },
+        {
+            "rule": "microsoft\\.com\\/metric",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-auth"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newsweek.com",
+                "www.newsweek.com"
+            ]
         }
     ],
     "categories": [
@@ -76,28 +146,38 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
-            "domain": "azureedge.net",
-            "prevalence": 0.5
+            "domain": "first party",
+            "prevalence": 0.3181818181818182
         },
         {
-            "domain": "first party",
-            "prevalence": 0.42857142857142855
+            "domain": "azureedge.net",
+            "prevalence": 0.3181818181818182
+        },
+        {
+            "domain": "atmrum.net",
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "d275im4r3zngba.cloudfront.net",
+            "prevalence": 0.045454545454545456
         },
         {
             "domain": "dynamics.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.045454545454545456
         }
     ],
     "types": {
-        "XHR": 7
+        "XHR": 9,
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns1-39.azure-dns.com",
         "ns2-39.azure-dns.net",
         "ns3-39.azure-dns.org",
-        "ns4-39.azure-dns.info"
+        "ns4-39.azure-dns.info",
+        "ns1-39.azure-dns.com"
     ]
 }

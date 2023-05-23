@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.0001,
+    "prevalence": 0.000101,
     "sites": 1,
     "subdomains": [
         "livechat",
@@ -13,22 +13,25 @@
         "messaging"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "messagebird\\.com\\/bootstrap\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "livechat",
                 "ocw"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "window.innerHeight": 1
             },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
                 "93fcbf48a2e2734a79ac1150cebe496a6b625fb4eeb300e5ff631e82aa606fae"
@@ -43,16 +46,18 @@
         },
         {
             "rule": "messagebird\\.com\\/measure",
-            "cookies": 0.0001,
+            "cookies": 0.000101,
             "fingerprinting": 0,
             "subdomains": [
                 "livechat-metrics"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -70,9 +75,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "4437d661757f15d8b5086b27d9c65809aaa89a585a359c08489164c53eaf64b9"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -91,10 +98,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "1857eb1acc51d781291dcc4d1107aa8cb87059a44c0292bf7df432bc5833fb31"
+            ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scribbr.com",
+                "www.scribbr.com"
+            ]
+        },
+        {
+            "rule": "messagebird\\.com\\/livechat\\/widget\\/f1969c26-6920-470c-b7be-d37a782c2acc\\/translations\\/en",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "messaging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "d27a837c042e7c08ea8fdb0b8c006033fcddf0623ae8696d43bef8b1d2a34800"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -105,7 +136,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0001,
+    "cookies": 0.000101,
     "topInitiators": [
         {
             "domain": "first party",
@@ -115,13 +146,13 @@
     "types": {
         "Script": 2,
         "Ping": 2,
-        "Fetch": 2,
+        "Fetch": 4,
         "Document": 2
     },
     "nameservers": [
-        "ns-752.awsdns-30.net",
-        "ns-24.awsdns-03.com",
+        "ns-2001.awsdns-58.co.uk",
         "ns-1310.awsdns-35.org",
-        "ns-2001.awsdns-58.co.uk"
+        "ns-24.awsdns-03.com",
+        "ns-752.awsdns-30.net"
     ]
 }

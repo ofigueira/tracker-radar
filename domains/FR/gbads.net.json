@@ -4,19 +4,52 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
+        "weather-api.prod",
         "grapeshot-goldbach.prod"
     ],
     "cnames": [
         {
             "original": "gs-goldbach.da-services.ch",
             "resolved": "grapeshot-goldbach.prod.gbads.net"
+        },
+        {
+            "original": "weather.da-services.ch",
+            "resolved": "weather-api.prod.gbads.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "gbads\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "weather-api.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [
+                {
+                    "original": "weather.da-services.ch",
+                    "resolved": "weather-api.prod.gbads.net"
+                }
+            ],
+            "responseHashes": [
+                "6727dbbc83d9ff27c689cd1cd6dbb32d151d6f3b882612d11944d6e322abcdc5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "20min.ch",
+                "www.lematin.ch",
+                "www.tdg.ch"
+            ]
+        },
         {
             "rule": "gbads\\.net\\/grapeshot\\/",
             "cookies": 0,
@@ -25,8 +58,8 @@
                 "grapeshot-goldbach.prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
                 {
                     "original": "gs-goldbach.da-services.ch",
@@ -34,14 +67,16 @@
                 }
             ],
             "responseHashes": [
-                "119cd01b1004c515d59cbaf9ac353c6ce3b31ff06914c8ea944bee8ffcb87937"
+                "9a89a16749a4d09650102b98d9098b987d0479bcc25f85c5df16727062fcb330",
+                "02aef82646b26856ec49c7f23455fde1bc1e9889ced2f9e23704f84d2f720e4c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "20min.ch",
-                "www.lematin.ch"
+                "www.lematin.ch",
+                "www.tdg.ch"
             ]
         }
     ],
@@ -55,12 +90,12 @@
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 6
     },
     "nameservers": [
-        "ns-741.awsdns-28.net",
-        "ns-1184.awsdns-20.org",
         "ns-178.awsdns-22.com",
-        "ns-1548.awsdns-01.co.uk"
+        "ns-1548.awsdns-01.co.uk",
+        "ns-741.awsdns-28.net",
+        "ns-1184.awsdns-20.org"
     ]
 }

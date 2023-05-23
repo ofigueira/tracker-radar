@@ -4,34 +4,116 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
+        "cdn",
+        "popcard",
+        "translations",
         "api",
         "traffic-drivers",
-        "translations"
+        "tukey"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "unibuddy\\.co\\/graphql",
+            "rule": "unibuddy\\.co\\/unibuddy-popcard\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "aec254deab50a02dea8a6d79582157ba91a82ffd0180f015e717a26d7a8895ce"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kuleuven.be",
-                "www.kuleuven.be"
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popcard"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d35a49a00136c12317ed80cb318f01beb3e8554452d8ce0dd51b616d72fd3727"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/dist\\/main\\.52925f7e3777cc0c5be3\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "popcard"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3b7fd606f000e2ab2aaf9cda0433b7c4dfb935b04d4f69453f8d70060aa816cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/namespaces\\/popcard\\/en-GB\\/popcard\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "translations"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "116ad770190891240abd17651a7482718625f20f74567e274dafa02ab1683a9b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
             ]
         },
         {
@@ -42,18 +124,65 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "www.kuleuven.be",
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "d0107d74b31e28c0d8e972c19d190057128cbac73a875b68390bbbe9150374ad"
+                "d0107d74b31e28c0d8e972c19d190057128cbac73a875b68390bbbe9150374ad",
+                "05131bb735403a237afb743693f597ea461e0ee90e0f146ff9293e42bae0f25d",
+                "d891aa5e26280dfd5fc5207f982b8a1baeb1d1dee0e5a7376bba525b8f3acd9f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kuleuven.be",
-                "www.kuleuven.be"
+                "www.kuleuven.be",
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
+            ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/namespaces\\/popcard\\/en-GB\\/common\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "translations"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "www.lancaster.ac.uk",
+                "www.ntu.ac.uk"
             ]
         },
         {
@@ -146,20 +275,19 @@
         },
         {
             "rule": "unibuddy\\.co\\/chat-bubble\\/main\\.4a043b334d77af5adcae\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.00000681,
             "fingerprinting": 2,
             "subdomains": [
                 "traffic-drivers"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
                 "Navigator.prototype.doNotTrack": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
+                "Document.cookie setter": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "window.localStorage": 1,
                 "Navigator.prototype.vendor": 2
             },
             "sites": 2,
@@ -197,30 +325,57 @@
                 "scad.edu",
                 "www.scad.edu"
             ]
+        },
+        {
+            "rule": "unibuddy\\.co\\/track\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tukey"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e39a8118ec6cdf6ac33e6961518e9fe6ba3f6caf099aeeaec1389c2108ba90ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scad.edu",
+                "www.scad.edu"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.6666666666666666
+            "domain": "first party",
+            "prevalence": 0.4
         },
         {
-            "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 4,
-        "Script": 6,
-        "Document": 2,
-        "Stylesheet": 2
+        "Script": 12,
+        "Document": 5,
+        "Fetch": 12,
+        "Preflight": 4,
+        "Stylesheet": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "daisy.ns.cloudflare.com",
-        "noel.ns.cloudflare.com"
+        "noel.ns.cloudflare.com",
+        "daisy.ns.cloudflare.com"
     ]
 }

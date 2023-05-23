@@ -8,10 +8,11 @@
     "sites": 5,
     "subdomains": [
         "api-coupon-ref",
-        "v1-account"
+        "v1-account",
+        "voucher"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "epark\\.jp\\/js\\/script_loader\\/v2_header_src_loader\\.js",
@@ -58,6 +59,74 @@
                 "mitsuraku.jp",
                 "www.kusurinomadoguchi.com"
             ]
+        },
+        {
+            "rule": "epark\\.jp\\/v2\\/frame",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voucher"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc6695d7bbdd1cd38dcadf6dc0111867b5802c0dd0c75e69772a2c9b7816e806"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fdoc.jp",
+                "haisha-yoyaku.jp"
+            ]
+        },
+        {
+            "rule": "epark\\.jp\\/js\\/script_loader\\/v2frame\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "voucher"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d30ea5b28667c6b48804a4bf992db256cf70e2733abd402d21b1a9013a779948"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fdoc.jp",
+                "haisha-yoyaku.jp"
+            ]
+        },
+        {
+            "rule": "epark\\.jp\\/v2\\/list",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voucher"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "19ae5a2d3aa034804b7ef5bb7b74f2c3166a070ed034b6ae7250987d3b756308"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fdoc.jp",
+                "haisha-yoyaku.jp"
+            ]
         }
     ],
     "categories": [],
@@ -78,12 +147,13 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Document": 4
+        "Script": 4,
+        "Document": 6,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-995.awsdns-60.net",
         "ns-65.awsdns-08.com",
+        "ns-995.awsdns-60.net",
         "ns-1170.awsdns-18.org",
         "ns-1866.awsdns-41.co.uk"
     ]

@@ -4,15 +4,90 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "route",
+        "cdata",
+        "logging",
         "psa",
-        "analytics"
+        "media"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "carambo\\.la\\/inimage\\/getlayer",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "route"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Date.prototype.getTime": 1,
+                "window.devicePixelRatio": 1,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dict.cc",
+                "www.englishforum.ch"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/js\\/Carambola_layer_152\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "80d270e8798d83a0be845c564e05688f6571c3ab19950103b9844e54e8f518e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dict.cc",
+                "www.englishforum.ch"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/AddLogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "englishforum.ch",
+                "www.englishforum.ch"
+            ]
+        },
         {
             "rule": "carambo\\.la\\/getPsa",
             "cookies": 0,
@@ -25,7 +100,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d5f655d8e5fdb0ede896e470bfe0f79f109b824ed6da3ab0f9432a2a6d8d155c"
+                "f9d0238cfe619d13089f1e67d813cd14353129403e664874284bb9b950c55721"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -36,18 +111,20 @@
             ]
         },
         {
-            "rule": "carambo\\.la\\/SetItemsView",
+            "rule": "carambo\\.la\\/PSA2\\/adc_col_coaches_300x250\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "analytics"
+                "media"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
+            "responseHashes": [
+                "5b1099760635cf5a7c22b37cb1b956c9b944b48df85314ee2d66c3356e3f3182"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -61,12 +138,19 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "doubleclick.net",
+            "prevalence": 0.6
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 4
+        "Script": 4,
+        "XHR": 2,
+        "Fetch": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-1002.awsdns-61.net",

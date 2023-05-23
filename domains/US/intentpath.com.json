@@ -8,14 +8,17 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "intentpath\\.com\\/js\\/events\\.v2\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -23,6 +26,39 @@
                 "21d504513062f517c5029aa6947a6044ff1f7f9d44ea73c30e0c6d2d872b8831"
             ],
             "type": "Script",
+            "firstPartyCookies": {
+                "visit_uuid": {
+                    "ttl": 86400,
+                    "length": 32,
+                    "prevalence": 0.0000068079080660094765,
+                    "uniqueness": 1
+                },
+                "visitor_uuid": {
+                    "ttl": 630720000,
+                    "length": 32,
+                    "prevalence": 0.0000068079080660094765,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tripstodiscover.com",
+                "www.tripstodiscover.com"
+            ]
+        },
+        {
+            "rule": "intentpath\\.com\\/event\\/pageview",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb41ab92367368711c06348a333444e96f20374cfb1ab831be3f4ae01257afe4"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -47,26 +83,6 @@
                 "tripstodiscover.com",
                 "www.tripstodiscover.com"
             ]
-        },
-        {
-            "rule": "intentpath\\.com\\/event\\/pageview",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "be49973e866dafc51d122351bd5db82b6ea172ef18730eb96c35b1c25943f97c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tripstodiscover.com",
-                "www.tripstodiscover.com"
-            ]
         }
     ],
     "categories": [],
@@ -80,8 +96,8 @@
     ],
     "types": {
         "Script": 2,
-        "Preflight": 2,
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "lisa.ns.cloudflare.com",

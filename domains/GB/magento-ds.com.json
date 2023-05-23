@@ -4,48 +4,88 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000403,
+    "sites": 4,
     "subdomains": [
+        "livesearch-autocomplete",
         "livesearch-metrics"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "magento-ds\\.com\\/v0\\/liveSearchMetrics\\.js",
+            "rule": "magento-ds\\.com\\/v0\\/LiveSearchAutocomplete\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "livesearch-metrics"
+                "livesearch-autocomplete"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "07b4542d818f868b79ecd98977cf626c0014df26634e05a8b66475b333115c5f"
+                "47aabe59c25dbde5ebd9bce695710c3810b58fd86a2975876b011ff87ab951aa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "robertdyas.co.uk",
+                "cytoplan.co.uk",
+                "www.military1st.co.uk"
+            ]
+        },
+        {
+            "rule": "magento-ds\\.com\\/v0\\/liveSearchMetrics\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "livesearch-metrics"
+            ],
+            "apis": {
+                "Document.cookie setter": 2
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "07b4542d818f868b79ecd98977cf626c0014df26634e05a8b66475b333115c5f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "requestId": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00020128824476650564,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cytoplan.co.uk",
+                "www.military1st.co.uk",
+                "www.robertdyas.co.uk",
                 "www.ryman.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
             "domain": "sdiapi.com",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 6
     },
     "nameservers": [
         "ns-41.awsdns-05.com",

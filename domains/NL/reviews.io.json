@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-NL"
     ],
-    "prevalence": 0.0001,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
-        "api"
+        "api",
+        "widget"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "reviews\\.io\\/product\\/rating-batch",
@@ -24,10 +25,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "8d0681fa3b6a73ea28a328cb95310114746763399ec8572b3dcff7b6d6ccaa3f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -35,6 +36,52 @@
             "exampleSites": [
                 "air-up.com",
                 "nl.air-up.com"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/shopware\\/info\\/BC7cFCL2g5fKoUNj",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8b212099a28164a1ec09349208be2f655583c7852b445854249229d961b1f2e6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "armedangels.com",
+                "www.armedangels.com"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/polaris\\/build\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "4bd1564c48238b4d4b77ae6d30c5473edc32022a00542e5dc52e58188714ece3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "armedangels.com",
+                "www.armedangels.com"
             ]
         }
     ],
@@ -44,14 +91,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "reviews.co.uk",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
-        "adrian.ns.cloudflare.com",
-        "jeremy.ns.cloudflare.com"
+        "jeremy.ns.cloudflare.com",
+        "adrian.ns.cloudflare.com"
     ]
 }

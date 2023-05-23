@@ -4,16 +4,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
+        "act-api.cloud.tencent.com.dsa",
         "opc.cloud.tencent.com.dsa",
+        "vm.gtimg.cn.cdn",
+        "ucenter.user.cgtn.com.cdn",
         "enapp.globaltimes.cn.dsa",
         "static.jjwxc.net.cdn",
         "my.jjwxc.net.dsa",
         "newres.wechat.com.cdn"
     ],
     "cnames": [
+        {
+            "original": "act-api.cloud.tencent.com",
+            "resolved": "act-api.cloud.tencent.com.dsa.dnsv1.com.cn"
+        },
         {
             "original": "enapp.globaltimes.cn",
             "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
@@ -33,10 +40,70 @@
         {
             "original": "static.jjwxc.net",
             "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+        },
+        {
+            "original": "ucenter.user.cgtn.com",
+            "resolved": "ucenter.user.cgtn.com.cdn.dnsv1.com.cn"
+        },
+        {
+            "original": "vm.gtimg.cn",
+            "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "dnsv1\\.com\\.cn\\/track\\/create-track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act-api.cloud.tencent.com.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "act-api.cloud.tencent.com",
+                    "resolved": "act-api.cloud.tencent.com.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/track\\/create-track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act-api.cloud.tencent.com.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "act-api.cloud.tencent.com",
+                    "resolved": "act-api.cloud.tencent.com.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "9aeb4e0fb81c70a53ea3a202f14dc5914fbe3833aba565d710b11be422b5a150"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com"
+            ]
+        },
         {
             "rule": "dnsv1\\.com\\.cn\\/opc_resource\\/resource_public\\/resource_list",
             "cookies": 0.0000136,
@@ -54,7 +121,7 @@
                 }
             ],
             "responseHashes": [
-                "e82d230259853f54c71826c56e509762fb2876fa67c379c75f91d11693c746ad"
+                "1b9567500c33448b3c368837b53a2ca655053cc2f9653c49e15bcc0d0d47893f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -62,6 +129,112 @@
             "exampleSites": [
                 "tencent.com",
                 "cloud.tencent.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/tencentvideo\\/script\\/3\\.4\\.0\\/universal-report\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "vm.gtimg.cn.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "vm.gtimg.cn",
+                    "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "783159f8927cfade0d330f2d070b87d2a2a2834e163d16478e61d5bcd621bd3c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/thumbplayer\\/superplayer\\/1\\.15\\.22\\/superplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "vm.gtimg.cn.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "vm.gtimg.cn",
+                    "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "7ffb3a1d516a55b1ea937976824923d30c8b13e2dfde37ec4b2bcc0b5f93ff62"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/thumbplayer\\/core\\/1\\.15\\.22\\/txhlsjs-kernel\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vm.gtimg.cn.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "vm.gtimg.cn",
+                    "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "adc16447ea7b9172f521233a8b7ad7f74c92a22352d76d2fc458047a086c9af2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/home\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucenter.user.cgtn.com.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ucenter.user.cgtn.com",
+                    "resolved": "ucenter.user.cgtn.com.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cgtn.com",
+                "news.cgtn.com"
             ]
         },
         {
@@ -201,7 +374,7 @@
         },
         {
             "rule": "dnsv1\\.com\\.cn\\/js\\/chunk-vendors\\.209b67c0\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "enapp.globaltimes.cn.dsa"
@@ -1120,7 +1293,7 @@
         {
             "rule": "dnsv1\\.com\\.cn\\/js\\/chunk-69520fa5\\.d1f6cf09\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
                 "enapp.globaltimes.cn.dsa"
             ],
@@ -1415,33 +1588,6 @@
             ]
         },
         {
-            "rule": "dnsv1\\.com\\.cn\\/js\\/chunk-2d0cebdd\\.5b2e0206\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "enapp.globaltimes.cn.dsa"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "enapp.globaltimes.cn",
-                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
-                }
-            ],
-            "responseHashes": [
-                "4a3f58dcc03604b4656dc5e3d231dc8ef657b4bdd36b3d94b72810902111c887"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "globaltimes.cn",
-                "www.globaltimes.cn"
-            ]
-        },
-        {
             "rule": "dnsv1\\.com\\.cn\\/js\\/chunk-6d3c0274\\.a1219e0a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1459,6 +1605,33 @@
             ],
             "responseHashes": [
                 "5d38b439bbf8ebfc7cdf9f6f3816c78887bb44106d5054dd419ded623b7ab3ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/js\\/chunk-2d0cebdd\\.5b2e0206\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "4a3f58dcc03604b4656dc5e3d231dc8ef657b4bdd36b3d94b72810902111c887"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1755,7 +1928,7 @@
                 }
             ],
             "responseHashes": [
-                "e9703df4d87e2633d507cd061007ae353deec05f8fdeca714f0f96872aeaa76e"
+                "85330aef5a17ec03a23064a6b070554caa8fe4fa9f40502b17f8ce61b12b90cc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1782,7 +1955,7 @@
                 }
             ],
             "responseHashes": [
-                "b67da1ffec908ebb49af36721c04ace0f962ca75071cdf68738fbed9d76204c7"
+                "9b970b92e8ef1ae6aba672fb707d5a7e054fc3f1ff0c021d51600f0f8ce54496"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1944,7 +2117,7 @@
                 }
             ],
             "responseHashes": [
-                "cda46e1239331658955f972e4530d7a8a8a345fbd02f9483aa2875735acd40c3"
+                "ed34d411a0c445df9fce515f9e343caffa2bbbf0368c51b995b4d61649c5305e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1971,7 +2144,7 @@
                 }
             ],
             "responseHashes": [
-                "0c80ad516ba87e25e463dc1371cfb36513525cd55a2589f9998d8ce67ad9f8ec"
+                "eb24ee099224e709660fe50b7242a6e46c117479bb5e04d004b638eb51720934"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1982,7 +2155,7 @@
             ]
         },
         {
-            "rule": "dnsv1\\.com\\.cn\\/t\\/wx_fed\\/base\\/wechat\\/wechat-main-page\\/wechat-main-page-oversea-new\\/res\\/static\\/css\\/3533e3f8d0877c9273cc77a38e229620\\.css",
+            "rule": "dnsv1\\.com\\.cn\\/t\\/wx_fed\\/base\\/wechat\\/wechat-main-page\\/wechat-main-page-oversea-new\\/res\\/static\\/css\\/e968bf6a23a2c5594475af021033157d\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1998,7 +2171,7 @@
                 }
             ],
             "responseHashes": [
-                "3796e7f6438ec6d40b0eb8496ed9eee13d17624d112d7900df6e95c9055a79a9"
+                "017c7d47821a23155840e1120430cb398830b7cc83c6c62d7bf2553e404113b1"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2225,7 +2398,7 @@
             ]
         },
         {
-            "rule": "dnsv1\\.com\\.cn\\/t\\/wx_fed\\/base\\/wechat\\/wechat-main-page\\/wechat-main-page-oversea-new\\/res\\/static\\/img\\/27vZlMl\\.png",
+            "rule": "dnsv1\\.com\\.cn\\/t\\/wx_fed\\/base\\/wechat\\/wechat-main-page\\/wechat-main-page-oversea-new\\/res\\/static\\/img\\/2d9odS_\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2241,7 +2414,7 @@
                 }
             ],
             "responseHashes": [
-                "f403cfbd350176a462b4c985de4143369658131d3a90e338a09ea0c79aad1bfe"
+                "387ce8873a79c818266db9136f7c63e2643fc2915d71af59c6c0fe4273c25721"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2308,28 +2481,45 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000034,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
-            "domain": "itc.cn",
-            "prevalence": 0.8888888888888888
+            "domain": "first party",
+            "prevalence": 0.3684210526315789
         },
         {
             "domain": "cdn-go.cn",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.2631578947368421
+        },
+        {
+            "domain": "wetvinfo.com",
+            "prevalence": 0.15789473684210525
+        },
+        {
+            "domain": "qcloud.com",
+            "prevalence": 0.10526315789473684
+        },
+        {
+            "domain": "gtimg.com",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "itc.cn",
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
-        "XHR": 4,
-        "Document": 4,
+        "Preflight": 2,
+        "XHR": 6,
+        "Script": 34,
+        "Document": 6,
         "Stylesheet": 16,
-        "Script": 28,
         "Other": 86,
         "Font": 2,
         "Image": 28
     },
     "nameservers": [
-        "ns4.dnsv5.com",
-        "ns3.dnsv5.com"
+        "ns3.dnsv5.com",
+        "ns4.dnsv5.com"
     ]
 }

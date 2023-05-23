@@ -11,9 +11,10 @@
     "sites": 33,
     "subdomains": [
         "loader",
-        "popup",
         "activity",
-        "tracking"
+        "popup",
+        "tracking",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -26,160 +27,93 @@
                 "loader"
             ],
             "apis": {
-                "window.localStorage": 26,
-                "Document.cookie getter": 25,
-                "Date.prototype.getTime": 26,
+                "window.localStorage": 27,
+                "Document.cookie getter": 26,
+                "Date.prototype.getTime": 27,
                 "Document.cookie setter": 25,
                 "Navigator.prototype.cookieEnabled": 26,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 26,
-                "window.innerHeight": 26,
-                "window.sessionStorage": 1
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 27,
+                "window.sessionStorage": 27,
+                "window.innerHeight": 26
             },
             "sites": 33,
             "prevalence": 0.00332,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "10a75420cb4f8a7feda91f37d9e1e6cd0f40e85cee1deda62d02ed57adeedd75",
-                "2d27aa38b86c14fafe7d3bd7fc273a7d0187112bb98a22bc0363e914ddf25f6f",
-                "b6adc38e02e87cdc19e9b28b3baf5a1c98c4a9978044d39e7919034083775092",
-                "33cf901296f381520c60d54d628b04b52e9a358b0671603eab47cbc20f4f8a02",
-                "1eb164697add22a4ba41fc0d86042b2ee31e2b42529485ecf047a1b73b9d31ba",
-                "baf6b9fca8101074b2bf48fdfbc3f38e79e599cb0445b201fda21ee72042ed0e",
-                "7d4b5ff65c86be9f04fb58ef28b5bb8d18e045ad648257639c690a8a5e5b8fff",
-                "e3e9554fbe88177b453f5463308297771b3ae445a207d82d63650a1564e5b952",
-                "704b5c1eff0125beb1057834ae1ddf4ebb83234266ad1c74a81a60895212f8b9",
-                "7d40f113614c988d73f81f58b677ad102e359fd18c5ed1a2ed8ab04a95b9a00e",
-                "1bc69dc950b1959cc400bddbb926c9aae46a35eed84e2d4a69eb077c1d369463",
-                "e3aebd8ce9ac3b549bdb4a8b36dded7ecfec21fbb22da5ef47c2cf516d4d419a",
-                "e1bbe71a4d4b85783403712936fe8164cfd51b1158e1a10eb43c1d5770910722",
-                "ee51a1e1e4ca4b9be02336982e8bc1f810af50f83c4566093cb3b6bba458d1a5",
-                "69796443a2811997701e85d553bbfba8f77ad7e366b92ebb88f74d3f9769567c",
-                "7bff651eb929db4612f2f58211e00d5de922814c49f71336d8dc2c4534c35dbc",
-                "882a84b0789b11d6bafcda3a31d52be062af34207ba924f98862c4ef7d15ada7",
-                "1d8059a2be4f84efd0848d57345b77315aec356f51bfd0d6794a7782692e12f0",
-                "dffa4f527e7665b82c72f1918192dde0740306ca01b604a7818ab6c77c169f70",
-                "762441e0a6b134d5aa9f858f57afd6e2244fca57ab8fb3b07d36626a96ee9424",
-                "da5c71fa158d442f50eed56461afdb4d36e71ebaddfbc6dc061dacb39b26f489",
-                "5df8af5f23b67e1a27a84dcb9da63292b403f7a3d7342d4b579a96d94302cff6",
-                "1901182fa478e7307dc8e9d597cf9ba78a1316d0f225682c9c88df6ebbf12f69",
-                "58ed03a972ca56a481f2cd3cb98713b98cfb7793021a051520ccd80379f30a05",
-                "c39cbfd1fb488ceba9dfcc3fd524e1eb44ba10d9a832f547a3c808555761b7b2"
+                "edf5d79138284655e4eb82595c460ba3b4839cb71e775e6ae32e18fdf23171ba",
+                "29c749feca9ee7a2958f36319aac5d7ca31cf345a097e480d5e03a41478fb39b",
+                "3943513a6e6412a4de339df5f131a286da4802c216fbd3fbfd3a51efef90e1dc",
+                "89a2e2b126ab890d268c84deaaa8d9a6e1811f93be4355d25489e9cb983940f2",
+                "da7e97812a8566b4544cb2d768874f1743b930ae8822afe6e674d806da0d7602",
+                "11d10a3d0241ba4578434ac7c8f3cc48375fee724412a6e490f898dfac365f11",
+                "91ae3b5081eb01d304ad5fd45b4ec3fa59c0dca31f7944ea9d4b09baef7d76cc",
+                "53dae6534d717a9cdce76e3651e407df8a0a5a51034d593ae82422a0d8dcaaf9",
+                "95c13704ae3a28575dc05149480f67f3168ff8e476856743558e8ff28f5db9ec",
+                "7847c772752076b771f63ee4fff9830e273af578db1c940a476c5f17f6c415a4",
+                "c03f3f72bb09f6d3c3961840cc7757c33e1b0c2fe19945f4b5786daf64b4da75",
+                "fa90fa33f092d4add6860336012369aadaa108585ab3a9d8f5e9bd580f94ed37",
+                "51d832b46aadbd3bb3e9ba5317d1421708d4e60c13b18964bf6b8c7fc4173c08",
+                "8d2b69f02158d1e17b603e1f2967db50845e5a4541a254335da649f414b9acfa",
+                "3b85a82726a284a16a987e1798eb3c12efa702a5936154509f882231b1c5b440",
+                "e5603496edeaf9b62fcf717915aeb02b9d5179e166ef08ef5e5c16a37a2aee4f",
+                "fc925e0e312cfb54c6dafc43561a09dca9ee15dad2dea9966a8e1d56beeba11c",
+                "736bc5e2963122eeabc34ceaa50ab0921de1668823b5d90322ff4cde3886138e",
+                "9d1b6c9b8d64f9c23564656f7a2ea9d1194e38a2c7cce9f985bb8d70abb53f96",
+                "6897149846e4e01c0307b6b406bb8f929b528cd744b66889a1e8a670aa2bfe3a",
+                "7e56d7433fcda84ae14cfb1e18a493e1f9be29f957a2e641902d97d795b5e87c",
+                "45b6e5266b82473a677f744abf2ed7b2556ebe4d726397f5cd5b78def97d4054",
+                "d0573fc70c0174185b86e933f24298ca5229a6bd6769b14b1a37ee5a18119990"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "wisepops": {
                     "ttl": 63072004,
-                    "length": 173,
-                    "prevalence": 0.0024164317358034634,
+                    "length": 176,
+                    "prevalence": 0.0024154589371980675,
                     "uniqueness": 1
                 },
                 "wisepops_session": {
                     "ttl": null,
-                    "length": 281,
-                    "prevalence": 0.0024164317358034634,
+                    "length": 278,
+                    "prevalence": 0.0024154589371980675,
                     "uniqueness": 1
                 },
                 "wisepops_visits": {
-                    "ttl": 63072003,
+                    "ttl": 63072004,
                     "length": 40,
-                    "prevalence": 0.0024164317358034634,
-                    "uniqueness": 1
-                },
-                "wisepops_activity_session": {
-                    "ttl": null,
-                    "length": 89,
-                    "prevalence": 0.0025171163914619412,
+                    "prevalence": 0.0024154589371980675,
                     "uniqueness": 1
                 },
                 "wisepops_props": {
                     "ttl": 63072007,
-                    "length": 125,
-                    "prevalence": 0.0004027386226339106,
+                    "length": 108,
+                    "prevalence": 0.00040257648953301127,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.manchestertheatres.com",
-                "www.jacksons-fencing.co.uk",
-                "lustfel.com",
                 "www.cambridgeenglish.org",
-                "www.tilegiant.co.uk",
-                "bestpractice.bmj.com",
-                "www.cardfactory.co.uk",
-                "www.davidaustinroses.co.uk",
-                "www.yopa.co.uk",
-                "www.lbhf.gov.uk",
+                "www.woolovers.com",
                 "www.northumbria.ac.uk",
-                "www.powertoolworld.co.uk",
-                "www.clickmechanic.com",
-                "www.cargiant.co.uk",
-                "www.woolovers.com",
-                "www.moleonline.com",
-                "www.whiskyshop.com",
-                "www.zamnesia.com",
-                "haynes.com",
-                "www.simpleonlinepharmacy.co.uk"
-            ]
-        },
-        {
-            "rule": "wisepops\\.com\\/my-wisepop",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "popup"
-            ],
-            "apis": {},
-            "sites": 26,
-            "prevalence": 0.00262,
-            "cnames": [],
-            "responseHashes": [
-                "6470800b55847acacd0ea93699f5867deaa4cf054eb3e2e27f90172db8ec61db",
-                "7b554cfd651faea27b1fd6b36475733c46d98e160516759c0c7a82deff864406",
-                "1f6648a2ff4d8dbe6daf131b1fb3106dcbdfa47c8778c97a0dcd185d950e6384",
-                "38b904a1cf83df048360fb2480571b749fd98d57e11f1afdffb5a74a78166fea",
-                "03b1a6aa75789ee37686de4e3dbe1622d8670839adf247e254b25074f42822b6",
-                "5b31a023284381dae059dcdfcbf3bc4c09680597978b483a64fa52e1eecea2ca",
-                "02dadb91346b7b5de5a62b875423eb4787cd227e86fc696bfe17d9b4909eab74",
-                "69a30131a84848f90c9b150a334c46ee9d4835db5510d907dd34be323ac6da96",
-                "0d5aa93352e08c3fa12d2a4d4f6bcb6277eba9f0f688d7103690946ad39a89dd",
-                "9f6363f89ef8238780e789e26a274f8e1b2edfd7cc47ef1ce5250b1bb7caf466",
-                "b3992de4466b78bc5c1994abbf5ebab9622347cc83f7db5591a872feeee98599",
-                "569cce4ab743ef996e790f6f641daaf9662297cbd035da2e4fecb435a3255677",
-                "47df4d95d2b78ec72876211662c3d07a9d89a3f7c8c5e7908e52d20422ca1b8c",
-                "0c2ea14418c6fd1156a4c62118b3847b45715f26f07e29d3d653b064433f1fa9",
-                "9c34854507cfc87548943610303dbb83b8c201be9583abf4814cc56687546d0a",
-                "32a3de58381dc059804f6faf1e527b535fea2c6ddfa03b79714e86da3a3695c2",
-                "bb571d7288165c50ce959a94798dfe9a7f600da831320ed921e742724c0c35ba",
-                "318cd48f7b7b31fca48f8d501c0da78c0d12c4a5442e49931679c0ec2c15556e",
-                "59ac2a4348619c5c71468127ffd46a336d85c0a63afa5b4052353e60df834ed1",
-                "3bbdcba9d73ed6e3f18675a9e8a090e084750b489b95ee367cc26be9bc303698"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.cargiant.co.uk",
-                "www.woolovers.com",
                 "www.jacksons-fencing.co.uk",
-                "www.greatbritishchefs.com",
-                "haynes.com",
-                "www.powertoolworld.co.uk",
-                "www.clickmechanic.com",
-                "www.highsnobiety.com",
-                "www.lbhf.gov.uk",
-                "www.manchestertheatres.com",
                 "www.bmj.com",
-                "www.gosh.nhs.uk",
-                "www.zamnesia.com",
-                "hackr.io",
                 "www.moleonline.com",
-                "www.northumbria.ac.uk",
-                "www.brandalley.co.uk",
-                "www.tilegiant.co.uk",
-                "www.greatitalianchefs.com",
-                "www.bfi.org.uk"
+                "www.dailywire.com",
+                "bestpractice.bmj.com",
+                "www.bfi.org.uk",
+                "www.powertoolworld.co.uk",
+                "www.yopa.co.uk",
+                "www2.bfi.org.uk",
+                "www.taxinsider.co.uk",
+                "www.cardfactory.co.uk",
+                "www.zamnesia.com",
+                "www.cargiant.co.uk",
+                "www.clickmechanic.com",
+                "www.coxandcox.co.uk",
+                "www.whiskyshop.com",
+                "www.davidaustinroses.co.uk"
             ]
         },
         {
@@ -190,34 +124,36 @@
                 "activity"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.00262,
+            "sites": 28,
+            "prevalence": 0.00282,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.whiskyshop.com",
+                "www2.bfi.org.uk",
                 "www.dailywire.com",
-                "www.northumbria.ac.uk",
-                "www.manchestertheatres.com",
-                "www.highsnobiety.com",
-                "www.bfi.org.uk",
-                "www.moleonline.com",
                 "bmj.com",
-                "haynes.com",
-                "www.powertoolworld.co.uk",
-                "www.woolovers.com",
-                "www.tilegiant.co.uk",
-                "www.lbhf.gov.uk",
-                "www.cargiant.co.uk",
-                "www.cambridgeenglish.org",
-                "www.gosh.nhs.uk",
-                "www.zamnesia.com",
+                "hackr.io",
+                "www.greatbritishchefs.com",
+                "myuni.swansea.ac.uk",
+                "www.coxandcox.co.uk",
+                "www.cardfactory.co.uk",
+                "www.clickmechanic.com",
                 "www.brandalley.co.uk",
-                "www.simpleonlinepharmacy.co.uk",
-                "www.clickmechanic.com"
+                "www.whiskyshop.com",
+                "www.lbhf.gov.uk",
+                "lakeland.co.uk",
+                "www.bmj.com",
+                "www.tilegiant.co.uk",
+                "www.lakeland.co.uk",
+                "bmjopen.bmj.com",
+                "startfitness.co.uk",
+                "www.bfi.org.uk",
+                "www.powertoolworld.co.uk"
             ]
         },
         {
@@ -231,33 +167,87 @@
             "sites": 27,
             "prevalence": 0.00272,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hackr.io",
+                "www.powertoolworld.co.uk",
+                "www.lbhf.gov.uk",
+                "www.coxandcox.co.uk",
+                "www2.bfi.org.uk",
+                "haynes.com",
+                "www.surfdome.com",
+                "www.tilegiant.co.uk",
+                "www.cargiant.co.uk",
+                "www.brandalley.co.uk",
+                "www.clickmechanic.com",
+                "www.northumbria.ac.uk",
+                "www.whiskyshop.com",
+                "www.zamnesia.com",
+                "www.lakeland.co.uk",
+                "www.jacksons-fencing.co.uk",
+                "www.cardfactory.co.uk",
+                "lakeland.co.uk",
+                "myuni.swansea.ac.uk",
+                "www.bmj.com"
+            ]
+        },
+        {
+            "rule": "wisepops\\.com\\/my-wisepop",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 27,
+            "prevalence": 0.00272,
+            "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "db54e50a6ebc611ac1eec4121ec37038ee4a879b877e84f6f89e37d0726cbff4",
+                "38b904a1cf83df048360fb2480571b749fd98d57e11f1afdffb5a74a78166fea",
+                "7b554cfd651faea27b1fd6b36475733c46d98e160516759c0c7a82deff864406",
+                "b493387cffaf1c5c1f4d0b6cda100dac5aa1676faf01430db35f62d6f84d14c8",
+                "03b1a6aa75789ee37686de4e3dbe1622d8670839adf247e254b25074f42822b6",
+                "71de30e5e159488ea7f010b5700bb88d2e6eba73df7ef62d71a6df41942c954b",
+                "02dadb91346b7b5de5a62b875423eb4787cd227e86fc696bfe17d9b4909eab74",
+                "69a30131a84848f90c9b150a334c46ee9d4835db5510d907dd34be323ac6da96",
+                "b01573e2bcb3cb9020d87c3f8de04c10f8a03daa9c553b2faa85a9e6a61ef79e",
+                "364a04397cbb0a7d7f1640ae9568fc6a6ac5dff87605ebed6e7b611c9eceff72",
+                "c463bf08a8e091a9c221a9b2b1f93c307d6c66eaa57116c09389a5f2990dbc29",
+                "47df4d95d2b78ec72876211662c3d07a9d89a3f7c8c5e7908e52d20422ca1b8c",
+                "6a57284cb568f8fccb0c00963be39f811ec12ab34a2b66d68df61d70186e906a",
+                "32a3de58381dc059804f6faf1e527b535fea2c6ddfa03b79714e86da3a3695c2",
+                "bb571d7288165c50ce959a94798dfe9a7f600da831320ed921e742724c0c35ba",
+                "59ac2a4348619c5c71468127ffd46a336d85c0a63afa5b4052353e60df834ed1",
+                "3bbdcba9d73ed6e3f18675a9e8a090e084750b489b95ee367cc26be9bc303698"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.lbhf.gov.uk",
-                "www.moleonline.com",
-                "www.brandalley.co.uk",
-                "www.cambridgeenglish.org",
-                "www.cardfactory.co.uk",
-                "www.dailywire.com",
-                "www.manchestertheatres.com",
-                "www.whiskyshop.com",
-                "haynes.com",
                 "www.bfi.org.uk",
-                "bmj.com",
-                "www.simpleonlinepharmacy.co.uk",
                 "hackr.io",
-                "www.gosh.nhs.uk",
+                "www.greatbritishchefs.com",
+                "www.whiskyshop.com",
+                "www2.bfi.org.uk",
+                "myuni.swansea.ac.uk",
+                "www.cambridgeenglish.org",
+                "www.brandalley.co.uk",
+                "lakeland.co.uk",
+                "www.dailywire.com",
+                "haynes.com",
+                "www.northumbria.ac.uk",
+                "www.moleonline.com",
+                "www.cargiant.co.uk",
+                "www.bmj.com",
+                "www.lbhf.gov.uk",
+                "www.lakeland.co.uk",
+                "bmj.com",
                 "www.jacksons-fencing.co.uk",
-                "www.woolovers.com",
-                "www.greatitalianchefs.com",
-                "www.tilegiant.co.uk",
-                "www.zamnesia.com",
-                "www.bmj.com"
+                "www.zamnesia.com"
             ]
         },
         {
@@ -268,50 +258,101 @@
                 "tracking"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000705,
+            "sites": 6,
+            "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.00010068465565847765
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bmj.com",
                 "hackr.io",
-                "haynes.com",
-                "www.dailywire.com",
-                "www.gosh.nhs.uk",
-                "www.manchestertheatres.com",
+                "lakeland.co.uk",
+                "www.bmj.com",
+                "www.lakeland.co.uk",
                 "www.moleonline.com"
+            ]
+        },
+        {
+            "rule": "wisepops\\.com\\/shared\\/wisepops\\/07425618a9bfa4200cebe41386dbcb6b\\/421390\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6689e2be785e36b6ffd13aa3f78790f3d71ee286ab784917702fe484842a14d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lakeland.co.uk",
+                "www.lakeland.co.uk"
+            ]
+        },
+        {
+            "rule": "wisepops\\.com\\/shared\\/images\\/wisepops\\/c\\.76801\\/a968f5132793e8cc5945c704f1acb761\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "a385ac1398351121c996e8819482e0614ecfeaee15ee13d92f8b89a61d985e7d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lakeland.co.uk",
+                "www.lakeland.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00252,
+    "cookies": 0.00262,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5121951219512195
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5526315789473685
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.4146341463414634
+            "domain": "first party",
+            "prevalence": 0.3684210526315789
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.05263157894736842
         },
         {
             "domain": "ethyca.com",
-            "prevalence": 0.07317073170731707
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
-        "Script": 33,
-        "XHR": 53,
-        "Preflight": 26,
-        "Ping": 7
+        "Script": 35,
+        "XHR": 55,
+        "Preflight": 27,
+        "Ping": 6,
+        "Image": 2
     },
     "nameservers": [
         "wally.ns.cloudflare.com",

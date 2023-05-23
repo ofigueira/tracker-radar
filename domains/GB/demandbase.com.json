@@ -9,16 +9,42 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00181,
-    "sites": 18,
+    "prevalence": 0.00292,
+    "sites": 29,
     "subdomains": [
+        "scripts",
         "api",
-        "tag",
-        "scripts"
+        "tag"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "demandbase\\.com\\/FQgOcAAM\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.prototype.interestCohort": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "2dd61c6e262bd9128b7446382fe0cbb74759f13c43e2bdf32e5d7b918138e1d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com",
+                "www.splunk.com"
+            ]
+        },
         {
             "rule": "demandbase\\.com\\/api\\/v2\\/ip\\.json",
             "cookies": 0,
@@ -27,13 +53,12 @@
                 "api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
                 "4bfa45ee7a10fd315d717befc4897c2903a309b837fec582e2e0569cf8aae573",
-                "580df661468411099f48cd47078bcf6a3eebc2d0f133e1bcd527b97e187edeb1",
-                "bb75919d95a44ac41ef3ebab6b1366d82209063e58ba666b40d734d4009b41ee"
+                "580df661468411099f48cd47078bcf6a3eebc2d0f133e1bcd527b97e187edeb1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,8 +66,7 @@
             "exampleSites": [
                 "atlassian.com",
                 "slack.com",
-                "www.analog.com",
-                "www.juniper.net"
+                "www.analog.com"
             ]
         },
         {
@@ -83,7 +107,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "892796da8125c34907b094cb54ce53773f76037f680f6e2496a739464a1bd3be"
+                "d319b21d422426cb8d2713f79bce06bf00472d493384676f5f51ff4b7cd166f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -91,6 +115,28 @@
             "exampleSites": [
                 "trello.com",
                 "www.atlassian.com"
+            ]
+        },
+        {
+            "rule": "demandbase\\.com\\/api\\/v2\\/ip\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fc760a19237b557fa9c4e07f6d81bfd6d355e760be565bf0be63c3511134dab8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "malwarebytes.com",
+                "www.zebra.com"
             ]
         }
     ],
@@ -105,32 +151,33 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.3181818181818182
+            "domain": "googletagmanager.com",
+            "prevalence": 0.36363636363636365
         },
         {
-            "domain": "googletagmanager.com",
+            "domain": "first party",
             "prevalence": 0.2727272727272727
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.2727272727272727
-        },
-        {
-            "domain": "optimizely.com",
-            "prevalence": 0.045454545454545456
-        },
-        {
-            "domain": "d34u8crftukxnk.cloudfront.net",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.21212121212121213
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.045454545454545456
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "optimizely.com",
+            "prevalence": 0.030303030303030304
+        },
+        {
+            "domain": "d34u8crftukxnk.cloudfront.net",
+            "prevalence": 0.030303030303030304
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 10,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1260.awsdns-29.org",

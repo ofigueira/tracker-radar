@@ -4,15 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000476,
+    "prevalence": 0.0000477,
     "sites": 7,
     "subdomains": [
         "tv4-login",
         "imageproxy",
-        "ovp-highlights-and-previews.cdn",
         "lumenvod.streaming",
-        "akamaivod.streaming",
-        "trailer-cdn"
+        "akamaivod.streaming"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -25,6 +23,13 @@
                 "tv4-login"
             ],
             "apis": {
+                "DeviceMotionEvent.prototype.acceleration": 2,
+                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
+                "DeviceMotionEvent.prototype.rotationRate": 2,
+                "DeviceOrientationEvent.prototype.alpha": 2,
+                "DeviceOrientationEvent.prototype.beta": 2,
+                "DeviceOrientationEvent.prototype.gamma": 2,
+                "Document.cookie getter": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Screen.prototype.pixelDepth": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -36,12 +41,7 @@
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
                 "window.indexedDB": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Document.cookie getter": 2,
-                "DeviceMotionEvent.prototype.acceleration": 1,
-                "DeviceOrientationEvent.prototype.alpha": 1,
-                "DeviceOrientationEvent.prototype.beta": 1,
-                "DeviceOrientationEvent.prototype.gamma": 1
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -69,9 +69,9 @@
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "65f7886068b0e3528e1dc6759a75ea97d05afb935e5da974f1ca4109f8d01975",
-                "a16f480ea728bc2e984be051a854006cb3c2d19a61f7f20f9b3ae370062c9559",
-                "667254ce679d5bf80674e6fd08f648f4b86d14c90c8d319c569de0627b93fd05"
+                "56ed55e370a60dce8fdd4308424cc016846a7649607cf7f48553f0b2e4162d66",
+                "3e2119887e0cdeb0698328a55bc7cc3d8bc37788295af3572c2e09ae8277b03f",
+                "a16f480ea728bc2e984be051a854006cb3c2d19a61f7f20f9b3ae370062c9559"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -79,30 +79,8 @@
             "exampleSites": [
                 "fotbollskanalen.se",
                 "www.fotbollskanalen.se",
-                "www.tv4play.se",
-                "www.tv4.se"
-            ]
-        },
-        {
-            "rule": "a2d\\.tv\\/20505544\\/action_\\(20505544_MP4-5005\\)\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ovp-highlights-and-previews.cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c4bf69663ce772164f488c8d07993f5383ec43a6f3f3a4a9c6f0b4c70294cd8c"
-            ],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mtv.fi",
-                "www.mtv.fi"
+                "www.tv4.se",
+                "www.tv4play.se"
             ]
         },
         {
@@ -110,11 +88,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "lumenvod.streaming"
+                "lumenvod.streaming",
+                "akamaivod.streaming"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
@@ -124,7 +103,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mtv.fi",
-                "www.mtv.fi"
+                "www.mtv.fi",
+                "www.tv4play.se"
             ]
         },
         {
@@ -136,8 +116,8 @@
                 "akamaivod.streaming"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e40ac9e48a887216e747666add53db394bf5f9efd526a53f288808d4de4303e3"
@@ -147,28 +127,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mtv.fi",
-                "www.mtv.fi"
-            ]
-        },
-        {
-            "rule": "a2d\\.tv\\/comet\\/b05c1364-1f28-409c-b166-7b64fd0aebb2\\.webm",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trailer-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7899b9827a8617e841c72d6dcc41fc33ca7adc7816956d47666c6ddf2d26b787"
-            ],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tv4play.se",
+                "www.mtv.fi",
                 "www.tv4play.se"
             ]
         }
@@ -179,22 +138,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8378378378378378
+            "prevalence": 0.6842105263157895
         },
         {
             "domain": "cedexis.com",
-            "prevalence": 0.16216216216216217
+            "prevalence": 0.3157894736842105
         }
     ],
     "types": {
         "Script": 2,
-        "Image": 8,
-        "Media": 4
+        "Image": 10
     },
     "nameservers": [
         "ns-1730.awsdns-24.co.uk",
         "ns-1092.awsdns-08.org",
-        "ns-84.awsdns-10.com",
-        "ns-601.awsdns-11.net"
+        "ns-601.awsdns-11.net",
+        "ns-84.awsdns-10.com"
     ]
 }

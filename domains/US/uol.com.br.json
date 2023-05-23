@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000123,
-    "sites": 18,
+    "prevalence": 0.000116,
+    "sites": 17,
     "subdomains": [
         "tm",
         "page-context",
         "privacy-sandbox",
         "udr",
-        "tracker.bt"
+        "tracker.bt",
+        "logger"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -27,17 +28,16 @@
                 "tm"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 10,
             "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
                 "9120bd86f7501823599a79f60f432e7742f2fd00b17984230cd6641085548690",
-                "a4fd45449f93ba8ed2d204f0e206b4fb5250d628a49478877bb91230b8c05c61",
-                "9314133506946bf65008993a1e045f1c3da0a8d7b21111255ba21df4dcd3bcfb",
-                "af345df3d957cbaba6d9ef978ee5da409ef85bca6d0d9b988ea3114081593f07",
-                "45be82260d0196251d1a855375ab5a551043374468476e6213003daab2df2a46"
+                "219c0e43ec8e1760e9f3710b61b1bd5544adc77a1daa564fed0506783fa557fb",
+                "4cdf69de9ea10f14826d0b1de593f29a3179f54548395e90d31330807bf8ca8d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -45,9 +45,9 @@
             "exampleSites": [
                 "jus.com.br",
                 "olhardigital.com.br",
+                "pt.quizur.com",
                 "www.dicionarioinformal.com.br",
                 "www.honda.com.br",
-                "www.infoescola.com",
                 "www.ingresso.com",
                 "www.netshoes.com.br",
                 "www.receiteria.com.br",
@@ -63,21 +63,21 @@
                 "page-context"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "67107ce8f5d0771de86b53279f1f5fae60f1e4d91c91c879246dee53a2559137",
-                "57342e4f91af80e16a92e272dc46699a4951bbc7a0312de7aa75a1851dd772d8",
+                "69a21998b5178d78d06a8ff06ada149d61c60c2463d258942f9c1619ec61f3c7",
                 "fe127446a3207b7d968fe37a9f140ca7b446297c7aeb2492ba76aea865420da2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0000068079080660094765
+            },
             "exampleSites": [
                 "jus.com.br",
                 "olhardigital.com.br",
-                "www.infoescola.com",
                 "www.ingresso.com"
             ]
         },
@@ -89,8 +89,8 @@
                 "privacy-sandbox"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "ef0c7504e5fd7d49af153da667763058646be7b975b920d7f97df0aaa1fcb841"
@@ -102,13 +102,40 @@
                 "jus.com.br",
                 "olhardigital.com.br",
                 "www.dicionarioinformal.com.br",
-                "www.infoescola.com",
                 "www.ingresso.com",
                 "www.receiteria.com.br"
             ]
         },
         {
             "rule": "uol\\.com\\.br\\/",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "udr"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "3acf40482ee90a5af85473cded86ef0292d45bd594d9a772e98d20c0aa18ec37",
+                "0464fd2fbbfcf7ce1eff226d5f9115f50f4e24b3dc2fc607ffda3a2b8c100075",
+                "23d4f9191147f68f7db72c53503603cdeda66dd2e9f9c65cd8112986b37f9c91",
+                "e972e670878bf9a16a8d508e7edb2dd984d0edf8b9734a3c7d8e5d23b66ce16c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jus.com.br",
+                "olhardigital.com.br",
+                "www.dicionarioinformal.com.br",
+                "www.ingresso.com",
+                "www.receiteria.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/store",
             "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
@@ -118,49 +145,26 @@
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [
-                "6437582d6fde21548554622e3b7ca49b4c00aa94304766fcf1e6c89f6f9f20a5",
-                "f8a0bd1c52e6ab77cc658b8aaab07398042c498220cbcff99ff46e8b3504204f"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jus.com.br",
-                "olhardigital.com.br",
-                "www.infoescola.com"
-            ]
-        },
-        {
-            "rule": "uol\\.com\\.br\\/store",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "udr"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "jus.com.br",
-                "olhardigital.com.br"
+                "olhardigital.com.br",
+                "www.receiteria.com.br"
             ]
         },
         {
             "rule": "uol\\.com\\.br\\/partner",
-            "cookies": 0.0000408,
+            "cookies": 0.0000477,
             "fingerprinting": 0,
             "subdomains": [
                 "tracker.bt"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -171,6 +175,7 @@
             "exampleSites": [
                 "jus.com.br",
                 "olhardigital.com.br",
+                "pt.quizur.com",
                 "www.dicionarioinformal.com.br",
                 "www.ingresso.com",
                 "www.receiteria.com.br",
@@ -185,14 +190,12 @@
                 "tm"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000408,
+            "sites": 7,
+            "prevalence": 0.0000477,
             "cnames": [],
             "responseHashes": [
                 "6a93c477127bad12d08a779a445d4c5962578f57d4171aee20df69a2b3e8c349",
-                "3348d101ddad2ceb7192dbb14f9a31b800e857780ced54924efd76d9e005c241",
-                "fc623a7c15a66d4fb4d4225bdd5082069b101b56af968de0198efd41f849fee9",
-                "ae3beaafe1e40b560fe3428cac14e513ca3782510bf78473eebc9d234ae9450f"
+                "ebced8975bdac11285314d79d1493adcbdfb0980859e68b24d2420e598e88dd0"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -200,10 +203,53 @@
             "exampleSites": [
                 "jus.com.br",
                 "olhardigital.com.br",
+                "pt.quizur.com",
                 "www.dicionarioinformal.com.br",
                 "www.ingresso.com",
                 "www.receiteria.com.br",
                 "www.voeazul.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/v1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olhardigital.com.br",
+                "www.receiteria.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/v1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olhardigital.com.br",
+                "www.receiteria.com.br"
             ]
         },
         {
@@ -245,13 +291,13 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "437cbe9f623b8d40c42303b814c2a377169c35c1fd662b059a9d84ec623a1231"
+                "55a4b718726ededd5c286ee75e29b11f0c108d4faf2f655b66a3653e01e23159"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "DEretargeting": 0.000013614147822417056,
-                "dynad_rt": 0.000013614147822417056
+                "DEretargeting": 0.000013615816132018953,
+                "dynad_rt": 0.000013615816132018953
             },
             "exampleSites": [
                 "voeazul.com.br",
@@ -261,26 +307,23 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000817,
+    "cookies": 0.0000749,
     "topInitiators": [
         {
             "domain": "jsuol.com.br",
-            "prevalence": 0.9876543209876543
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.012345679012345678
+            "prevalence": 1
         }
     ],
     "types": {
         "Document": 26,
-        "XHR": 4,
-        "Fetch": 5,
-        "Script": 6
+        "XHR": 5,
+        "Fetch": 8,
+        "Script": 7,
+        "Preflight": 2
     },
     "nameservers": [
-        "eliot.uol.com.br",
+        "borges.uol.com.br",
         "charles.uol.com.br",
-        "borges.uol.com.br"
+        "eliot.uol.com.br"
     ]
 }

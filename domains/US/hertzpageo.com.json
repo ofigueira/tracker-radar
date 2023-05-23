@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "hertzpageo\\.com\\/theme\\/hertzrebrandtheme\\/css\\/ride-all-fonts\\.css",
@@ -447,7 +447,7 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
             "sites": 5,
             "prevalence": 0.000034,
@@ -524,7 +524,7 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 3,
                 "Date.prototype.getTime": 5
             },
             "sites": 5,
@@ -552,8 +552,8 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3
             },
             "sites": 5,
             "prevalence": 0.000034,
@@ -631,7 +631,9 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 5,
-                "Document.cookie getter": 5
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 5,
             "prevalence": 0.000034,
@@ -640,7 +642,14 @@
                 "e5a465d00d00da900f0647436e43f922fc4fe4ae5bc3bb61593cccef0aaad0be"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cookie_pref": {
+                    "ttl": 31536010,
+                    "length": 7,
+                    "prevalence": 0.0000068079080660094765,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hertz.ca",
@@ -1052,18 +1061,17 @@
         },
         {
             "rule": "hertzpageo\\.com\\/banners\\/get_banners",
-            "cookies": 0.000034,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "cdea0cb083a9e91f1658006a29818c01ce985a096ebdfdd010db688882a27696",
-                "7c63d5ec78003c16821bc46945889f8c966355d6c04870dfd3a28875320dd3f1"
+                "cdea0cb083a9e91f1658006a29818c01ce985a096ebdfdd010db688882a27696"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1071,9 +1079,7 @@
             "exampleSites": [
                 "hertz.ca",
                 "www.hertz.co.uk",
-                "www.hertz.com",
-                "www.hertz.de",
-                "www.hertz.fr"
+                "www.hertz.com"
             ]
         },
         {
@@ -1149,17 +1155,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9895833333333334
+        },
+        {
+            "domain": "securiti.ai",
+            "prevalence": 0.010416666666666666
         }
     ],
     "types": {
         "Stylesheet": 70,
-        "Script": 90,
+        "Script": 88,
         "Image": 39,
         "Font": 15
     },
     "nameservers": [
-        "ns.rackspace.com",
-        "ns2.rackspace.com"
+        "ns2.rackspace.com",
+        "ns.rackspace.com"
     ]
 }

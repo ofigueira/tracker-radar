@@ -7,47 +7,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "www",
         "brands",
-        "cwsmgmt"
+        "gigya"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "corsair\\.com\\/pl\\/pl\\/",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oppaisan.com",
-                "www.bridgestonegolf.com"
-            ]
-        },
-        {
             "rule": "corsair\\.com\\/sites\\/index\\.html",
-            "cookies": 0,
+            "cookies": 0.00000681,
             "fingerprinting": 1,
             "subdomains": [
                 "brands"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -56,26 +34,95 @@
                 "4117462d9e5d681bb474266920830026227b8a555072f3f0a9e6f94a64fa86d3"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "sharedCookie": {
+                    "ttl": 63072004,
+                    "length": 26,
+                    "prevalence": 0.0000068079080660094765,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "scufgaming.com",
-                "www.originpc.com"
+                "www.elgato.com"
             ]
         },
         {
-            "rule": "corsair\\.com\\/sites\\/UAT\\/index\\.html",
+            "rule": "corsair\\.com\\/sdk\\.config\\.get",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cwsmgmt"
+                "gigya"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "acd8db6a47e5b4158a11298dda4c21f815a694192019768d2ad6ef1c381ed496"
+                "757bfba01d9c93e6ba76cdf640194ac4a35aa6185312c0d00d4b39f9cb879238"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elgato.com",
+                "www.elgato.com"
+            ]
+        },
+        {
+            "rule": "corsair\\.com\\/gs\\/webSdk\\/Api\\.aspx",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gigya"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d2806d04008383877a901e22dd5e0928fa5440d708a1e627d516b6ce27b5aee"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elgato.com",
+                "www.elgato.com"
+            ]
+        },
+        {
+            "rule": "corsair\\.com\\/gs\\/sso\\.htm",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gigya"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5430356a389738db30e0865cf3040d14a695d38f6e74e02e41f8864d019d1ae"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -88,20 +135,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.75
+            "domain": "first party",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "gigya.com",
+            "prevalence": 0.2
         },
         {
             "domain": "hlmiq.com",
-            "prevalence": 0.25
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "canary.js",
+            "prevalence": 0.13333333333333333
         }
     ],
     "types": {
-        "Script": 2,
-        "Document": 4
+        "Document": 6,
+        "Fetch": 2
     },
     "nameservers": [
         "shaz.ns.cloudflare.com",

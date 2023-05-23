@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "autosynergy\\.co\\.uk\\/assets\\/css\\/tooltipster\\.min\\.css",
@@ -125,14 +125,14 @@
         {
             "rule": "autosynergy\\.co\\.uk\\/assets\\/owl-carousel-2\\.3\\.2\\/owl\\.carousel\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "window.innerWidth": 1,
-                "window.devicePixelRatio": 1
+                "window.innerWidth": 2,
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -156,7 +156,7 @@
                 "www"
             ],
             "apis": {
-                "window.innerHeight": 1
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -241,11 +241,16 @@
         {
             "rule": "autosynergy\\.co\\.uk\\/assets\\/js\\/modernizr\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "window.indexedDB": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -261,7 +266,7 @@
             ]
         },
         {
-            "rule": "autosynergy\\.co\\.uk\\/assets\\/logos\\/mercedes-benz\\.png",
+            "rule": "autosynergy\\.co\\.uk\\/assets\\/logos\\/group\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -272,7 +277,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f6fb0f9bb184b3f13eec34790a310e16aab3fc9f956dbbdfab7f38e5156a01c8"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "group1auto.co.uk",
+                "www.group1auto.co.uk"
+            ]
+        },
+        {
+            "rule": "autosynergy\\.co\\.uk\\/assets\\/icons\\/select-arrow-black\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8e9c291782594a8b48680aca4c28bdce447c91cf6904794e473f7782b8109942"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -289,13 +316,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9795918367346939
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.02040816326530612
         }
     ],
     "types": {
         "Stylesheet": 10,
         "Script": 12,
-        "Image": 2
+        "Image": 4
     },
     "nameservers": [
         "dns.us-noc.com",

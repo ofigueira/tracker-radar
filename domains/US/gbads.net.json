@@ -7,9 +7,9 @@
     "prevalence": 0.000129,
     "sites": 19,
     "subdomains": [
+        "weather-api.prod",
         "grapeshot-goldbach.prod",
-        "video",
-        "weather-api.prod"
+        "video"
     ],
     "cnames": [
         {
@@ -23,6 +23,44 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "gbads\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "weather-api.prod"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [
+                {
+                    "original": "weather.da-services.ch",
+                    "resolved": "weather-api.prod.gbads.net"
+                }
+            ],
+            "responseHashes": [
+                "fafc1796a3181f8520c2a804f27291e1048baf799be6245633fc7f044d102d96",
+                "50b4410c7150b5528db184652c2988ca45986b64669e18384c63cef1acd92f85",
+                "8f3622d983504368ca4d96042807f4b8e5a72633cdc0f21272142f31922b7f2a",
+                "83f5dbef60da77b3105e6dabe9e153386e4defee9fd2c6698df162fa82fa7ea9",
+                "758b736c2545ae2ef9706ad2f68724b2fad6705d8a7718d6972591831fee36cb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "20min.ch",
+                "www.20min.ch",
+                "www.24heures.ch",
+                "www.bernerzeitung.ch",
+                "www.derbund.ch",
+                "www.heute.at",
+                "www.lematin.ch",
+                "www.tagesanzeiger.ch",
+                "www.tdg.ch"
+            ]
+        },
         {
             "rule": "gbads\\.net\\/grapeshot\\/",
             "cookies": 0,
@@ -40,10 +78,13 @@
                 }
             ],
             "responseHashes": [
-                "10cf74f1c723327cd698186dad54ef0efb29861ad516568dc9f6b64d038a6445",
+                "ec2993f6ac769bd2ade20942a368df72a86156b8eb5ed2423619fb1be8c12d06",
+                "7be1020ff35b0c6ebc7c535dc12c043b11b5bd55913782aff27726585c463279",
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-                "0df8b30fe69035693552416de8248982d51aa42b9898f59428c103646a5c5e0f",
-                "d478d8623d4b417f87f1ee1acaf2d4e5f5341ee4f3251600b1ef7d539a8aa557"
+                "03c3bff47d8bf08d43b70052add98d227fc0f040b1acdf7fbc03677046f2bdce",
+                "0708f4b21487120c322eebe65fe1c26098306c39b2ade649ba2f6f5d493001c1",
+                "9d6d17eab3f9a387c0ce00ac8f6199e610409afc1ebdb6207c23eab19d350b0e",
+                "a0eff6a697f96b2a5be60bbb3512075f17455ac6fa560ffe346fe68eebc07167"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -103,34 +144,6 @@
                 "www.cineman.ch",
                 "www.polizei-schweiz.ch"
             ]
-        },
-        {
-            "rule": "gbads\\.net\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "weather-api.prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "weather.da-services.ch",
-                    "resolved": "weather-api.prod.gbads.net"
-                }
-            ],
-            "responseHashes": [
-                "6727dbbc83d9ff27c689cd1cd6dbb32d151d6f3b882612d11944d6e322abcdc5"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tagesanzeiger.ch",
-                "www.tagesanzeiger.ch",
-                "www.tdg.ch"
-            ]
         }
     ],
     "categories": [],
@@ -139,21 +152,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5714285714285714
+            "prevalence": 0.7333333333333333
         },
         {
             "domain": "gbucket.ch",
-            "prevalence": 0.42857142857142855
+            "prevalence": 0.2
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.06666666666666667
         }
     ],
     "types": {
-        "XHR": 15,
+        "XHR": 21,
         "Preflight": 3
     },
     "nameservers": [
+        "ns-1184.awsdns-20.org",
         "ns-178.awsdns-22.com",
-        "ns-741.awsdns-28.net",
         "ns-1548.awsdns-01.co.uk",
-        "ns-1184.awsdns-20.org"
+        "ns-741.awsdns-28.net"
     ]
 }

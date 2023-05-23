@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "media"
+        "media",
+        "libs",
+        "mango-web-metrics"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "digitalproserver\\.com\\/iframe\\.php",
@@ -33,6 +35,55 @@
                 "biobiochile.cl",
                 "www.biobiochile.cl"
             ]
+        },
+        {
+            "rule": "digitalproserver\\.com\\/mango-web-metrics\\/js\\/mwm\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "libs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5728b043b0a0a34f9c76ba1ba81692d0370a0e083994df546589352f897141b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "t13.cl",
+                "www.t13.cl"
+            ]
+        },
+        {
+            "rule": "digitalproserver\\.com\\/token\\/dps\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mango-web-metrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "t13.cl",
+                "www.t13.cl"
+            ]
         }
     ],
     "categories": [],
@@ -41,19 +92,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 1
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
+        "ddns.digitalproserver.com",
         "dns1.digitalproserver.com",
-        "dns2.digitalproserver.com",
-        "ddns.digitalproserver.com"
+        "dns2.digitalproserver.com"
     ]
 }

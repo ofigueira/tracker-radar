@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000129,
-    "sites": 19,
+    "prevalence": 0.000211,
+    "sites": 31,
     "subdomains": [
         "spa",
         "cdnbspa",
-        "cdnbevi"
+        "cdnbevi",
+        "conditional-redirect"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -29,18 +30,20 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "318a9366f4c937610d3f1a9ed7deb12f6f213046576e3860e83a3a5285e397cd"
+                "fe2e6b56972ed560107e438de61dc651374b67c873ab02c634b1e3543e1c1f6a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "checkout_shop": 0.000013615816132018953
+            },
             "exampleSites": [
                 "hak5.org",
                 "shop.hak5.org"
             ]
         },
         {
-            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/hakshop\\.myshopify\\.com\\/index_a5dccb916f981f871d73909a0f774ccf89e1e0e3\\.js",
+            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/hakshop\\.myshopify\\.com\\/index_d41d1a9b6435bfda1bc84e4e2b899fc1365e4cf1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -51,11 +54,13 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "318a9366f4c937610d3f1a9ed7deb12f6f213046576e3860e83a3a5285e397cd"
+                "fe2e6b56972ed560107e438de61dc651374b67c873ab02c634b1e3543e1c1f6a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "checkout_shop": 0.000013615816132018953
+            },
             "exampleSites": [
                 "hak5.org",
                 "shop.hak5.org"
@@ -108,7 +113,31 @@
             ]
         },
         {
-            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/sexyland-2\\.myshopify\\.com\\/index_8690d684b654ec88878c373cc2721831d8a983a5\\.js",
+            "rule": "spicegems\\.com\\/js\\/scripttags\\/mongoose-bikes\\/static\\/country-redirect\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "conditional-redirect"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d3f0e8fb8566e80017f53e03b6b0bb14d5119d61ac2a352d627f7296b1c7a708"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mongoose.com",
+                "www.mongoose.com"
+            ]
+        },
+        {
+            "rule": "spicegems\\.com\\/js\\/serve\\/shop\\/sexyland-2\\.myshopify\\.com\\/index_8bcd2855694952c9f93532858ae355fca9cf5234\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -122,7 +151,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "628a64c6dd0100782299647a1a56d212841ce50dcf5c65a427ef9bf71a325288"
+                "3ca64b840fc9cd9193e808aa2e14c08a356e4e45bad97ab78a5e3adb993694ed"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -139,17 +168,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9736842105263158
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.02631578947368421
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 12
     },
     "nameservers": [
-        "ns1.linode.com",
         "ns4.linode.com",
-        "ns5.linode.com",
         "ns2.linode.com",
+        "ns1.linode.com",
+        "ns5.linode.com",
         "ns3.linode.com"
     ]
 }

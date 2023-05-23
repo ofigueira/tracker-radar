@@ -10,16 +10,19 @@
         "prebid"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "relestar\\.com\\/static\\/prebid\\/rconfig-prod\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "prebid"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "URL.createObjectURL": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -37,16 +40,48 @@
         {
             "rule": "relestar\\.com\\/static\\/prebid\\/prebid\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "prebid"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "huskermax.com",
+                "www.huskermax.com"
+            ]
+        },
+        {
+            "rule": "relestar\\.com\\/static\\/prebid\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "Navigator.prototype.appName": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f06d7cdfad2dd82138941ed7eae42894bea5acb8a5d1ae881ee0578ae5ad7bf"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -65,7 +100,7 @@
         }
     ],
     "types": {
-        "Script": 2,
+        "Script": 4,
         "XHR": 2
     },
     "nameservers": [

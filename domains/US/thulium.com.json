@@ -10,7 +10,7 @@
         "chat-widget"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "thulium\\.com\\/app\\/chat-loader\\.js",
@@ -20,12 +20,13 @@
                 "chat-widget"
             ],
             "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
                 "window.innerWidth": 2,
                 "window.innerHeight": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -66,13 +67,11 @@
         {
             "rule": "thulium\\.com\\/app\\/vendor\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "chat-widget"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -158,8 +157,8 @@
     },
     "nameservers": [
         "ns2-04.azure-dns.net",
-        "ns3-04.azure-dns.org",
         "ns1-04.azure-dns.com",
+        "ns3-04.azure-dns.org",
         "ns4-04.azure-dns.info"
     ]
 }
