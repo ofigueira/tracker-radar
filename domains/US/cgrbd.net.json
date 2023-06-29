@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "cgrbd\\.net\\/js\\/min\\/cb\\.js",
@@ -16,14 +16,17 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d5047fa0aac70f4597755b78955e2e8edae37725094da8611e453823e7186d67"
+                "90a9ae327591f34b9731f57ad94dbaab418a08340a3956939f9d7ae43748416b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -36,9 +39,11 @@
         {
             "rule": "cgrbd\\.net\\/js\\/min\\/hermes\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "BroadcastChannel.prototype.constructor": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -103,7 +108,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "47c88ebe65baf58db0c8ffeace050d794aaf1ba9503e8dff4669c0f5023f311f"
+                "4e7e230eeb182dabf94aa7e4503fa74b9849211c18018d9f2f5c64b91dc9f86d"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -170,7 +175,7 @@
         "Font": 2
     },
     "nameservers": [
-        "liz.ns.cloudflare.com",
-        "sean.ns.cloudflare.com"
+        "sean.ns.cloudflare.com",
+        "liz.ns.cloudflare.com"
     ]
 }

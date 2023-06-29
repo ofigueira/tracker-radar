@@ -4,38 +4,154 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000909,
-    "sites": 9,
+    "prevalence": 0.000804,
+    "sites": 8,
     "subdomains": [
-        "api",
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "rudderlabs\\.com\\/sourceConfig\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "rudderlabs\\.com\\/v1\\/rudder-analytics\\.min\\.js",
+            "cookies": 0.0001,
+            "fingerprinting": 2,
             "subdomains": [
-                "api"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.000707,
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.language": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "test_rudder_cookie": {
+                    "ttl": 31536010,
+                    "length": 4,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "grafana.com",
+                "fandom.com",
+                "proprietes.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "rudderlabs\\.com\\/v1\\.1\\/rudder-analytics\\.min\\.js",
+            "cookies": 0.000502,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.language": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "window.devicePixelRatio": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "029f66b6cbc324ddf64fdcb68111f28ffe305d84af86bdc392a96658398b978e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__tld__": {
+                    "ttl": 3,
+                    "length": 4,
+                    "prevalence": 0.0005023106288929073,
+                    "uniqueness": 0.2
+                },
+                "test_rudder_cookie": {
+                    "ttl": 3,
+                    "length": 4,
+                    "prevalence": 0.0005023106288929073,
+                    "uniqueness": 0.2
+                },
+                "rl_session": {
+                    "ttl": 31536005,
+                    "length": 182,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_user_id": {
+                    "ttl": 31536003,
+                    "length": 52,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_trait": {
+                    "ttl": 31536003,
+                    "length": 70,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_group_id": {
+                    "ttl": 31536003,
+                    "length": 50,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_group_trait": {
+                    "ttl": 31536003,
+                    "length": 51,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_anonymous_id": {
+                    "ttl": 31536004,
+                    "length": 112,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_page_init_referrer": {
+                    "ttl": 31536003,
+                    "length": 64,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_page_init_referring_domain": {
+                    "ttl": 31536003,
+                    "length": 66,
+                    "prevalence": 0.0004018485031143259,
+                    "uniqueness": 1
+                },
+                "rl_auth_token": {
+                    "ttl": 3,
+                    "length": 4,
+                    "prevalence": 0.00010046212577858148,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "assoconnect.com",
                 "www.glassdoor.com",
                 "www.glassdoor.fr",
-                "www.jobteaser.com",
                 "www.mailjet.com",
-                "www.make.com",
-                "www.tabnine.com"
+                "www.rentacar.fr"
             ]
         },
         {
@@ -46,124 +162,46 @@
                 "api"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.000707,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "8e5d75312b5f76c29144b8ce98594ba31ef464f6ad663df5a538ac86cab290df",
-                "752fae69253200abeb1a0bc0e62c51ee933165efffe47e3bd9ab4bf1c2050688",
-                "9408f7c840f034444ccee2693f2db0252529ebf14955cb571e20c4da162347a1",
+                "d361c1a3a8785ca2ce70a38c45b667f37a6d6ce8f05062fc57303d15422e28c1",
+                "6c9867d0ec301142e4b1477a7d76de35a299115a53f17bc71831e522d2a62380",
                 "3f0f4dea11c3d0cd54235568eabe235e527a61f53313f3dfb0e39a5b90283e84"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "grafana.com",
+                "assoconnect.com",
                 "www.glassdoor.com",
                 "www.glassdoor.fr",
-                "www.jobteaser.com",
                 "www.mailjet.com",
-                "www.make.com",
                 "www.tabnine.com"
             ]
         },
         {
-            "rule": "rudderlabs\\.com\\/v1\\.1\\/rudder-analytics\\.min\\.js",
-            "cookies": 0.000606,
-            "fingerprinting": 2,
+            "rule": "rudderlabs\\.com\\/sourceConfig\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "api"
             ],
-            "apis": {
-                "window.localStorage": 6,
-                "Navigator.prototype.userAgent": 6,
-                "Document.cookie setter": 6,
-                "Document.cookie getter": 6,
-                "Navigator.prototype.language": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "window.devicePixelRatio": 5,
-                "window.innerWidth": 5,
-                "window.innerHeight": 5
-            },
-            "sites": 6,
-            "prevalence": 0.000606,
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
-            "responseHashes": [
-                "c7504ce62bf728ed2cd118b55b11884563292e3d2af0c9dd1607794b3eecdec7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "__tld__": {
-                    "ttl": 2,
-                    "length": 4,
-                    "prevalence": 0.0006060606060606061,
-                    "uniqueness": 0.16666666666666666
-                },
-                "test_rudder_cookie": {
-                    "ttl": 2,
-                    "length": 4,
-                    "prevalence": 0.0006060606060606061,
-                    "uniqueness": 0.16666666666666666
-                },
-                "rl_session": {
-                    "ttl": 31536003,
-                    "length": 183,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_user_id": {
-                    "ttl": 31536002,
-                    "length": 67,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_trait": {
-                    "ttl": 31536002,
-                    "length": 64,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_group_id": {
-                    "ttl": 31536002,
-                    "length": 65,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_group_trait": {
-                    "ttl": 31536002,
-                    "length": 65,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_anonymous_id": {
-                    "ttl": 31536002,
-                    "length": 113,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_page_init_referrer": {
-                    "ttl": 31536002,
-                    "length": 66,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                },
-                "rl_page_init_referring_domain": {
-                    "ttl": 31536002,
-                    "length": 65,
-                    "prevalence": 0.000505050505050505,
-                    "uniqueness": 1
-                }
-            },
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "glassdoor.com",
+                "assoconnect.com",
+                "www.glassdoor.com",
                 "www.glassdoor.fr",
                 "www.mailjet.com",
-                "www.make.com",
-                "www.rentacar.fr",
-                "www.withings.com"
+                "www.tabnine.com"
             ]
         },
         {
@@ -175,7 +213,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "a0c9df8248a1ca8d159d05a1188fd52865fd90d6194c59352337b6d88632fbb8"
@@ -184,65 +222,37 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "glassdoor.fr",
-                "www.glassdoor.com"
-            ]
-        },
-        {
-            "rule": "rudderlabs\\.com\\/v1\\.1\\/js-integrations\\/GoogleTagManager\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [
-                "264c13ac53566441bfa930af29caf7d8308072c17006e83aeaf9d240989c93ec"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jobteaser.com",
-                "www.make.com"
+                "glassdoor.com",
+                "www.glassdoor.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000606,
+    "cookies": 0.000603,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5454545454545454
+            "prevalence": 0.625
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.18181818181818182
-        },
-        {
-            "domain": "d2mp1cia79qmhd.cloudfront.net",
-            "prevalence": 0.18181818181818182
+            "domain": "typeform.com",
+            "prevalence": 0.25
         },
         {
             "domain": "d16xvuom8mr9m8.cloudfront.net",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Preflight": 7,
-        "XHR": 7,
-        "Script": 10
+        "Script": 9,
+        "XHR": 5,
+        "Preflight": 5
     },
     "nameservers": [
-        "ns-479.awsdns-59.com",
         "ns-1309.awsdns-35.org",
         "ns-1932.awsdns-49.co.uk",
+        "ns-479.awsdns-59.com",
         "ns-697.awsdns-23.net"
     ]
 }

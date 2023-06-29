@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.00403,
-    "sites": 40,
+    "prevalence": 0.00352,
+    "sites": 35,
     "subdomains": [
+        "privacy-proxy",
         "app",
         "api",
         "graphql",
@@ -14,12 +15,39 @@
         "consent-api.service.consent",
         "uct.service",
         "aggregator.service",
-        "aggregator.eu1",
-        "privacy-proxy"
+        "aggregator.eu1"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "usercentrics\\.eu\\/latest\\/uc-block\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "privacy-proxy"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Navigator.prototype.language": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000502,
+            "cnames": [],
+            "responseHashes": [
+                "97275eee604f6e6bc93d227711e27e71a6040f6e38e20b27a8409b83abde2702"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cricviz.com",
+                "prideinlondon.org",
+                "steinberg.help",
+                "www.festool.co.uk",
+                "www.raisin.co.uk"
+            ]
+        },
         {
             "rule": "usercentrics\\.eu\\/browser-ui\\/latest\\/loader\\.js",
             "cookies": 0,
@@ -28,129 +56,86 @@
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 31,
-                "window.localStorage": 31
+                "Navigator.prototype.userAgent": 25,
+                "window.localStorage": 25
             },
-            "sites": 31,
-            "prevalence": 0.00312,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [],
             "responseHashes": [
-                "c8a3164022658f40fb1dc1482884c0b13af15fd51ffd8a6b5a6d6a114f57bbe8"
+                "514770f824433506cc77c8db022f50aa6e759390beb18b510cf65b5bd5d8a836"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.cube.eu",
-                "www.git-tower.com",
-                "www.flixbus.co.uk",
-                "steinberg.help",
-                "www.bike-discount.de",
-                "www.idealo.co.uk",
-                "www.paulsmith.com",
-                "support.industry.siemens.com",
-                "www.sixt.co.uk",
-                "www.presonus.com",
-                "sennheiser.com",
-                "forums.steinberg.net",
-                "www.hugoboss.com",
-                "www.bootsphoto.com",
-                "uk.air-up.com",
                 "www.justwatch.com",
-                "www.fender.com",
-                "www.crosscountrytrains.co.uk",
-                "www.steam-packet.com",
-                "www.caravanguard.co.uk"
-            ]
-        },
-        {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/index\\.module\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 31,
-                "window.localStorage": 31,
-                "window.sessionStorage": 31,
-                "window.innerHeight": 31,
-                "window.innerWidth": 31,
-                "Date.prototype.getTime": 28,
-                "Navigator.prototype.languages": 1
-            },
-            "sites": 31,
-            "prevalence": 0.00312,
-            "cnames": [],
-            "responseHashes": [
-                "c6c8de6fb0d70db76aa9234ecd150c572ebd2573e807d6b0b53da467b21784b8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sennheiser.com",
-                "uk.air-up.com",
-                "www.raisin.co.uk",
+                "steinberg.help",
+                "www.stylight.co.uk",
+                "www.idealo.co.uk",
                 "www.flixbus.co.uk",
                 "www.festool.co.uk",
-                "www.photobox.co.uk",
-                "www.fender.com",
-                "www.git-tower.com",
-                "steinberg.help",
-                "www.idealo.co.uk",
-                "www.presonus.com",
-                "www.paulsmith.com",
-                "www.justwatch.com",
-                "forums.steinberg.net",
-                "www.kuoni.co.uk",
+                "www.raisin.co.uk",
+                "www.viessmann.co.uk",
+                "cricviz.com",
                 "www.bike-discount.de",
-                "support.industry.siemens.com",
+                "www.kuoni.co.uk",
+                "www.paulsmith.com",
+                "www.crosscountrytrains.co.uk",
+                "www.impericon.com",
                 "www.sixt.co.uk",
-                "www.caravanguard.co.uk",
-                "www.einhell.co.uk"
+                "www.steam-packet.com",
+                "uk.air-up.com",
+                "www.git-tower.com",
+                "www.fender.com",
+                "www.peterhahn.co.uk"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-sdk\\/4\\.21\\.1\\/cross-domain-bridge\\.html",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/index\\.module\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "app"
             ],
             "apis": {
-                "window.localStorage": 21
+                "Navigator.prototype.userAgent": 25,
+                "window.localStorage": 25,
+                "window.sessionStorage": 25,
+                "window.innerHeight": 25,
+                "window.innerWidth": 25,
+                "Date.prototype.getTime": 22
             },
-            "sites": 23,
-            "prevalence": 0.00231,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [],
             "responseHashes": [
-                "8563f915516318c564b1a4b4d4005778294178cfac736d0ed7dd5afa86d4cd50"
+                "3b67cbb4e669aa5187d00f768ec6835d5b3649d3e9838e9e8906de6e2859223c"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.fender.com",
-                "www.bootsphoto.com",
+                "cricviz.com",
+                "www.sixt.co.uk",
+                "www.impericon.com",
+                "www.bike-discount.de",
                 "forums.steinberg.net",
-                "www.idealo.co.uk",
                 "www.raisin.co.uk",
-                "www.steinberg.net",
-                "www.einhell.co.uk",
-                "www.viessmann.co.uk",
-                "www.royalparks.org.uk",
-                "sennheiser.com",
-                "www.compart.com",
-                "www.villeroy-boch.co.uk",
-                "www.caravanguard.co.uk",
-                "www.drinkaware.co.uk",
+                "www.kuoni.co.uk",
                 "www.photobox.co.uk",
-                "www.presonus.com",
-                "steinberg.help",
-                "www.q-park.co.uk",
-                "www.flixbus.co.uk",
-                "uk.air-up.com"
+                "www.hugoboss.com",
+                "uk.air-up.com",
+                "www.peterhahn.co.uk",
+                "en-uk.sennheiser.com",
+                "www.steam-packet.com",
+                "www.bootsphoto.com",
+                "www.fender.com",
+                "www.justwatch.com",
+                "www.crosscountrytrains.co.uk",
+                "www.paulsmith.com",
+                "www.viessmann.co.uk",
+                "www.idealo.co.uk"
             ]
         },
         {
@@ -161,8 +146,8 @@
                 "app"
             ],
             "apis": {},
-            "sites": 39,
-            "prevalence": 0.00393,
+            "sites": 34,
+            "prevalence": 0.00342,
             "cnames": [],
             "responseHashes": [
                 "be92266076786f167441375941bb69c5484e182f48925b723a5efc43a1f6086c"
@@ -171,66 +156,66 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "support.industry.siemens.com",
-                "snyk.io",
-                "www.stylight.co.uk",
-                "www.villeroy-boch.co.uk",
-                "www.einhell.co.uk",
+                "forums.steinberg.net",
+                "www.photobox.co.uk",
+                "www.bike-discount.de",
+                "www.steam-packet.com",
+                "www.paulsmith.com",
+                "en-uk.sennheiser.com",
+                "uk.air-up.com",
+                "www.q-park.co.uk",
                 "www.kuoni.co.uk",
-                "www.mercedes-benz.co.uk",
-                "www.skillshare.com",
-                "www.emma-sleep.co.uk",
-                "sennheiser.com",
-                "www.caravanguard.co.uk",
-                "www.steinberg.net",
-                "www.cube.eu",
-                "www.flixbus.co.uk",
-                "www.eharmony.co.uk",
-                "www.justwatch.com",
-                "www.compart.com",
-                "www.drinkaware.co.uk",
                 "www.raisin.co.uk",
-                "www.festool.co.uk"
+                "www.drinkaware.co.uk",
+                "www.royalparks.org.uk",
+                "www.festool.co.uk",
+                "www.hugoboss.com",
+                "snyk.io",
+                "www.sixt.co.uk",
+                "www.impericon.com",
+                "www.crosscountrytrains.co.uk",
+                "www.mercedes-benz.co.uk",
+                "www.highsnobiety.com"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/DefaultData-6549df34-a3b06e2f\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/DefaultData-88642489-1793175d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 31,
-            "prevalence": 0.00312,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [],
             "responseHashes": [
-                "f293e4368e487b869b1ff4f015d8ca19c79da72995ab0813568366b8f5e593d2"
+                "9c917d03e439c4369c277f3a9af96639d516bffa6c62f054836c66b2f01e7322"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.fender.com",
-                "www.hugoboss.com",
+                "www.festool.co.uk",
+                "www.photobox.co.uk",
                 "www.raisin.co.uk",
-                "www.einhell.co.uk",
-                "www.flixbus.co.uk",
-                "www.viessmann.co.uk",
-                "www.caravanguard.co.uk",
-                "www.steinberg.net",
-                "www.bootsphoto.com",
-                "www.crosscountrytrains.co.uk",
-                "www.compart.com",
+                "uk.air-up.com",
+                "forums.steinberg.net",
+                "www.peterhahn.co.uk",
+                "www.impericon.com",
                 "www.sixt.co.uk",
+                "www.justwatch.com",
                 "www.git-tower.com",
-                "sennheiser.com",
-                "www.presonus.com",
+                "en-uk.sennheiser.com",
+                "www.viessmann.co.uk",
+                "www.kuoni.co.uk",
+                "www.paulsmith.com",
+                "www.fender.com",
+                "www.stylight.co.uk",
                 "www.bike-discount.de",
-                "www.skillshare.com",
-                "support.industry.siemens.com",
-                "www.steam-packet.com",
-                "www.photobox.co.uk"
+                "www.hugoboss.com",
+                "www.bootsphoto.com",
+                "www.steam-packet.com"
             ]
         },
         {
@@ -241,8 +226,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 38,
-            "prevalence": 0.00382,
+            "sites": 32,
+            "prevalence": 0.00321,
             "cnames": [],
             "responseHashes": [
                 "941f303a6ca68f60f7bdbd43d7ad25a76f2318ac9244c75293563e5388a7933e"
@@ -251,26 +236,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "support.industry.siemens.com",
-                "www.flixbus.co.uk",
-                "www.emma-sleep.co.uk",
-                "www.compart.com",
-                "www.villeroy-boch.co.uk",
-                "www.git-tower.com",
-                "uk.air-up.com",
-                "www.raisin.co.uk",
-                "snyk.io",
-                "www.steinberg.net",
-                "www.mercedes-benz.co.uk",
-                "www.photobox.co.uk",
-                "sennheiser.com",
-                "www.drinkaware.co.uk",
-                "www.steam-packet.com",
-                "www.kuoni.co.uk",
-                "www.cube.eu",
-                "www.paulsmith.com",
+                "steinberg.help",
                 "www.bootsphoto.com",
-                "www.caravanguard.co.uk"
+                "www.kuoni.co.uk",
+                "www.idealo.co.uk",
+                "en-uk.sennheiser.com",
+                "www.stylight.co.uk",
+                "www.festool.co.uk",
+                "cricviz.com",
+                "www.justwatch.com",
+                "www.highsnobiety.com",
+                "uk.air-up.com",
+                "snyk.io",
+                "www.royalparks.org.uk",
+                "www.steam-packet.com",
+                "www.mercedes-benz.co.uk",
+                "www.sixt.co.uk",
+                "www.fender.com",
+                "www.viessmann.co.uk",
+                "www.raisin.co.uk",
+                "www.peterhahn.co.uk"
             ]
         },
         {
@@ -281,126 +266,126 @@
                 "api"
             ],
             "apis": {},
-            "sites": 38,
-            "prevalence": 0.00382,
+            "sites": 32,
+            "prevalence": 0.00321,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.photobox.co.uk",
-                "forums.steinberg.net",
-                "www.eharmony.co.uk",
-                "www.fender.com",
-                "www.caravanguard.co.uk",
-                "www.flixbus.co.uk",
-                "steinberg.help",
-                "www.justwatch.com",
-                "www.bootsphoto.com",
-                "snyk.io",
                 "www.stylight.co.uk",
-                "www.raisin.co.uk",
-                "www.git-tower.com",
-                "www.villeroy-boch.co.uk",
+                "www.peterhahn.co.uk",
                 "www.sixt.co.uk",
+                "snyk.io",
+                "www.bootsphoto.com",
+                "www.mercedes-benz.co.uk",
+                "www.kuoni.co.uk",
+                "en-uk.sennheiser.com",
+                "www.q-park.co.uk",
+                "www.highsnobiety.com",
+                "www.git-tower.com",
                 "www.festool.co.uk",
-                "www.idealo.co.uk",
-                "www.einhell.co.uk",
+                "prideinlondon.org",
+                "steinberg.help",
+                "forums.steinberg.net",
+                "cricviz.com",
+                "www.fender.com",
+                "www.justwatch.com",
                 "uk.air-up.com",
-                "www.hugoboss.com"
+                "www.photobox.co.uk"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/DefaultUI-0f00c3d8-0a519e2d\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/DefaultUI-66080e2d-61cdb6ed\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 29,
-            "prevalence": 0.00292,
+            "sites": 23,
+            "prevalence": 0.00231,
             "cnames": [],
             "responseHashes": [
-                "feee06ccc76a2f5d235e81d1e596c271ba0e92fd6a9233b1c8a9d3186bec0431"
+                "b4e9b65d89dc9a9fd5bbff05fabc3be29698c3204bead28b593ef1d34bd73071"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.skillshare.com",
-                "www.crosscountrytrains.co.uk",
-                "www.photobox.co.uk",
-                "www.sixt.co.uk",
-                "www.raisin.co.uk",
-                "www.flixbus.co.uk",
-                "www.presonus.com",
-                "steinberg.help",
-                "support.industry.siemens.com",
-                "www.paulsmith.com",
+                "www.viessmann.co.uk",
+                "www.bike-discount.de",
                 "forums.steinberg.net",
                 "www.fender.com",
-                "www.festool.co.uk",
-                "www.bootsphoto.com",
-                "www.compart.com",
+                "www.impericon.com",
+                "en-uk.sennheiser.com",
                 "www.git-tower.com",
-                "www.einhell.co.uk",
+                "www.paulsmith.com",
+                "www.sixt.co.uk",
+                "www.photobox.co.uk",
+                "steinberg.help",
+                "uk.air-up.com",
+                "www.flixbus.co.uk",
+                "cricviz.com",
+                "www.bootsphoto.com",
                 "www.idealo.co.uk",
-                "www.steam-packet.com",
-                "www.kuoni.co.uk"
+                "www.hugoboss.com",
+                "www.peterhahn.co.uk",
+                "www.crosscountrytrains.co.uk",
+                "www.steam-packet.com"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/FirstLayerCustomization-c59b0b5c-e7f298ae\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/FirstLayerCustomization-27aeb4ed-fdc35bb8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 31,
-            "prevalence": 0.00312,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [],
             "responseHashes": [
-                "22e9f63894c814f430179f9cc1b3e0c392458c547616cf74caa7c23fb3400d33"
+                "dc074e785511749987c18297304f824e7ef0b4d4c0c4b6df091ca76e250cd90c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.presonus.com",
-                "www.bike-discount.de",
+                "www.justwatch.com",
+                "www.flixbus.co.uk",
+                "www.raisin.co.uk",
+                "www.stylight.co.uk",
+                "www.crosscountrytrains.co.uk",
+                "www.viessmann.co.uk",
+                "www.photobox.co.uk",
+                "www.paulsmith.com",
                 "www.kuoni.co.uk",
                 "www.steam-packet.com",
-                "www.cube.eu",
-                "www.bootsphoto.com",
-                "www.villeroy-boch.co.uk",
-                "uk.air-up.com",
-                "www.steinberg.net",
-                "steinberg.help",
-                "www.paulsmith.com",
-                "www.stylight.co.uk",
-                "www.fender.com",
-                "www.flixbus.co.uk",
-                "www.festool.co.uk",
                 "forums.steinberg.net",
-                "www.crosscountrytrains.co.uk",
-                "sennheiser.com",
-                "www.sixt.co.uk",
-                "www.caravanguard.co.uk"
+                "steinberg.help",
+                "www.bike-discount.de",
+                "www.hugoboss.com",
+                "www.fender.com",
+                "uk.air-up.com",
+                "www.git-tower.com",
+                "www.impericon.com",
+                "www.idealo.co.uk",
+                "www.bootsphoto.com"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/ButtonsCustomization-00bc7e0c-8fd57207\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/ButtonsCustomization-1669e1a1-f115179e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 31,
-            "prevalence": 0.00312,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [],
             "responseHashes": [
                 "e1e2838d72c3c267345fa419ecba66f968fefc1f0928a8dc3da1d6df5078278c"
@@ -409,38 +394,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.steinberg.net",
-                "www.justwatch.com",
                 "www.idealo.co.uk",
-                "www.einhell.co.uk",
+                "www.kuoni.co.uk",
+                "www.git-tower.com",
+                "www.sixt.co.uk",
+                "www.flixbus.co.uk",
+                "www.crosscountrytrains.co.uk",
+                "www.photobox.co.uk",
                 "www.fender.com",
                 "forums.steinberg.net",
-                "www.photobox.co.uk",
-                "www.villeroy-boch.co.uk",
-                "www.bike-discount.de",
-                "www.hugoboss.com",
-                "www.git-tower.com",
+                "www.viessmann.co.uk",
+                "www.festool.co.uk",
+                "www.stylight.co.uk",
                 "www.bootsphoto.com",
-                "uk.air-up.com",
-                "www.presonus.com",
-                "www.flixbus.co.uk",
-                "www.paulsmith.com",
                 "steinberg.help",
-                "support.industry.siemens.com",
-                "www.compart.com",
-                "www.stylight.co.uk"
+                "www.bike-discount.de",
+                "en-uk.sennheiser.com",
+                "cricviz.com",
+                "www.raisin.co.uk",
+                "www.paulsmith.com",
+                "www.impericon.com"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/SecondLayerUI-8d296659-a8c0fe9b\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/SecondLayerUI-a933eb4e-de2f151e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 29,
-            "prevalence": 0.00292,
+            "sites": 23,
+            "prevalence": 0.00231,
             "cnames": [],
             "responseHashes": [
                 "112f05d9a926b4846f9325f21f6851a8fd3baecafb76be4e0a49265a3cf91da1"
@@ -449,38 +434,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.steinberg.net",
-                "www.festool.co.uk",
-                "www.cube.eu",
-                "www.hugoboss.com",
-                "www.kuoni.co.uk",
                 "www.git-tower.com",
-                "forums.steinberg.net",
                 "www.raisin.co.uk",
-                "www.crosscountrytrains.co.uk",
-                "uk.air-up.com",
-                "www.skillshare.com",
-                "www.einhell.co.uk",
+                "www.sixt.co.uk",
                 "www.fender.com",
-                "support.industry.siemens.com",
+                "steinberg.help",
+                "www.bike-discount.de",
+                "www.viessmann.co.uk",
                 "www.steam-packet.com",
                 "www.flixbus.co.uk",
-                "www.villeroy-boch.co.uk",
-                "www.viessmann.co.uk",
-                "www.bike-discount.de",
-                "www.presonus.com"
+                "www.bootsphoto.com",
+                "forums.steinberg.net",
+                "uk.air-up.com",
+                "www.impericon.com",
+                "www.photobox.co.uk",
+                "www.festool.co.uk",
+                "www.kuoni.co.uk",
+                "cricviz.com",
+                "www.idealo.co.uk",
+                "www.crosscountrytrains.co.uk",
+                "www.paulsmith.com"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/Taglogger-ec99585a-886c004d\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/Taglogger-f0c09ad6-e84ee376\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 31,
-            "prevalence": 0.00312,
+            "sites": 25,
+            "prevalence": 0.00251,
             "cnames": [],
             "responseHashes": [
                 "b906f28284227a8f62de59af6283dfddb5b5eed0ea9b33613087124fceeccb8a"
@@ -489,26 +474,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cricviz.com",
+                "www.flixbus.co.uk",
+                "www.impericon.com",
+                "www.git-tower.com",
+                "www.bike-discount.de",
                 "www.kuoni.co.uk",
-                "support.industry.siemens.com",
+                "uk.air-up.com",
+                "forums.steinberg.net",
+                "www.justwatch.com",
+                "steinberg.help",
+                "www.steam-packet.com",
                 "www.photobox.co.uk",
                 "www.idealo.co.uk",
-                "www.sixt.co.uk",
-                "www.steam-packet.com",
-                "www.bike-discount.de",
-                "www.flixbus.co.uk",
-                "www.hugoboss.com",
-                "www.bootsphoto.com",
                 "www.fender.com",
+                "www.bootsphoto.com",
+                "www.hugoboss.com",
                 "www.stylight.co.uk",
-                "forums.steinberg.net",
-                "www.einhell.co.uk",
-                "steinberg.help",
-                "www.presonus.com",
-                "www.skillshare.com",
-                "www.paulsmith.com",
-                "www.cube.eu",
-                "www.viessmann.co.uk"
+                "www.festool.co.uk",
+                "www.peterhahn.co.uk",
+                "www.sixt.co.uk"
             ]
         },
         {
@@ -520,34 +505,34 @@
                 "api.eu1"
             ],
             "apis": {},
-            "sites": 40,
-            "prevalence": 0.00403,
+            "sites": 35,
+            "prevalence": 0.00352,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.cube.eu",
-                "www.drinkaware.co.uk",
-                "www.kuoni.co.uk",
                 "www.eharmony.co.uk",
-                "www.hugoboss.com",
-                "sennheiser.com",
-                "www.viessmann.co.uk",
-                "support.industry.siemens.com",
-                "www.cyberghostvpn.com",
-                "www.villeroy-boch.co.uk",
-                "www.flixbus.co.uk",
+                "www.zalando.co.uk",
                 "www.steam-packet.com",
+                "uk.air-up.com",
+                "www.q-park.co.uk",
+                "www.bike-discount.de",
+                "www.impericon.com",
+                "cricviz.com",
+                "www.festool.co.uk",
+                "en-uk.sennheiser.com",
+                "www.idealo.co.uk",
                 "www.royalparks.org.uk",
-                "www.skillshare.com",
-                "www.sixt.co.uk",
-                "www.paulsmith.com",
-                "www.compart.com",
+                "www.raisin.co.uk",
+                "www.flixbus.co.uk",
+                "www.photobox.co.uk",
+                "www.viessmann.co.uk",
                 "www.justwatch.com",
-                "www.mercedes-benz.co.uk",
-                "www.festool.co.uk"
+                "www.emma-sleep.co.uk",
+                "forums.steinberg.net",
+                "www.stylight.co.uk"
             ]
         },
         {
@@ -558,34 +543,34 @@
                 "consent-api.service.consent"
             ],
             "apis": {},
-            "sites": 38,
-            "prevalence": 0.00382,
+            "sites": 33,
+            "prevalence": 0.00331,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.crosscountrytrains.co.uk",
-                "www.idealo.co.uk",
-                "www.kuoni.co.uk",
-                "www.paulsmith.com",
-                "www.einhell.co.uk",
-                "www.raisin.co.uk",
-                "forums.steinberg.net",
-                "www.steam-packet.com",
-                "www.skillshare.com",
-                "www.q-park.co.uk",
-                "www.drinkaware.co.uk",
-                "support.industry.siemens.com",
-                "www.justwatch.com",
-                "www.bootsphoto.com",
                 "snyk.io",
-                "www.photobox.co.uk",
-                "steinberg.help",
+                "forums.steinberg.net",
+                "www.eharmony.co.uk",
+                "www.mercedes-benz.co.uk",
+                "www.q-park.co.uk",
+                "prideinlondon.org",
+                "www.paulsmith.com",
                 "www.hugoboss.com",
-                "www.compart.com",
-                "sennheiser.com"
+                "www.steam-packet.com",
+                "cricviz.com",
+                "www.git-tower.com",
+                "www.kuoni.co.uk",
+                "www.raisin.co.uk",
+                "www.impericon.com",
+                "www.flixbus.co.uk",
+                "steinberg.help",
+                "www.photobox.co.uk",
+                "www.emma-sleep.co.uk",
+                "www.viessmann.co.uk",
+                "www.peterhahn.co.uk"
             ]
         },
         {
@@ -597,74 +582,69 @@
                 "api.eu1"
             ],
             "apis": {},
-            "sites": 40,
-            "prevalence": 0.00403,
+            "sites": 35,
+            "prevalence": 0.00352,
             "cnames": [],
             "responseHashes": [
-                "e54c62a2660b0f2f6a22ecc64c5e7bed856ec0820e22ded56b28f08d4d806431",
-                "82c7dc8db231058de6cff4824c7c3822f20c003234910e654561b968d75e8f24",
-                "ab900135ae0ad18bede3170433909effa79b705549612be91cd6e62d1e11351b",
-                "8c89059d410f93bc066aafcbcf154c5709eb2f1fcbeb1eb842fa748d0f85956a",
-                "6da6010427406eb1940f0c10e79d4debe82cc17bfd8aaedcefbace060d3f0573",
-                "c925fb80c5e50f3ca5ff8773ea7522428e3cf61df548fc5b435177d86b2293de",
-                "ef0b4cd6f8a323c42239d45371c71e5a45ec34258d8d5fa5226cda2fcb4ae214",
-                "a7ede45c306936d80b33cd7e24c26a30e7bacb282101a17fc19e8cd86880387d",
-                "041fed47d354d0280edfcd85bc35ff2cb36be3357186f325884f336dde62350c",
-                "21349fe14b83f62b7d8a196360d689631a2999cedb72cd73007171858ea0583b",
-                "d74984139bdfe20aa0814dc77fddbc7efac5f6d28306e10daf82e4addf0558bc",
-                "5fd6c0e8fcf75f57e19e10aaf0c74cfe64705ada6f4f0e07d769092494cd8ef5",
-                "9236327dfd5fb715140b20e4aa298f26b6dd1007e1aad3fbe1a7f0157db551fd",
-                "aaf499b50c0a70b708e55f87099ae36363b41eb5c8c66fe26ff18ea8b9b8248b",
-                "cce052d158a477eb7f686c85ef16070d4a825830e645cd949f8942d73b108c00",
-                "6bfdd5b7ab5d66227147f4ac03b7a17caa32fdea605b33afd4ad23ae90c40eff",
-                "f3ed2f68eaa43b5c20c57b056b7860f3922827e1ac23b4f5abbe7ac4393c4dd0",
-                "1534e33ee105b0aa03a93251bf041ad1dda56a065ab76ab36be5661493f95bc0",
-                "e96161564398b98c10a342b70867477578520d1563e46fc4e1004dec43031dba",
-                "ee751be7da40bc7a5fb18653098f003ded2c76a37e7bc8f260f9d54cff3ff2c6",
-                "559af78f87c8c339822a8d6c901943fccf7d6a3655e3fc39dd10815acaab401d",
-                "7ff0c7b3dd4a9e00fa73a0b2ec819021af0dcc2ab0c63b93f547cea1dd49ecd2",
-                "422268dced8cc59288f2af6ef3c328d4e294551b99ed4cd9bf31dd4ec09f4af8",
-                "6ad7e095b3245da5e1d23804dbd03631548863e3f6859381a7a989b15e33d8eb",
-                "2f4e774abf8211389fd7e8a8c0bbfe6da1f7f818b90f7347e3b2a3d0e713ab2e",
-                "97ebb4882a15eda18261afb9e6a6647bbb4f05d67674e2950203eebcc1e6b407",
-                "9957afcd9be97811e3da105d9ad207dcb76f685d2b72856b435b9e301c91be07",
-                "afaa3668d36cf1a83dbd4254c708a0934bf130ebd5ea40cd938085c9a9f9ffad",
-                "28f778515751f8c2dd35948a8c9f5c400078c9d7b3deacaa2111ec3f562da2e6",
-                "279c787bf2c1e245076632e59e0dc5aade9290844786dfcba3f4e866b45bd86c",
-                "a57b2fb669885972ba7b8f5922c389b121eb98665b5939e8f585b07c130f12b9",
-                "f1d29b34927b098142453b52a14adb213b17d5495759d9a425c3d12bc6cec17d",
-                "5d40f464e484fac3beb9b2438e67d991db4429f10fd9f927d15535da2447efc0",
-                "7bb398ffcf888333c12df335cc3b82e6f9cac55439125aa3f26fb6fd6559298d",
-                "565c8dd87717715a1be35afcd2970109695ac613a0457935af8903c4fd83f6f5",
-                "168e72695cc8b4c0c469bc3664af8b49463bf070564da9661143cf1f8dd3a8f5",
-                "12db2fd8106f66d50245b0d6c79fb157b07db2110b46f7b9add7453810dcd21c",
-                "1db32ab50bc83ea810cb195de6334bdf9a3a79f9542393de1847bd26ec0fbc1c",
-                "0f9133799f6012c6f222770aa5564bc13d3b270d4e8014ea86f8cfebeaf72006"
+                "b5ba3a6623da3c7de0e8ea07f7a5687643628ea493865696225faf9a4a219daa",
+                "690d08998d8d8f7be959d3c0ec7c5bdcaf406c7863833042574934c289cd28e7",
+                "3f2f749ed74c48ab2753be7d90be622f61479cd39837a38aee3a74e8b796a584",
+                "ce2c2e7877c8f7b2f63f5affb53e8f8981bf2d479f8bdc6aed1e192e1d06c84d",
+                "7bfe0a3cf1665da7ed80b09f95591b74ebc78a79e45e33d9ed359e73f9b83649",
+                "0cbd6aca5e606608b735481a9884a9e141ff55abcc4e19f4b7fb4023f2461990",
+                "7c11f95016b911d20fb0ff9f35cf9311a8faf75bd04e8a6493985e75bef237c0",
+                "0c911a233da6f36c7dfaad44cc2df75c61a5f429d2e5626ebac750ec71eed6b5",
+                "d493bb0df7b06bd42bc384a1a4d194b20de2f71d284c154a267b556d434e9504",
+                "50b1ca5dbca69a6f9f3eae140e1543999755b2b8fe1283a8ea809842722b202d",
+                "4672e37d002bbabb273e5af7872a26ff981ce3c853c7f9eea8124e9f7dbac03f",
+                "38c1dddde22a80a7ffedcedd3f9e45db4ab70e9b7aa96d50ff92a663ea87bc73",
+                "513a47cf768ccc3f142a5a589611268ae00659d1651d038f0488fe948b9be1cd",
+                "cb280b15134e313c7c18054c5e35c74d023e94e2a55355e56c210a5ae9141f74",
+                "805631b12cef606f3e31b160d159f50cb13c8e1e3a525e8838edb83ff72a92b7",
+                "3115f7982aec69ab349f1734c165d1ef61d1f25ad8663f4235f951d081e9dbf4",
+                "6bb646a4a247becf1595ae1b7b8b949f1f4aa1299025f3a209a582a959afd727",
+                "b16d3494da04862f2372297f9dd2fcaa762c6cb6189ed35ec8eceb98de69cc49",
+                "0aade148b75c733e4149058f2aed24fae5d050ff6e7cdbaf7b1c426383d97ae2",
+                "d815c002277ec26ef13d558bbeb3a1dec6dbb97ff3733f8c5e631524ece03080",
+                "929206e02f54d56bd5056e3c1e5eacc52b366b2613aecb3e624122c187c27a05",
+                "df997dbfce201b5f08f87f4f58ce1fa6bf2e77efa76f6964469393f1d89000d0",
+                "92e600f28bd4cf431b7ab426b94a36945228c49c8c166dad26b8aacc20d58aca",
+                "8c1e142ce5593b9ab6940f4a9302fbc233fac82702154461e4742426a497a8fc",
+                "d78c8f668b9f0d5ed8329738f17fe99449713eb4cec481a578cc12b32592fef6",
+                "833b14abb2c4b14b5a06861960115a0f1238befb91dc8ddfb605a8eeae2b6afb",
+                "705696a6f3d3d25cf16cd2ae0f70d43de6822369bdf3da94ffba74361b932769",
+                "4d6bc5e313f406f45757cdb2190030f912d733d9798ba7b117f5e912568b4fa9",
+                "7aa12f096fe22d99b43f2460a8d65e0031f83a62cab7047b93e60edfc9f813ec",
+                "c89ed7cdf421ca19eed744ea506f8553e8593272e8dd064a3c8016c10e4f21ed",
+                "79147462fc563fdbd61f8ce1e15a34b748fdebf30281d00ca1c8ad462fac09ea",
+                "78c027097a8ff64d66bcd49c1f75304aa7d79d0eea168cef4007ebceb8719516",
+                "c349ca4b6545d8e9b0058152d33b95e6631c2181596b6eead827e9da47c17475",
+                "d4b846ccc69b241f91a09d463fe4700c8102644b83c8ffe19662c48f76ef5524"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.emma-sleep.co.uk",
-                "www.compart.com",
-                "www.skillshare.com",
-                "www.villeroy-boch.co.uk",
-                "www.zalando.co.uk",
-                "www.photobox.co.uk",
-                "uk.air-up.com",
-                "www.royalparks.org.uk",
-                "www.einhell.co.uk",
-                "www.cube.eu",
-                "www.crosscountrytrains.co.uk",
-                "www.cyberghostvpn.com",
+                "www.flixbus.co.uk",
+                "www.paulsmith.com",
                 "www.idealo.co.uk",
+                "steinberg.help",
+                "www.q-park.co.uk",
                 "www.fender.com",
-                "forums.steinberg.net",
-                "www.festool.co.uk",
-                "www.steam-packet.com",
-                "www.drinkaware.co.uk",
+                "www.sixt.co.uk",
+                "www.mercedes-benz.co.uk",
+                "cricviz.com",
+                "www.photobox.co.uk",
                 "www.bike-discount.de",
-                "www.q-park.co.uk"
+                "www.raisin.co.uk",
+                "www.emma-sleep.co.uk",
+                "www.royalparks.org.uk",
+                "en-uk.sennheiser.com",
+                "www.impericon.com",
+                "uk.air-up.com",
+                "www.hugoboss.com",
+                "www.steam-packet.com",
+                "www.crosscountrytrains.co.uk"
             ]
         },
         {
@@ -675,8 +655,8 @@
                 "consent-api.service.consent"
             ],
             "apis": {},
-            "sites": 38,
-            "prevalence": 0.00382,
+            "sites": 33,
+            "prevalence": 0.00331,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -685,38 +665,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.emma-sleep.co.uk",
-                "www.villeroy-boch.co.uk",
-                "snyk.io",
-                "uk.air-up.com",
-                "www.skillshare.com",
+                "www.paulsmith.com",
+                "www.impericon.com",
+                "www.hugoboss.com",
+                "www.justwatch.com",
                 "www.festool.co.uk",
                 "www.idealo.co.uk",
-                "www.drinkaware.co.uk",
-                "www.paulsmith.com",
-                "www.bootsphoto.com",
-                "www.compart.com",
-                "www.bike-discount.de",
                 "www.steam-packet.com",
-                "sennheiser.com",
-                "www.photobox.co.uk",
+                "www.eharmony.co.uk",
                 "steinberg.help",
-                "www.kuoni.co.uk",
-                "www.justwatch.com",
                 "forums.steinberg.net",
-                "www.einhell.co.uk"
+                "cricviz.com",
+                "www.crosscountrytrains.co.uk",
+                "www.kuoni.co.uk",
+                "www.bootsphoto.com",
+                "www.q-park.co.uk",
+                "www.peterhahn.co.uk",
+                "en-uk.sennheiser.com",
+                "www.mercedes-benz.co.uk",
+                "www.photobox.co.uk",
+                "snyk.io"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/PrivacyButton-ae933d2f\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/PrivacyButton-73108899\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00282,
+            "sites": 22,
+            "prevalence": 0.00221,
             "cnames": [],
             "responseHashes": [
                 "f3d541bb8ac4f2634c8bc045e37ade096d7b03e2f67c54fe7f8bb81a8d7d4dc9"
@@ -725,66 +705,66 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.hugoboss.com",
-                "www.photobox.co.uk",
-                "www.caravanguard.co.uk",
+                "steinberg.help",
+                "cricviz.com",
                 "www.raisin.co.uk",
+                "www.steam-packet.com",
+                "www.photobox.co.uk",
+                "www.festool.co.uk",
+                "www.bootsphoto.com",
                 "www.crosscountrytrains.co.uk",
-                "www.skillshare.com",
-                "sennheiser.com",
                 "www.paulsmith.com",
-                "uk.air-up.com",
-                "www.fender.com",
-                "www.einhell.co.uk",
-                "www.kuoni.co.uk",
                 "www.bike-discount.de",
                 "www.justwatch.com",
+                "www.peterhahn.co.uk",
                 "www.idealo.co.uk",
-                "www.cube.eu",
-                "www.presonus.com",
-                "www.steam-packet.com",
+                "en-uk.sennheiser.com",
                 "www.sixt.co.uk",
-                "forums.steinberg.net"
+                "www.fender.com",
+                "uk.air-up.com",
+                "www.impericon.com",
+                "forums.steinberg.net",
+                "www.kuoni.co.uk"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/index-2fe392db\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/index-de28c4b9\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 28,
-            "prevalence": 0.00282,
+            "sites": 22,
+            "prevalence": 0.00221,
             "cnames": [],
             "responseHashes": [
-                "670f4467883b4878580dc6653d451154c1a849e4748ddfb9f4f5434af4274321"
+                "16ae3935ded50092ef3d340feb5143e30daefd035c66aa3c363e5f5ce2f3691c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.paulsmith.com",
-                "www.fender.com",
-                "www.skillshare.com",
-                "www.idealo.co.uk",
-                "www.sixt.co.uk",
-                "www.hugoboss.com",
-                "www.steam-packet.com",
-                "forums.steinberg.net",
-                "www.villeroy-boch.co.uk",
-                "www.viessmann.co.uk",
-                "steinberg.help",
-                "www.caravanguard.co.uk",
-                "www.photobox.co.uk",
-                "www.raisin.co.uk",
-                "www.justwatch.com",
+                "en-uk.sennheiser.com",
                 "www.bike-discount.de",
-                "www.steinberg.net",
                 "www.festool.co.uk",
-                "uk.air-up.com",
-                "www.compart.com"
+                "www.bootsphoto.com",
+                "www.paulsmith.com",
+                "www.idealo.co.uk",
+                "www.steam-packet.com",
+                "cricviz.com",
+                "steinberg.help",
+                "www.hugoboss.com",
+                "www.raisin.co.uk",
+                "www.impericon.com",
+                "www.peterhahn.co.uk",
+                "www.viessmann.co.uk",
+                "www.fender.com",
+                "www.crosscountrytrains.co.uk",
+                "www.sixt.co.uk",
+                "www.photobox.co.uk",
+                "forums.steinberg.net",
+                "www.kuoni.co.uk"
             ]
         },
         {
@@ -795,202 +775,240 @@
                 "uct.service"
             ],
             "apis": {},
-            "sites": 34,
-            "prevalence": 0.00342,
+            "sites": 29,
+            "prevalence": 0.00291,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "IR_gbd": 0.00010064412238325282
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.compart.com",
-                "www.fender.com",
-                "uk.air-up.com",
-                "www.presonus.com",
-                "www.bike-discount.de",
-                "www.bootsphoto.com",
                 "forums.steinberg.net",
-                "support.industry.siemens.com",
-                "www.q-park.co.uk",
-                "www.viessmann.co.uk",
-                "www.raisin.co.uk",
-                "www.caravanguard.co.uk",
-                "www.steam-packet.com",
-                "www.royalparks.org.uk",
-                "www.hugoboss.com",
-                "www.steinberg.net",
-                "www.skillshare.com",
+                "prideinlondon.org",
+                "www.justwatch.com",
+                "uk.air-up.com",
                 "www.crosscountrytrains.co.uk",
+                "cricviz.com",
+                "www.paulsmith.com",
+                "snyk.io",
+                "www.viessmann.co.uk",
+                "www.festool.co.uk",
+                "www.impericon.com",
+                "www.idealo.co.uk",
+                "steinberg.help",
+                "www.photobox.co.uk",
                 "www.emma-sleep.co.uk",
-                "www.sixt.co.uk"
+                "www.fender.com",
+                "www.bootsphoto.com",
+                "www.sixt.co.uk",
+                "www.peterhahn.co.uk",
+                "www.drinkaware.co.uk"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/index-c4305df4\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/index-488c079d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.00272,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [],
             "responseHashes": [
-                "e05f26c1db23cc39b0fb0d2fd5832c501cefc84777ba026a1a0a639d480443b5"
+                "bff56563f7d03f3235aab30c3806df3bb1cd3d4d12f94e901e9fec1462ae19b5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "www.idealo.co.uk",
+                "www.hugoboss.com",
+                "cricviz.com",
+                "www.bike-discount.de",
+                "www.peterhahn.co.uk",
+                "steinberg.help",
                 "uk.air-up.com",
-                "www.bootsphoto.com",
+                "www.steam-packet.com",
+                "www.viessmann.co.uk",
                 "www.crosscountrytrains.co.uk",
-                "www.caravanguard.co.uk",
-                "www.steinberg.net",
+                "www.fender.com",
+                "www.photobox.co.uk",
+                "en-uk.sennheiser.com",
+                "www.festool.co.uk",
+                "www.kuoni.co.uk",
+                "forums.steinberg.net",
+                "www.raisin.co.uk",
+                "www.sixt.co.uk",
                 "www.paulsmith.com",
+                "www.impericon.com"
+            ]
+        },
+        {
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/SaveButton-b16e1517\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 22,
+            "prevalence": 0.00221,
+            "cnames": [],
+            "responseHashes": [
+                "df3362b2ebc22ad0442afb12a1602c1e6aaa99801838149050252958678f11cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.steam-packet.com",
+                "uk.air-up.com",
+                "www.impericon.com",
+                "www.bike-discount.de",
+                "cricviz.com",
                 "www.fender.com",
                 "steinberg.help",
-                "www.festool.co.uk",
-                "www.sixt.co.uk",
-                "www.kuoni.co.uk",
-                "www.villeroy-boch.co.uk",
-                "www.viessmann.co.uk",
-                "www.skillshare.com",
-                "forums.steinberg.net",
-                "www.compart.com",
-                "www.cube.eu",
-                "www.photobox.co.uk",
-                "www.hugoboss.com"
-            ]
-        },
-        {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/SaveButton-d87b6c0c\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 28,
-            "prevalence": 0.00282,
-            "cnames": [],
-            "responseHashes": [
-                "9bfc400195f660e9f6f3f786ade1ac47132307c9a9cb0c2655b37edf2b2d36af"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.bootsphoto.com",
+                "www.idealo.co.uk",
                 "www.sixt.co.uk",
                 "www.raisin.co.uk",
-                "www.fender.com",
-                "sennheiser.com",
-                "www.presonus.com",
-                "www.justwatch.com",
-                "www.hugoboss.com",
-                "www.compart.com",
-                "www.idealo.co.uk",
-                "www.paulsmith.com",
-                "www.viessmann.co.uk",
+                "www.kuoni.co.uk",
+                "en-uk.sennheiser.com",
+                "forums.steinberg.net",
+                "www.bootsphoto.com",
                 "www.crosscountrytrains.co.uk",
-                "www.skillshare.com",
-                "www.bike-discount.de",
-                "www.steam-packet.com",
-                "www.photobox.co.uk",
-                "www.caravanguard.co.uk",
-                "support.industry.siemens.com",
-                "www.festool.co.uk"
+                "www.viessmann.co.uk",
+                "www.hugoboss.com",
+                "www.paulsmith.com",
+                "www.festool.co.uk",
+                "www.justwatch.com"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/VirtualServiceItem-8440a20a\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/VirtualServiceItem-1da3dff8\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 28,
-                "window.devicePixelRatio": 17,
-                "window.innerWidth": 17
+                "Navigator.prototype.userAgent": 22,
+                "window.devicePixelRatio": 12,
+                "window.innerWidth": 12
             },
-            "sites": 28,
-            "prevalence": 0.00282,
+            "sites": 22,
+            "prevalence": 0.00221,
             "cnames": [],
             "responseHashes": [
-                "d197b8f516d2f0e6cb83b3b503098abcf2f0e79af1c3e58c3064a41b01266155"
+                "e355756d25892b944eef5268c72f2dcd14b6bb4cb0fd38b2a73a53f728e8f37c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.justwatch.com",
-                "www.bike-discount.de",
-                "www.hugoboss.com",
-                "www.skillshare.com",
-                "www.idealo.co.uk",
-                "forums.steinberg.net",
-                "www.bootsphoto.com",
                 "www.fender.com",
-                "www.crosscountrytrains.co.uk",
-                "www.caravanguard.co.uk",
-                "www.einhell.co.uk",
-                "www.sixt.co.uk",
-                "www.steinberg.net",
-                "steinberg.help",
-                "www.compart.com",
-                "www.presonus.com",
-                "www.festool.co.uk",
+                "forums.steinberg.net",
+                "www.photobox.co.uk",
+                "www.justwatch.com",
+                "www.bootsphoto.com",
                 "www.paulsmith.com",
-                "www.villeroy-boch.co.uk",
-                "uk.air-up.com"
+                "www.raisin.co.uk",
+                "www.impericon.com",
+                "www.viessmann.co.uk",
+                "cricviz.com",
+                "www.sixt.co.uk",
+                "www.crosscountrytrains.co.uk",
+                "www.bike-discount.de",
+                "www.idealo.co.uk",
+                "www.hugoboss.com",
+                "en-uk.sennheiser.com",
+                "steinberg.help",
+                "www.festool.co.uk",
+                "www.steam-packet.com",
+                "www.kuoni.co.uk"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/DefaultTabs-d75b8ae5\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/DefaultTabs-ee91f975\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
-            "sites": 27,
-            "prevalence": 0.00272,
+            "sites": 21,
+            "prevalence": 0.00211,
             "cnames": [],
             "responseHashes": [
-                "b4c4d2f0c78170b550b1f6fa2160b9a14ce78a97bf6c4662590bfdd840649081"
+                "82fe831aca9c73fa638fe3b29b9cd074a708983e462630d11fbc627ee692790e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.skillshare.com",
-                "www.steinberg.net",
-                "forums.steinberg.net",
-                "www.caravanguard.co.uk",
-                "www.photobox.co.uk",
-                "www.raisin.co.uk",
-                "www.einhell.co.uk",
-                "www.viessmann.co.uk",
-                "www.paulsmith.com",
-                "support.industry.siemens.com",
+                "www.festool.co.uk",
                 "www.kuoni.co.uk",
-                "www.cube.eu",
-                "www.fender.com",
-                "www.villeroy-boch.co.uk",
-                "www.idealo.co.uk",
-                "www.compart.com",
+                "www.paulsmith.com",
                 "www.hugoboss.com",
+                "www.sixt.co.uk",
+                "www.viessmann.co.uk",
+                "www.impericon.com",
+                "www.raisin.co.uk",
+                "www.bike-discount.de",
+                "www.photobox.co.uk",
+                "www.peterhahn.co.uk",
+                "www.crosscountrytrains.co.uk",
+                "en-uk.sennheiser.com",
+                "steinberg.help",
+                "forums.steinberg.net",
                 "www.steam-packet.com",
-                "www.presonus.com",
-                "sennheiser.com"
+                "www.idealo.co.uk",
+                "uk.air-up.com",
+                "www.fender.com",
+                "www.bootsphoto.com"
+            ]
+        },
+        {
+            "rule": "usercentrics\\.eu\\/browser-sdk\\/4\\.22\\.0\\/cross-domain-bridge\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "window.localStorage": 18
+            },
+            "sites": 18,
+            "prevalence": 0.00181,
+            "cnames": [],
+            "responseHashes": [
+                "8563f915516318c564b1a4b4d4005778294178cfac736d0ed7dd5afa86d4cd50"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sennheiser.com",
+                "forums.steinberg.net",
+                "prideinlondon.org",
+                "steinberg.help",
+                "uk.air-up.com",
+                "www.bootsphoto.com",
+                "www.drinkaware.co.uk",
+                "www.fender.com",
+                "www.festool.co.uk",
+                "www.flixbus.co.uk",
+                "www.idealo.co.uk",
+                "www.impericon.com",
+                "www.photobox.co.uk",
+                "www.q-park.co.uk",
+                "www.raisin.co.uk",
+                "www.royalparks.org.uk",
+                "www.stylight.co.uk",
+                "www.viessmann.co.uk"
             ]
         },
         {
@@ -1001,8 +1019,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1010,8 +1028,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "steinberg.net",
-                "steinberg.help",
-                "www.steinberg.net"
+                "steinberg.help"
             ]
         },
         {
@@ -1022,8 +1039,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "659836450a76707e61365dbf1b74359dd2963ab7393c516c06ff67f6e99e1edc"
@@ -1033,8 +1050,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "steinberg.net",
-                "steinberg.help",
-                "www.steinberg.net"
+                "steinberg.help"
             ]
         },
         {
@@ -1045,19 +1061,18 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "02f04e95513720f59ee16be5992fbb999d2337c33f927e7cbb2f544bd8844117"
+                "be527442664efaa4f418ac0077c26a358bff6ffa3ef3c5b9ac923c515f2a597f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "steinberg.net",
-                "steinberg.help",
-                "www.steinberg.net"
+                "steinberg.help"
             ]
         },
         {
@@ -1068,8 +1083,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1077,8 +1092,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "steinberg.net",
-                "steinberg.help",
-                "www.steinberg.net"
+                "steinberg.help"
             ]
         },
         {
@@ -1089,51 +1103,26 @@
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 4,
-                "window.sessionStorage": 4,
-                "window.innerHeight": 4,
-                "window.innerWidth": 4,
-                "Date.prototype.getTime": 4
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "window.sessionStorage": 5,
+                "window.innerHeight": 5,
+                "window.innerWidth": 5,
+                "Date.prototype.getTime": 5
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "a5521e5b024f8729eeedb22eec5d6f52ed89a0dfc4c8316e6be67e76244e874d"
+                "eb518f30b6c9a0ba706bff9b6b1e306e52c9d7ef98c1abdf0dd77d172be97d62"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "prideinlondon.org",
                 "snyk.io",
                 "www.drinkaware.co.uk",
-                "www.q-park.co.uk",
-                "www.royalparks.org.uk"
-            ]
-        },
-        {
-            "rule": "usercentrics\\.eu\\/aggregate\\/en",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aggregator.service"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000805,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "snyk.io",
-                "www.caravanguard.co.uk",
-                "www.cyberghostvpn.com",
-                "www.drinkaware.co.uk",
-                "www.eharmony.co.uk",
-                "www.mercedes-benz.co.uk",
                 "www.q-park.co.uk",
                 "www.royalparks.org.uk"
             ]
@@ -1148,27 +1137,27 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.000906,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
-                "eaf4ed3aed35182e259d41d365b40c7175b2a91e09cf0700e90ad844f4fd353d",
-                "ef391b9d12bc30c6eca1ff9b68a1739603c0490c4c80d7afc9ea6385826c9214",
-                "2084180803849b551aa2a9b6938fed3f64d9c28f97df05fa9f14dcd5d9614c5a",
-                "50de5ceef736947b0fb8be74faab7d6bf1693d1b19cb2a9bde6223dc9ee0a6e9",
-                "b06a478ef124013eeb111ddb78605355b539a1f1e2a787aa9bc3fdf52a349337",
-                "f9028475c1670062d0f9aad095866fc8d37addf44a753682b97f52da7865b1b7",
-                "531978003c16be0658fe85e12bf456d11cd3cdd61f178c75e8a1d2251e5bb895",
-                "76ec1ef8c97ef9c3cb6c862a2196e7c88fce3df5a4e731100e598368421858af"
+                "3adcad19daa48d77e64f02a2f6e33955a81bf4bde1e77c9e6203e39b9c562d8a",
+                "3ae2c30afbd6fec918ec451478cbf13d7091fc838b890e5864f1e24fc7ee5699",
+                "1514d4f8c0683fd04d35dd3e7d8e4ba06ea5387136541160d937720bd3e1ec14",
+                "6370febd51a98540f7ddbab783549dbfb7b37fb81d46faa062d91b7216646ed4",
+                "037d1c4fdbfca4ec2fb70df70e39e50b95d2bd112dd2aaa5128267ae974899cf",
+                "ab0f33df278ebd597fbc21ef3655ab28de504626ebb07166fb8a63486aaecb84",
+                "13e3b2eb8aa95cc6baf167def696dc9ab38f5ee58a4a4386adcf01b6d77e08e3",
+                "d07ecca2ac3f66be9b65b45b991a6921619d381a9f65eab6a9455c491ce9d4e6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "prideinlondon.org",
                 "snyk.io",
-                "www.caravanguard.co.uk",
-                "www.cyberghostvpn.com",
                 "www.drinkaware.co.uk",
                 "www.eharmony.co.uk",
+                "www.highsnobiety.com",
                 "www.mercedes-benz.co.uk",
                 "www.q-park.co.uk",
                 "www.royalparks.org.uk",
@@ -1176,36 +1165,75 @@
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/latest\\/uc-block\\.bundle\\.js",
+            "rule": "usercentrics\\.eu\\/aggregate\\/en",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "privacy-proxy"
+                "aggregator.service"
             ],
-            "apis": {
-                "window.localStorage": 5,
-                "Navigator.prototype.language": 1
-            },
-            "sites": 6,
-            "prevalence": 0.000604,
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000804,
             "cnames": [],
-            "responseHashes": [
-                "9db2d12b847c23448dfe3d22ea30dc1632cc7725dd65c2c5ea466acd5ad7c316"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "steinberg.help",
-                "www.cube.eu",
-                "www.einhell.co.uk",
-                "www.festool.co.uk",
-                "www.raisin.co.uk",
-                "www.steinberg.net"
+                "prideinlondon.org",
+                "snyk.io",
+                "www.drinkaware.co.uk",
+                "www.eharmony.co.uk",
+                "www.highsnobiety.com",
+                "www.mercedes-benz.co.uk",
+                "www.q-park.co.uk",
+                "www.royalparks.org.uk"
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/TcfData-377fde71-76919996\\.js",
+            "rule": "usercentrics\\.eu\\/translations\\/translations-de\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5726f479faf0b0e93fe5e114e4059e25908c7d4cebeef1805bb3531d1e2175ea"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bike-discount.de",
+                "www.impericon.com"
+            ]
+        },
+        {
+            "rule": "usercentrics\\.eu\\/translations\\/translations-de\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bike-discount.de",
+                "www.impericon.com"
+            ]
+        },
+        {
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/TcfData-ea538f5a-f398e3d3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1216,7 +1244,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "7096965bc8f4f5b487734a5be3ec601a25d7ae7d988e2bcc008f10fbb9636fe2"
+                "f8c251e7e6819400657579bd65a8bf927c4f4ec0ac5b632a1c1984c912cd8fa2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1238,7 +1266,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "73ab0229695813c9661e0b793dc8b2209afa7bdaa88d88753046c76193756678"
+                "b9537e3e0c354a4e576d2c8b10bf6c6a5c8edef2542f958322620417537a9f29"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1249,7 +1277,7 @@
             ]
         },
         {
-            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.21\\.1\\/TcfUI-2f397c9e-9381009d\\.js",
+            "rule": "usercentrics\\.eu\\/browser-ui\\/3\\.22\\.0\\/TcfUI-c639e0c0-21645040\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1260,7 +1288,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6c9ff9cc30ba57d425be83c0cf99b2c6382394076a5c2ac19c9c28ba27960562"
+                "3e52197c410e2d7c22c5ff83638f857d675cda0bd72b6c65be9847c0420169e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1277,51 +1305,51 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6511627906976745
-        },
-        {
-            "domain": "d2wy8f7a9ursnm.cloudfront.net",
-            "prevalence": 0.08139534883720931
+            "prevalence": 0.6209150326797386
         },
         {
             "domain": "instana.io",
-            "prevalence": 0.05813953488372093
+            "prevalence": 0.06535947712418301
         },
         {
-            "domain": "mercedes-benz.com",
-            "prevalence": 0.046511627906976744
+            "domain": "d2wy8f7a9ursnm.cloudfront.net",
+            "prevalence": 0.0457516339869281
         },
         {
             "domain": "idealo.com",
-            "prevalence": 0.040697674418604654
+            "prevalence": 0.0457516339869281
         },
         {
             "domain": "photobox.com",
-            "prevalence": 0.040697674418604654
-        },
-        {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.03488372093023256
+            "prevalence": 0.0457516339869281
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.03488372093023256
+            "prevalence": 0.0392156862745098
         },
         {
-            "domain": "flixbus.com",
-            "prevalence": 0.005813953488372093
+            "domain": "mercedes-benz.com",
+            "prevalence": 0.0392156862745098
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.032679738562091505
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.032679738562091505
         },
         {
             "domain": "ztat.net",
-            "prevalence": 0.005813953488372093
+            "prevalence": 0.026143790849673203
         }
     ],
     "types": {
-        "Script": 424,
-        "Document": 23,
-        "Image": 73,
-        "Fetch": 131,
-        "Preflight": 130,
+        "Script": 340,
+        "Image": 63,
+        "Fetch": 115,
+        "Preflight": 114,
+        "Document": 18,
         "XHR": 2
     },
     "nameservers": [

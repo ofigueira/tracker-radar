@@ -4,14 +4,41 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
+        "tags",
         "events"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "qortex\\.ai\\/bootstrapper",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [
+                "6593c7b159893ef26a19afaa24820e1911be727db709cbc386ee7cf78ce1f6e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gettr.com",
+                "radioquebec.tv",
+                "www.dexerto.fr",
+                "www.dexerto.com"
+            ]
+        },
         {
             "rule": "qortex\\.ai\\/api\\/v1\\/player-event",
             "cookies": 0,
@@ -20,17 +47,41 @@
                 "events"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dexerto.fr",
+                "gettr.com",
+                "www.dexerto.fr",
                 "www.dexerto.com",
                 "www.sportingnews.com"
+            ]
+        },
+        {
+            "rule": "qortex\\.ai\\/cxo\\/cx-bootstrapper-init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "afba0c73343aaccfa65632d743bb1283ac5ea8d09ea7d292bd2af6211707d48f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gettr.com",
+                "www.dexerto.fr",
+                "www.dexerto.com"
             ]
         }
     ],
@@ -39,19 +90,28 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "gettr.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
             "domain": "first party",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.16666666666666666
         },
         {
             "domain": "catapultx.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Fetch": 3
+        "Script": 7,
+        "Fetch": 4
     },
     "nameservers": [
-        "rosemary.ns.cloudflare.com",
-        "olof.ns.cloudflare.com"
+        "olof.ns.cloudflare.com",
+        "rosemary.ns.cloudflare.com"
     ]
 }

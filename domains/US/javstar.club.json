@@ -4,11 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "javstar\\.club\\/css\\/app\\.v1\\.5\\.css",
@@ -16,19 +16,34 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "30e34f078f4b1eb1dfcf9db25cf454e902aadc7586f937b0135442ea57ba58a6"
-            ],
+            "responseHashes": [],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "javclean.com",
-                "javmikami.com",
-                "javopen.co"
+                "javmikami.com"
+            ]
+        },
+        {
+            "rule": "javstar\\.club\\/js\\/jquery\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javclean.com",
+                "javmikami.com"
             ]
         },
         {
@@ -46,15 +61,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "javclean.com",
-                "javopen.co"
+                "javmikami.com"
             ]
         },
         {
             "rule": "javstar\\.club\\/player8\\/jwplayer\\.8\\.9\\.5\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -64,11 +83,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "javclean.com",
-                "javopen.co"
+                "javmikami.com"
             ]
         },
         {
-            "rule": "javstar\\.club\\/assets\\/jquery\\/cldaly\\.js",
+            "rule": "javstar\\.club\\/assets\\/jquery\\/cldaly2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -82,7 +101,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "javclean.com",
-                "javopen.co"
+                "javmikami.com"
             ]
         }
     ],
@@ -92,12 +111,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Stylesheet": 3,
-        "Script": 6
+        "Stylesheet": 2,
+        "Script": 8
     },
     "nameservers": [
         "mark.ns.cloudflare.com",

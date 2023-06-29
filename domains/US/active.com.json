@@ -70,11 +70,13 @@
         {
             "rule": "active\\.com\\/v5\\/auth\\/realms\\/active\\/protocol\\/openid-connect\\/3p-cookies\\/step1\\.html",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "passport"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie setter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -82,7 +84,20 @@
                 "669a31a113b7353d324d3b19ad3181cd33116c691b1aeb130823848bd7b52dd1"
             ],
             "type": "Document",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "KEYCLOAK_3P_COOKIE_SAMESITE": {
+                    "ttl": 60,
+                    "length": 9,
+                    "prevalence": 0.000006805962022731913,
+                    "uniqueness": 1
+                },
+                "KEYCLOAK_3P_COOKIE": {
+                    "ttl": 60,
+                    "length": 9,
+                    "prevalence": 0.000006805962022731913,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "activekids.com",
@@ -163,34 +178,6 @@
             ]
         },
         {
-            "rule": "active\\.com\\/b\\/ss\\/anactivecomprod,anactivekidsprod\\/1\\/JS-2\\.20\\.0\\/s87925658608426",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "smetrics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "c_ad_subchannel": 0.000013615816132018953,
-                "c_ad_subfeature1": 0.000013615816132018953,
-                "c_ad_subfeature2": 0.000013615816132018953,
-                "c_ad_channel": 0.000013615816132018953,
-                "c_ad_feature": 0.000013615816132018953,
-                "t_activekids_c": 0.000013615816132018953,
-                "s_fid": 0.000013615816132018953
-            },
-            "exampleSites": [
-                "activekids.com",
-                "www.activekids.com"
-            ]
-        },
-        {
             "rule": "active\\.com\\/fingerprint2\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 3,
@@ -244,24 +231,28 @@
             ]
         },
         {
-            "rule": "active\\.com\\/v5\\/auth\\/realms\\/active\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
+            "rule": "active\\.com\\/b\\/ss\\/anactivecomprod,anactivekidsprod\\/1\\/JS-2\\.20\\.0\\/s87659916959103",
             "cookies": 0.0000136,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "passport"
+                "smetrics"
             ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "81d907c82998d426e74c41cc9cf5c13465664e47383daa6a9d12d6e0237752ef"
-            ],
-            "type": "Document",
+            "responseHashes": [],
+            "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "c_ad_subchannel": 0.000013611924045463826,
+                "c_ad_subfeature1": 0.000013611924045463826,
+                "c_ad_subfeature2": 0.000013611924045463826,
+                "c_ad_channel": 0.000013611924045463826,
+                "c_ad_feature": 0.000013611924045463826,
+                "t_activekids_c": 0.000013611924045463826,
+                "s_fid": 0.000013611924045463826
+            },
             "exampleSites": [
                 "activekids.com",
                 "www.activekids.com"
@@ -288,12 +279,58 @@
             "type": "Script",
             "firstPartyCookies": {
                 "a3ig-token_v6": {
-                    "ttl": 61516809,
+                    "ttl": 61516817,
                     "length": 24,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activekids.com",
+                "www.activekids.com"
+            ]
+        },
+        {
+            "rule": "active\\.com\\/v5\\/auth\\/realms\\/active\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "passport"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "81d907c82998d426e74c41cc9cf5c13465664e47383daa6a9d12d6e0237752ef"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activekids.com",
+                "www.activekids.com"
+            ]
+        },
+        {
+            "rule": "active\\.com\\/socket\\.io\\/1\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "igweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7975d6ec6e5e6cb8c13c900f664aabb8c050cd97447d06c4c76748bc20f77ad4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "activekids.com",
@@ -317,7 +354,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "t_activekids_c": 0.000013615816132018953
+                "t_activekids_c": 0.000013611924045463826,
+                "_li_dcdm_c": 0.000006805962022731913
             },
             "exampleSites": [
                 "activekids.com",
@@ -325,49 +363,7 @@
             ]
         },
         {
-            "rule": "active\\.com\\/socket\\.io\\/1\\/",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "igweb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "253ea01ad618445858ad2510362fdeb172e9a240d56d48bda3af5a3dc7d2d2df"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "activekids.com",
-                "www.activekids.com"
-            ]
-        },
-        {
-            "rule": "active\\.com\\/feed\\/running",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "activekids.com",
-                "www.activekids.com"
-            ]
-        },
-        {
-            "rule": "active\\.com\\/b\\/ss\\/anactivecomprod,anactivekidsprod\\/1\\/JS-2\\.20\\.0\\/s85613471741036",
+            "rule": "active\\.com\\/b\\/ss\\/anactivecomprod,anactivekidsprod\\/1\\/JS-2\\.20\\.0\\/s81020917060869",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -381,13 +377,14 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "c_ad_subchannel": 0.000013615816132018953,
-                "c_ad_subfeature1": 0.000013615816132018953,
-                "c_ad_subfeature2": 0.000013615816132018953,
-                "c_ad_channel": 0.000013615816132018953,
-                "c_ad_feature": 0.000013615816132018953,
-                "t_activekids_c": 0.000013615816132018953,
-                "s_fid": 0.000013615816132018953
+                "c_ad_subchannel": 0.000013611924045463826,
+                "c_ad_subfeature1": 0.000013611924045463826,
+                "c_ad_subfeature2": 0.000013611924045463826,
+                "c_ad_channel": 0.000013611924045463826,
+                "c_ad_feature": 0.000013611924045463826,
+                "t_activekids_c": 0.000013611924045463826,
+                "s_fid": 0.000013611924045463826,
+                "_li_dcdm_c": 0.000013611924045463826
             },
             "exampleSites": [
                 "activekids.com",
@@ -397,27 +394,27 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8620689655172413
+            "prevalence": 0.8571428571428571
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.13793103448275862
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Document": 8,
         "Script": 10,
         "Image": 4,
-        "XHR": 6
+        "XHR": 4
     },
     "nameservers": [
+        "ns3.active.com",
         "ns2.active.com",
-        "ns1.active.com",
         "ns4.active.com",
-        "ns3.active.com"
+        "ns1.active.com"
     ]
 }

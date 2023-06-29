@@ -7,41 +7,42 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
-        "dn6mqn7xvzz3",
-        "8ll7xvh0qt1p",
-        "f99hbcdmsb16",
+        "jbxzcdv9xc4d",
         "z8s4n2jmrsl0",
-        "lfz25gyhcpjf",
-        "bghgsx0hcy0k",
-        "cdn"
+        "bghgsx0hcy0k"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "statuspage\\.io\\/api\\/v2\\/summary\\.json",
+            "rule": "statuspage\\.io\\/embed\\/frame",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "dn6mqn7xvzz3",
-                "8ll7xvh0qt1p"
+                "jbxzcdv9xc4d",
+                "z8s4n2jmrsl0",
+                "bghgsx0hcy0k"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "0cd7a318973323db13276e528b0d15bd01161301abc15b088cd67b620bddfe93"
+                "af2f0217155a42ee33ebe0a874380bfbb21ec44631697701dda922e162549bba",
+                "06bd4f1dcfe81e1d34dcab81bef7aa904e76446326af619d435d59f7a921d70a"
             ],
-            "type": "XHR",
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "redhat.com",
-                "www.pool.ntp.org"
+                "openai.com",
+                "docs.gradle.org",
+                "support.sonos.com"
             ]
         },
         {
@@ -49,84 +50,24 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "f99hbcdmsb16",
                 "z8s4n2jmrsl0",
-                "lfz25gyhcpjf",
                 "bghgsx0hcy0k"
             ],
             "apis": {
-                "Screen.prototype.width": 4
+                "Screen.prototype.width": 2
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8adacc8a96bb4b5e397651fe347e15f0c6c3de4665b4cc5c9d7f316b2da81130",
-                "4c0197ffa50d03495cca57bd3b1717d108fb0d2aeb0e9b62b8df55a371adbad7",
                 "ab69bdc2e29f7e08f74d12c84f97a92c254deff0715447bc1350b11110145f2e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "qlik.com",
-                "docs.gradle.org",
-                "support.kraken.com",
+                "gradle.org",
                 "support.sonos.com"
-            ]
-        },
-        {
-            "rule": "statuspage\\.io\\/embed\\/frame",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "f99hbcdmsb16",
-                "z8s4n2jmrsl0",
-                "lfz25gyhcpjf",
-                "bghgsx0hcy0k"
-            ],
-            "apis": {
-                "window.localStorage": 3
-            },
-            "sites": 4,
-            "prevalence": 0.000403,
-            "cnames": [],
-            "responseHashes": [
-                "af2f0217155a42ee33ebe0a874380bfbb21ec44631697701dda922e162549bba",
-                "dac8e1c152c37662d1dc365606c9078b5ddb5b7e0e67a9a89805ed2bda3ef199",
-                "06bd4f1dcfe81e1d34dcab81bef7aa904e76446326af619d435d59f7a921d70a"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "qlik.com",
-                "docs.gradle.org",
-                "support.kraken.com",
-                "support.sonos.com"
-            ]
-        },
-        {
-            "rule": "statuspage\\.io\\/se-v2\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [
-                "e2de85007c28d01d2a973cbd4efd90bda8f52771727ea5db199bd425f0720a37"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "squarespace.com",
-                "www.balena.io",
-                "www.pool.ntp.org"
             ]
         }
     ],
@@ -136,30 +77,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7142857142857143
-        },
-        {
-            "domain": "ntppool.org",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.8
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.1
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "XHR": 2,
-        "Script": 7,
-        "Document": 4
+        "Document": 3,
+        "Script": 2
     },
     "nameservers": [
-        "ns-951.awsdns-54.net",
         "ns-1560.awsdns-03.co.uk",
+        "ns-209.awsdns-26.com",
         "ns-1407.awsdns-47.org",
-        "ns-209.awsdns-26.com"
+        "ns-951.awsdns-54.net"
     ]
 }

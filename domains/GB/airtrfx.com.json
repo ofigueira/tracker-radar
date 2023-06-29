@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "em-frontend-assets",
         "em-font-service-prod",
@@ -14,11 +14,11 @@
         "vg-api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "airtrfx\\.com\\/components\\/em-theme-temp\\/1\\.1\\.398\\/themes\\/vs\\/index\\.isolated\\.vs\\.css",
-            "cookies": 0.000101,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "em-frontend-assets"
@@ -38,25 +38,27 @@
         },
         {
             "rule": "airtrfx\\.com\\/",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "em-font-service-prod",
                 "em-tr4ck-settings"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "9eeb5cb771f1deae52c08729b91e7171ef2ed1a48d858f3050a037784bd8683d"
+                "aa37cf1d16994f738129bb194de108ff112e6219794118291cd4cbe026360d38",
+                "1a17f3abf1f0629766b8722aeeb97ed5479da44c06a96e520722431dd7d7246f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "virginatlantic.com",
-                "flights.virginatlantic.com"
+                "flights.virginatlantic.com",
+                "www.etihad.com"
             ]
         },
         {
@@ -91,7 +93,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "a3b76cddb7dd16ea543e4d8daf2a7e2115843349e3e5ded071fb9308c25ed2a6"
+                "61ace629118de442b802ee2e6e442b545fcaff6364ab32a7d0b6adec7394f7b8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -102,23 +104,25 @@
             ]
         },
         {
-            "rule": "airtrfx\\.com\\/graphql",
+            "rule": "airtrfx\\.com\\/entrypoints\\/tracking\\/trfx-prod\\/x-start\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vg-api"
+                "em-frontend-assets"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "28f7566a7089cea83b0769774e6685016277c1acacea9033f71a79dad06b8a95"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "virginatlantic.com",
-                "flights.virginatlantic.com"
+                "www.etihad.com"
             ]
         },
         {
@@ -133,7 +137,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9c00e7e54e0b4dfea28dd903714d75c66b040ef4d6765edfbf1c4115edb98e60"
+                "d0f112a7984995c0c00396c326a6cb4370f62ed91954529ef7ac92ee5e9908f0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -141,6 +145,60 @@
             "exampleSites": [
                 "virginatlantic.com",
                 "flights.virginatlantic.com"
+            ]
+        },
+        {
+            "rule": "airtrfx\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vg-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "virginatlantic.com",
+                "flights.virginatlantic.com"
+            ]
+        },
+        {
+            "rule": "airtrfx\\.com\\/components\\/em-cmp-lib-tracking\\/0\\.11\\.53\\/components\\/em-cmp-tracking\\/tracking\\.bundle\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "em-frontend-assets"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ae73cbe168d0853b72c811adc460ae625d0024182602fc337891bf28c28ab298"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "emcid": {
+                    "ttl": 86404,
+                    "length": 11,
+                    "prevalence": 0.00010045203415369161,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "virginatlantic.com",
+                "www.etihad.com"
             ]
         }
     ],
@@ -150,27 +208,36 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5789473684210527
+            "prevalence": 0.5
         },
         {
             "domain": "dmc1acwvwny3.cloudfront.net",
-            "prevalence": 0.3684210526315789
+            "prevalence": 0.2916666666666667
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.125
         },
         {
             "domain": "quantummetric.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.041666666666666664
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.041666666666666664
         }
     ],
     "types": {
         "Stylesheet": 2,
-        "XHR": 4,
+        "XHR": 5,
         "Preflight": 4,
+        "Script": 4,
         "Fetch": 2
     },
     "nameservers": [
         "ns-1770.awsdns-29.co.uk",
+        "ns-105.awsdns-13.com",
         "ns-990.awsdns-59.net",
-        "ns-1283.awsdns-32.org",
-        "ns-105.awsdns-13.com"
+        "ns-1283.awsdns-32.org"
     ]
 }

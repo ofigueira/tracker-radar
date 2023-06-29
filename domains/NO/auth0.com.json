@@ -7,10 +7,10 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00142,
-    "sites": 14,
+    "prevalence": 0.0011,
+    "sites": 11,
     "subdomains": [
-        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "cdn",
         "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
         "dr-prod-cd-etu2agozgmf6idyg.edge.tenants.eu",
         "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
@@ -26,10 +26,6 @@
             "resolved": "naf-cd-qf7uhj9homrrm574.edge.tenants.eu.auth0.com"
         },
         {
-            "original": "login.arduino.cc",
-            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-        },
-        {
             "original": "login.dr.dk",
             "resolved": "dr-prod-cd-etu2agozgmf6idyg.edge.tenants.eu.auth0.com"
         },
@@ -41,24 +37,46 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.20\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ebf5fe084506fa53aecb68bc4d315b1e1b149b56a0465d7bc7e584ca9711c6dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "www.focus.de"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000606,
+            "cookies": 0.000502,
             "fingerprinting": 0,
             "subdomains": [
-                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
                 "dr-prod-cd-etu2agozgmf6idyg.edge.tenants.eu",
                 "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
                 "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000606,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
-                {
-                    "original": "login.arduino.cc",
-                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
-                },
                 {
                     "original": "id.naf.no",
                     "resolved": "naf-cd-qf7uhj9homrrm574.edge.tenants.eu.auth0.com"
@@ -77,15 +95,14 @@
                 }
             ],
             "responseHashes": [
-                "94e80b7d8cf45214b87341453b593d39b8c4e04b548d8e94e1d323efb7b7c0ea",
-                "0d336a1f5d23b5074e85521e90aa4eb7952dbf238e2e8693f7805496a92992df"
+                "da60eea7aaeee899c293950a7c22f5788055a7c3c9303cdf9d4aa2b18021244b",
+                "6e60ed940db2bb0086e581fd297e57670b8ccc6412d78bb76f11b7fc1aa164a5"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arduino.cc",
-                "nye.naf.no",
+                "naf.no",
                 "www.dr.dk",
                 "www.finder.com",
                 "www.naf.no",
@@ -95,23 +112,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000708,
+    "cookies": 0.000602,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8181818181818182
+            "prevalence": 0.75
         },
         {
             "domain": "dvh1deh6tagwk.cloudfront.net",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.125
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Document": 6
+        "Script": 2,
+        "Document": 5
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",
