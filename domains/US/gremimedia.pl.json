@@ -10,20 +10,24 @@
         "login"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "gremimedia\\.pl\\/auth\\/realms\\/gremimedia\\/protocol\\/openid-connect\\/login-status-iframe\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "login"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "266d2b010bdabdffb13c399965ef815be87b29204ce092d702f20f3b00c22f9b"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -51,6 +55,28 @@
                 "rp.pl",
                 "www.rp.pl"
             ]
+        },
+        {
+            "rule": "gremimedia\\.pl\\/auth\\/realms\\/gremimedia\\/protocol\\/openid-connect\\/login-status-iframe\\.html\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rp.pl",
+                "www.rp.pl"
+            ]
         }
     ],
     "categories": [],
@@ -64,7 +90,8 @@
     ],
     "types": {
         "Document": 2,
-        "Image": 2
+        "Image": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ziggy.ns.cloudflare.com",

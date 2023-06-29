@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
         "api"
     ],
@@ -16,15 +16,41 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "retargetly\\.com\\/loader",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fdc0f545534adca5e17a11c892e33b343e351f4794f263e3790ad8cfd7357393"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eluniversal.com.mx",
+                "www.milenio.com"
+            ]
+        },
+        {
             "rule": "retargetly\\.com\\/api",
-            "cookies": 0.000202,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -33,25 +59,53 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ambito.com",
-                "www.ambito.com"
+                "eluniversal.com.mx",
+                "www.eluniversal.com.mx",
+                "www.milenio.com"
+            ]
+        },
+        {
+            "rule": "retargetly\\.com\\/data",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milenio.com",
+                "www.milenio.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Document": 2
+        "Script": 4,
+        "Document": 3
     },
     "nameservers": [
-        "tegan.ns.cloudflare.com",
-        "hal.ns.cloudflare.com"
+        "hal.ns.cloudflare.com",
+        "tegan.ns.cloudflare.com"
     ]
 }

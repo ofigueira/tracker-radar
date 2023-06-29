@@ -9,13 +9,18 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000505,
+    "prevalence": 0.000502,
     "sites": 5,
     "subdomains": [
         "adsk-prod",
+        "mns-00.dn",
         "fandom-prod"
     ],
     "cnames": [
+        {
+            "original": "api.marksandspencer.com",
+            "resolved": "mns-00.dn.apigee.net"
+        },
         {
             "original": "developer.api.autodesk.com",
             "resolved": "adsk-prod.apigee.net"
@@ -25,14 +30,14 @@
     "resources": [
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
-            "cookies": 0.000202,
+            "cookies": 0.000201,
             "fingerprinting": 0,
             "subdomains": [
                 "adsk-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "developer.api.autodesk.com",
@@ -49,6 +54,58 @@
             ]
         },
         {
+            "rule": "apigee\\.net\\/phoenix-eventcollector\\/v1\\/event\\/mparticle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mns-00.dn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.marksandspencer.com",
+                    "resolved": "mns-00.dn.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marksandspencer.com",
+                "www.marksandspencer.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/phoenix-eventcollector\\/v1\\/event\\/mparticle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mns-00.dn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.marksandspencer.com",
+                    "resolved": "mns-00.dn.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marksandspencer.com",
+                "www.marksandspencer.com"
+            ]
+        },
+        {
             "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/tvguide\\/session\\/load",
             "cookies": 0,
             "fingerprinting": 0,
@@ -57,10 +114,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "75c12ce6bc96a6a992c985fceea671be6ad1dd816b89103e6dde210276e8691a"
+                "954ff1dd077adb02914f51c27b049a71db97d9a381ba17fe429814b2cbab8571"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -79,10 +136,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "d275e41a8d6e67b30c2f4f43cbcfe5be0007dead42aa47629d379967d994ea8d"
+                "4470597f793dcc246b53d8442d085745dd3124b8632ba8f150a1fdd559034a3a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -97,21 +154,26 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000303,
+    "cookies": 0.000301,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "mparticle.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
         "Document": 2,
-        "XHR": 4
+        "Preflight": 2,
+        "XHR": 6
     },
     "nameservers": [
         "ns-670.awsdns-19.net",
-        "ns-116.awsdns-14.com",
         "ns-1441.awsdns-52.org",
+        "ns-116.awsdns-14.com",
         "ns-1907.awsdns-46.co.uk"
     ]
 }

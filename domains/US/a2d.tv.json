@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000477,
+    "prevalence": 0.0000476,
     "sites": 7,
     "subdomains": [
         "tv4-login",
         "imageproxy",
+        "akamaivod.streaming",
         "lumenvod.streaming",
-        "akamaivod.streaming"
+        "client-gateway.tv4",
+        "trailer-cdn"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -23,13 +25,13 @@
                 "tv4-login"
             ],
             "apis": {
-                "DeviceMotionEvent.prototype.acceleration": 2,
-                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 2,
-                "DeviceMotionEvent.prototype.rotationRate": 2,
-                "DeviceOrientationEvent.prototype.alpha": 2,
-                "DeviceOrientationEvent.prototype.beta": 2,
-                "DeviceOrientationEvent.prototype.gamma": 2,
                 "Document.cookie getter": 2,
+                "DeviceMotionEvent.prototype.acceleration": 1,
+                "DeviceMotionEvent.prototype.accelerationIncludingGravity": 1,
+                "DeviceMotionEvent.prototype.rotationRate": 1,
+                "DeviceOrientationEvent.prototype.alpha": 1,
+                "DeviceOrientationEvent.prototype.beta": 1,
+                "DeviceOrientationEvent.prototype.gamma": 1,
                 "Screen.prototype.colorDepth": 2,
                 "Screen.prototype.pixelDepth": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -69,9 +71,9 @@
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "56ed55e370a60dce8fdd4308424cc016846a7649607cf7f48553f0b2e4162d66",
-                "3e2119887e0cdeb0698328a55bc7cc3d8bc37788295af3572c2e09ae8277b03f",
-                "a16f480ea728bc2e984be051a854006cb3c2d19a61f7f20f9b3ae370062c9559"
+                "0c8ce7fd612d704e17785c1b266517125b2864be6fc3ff72b571f147b655fc6e",
+                "3ef63289638106f2000c969305301d471daa4a32f0f721244798e5779084821a",
+                "6568d570878209e384c8913afae11e1c4002b010bdd48acfe0479b28506974fa"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -88,12 +90,11 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "lumenvod.streaming",
                 "akamaivod.streaming"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
@@ -103,8 +104,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mtv.fi",
-                "www.mtv.fi",
-                "www.tv4play.se"
+                "www.mtv.fi"
             ]
         },
         {
@@ -112,12 +112,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "lumenvod.streaming",
-                "akamaivod.streaming"
+                "akamaivod.streaming",
+                "lumenvod.streaming"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "e40ac9e48a887216e747666add53db394bf5f9efd526a53f288808d4de4303e3"
@@ -127,32 +127,98 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mtv.fi",
-                "www.mtv.fi",
+                "www.mtv.fi"
+            ]
+        },
+        {
+            "rule": "a2d\\.tv\\/graphql",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-gateway.tv4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "152342b3c0f1eb6c5c4cc314f23b84a9f1a91e1879452357fe21ff5585ac71b1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tv4play.se",
+                "www.tv4play.se"
+            ]
+        },
+        {
+            "rule": "a2d\\.tv\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-gateway.tv4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tv4play.se",
+                "www.tv4play.se"
+            ]
+        },
+        {
+            "rule": "a2d\\.tv\\/comet\\/2be1f75d-5f1c-405a-aba4-c55f70e67d5a\\.webm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trailer-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5009c8a84792fa6df091bb1b0e06a2f6d2bc1f88bd4fced2389417fafe0ee69"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tv4play.se",
                 "www.tv4play.se"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6842105263157895
+            "prevalence": 0.8695652173913043
         },
         {
             "domain": "cedexis.com",
-            "prevalence": 0.3157894736842105
+            "prevalence": 0.13043478260869565
         }
     ],
     "types": {
         "Script": 2,
-        "Image": 10
+        "Image": 8,
+        "Fetch": 2,
+        "Preflight": 2,
+        "Media": 2
     },
     "nameservers": [
-        "ns-1730.awsdns-24.co.uk",
-        "ns-1092.awsdns-08.org",
         "ns-601.awsdns-11.net",
-        "ns-84.awsdns-10.com"
+        "ns-84.awsdns-10.com",
+        "ns-1092.awsdns-08.org",
+        "ns-1730.awsdns-24.co.uk"
     ]
 }

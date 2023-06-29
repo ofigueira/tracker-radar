@@ -8,6 +8,7 @@
     "sites": 12,
     "subdomains": [
         "cdn",
+        "ingest.make.rvcf",
         "ingest.make"
     ],
     "cnames": [],
@@ -15,23 +16,64 @@
     "resources": [
         {
             "rule": "rvohealth\\.com\\/cohesion\\/cohesion-health\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "818bbbbde7e64ad847623808dc92c266c73586469466ef2c1c462588542354d7"
+                "d8bbeecbd11f59a14d057bf84f8255e33ad1980cc3d33757a245cae8d3b4e892"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "chsn_cnsnt": {
+                    "ttl": 63072003,
+                    "length": 59,
+                    "prevalence": 0.000013611924045463826,
+                    "uniqueness": 0.5
+                },
+                "tglr_anon_id": {
+                    "ttl": 63072003,
+                    "length": 36,
+                    "prevalence": 0.000013611924045463826,
+                    "uniqueness": 1
+                },
+                "tglr_sess_id": {
+                    "ttl": 1803,
+                    "length": 36,
+                    "prevalence": 0.000013611924045463826,
+                    "uniqueness": 1
+                },
+                "tglr_req": {
+                    "ttl": 1803,
+                    "length": 54,
+                    "prevalence": 0.000013611924045463826,
+                    "uniqueness": 1
+                },
+                "tglr_sess_count": {
+                    "ttl": 63072003,
+                    "length": 1,
+                    "prevalence": 0.000013611924045463826,
+                    "uniqueness": 0.5
+                },
+                "tglr_tenant_id": {
+                    "ttl": 63072003,
+                    "length": 31,
+                    "prevalence": 0.000013611924045463826,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "healthline.com",
@@ -43,22 +85,20 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "ingest.make.rvcf",
                 "ingest.make"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
-            "responseHashes": [
-                "d0d9bacb1a90b3f066d74276a266173b32fdc010fe8174a9847fd6ae34b95584",
-                "ae67bd5143df8320b5b33405f04bff49eb7bef9ab400dd7e7683e2627bcda763",
-                "20c1e57cf310a5e463e6661418cb1d6cb967bdd3b97d1f454bed5fcd26eb65a6",
-                "89744029c33abbf01cc5170ee6148c8745154d1681c6443daa2c548ef59541d2"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
                 "greatist.com",
                 "psychcentral.com",
                 "www.healthgrades.com",
@@ -71,17 +111,27 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "ingest.make.rvcf",
                 "ingest.make"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "ad6199e890d0ff04dda730dabaf153218e09525c42847c925abf3e2894b6c029",
+                "52d5a9e7052172ea321f4e33cbf0008e4ded293f6ee8f275cc2645b03b8cc03b",
+                "1257c8276cb2f603ac21317307502c28b0fb6feee5acdb6fdb1b00fb4f2342c9",
+                "a1cb87592d14d94619ce24edc379a8b88050fe69f53700a8adb0d23c3be04068",
+                "07f24151195f5bcb5d89dc69467afbf6a073b71725f67421848da2b6ea627dca",
+                "c5ef517f72c4fae1da1722d0fb92eaed17fc3900704e0c5c968480a630b08b43"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
                 "greatist.com",
                 "psychcentral.com",
                 "www.healthgrades.com",
@@ -125,9 +175,9 @@
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "b61e605812c7880a8699144fd3aa89e0e163444f47a780f907181e22f1712990",
-                "e7dff8c69a6df0d933dcaff694eccd4efa8e8cba16469cac2a9910b81d36b5e7",
-                "eb6f9699fd967bbb088442b29e8cfe11e644dcf5ccad860a965c52c6322e000c"
+                "660e351917e1b010a9494a6b40b0d110dcdf9f9c82c1cd06291fbadc1eb85be9",
+                "bdb7e6770e81812b9bacae9c5410abd8129eb38a34b98ad64afca75485f9bd2a",
+                "a68893912237008c0ec6a5c54240991e470a2b13ccb3c8c821a065963e35e24f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -238,50 +288,50 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eb287834cd9a44e140e17e64f11823291f721cea834ba9063b3cb76c2e69be75"
+                "3ffa0cf75d2bfddaefa0a5578885331c5c0c15940c2ef95e43d1be81446b4713"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "chsn_cnsnt": {
                     "ttl": 63072003,
                     "length": 60,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 0.5
                 },
                 "tglr_anon_id": {
-                    "ttl": 63072002,
+                    "ttl": 63072003,
                     "length": 36,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 1
                 },
                 "tglr_sess_id": {
-                    "ttl": 1802,
+                    "ttl": 1803,
                     "length": 36,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 1
                 },
                 "tglr_req": {
-                    "ttl": 1802,
-                    "length": 47,
-                    "prevalence": 0.000013615816132018953,
+                    "ttl": 1803,
+                    "length": 63,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 1
                 },
                 "tglr_sess_count": {
-                    "ttl": 63072002,
+                    "ttl": 63072003,
                     "length": 1,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 0.5
                 },
                 "tglr_tenant_id": {
-                    "ttl": 63072002,
+                    "ttl": 63072003,
                     "length": 31,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 0.5
                 },
                 "cohsn_xs_id": {
                     "ttl": 63072003,
                     "length": 36,
-                    "prevalence": 0.000013615816132018953,
+                    "prevalence": 0.000013611924045463826,
                     "uniqueness": 1
                 }
             },
@@ -294,31 +344,35 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000034,
+    "cookies": 0.0000408,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9735099337748344
+            "prevalence": 0.9714285714285714
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.013245033112582781
+            "prevalence": 0.011428571428571429
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.013245033112582781
+            "prevalence": 0.011428571428571429
+        },
+        {
+            "domain": "healthgrades.com",
+            "prevalence": 0.005714285714285714
         }
     ],
     "types": {
         "Script": 8,
-        "XHR": 13,
-        "Preflight": 5,
+        "Preflight": 7,
+        "XHR": 15,
         "Document": 10
     },
     "nameservers": [
-        "ns-1652.awsdns-14.co.uk",
         "ns-675.awsdns-20.net",
-        "ns-1078.awsdns-06.org",
-        "ns-454.awsdns-56.com"
+        "ns-454.awsdns-56.com",
+        "ns-1652.awsdns-14.co.uk",
+        "ns-1078.awsdns-06.org"
     ]
 }

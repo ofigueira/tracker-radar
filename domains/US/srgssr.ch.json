@@ -7,14 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "tp",
+        "letterbox-web",
         "il"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "srgssr\\.ch\\/assets\\/javascripts\\/player-api\\.min\\.js",
@@ -39,7 +40,61 @@
             ]
         },
         {
-            "rule": "srgssr\\.ch\\/images\\/",
+            "rule": "srgssr\\.ch\\/v\\/3\\.18\\/letterbox\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "letterbox-web"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 1,
+                "Event.prototype.timeStamp": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8bcb4b72b73bd70e98d7a02d0befdbd10079d88a356f69057288de1032b51a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rts.ch",
+                "www.rts.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/v\\/3\\.18\\/letterbox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "letterbox-web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2da5101135443a055159c841907c43a53c203913ac444fdf27d7204c34c5a748"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rts.ch",
+                "www.rts.ch"
+            ]
+        },
+        {
+            "rule": "srgssr\\.ch\\/integrationlayer\\/2\\.0\\/mediaComposition\\/byUrn\\/urn:rts:audio:14051417\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -50,9 +105,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a2c6be567ae47404c3af638a2a8484f508b8d6bcbc4fb53e4bd57dea270239f2"
+                "bd3842e5d1da4c6b71d2398b1c29e743969723843cb49d0890aee7026de0d1b5"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -67,16 +122,13 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8888888888888888
-        },
-        {
-            "domain": "srf.ch",
-            "prevalence": 0.1111111111111111
+            "prevalence": 1
         }
     ],
     "types": {
-        "Script": 2,
-        "Image": 2
+        "Script": 4,
+        "Stylesheet": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns4.srgssr.ch",

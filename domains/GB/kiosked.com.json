@@ -7,15 +7,16 @@
     "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "scripts"
+        "scripts",
+        "events"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "kiosked\\.com\\/loader\\/kiosked-loader\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
                 "scripts"
             ],
@@ -23,38 +24,93 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Navigator.prototype.appName": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.appVersion": 2
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "df43b295dd5654837bb4cf5f1425e902977e33c9e930024e7c4fece39561be97"
+                "c6c20be6f6d94758466bac5ce0111fdd92eb0bb17e7bbbfaac15b0530ade5a77"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592003,
+                    "length": 16,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 0.5
+                },
+                "_sharedID": {
+                    "ttl": 2592003,
+                    "length": 36,
+                    "prevalence": 0.00020090406830738323,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "strategywiki.org",
+                "www.neoseeker.com"
+            ]
+        },
+        {
+            "rule": "kiosked\\.com\\/u",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ac554a4ea8b34bbb80db013e14be195ebc986f82f24e5b18b0ea9032ef561f57"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neoseeker.com",
                 "www.neoseeker.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-88.awsdns-11.com",
         "ns-789.awsdns-34.net",
+        "ns-88.awsdns-11.com",
         "ns-1172.awsdns-18.org",
         "ns-1982.awsdns-55.co.uk"
     ]

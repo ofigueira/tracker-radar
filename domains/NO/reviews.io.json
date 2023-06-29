@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
-        "api"
+        "api",
+        "assets"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,10 +25,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "fc70ff513137c1adad4905322259a537e0cd7b59558e1b48a51c2ecf7ca2ee60"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -35,6 +36,52 @@
             "exampleSites": [
                 "bildeler.no",
                 "www.bildeler.no"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/json-ld\\/company\\/snippet",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "df834edaae438d3e8497fdc09f7d239049abf7e0a6c7937bd22c9bfb161f0f85"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SALESREPS_URL": 0.00010041168792047395
+            },
+            "exampleSites": [
+                "bildeler.no",
+                "www.urotuning.com"
+            ]
+        },
+        {
+            "rule": "reviews\\.io\\/img\\/all-global-assets\\/logo\\/reviewsio-logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7a1dc4540977baca4f1d271046f4011d06c790956b989b25e31d45819ef76ae3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bildeler.no",
+                "www.urotuning.com"
             ]
         }
     ],
@@ -44,11 +91,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.9375
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
         "jeremy.ns.cloudflare.com",

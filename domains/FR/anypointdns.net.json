@@ -4,15 +4,20 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000202,
+    "prevalence": 0.000201,
     "sites": 2,
     "subdomains": [
-        "arm-prod-public.lb"
+        "arm-prod-public.lb",
+        "splunk-elb.lb"
     ],
     "cnames": [
         {
             "original": "api.arm.com",
             "resolved": "arm-prod-public.lb.anypointdns.net"
+        },
+        {
+            "original": "apps-api.splunk.com",
+            "resolved": "splunk-elb.lb.anypointdns.net"
         }
     ],
     "fingerprinting": 0,
@@ -26,7 +31,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "api.arm.com",
@@ -34,7 +39,7 @@
                 }
             ],
             "responseHashes": [
-                "22ac36d471e27de8fc3e534148337700bc06f8afee8bb2d156f14e2887d135dd"
+                "e5f6493a95de48b5e563a45cb9b2e3dbee0f5de89d1780d78ba347c6b5225db7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -43,24 +48,82 @@
                 "arm.com",
                 "developer.arm.com"
             ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com"
+            ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [
+                "8a551b84278c50587e8a79b6b7f16b884dadfa795073ed486a1d34abccf5d5bb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "d7koym0rxduxm.cloudfront.net",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "d221cp5lqk6y64.cloudfront.net",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-1546.awsdns-01.co.uk",
         "ns-180.awsdns-22.com",
-        "ns-1343.awsdns-39.org",
-        "ns-975.awsdns-57.net"
+        "ns-1546.awsdns-01.co.uk",
+        "ns-975.awsdns-57.net",
+        "ns-1343.awsdns-39.org"
     ]
 }

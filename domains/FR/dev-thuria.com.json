@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "matomo",
         "smbt-matomo"
@@ -15,25 +15,28 @@
     "resources": [
         {
             "rule": "dev-thuria\\.com\\/matomo\\.js",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 2,
             "subdomains": [
                 "matomo",
                 "smbt-matomo"
             ],
             "apis": {
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3,
-                "window.name": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "Navigator.prototype.javaEnabled": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "window.name": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.mimeTypes": 5,
+                "Navigator.prototype.javaEnabled": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.doNotTrack": 1
             },
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "0504b67a506ab4b537725084eb6c26f4c1ceeb3349e7c84da8974bec7bde47e1",
@@ -44,6 +47,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "auvergne-destination.com",
+                "www.clermontauvergnetourisme.com",
+                "www.en-pays-basque.fr",
                 "www.ladrometourisme.com",
                 "www.savoie-mont-blanc.com"
             ]
@@ -57,8 +62,8 @@
                 "smbt-matomo"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000303,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -68,30 +73,79 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "auvergne-destination.com",
+                "www.clermontauvergnetourisme.com",
+                "www.en-pays-basque.fr",
                 "www.ladrometourisme.com",
                 "www.savoie-mont-blanc.com"
+            ]
+        },
+        {
+            "rule": "dev-thuria\\.com\\/index\\.php",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "398ee665da3f8804dc0b1eeddcdfa695cb6031866b1069b608fbc91f4241399d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clermontauvergnetourisme.com",
+                "www.en-pays-basque.fr"
+            ]
+        },
+        {
+            "rule": "dev-thuria\\.com\\/plugins\\/CoreAdminHome\\/javascripts\\/optOut\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "matomo"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fde7bf4b646157a6fdb858e8876273421ecd194437395b4b213f2e931f69e8b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clermontauvergnetourisme.com",
+                "www.en-pays-basque.fr"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.6
+            "domain": "first party",
+            "prevalence": 0.7272727272727273
         },
         {
-            "domain": "first party",
-            "prevalence": 0.4
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "Script": 3,
-        "Ping": 3
+        "Script": 7,
+        "Ping": 5,
+        "Document": 2
     },
     "nameservers": [
-        "scott.ns.cloudflare.com",
-        "carol.ns.cloudflare.com"
+        "carol.ns.cloudflare.com",
+        "scott.ns.cloudflare.com"
     ]
 }

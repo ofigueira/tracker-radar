@@ -12,10 +12,11 @@
     "subdomains": [
         "appsnew",
         "newsapi",
+        "unomi",
         "cache-comentarios",
         "cometd2",
-        "cometd3",
-        "unomi"
+        "cometd4",
+        "videosetv"
     ],
     "cnames": [
         {
@@ -30,7 +31,7 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ecn\\.cl\\/bt\\/pingAudience",
+            "rule": "ecn\\.cl\\/bt\\/pongAudience",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -68,11 +69,40 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b1e3f130e8ff117829b85d4ac296955ce7112a313b7aa23d1eb08dabf3db52e8"
+                "2f0a6fe96b3fd8f821e69f68406b498ed6af8eb6450c437d38101fcbaaa629a7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/context\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unomi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "unm.emol.com",
+                    "resolved": "unomi.ecn.cl"
+                }
+            ],
+            "responseHashes": [
+                "9a9029791abb525c52f23896173a117a4b708ae599ac36070450d88aebb538c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "context-session-id": 0.000013611924045463826
+            },
             "exampleSites": [
                 "emol.com",
                 "www.emol.com"
@@ -90,7 +120,34 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0d6bb5e492b5ed8de0fd04d585650eee4fa3bbd4607908ed95c29d6ed742432b"
+                "dbc5781558661dea0df4ed7f724684225a4bfd19496f67517f3280913f37d695"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/eventcollector",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unomi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "unm.emol.com",
+                    "resolved": "unomi.ecn.cl"
+                }
+            ],
+            "responseHashes": [
+                "0ce52f4807512759118f6c65c9beaed25aa912224a0e549fc13e33c4f1ffc0da"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -133,7 +190,7 @@
             "fingerprinting": 0,
             "subdomains": [
                 "cometd2",
-                "cometd3"
+                "cometd4"
             ],
             "apis": {},
             "sites": 2,
@@ -143,35 +200,6 @@
             "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "ecn\\.cl\\/context\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unomi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "unm.emol.com",
-                    "resolved": "unomi.ecn.cl"
-                }
-            ],
-            "responseHashes": [
-                "07320ef8650fff690427e5ff33a39e45fcbc6114f3228c2339458cbe68a0aa2e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "context-session-id": 0.000013615816132018953
-            },
             "exampleSites": [
                 "emol.com",
                 "www.emol.com"
@@ -205,25 +233,18 @@
             ]
         },
         {
-            "rule": "ecn\\.cl\\/eventcollector",
+            "rule": "ecn\\.cl\\/EMOLTV_V2_20230619143142310_240p\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "unomi"
+                "videosetv"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "unm.emol.com",
-                    "resolved": "unomi.ecn.cl"
-                }
-            ],
-            "responseHashes": [
-                "0ce52f4807512759118f6c65c9beaed25aa912224a0e549fc13e33c4f1ffc0da"
-            ],
-            "type": "XHR",
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -238,18 +259,19 @@
     "topInitiators": [
         {
             "domain": "emol.cl",
-            "prevalence": 0.9814814814814815
+            "prevalence": 0.9636363636363636
         },
         {
             "domain": "first party",
-            "prevalence": 0.018518518518518517
+            "prevalence": 0.03636363636363636
         }
     ],
     "types": {
         "Image": 4,
         "XHR": 6,
         "Script": 4,
-        "WebSocket": 2
+        "WebSocket": 2,
+        "Media": 2
     },
     "nameservers": [
         "aragorn.ns.cloudflare.com",

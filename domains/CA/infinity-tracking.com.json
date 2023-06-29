@@ -4,36 +4,84 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "script",
+        "web.lon",
         "nas.lon"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "infinity-tracking\\.com\\/allocate",
+            "rule": "infinity-tracking\\.com\\/infinitytrack\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "script"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d14527228d1f0f2d174d0f248d335a14203a57eba8cddd2205e0b9c1f1cf0198"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "www.gartner.com"
+            ]
+        },
+        {
+            "rule": "infinity-tracking\\.com\\/v3\\/info",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "nas.lon"
+                "web.lon"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000202,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "8119ab1c866cb1e1bb0e641c7c87442cde8550e42b5f48ac66ef51923505d060"
+                "ec79253a74e11c32b013252e9aa93464227742d666163016e6c0d7588c03058e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "ajs_anonymous_id": 0.0001007759750075582
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "intuit.com",
-                "quickbooks.intuit.com"
+                "www.gartner.com"
+            ]
+        },
+        {
+            "rule": "infinity-tracking\\.com\\/v3\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web.lon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intuit.com",
+                "www.gartner.com"
             ]
         },
         {
@@ -44,18 +92,45 @@
                 "nas.lon"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "707f6d68e235943687a7abbc46a587a596fe06546e131c4f2204fbc0da1289cb",
+                "9ed9db0c0c03cad408aea32640718c1fc97f0007bce72332951ad3246069d5b3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ajs_anonymous_id": 0.0001004419445560466
+            },
+            "exampleSites": [
+                "intuit.com",
+                "quickbooks.intuit.com",
+                "www.gartner.com"
+            ]
+        },
+        {
+            "rule": "infinity-tracking\\.com\\/allocate",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nas.lon"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "ajs_anonymous_id": 0.0001007759750075582
+                "ajs_anonymous_id": 0.0001004419445560466
             },
             "exampleSites": [
                 "intuit.com",
-                "quickbooks.intuit.com"
+                "quickbooks.intuit.com",
+                "www.gartner.com"
             ]
         }
     ],
@@ -65,17 +140,22 @@
     "topInitiators": [
         {
             "domain": "tiqcdn.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 2,
+        "Fetch": 5,
+        "Preflight": 5
     },
     "nameservers": [
-        "ns-1116.awsdns-11.org",
-        "ns-1629.awsdns-11.co.uk",
+        "ns-591.awsdns-09.net",
         "ns-477.awsdns-59.com",
-        "ns-591.awsdns-09.net"
+        "ns-1629.awsdns-11.co.uk",
+        "ns-1116.awsdns-11.org"
     ]
 }
