@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
+        "frts-tnew-prod",
+        "myst-tnew-prod",
         "mfah-tnew-prod",
         "natt-tnew-prod",
         "nmsc-tnew-test"
@@ -17,12 +19,52 @@
             "resolved": "mfah-tnew-prod.tnhs.cloud"
         },
         {
+            "original": "ramp.mysticaquarium.org",
+            "resolved": "myst-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "secure.thefreight.org",
+            "resolved": "frts-tnew-prod.tnhs.cloud"
+        },
+        {
             "original": "tickets.nationaltheatre.org.uk",
             "resolved": "natt-tnew-prod.tnhs.cloud"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frts-tnew-prod",
+                "myst-tnew-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "secure.thefreight.org",
+                    "resolved": "frts-tnew-prod.tnhs.cloud"
+                },
+                {
+                    "original": "ramp.mysticaquarium.org",
+                    "resolved": "myst-tnew-prod.tnhs.cloud"
+                }
+            ],
+            "responseHashes": [
+                "74fc972810a3fbe91330b7fa2978679b24472745bd7040cb925f8498d1649c68"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreight.org",
+                "www.mysticaquarium.org"
+            ]
+        },
         {
             "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey",
             "cookies": 0.0000204,
@@ -45,8 +87,8 @@
                 }
             ],
             "responseHashes": [
-                "ff6936f79a2b83e9c9a5b270e4ec2f684d35a5d11407a7418090e29617a9697f",
-                "e2e116a93f71058b83bf5c3acebc289ff05bcab7f27aabfb5029ef182c90b641"
+                "cf6220679a63bf4b17b08d4b25ed8ae0659ab67f5e26640db3b5ed86949e967b",
+                "ff0b93a47e60a40f3f2624af61fc5ac1c679b2211a1b03fcd5c55e80fe1d7b17"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -55,26 +97,6 @@
                 "mfah.org",
                 "www.mfah.org",
                 "www.nationaltheatre.org.uk"
-            ]
-        },
-        {
-            "rule": "tnhs\\.cloud\\/components\\/sharedsession",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nmsc-tnew-test"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nms.ac.uk",
-                "www.nms.ac.uk"
             ]
         },
         {
@@ -100,22 +122,25 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000408,
+    "cookies": 0.0000545,
     "topInitiators": [
         {
             "domain": "cloudflare.com",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "d35y46dv539h1e.cloudfront.net",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Fetch": 3,
-        "Other": 2,
-        "XHR": 2
+        "XHR": 4,
+        "Fetch": 3
     },
     "nameservers": [
+        "ns-885.awsdns-46.net",
         "ns-1438.awsdns-51.org",
         "ns-477.awsdns-59.com",
-        "ns-885.awsdns-46.net",
         "ns-1737.awsdns-25.co.uk"
     ]
 }

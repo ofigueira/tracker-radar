@@ -7,10 +7,11 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "livemap"
+        "livemap",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "getwemap\\.com\\/js\\/sdk\\.min\\.js",
@@ -26,14 +27,56 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c1509deaa0e0396b748f9852738475450e778a0c669542608e43ec367f4ae4f2"
+                "218abe83e49128a835b953d0c5e246ae2b21a92b5b2d65e73a293a2c518b7050"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lanouvellerepublique.fr",
+                "bretagne.com",
                 "www.lanouvellerepublique.fr"
+            ]
+        },
+        {
+            "rule": "getwemap\\.com\\/6bf74250-67ac-4255-9433-454a24cd5156",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "livemap"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac94fa74d1fd167731c0de68977ba74ded6921ac3c60e5f55f967e33a39fe8d4"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bretagne.com",
+                "www.bretagne.com"
+            ]
+        },
+        {
+            "rule": "getwemap\\.com\\/v3\\.0\\/pinpoints\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bretagne.com",
+                "www.bretagne.com"
             ]
         }
     ],
@@ -43,14 +86,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.8
+        },
+        {
+            "domain": "getwemap.com",
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Other": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "tricia.ns.cloudflare.com",
-        "clyde.ns.cloudflare.com"
+        "clyde.ns.cloudflare.com",
+        "tricia.ns.cloudflare.com"
     ]
 }

@@ -7,9 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
+        "snippet",
+        "widget-6",
         "nyp-api"
     ],
     "cnames": [
@@ -18,33 +20,35 @@
             "resolved": "nyp-api.syllable.ai"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "syllable\\.ai\\/finder\\/frequently-searched",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "rule": "syllable\\.ai\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "nyp-api"
+                "snippet",
+                "widget-6"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "syllable-api.nyp.org",
-                    "resolved": "nyp-api.syllable.ai"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [
-                "e02242486bf712e9dbac58ee0debd677e327aac10f614fe7f273cf76ffc50c81"
+                "abf80e103efbda1a181464db6cd065d980535508d90461bb844334c4ed3599f4"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nyp.org",
-                "www.nyp.org"
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
             ]
         },
         {
@@ -71,17 +75,51 @@
                 "nyp.org",
                 "www.nyp.org"
             ]
+        },
+        {
+            "rule": "syllable\\.ai\\/finder\\/frequently-searched",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nyp-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "syllable-api.nyp.org",
+                    "resolved": "nyp-api.syllable.ai"
+                }
+            ],
+            "responseHashes": [
+                "62ec5896992af10ba478585b25125a3664898ce6f6c89d6337874bb9c948bf74"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyp.org",
+                "www.nyp.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "glen.ns.cloudflare.com",
-        "cheryl.ns.cloudflare.com"
+        "cheryl.ns.cloudflare.com",
+        "glen.ns.cloudflare.com"
     ]
 }

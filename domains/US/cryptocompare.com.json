@@ -7,32 +7,59 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "streamer"
+        "min-api",
+        "widgets"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "cryptocompare\\.com\\/v2",
+            "rule": "cryptocompare\\.com\\/data\\/price",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "streamer"
+                "min-api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "012963e8282dc3c239fc3a7d2151ee92b114ae2ac5cbe9c5ec15193eaad7b07f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bolsamania.com",
-                "www.eldiestro.es"
+                "atomicwallet.io",
+                "bitcoinist.com"
+            ]
+        },
+        {
+            "rule": "cryptocompare\\.com\\/serve\\/v2\\/coin\\/header",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d3c31efe688359c52ae1087f6d0f0fa76328bbf9314b9a687fddb6ce0267acdd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptoglobe.com",
+                "www.cryptoglobe.com"
             ]
         }
     ],
@@ -42,15 +69,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.8333333333333334
         },
         {
-            "domain": "s3wfg.com",
-            "prevalence": 0.5
+            "domain": "7bitcasino.com",
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "WebSocket": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
         "brit.ns.cloudflare.com",

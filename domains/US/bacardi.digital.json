@@ -4,17 +4,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "ip-geo-locator-prod.prod",
-        "age-gate-prod.prod",
-        "spotlight-backend-prod.eu-prod"
+        "spotlight-backend-prod.eu-prod",
+        "spotlight-frontend-prod.eu-prod",
+        "age-gate-prod.prod"
     ],
     "cnames": [
         {
             "original": "spl.bacardi.com",
             "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
+        },
+        {
+            "original": "spl.martini.com",
+            "resolved": "spotlight-frontend-prod.eu-prod.bacardi.digital"
         }
     ],
     "fingerprinting": 1,
@@ -47,8 +52,8 @@
                 "ip-geo-locator-prod.prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "7a356dcd855041724c2fd83c454f00907b49893cc5ff2e974fa814306795e23c"
@@ -58,7 +63,43 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com",
+                "www.patrontequila.com"
+            ]
+        },
+        {
+            "rule": "bacardi\\.digital\\/cep\\/banner\\.jsonp",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spotlight-backend-prod.eu-prod",
+                "spotlight-frontend-prod.eu-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "spl.bacardi.com",
+                    "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
+                },
+                {
+                    "original": "spl.martini.com",
+                    "resolved": "spotlight-frontend-prod.eu-prod.bacardi.digital"
+                }
+            ],
+            "responseHashes": [
+                "964fb5e8a9644914e54f0a4ade5de9f9e09d2114394accb754e7ac341971f5d4",
+                "103df63f172669d4760e229b79d2016ed3bfed438948c11643ac6321b6f44861"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bacardi.com",
+                "www.bacardi.com",
+                "www.martini.com"
             ]
         },
         {
@@ -69,12 +110,12 @@
                 "age-gate-prod.prod"
             ],
             "apis": {
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "bf22bc6edcad9281f74823d97ad8710620a26d8da57fc9feaba85ef6e3b1dba9"
@@ -84,32 +125,9 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
-            ]
-        },
-        {
-            "rule": "bacardi\\.digital\\/cep\\/banner\\.jsonp",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "spotlight-backend-prod.eu-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "spl.bacardi.com",
-                    "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com",
+                "www.patrontequila.com"
             ]
         },
         {
@@ -128,7 +146,9 @@
                     "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "7b7ac5e85e8cd054160774244712fd5d77b5dc6ee7db0589819771852227ac3a"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -145,20 +165,23 @@
                 "age-gate-prod.prod"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "15bdcde56153611bd18e010abfd4e656bd8df60256468ce462af58985d53bc15"
+                "b52ff8518b69714de5644270888327a4fd259b4c781079eb756015d24cdd3485",
+                "939f3ab0e8800e11fd771b7a8a67a9f5b09fdee3118cc300975d366b31570348"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com",
+                "www.patrontequila.com"
             ]
         },
         {
@@ -166,26 +189,32 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "spotlight-backend-prod.eu-prod"
+                "spotlight-backend-prod.eu-prod",
+                "spotlight-frontend-prod.eu-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "spl.bacardi.com",
                     "resolved": "spotlight-backend-prod.eu-prod.bacardi.digital"
+                },
+                {
+                    "original": "spl.martini.com",
+                    "resolved": "spotlight-frontend-prod.eu-prod.bacardi.digital"
                 }
             ],
             "responseHashes": [
-                "ca0f7862b38e2fd7f550c4d2cae753afa08deace6e87896b9f9d9ef58b346fb9"
+                "3f41d2debf7355e7177f4a2e1f17ae7f506f5632f40810e8c7aaad01c1f46693"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bacardi.com",
-                "www.bacardi.com"
+                "www.bacardi.com",
+                "www.martini.com"
             ]
         },
         {
@@ -345,30 +374,30 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5238095238095238
+            "domain": "d29mknc5251yuj.cloudfront.net",
+            "prevalence": 0.5185185185185185
         },
         {
-            "domain": "d29mknc5251yuj.cloudfront.net",
-            "prevalence": 0.47619047619047616
+            "domain": "first party",
+            "prevalence": 0.48148148148148145
         }
     ],
     "types": {
         "Preflight": 2,
-        "Fetch": 2,
-        "Script": 10,
-        "Document": 2,
+        "Fetch": 4,
+        "Script": 14,
+        "Document": 4,
         "Stylesheet": 2,
         "Image": 6,
         "Font": 4
     },
     "nameservers": [
-        "ns-1076.awsdns-06.org",
-        "ns-530.awsdns-02.net",
+        "ns-276.awsdns-34.com",
         "ns-1837.awsdns-37.co.uk",
-        "ns-276.awsdns-34.com"
+        "ns-530.awsdns-02.net",
+        "ns-1076.awsdns-06.org"
     ]
 }
