@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "widget",
-        "quest"
+        "quest",
+        "pixel",
+        "pixel-tracker"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -23,13 +25,13 @@
             "apis": {
                 "Navigator.prototype.vendor": 2,
                 "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
                 "Screen.prototype.availTop": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.availWidth": 2,
                 "Screen.prototype.availLeft": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.availHeight": 2,
-                "AudioBuffer.prototype.getChannelData": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.languages": 2,
                 "Screen.prototype.colorDepth": 2,
@@ -58,28 +60,28 @@
             "type": "Script",
             "firstPartyCookies": {
                 "cookietest": {
-                    "ttl": -1689650020,
+                    "ttl": -1689840387,
                     "length": 1,
-                    "prevalence": 0.000013621658436914694,
+                    "prevalence": 0.000013613777142468177,
                     "uniqueness": 0.5
                 },
                 "%40play3-guest_id": {
-                    "ttl": 2592005,
+                    "ttl": 2592003,
                     "length": 36,
-                    "prevalence": 0.000013621658436914694,
+                    "prevalence": 0.000013613777142468177,
                     "uniqueness": 0.5
                 },
                 "%40play3-mpl_key": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621658436914694,
+                    "prevalence": 0.000013613777142468177,
                     "uniqueness": 1
                 },
                 "%40play3-mpl": {
                     "ttl": null,
-                    "length": 4,
-                    "prevalence": 0.000013621658436914694,
-                    "uniqueness": 0.5
+                    "length": 5,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -124,11 +126,75 @@
             "exampleSites": [
                 "www.hops.id"
             ]
+        },
+        {
+            "rule": "p3a\\.net\\/pixel\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6180b995db4d7c08c4fca188c60a595e35a3220499cd174ae22ff29c1ccedd0b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idntimes.com",
+                "www.idntimes.com"
+            ]
+        },
+        {
+            "rule": "p3a\\.net\\/check\\/pixel-id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel-tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idntimes.com",
+                "www.idntimes.com"
+            ]
+        },
+        {
+            "rule": "p3a\\.net\\/check\\/pixel-id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel-tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idntimes.com",
+                "www.idntimes.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "first party",
@@ -140,9 +206,9 @@
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 4,
+        "Fetch": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "ns-176.awsdns-22.com",

@@ -7,17 +7,81 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "cdn",
         "mkt"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "dep-x\\.com\\/t\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.plugins": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d80417815859c05c955ff92afa27532b088dadd5e9a0b834914f71e40bd4776a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "dep": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gp.se",
+                "www.gp.se"
+            ]
+        },
+        {
             "rule": "dep-x\\.com\\/3pt",
-            "cookies": 0.00000681,
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mkt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gp.se",
+                "www.gp.se"
+            ]
+        },
+        {
+            "rule": "dep-x\\.com\\/get_profile",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "mkt"
@@ -27,11 +91,13 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ce62df174b4ac545f3593c347ec192a2d11f26705491362143d08ada1ee00ef7"
+                "4c0cedb690301de78384d6a2929e5f4d6ec3f9301e2f0f9629892230ff5dbc2e"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "dep": 0.000013613777142468177
+            },
             "exampleSites": [
                 "gp.se",
                 "www.gp.se"
@@ -48,13 +114,11 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "dcdf6c37f5caf6a54f0c7f2238d669e015901b674c7fc55099acc7fe629db356"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dep": 0.000013621658436914694
+                "dep": 0.000013613777142468177
             },
             "exampleSites": [
                 "gp.se",
@@ -72,14 +136,12 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "dcdf6c37f5caf6a54f0c7f2238d669e015901b674c7fc55099acc7fe629db356"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000013621658436914694,
-                "dep": 0.000013621658436914694
+                "dy_fs_page": 0.000013613777142468177,
+                "dep": 0.000013613777142468177
             },
             "exampleSites": [
                 "gp.se",
@@ -89,27 +151,28 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.4
         },
         {
             "domain": "bidtheatre.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.4
         },
         {
             "domain": "brainnordic.com",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.2
         }
     ],
     "types": {
-        "Script": 2,
+        "Script": 4,
+        "XHR": 2,
         "Image": 4
     },
     "nameservers": [
-        "brenda.ns.cloudflare.com",
-        "neil.ns.cloudflare.com"
+        "neil.ns.cloudflare.com",
+        "brenda.ns.cloudflare.com"
     ]
 }

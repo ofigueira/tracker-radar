@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000953,
+    "sites": 14,
     "subdomains": [
         "prebid",
         "img",
@@ -28,9 +28,10 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
+                "10bc378c94c1be7b9f800867084249c547a896d944266fd14edf7e6de5f1e8a8",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
@@ -38,10 +39,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "udn.com",
+                "health.udn.com",
                 "health.ettoday.net",
                 "star.ettoday.net",
-                "www.ettoday.net",
-                "www.plurk.com"
+                "www.ettoday.net"
             ]
         },
         {
@@ -91,11 +92,14 @@
         {
             "rule": "scupio\\.com\\/html\\/ls\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "img"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
@@ -135,24 +139,26 @@
         },
         {
             "rule": "scupio\\.com\\/ssp\\/initid\\.aspx",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "bw"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "0a2515f4a482d4206d9da3edd066200f5bf1a41f3c07f714a975d75685a8f29b"
+                "62f200d4a1f4f9ade4706a2f3e6f264aa3f023353dadf969d5f476990914b6df",
+                "9fe12f680ab211c390e0dafe75ee0a8de94c19005133b73c58841e676dc35ff5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dlsite.com.tw",
-                "www.dlsite.com.tw"
+                "www.dlsite.com.tw",
+                "www.storm.mg"
             ]
         },
         {
@@ -175,6 +181,68 @@
             "exampleSites": [
                 "plurk.com",
                 "www.plurk.com"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/js\\/bwtmOver\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e64cd3d63467a570ac7dcc5dc9925a9d37f846a6bbfa7b11abec507bbc4cc53f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "storm.mg",
+                "www.storm.mg"
+            ]
+        },
+        {
+            "rule": "scupio\\.com\\/js\\/pixel\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f34c6b8cf693f2e1c83d14931df9569adcbaf83ba1a36109712778a498b4194"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__BWtransf": {
+                    "ttl": 864003610,
+                    "length": 24,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                },
+                "__BWfp": {
+                    "ttl": 864003610,
+                    "length": 24,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "storm.mg",
+                "www.storm.mg"
             ]
         },
         {
@@ -202,46 +270,42 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3684210526315789
+            "prevalence": 0.5862068965517241
         },
         {
             "domain": "udn.com.tw",
-            "prevalence": 0.15789473684210525
+            "prevalence": 0.13793103448275862
         },
         {
             "domain": "jquery.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.06896551724137931
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.06896551724137931
         },
         {
             "domain": "doubleclick.net",
-            "prevalence": 0.10526315789473684
-        },
-        {
-            "domain": "holmesmind.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.06896551724137931
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.06896551724137931
         }
     ],
     "types": {
         "XHR": 9,
-        "Script": 8,
+        "Script": 13,
         "Document": 3
     },
     "nameservers": [
+        "ns-639.awsdns-15.net",
         "ns-500.awsdns-62.com",
-        "ns-1225.awsdns-25.org",
         "ns-1834.awsdns-37.co.uk",
-        "ns-639.awsdns-15.net"
+        "ns-1225.awsdns-25.org"
     ]
 }

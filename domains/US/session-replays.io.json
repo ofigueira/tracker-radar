@@ -4,15 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "api",
-        "worker-visa"
+        "worker-visa",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "session-replays\\.io\\/ssr-worker\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "worker-visa"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8668841f3333f87e032f265e579563b389af0aee235158f68fb07cdf703a2fcf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livefromstudio6b.com",
+                "www.pandorasbox.ai"
+            ]
+        },
         {
             "rule": "session-replays\\.io\\/websocket-test\\/info",
             "cookies": 0,
@@ -25,40 +50,56 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "61840294c3b9cbea8bedf0d6c259c2b17ce2e07aaad12645526dec523b400062"
+                "3b344b49ef9ff76c3f737510a28348b540890e4bd4a12c410494020bd11571c0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bradfordtaxinstitute.com",
-                "www.livefromstudio6b.com"
+                "livefromstudio6b.com",
+                "www.tum.de"
             ]
         },
         {
-            "rule": "session-replays\\.io\\/ssr-worker\\.min\\.js",
+            "rule": "session-replays\\.io\\/api\\/websites\\/external\\/ab3cb5e1-cee8-11ed-b589-901b0edac50a\\/sessions\\/2d91d588-65e8-4050-9b86-20d3eadd5041\\/recordings",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "worker-visa"
+                "api"
             ],
-            "apis": {
-                "window.localStorage": 3,
-                "Document.cookie getter": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "8668841f3333f87e032f265e579563b389af0aee235158f68fb07cdf703a2fcf"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "livefromstudio6b.com",
-                "www.livefromstudio6b.com",
-                "www.pandorasbox.ai"
+                "tum.de",
+                "www.tum.de"
+            ]
+        },
+        {
+            "rule": "session-replays\\.io\\/api\\/websites\\/external\\/ab3cb5e1-cee8-11ed-b589-901b0edac50a\\/sessions\\/2d91d588-65e8-4050-9b86-20d3eadd5041\\/recordings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "196e763927bc65046ffe5afed8ddbb00c27e845b5251a6d1789d3775163d47c5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tum.de",
+                "www.tum.de"
             ]
         }
     ],
@@ -72,20 +113,22 @@
         },
         {
             "domain": "first party",
-            "prevalence": 0.25
+            "prevalence": 0.3
         },
         {
             "domain": "sentry-cdn.com",
-            "prevalence": 0.25
+            "prevalence": 0.2
         }
     ],
     "types": {
+        "Script": 2,
         "XHR": 2,
-        "Script": 3
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "robotns3.second-ns.com",
-        "robotns2.second-ns.de",
-        "ns1.first-ns.de"
+        "ns1.first-ns.de",
+        "robotns2.second-ns.de"
     ]
 }

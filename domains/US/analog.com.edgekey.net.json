@@ -13,7 +13,9 @@
     "sites": 2,
     "subdomains": [
         "san-assets",
-        "san-my"
+        "san-my",
+        "san-storeapi",
+        "san-store"
     ],
     "cnames": [
         {
@@ -23,91 +25,18 @@
         {
             "original": "my.analog.com",
             "resolved": "san-my.analog.com.edgekey.net"
+        },
+        {
+            "original": "store.analog.com",
+            "resolved": "san-store.analog.com.edgekey.net"
+        },
+        {
+            "original": "storeapi.analog.com",
+            "resolved": "san-storeapi.analog.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "analog\\.com\\.edgekey\\.net\\/css\\/vendor\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "san-assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "assets.analog.com",
-                    "resolved": "san-assets.analog.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "2084a06253b7c3b7a632a7a485a2c490a77f560c318d3a18a404bc403275508b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "analog.com",
-                "www.analog.com"
-            ]
-        },
-        {
-            "rule": "analog\\.com\\.edgekey\\.net\\/js\\/adi\\/modernizr\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "san-assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "assets.analog.com",
-                    "resolved": "san-assets.analog.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "c073f57eeb51c8b3294b99b7d17b44b43ab4cd06b927b6a19fbcaa734940c857"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "analog.com",
-                "www.analog.com"
-            ]
-        },
-        {
-            "rule": "analog\\.com\\.edgekey\\.net\\/images\\/en\\/ADI_Logo_AWP\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "san-assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "assets.analog.com",
-                    "resolved": "san-assets.analog.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "1399c1557d42928749ae8e208e452c09a479a38d58237812a4a3a262fee55345"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "analog.com",
-                "www.analog.com"
-            ]
-        },
         {
             "rule": "analog\\.com\\.edgekey\\.net\\/css\\/bootstrap\\.css",
             "cookies": 0,
@@ -126,6 +55,33 @@
             ],
             "responseHashes": [
                 "31fbd99641c212a6ad3681a2397bde13c148c0ccd98385bce6a7eb7c81417d87"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/css\\/vendor\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2084a06253b7c3b7a632a7a485a2c490a77f560c318d3a18a404bc403275508b"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -163,6 +119,195 @@
             ]
         },
         {
+            "rule": "analog\\.com\\.edgekey\\.net\\/lib\\/css\\/components\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e2ebdd2217663da82829657a0297cc9b9a774d2fe1324864283ba99649cc2071"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/js\\/adi\\/modernizr\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c073f57eeb51c8b3294b99b7d17b44b43ab4cd06b927b6a19fbcaa734940c857"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/js\\/adi\\/vendor\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "22a61b92f5bf999cd6f25eca282b1ad445bb3ce40fe11e88eda330d72b5136f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/css\\/print\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f39d473b3c6bf095515608e8cce3903355a48dca9c24b4404bf479b6d55f92d0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/js\\/adi\\/global\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "370edfa28adc4165ff80d1230ea8f96aba60373adb555d90e4f06364a5eed1f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/images\\/myanalog\\/myAnalog-add\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "28e17f15b06d4c05d343e874ffb11874f5af5157aee64c684520befc79d24a8d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/images\\/sprite1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ef2dd4d78bb790068301dfc0c8f446f0c5057924cf8a8bfa22840657b6df9886"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
             "rule": "analog\\.com\\.edgekey\\.net\\/webfonts\\/fa-solid-900\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -182,6 +327,58 @@
                 "698bbc8e78a9779802bf27a1b15e980cdf98ddc765366da65f97e3b7e29340a5"
             ],
             "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/webfonts\\/fa-brands-400\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "662f711374c816d7f44d93cecc0fd557871ab1363a446c07e59701f9dde9fe0a"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/api\\/session\\/active",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-my"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "my.analog.com",
+                    "resolved": "san-my.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -215,17 +412,177 @@
                 "analog.com",
                 "www.analog.com"
             ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/\\/cdp\\/adicommon\\/versionconfig\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "852cfa2df79b1fa231e22ae52c95c6e506a19833f638de7bbb5a37e13c5d4681"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/images\\/en\\/ADI_Logo_AWP\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.analog.com",
+                    "resolved": "san-assets.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1399c1557d42928749ae8e208e452c09a479a38d58237812a4a3a262fee55345"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/api\\/cart",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-storeapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "storeapi.analog.com",
+                    "resolved": "san-storeapi.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/client\\/occ\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-store"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "store.analog.com",
+                    "resolved": "san-store.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/api\\/cart",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-storeapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "storeapi.analog.com",
+                    "resolved": "san-storeapi.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "814ebc92d550b96d72746ec6936e5733e457ce8a94c56e7330c9f85f32bb2d48"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
+        },
+        {
+            "rule": "analog\\.com\\.edgekey\\.net\\/client\\/occ\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "san-store"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "store.analog.com",
+                    "resolved": "san-store.analog.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "10eabe6534991814e673a62cc19cefdd2d05f6eed87418e57fe6002cff8346d0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "analog.com",
+                "www.analog.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "types": {
-        "Stylesheet": 6,
-        "Script": 2,
-        "Image": 2,
-        "Font": 2,
-        "XHR": 2
+        "Stylesheet": 10,
+        "Script": 6,
+        "Image": 6,
+        "Font": 4,
+        "Preflight": 6,
+        "XHR": 4,
+        "Fetch": 4
     },
     "nameservers": []
 }

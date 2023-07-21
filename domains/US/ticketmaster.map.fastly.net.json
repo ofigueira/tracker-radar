@@ -29,12 +29,12 @@
             "resolved": "prod.ticketmaster.map.fastly.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ticketmaster\\.map\\.fastly\\.net\\/tmauthadaptor-standalone\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "prod"
             ],
@@ -82,10 +82,8 @@
                     "resolved": "prod.ticketmaster.map.fastly.net"
                 }
             ],
-            "responseHashes": [
-                "60483fbb3c01c4080583563e215e3ca4ab5ce4ff74f47cf36eadedd152572d2f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -113,13 +111,40 @@
                     "resolved": "prod.ticketmaster.map.fastly.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "60483fbb3c01c4080583563e215e3ca4ab5ce4ff74f47cf36eadedd152572d2f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ticketmaster.ca",
                 "www.ticketmaster.com"
+            ]
+        },
+        {
+            "rule": "ticketmaster\\.map\\.fastly\\.net\\/api\\/page\\/view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dualstack"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "analytics.ticketmaster.it",
+                    "resolved": "dualstack.ticketmaster.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ticketmaster.it",
+                "www.ticketmaster.it"
             ]
         },
         {
@@ -161,21 +186,22 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000136,
     "topInitiators": [
         {
-            "domain": "tmconst.com",
-            "prevalence": 0.5555555555555556
+            "domain": "sc-static.net",
+            "prevalence": 0.5714285714285714
         },
         {
-            "domain": "sc-static.net",
-            "prevalence": 0.4444444444444444
+            "domain": "tmconst.com",
+            "prevalence": 0.42857142857142855
         }
     ],
     "types": {
         "Script": 2,
-        "XHR": 2,
         "Preflight": 2,
+        "XHR": 2,
+        "Fetch": 2,
         "Other": 2
     },
     "nameservers": []

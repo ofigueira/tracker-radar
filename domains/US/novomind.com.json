@@ -7,11 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
         "endor",
-        "ecdn"
+        "ecdn",
+        "christ",
+        "rcibanque-chatbot"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -47,9 +49,9 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 4,
-                "window.localStorage": 4,
-                "Date.prototype.getTimezoneOffset": 3,
-                "Document.cookie getter": 2
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 3
             },
             "sites": 4,
             "prevalence": 0.0000272,
@@ -88,6 +90,98 @@
                 "fanatec.com",
                 "www.fanatec.com"
             ]
+        },
+        {
+            "rule": "novomind\\.com\\/chatRest\\/status",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "christ"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de858f06c0f450f500a69d779ed11dff76ca947fe375a47d84e8856ea4cf1f7a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christ.de",
+                "www.christ.de"
+            ]
+        },
+        {
+            "rule": "novomind\\.com\\/assets\\/styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rcibanque-chatbot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c63fd4ead68accfa1fa608cd46dc26c5fc6f19872ec478dae7e3ec472bfc90b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renault-bank-direkt.de",
+                "www.renault-bank-direkt.de"
+            ]
+        },
+        {
+            "rule": "novomind\\.com\\/assets\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rcibanque-chatbot"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ca42125eac37ca45b6cca1c36ae81b3a067aa19f87e4d27e7e4334bf7e6bdc3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renault-bank-direkt.de",
+                "www.renault-bank-direkt.de"
+            ]
+        },
+        {
+            "rule": "novomind\\.com\\/assets\\/fonts\\/a7033668a9a5b6f1dd80462cd26cb8d3\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rcibanque-chatbot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "32825e80167835680e433a3824204e3fbd1ad264c370988d3508e000715fa01e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "renault-bank-direkt.de",
+                "www.renault-bank-direkt.de"
+            ]
         }
     ],
     "categories": [],
@@ -96,17 +190,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9285714285714286
+            "prevalence": 0.8888888888888888
         },
         {
             "domain": "azureedge.net",
-            "prevalence": 0.07142857142857142
+            "prevalence": 0.1111111111111111
         }
     ],
     "types": {
         "Image": 2,
-        "Script": 4,
-        "XHR": 2
+        "Script": 6,
+        "XHR": 2,
+        "Fetch": 2,
+        "Stylesheet": 2,
+        "Font": 2
     },
     "nameservers": [
         "ns01.novomind.com",

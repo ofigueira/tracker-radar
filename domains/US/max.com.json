@@ -28,7 +28,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f613de34d95801753519c65c312091a3cee44ba530d921931edb2bf21481aad1"
+                "951c767f7052d4a3a40221154213533358dcbfb2b32cc58963d7b7acf22441df"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -129,11 +129,13 @@
         {
             "rule": "max\\.com\\/js\\/ccpa\\/geo-fallback\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -158,8 +160,7 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -374,7 +375,7 @@
                 "pageLanguage": {
                     "ttl": null,
                     "length": 5,
-                    "prevalence": 0.000013621658436914694,
+                    "prevalence": 0.000013613777142468177,
                     "uniqueness": 0.5
                 }
             },
@@ -532,20 +533,42 @@
         },
         {
             "rule": "max\\.com\\/js\\/ab-testing-module\\.js",
-            "cookies": 0.00000681,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "05d4e2b271ce570edf2dd9f1c5d1899f2caf90efb41538c369c0a1792a9b6f47"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hbomax.com",
+                "www.hbomax.com"
+            ]
+        },
+        {
+            "rule": "max\\.com\\/js\\/labs-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ceb5739de0ac934115f44941af2b9de08ea796f85c916ccd1e5ea913b6ba314"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -644,28 +667,6 @@
             ]
         },
         {
-            "rule": "max\\.com\\/js\\/labs-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4ceb5739de0ac934115f44941af2b9de08ea796f85c916ccd1e5ea913b6ba314"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hbomax.com",
-                "www.hbomax.com"
-            ]
-        },
-        {
             "rule": "max\\.com\\/dcp-svc-go\\/events-api\\/v1\\/events",
             "cookies": 0,
             "fingerprinting": 0,
@@ -727,9 +728,9 @@
         "Preflight": 2
     },
     "nameservers": [
-        "ns-6.awsdns-00.com",
         "ns-1122.awsdns-12.org",
         "ns-826.awsdns-39.net",
-        "ns-1909.awsdns-46.co.uk"
+        "ns-1909.awsdns-46.co.uk",
+        "ns-6.awsdns-00.com"
     ]
 }

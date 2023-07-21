@@ -7,14 +7,137 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
-        "services"
+        "services",
+        "varnish-local",
+        "services.gcloud"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "api\\.no\\/api\\/adplogger\\/v3\\/main-5784ecb4\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0a2bc123671a394e0678eb3f723eb4f4adb5a1cf629a704daf65ef7664c0493"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettavisen.no",
+                "www.nettavisen.no"
+            ]
+        },
+        {
+            "rule": "api\\.no\\/api\\/bazaar\\/assets\\/v2\\/bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2aef319bbcc4e0a42eacfd68d1d7192c8cc659de4c656c8cb1542a3c51ce3eff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettavisen.no",
+                "www.nettavisen.no"
+            ]
+        },
+        {
+            "rule": "api\\.no\\/api\\/bazaar\\/assets\\/bazaar\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bcf198348c5a362f631fa9e6c779a126f5004d827397aaed97bcd35f71dd468"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettavisen.no",
+                "www.nettavisen.no"
+            ]
+        },
+        {
+            "rule": "api\\.no\\/gaia\\/api\\/public\\/v1\\/siteconfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "varnish-local"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ca742ffec13c0e1e40d411484ce8264c802f258f3eff229c53c181f3258e7a47"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettavisen.no",
+                "www.nettavisen.no"
+            ]
+        },
+        {
+            "rule": "api\\.no\\/api\\/nebula\\/v1\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services.gcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013613777142468177
+            },
+            "exampleSites": [
+                "nettavisen.no",
+                "www.nettavisen.no"
+            ]
+        },
         {
             "rule": "api\\.no\\/api\\/shoal\\/v1\\/bundle_runtime\\/www\\.nettavisen\\.no\\/",
             "cookies": 0,
@@ -32,7 +155,7 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000013621658436914694
+                "lotame_domain_check": 0.000013613777142468177
             },
             "exampleSites": [
                 "nettavisen.no",
@@ -46,19 +169,21 @@
     "topInitiators": [
         {
             "domain": "acdn.no",
-            "prevalence": 0.625
+            "prevalence": 0.6818181818181818
         },
         {
             "domain": "first party",
-            "prevalence": 0.375
+            "prevalence": 0.3181818181818182
         }
     ],
     "types": {
-        "Fetch": 2
+        "Script": 4,
+        "Stylesheet": 2,
+        "Fetch": 6
     },
     "nameservers": [
-        "nsp.dnsnode.net",
+        "nsb.dnsnode.net",
         "nsu.dnsnode.net",
-        "nsb.dnsnode.net"
+        "nsp.dnsnode.net"
     ]
 }

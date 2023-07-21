@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "cc-endpoint",
-        "bid-collector"
+        "bid-collector",
+        "services",
+        "creatives"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,8 +23,8 @@
                 "cc-endpoint"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "9b202ecbc6d45c6d8901d989a918878397a3eb9d00e8f48022fc051b19d21a1d"
@@ -32,6 +34,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "1188.lv",
+                "www.1188.lv",
                 "www.delfi.ee",
                 "www.delfi.lt",
                 "www.lrytas.lt"
@@ -45,8 +48,8 @@
                 "bid-collector"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -56,7 +59,55 @@
                 "1188.lv",
                 "www.1188.lv",
                 "www.delfi.ee",
+                "www.delfi.lt",
                 "www.lrytas.lt"
+            ]
+        },
+        {
+            "rule": "digitalmatter\\.ai\\/piano\\/clients\\/piano\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5990937d57238a30799064cfc861e255c143a41a2f7a4c678469d61dc1630ae5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "15min.lt",
+                "www.15min.lt"
+            ]
+        },
+        {
+            "rule": "digitalmatter\\.ai\\/publishers\\/Delfi\\.lv\\/cmp_logo\\/Delfilv_logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "creatives"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "851c8a384c25fd88c27c4534e4f6bcd6111cda5022cd428612c7d4c654dd8cd9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delfi.lv",
+                "www.delfi.lv"
             ]
         }
     ],
@@ -66,22 +117,24 @@
     "topInitiators": [
         {
             "domain": "dimatter.ai",
-            "prevalence": 0.85
+            "prevalence": 0.8214285714285714
         },
         {
             "domain": "first party",
-            "prevalence": 0.1
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "quantcast.com",
-            "prevalence": 0.05
+            "prevalence": 0.03571428571428571
         }
     ],
     "types": {
-        "Fetch": 8
+        "Fetch": 10,
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
-        "hal.ns.cloudflare.com",
-        "liv.ns.cloudflare.com"
+        "liv.ns.cloudflare.com",
+        "hal.ns.cloudflare.com"
     ]
 }

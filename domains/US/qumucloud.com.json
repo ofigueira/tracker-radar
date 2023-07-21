@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
         "cvsh-tv",
         "janushenderson",
+        "thrivent",
         "dow",
         "cdn",
         "analytics"
@@ -22,6 +23,10 @@
             "resolved": "janushenderson.qumucloud.com"
         },
         {
+            "original": "video.thrivent.com",
+            "resolved": "thrivent.qumucloud.com"
+        },
+        {
             "original": "videos.dow.com",
             "resolved": "dow.qumucloud.com"
         }
@@ -30,11 +35,12 @@
     "resources": [
         {
             "rule": "qumucloud\\.com\\/widgets\\/application\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
                 "cvsh-tv",
-                "janushenderson"
+                "janushenderson",
+                "thrivent"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 1,
@@ -43,30 +49,36 @@
                 "Navigator.prototype.language": 1,
                 "Document.cookie setter": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "video.janushenderson.com",
                     "resolved": "janushenderson.qumucloud.com"
+                },
+                {
+                    "original": "video.thrivent.com",
+                    "resolved": "thrivent.qumucloud.com"
                 }
             ],
             "responseHashes": [
-                "e084f00a89167e16a937ea1f52b96de2aa723ed620261150b584cd881eacb32f"
+                "e084f00a89167e16a937ea1f52b96de2aa723ed620261150b584cd881eacb32f",
+                "96d52287eb14aeea3603799e186d74f076437aca37e5d93d253f825860491224"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "i18next": {
                     "ttl": null,
                     "length": 2,
-                    "prevalence": 0.000006810829218457347,
+                    "prevalence": 0.000006806888571234089,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cvshealth.com",
-                "www.janushenderson.com"
+                "www.janushenderson.com",
+                "www.thrivent.com"
             ]
         },
         {
@@ -86,7 +98,7 @@
                 }
             ],
             "responseHashes": [
-                "1f7bf851d3ee281baab471ec25fe10eeed7ee9f5b292061ef0ff7f94343ab383"
+                "30d0f014c44d6ed2ea8e7e04b10b134d5bebd01fb29d8b5eafa69c2933b45fff"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -119,8 +131,34 @@
             ]
         },
         {
-            "rule": "qumucloud\\.com\\/events\\/1\\/245c3146b4",
+            "rule": "qumucloud\\.com\\/nr-spa-1215\\.min\\.js",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dd2d8d288526b88b0eae53168e31b4092acf39ed38d40ffcbc6d0ab2f7a4aa66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dow.com",
+                "www.thrivent.com"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/1\\/245c3146b4",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "analytics"
@@ -130,6 +168,28 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
+                "1b1e54380b8b8e45010115f3d0f7caad60ca0f34be8bee3e11e11727cc64d49f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dow.com",
+                "www.thrivent.com"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/events\\/1\\/245c3146b4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
                 "0c9cf152a0ad00d4f102c93c613c104914be5517ac8f8e0831727f8bfbe8b300"
             ],
             "type": "XHR",
@@ -137,7 +197,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dow.com",
-                "www.dow.com"
+                "www.dow.com",
+                "www.thrivent.com"
             ]
         },
         {
@@ -183,30 +244,54 @@
                 "janushenderson.com",
                 "www.janushenderson.com"
             ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/resources\\/1\\/245c3146b4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thrivent.com",
+                "www.thrivent.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.000034,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9230769230769231
+            "prevalence": 0.9166666666666666
         },
         {
             "domain": "qumucloud.com",
-            "prevalence": 0.07692307692307693
+            "prevalence": 0.0625
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.020833333333333332
         }
     ],
     "types": {
-        "Script": 4,
+        "Script": 9,
         "Document": 2,
-        "XHR": 6
+        "XHR": 9
     },
     "nameservers": [
-        "ns-1959.awsdns-52.co.uk",
         "ns-299.awsdns-37.com",
+        "ns-735.awsdns-27.net",
         "ns-1096.awsdns-09.org",
-        "ns-735.awsdns-27.net"
+        "ns-1959.awsdns-52.co.uk"
     ]
 }

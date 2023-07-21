@@ -7,11 +7,80 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
+        "services.prod.websites",
         "identity-auth-ui.edge.soar"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "fcl\\.cloud\\/emergency-message\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services.prod.websites"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3b490d767b1ae24b49ccbfb27667b6b0319772507ddf51245cfa8fb8050aaa6e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.com.au",
+                "www.flightcentre.com.au"
+            ]
+        },
+        {
+            "rule": "fcl\\.cloud\\/bootstrap\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "identity-auth-ui.edge.soar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6d42153527d184f5117c5a81a7ad0784a5a89d94a87da18a586778363c93c94"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.com.au",
+                "www.flightcentre.com.au"
+            ]
+        },
+        {
+            "rule": "fcl\\.cloud\\/micro-ui\\.c859b6ef7cc0f1be1568\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "identity-auth-ui.edge.soar"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65524b486b1bcef30f0d6de77ac2c44f4ffb0b8b5bebbc2487762aa03663c33d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightcentre.com.au",
+                "www.flightcentre.com.au"
+            ]
+        },
         {
             "rule": "fcl\\.cloud\\/accountData",
             "cookies": 0,
@@ -44,7 +113,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a9d32ea0da36349bbe892b9480fbdce0d327f596f897e46829e5d33e74b2c94b"
+                "431d3d0439a9acc28adf5cfac24960d3ae4d2370352e384d79bf6d133d96a721"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -61,21 +130,19 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
-        },
-        {
-            "domain": "fclweb.net",
-            "prevalence": 0.16666666666666666
+            "prevalence": 1
         }
     ],
     "types": {
+        "XHR": 2,
+        "Script": 4,
         "Preflight": 2,
         "Fetch": 2
     },
     "nameservers": [
+        "ns-895.awsdns-47.net",
         "ns-1456.awsdns-54.org",
         "ns-148.awsdns-18.com",
-        "ns-1914.awsdns-47.co.uk",
-        "ns-895.awsdns-47.net"
+        "ns-1914.awsdns-47.co.uk"
     ]
 }

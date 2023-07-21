@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
+        "chat",
         "dip"
     ],
     "cnames": [
@@ -22,8 +23,36 @@
             "resolved": "dip.suncorp.com.au"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "suncorp\\.com\\.au\\/chatbot-ui\\/v1\\.0\\/aami\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.product": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "50ff93710d537b7cf5700db11ad10fadc85a224f2aa94a63bf76dd16fe96bf10"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aami.com.au",
+                "www.aami.com.au"
+            ]
+        },
         {
             "rule": "suncorp\\.com\\.au\\/data-insights-api\\/ac\\/said\\/cookie",
             "cookies": 0.0000204,
@@ -89,23 +118,24 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.8181818181818182
         },
         {
             "domain": "gbqofs.com",
-            "prevalence": 0.2
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
+        "Script": 2,
         "Preflight": 3,
         "XHR": 3
     },
     "nameservers": [
-        "udns1.cscdns.net",
-        "udns2.cscdns.uk"
+        "udns2.cscdns.uk",
+        "udns1.cscdns.net"
     ]
 }

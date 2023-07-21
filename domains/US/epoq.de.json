@@ -4,17 +4,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000954,
-    "sites": 14,
+    "prevalence": 0.000204,
+    "sites": 30,
     "subdomains": [
+        "cdn",
         "babymarkt-de.arc",
         "bw-online-shop.arc",
         "carharttwip-de.arc",
         "exlibris.arc",
         "fritz-berger-de.arc",
+        "gartenhaus-de.arc",
         "haertle.arc",
         "landi-ch.arc",
-        "marcopolo-com-it.arc",
+        "marcopolo-com-us.arc",
+        "narayana-verlag-de.arc",
         "nkd-de.arc",
         "pflanzen-koelle-de.arc",
         "rs1"
@@ -23,8 +26,44 @@
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "epoq\\.de\\/flow\\/babymarkt-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.innerWidth": 1,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.connection": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.orientation": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "74b750d01594dff2f28010392ef80dae28149b239f03c9b0c652571eba03039a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babymarkt.de",
+                "www.babymarkt.de"
+            ]
+        },
+        {
             "rule": "epoq\\.de\\/inbound-servletapi\\/event",
-            "cookies": 0.0000477,
+            "cookies": 0.0000613,
             "fingerprinting": 0,
             "subdomains": [
                 "babymarkt-de.arc",
@@ -32,16 +71,18 @@
                 "carharttwip-de.arc",
                 "exlibris.arc",
                 "fritz-berger-de.arc",
+                "gartenhaus-de.arc",
                 "haertle.arc",
                 "landi-ch.arc",
-                "marcopolo-com-it.arc",
+                "marcopolo-com-us.arc",
+                "narayana-verlag-de.arc",
                 "nkd-de.arc",
                 "pflanzen-koelle-de.arc",
                 "rs1"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000749,
+            "sites": 14,
+            "prevalence": 0.0000953,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -49,21 +90,153 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "eqsid_": 0.000006810829218457347,
-                "_eqsid": 0.000006810829218457347
+                "eqsid_": 0.000006806888571234089,
+                "_eqsid": 0.000006806888571234089,
+                "7cb54b_session_id": 0.000006806888571234089
             },
             "exampleSites": [
                 "babymarkt.de",
+                "www.babymarkt.de",
                 "www.bw-online-shop.com",
                 "www.carhartt-wip.com",
                 "www.exlibris.ch",
                 "www.fritz-berger.de",
+                "www.gartenhaus-gmbh.de",
                 "www.haertle.de",
                 "www.landi.ch",
                 "www.marc-o-polo.com",
+                "www.narayana-verlag.de",
                 "www.nkd.com",
                 "www.pflanzen-koelle.de",
                 "www.segmueller.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/bw-online-shop\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "Event.prototype.timeStamp": 1,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd0164a4ecf3f4a8126c5fe0abebc1a6e0651b4721956bf21eeb5f4377cda646"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bw-online-shop.com",
+                "www.bw-online-shop.com"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bw-online-shop.arc",
+                "carharttwip-de.arc",
+                "exlibris.arc",
+                "haertle.arc",
+                "rs1",
+                "nkd-de.arc",
+                "pflanzen-koelle-de.arc"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "7b3406a3bef22af2ce8e044ec2162d320fe12f115be19864c83a5fa8bbe0607f",
+                "cab7d3f7eae1bb49757723253e9db1b95e624d09da55e8df7162fa3f736cbb81",
+                "9b6b39996172390ddf22f2b3b3d5abd78cead8c3865c905a5276c05ac19dbdb9",
+                "4adcbd4570e01358f327a7b0467745a072db878de3bc6fd6230636b74adb4f5f",
+                "926310adff477d76a08a064a7f0a97e4a3b0639805bf308b7cdbccacc718864c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "eqsid_": 0.000006806888571234089
+            },
+            "exampleSites": [
+                "bw-online-shop.com",
+                "www.carhartt-wip.com",
+                "www.exlibris.ch",
+                "www.haertle.de",
+                "www.megabad.com",
+                "www.nkd.com",
+                "www.pflanzen-koelle.de",
+                "www.shop-naturpur.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/carharttwip-de\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a65fa431f631dc6dd9f9e5325ec5e7cb69972fa3d10b160046a2c152e951caf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "eqsid_": {
+                    "ttl": null,
+                    "length": 31,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carhartt-wip.com",
+                "www.carhartt-wip.com"
             ]
         },
         {
@@ -79,17 +252,17 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "6f78f46f6d765791fb557764fdbbb8e96413cb33c128efc028017fd534dc8aad",
-                "079f1dac3cd0378d6653aaa5838988013574f4f0f3846ba44349f511eb258ce5",
-                "c445769e37076976e8929a44247d0edb02bf9a7a4fa77eef7e26916ae5836dfa"
+                "92638e8ebb3208cb7ee73dbe46bce1d14a3db0f8ae1c69e3b77864ddbd3d67b1",
+                "427f896d9b72beb75170f96f72e371dfd6647019dac48359646307f95ba34e2d",
+                "65e999a6c86c3735269ffa066c8b1abf9316253b863d324ed894d341edcc5ac3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "eqsid_": 0.000006810829218457347
+                "eqsid_": 0.000006806888571234089
             },
             "exampleSites": [
                 "carhartt-wip.com",
@@ -100,38 +273,151 @@
             ]
         },
         {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
+            "rule": "epoq\\.de\\/flow\\/exlibris-picasso\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "carharttwip-de.arc",
-                "exlibris.arc",
-                "haertle.arc",
-                "rs1",
-                "pflanzen-koelle-de.arc"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "window.devicePixelRatio": 1,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.connection": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.orientation": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f00759713f1a5c41ee70fadfd66a440bd43687378b3f6424b552371a4c6b3619",
-                "0d3af2a67b1981510e1f2a5927880512a43bfc90f045fa4787f8c059f2ec2c51",
-                "f21dbe13fc45f44e6ee5af01a97c9c4dfa122141b1e5d3a731bd1417ac87f449"
+                "33cd285fa274dcf9e3152a983bf9732f057710dcdff6d6efb0865f67ab20ffdd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "eqsid_": 0.000006810829218457347
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "carhartt-wip.com",
-                "www.exlibris.ch",
-                "www.haertle.de",
-                "www.megabad.com",
-                "www.pflanzen-koelle.de",
-                "www.segmueller.de",
-                "www.shop-naturpur.de"
+                "exlibris.ch",
+                "www.exlibris.ch"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/fritz-berger-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de579d05962bbe2fa2d34b9935b1db6579de92e5e8901ccdb91418477b228d77"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fritz-berger.de",
+                "www.fritz-berger.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/assets\\/fritz-berger-de\\/css\\/epoq-inspire\\.live\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e36773dc5199cfadda489c0a51764a26949bc41853cbb615549fc9bfc7bac850"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fritz-berger.de",
+                "www.fritz-berger.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/assets\\/fritz-berger-de\\/js\\/epoq-inspire\\.live\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3fec59d4f8048497dbd95595154c31299881853c234580d8a4bc83209683d66e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fritz-berger.de",
+                "www.fritz-berger.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/goertz-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "576a87787fd7270c5e69bb4102f87ecf5599cd363df1b170c4c527815ba000f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goertz.de",
+                "www.goertz.de"
             ]
         },
         {
@@ -143,8 +429,8 @@
                 "nkd-de.arc"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "c8b2b04bcfe43eddfcfa75e1f6336cab92ce7b71556f26fe2d5f9ddc0a98da25"
@@ -154,13 +440,401 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "goertz.de",
+                "www.goertz.de",
                 "www.nkd.com"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/haertle\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "Navigator.prototype.platform": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5455f286b89a076b4d81e90fc9ca68f00d04fae0844ed59d0c9fab3d2594fca7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haertle.de",
+                "www.haertle.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/landi-ch\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b9d4aedfa4a0cc6aeee5c4942c89c21c03a8d201feae9d82101a8ae9fdc67f60"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_eqsid": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "landi.ch",
+                "www.landi.ch"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/megabad\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7f5ac15d8ca42cd2aa77c45f508e7c0103edfe2947a6d0a9b4692e7279a5f3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "megabad.com",
+                "www.megabad.com"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/nkd-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "652059409d2606f1e93658d492109f7a36b9f31953a0661bbee0be02c0875113"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nkd.com",
+                "www.nkd.com"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/pflanzen-koelle-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9c3829d1e746e12c49e610ee968aaf0c2610349f43237c776e31af6476765ee0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pflanzen-koelle.de",
+                "www.pflanzen-koelle.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/assets\\/pflanzen-koelle-de\\/css\\/epoq-inspire\\.live\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10f5f1f82e021a91672e32044e95019d43578239c7c66f9bd6e98f3c3816cd2b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pflanzen-koelle.de",
+                "www.pflanzen-koelle.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/assets\\/pflanzen-koelle-de\\/js\\/epoq-inspire\\.live\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c768c37519672614f55ec36f608092e5a1f0bb3e6c4e1c31243b515a80121def"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pflanzen-koelle.de",
+                "www.pflanzen-koelle.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/segmueller-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "95211f835732716ecbd32e7ef16d3c4ea03107359d2acc79b716ab05ae21cbde"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "segmueller.de",
+                "www.segmueller.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/assets\\/segmueller\\/css\\/epoq-inspire\\.live\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c1786a5b30ef25dfe0577d263c19a033989e1e5b2e0f21c6b80b801094f8eaa"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "segmueller.de",
+                "www.segmueller.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/assets\\/segmueller\\/js\\/epoq-inspire\\.live\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.sessionStorage": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3b8e2f1fdbcef23b0679342885e80d239c2dcbebe0c21988e4f2823a13e07ffe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "segmueller.de",
+                "www.segmueller.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/shop-naturpur-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "59e28579a330bfabfc87924c9a5cb063c95e711c0973f125c6bdfc1a3c7a1ed7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shop-naturpur.de",
+                "www.shop-naturpur.de"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000477,
+    "cookies": 0.000109,
     "topInitiators": [
         {
             "domain": "first party",
@@ -176,13 +850,14 @@
         }
     ],
     "types": {
-        "Script": 23,
-        "XHR": 2
+        "Script": 59,
+        "Stylesheet": 6,
+        "XHR": 3
     },
     "nameservers": [
-        "ns-383.awsdns-47.com",
+        "ns-750.awsdns-29.net",
         "ns11.dnsmadeeasy.com",
-        "ns10.dnsmadeeasy.com",
-        "ns-750.awsdns-29.net"
+        "ns-383.awsdns-47.com",
+        "ns10.dnsmadeeasy.com"
     ]
 }

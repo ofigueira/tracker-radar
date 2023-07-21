@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000477,
-    "sites": 7,
+    "prevalence": 0.0000953,
+    "sites": 14,
     "subdomains": [
         "www",
-        "secure"
+        "secure",
+        "integrations"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -29,8 +30,8 @@
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "8a5bd70c1f2b67a7ec0d1070e7da8acd5622c0b394950ef3a4b8117be9049f26",
-                "c71d6b3a801f3e40c05fcb38fbf4893f8d6142b27585b248eb6b04c242d35da9"
+                "c71d6b3a801f3e40c05fcb38fbf4893f8d6142b27585b248eb6b04c242d35da9",
+                "8a5bd70c1f2b67a7ec0d1070e7da8acd5622c0b394950ef3a4b8117be9049f26"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,19 +45,26 @@
         },
         {
             "rule": "rentalcars\\.com\\/partners\\/integrations\\/stand-alone-app\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
             "subdomains": [
-                "secure"
+                "secure",
+                "www",
+                "integrations"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
-                "16a88358b8bbb41bc2eb95321de61c3493a51e078a4886fb9c436897f7de1e91",
-                "85d066236799e1578794c04b3d3d1582e226ef07bdffffe2fa142e02e480e73c",
-                "9ab48f4075292884b6f6d521e7471e9b71cc7eba68c4c80ce00f449b9a2caf89"
+                "b572c2b0575f73b3e0eec30fd37ac821c7e6a4705c48df4dec48b448d6b6dea4",
+                "03d9dde1f485631b4aa7b8a49b1fac4f9427f0fc4bf68679cd7cbce0e4bef2ff",
+                "b76198ec82ea949a19d726a5691481f91eaa366e9d8b91858ea482fa9584e0f2",
+                "98c67c420f1148dae91dfcce84ec3e44afba80af602bb4669abc8e54102214d6",
+                "97a6d52e048acbd943adfe8758b9b252c8d9af9ee8b120ba610059a3449406d0",
+                "5b6c025365d3fca5ce1d5e51c604736c939175d6f255eb1828a9933f81ac0dd6"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -64,72 +72,81 @@
             "exampleSites": [
                 "atlfly.com",
                 "fly-ord.com",
+                "jetsmart.com",
                 "livejapan.com",
-                "www.bristolairport.co.uk"
+                "www.bristolairport.co.uk",
+                "www.garuda-indonesia.com",
+                "www.skyairline.com"
             ]
         },
         {
             "rule": "rentalcars\\.com\\/js\\/beakerV2",
-            "cookies": 0.0000204,
+            "cookies": 0.000034,
             "fingerprinting": 3,
             "subdomains": [
-                "secure"
+                "secure",
+                "www"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.languages": 3,
-                "Date.prototype.getTime": 3,
-                "Date.prototype.getTimezoneOffset": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Navigator.prototype.appName": 3,
-                "HTMLCanvasElement.prototype.toDataURL": 3,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 3,
-                "WebGLRenderingContext.prototype.getParameter": 3,
-                "WebGLRenderingContext.prototype.getContextAttributes": 3,
-                "WebGLRenderingContext.prototype.getExtension": 3,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 3,
-                "Navigator.prototype.maxTouchPoints": 3,
-                "HTMLMediaElement.prototype.canPlayType": 3,
-                "Navigator.prototype.vendor": 3,
-                "Navigator.prototype.product": 3,
-                "Navigator.prototype.productSub": 3,
-                "Navigator.prototype.webdriver": 3,
-                "Navigator.prototype.connection": 3,
-                "Navigator.prototype.hardwareConcurrency": 3,
-                "CanvasRenderingContext2D.prototype.measureText": 3,
-                "Navigator.prototype.plugins": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "WebGL2RenderingContext.prototype.getParameter": 3,
-                "Navigator.prototype.deviceMemory": 3,
-                "Navigator.prototype.permissions": 3,
-                "Document.cookie setter": 3,
-                "window.localStorage": 4,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.language": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.availLeft": 2,
-                "Screen.prototype.availTop": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "window.innerWidth": 2,
-                "window.innerHeight": 2,
-                "window.outerWidth": 2,
-                "window.outerHeight": 2,
-                "window.screenX": 2,
-                "window.screenY": 2,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 2
+                "Navigator.prototype.userAgent": 6,
+                "Document.cookie getter": 6,
+                "window.localStorage": 6,
+                "Navigator.prototype.language": 5,
+                "Navigator.prototype.languages": 5,
+                "Date.prototype.getTime": 5,
+                "PerformanceTiming.prototype.navigationStart": 5,
+                "Navigator.prototype.mimeTypes": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.availHeight": 5,
+                "Screen.prototype.availLeft": 5,
+                "Screen.prototype.availTop": 5,
+                "Screen.prototype.availWidth": 5,
+                "Screen.prototype.pixelDepth": 5,
+                "window.innerWidth": 5,
+                "window.innerHeight": 5,
+                "window.outerWidth": 5,
+                "window.outerHeight": 5,
+                "window.devicePixelRatio": 4,
+                "Screen.prototype.orientation": 4,
+                "window.screenX": 5,
+                "window.screenY": 5,
+                "Date.prototype.getTimezoneOffset": 5,
+                "window.indexedDB": 4,
+                "Navigator.prototype.platform": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "Navigator.prototype.appName": 5,
+                "Navigator.prototype.plugins": 5,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 5,
+                "HTMLCanvasElement.prototype.toDataURL": 5,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 5,
+                "WebGLRenderingContext.prototype.getParameter": 5,
+                "WebGLRenderingContext.prototype.getContextAttributes": 5,
+                "WebGLRenderingContext.prototype.getExtension": 5,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 5,
+                "Navigator.prototype.maxTouchPoints": 5,
+                "HTMLMediaElement.prototype.canPlayType": 5,
+                "Navigator.prototype.vendor": 5,
+                "Navigator.prototype.product": 5,
+                "Navigator.prototype.productSub": 5,
+                "Navigator.prototype.webdriver": 5,
+                "Navigator.prototype.connection": 5,
+                "Navigator.prototype.hardwareConcurrency": 5,
+                "CanvasRenderingContext2D.prototype.measureText": 5,
+                "WebGL2RenderingContext.prototype.getParameter": 5,
+                "Navigator.prototype.deviceMemory": 5,
+                "Navigator.prototype.permissions": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "02a1976f6e1d9ce59f16fdb7011a9b53f9fd18d2f6575c21283d7a146c4e4d3e",
-                "65bc556ec86fe1fa443d28395b995d38be29824dcde6583e1940188a77fcf5f2",
-                "cfe34f170265de4ba51739c90d3e34eae105df9b483f373c37fec82f63f738f6"
+                "f4cf35bc209ecad52c294986de6b00791945254933ef8ba524cfa68b4dc537c1",
+                "7ff7618d2b2c122df38d997a267c36771f5b090c6469eff522ff8ea1e49fac65",
+                "9be0ea9431a5d4338419e6720ceb652380b6bc7a6973b69a0d1af231db02f6ee",
+                "e6afd39416621f7a3f1ce06d74d886bd02b1fdfb4641db6d10dd50aaa5fed999",
+                "87af0c431db28514950bcf954f50831e446ea72c0776671f2cb32368062e3093"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -137,8 +154,10 @@
             "exampleSites": [
                 "atlfly.com",
                 "fly-ord.com",
+                "jetsmart.com",
                 "livejapan.com",
-                "www.bristolairport.co.uk"
+                "www.bristolairport.co.uk",
+                "www.garuda-indonesia.com"
             ]
         },
         {
@@ -146,15 +165,18 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "secure"
+                "secure",
+                "www"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "e3c4a4e8f04c639962328d4d73c7bfdaa77b4f2cf4f730d04e44f588ac2966de",
-                "24c80aebecf74dc0eeafb474294e64f0325e426c369ee9052fbbc47913f23fad"
+                "b50fe0c79018c3a13e0fb938d12c5baa09f0f190d77eca95f1c4bbfbabbd352d",
+                "c016b3991eb3a89c33d411909b3632bbd6529bca6f22e5cac9d15c2e81825d71",
+                "f0d91c7f4f2803ac24d0605adc31195fe3d399ddc3e7ccc09ecdf4ed56746eb9",
+                "d190123c8f5e237127610ea4f72e55e2f37d4b8c15fc62b4d4f558ffe09d60ee"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -162,27 +184,74 @@
             "exampleSites": [
                 "atlfly.com",
                 "fly-ord.com",
-                "www.bristolairport.co.uk"
+                "jetsmart.com",
+                "www.bristolairport.co.uk",
+                "www.garuda-indonesia.com"
+            ]
+        },
+        {
+            "rule": "rentalcars\\.com\\/Home\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oppaisan.com",
+                "pornorasskazov.ru"
+            ]
+        },
+        {
+            "rule": "rentalcars\\.com\\/FTSAutocomplete\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "01db459b0af10394b845e37284cb866144fb5973f4f2f2226acf7a8f4fe36e5f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "veneziaairport.it",
+                "www.veneziaairport.it"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.0000613,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8571428571428571
+            "prevalence": 0.875
         },
         {
             "domain": "hlmiq.com",
-            "prevalence": 0.14285714285714285
+            "prevalence": 0.125
         }
     ],
     "types": {
-        "Script": 8,
-        "Document": 4,
-        "Fetch": 3
+        "Script": 12,
+        "Document": 7,
+        "Fetch": 5,
+        "XHR": 2
     },
     "nameservers": [
         "brad.ns.cloudflare.com",
