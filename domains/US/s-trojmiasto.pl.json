@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 3,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "s-trojmiasto\\.pl\\/_js\\/vendor\\/jquery3\\/jquery-migrate-3\\.0\\.0\\.min\\.js",
@@ -91,18 +91,21 @@
             ]
         },
         {
-            "rule": "s-trojmiasto\\.pl\\/build\\/fonts\\/font-trojmiasto\\.ttf",
+            "rule": "s-trojmiasto\\.pl\\/build\\/chunks\\/base\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "83967df4674d2e6991d6db5d97503897fecbf847104d44df8a405b63fd447b74"
+                "2a3669426aea6eaf878bc25572e6644c7ceac6ab04d736290f3d4e0efa15ad37"
             ],
-            "type": "Font",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -251,6 +254,26 @@
             ]
         },
         {
+            "rule": "s-trojmiasto\\.pl\\/_img\\/rek\\/b_placeholder\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "64ba4136c7136bb618a2e65ecfab43040121a5140a712e722aa024de4ac84426"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trojmiasto.pl",
+                "www.trojmiasto.pl"
+            ]
+        },
+        {
             "rule": "s-trojmiasto\\.pl\\/_img\\/glowna2020\\/navi\\/navi_featured_arrow\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -271,23 +294,18 @@
             ]
         },
         {
-            "rule": "s-trojmiasto\\.pl\\/build\\/chunks\\/base\\.js",
+            "rule": "s-trojmiasto\\.pl\\/build\\/fonts\\/font-trojmiasto\\.ttf",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.devicePixelRatio": 2,
-                "window.matchMedia(\"prefers-color-scheme\")": 1,
-                "Document.cookie getter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a1489fef96d293d1ffa07afec6660c76da6c57bf38aea1aca031c3ae46788b6b"
+                "065c271922f6529a719a6cc191adc406d45c1337006c6fb0f2d4668ed4c9d6fd"
             ],
-            "type": "Script",
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -314,50 +332,6 @@
                 "trojmiasto.pl",
                 "www.trojmiasto.pl"
             ]
-        },
-        {
-            "rule": "s-trojmiasto\\.pl\\/html5\\/63194\\/63194\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e200a351f0913872a56fc8d1676af4dd00df778470adb751a2734bbe33f23762"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trojmiasto.pl",
-                "www.trojmiasto.pl"
-            ]
-        },
-        {
-            "rule": "s-trojmiasto\\.pl\\/html5\\/_js\\/createjs\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "CanvasRenderingContext2D.prototype.getImageData": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e439bebf8de2df0582273906d2c1dceff2387c661efb2152ef1c28420ce4e7e5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trojmiasto.pl",
-                "www.trojmiasto.pl"
-            ]
         }
     ],
     "categories": [],
@@ -366,26 +340,25 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7333333333333333
+            "prevalence": 0.651685393258427
         },
         {
             "domain": "x-trojmiasto.pl",
-            "prevalence": 0.2571428571428571
+            "prevalence": 0.3146067415730337
         },
         {
-            "domain": "ajax.googleapis.com",
-            "prevalence": 0.009523809523809525
+            "domain": "2mdn.net",
+            "prevalence": 0.033707865168539325
         }
     ],
     "types": {
-        "Script": 6,
-        "Image": 22,
+        "Script": 4,
+        "Image": 24,
         "Stylesheet": 2,
-        "Font": 2,
-        "Document": 2
+        "Font": 2
     },
     "nameservers": [
-        "lakas.ns.cloudflare.com",
-        "liz.ns.cloudflare.com"
+        "liz.ns.cloudflare.com",
+        "lakas.ns.cloudflare.com"
     ]
 }

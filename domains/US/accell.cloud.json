@@ -4,15 +4,129 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "sentry",
+        "ghost-k8s",
         "raleigh-k8s"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "accell\\.cloud\\/api\\/12\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghost-bikes.com",
+                "www.ghost-bikes.com"
+            ]
+        },
+        {
+            "rule": "accell\\.cloud\\/store-api\\/checkout\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghost-k8s",
+                "raleigh-k8s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghost-bikes.com",
+                "www.raleigh.co.uk"
+            ]
+        },
+        {
+            "rule": "accell\\.cloud\\/store-api\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghost-k8s",
+                "raleigh-k8s"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghost-bikes.com",
+                "www.ghost-bikes.com",
+                "www.raleigh.co.uk"
+            ]
+        },
+        {
+            "rule": "accell\\.cloud\\/store-api\\/checkout\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghost-k8s",
+                "raleigh-k8s"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4615d3480a612994ae51bc6bce3c3333414422324aa1dad465941e936aafdd18",
+                "0082eb2e2f30b3f6248950d5c7fd71af52fe4d7277783f8126befe9a456cd625"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghost-bikes.com",
+                "www.ghost-bikes.com",
+                "www.raleigh.co.uk"
+            ]
+        },
+        {
+            "rule": "accell\\.cloud\\/store-api\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ghost-k8s",
+                "raleigh-k8s"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cca6520141e21ef4461022a33a480335a183238fa0bb9c3c9801b26cdd00cdcf",
+                "7dbbfb302237e399f1611639346f2f6751791d466c916ce457b31cce3c034da5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghost-bikes.com",
+                "www.ghost-bikes.com",
+                "www.raleigh.co.uk"
+            ]
+        },
         {
             "rule": "accell\\.cloud\\/api\\/14\\/envelope\\/",
             "cookies": 0,
@@ -52,48 +166,6 @@
                 "raleigh.co.uk",
                 "www.raleigh.co.uk"
             ]
-        },
-        {
-            "rule": "accell\\.cloud\\/store-api\\/checkout\\/cart",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raleigh-k8s"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raleigh.co.uk",
-                "www.raleigh.co.uk"
-            ]
-        },
-        {
-            "rule": "accell\\.cloud\\/store-api\\/checkout\\/cart",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "raleigh-k8s"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ec7ad9db3cf698f787198621e18fe1e4b25965977d98f1471910bf972821b085"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "raleigh.co.uk",
-                "www.raleigh.co.uk"
-            ]
         }
     ],
     "categories": [],
@@ -106,13 +178,13 @@
         }
     ],
     "types": {
-        "Fetch": 6,
-        "Preflight": 2
+        "Fetch": 12,
+        "Preflight": 5
     },
     "nameservers": [
-        "ns3-07.azure-dns.org",
-        "ns1-07.azure-dns.com",
         "ns2-07.azure-dns.net",
-        "ns4-07.azure-dns.info"
+        "ns4-07.azure-dns.info",
+        "ns3-07.azure-dns.org",
+        "ns1-07.azure-dns.com"
     ]
 }

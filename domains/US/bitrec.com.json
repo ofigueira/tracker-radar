@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "shark",
-        "trout"
+        "trout",
+        "cod"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -30,7 +31,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "807b26481674f3089d30692b0f7053c043ad39e06bf474ab216898f0d887abca"
+                "5699c14f71eee8367136871a5052f1bdabaa5afe7d669456f3b6ce8e71559c81"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -74,7 +75,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8e7e5620e54eed1887721a1256efdea4eb02301926fcb67e9051a9f09fe29727"
+                "efce50b90b9af0147fcc04be5a6aeb7c1666483a4b91caf5aa755b36fb4840ac"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -92,14 +93,13 @@
                 "trout"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "window.innerWidth": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bd39b33c0b96eb258606fae5101f2726c5898c38648164e9e7c675a071a4022e"
+                "9401500afac9f543d2f8d9b455a95601957b66bf5d4d9fd392db98bc468c30b8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -121,7 +121,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2d27db3b78f412d00b47613c5f186ad5f4414e9fb5b303e4f0fb724494bc3544"
+                "068e80262c108097e95952b6960b21d2f987ab3cf582796b4e34123da9cd73f7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -129,6 +129,50 @@
             "exampleSites": [
                 "public.gr",
                 "www.public.gr"
+            ]
+        },
+        {
+            "rule": "bitrec\\.com\\/radiopopularpt-services\\/js\\/recommender\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cod"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "22533edd723e3d47465a3fff3753cd55c8f40645037fa0161a66a63e3413cdb9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radiopopular.pt",
+                "www.radiopopular.pt"
+            ]
+        },
+        {
+            "rule": "bitrec\\.com\\/radiopopularpt-services\\/js\\/inv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radiopopular.pt",
+                "www.radiopopular.pt"
             ]
         }
     ],
@@ -138,16 +182,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 12,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-cloud-b4.googledomains.com",
-        "ns-cloud-b3.googledomains.com",
         "ns-cloud-b1.googledomains.com",
-        "ns-cloud-b2.googledomains.com"
+        "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b3.googledomains.com",
+        "ns-cloud-b4.googledomains.com"
     ]
 }

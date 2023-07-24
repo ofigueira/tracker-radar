@@ -7,32 +7,107 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "streamer"
+        "min-api",
+        "widgets",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "cryptocompare\\.com\\/v2",
+            "rule": "cryptocompare\\.com\\/data\\/price",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "streamer"
+                "min-api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "012963e8282dc3c239fc3a7d2151ee92b114ae2ac5cbe9c5ec15193eaad7b07f"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bolsamania.com",
-                "www.eldiestro.es"
+                "atomicwallet.io",
+                "bitcoinist.com"
+            ]
+        },
+        {
+            "rule": "cryptocompare\\.com\\/serve\\/v2\\/coin\\/header",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "df558a26c80a131b56a223f976b41cf1d8f2600a05678a3f5fe9ec3c76260519"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptoglobe.com",
+                "www.cryptoglobe.com"
+            ]
+        },
+        {
+            "rule": "cryptocompare\\.com\\/serve\\/v1\\/coin\\/chart",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "window.devicePixelRatio": 2,
+                "CanvasRenderingContext2D.prototype.measureText": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9298e9bd01e1e4b60479c2fd8436292f98b498aa30cdff0028ba3cda16cd80fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mmnews.de",
+                "www.mmnews.de"
+            ]
+        },
+        {
+            "rule": "cryptocompare\\.com\\/media\\/37746251\\/btc\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "baa11e0117879c4e67d975ad08f65b4b0130a5326334ca1806ff82dd6c0333d2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mmnews.de",
+                "www.mmnews.de"
             ]
         }
     ],
@@ -42,15 +117,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.7
+        },
+        {
+            "domain": "7bitcasino.com",
+            "prevalence": 0.2
         },
         {
             "domain": "s3wfg.com",
-            "prevalence": 0.5
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "WebSocket": 2
+        "XHR": 2,
+        "Script": 4,
+        "Image": 2
     },
     "nameservers": [
         "brit.ns.cloudflare.com",

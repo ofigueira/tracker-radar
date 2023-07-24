@@ -84,11 +84,14 @@
         {
             "rule": "vp4\\.me\\/a_vip\\/colorbox\\/jquery\\.colorbox-min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "popup"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -134,7 +137,11 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.75
+        },
+        {
+            "domain": "msecnd.net",
+            "prevalence": 0.25
         }
     ],
     "types": {
@@ -142,7 +149,7 @@
         "Stylesheet": 4
     },
     "nameservers": [
-        "tara.ns.cloudflare.com",
-        "garret.ns.cloudflare.com"
+        "garret.ns.cloudflare.com",
+        "tara.ns.cloudflare.com"
     ]
 }

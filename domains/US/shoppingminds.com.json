@@ -4,36 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
         "script"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "shoppingminds\\.com\\/ewmagazine_nl\\/index\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "script"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ewmagazine.nl",
-                "www.ewmagazine.nl"
-            ]
-        },
         {
             "rule": "shoppingminds\\.com\\/familyblend_nl\\/index\\.js",
             "cookies": 0,
@@ -48,7 +26,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8d40cf3a33a4bc1bf421285f95522e19df23ea04793061bfda7a91fe39dcf506"
+                "772e660f1720d33acc3b1dc26022970af005502bf920a5ec4437a525523e6fe1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -60,12 +38,18 @@
         },
         {
             "rule": "shoppingminds\\.com\\/rvo_nl\\/index\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "script"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -73,7 +57,26 @@
                 "8b404cd2571e9a86a769a6b207ac9d44836f44da099b41d7da864b594d91e3b4"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "sm_visitor_cross_domain": {
+                    "ttl": 94608003,
+                    "length": 213,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                },
+                "sm_buid": {
+                    "ttl": 94608003,
+                    "length": 44,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                },
+                "sm_session_cross_domain": {
+                    "ttl": 1804,
+                    "length": 402,
+                    "prevalence": 0.000013613777142468177,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rvo.nl",
@@ -107,19 +110,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000204,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7777777777777778
+            "prevalence": 0.75
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 6
     },
     "nameservers": [
         "ns0.transip.net",

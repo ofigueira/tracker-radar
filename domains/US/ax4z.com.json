@@ -4,19 +4,108 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
+        "user--api--immobilien-sparkasse-de",
+        "proxy--immobilien-sparkasse-de",
         "scw-hugendubel-de"
     ],
     "cnames": [
         {
+            "original": "proxy-immobilien.sparkasse.de",
+            "resolved": "proxy--immobilien-sparkasse-de.ax4z.com"
+        },
+        {
             "original": "scw.hugendubel.de",
             "resolved": "scw-hugendubel-de.ax4z.com"
+        },
+        {
+            "original": "user-api-immobilien.sparkasse.de",
+            "resolved": "user--api--immobilien-sparkasse-de.ax4z.com"
         }
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "ax4z\\.com\\/api\\/backend\\/user\\/details",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user--api--immobilien-sparkasse-de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "user-api-immobilien.sparkasse.de",
+                    "resolved": "user--api--immobilien-sparkasse-de.ax4z.com"
+                }
+            ],
+            "responseHashes": [
+                "32460949c58d8afc72c9d51a7b345c6d963249d5b1e49d14c5da4f796ab6696f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sparkasse.de",
+                "immobilien.sparkasse.de"
+            ]
+        },
+        {
+            "rule": "ax4z\\.com\\/ajax\\/ajaxToAPI\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy--immobilien-sparkasse-de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "proxy-immobilien.sparkasse.de",
+                    "resolved": "proxy--immobilien-sparkasse-de.ax4z.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sparkasse.de",
+                "immobilien.sparkasse.de"
+            ]
+        },
+        {
+            "rule": "ax4z\\.com\\/ajax\\/ajaxToAPI\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy--immobilien-sparkasse-de"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "proxy-immobilien.sparkasse.de",
+                    "resolved": "proxy--immobilien-sparkasse-de.ax4z.com"
+                }
+            ],
+            "responseHashes": [
+                "503cd80e3b830e2b791ff733c814e9cd6a069a657b6da454a4813c4499cf3d73"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sparkasse.de",
+                "immobilien.sparkasse.de"
+            ]
+        },
         {
             "rule": "ax4z\\.com\\/x\\.min\\.js",
             "cookies": 0,
@@ -113,9 +202,10 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 4,
-        "Preflight": 4
+        "Fetch": 2,
+        "Preflight": 6,
+        "XHR": 6,
+        "Script": 4
     },
     "nameservers": [
         "a.ax4z.com",
