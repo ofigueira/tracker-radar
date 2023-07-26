@@ -1,4 +1,4 @@
-We assign categories to some of the domains on our list based on the resources served by the domain, the domain’s prevalence, and its privacy policy.
+We assign categories to some of the domains on our list based on the resources served by the domain, the domain's prevalence, and its privacy policy.
  
 |Category|Description|
 |---|---|
