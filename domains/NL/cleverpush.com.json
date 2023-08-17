@@ -12,27 +12,28 @@
     "subdomains": [
         "static",
         "autobild",
-        "faznet"
+        "faznet",
+        "testberichte"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "cleverpush\\.com\\/sdk\\/chunk\\/5\\.23e89dd51151905cc8a4\\.js",
+            "rule": "cleverpush\\.com\\/sdk\\/chunk\\/5\\.274d766757528346c4c7\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "window.localStorage": 5,
-                "window.sessionStorage": 5
+                "window.localStorage": 6,
+                "window.sessionStorage": 6
             },
             "sites": 6,
             "prevalence": 0.000604,
             "cnames": [],
             "responseHashes": [
-                "e75435a58ee65ed40fe8028ee5f3e3b9f7c4aa9109d796a87af045a89e150818"
+                "4631794d71b54e0b699d6b06fbdb25b81f779dfff71f2ecffd78aaae6cf96f5b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -73,21 +74,21 @@
             ]
         },
         {
-            "rule": "cleverpush\\.com\\/sdk\\/chunk\\/115\\.e30f3beb9362f27682a4\\.js",
+            "rule": "cleverpush\\.com\\/sdk\\/chunk\\/115\\.ec45bc959b28c07b2e15\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "Notification.permission": 4,
-                "Navigator.prototype.permissions": 4
+                "Notification.permission": 5,
+                "Navigator.prototype.permissions": 5
             },
             "sites": 5,
-            "prevalence": 0.000504,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
-                "328af77f45ba2610b978aae9a730705fb736faaad2d92cd9f4fc2afe28bf59d7"
+                "b9e9510e4d2790909c1b4c01fa4a5ded890a7e16e2413835df8be273d57daa5a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -103,24 +104,31 @@
         {
             "rule": "cleverpush\\.com\\/iframe",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "autobild",
-                "faznet"
+                "faznet",
+                "testberichte"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [],
             "responseHashes": [
-                "89e4fca38e1de6436f9cc0ba0bd0d39de80a164de0b8fd48da57d54ae4ce557a"
+                "dad3cb9dbb52ed6d52342fca66974e85cab9ac439cdaf3ceaa2badfa09c7f819",
+                "630b3b30adb24109e73b99158955dfdc90f190ab77d2d331d1f8e085afc07859"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autobild.de",
-                "www.faz.net"
+                "www.faz.net",
+                "www.testberichte.de"
             ]
         },
         {
@@ -131,10 +139,10 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.permissions": 2
+                "Navigator.prototype.permissions": 4
             },
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "828d061fc6ee4c45da4fa52015068c44230241d2a9977d85dc7480f106bb8562"
@@ -146,7 +154,8 @@
                 "autobild.de",
                 "www.faz.net",
                 "www.focus.de",
-                "www.stern.de"
+                "www.stern.de",
+                "www.testberichte.de"
             ]
         },
         {
@@ -157,8 +166,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "540457c838884f5699956bc3204f130c416959c862818719a002ed204cdc0d07"
@@ -170,7 +179,8 @@
                 "autobild.de",
                 "www.faz.net",
                 "www.focus.de",
-                "www.stern.de"
+                "www.stern.de",
+                "www.testberichte.de"
             ]
         },
         {
@@ -181,8 +191,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
+            "sites": 5,
+            "prevalence": 0.000503,
             "cnames": [],
             "responseHashes": [
                 "73af61418ca8ea40f925bdd5c5380ee58ca1dc74117b5f9759336570a614aadb"
@@ -194,7 +204,8 @@
                 "autobild.de",
                 "www.faz.net",
                 "www.focus.de",
-                "www.stern.de"
+                "www.stern.de",
+                "www.testberichte.de"
             ]
         }
     ],
@@ -204,24 +215,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.631578947368421
         },
         {
             "domain": "mycleverpush.com",
-            "prevalence": 0.3333333333333333
-        },
-        {
-            "domain": "auto-bild.de",
-            "prevalence": 0.2777777777777778
+            "prevalence": 0.3157894736842105
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.05555555555555555
+            "prevalence": 0.05263157894736842
         }
     ],
     "types": {
-        "Script": 29,
-        "Document": 2
+        "Script": 32,
+        "Document": 3
     },
     "nameservers": [
         "eric.ns.cloudflare.com",

@@ -10,14 +10,36 @@
     "prevalence": 0.000404,
     "sites": 4,
     "subdomains": [
-        "oms",
         "www",
+        "oms",
         "capig",
         "vap"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "expedia\\.com\\/_dms\\/header\\/logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c713e2b9ba0767099d2b2b955ebfaba9c252daabee80382fe354262d6ded8fdf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hotels.com",
+                "www.hotels.com"
+            ]
+        },
         {
             "rule": "expedia\\.com\\/id",
             "cookies": 0.000404,
@@ -30,9 +52,9 @@
             "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "e8f7f436d49ed75ad1fc1afa32c67ff37b2d2ace2529318fca26466759aa0f1e",
-                "976a6ec1cc0d230c3068c88e27fbc4cb33b80e6360580a194deb6dc852ef46d1",
-                "63af25a33597f60f9824b9893f930159329f17b86cfa6dda8787bbbe91a3133a"
+                "2f4349c9df5579d018f61bc0428c11bf82d13542801cf2ed777c578aeecc752d",
+                "24bfce91ce86862b8ae54fe925e83585ca1e91fcd0d23b97dd1357e73baf9af4",
+                "e62b15a51a3fad818e9bd2bbf9b127f4e05768abd86b625484810cdb52f45646"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -41,6 +63,28 @@
                 "hotels.com",
                 "no.hotels.com",
                 "www.expedia.no",
+                "www.hotels.com"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capig"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hotels.com",
                 "www.hotels.com"
             ]
         },
@@ -69,11 +113,11 @@
             ]
         },
         {
-            "rule": "expedia\\.com\\/events",
-            "cookies": 0,
+            "rule": "expedia\\.com\\/cl\\/data\\/creativePerformance\\.json",
+            "cookies": 0.000202,
             "fingerprinting": 0,
             "subdomains": [
-                "capig"
+                "www"
             ],
             "apis": {},
             "sites": 2,
@@ -82,7 +126,29 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hotels.com",
+                "www.hotels.com"
+            ]
+        },
+        {
+            "rule": "expedia\\.com\\/sponsoredcontent\\/events",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -119,31 +185,30 @@
     "topInitiators": [
         {
             "domain": "travel-assets.com",
-            "prevalence": 0.6206896551724138
-        },
-        {
-            "domain": "cdn-hotels.com",
-            "prevalence": 0.20689655172413793
+            "prevalence": 0.4444444444444444
         },
         {
             "domain": "osano.com",
-            "prevalence": 0.1724137931034483
+            "prevalence": 0.2222222222222222
+        },
+        {
+            "domain": "cdn-hotels.com",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "uciservice.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.05555555555555555
         }
     ],
     "types": {
+        "Image": 2,
         "XHR": 8,
-        "Fetch": 4
+        "Fetch": 4,
+        "Ping": 4
     },
-    "nameservers": [
-        "pdns2.ultradns.net",
-        "pdns1.ultradns.net",
-        "dns4.p09.nsone.net",
-        "dns3.p09.nsone.net",
-        "pdns4.ultradns.org",
-        "dns2.p09.nsone.net",
-        "pdns3.ultradns.org",
-        "pdns5.ultradns.info",
-        "pdns6.ultradns.co.uk",
-        "dns1.p09.nsone.net"
-    ]
+    "nameservers": []
 }

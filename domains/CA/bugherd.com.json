@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000806,
-    "sites": 8,
+    "prevalence": 0.000606,
+    "sites": 6,
     "subdomains": [
-        "www"
+        "www",
+        "sidebar"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "bugherd\\.com\\/sidebarv2\\.js",
@@ -20,12 +21,12 @@
                 "www"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000806,
+            "sites": 6,
+            "prevalence": 0.000606,
             "cnames": [],
             "responseHashes": [
                 "6faed0e4b708dd466ed2caf20a877b4b99ce8f938d31caa3af6f70772ba641ac",
-                "55232dd39e62d18f8a17fa1d3d2f48616c0c1a702a053a62e9289bacc00191d6"
+                "cbd964f571ff4de4bce527f96908cd801b9e3fe2bca744ebfad0db4f5e5fb91b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,16 +36,118 @@
                 "ltsa.ca",
                 "www.airstream.com",
                 "www.burnaby.ca",
-                "www.festivalnuitsdafrique.com",
                 "www.payscale.com",
-                "www.tonyrobbins.com",
-                "www.wordstream.com"
+                "www.tonyrobbins.com"
+            ]
+        },
+        {
+            "rule": "bugherd\\.com\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sidebar"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.localStorage": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "cbd964f571ff4de4bce527f96908cd801b9e3fe2bca744ebfad0db4f5e5fb91b",
+                "d49fb531f6d3e67fd3c538489d75d56bb18792e467004285c818f490652902ed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltsa.ca",
+                "www.airstream.com",
+                "www.payscale.com",
+                "www.tonyrobbins.com"
+            ]
+        },
+        {
+            "rule": "bugherd\\.com\\/sidebar\\/embed_html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sidebar"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "d8c3162d9037fcc65934465f751f5ce7f2138eb4d705ad771835ec0307c0f084",
+                "466b09505f5c7b83b55d9897eb4d436072e5a0dfc9bf02a2482f4c6729772439",
+                "678dd84c5ed6df8a6408508c23dce6a4952c6f91085633f0292b736084271534"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltsa.ca",
+                "www.airstream.com",
+                "www.payscale.com",
+                "www.tonyrobbins.com"
+            ]
+        },
+        {
+            "rule": "bugherd\\.com\\/assets\\/bh_logo_short-1d6af89eca7e694074a6e0bd9201111a89f1683346b813c99cd5b395cf7d7e23\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sidebar"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "62331560f77f292c38799938c59de794205f87655c9ef702bfb9e64cfdb2af88"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltsa.ca",
+                "www.airstream.com",
+                "www.payscale.com",
+                "www.tonyrobbins.com"
+            ]
+        },
+        {
+            "rule": "bugherd\\.com\\/sidebar\\/resources",
+            "cookies": 0.000404,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sidebar"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000404,
+            "cnames": [],
+            "responseHashes": [
+                "52b0f650bd1a70842ef762d463bdd60df4413cb3db2420493f2b121046da4dd3",
+                "a1eb38920a208bad0e854428a50cc5c43d6a37b49883eaee0211bb6383bf9749",
+                "7be2c0bffd17234d5bb6744673f0d2c1ba6338dd6afcfdf9aef787b5e6916c69"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ltsa.ca",
+                "www.airstream.com",
+                "www.payscale.com",
+                "www.tonyrobbins.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.000404,
     "topInitiators": [
         {
             "domain": "first party",
@@ -52,12 +155,15 @@
         }
     ],
     "types": {
-        "Script": 8
+        "Script": 10,
+        "Document": 4,
+        "Image": 4,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns3.dnsimple.com",
-        "ns4.dnsimple.com",
         "ns1.dnsimple.com",
-        "ns2.dnsimple.com"
+        "ns2.dnsimple.com",
+        "ns3.dnsimple.com",
+        "ns4.dnsimple.com"
     ]
 }

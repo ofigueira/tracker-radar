@@ -7,16 +7,114 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
-        "static",
         "sdk",
-        "events"
+        "events",
+        "sdk-canary-b",
+        "static"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "apester\\.com\\/web-sdk\\.core\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d63dc43003ede04ff0dd5b030dc3dfd3278c5113ce10d9e25c04ea602bb11b0f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "getemoji.com",
+                "itsfoss.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "getemoji.com",
+                "itsfoss.com",
+                "linuxhandbook.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "getemoji.com",
+                "itsfoss.com",
+                "linuxhandbook.com"
+            ]
+        },
+        {
+            "rule": "apester\\.com\\/web-sdk\\.0e9364df030b7b735838\\.monStyles\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-canary-b",
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "398380129db6e1c2499355ba0bccdcfa6d22b72e7e160b275782dd69e408396e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "getemoji.com",
+                "itsfoss.com"
+            ]
+        },
         {
             "rule": "apester\\.com\\/js\\/sdk\\/latest\\/apester-sdk\\.js",
             "cookies": 0,
@@ -56,51 +154,9 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "3c51e97ce3aabe7613cf53892dbe1dac03d3b87d9d23f7be6e963ad15e45ae61"
+                "2b2054312a4175bcea7d4e637f2e576af871c4dd3b79336cc1a6e30c683039c2"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "itsfoss.com",
-                "linuxhandbook.com"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "itsfoss.com",
-                "linuxhandbook.com"
-            ]
-        },
-        {
-            "rule": "apester\\.com\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -119,14 +175,14 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 8,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": [
-        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c1.googledomains.com",
         "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com",
         "ns-cloud-c4.googledomains.com"
     ]
 }

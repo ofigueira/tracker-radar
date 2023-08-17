@@ -9,11 +9,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000201,
+    "prevalence": 0.000202,
     "sites": 2,
     "subdomains": [
         "alerts",
-        "ipv6"
+        "ipv6",
+        "drop"
     ],
     "cnames": [
         {
@@ -23,6 +24,10 @@
         {
             "original": "cdn.ndtv.com",
             "resolved": "ipv6.ndtv.com.edgekey.net"
+        },
+        {
+            "original": "drop.ndtv.com",
+            "resolved": "drop.ndtv.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
@@ -36,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "alerts.ndtv.com",
@@ -55,6 +60,60 @@
             ]
         },
         {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/c\\/jquery-3\\.6\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ipv6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "cdn.ndtv.com",
+                    "resolved": "ipv6.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "80f04717f32ea0320c5e8618fbacedd1fee3a8775ad8292140a6113551d4b5b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "food.ndtv.com"
+            ]
+        },
+        {
+            "rule": "ndtv\\.com\\.edgekey\\.net\\/images\\/placeholder-small\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "drop"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "drop.ndtv.com",
+                    "resolved": "drop.ndtv.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ebe841682352da7105efc853d7d34e689f9a6b5e5e992bf027b2d623f5249eb8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ndtv.com",
+                "www.ndtv.com"
+            ]
+        },
+        {
             "rule": "ndtv\\.com\\.edgekey\\.net\\/common\\/onemin\\/storyUpdateNew\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -63,7 +122,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "cdn.ndtv.com",
@@ -84,8 +143,8 @@
     "performance": {},
     "cookies": 0.000101,
     "types": {
-        "Image": 2,
-        "Script": 2
+        "Image": 4,
+        "Script": 4
     },
     "nameservers": []
 }

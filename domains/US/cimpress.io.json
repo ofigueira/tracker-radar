@@ -4,13 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000817,
-    "sites": 12,
+    "prevalence": 0.0000478,
+    "sites": 7,
     "subdomains": [
         "anon.oauth",
+        "workentityservice.docext",
         "website-pricing-service-cdn.prices"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "workentityservice.design.vpsvc.com",
+            "resolved": "workentityservice.docext.cimpress.io"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -21,27 +27,83 @@
                 "anon.oauth"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000476,
+            "sites": 6,
+            "prevalence": 0.0000409,
             "cnames": [],
             "responseHashes": [
-                "741e3877977446c6c889cf210109eec20ed7b019205b0c5130bcd3fcd5976418",
-                "e200bbf8833169135188d6c29b397ca3d6bcd12a0f30d64d4b03ab1eb92b3927",
-                "264a439afa00306f0877c6cae985322b25efc2bca4fa23fc2a03a5fc55da20ce",
-                "a9ce95114327ea27fd5f1ae8f9a22c958ef2f9acf08d7b609f323f2ac4f82bde",
-                "4f7c3fc3a3daed0764e7971851fccde6f667374be4efcdcd03b2070e6ed29b15",
-                "418a73a0f780dbdc7669ea64fd7d6ccb797d7f206237969eee36680c37bcdb81"
+                "0fc931a4fcc84749e737f10b7921d029cc8bc0cff2532cc021d010112debb51f",
+                "8eff0aef051972ffa9529d66b3c47d785f6e5393403df0ab35c56904ff4bc9df",
+                "5a83aed72c6a8a3dc1b84e09c66d0bdf7e47efac034c266116c2b98271accf98",
+                "b26a072af321c7df7bc649cb58b868322702131635ca7a12187e9fb510cc584e",
+                "3d824c28f3b73045528e8cfb1e9d062a7bc067d1f064d3cb90c3fabc6d6680bd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vistaprint.ca",
+                "vistaprint.com",
                 "www.vistaprint.ca",
                 "www.vistaprint.co.uk",
                 "www.vistaprint.com.au",
                 "www.vistaprint.de",
-                "www.vistaprint.fr",
+                "www.vistaprint.com"
+            ]
+        },
+        {
+            "rule": "cimpress\\.io\\/api\\/v2\\/works",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "workentityservice.docext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "workentityservice.design.vpsvc.com",
+                    "resolved": "workentityservice.docext.cimpress.io"
+                }
+            ],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ajs_anonymous_id": 0.00001364424008404852,
+                "uc_id": 0.00001364424008404852
+            },
+            "exampleSites": [
+                "vistaprint.com",
+                "www.vistaprint.com"
+            ]
+        },
+        {
+            "rule": "cimpress\\.io\\/api\\/v2\\/works",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "workentityservice.docext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "workentityservice.design.vpsvc.com",
+                    "resolved": "workentityservice.docext.cimpress.io"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ajs_anonymous_id": 0.00001364424008404852,
+                "uc_id": 0.00001364424008404852
+            },
+            "exampleSites": [
+                "vistaprint.com",
                 "www.vistaprint.com"
             ]
         },
@@ -66,28 +128,6 @@
                 "vistaprint.de",
                 "www.vistaprint.de"
             ]
-        },
-        {
-            "rule": "cimpress\\.io\\/v4\\/prices\\/startingAt\\/differential",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "website-pricing-service-cdn.prices"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "152ffac059ec69061a3fbede5e9b75cd16a666ad683b92031e9cfef4716a6abc"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vistaprint.com",
-                "www.vistaprint.com"
-            ]
         }
     ],
     "categories": [],
@@ -96,15 +136,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7916666666666666
+            "prevalence": 0.7058823529411765
         },
         {
             "domain": "vpsvc.com",
-            "prevalence": 0.20833333333333334
+            "prevalence": 0.29411764705882354
         }
     ],
     "types": {
-        "XHR": 11
+        "XHR": 8,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-30.awsdns-03.com",

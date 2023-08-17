@@ -4,15 +4,16 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000504,
-    "sites": 5,
+    "prevalence": 0.000807,
+    "sites": 8,
     "subdomains": [
         "client-rapi-mediavine",
         "client-rapi-missav",
-        "client-rapi"
+        "web-integration",
+        "client-rapi-us-west"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "recombee\\.com\\/mediavine-prod\\/detailviews\\/",
@@ -22,16 +23,21 @@
                 "client-rapi-mediavine"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 5,
+            "prevalence": 0.000505,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "c48b5b1a9776c84602de2306d7903a7241158a5077e7a8519af75c33441b8334"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "happymuncher.com",
-                "www.mustdocanada.com"
+                "bikexchange.com",
+                "blackcitadelrpg.com",
+                "bonpourtoi.ca",
+                "geniuscelebs.com",
+                "www.bakingkneads.com"
             ]
         },
         {
@@ -43,7 +49,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -63,10 +69,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "292065953dfa78b518192303ca44cc3d2a2c596208b8fca06f738d89e16b6ee7"
+                "2ce48d50e878cc4ff1d2df87b68fbb1802c4bed7b0bc2b5c978933793eec8489"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -77,25 +83,73 @@
             ]
         },
         {
-            "rule": "recombee\\.com\\/cms-cms3-prod\\/recomms\\/users\\/tef6vsjnurk4d7sv3jregjt164\\/items\\/",
+            "rule": "recombee\\.com\\/customers\\/groupon\\/main\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "client-rapi"
+                "web-integration"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "0d1694c0e8fa922f24becf31cae50107f48f47481b57bd7a7284df4a117d1d0a"
+                "930e243ee26dbdb3ca1d1f3ea4409f50e967262713295e78195cca19f585e124"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cmsnl.com",
-                "www.cmsnl.com"
+                "groupon.com",
+                "www.groupon.com"
+            ]
+        },
+        {
+            "rule": "recombee\\.com\\/groupon-us\\/bookmarks\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-rapi-us-west"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "c48b5b1a9776c84602de2306d7903a7241158a5077e7a8519af75c33441b8334"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com"
+            ]
+        },
+        {
+            "rule": "recombee\\.com\\/groupon-us\\/bookmarks\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client-rapi-us-west"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groupon.com",
+                "www.groupon.com"
             ]
         }
     ],
@@ -104,18 +158,23 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.6
+            "domain": "grow.me",
+            "prevalence": 0.5263157894736842
         },
         {
-            "domain": "grow.me",
-            "prevalence": 0.4
+            "domain": "first party",
+            "prevalence": 0.3157894736842105
+        },
+        {
+            "domain": "databreakers.com",
+            "prevalence": 0.15789473684210525
         }
     ],
     "types": {
-        "Fetch": 2,
-        "Preflight": 2,
-        "XHR": 4
+        "Fetch": 7,
+        "Preflight": 4,
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
         "jobs.ns.cloudflare.com",

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
         "splunk-elb.lb"
     ],
@@ -19,14 +19,40 @@
     "resources": [
         {
             "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
-            "cookies": 0.000201,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "splunk-elb.lb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [
+                {
+                    "original": "apps-api.splunk.com",
+                    "resolved": "splunk-elb.lb.anypointdns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "splunk.com",
+                "docs.splunk.com",
+                "www.splunk.com"
+            ]
+        },
+        {
+            "rule": "anypointdns\\.net\\/wplt\\/analytics\\/v2\\/tag",
+            "cookies": 0.000302,
+            "fingerprinting": 0,
+            "subdomains": [
+                "splunk-elb.lb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
             "cnames": [
                 {
                     "original": "apps-api.splunk.com",
@@ -34,32 +60,39 @@
                 }
             ],
             "responseHashes": [
-                "b219781681d9033687dfcd0ffed26c07b88462411d951e6f915e20181bc3e1e6"
+                "fe04ea1fbe4f31adaabf41ea87fac4daa4dd8ffd264eeca870cbbc4333ad360f",
+                "24b4fc17bb8d02063547e0276936493df8cc31b77dbc41132e207b071670f628"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
-                "docs.splunk.com"
+                "docs.splunk.com",
+                "www.splunk.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000202,
     "topInitiators": [
         {
+            "domain": "signalfx.com",
+            "prevalence": 0.5
+        },
+        {
             "domain": "d221cp5lqk6y64.cloudfront.net",
-            "prevalence": 0.6666666666666666
+            "prevalence": 0.3333333333333333
         },
         {
             "domain": "d7koym0rxduxm.cloudfront.net",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.16666666666666666
         }
     ],
     "types": {
-        "Fetch": 2
+        "Preflight": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "ns-180.awsdns-22.com",

@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00121,
-    "sites": 12,
+    "prevalence": 0.001,
+    "sites": 10,
     "subdomains": [
         "static-eu",
         "static-na"
@@ -19,6 +19,79 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "payments-amazon\\.com\\/OffAmazonPayments\\/de\\/lpa\\/js\\/Widgets\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static-eu"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.languages": 1,
+                "Document.cookie setter": 2,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b23dbabf8633dee559ceca76f93ca2ea8a5e66f8fb0e2f5e901a9c04f6108007"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "language": {
+                    "ttl": 86403,
+                    "length": 5,
+                    "prevalence": 0.00010049241282283188,
+                    "uniqueness": 1
+                },
+                "amazon-pay-connectedAuth": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.00010049241282283188,
+                    "uniqueness": 1
+                },
+                "apay-session-set": {
+                    "ttl": 31536003,
+                    "length": 70,
+                    "prevalence": 0.00020098482564566376,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allesrahmen.ch",
+                "www.simon-o.com"
+            ]
+        },
+        {
+            "rule": "payments-amazon\\.com\\/v2\\/login\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-eu",
+                "static-na"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "87abb8030b484a6e8cabb59766167ea666fddda9d74d439a4d03d5bdd1d63372"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allesrahmen.ch",
+                "www.mathway.com",
+                "www.simon-o.com"
+            ]
+        },
+        {
             "rule": "payments-amazon\\.com\\/checkout\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -26,11 +99,11 @@
                 "static-eu"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.000905,
+            "sites": 7,
+            "prevalence": 0.000703,
             "cnames": [],
             "responseHashes": [
-                "bff4c4d57475d9764f01237b6e3f770d3170d8fcb524a79366ffa34529a138fa"
+                "708b46bd27ddf8cad4ee13b2f67e0bd15da87d356744e73705cf32fece31efd2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,33 +114,8 @@
                 "www.elektrofahrrad24.de",
                 "www.gartenhaus.ch",
                 "www.intersport.de",
-                "www.ofen.de",
                 "www.party.ch",
-                "www.salewa.com",
-                "www.walser-shop.ch"
-            ]
-        },
-        {
-            "rule": "payments-amazon\\.com\\/v2\\/login\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static-na",
-                "static-eu"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "4bd536e58caeac01f1b9ade3b42f33cfc54dcf6f04613d159d994e3cd16d44df"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mathway.com",
-                "www.photovoltaik4all.de"
+                "www.salewa.com"
             ]
         }
     ],
@@ -80,7 +128,7 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.000201,
+    "cookies": 0.000301,
     "topInitiators": [
         {
             "domain": "first party",
@@ -88,14 +136,14 @@
         }
     ],
     "types": {
-        "Script": 11
+        "Script": 12
     },
     "nameservers": [
-        "pdns3.ultradns.org",
         "pdns4.ultradns.org",
         "pdns1.ultradns.net",
         "pdns2.ultradns.net",
         "pdns5.ultradns.info",
-        "pdns6.ultradns.co.uk"
+        "pdns6.ultradns.co.uk",
+        "pdns3.ultradns.org"
     ]
 }

@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000408,
+    "prevalence": 0.0000409,
     "sites": 6,
     "subdomains": [
+        "acts-tnew-prod",
+        "myst-tnew-prod",
         "mfah-tnew-prod",
         "natt-tnew-prod",
         "nmsc-tnew-test"
@@ -17,6 +19,14 @@
             "resolved": "mfah-tnew-prod.tnhs.cloud"
         },
         {
+            "original": "ramp.mysticaquarium.org",
+            "resolved": "myst-tnew-prod.tnhs.cloud"
+        },
+        {
+            "original": "secure.act-sf.org",
+            "resolved": "acts-tnew-prod.tnhs.cloud"
+        },
+        {
             "original": "tickets.nationaltheatre.org.uk",
             "resolved": "natt-tnew-prod.tnhs.cloud"
         }
@@ -24,8 +34,40 @@
     "fingerprinting": 0,
     "resources": [
         {
+            "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acts-tnew-prod",
+                "myst-tnew-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "secure.act-sf.org",
+                    "resolved": "acts-tnew-prod.tnhs.cloud"
+                },
+                {
+                    "original": "ramp.mysticaquarium.org",
+                    "resolved": "myst-tnew-prod.tnhs.cloud"
+                }
+            ],
+            "responseHashes": [
+                "74f538c4f81c3f1ee2f6364ab478f735fd641ac72c044a623664e609f3a91385"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "act-sf.org",
+                "www.mysticaquarium.org"
+            ]
+        },
+        {
             "rule": "tnhs\\.cloud\\/api\\/session\\/sessionkey",
-            "cookies": 0.0000204,
+            "cookies": 0.0000205,
             "fingerprinting": 0,
             "subdomains": [
                 "mfah-tnew-prod",
@@ -33,7 +75,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000205,
             "cnames": [
                 {
                     "original": "my.mfah.org",
@@ -45,8 +87,8 @@
                 }
             ],
             "responseHashes": [
-                "19509b983dbd9353e6d6009dc2227faa2d744586bc368df6a2c503e634111b90",
-                "39ae880055554e8605eed94539a76a4ac77930913f1fd3e12e4fda9a8b867434"
+                "d914d725a6061e3319fa6c8d660eb346ead9e7fbc65f58a673dab4fcb57d541d",
+                "14cc7e52673fc281fe3a22e533af17cacc47790cc293f66cb17afd5a0c2d2704"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -59,27 +101,7 @@
         },
         {
             "rule": "tnhs\\.cloud\\/components\\/sharedsession",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nmsc-tnew-test"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nms.ac.uk",
-                "www.nms.ac.uk"
-            ]
-        },
-        {
-            "rule": "tnhs\\.cloud\\/components\\/sharedsession",
-            "cookies": 0.00000681,
+            "cookies": 0.00000682,
             "fingerprinting": 0,
             "subdomains": [
                 "nmsc-tnew-test"
@@ -100,22 +122,29 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000408,
+    "cookies": 0.0000409,
     "topInitiators": [
         {
             "domain": "cloudflare.com",
-            "prevalence": 1
+            "prevalence": 0.5
+        },
+        {
+            "domain": "d3hx9w12q7fwqa.cloudfront.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "d35y46dv539h1e.cloudfront.net",
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Fetch": 3,
-        "Other": 2,
-        "XHR": 2
+        "XHR": 4,
+        "Fetch": 3
     },
     "nameservers": [
+        "ns-1737.awsdns-25.co.uk",
         "ns-477.awsdns-59.com",
-        "ns-885.awsdns-46.net",
         "ns-1438.awsdns-51.org",
-        "ns-1737.awsdns-25.co.uk"
+        "ns-885.awsdns-46.net"
     ]
 }
