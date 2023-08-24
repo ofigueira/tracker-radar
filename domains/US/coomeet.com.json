@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000819,
-    "sites": 12,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
         "trck",
         "ap1",
         "wsfree",
-        "iframe",
-        "i"
+        "i",
+        "iframe"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,8 +24,8 @@
                 "trck"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000546,
+            "sites": 9,
+            "prevalence": 0.0000609,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -36,8 +36,9 @@
             "exampleSites": [
                 "camblink.com",
                 "chateasy.org",
+                "chatfly.net",
                 "chathub.net",
-                "cocochat.live",
+                "chatroulette.to",
                 "coomeet.chat",
                 "ome-tv.app",
                 "omegle.cc",
@@ -46,18 +47,18 @@
         },
         {
             "rule": "coomeet\\.com\\/v70\\/server\\.get",
-            "cookies": 0.0000205,
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
                 "ap1"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "4b540a22fd7f4dc75bcb30423e278a03d8a3799816fce91c6a391e3d49869a8a",
-                "68314bd5e0342b2bcc5def1c7f372f5aa9d899ce74aedce2c66af103c51ee5c7"
+                "06e8949cf46e3daa4798ae2f926a56832a56f97b9a66c73f26f9b17b36f4e7a2",
+                "f3dbdf7e191c445887b0381bb50314bef03fbded576ad6c5d0b069d88f3735f8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -77,7 +78,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000205,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -90,6 +91,35 @@
             ]
         },
         {
+            "rule": "coomeet\\.com\\/js\\/code\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "i",
+                "iframe"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.maxTouchPoints": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "cb4e0119027829ac986f473ffd32c2ee3515e7105f3a096fd9fb768901364af1",
+                "212843b788160324448439cce2243c2da8f64db77db87f7400cdf6143eb2aa89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chatroulette.to",
+                "coomeet.chat",
+                "videochat.chat"
+            ]
+        },
+        {
             "rule": "coomeet\\.com\\/v70\\/i18n\\/web\\/en",
             "cookies": 0,
             "fingerprinting": 0,
@@ -98,10 +128,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "4ac9ef8494d26bbbdcff7af8aed4566e9122d38e59c9f00f29a2984171dc9f1c"
+                "94a5bf2f1d63a0d099363dc08ec805e76e753a3c3a8862b6d0ecf7c0d8d23b79"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -110,58 +140,33 @@
                 "chatroulettefree.com",
                 "videochat.chat"
             ]
-        },
-        {
-            "rule": "coomeet\\.com\\/js\\/code\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "iframe",
-                "i"
-            ],
-            "apis": {
-                "window.localStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "212843b788160324448439cce2243c2da8f64db77db87f7400cdf6143eb2aa89"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coomeet.chat",
-                "videochat.chat"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000205,
+    "cookies": 0.0000271,
     "topInitiators": [
         {
-            "domain": "coomeet.me",
-            "prevalence": 0.43478260869565216
+            "domain": "first party",
+            "prevalence": 0.5151515151515151
         },
         {
-            "domain": "first party",
-            "prevalence": 0.43478260869565216
+            "domain": "coomeet.me",
+            "prevalence": 0.3939393939393939
         },
         {
             "domain": "chat-rooms.webcam",
-            "prevalence": 0.13043478260869565
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Image": 8,
+        "Image": 9,
         "Fetch": 5,
         "WebSocket": 3,
-        "Script": 2
+        "Script": 3
     },
     "nameservers": [
-        "major.ns.cloudflare.com",
-        "sue.ns.cloudflare.com"
+        "sue.ns.cloudflare.com",
+        "major.ns.cloudflare.com"
     ]
 }

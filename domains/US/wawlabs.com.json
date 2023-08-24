@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000205,
-    "sites": 3,
+    "prevalence": 0.0000271,
+    "sites": 4,
     "subdomains": [
+        "collector",
         "mediamarkt-ch",
         "mm"
     ],
@@ -14,24 +15,29 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "wawlabs\\.com\\/top_searches",
+            "rule": "wawlabs\\.com\\/mediamarktch\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "mediamarkt-ch",
-                "mm"
+                "collector"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "60396fa442ef9b6bbb202fbb4a375cce83f1b6039f85c379c0b4d1da9dcd7ffb"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mediamarkt.ch",
-                "www.mediamarkt.com.tr"
+                "www.mediamarkt.ch"
             ]
         },
         {
@@ -43,17 +49,67 @@
                 "mm"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediamarkt.ch",
+                "www.mediamarkt.com.tr",
+                "www.mediamarkt.ch"
+            ]
+        },
+        {
+            "rule": "wawlabs\\.com\\/top_searches",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediamarkt-ch",
+                "mm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "a4b9af3f2d13a616464f4b9becdefd859b523fd4843f1650a4ee10d2d2378a46"
+                "c4f40540e4d8a05837c31028ffbaca7a26ff449fa2971e15249cc68f8ca7b985",
+                "6b4a4c43fd4d5c36cfc69063c0a23f7722acd1ecdb525612be39aabaa795c690"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mediamarkt.ch",
+                "www.mediamarkt.com.tr",
+                "www.mediamarkt.ch"
+            ]
+        },
+        {
+            "rule": "wawlabs\\.com\\/mediamarkt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "bd86befa3f72e06327bff81099ca4876e5766fc134ff3eeb1c4130d334a3fc99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediamarkt.com.tr",
                 "www.mediamarkt.com.tr"
             ]
         }
@@ -68,8 +124,9 @@
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Script": 4,
+        "Preflight": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "glen.ns.cloudflare.com",
