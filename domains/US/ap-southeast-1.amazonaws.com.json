@@ -9,17 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000422,
+    "prevalence": 0.00042,
     "sites": 62,
     "subdomains": [
+        "kgdata-cdn.s3",
         "aws-sin-slb-internet-64392e0be8997725.elb",
         "xr2up6kx07.execute-api",
         "firehose",
         "cognito-identity",
         "penanamedia.s3",
-        "68mda39k2i.execute-api",
         "s3",
-        "cms-uat.s3",
         "vj-prod-website-cms.s3"
     ],
     "cnames": [
@@ -28,39 +27,48 @@
             "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
-            "cookies": 0.000034,
-            "fingerprinting": 0,
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/tracker\\/p\\/kompas\\/oval_web_analytics_1_0\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
             "subdomains": [
-                "aws-sin-slb-internet-64392e0be8997725.elb"
+                "kgdata-cdn.s3"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000034,
-            "cnames": [
-                {
-                    "original": "ubt-sin.tripcdn.com",
-                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
-                }
-            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
             "responseHashes": [
-                "3b5c2fcc60b942b435a946763e3117ecafce2538440ff441d7a34eae1de13f94",
-                "8ad03ecf41bec15b162b669b8f1eb3f3a9d130b0f1788da282eed0918f763136",
-                "914751ec444eb895f33c82cd0ac21dcd9a525198cb629bcfe18e230a80a4cebd",
-                "ad399de4eaf4ef49c53db5ac74e1cf965090cb01e96fbe04307da4cc80705c17"
+                "65913250aea3ffac33bfe1f98562c7bd589b92350482e36b70be352af4f29e15"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "_oval": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.00001354132813346333,
+                    "uniqueness": 1
+                },
+                "_ovals": {
+                    "ttl": 1806,
+                    "length": 47,
+                    "prevalence": 0.00001354132813346333,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trip.com",
-                "hk.trip.com",
-                "jp.trip.com",
-                "us.trip.com",
-                "www.trip.com"
+                "kompas.com",
+                "health.kompas.com"
             ]
         },
         {
@@ -72,7 +80,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000034,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -92,15 +100,15 @@
             ]
         },
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bf\\.gif",
-            "cookies": 0.000034,
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
+            "cookies": 0.0000339,
             "fingerprinting": 0,
             "subdomains": [
                 "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.000034,
+            "prevalence": 0.0000339,
             "cnames": [
                 {
                     "original": "ubt-sin.tripcdn.com",
@@ -108,13 +116,14 @@
                 }
             ],
             "responseHashes": [
-                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+                "0a2578202c4f8c1d134ac6586a264a139b62bddb0689d83d55f2039084fc1385",
+                "c19243917076d9ffc3f7f1e190d84f37bedff5f259f071f5dd7b03b63b1a93c6",
+                "f20a3afa135f6b9debda69077adda4608941761c07ab40dd7d6c607bc994be6f",
+                "e11188fd1c4e41cc96e50fff0a3b879b5c5e0195877f5f43dedee34a2d786176"
             ],
-            "type": "Image",
+            "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_RSG": 0.000020420665713702267
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "trip.com",
                 "hk.trip.com",
@@ -132,7 +141,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "d089c8a9fc28e4e50223eb38c9409e362521be9380a37341304fbac7a4cd9e5f"
@@ -154,7 +163,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -175,7 +184,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000476,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -184,9 +193,9 @@
             "exampleSites": [
                 "jalantikus.com",
                 "thanhnien.vn",
+                "tinhte.vn",
                 "travel.kompas.com",
                 "www.chinatimes.com",
-                "www.islampos.com",
                 "www.rappler.com",
                 "www.setn.com"
             ]
@@ -201,15 +210,14 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000476,
+            "prevalence": 0.0000474,
             "cnames": [],
             "responseHashes": [
-                "85b15a5e8ddfa16c6e4debdb4f718c6f44d969ddb7f14f881cd99b4bd7c8388b",
-                "c77cb3b6f2b196224895fc9dc2b0970850485a194b6484776ff52be398db7390",
-                "082aeae898b70a3b39f2c02142a16c6197c46cc7c2fe701c52b68d5f41149793",
-                "93d119c9b46bd2b2cb5842688859d9abc8e8349f68d37fd1762f9c03df79b53e",
+                "8d9288d5cc5b608b45161c38718ec66ab5ab1aaf26ecf71ce506adb1594ff268",
+                "bca16c580863dfda251ac10b010d77da43fffcaa3cab15c97e3fa4a8b805a057",
+                "5ad6526f6c6f2e0775d3fef679fc0e6012791de7305d02fbd801a6386563437f",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "14768a93ef6bf87a6e813a76762f5b8af6a306bbaac1383de2b338deded21656"
+                "b396ae513e07e5c248f3749ce7c260273869acde4de577ab1e459c264a727342"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -217,38 +225,11 @@
             "exampleSites": [
                 "jalantikus.com",
                 "thanhnien.vn",
+                "tinhte.vn",
                 "travel.kompas.com",
                 "www.chinatimes.com",
-                "www.islampos.com",
                 "www.rappler.com",
                 "www.setn.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "aws-sin-slb-internet-64392e0be8997725.elb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "ubt-sin.tripcdn.com",
-                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
-                }
-            ],
-            "responseHashes": [
-                "ee836e50fa50370114a46c61bf1404fe354c1e2896ed391c5c7fb701c2b9614d"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trip.com",
-                "jp.trip.com"
             ]
         },
         {
@@ -260,7 +241,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
                 "d08a4ac2d908634ff358a267bd2ae8fe7f0d1fcabb94a7c1613cbf19131ef16d"
@@ -275,45 +256,61 @@
             ]
         },
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/DynamoTest\\/putdata",
-            "cookies": 0,
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bee\\/collect",
+            "cookies": 0.0000203,
             "fingerprinting": 0,
             "subdomains": [
-                "68mda39k2i.execute-api"
+                "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "050f807c08472fb708f77ea698f980d76c5a1e8d9fa18a9c6a584f9612127582",
+                "5479f15c563f3bbadf8e3e6b2fcfb17607eae53a020a713ec86252ba018457e0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cntraveller.in",
-                "www.gqindia.com"
+                "trip.com",
+                "us.trip.com",
+                "www.trip.com"
             ]
         },
         {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/DynamoTest\\/putdata",
-            "cookies": 0,
+            "rule": "ap-southeast-1\\.amazonaws\\.com\\/bf\\.gif",
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "68mda39k2i.execute-api"
+                "aws-sin-slb-internet-64392e0be8997725.elb"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "ubt-sin.tripcdn.com",
+                    "resolved": "aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_RSG": 0.00001354132813346333
+            },
             "exampleSites": [
-                "cntraveller.in",
-                "www.gqindia.com"
+                "trip.com",
+                "www.trip.com"
             ]
         },
         {
@@ -325,7 +322,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "8f547ff573edd880e43633a61591d411716ba92d094fa2f7c5425ddcf3bc2bfa"
@@ -347,7 +344,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "aa51acf26024edf49bccb092f4f373d7725486315f173fcd8688154c561a0c88"
@@ -369,7 +366,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "431d81b6ccdfa10a4af4835dd5e23a24d85502463eab348d5718c5909230f4a2"
@@ -391,7 +388,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "ea7d817499f5ce90e7e8d6cdb9eec0f60a4bf6b24fe902c667568ef1b65b0c3d"
@@ -413,7 +410,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "ed0436d3a2bced72d5772fdaa4de44dd2b3a5b1c597f38de50884cf5b74ce3a6"
@@ -435,7 +432,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "2f81514f29470e7c2fb64c8628538ea9426b1b466b6b31a39d81bd0665195114"
@@ -457,7 +454,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "92c4d1f4c4ae067f696d9b0819f665a40b973675cd74c470f172c6ab352b95f1"
@@ -479,7 +476,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "dba07ea5c4aa23a8fd0dc2f2f04123cd50cbef8a4e90c1d93f7d67a3b80f2ee9"
@@ -501,7 +498,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "7ed4e92758413364398b3c52d2eb71e2ced09f7ec77afef0eb48f74ab8c7df73"
@@ -523,7 +520,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "f54aa5cdeea78e96b0c252ae51fb0ba7532a8eda9b4fbeab1fde8aa10daf8a12"
@@ -545,7 +542,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "faf545a26d79dc70331601e8294acbcbfcbd587cebb295a3d4c09cbb21b913d5"
@@ -567,7 +564,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "cea953ad49dcd05c1a8d638e9dfa791e867a6e9dcd034f17e5e6d6e0826e47b4"
@@ -589,7 +586,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "c0243a3e43524510aa4e01ae7012c3778de4183ba9db52bc0b5f4fae294efeed"
@@ -611,199 +608,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "84e2d2d0fef168b68343c7db04abc55b860916cccc65979a3a1fea666c597df1"
+                "7119a23d65d9b1475763beb22a7484a6e91ae7e2df54fb195de50be2dead7b24"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000013613777142468177
+                "lotame_domain_check": 0.00001354132813346333
             },
             "exampleSites": [
                 "thestar.com.my",
                 "www.thestar.com.my"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/facebook-1607147833349\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/insta-1607147833353\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/twitter-1607147826657\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/line-1607147826652\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/wechat-1607147826660\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/zalo-1607147826662\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/huongdan-1634321105674\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/pay-1634321105685\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vj-prod-website-cms.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/applestore-1607148441670\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
             ]
         },
         {
@@ -815,31 +632,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "9fa4f75e82d97c1ae5bfd9dd1836e12c2036f38f1179f5435f30105e2f43adf7"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vietjetair.com",
-                "www.vietjetair.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/googleplay-1607148441674\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cms-uat.s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -857,7 +654,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "db4bf415df1ab41dacb47832ad9b605769511da3d68639d53282f6e7208c7e6c"
@@ -869,109 +666,67 @@
                 "vietjetair.com",
                 "www.vietjetair.com"
             ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/vidgyor\\.com\\/player\\/account\\/zee\\/conf\\/zee_wion\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5e81bd4cbb03b7caa31f87049d29807d0b332bfd372231b046dc0353a13ccb77"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wionews.com",
-                "www.wionews.com"
-            ]
-        },
-        {
-            "rule": "ap-southeast-1\\.amazonaws\\.com\\/images\\.yummy\\.ph\\/yummy\\/native\\/nested_native\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s3"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6b53fa7c505d65d58bf6c85d0feafdb0193cd796323b475a2b986f865b9222d9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.000027227554284936355
-            },
-            "exampleSites": [
-                "yummy.ph",
-                "www.yummy.ph"
-            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000545,
+    "cookies": 0.0000677,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7886178861788617
+            "prevalence": 0.7681159420289855
         },
         {
             "domain": "cloudflare.com",
-            "prevalence": 0.06097560975609756
+            "prevalence": 0.07246376811594203
         },
         {
             "domain": "likr.tw",
-            "prevalence": 0.056910569105691054
-        },
-        {
-            "domain": "c-ctrip.com",
-            "prevalence": 0.032520325203252036
-        },
-        {
-            "domain": "vidgyor.com",
-            "prevalence": 0.024390243902439025
+            "prevalence": 0.06280193236714976
         },
         {
             "domain": "d2u6vujtbrga6l.cloudfront.net",
-            "prevalence": 0.02032520325203252
+            "prevalence": 0.03864734299516908
         },
         {
-            "domain": "cnidigital.in",
-            "prevalence": 0.012195121951219513
+            "domain": "vidgyor.com",
+            "prevalence": 0.01932367149758454
+        },
+        {
+            "domain": "c-ctrip.com",
+            "prevalence": 0.014492753623188406
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.00966183574879227
+        },
+        {
+            "domain": "naukimg.com",
+            "prevalence": 0.00966183574879227
         },
         {
             "domain": "ajax.googleapis.com",
-            "prevalence": 0.0040650406504065045
+            "prevalence": 0.004830917874396135
         }
     ],
     "types": {
-        "XHR": 13,
-        "Preflight": 16,
-        "Image": 56,
+        "Script": 4,
+        "Preflight": 14,
+        "Ping": 5,
         "Fetch": 9,
-        "Ping": 2,
-        "Script": 2
+        "Image": 33,
+        "XHR": 5
     },
     "nameservers": [
-        "ns2.amzndns.org",
-        "ns1.amzndns.net",
-        "ns1.amzndns.co.uk",
-        "ns2.amzndns.net",
-        "ns1.amzndns.com",
         "ns1.amzndns.org",
+        "ns2.amzndns.org",
+        "ns2.amzndns.com",
+        "ns1.amzndns.co.uk",
+        "ns1.amzndns.com",
         "ns2.amzndns.co.uk",
-        "ns2.amzndns.com"
+        "ns2.amzndns.net",
+        "ns1.amzndns.net"
     ]
 }

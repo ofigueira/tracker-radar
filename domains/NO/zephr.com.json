@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00141,
+    "sites": 14,
     "subdomains": [
         "ny-post-decider.cdn",
         "ny-post-ny-post.cdn",
         "ny-post-page-six.cdn",
+        "assets",
         "nhst.auth",
         "hegnarmedia.auth",
         "hegnarmedia-bors-prod.cdn"
@@ -32,7 +33,7 @@
             "resolved": "ny-post-page-six.cdn.zephr.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "zephr\\.com\\/zephr\\/features",
@@ -73,6 +74,32 @@
             ]
         },
         {
+            "rule": "zephr\\.com\\/zephr-browser\\/1\\.5\\.2\\/zephr-browser\\.umd\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "877aa4bf01c52907108645fb2bd3f9a0eab9eb1d599e5ea41764023440ced4fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bbc.co.uk",
+                "www.bbc.com",
+                "www.sciencefocus.com"
+            ]
+        },
+        {
             "rule": "zephr\\.com\\/zephr\\/sso",
             "cookies": 0.000505,
             "fingerprinting": 0,
@@ -90,10 +117,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dn.no",
+                "www.europower.no",
                 "www.fiskeribladet.no",
                 "www.finansavisen.no",
-                "www.kapital.no",
-                "www.upstreamonline.com"
+                "www.kapital.no"
             ]
         },
         {
@@ -113,7 +140,7 @@
                 }
             ],
             "responseHashes": [
-                "5ca8674315fa7d418675c3082a657e3df292fe65ae34a0b5a34b0a2aa0a47114"
+                "12f05770330577e24f54bae4d722ebeb49926876dc07901146556122cb846140"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -140,7 +167,7 @@
                 }
             ],
             "responseHashes": [
-                "ca516cbd401fe4e4d782f8038e992d9c4060761a661c8d5e9cb6a37f13b77d46"
+                "5da16564accb27c0a07b13070d4203d26287ef196c4258a2c471736f5c20a747"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -207,7 +234,7 @@
         {
             "rule": "zephr\\.com\\/static\\/js\\/10\\.67db8aa5\\.chunk\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "hegnarmedia-bors-prod.cdn"
             ],
@@ -275,7 +302,7 @@
                 }
             ],
             "responseHashes": [
-                "5ba2aad89913f52af8b3b30bdb645c207b588736339d2e134394727f45b37436"
+                "1539d3001db64ab2567fde653d9d3f446197793d6040b07130bea623ef46c9e1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -479,19 +506,23 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "bbci.co.uk",
+            "prevalence": 0.2222222222222222
         }
     ],
     "types": {
         "Other": 3,
+        "Script": 25,
         "Document": 9,
-        "Script": 22,
         "XHR": 2
     },
     "nameservers": [
-        "ns-1991.awsdns-56.co.uk",
-        "ns-1113.awsdns-11.org",
         "ns-877.awsdns-45.net",
-        "ns-46.awsdns-05.com"
+        "ns-46.awsdns-05.com",
+        "ns-1113.awsdns-11.org",
+        "ns-1991.awsdns-56.co.uk"
     ]
 }

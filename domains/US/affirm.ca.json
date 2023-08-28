@@ -4,9 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000135,
+    "sites": 2,
     "subdomains": [
+        "cdn1",
+        "api-cf",
         "www",
         "tracker"
     ],
@@ -14,47 +16,117 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "affirm\\.ca\\/api\\/v2\\/cookie_sent",
-            "cookies": 0.0000136,
+            "rule": "affirm\\.ca\\/js\\/v2\\/affirm\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {
+                "console.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "416d4473eb19ae0ea21c77b0e5bc15ab8a2fe8221e8a1a094f2c4d91237bd4de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1692888117,
+                    "length": 1,
+                    "prevalence": 0.00001354132813346333,
+                    "uniqueness": 0.5
+                },
+                "tracker_device": {
+                    "ttl": 157680021,
+                    "length": 36,
+                    "prevalence": 0.00001354132813346333,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labaie.com",
+                "www.thebay.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.ca\\/api\\/v2\\/session\\/touch_track",
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
-                "www"
+                "api-cf"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8"
+                "9761fcbb01f718f8b927462d6cb9047b891799da3a5b51899f08658cce8e52cd"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "labaie.com",
-                "www.labaie.com"
+                "www.thebay.com"
+            ]
+        },
+        {
+            "rule": "affirm\\.ca\\/api\\/v2\\/cookie_sent",
+            "cookies": 0.0000203,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [],
+            "responseHashes": [
+                "8d728ba62f3f7c795e471c6dce9d637ffce93580e4936c3f1b578320242df7b8",
+                "924aebf24af414b12986f4af470b2ac7b61d765897f9e222c0af15805de9ae40"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labaie.com",
+                "www.labaie.com",
+                "www.thebay.com"
             ]
         },
         {
             "rule": "affirm\\.ca\\/api\\/promos\\/v2\\/XW0QZGI4G471KVAF",
-            "cookies": 0.00000681,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000203,
             "cnames": [],
             "responseHashes": [
-                "2e1d5f5f323fb7a6e344ebb5ed7b3b0ff87f8130f1b5aa3aa5191072cbfc9d85"
+                "2e1d5f5f323fb7a6e344ebb5ed7b3b0ff87f8130f1b5aa3aa5191072cbfc9d85",
+                "721fc29251a834d6a971df5468a9eb730dd98c236b7be2f81802ee55bb0a43dc"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "labaie.com",
-                "www.labaie.com"
+                "www.labaie.com",
+                "www.thebay.com"
             ]
         },
         {
@@ -66,7 +138,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "70f07df8529a5da355e70cb8fd1a2c6cdbe6dec83a5332bfcf06f5a917e6e607"
@@ -75,14 +147,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "labaie.com",
-                "www.labaie.com"
+                "thebay.com",
+                "www.thebay.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
             "domain": "first party",
@@ -90,13 +162,14 @@
         }
     ],
     "types": {
-        "Fetch": 4,
+        "Script": 2,
+        "Fetch": 8,
         "Ping": 2
     },
     "nameservers": [
+        "ns-1368.awsdns-43.org",
         "ns-586.awsdns-09.net",
         "ns-1548.awsdns-01.co.uk",
-        "ns-149.awsdns-18.com",
-        "ns-1368.awsdns-43.org"
+        "ns-149.awsdns-18.com"
     ]
 }

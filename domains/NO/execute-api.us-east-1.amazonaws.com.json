@@ -9,13 +9,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00101,
+    "sites": 10,
     "subdomains": [
-        "pt37ad6f6a"
+        "pt37ad6f6a",
+        "42ovubzp4f"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/Prod\\/v1\\/analytics",
@@ -25,15 +26,21 @@
                 "pt37ad6f6a"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "1a71e9c13bda999cbd1fbf87a67e9d116b876be5f9f39ed1929c18e3d6bfd017",
+                "fb8b5f1be2d08c910dcf907f8ce8c9346f78ee5bebace3d098435ac21aa055ee",
+                "76c94bbf5bd489e96529ea086e958a6bf38584abb6a11f215cb1933eb9671fa4"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
+                "www.databricks.com",
+                "www.ivanti.com",
                 "www.splunk.com"
             ]
         },
@@ -45,18 +52,40 @@
                 "pt37ad6f6a"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
-            "responseHashes": [
-                "b3ac4683a7927edd953bfd9a429e5c3f964d4fd7b7666ae2793e53f47b1c134d"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
+                "www.databricks.com",
+                "www.ivanti.com",
                 "www.splunk.com"
+            ]
+        },
+        {
+            "rule": "execute-api\\.us-east-1\\.amazonaws\\.com\\/prod\\/getccodeip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "42ovubzp4f"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f2e483c562640a21db5790c882fee28270f04f2167d03228de259ad8e23a567d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "systweak.com",
+                "www.systweak.com"
             ]
         }
     ],
@@ -64,49 +93,46 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4666666666666667
+            "prevalence": 0.38461538461538464
+        },
+        {
+            "domain": "mutinycdn.com",
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "signalfx.com",
-            "prevalence": 0.13333333333333333
+            "prevalence": 0.15384615384615385
         },
         {
             "domain": "listenloop.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.07692307692307693
         },
         {
-            "domain": "intelligems.io",
-            "prevalence": 0.06666666666666667
+            "domain": "ai-widget.s3.amazonaws.com",
+            "prevalence": 0.07692307692307693
         },
         {
-            "domain": "script.ac",
-            "prevalence": 0.06666666666666667
-        },
-        {
-            "domain": "getlighthouse.io",
-            "prevalence": 0.06666666666666667
+            "domain": "pmg.com",
+            "prevalence": 0.07692307692307693
         },
         {
             "domain": "pushengage.com",
-            "prevalence": 0.06666666666666667
-        },
-        {
-            "domain": "yummlystatic.com",
-            "prevalence": 0.06666666666666667
+            "prevalence": 0.07692307692307693
         }
     ],
     "types": {
-        "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 4,
+        "Preflight": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns-1368.awsdns-43.org",
+        "ns-543.awsdns-03.net",
         "ns-1982.awsdns-55.co.uk",
-        "ns-230.awsdns-28.com",
-        "ns-543.awsdns-03.net"
+        "ns-230.awsdns-28.com"
     ]
 }

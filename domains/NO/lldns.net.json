@@ -7,19 +7,51 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000202,
+    "sites": 2,
     "subdomains": [
+        "btgrpsec-dd",
         "soar.cebupacair.cust"
     ],
     "cnames": [
+        {
+            "original": "home.bt.com",
+            "resolved": "btgrpsec-dd.lldns.net"
+        },
         {
             "original": "soar.cebupacificair.com",
             "resolved": "soar.cebupacair.cust.lldns.net"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "lldns\\.net\\/ajaxapic",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "btgrpsec-dd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "home.bt.com",
+                    "resolved": "btgrpsec-dd.lldns.net"
+                }
+            ],
+            "responseHashes": [
+                "17ae3cd0f2cb556ff9493bc44e8711b65d9d2d28f0b4b77a9f06b0cb9a8ff3c1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bt.com",
+                "www.bt.com"
+            ]
+        },
         {
             "rule": "lldns\\.net\\/ceb-omnix_proxy",
             "cookies": 0.000202,
@@ -62,7 +94,7 @@
                 }
             ],
             "responseHashes": [
-                "73a89fc0b45c9427b3ba87b7dc393c21b9c03351ec5829ba9bf2d462a797e257"
+                "18ce9b66ba15f5bbc3f3e59259bda95c9b617ae56633da312c37b1f3d70d30cf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -78,7 +110,18 @@
     ],
     "performance": {},
     "cookies": 0.000101,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "bt.co.uk",
+            "prevalence": 0.18181818181818182
+        }
+    ],
     "types": {
+        "Script": 2,
         "Preflight": 2,
         "XHR": 2
     },

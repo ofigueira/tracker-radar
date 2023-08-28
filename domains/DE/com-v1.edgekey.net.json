@@ -9,9 +9,11 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.000806,
+    "sites": 8,
     "subdomains": [
+        "static.toiimg",
+        "toifeeds.indiatimes",
         "geo.cnbc",
         "www.contact.nespresso"
     ],
@@ -21,12 +23,74 @@
             "resolved": "geo.cnbc.com-v1.edgekey.net"
         },
         {
+            "original": "static.toiimg.com",
+            "resolved": "static.toiimg.com-v1.edgekey.net"
+        },
+        {
+            "original": "toifeeds.indiatimes.com",
+            "resolved": "toifeeds.indiatimes.com-v1.edgekey.net"
+        },
+        {
             "original": "www.contact.nespresso.com",
             "resolved": "www.contact.nespresso.com-v1.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/photo\\/70446270\\.cms",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.toiimg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "static.toiimg.com",
+                    "resolved": "static.toiimg.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "00f35b4a7ca7a307b89a9705ae6f7aba461dbdc900229a2c1b8de82a7868210e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
+        {
+            "rule": "com-v1\\.edgekey\\.net\\/treact\\/feeds\\/toi\\/web\\/config\\/geoinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toifeeds.indiatimes"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "toifeeds.indiatimes.com",
+                    "resolved": "toifeeds.indiatimes.com-v1.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "991572a0bf92d8b941b76f02d4daf4e38163484783d3e3bb8692aaa690a3e183"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "timesofindia.indiatimes.com"
+            ]
+        },
         {
             "rule": "com-v1\\.edgekey\\.net\\/info\\/",
             "cookies": 0.000403,
@@ -65,7 +129,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "www.contact.nespresso.com",
@@ -92,7 +156,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.000201,
+            "prevalence": 0.000202,
             "cnames": [
                 {
                     "original": "www.contact.nespresso.com",
@@ -113,34 +177,32 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000705,
+    "cookies": 0.000706,
     "topInitiators": [
         {
-            "domain": "cnbcfm.com",
-            "prevalence": 0.2222222222222222
+            "domain": "first party",
+            "prevalence": 0.825
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.2222222222222222
+            "domain": "cnbcfm.com",
+            "prevalence": 0.05
         },
         {
             "domain": "adobedtm.com",
-            "prevalence": 0.2222222222222222
+            "prevalence": 0.05
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05
         },
         {
             "domain": "toiimg.com",
-            "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "knotch-cdn.com",
-            "prevalence": 0.1111111111111111
-        },
-        {
-            "domain": "first party",
-            "prevalence": 0.1111111111111111
+            "prevalence": 0.025
         }
     ],
     "types": {
+        "Image": 2,
+        "XHR": 2,
         "Fetch": 4,
         "Script": 2,
         "Stylesheet": 2

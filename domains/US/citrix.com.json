@@ -9,51 +9,115 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000203,
+    "sites": 3,
     "subdomains": [
-        "mia-itm-radar-testobject",
-        "sin-itm-radar-testobject"
+        "www",
+        "titan"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "citrix\\.com\\/r20\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "citrix\\.com\\/c-lib\\/insights\\/v2\\/insights-min\\.js",
+            "cookies": 0.0000135,
+            "fingerprinting": 1,
             "subdomains": [
-                "mia-itm-radar-testobject",
-                "sin-itm-radar-testobject"
+                "www"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+                "e362042c21cd3b62237416645f647b070d008bcb2523bb2861cc811f2d420261"
             ],
-            "type": "Image",
+            "type": "Script",
+            "firstPartyCookies": {
+                "insight_session": {
+                    "ttl": 315360004,
+                    "length": 36,
+                    "prevalence": 0.00001354132813346333,
+                    "uniqueness": 1
+                },
+                "insight_selfsvc_session": {
+                    "ttl": 7204,
+                    "length": 13,
+                    "prevalence": 0.00001354132813346333,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netscaler.com",
+                "docs.netscaler.com"
+            ]
+        },
+        {
+            "rule": "citrix\\.com\\/api\\/v2\\/sendInsights",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "titan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [
+                "4b99468f12b21b72f6dbe5fc910326e357a55eec772149c703dfd8a93673f6b7"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "easynews.com",
-                "members.easynews.com",
-                "www.cotemaison.fr"
+                "netscaler.com",
+                "docs.netscaler.com"
+            ]
+        },
+        {
+            "rule": "citrix\\.com\\/api\\/v2\\/sendInsights",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "titan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netscaler.com",
+                "docs.netscaler.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000135,
     "topInitiators": [
         {
+            "domain": "adobedtm.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
             "domain": "cedexis.com",
-            "prevalence": 1
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Image": 3
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns2.cedexis.net",

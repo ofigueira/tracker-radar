@@ -4,14 +4,110 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000201,
+    "sites": 2,
     "subdomains": [
+        "route",
+        "logging",
+        "cdata",
         "psa"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "carambo\\.la\\/inimage\\/getlayer",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "route"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 1,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "englishforum.ch",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/AddLogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "englishforum.ch",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/external\\/CarambolaIdentityHub\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "39b5c105cd65060927aad01b113caf07f2d9fb38f23161119529f99415d06b7b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "englishforum.ch",
+                "www.thefreedictionary.com"
+            ]
+        },
+        {
+            "rule": "carambo\\.la\\/Layer\\/InImage\\/Prod\\/cbola_platform\\/version_2\\.34\\.0\\/external_js\\/prebid\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdata"
+            ],
+            "apis": {
+                "window.sessionStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "englishforum.ch",
+                "www.thefreedictionary.com"
+            ]
+        },
         {
             "rule": "carambo\\.la\\/getPsa",
             "cookies": 0,
@@ -24,7 +120,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "9a473d7ca7066f8926334e7b862c58a3d2cece51a2bc44e13028fe6d65608259"
+                "f9d0238cfe619d13089f1e67d813cd14353129403e664874284bb9b950c55721"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -41,16 +137,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "farlex.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
+        "Script": 6,
+        "XHR": 2,
         "Fetch": 2
     },
     "nameservers": [
         "ns-1002.awsdns-61.net",
-        "ns-264.awsdns-33.com",
+        "ns-1183.awsdns-19.org",
         "ns-1630.awsdns-11.co.uk",
-        "ns-1183.awsdns-19.org"
+        "ns-264.awsdns-33.com"
     ]
 }

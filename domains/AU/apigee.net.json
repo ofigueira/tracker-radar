@@ -12,6 +12,7 @@
     "prevalence": 0.00151,
     "sites": 15,
     "subdomains": [
+        "accor-group-prod-prod",
         "cisco-dsc-prod",
         "adsk-prod",
         "bgl-web-prod",
@@ -20,6 +21,10 @@
         "fandom-prod"
     ],
     "cnames": [
+        {
+            "original": "api.accor.com",
+            "resolved": "accor-group-prod-prod.apigee.net"
+        },
         {
             "original": "api.costco.com",
             "resolved": "costco-prd.apigee.net"
@@ -44,6 +49,85 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "apigee\\.net\\/referential\\/v1\\/pos\\/\\/currencies",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/referential\\/v1\\/pos\\/\\/currencies",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "530c9f3e7849919431f494eb80f1ebeb5bfcde2022c0bb271471e8bbf94d9045"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/referential\\/v1\\/pos\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accor-group-prod-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.accor.com",
+                    "resolved": "accor-group-prod-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "a9a9241d234d954bf0211aa5aacb853f18accb957d73474a0c61baf8ba3e191c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "accor.com",
+                "all.accor.com"
+            ]
+        },
+        {
             "rule": "apigee\\.net\\/v1\\/netid",
             "cookies": 0,
             "fingerprinting": 0,
@@ -60,7 +144,7 @@
                 }
             ],
             "responseHashes": [
-                "b6d517e113673d472e0a31195347df8bcabd7ced4915e33376176c93095ed6d0"
+                "a4fb3ab5eb7a9587b12c126835d0ebcf1800789b939a509b96f32d71f8a4efa7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -111,10 +195,8 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "83a155ba528724750c44ec6e3326a5bd2016bd2260e39281e3492fc94bf52f38"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -138,13 +220,40 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
+            "responseHashes": [
+                "bfc8406b2988e0b82db8797ceaaefafc8b9a709f592f86ef2ea6f4c024beb07e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bunnings.com.au",
+                "trade.bunnings.com.au"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bgl-web-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.prod.bunnings.com.au",
+                    "resolved": "bgl-web-prod.apigee.net"
+                }
+            ],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bunnings.com.au",
-                "trade.bunnings.com.au"
+                "www.bunnings.com.au"
             ]
         },
         {
@@ -164,7 +273,7 @@
                 }
             ],
             "responseHashes": [
-                "152cc5a6d0f3aa8841d5421cc21cd99a3f294e3e7599c886dd154bc62dc61684"
+                "a6d589b9635fd16d29e9d339bf689176cdf26ff5f795fc95924e849cd77797e8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -175,7 +284,7 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/v1\\/stores\\/checkActiveStore",
+            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -216,34 +325,9 @@
                 }
             ],
             "responseHashes": [
-                "d2ea7513631697df0843e910d54ee399c4e43cee44099116cad96f67428a456d"
+                "920962b802a8979ec1f67c3900cf8e20166b3f47be40476408c8baa64308587d"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bunnings.com.au",
-                "www.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v1\\/search\\/recommendation",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bgl-web-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "api.prod.bunnings.com.au",
-                    "resolved": "bgl-web-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -340,7 +424,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "075db4578c6402a6662732f34aa745b0dc1f6df3613b212b59824cef8d350d21"
+                "f8a18c4a9c62abb010fb1263d34600100c2bd7afcb4b64420a6e4e8d9c5bd4a9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -362,7 +446,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "b2a2f6759f1c6b293dcb4612755dc49fab7327309097981c2adac013bf775d2c"
+                "819d2575b51f8536e6c985e072bbd1cce0193940e51fbe420e521985e350be99"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -381,30 +465,31 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.375
+            "prevalence": 0.35294117647058826
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.3125
+            "prevalence": 0.35294117647058826
         },
         {
             "domain": "tiqcdn.com",
-            "prevalence": 0.125
+            "prevalence": 0.11764705882352941
         },
         {
             "domain": "mparticle.com",
-            "prevalence": 0.125
+            "prevalence": 0.11764705882352941
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.0625
+            "prevalence": 0.058823529411764705
         }
     ],
     "types": {
+        "Preflight": 10,
+        "Fetch": 4,
         "Script": 2,
         "Document": 2,
-        "XHR": 14,
-        "Preflight": 8
+        "XHR": 14
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

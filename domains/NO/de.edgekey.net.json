@@ -9,19 +9,84 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00131,
+    "sites": 13,
     "subdomains": [
+        "i.auto-bild",
+        "img.ui-portal",
         "gateway.kleinanzeigen"
     ],
     "cnames": [
         {
             "original": "gateway.kleinanzeigen.de",
             "resolved": "gateway.kleinanzeigen.de.edgekey.net"
+        },
+        {
+            "original": "i.auto-bild.de",
+            "resolved": "i.auto-bild.de.edgekey.net"
+        },
+        {
+            "original": "img.ui-portal.de",
+            "resolved": "img.ui-portal.de.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "de\\.edgekey\\.net\\/ir_img\\/3\\/2\\/6\\/1\\/4\\/3\\/3\\/cc9cd75f6e6f3430\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i.auto-bild"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "i.auto-bild.de",
+                    "resolved": "i.auto-bild.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "94c04846f7346e925718465bd3c4f6b254a84c9eec46f33504c7fc2020702360"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autobild.de",
+                "www.autobild.de"
+            ]
+        },
+        {
+            "rule": "de\\.edgekey\\.net\\/pos-cdn\\/tracklib\\/4\\.3\\.0\\/tracklib\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img.ui-portal"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [
+                {
+                    "original": "img.ui-portal.de",
+                    "resolved": "img.ui-portal.de.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "40a6f6526afea19db42dcf345249915ccacc710ee6c97091d5d6285b5f90ead3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmx.net",
+                "www.gmx.com",
+                "www.mail.com"
+            ]
+        },
         {
             "rule": "de\\.edgekey\\.net\\/ignite\\/buyside\\/search",
             "cookies": 0.000202,
@@ -39,7 +104,7 @@
                 }
             ],
             "responseHashes": [
-                "6d1c8983c4a800fc30d77795dc285955eb919d9b325d0a9471001d7e4e49fd8e"
+                "bd2daeb05394319a12c6b46e715e61494c07a514b0be0509daadef1c52a20cda"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -56,14 +121,20 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.9595959595959596
+            "prevalence": 0.9655172413793104
+        },
+        {
+            "domain": "uicdn.com",
+            "prevalence": 0.027586206896551724
         },
         {
             "domain": "classistatic.de",
-            "prevalence": 0.04040404040404041
+            "prevalence": 0.006896551724137931
         }
     ],
     "types": {
+        "Image": 2,
+        "Script": 3,
         "Fetch": 2
     },
     "nameservers": []

@@ -4,25 +4,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
+    "prevalence": 0.0000135,
     "sites": 2,
     "subdomains": [
-        "umami",
-        "plausible"
+        "umami"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "timm4\\.de\\/script\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "umami"
             ],
-            "apis": {},
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
                 "6f0c4d19b70f0f030832e26c03005b82c5d5148dfae83fe2dcef69170272d2ef"
@@ -36,20 +40,20 @@
             ]
         },
         {
-            "rule": "timm4\\.de\\/js\\/script\\.outbound-links\\.file-downloads\\.js",
+            "rule": "timm4\\.de\\/api\\/send",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "plausible"
+                "umami"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
             "responseHashes": [
-                "3b1b2639320c60775ee77476ab9f66f99285ea0879aedc4db1721e39cfbf268a"
+                "6e28f6ed08b8d849b1eeb0612c42bda2803e4e98e86e30b150f387094858d49a"
             ],
-            "type": "Script",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -58,20 +62,18 @@
             ]
         },
         {
-            "rule": "timm4\\.de\\/api\\/event",
+            "rule": "timm4\\.de\\/api\\/send",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "plausible"
+                "umami"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [],
-            "responseHashes": [
-                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -90,8 +92,9 @@
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 2
+        "Script": 2,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1a.dodns.net",

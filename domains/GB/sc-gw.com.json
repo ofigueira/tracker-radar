@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-GB"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000101,
+    "sites": 1,
     "subdomains": [
+        "aws.api",
         "us-central1-gcp.api",
         "gcp.api"
     ],
     "cnames": [
+        {
+            "original": "aws.api.snapchat.com",
+            "resolved": "aws.api.sc-gw.com"
+        },
         {
             "original": "gcp.api.snapchat.com",
             "resolved": "gcp.api.sc-gw.com"
@@ -23,19 +28,19 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "sc-gw\\.com\\/web-analytics\\/web\\/init_client",
+            "rule": "sc-gw\\.com\\/snapchat\\.cdp\\.cof\\.CircumstancesService\\/targetingQuery",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "us-central1-gcp.api"
+                "aws.api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "us-central1-gcp.api.snapchat.com",
-                    "resolved": "us-central1-gcp.api.sc-gw.com"
+                    "original": "aws.api.snapchat.com",
+                    "resolved": "aws.api.sc-gw.com"
                 }
             ],
             "responseHashes": [],
@@ -44,7 +49,33 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snapchat.com",
-                "accounts.snapchat.com",
+                "www.snapchat.com"
+            ]
+        },
+        {
+            "rule": "sc-gw\\.com\\/snapchat\\.cdp\\.cof\\.CircumstancesService\\/targetingQuery",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aws.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "aws.api.snapchat.com",
+                    "resolved": "aws.api.sc-gw.com"
+                }
+            ],
+            "responseHashes": [
+                "ce760e325fccf0da85048caae1b47a500a07e173e87d7e2b8ba40905f7286948"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapchat.com",
                 "www.snapchat.com"
             ]
         },
@@ -56,8 +87,8 @@
                 "us-central1-gcp.api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [
                 {
                     "original": "us-central1-gcp.api.snapchat.com",
@@ -65,61 +96,9 @@
                 }
             ],
             "responseHashes": [
-                "28a4adb4f2c733c3a495a30c2c811c38e78084f7b48fa21cad2edb5feb33ed56",
-                "fe866bdf10d64f7a8ea662d4d0462d4eb2e8b89ece1e1fd4984195d9334abe53"
+                "88a7f4093262fc365a96c306950abd7ca3a15748784a9c0b791a39a071d41116"
             ],
             "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "snapchat.com",
-                "accounts.snapchat.com",
-                "www.snapchat.com"
-            ]
-        },
-        {
-            "rule": "sc-gw\\.com\\/web-analytics\\/web\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us-central1-gcp.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "us-central1-gcp.api.snapchat.com",
-                    "resolved": "us-central1-gcp.api.sc-gw.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "snapchat.com",
-                "www.snapchat.com"
-            ]
-        },
-        {
-            "rule": "sc-gw\\.com\\/web-analytics\\/web\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us-central1-gcp.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [
-                {
-                    "original": "us-central1-gcp.api.snapchat.com",
-                    "resolved": "us-central1-gcp.api.sc-gw.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -184,8 +163,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 7,
-        "Fetch": 5,
+        "Preflight": 4,
+        "Fetch": 4,
         "XHR": 2
     },
     "nameservers": [

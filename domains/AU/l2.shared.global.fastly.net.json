@@ -9,19 +9,27 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000101,
+    "sites": 1,
     "subdomains": [],
     "cnames": [
         {
-            "original": "map.mp.nbc.com",
+            "original": "api.grow.me",
+            "resolved": "l2.shared.global.fastly.net"
+        },
+        {
+            "original": "app.grow.me",
+            "resolved": "l2.shared.global.fastly.net"
+        },
+        {
+            "original": "faves.grow.me",
             "resolved": "l2.shared.global.fastly.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "l2\\.shared\\.global\\.fastly\\.net\\/webevents\\/v2\\/JS\\/69dedba1e9714049b35bde9e2f9bf059\\/Events",
+            "rule": "l2\\.shared\\.global\\.fastly\\.net\\/location-privacy-info",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -30,19 +38,55 @@
             "prevalence": 0.000201,
             "cnames": [
                 {
-                    "original": "map.mp.nbc.com",
+                    "original": "api.grow.me",
                     "resolved": "l2.shared.global.fastly.net"
                 }
             ],
             "responseHashes": [
-                "05d9d4b6b5914f35b01d72771fcf56659085dab60bdd65b356a743b920395d25"
+                "5bcfb388b5b5516d477469e1eddcb8248a815212d8fec9740d55c7f6387cb7c3"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nbc.com",
-                "www.nbc.com"
+                "tvfanatic.com",
+                "www.tvfanatic.com"
+            ]
+        },
+        {
+            "rule": "l2\\.shared\\.global\\.fastly\\.net\\/main\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "faves.grow.me",
+                    "resolved": "l2.shared.global.fastly.net"
+                },
+                {
+                    "original": "app.grow.me",
+                    "resolved": "l2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "015008f5196a5b15c39d3e5a7d0765680730463e5cd30b6e290ab34da9daf63e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "growme_version": {
+                    "ttl": 1805,
+                    "length": 38,
+                    "prevalence": 0.00010063399416322834,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvfanatic.com",
+                "www.tvfanatic.com"
             ]
         }
     ],
@@ -60,12 +104,17 @@
     "cookies": 0.000101,
     "topInitiators": [
         {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
             "domain": "pubnation.com",
-            "prevalence": 1
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "XHR": 2
+        "Fetch": 2,
+        "Script": 2
     },
     "nameservers": []
 }

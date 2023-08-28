@@ -7,16 +7,20 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000908,
+    "prevalence": 0.00091,
     "sites": 9,
     "subdomains": [
-        "gdpr-tcfv2",
         "ccpa",
+        "gdpr-tcfv2",
         "mms"
     ],
     "cnames": [
         {
             "original": "consent.lemagit.fr",
+            "resolved": "mms.sp-prod.net"
+        },
+        {
+            "original": "consent.techtarget.com",
             "resolved": "mms.sp-prod.net"
         },
         {
@@ -27,8 +31,69 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "sp-prod\\.net\\/ccpa\\.js",
+            "cookies": 0.000405,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ccpa"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4,
+                "window.localStorage": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000405,
+            "cnames": [],
+            "responseHashes": [
+                "fc630eae66d14c714e935e9686b763aab14adc301890a57262408ee4bd401978"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ccpaUUID": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.00040461258345134534,
+                    "uniqueness": 1
+                },
+                "dnsDisplayed": {
+                    "ttl": 31536000,
+                    "length": 4,
+                    "prevalence": 0.00040461258345134534,
+                    "uniqueness": 0.25
+                },
+                "ccpaApplies": {
+                    "ttl": 31536000,
+                    "length": 5,
+                    "prevalence": 0.00040461258345134534,
+                    "uniqueness": 0.25
+                },
+                "signedLspa": {
+                    "ttl": 31536000,
+                    "length": 5,
+                    "prevalence": 0.00040461258345134534,
+                    "uniqueness": 0.25
+                },
+                "_vice_cmp_fb_ldu": {
+                    "ttl": 2592004,
+                    "length": 5,
+                    "prevalence": 0.00010115314586283633,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hitc.com",
+                "www.lemagit.fr",
+                "www.techtarget.com",
+                "www.vice.com"
+            ]
+        },
+        {
             "rule": "sp-prod\\.net\\/wrapperMessagingWithoutDetection\\.js",
-            "cookies": 0.000505,
+            "cookies": 0.000506,
             "fingerprinting": 1,
             "subdomains": [
                 "gdpr-tcfv2"
@@ -43,7 +108,7 @@
                 "window.innerWidth": 4
             },
             "sites": 5,
-            "prevalence": 0.000505,
+            "prevalence": 0.000506,
             "cnames": [],
             "responseHashes": [
                 "4efe7786d7a78f47db51a9c221975b0da0eb9069cbd1a7fb8880e049cad00677"
@@ -52,106 +117,84 @@
             "firstPartyCookies": {
                 "_sp_v1_ss": {
                     "ttl": 2592000,
-                    "length": 91,
-                    "prevalence": 0.0005045917852457363,
+                    "length": 97,
+                    "prevalence": 0.0005057657293141817,
                     "uniqueness": 1
                 },
                 "_sp_v1_p": {
                     "ttl": 2592000,
                     "length": 3,
-                    "prevalence": 0.0005045917852457363,
+                    "prevalence": 0.0005057657293141817,
                     "uniqueness": 1
                 },
                 "_sp_v1_data": {
                     "ttl": 2592000,
                     "length": 6,
-                    "prevalence": 0.0005045917852457363,
+                    "prevalence": 0.0005057657293141817,
                     "uniqueness": 1
                 },
                 "consentUUID": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.0003027550711474417,
-                    "uniqueness": 1
-                },
-                "_sp_krux": {
-                    "ttl": 7776000,
-                    "length": 5,
-                    "prevalence": 0.00010091835704914725,
+                    "prevalence": 0.00020230629172567267,
                     "uniqueness": 1
                 },
                 "_sp_su": {
                     "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.0002018367140982945,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000303459437588509,
+                    "uniqueness": 0.3333333333333333
+                },
+                "_sp_krux": {
+                    "ttl": 7776000,
+                    "length": 5,
+                    "prevalence": 0.00010115314586283633,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "distance.to",
-                "www.lemagit.fr",
+                "lemagit.fr",
                 "www.meteoetradar.com",
+                "www.techtarget.com",
                 "www.vice.com",
                 "www.welt.de"
             ]
         },
         {
-            "rule": "sp-prod\\.net\\/ccpa\\.js",
-            "cookies": 0.000303,
-            "fingerprinting": 1,
+            "rule": "sp-prod\\.net\\/mms\\/get_site_data",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "ccpa"
+                "mms"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3
-            },
+            "apis": {},
             "sites": 3,
             "prevalence": 0.000303,
-            "cnames": [],
-            "responseHashes": [
-                "fc630eae66d14c714e935e9686b763aab14adc301890a57262408ee4bd401978"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ccpaUUID": {
-                    "ttl": 31536000,
-                    "length": 36,
-                    "prevalence": 0.0003027550711474417,
-                    "uniqueness": 1
+            "cnames": [
+                {
+                    "original": "consent.lemagit.fr",
+                    "resolved": "mms.sp-prod.net"
                 },
-                "dnsDisplayed": {
-                    "ttl": 31536000,
-                    "length": 4,
-                    "prevalence": 0.0003027550711474417,
-                    "uniqueness": 0.3333333333333333
+                {
+                    "original": "consent.techtarget.com",
+                    "resolved": "mms.sp-prod.net"
                 },
-                "ccpaApplies": {
-                    "ttl": 31536000,
-                    "length": 5,
-                    "prevalence": 0.0003027550711474417,
-                    "uniqueness": 0.3333333333333333
-                },
-                "signedLspa": {
-                    "ttl": 31536000,
-                    "length": 5,
-                    "prevalence": 0.0003027550711474417,
-                    "uniqueness": 0.3333333333333333
-                },
-                "_vice_cmp_fb_ldu": {
-                    "ttl": 2592004,
-                    "length": 5,
-                    "prevalence": 0.00010091835704914725,
-                    "uniqueness": 1
+                {
+                    "original": "sourcepoint.vice.com",
+                    "resolved": "mms.sp-prod.net"
                 }
-            },
+            ],
+            "responseHashes": [
+                "489b412a9b668fa700354553f60a6774a1708b1b7fc9cf26804c639ad9cf4d17",
+                "c536582fad69b410197bac5e9f3c752aec3ab371dcb6029d6a76c919d876f2ab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hitc.com",
-                "www.lemagit.fr",
+                "lemagit.fr",
+                "www.techtarget.com",
                 "www.vice.com"
             ]
         },
@@ -163,11 +206,15 @@
                 "mms"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
                 {
                     "original": "consent.lemagit.fr",
+                    "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "consent.techtarget.com",
                     "resolved": "mms.sp-prod.net"
                 },
                 {
@@ -176,6 +223,7 @@
                 }
             ],
             "responseHashes": [
+                "489b412a9b668fa700354553f60a6774a1708b1b7fc9cf26804c639ad9cf4d17",
                 "c536582fad69b410197bac5e9f3c752aec3ab371dcb6029d6a76c919d876f2ab"
             ],
             "type": "XHR",
@@ -183,37 +231,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lemagit.fr",
-                "www.vice.com"
-            ]
-        },
-        {
-            "rule": "sp-prod\\.net\\/mms\\/get_site_data",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mms"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [
-                {
-                    "original": "consent.lemagit.fr",
-                    "resolved": "mms.sp-prod.net"
-                },
-                {
-                    "original": "sourcepoint.vice.com",
-                    "resolved": "mms.sp-prod.net"
-                }
-            ],
-            "responseHashes": [
-                "c536582fad69b410197bac5e9f3c752aec3ab371dcb6029d6a76c919d876f2ab"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lemagit.fr",
+                "www.techtarget.com",
                 "www.vice.com"
             ]
         },
@@ -225,11 +243,15 @@
                 "mms"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [
                 {
                     "original": "consent.lemagit.fr",
+                    "resolved": "mms.sp-prod.net"
+                },
+                {
+                    "original": "consent.techtarget.com",
                     "resolved": "mms.sp-prod.net"
                 },
                 {
@@ -245,30 +267,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lemagit.fr",
+                "www.techtarget.com",
                 "www.vice.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000606,
+    "cookies": 0.000607,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6111111111111112
+            "prevalence": 0.5
         },
         {
             "domain": "sp-prod.net",
-            "prevalence": 0.3333333333333333
+            "prevalence": 0.4090909090909091
         },
         {
-            "domain": "symplr.de",
-            "prevalence": 0.05555555555555555
+            "domain": "ttgtmedia.com",
+            "prevalence": 0.09090909090909091
         }
     ],
     "types": {
-        "Script": 8,
-        "XHR": 6
+        "Script": 9,
+        "XHR": 9
     },
     "nameservers": [
         "ns-414.awsdns-51.com",

@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.000806,
-    "sites": 8,
+    "prevalence": 0.000606,
+    "sites": 6,
     "subdomains": [
         "api",
-        "static-autocomplete"
+        "static-autocomplete",
+        "settings"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,45 +22,49 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 2,
+            "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "7af00cddd44337db48b2fa07252e8f16be565d8659730d3e49c8509d604313a6",
-                "ef788f0cd75c3f2f5bc97159ab631a76ddbc465be8bdf3b05a6e0ae2761b53a6"
+                "a8fb632fa3baf70e107ccb085de4c4a2f702b2d90790b7dc54c03208a18678c0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bcfasteners.com",
-                "www.mastermindtoys.com",
+                "bodybuilding.com",
                 "www.orthocanada.com"
             ]
         },
         {
             "rule": "fastsimon\\.com\\/fast-simon-autocomplete\\.umd\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static-autocomplete"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.000504,
+            "apis": {
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "window.innerWidth": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "b812a7bcdfa12d01d07a92f39254fb82a8bfe6dc3f8f2971df160f86d8745146"
+                "4da7141b339c0250bf1992489210674f5b1919991d8b8e0caf2d1b57d52777b7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cdncoin.com",
-                "gshock.ca",
                 "plumbingonline.ca",
                 "store.401games.ca",
-                "www.coastappliances.ca"
+                "www.coastappliances.ca",
+                "www.mastermindtoys.com"
             ]
         },
         {
@@ -70,20 +75,44 @@
                 "static-autocomplete"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 4
             },
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 4,
+            "prevalence": 0.000404,
             "cnames": [],
             "responseHashes": [
-                "39f195efc1556a6b54b6f634e5624f072ae40e414d8d7d34c10833cf4fcea35a"
+                "9acd2b6d6838dc0a9ea50eeb557a4b6d13040cab3690b513d44aff6b79676692"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "401games.ca",
-                "store.401games.ca"
+                "store.401games.ca",
+                "www.coastappliances.ca",
+                "www.mastermindtoys.com"
+            ]
+        },
+        {
+            "rule": "fastsimon\\.com\\/settings\\/autocomplete",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "settings"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "f8b953d0d69cde8d453b789861fc90f8306e29e4a5ce362d6f4836320b00cdd0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mastermindtoys.com",
+                "www.mastermindtoys.com"
             ]
         }
     ],
@@ -92,11 +121,11 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "akamaized.net",
+            "domain": "first party",
             "prevalence": 0.6
         },
         {
-            "domain": "first party",
+            "domain": "akamaized.net",
             "prevalence": 0.2
         },
         {
@@ -105,12 +134,13 @@
         }
     ],
     "types": {
-        "Script": 10
+        "Script": 10,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1343.awsdns-39.org",
-        "ns-1736.awsdns-25.co.uk",
         "ns-403.awsdns-50.com",
-        "ns-544.awsdns-04.net"
+        "ns-544.awsdns-04.net",
+        "ns-1343.awsdns-39.org",
+        "ns-1736.awsdns-25.co.uk"
     ]
 }

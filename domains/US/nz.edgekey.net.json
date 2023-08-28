@@ -9,16 +9,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000749,
-    "sites": 11,
+    "prevalence": 0.0000812,
+    "sites": 12,
     "subdomains": [
         "fairfaxmedia.co",
+        "ads-api.stuff.co",
         "countdown.co",
         "wildcard.jbhifi.co",
         "media.kiwibank.co",
+        "web-api.sky.co",
         "static.sky.co"
     ],
     "cnames": [
+        {
+            "original": "ads-api.stuff.co.nz",
+            "resolved": "ads-api.stuff.co.nz.edgekey.net"
+        },
+        {
+            "original": "assets.stuff.co.nz",
+            "resolved": "fairfaxmedia.co.nz.edgekey.net"
+        },
         {
             "original": "carts.jbhifi.co.nz",
             "resolved": "wildcard.jbhifi.co.nz.edgekey.net"
@@ -46,12 +56,44 @@
         {
             "original": "static3.stuff.co.nz",
             "resolved": "fairfaxmedia.co.nz.edgekey.net"
+        },
+        {
+            "original": "web-api.sky.co.nz",
+            "resolved": "web-api.sky.co.nz.edgekey.net"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "nz\\.edgekey\\.net\\/live\\/new-homepage\\/uber\\/1\\/40-40\\.html",
+            "rule": "nz\\.edgekey\\.net\\/static\\/stuff-adtech-sdk\\/ads-sdk\\/master\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fairfaxmedia.co"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "assets.stuff.co.nz",
+                    "resolved": "fairfaxmedia.co.nz.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "02df604d2ddbf7ef9118ff4d75b2dbf9e5b83ad4800bc737cf8c95a9ccd45641"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "i.stuff.co.nz",
+                "www.stuff.co.nz"
+            ]
+        },
+        {
+            "rule": "nz\\.edgekey\\.net\\/static\\/stuff-adtech-sdk\\/ads-sdk\\/master\\/video-ads\\.main\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -59,17 +101,17 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000204,
+            "prevalence": 0.0000203,
             "cnames": [
                 {
-                    "original": "interactives.stuff.co.nz",
+                    "original": "assets.stuff.co.nz",
                     "resolved": "fairfaxmedia.co.nz.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "d2736adeeea846b4ca4d6f6675e7aff1eafb2894f044b6c1569af3249d6e3523"
+                "fbb5f710e5a05918cba26b3ba9dcc186b5934de3117798ad35a1fa8f36b071bb"
             ],
-            "type": "Document",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -87,7 +129,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static3.stuff.co.nz",
@@ -106,15 +148,70 @@
             ]
         },
         {
+            "rule": "nz\\.edgekey\\.net\\/api\\/adslot\\/video\\/server",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads-api.stuff.co"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "ads-api.stuff.co.nz",
+                    "resolved": "ads-api.stuff.co.nz.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "83ee2528bc51554d43b7951d9516dd3d58ace4debac07fad584b0ef11e2777c4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "www.stuff.co.nz"
+            ]
+        },
+        {
+            "rule": "nz\\.edgekey\\.net\\/live\\/new-homepage\\/uber\\/1\\/40-40\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fairfaxmedia.co"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000203,
+            "cnames": [
+                {
+                    "original": "interactives.stuff.co.nz",
+                    "resolved": "fairfaxmedia.co.nz.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "74c390c3623910e3160e246738724af7423247fc2e01cb1851d1c684d527be99"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "i.stuff.co.nz",
+                "www.stuff.co.nz"
+            ]
+        },
+        {
             "rule": "nz\\.edgekey\\.net\\/auth\\/proxy\\.html",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "countdown.co"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "sso.countdown.co.nz",
@@ -122,7 +219,7 @@
                 }
             ],
             "responseHashes": [
-                "d8f6043fd37435debc337f64b458402d3eb2e1fd74967e3842695ba6ab44a7e1"
+                "997cbc9f24fc945dc125659c3df6fb07e090a86d1984c700f18edc9706f2379c"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -133,34 +230,7 @@
             ]
         },
         {
-            "rule": "nz\\.edgekey\\.net\\/ruxitagentjs_ICA2NQVfqru_10269230615181503\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "countdown.co"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "sso.countdown.co.nz",
-                    "resolved": "countdown.co.nz.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "15137e9a406d70b23acd331d1ed59bc09b1188c236419925c5c313d2f0d1d3c2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "countdown.co.nz",
-                "www.countdown.co.nz"
-            ]
-        },
-        {
-            "rule": "nz\\.edgekey\\.net\\/assets\\/cd_logo_anim\\.gif",
+            "rule": "nz\\.edgekey\\.net\\/assets\\/loading\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -168,7 +238,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "sso.countdown.co.nz",
@@ -176,7 +246,7 @@
                 }
             ],
             "responseHashes": [
-                "e65f2caa410ea601e85a604bd836d9e1da30bf34e877cb09622616bbef699a03"
+                "55313d7e978b185f9d7bafe5e29ecee00e999d84aa9d9a008c400b0dcdc59218"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -195,7 +265,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "products.jbhifi.co.nz",
@@ -213,14 +283,14 @@
         },
         {
             "rule": "nz\\.edgekey\\.net\\/product\\/GetPrices",
-            "cookies": 0.0000136,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "wildcard.jbhifi.co"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "products.jbhifi.co.nz",
@@ -228,7 +298,7 @@
                 }
             ],
             "responseHashes": [
-                "f35655cf0ec23eb9cbc9b1010656ce63a25937bd1e7b97dd1d27773dac7bd0c8"
+                "c67b66731d27e3ad759de9d65394c06fc24785463ca9d160af1b03a6fae249db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -247,7 +317,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "products.jbhifi.co.nz",
@@ -265,14 +335,14 @@
         },
         {
             "rule": "nz\\.edgekey\\.net\\/product\\/get\\/id",
-            "cookies": 0.00000681,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "wildcard.jbhifi.co"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "products.jbhifi.co.nz",
@@ -280,7 +350,7 @@
                 }
             ],
             "responseHashes": [
-                "1c473ec2a9e9ed94449bbd6f295ae83b0fca18d8d3387870a3c5b32955582b07"
+                "16d83aa8a46f4192c0c801d0ac3607f9a3fb57d27857d35a11b643ccddde1a4f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -292,39 +362,14 @@
         },
         {
             "rule": "nz\\.edgekey\\.net\\/cart\\/mini",
-            "cookies": 0,
+            "cookies": 0.0000135,
             "fingerprinting": 0,
             "subdomains": [
                 "wildcard.jbhifi.co"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "carts.jbhifi.co.nz",
-                    "resolved": "wildcard.jbhifi.co.nz.edgekey.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jbhifi.co.nz",
-                "www.jbhifi.co.nz"
-            ]
-        },
-        {
-            "rule": "nz\\.edgekey\\.net\\/cart\\/mini",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wildcard.jbhifi.co"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "carts.jbhifi.co.nz",
@@ -343,6 +388,31 @@
             ]
         },
         {
+            "rule": "nz\\.edgekey\\.net\\/cart\\/mini",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wildcard.jbhifi.co"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "carts.jbhifi.co.nz",
+                    "resolved": "wildcard.jbhifi.co.nz.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jbhifi.co.nz",
+                "www.jbhifi.co.nz"
+            ]
+        },
+        {
             "rule": "nz\\.edgekey\\.net\\/static\\/js\\/index\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -351,7 +421,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -378,7 +448,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -405,7 +475,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -432,7 +502,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -459,7 +529,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -486,7 +556,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -513,7 +583,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "media.kiwibank.co.nz",
@@ -532,6 +602,33 @@
             ]
         },
         {
+            "rule": "nz\\.edgekey\\.net\\/liferay-connect-service\\/sn\\/notifications",
+            "cookies": 0.0000135,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-api.sky.co"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000135,
+            "cnames": [
+                {
+                    "original": "web-api.sky.co.nz",
+                    "resolved": "web-api.sky.co.nz.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a63e7f7b9097cc423e9538cb4f17e74d4cba0a1539439ac1a8ff311fa025aef4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sky.co.nz",
+                "www.sky.co.nz"
+            ]
+        },
+        {
             "rule": "nz\\.edgekey\\.net\\/sky\\/logos\\/footer-logo-new\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -540,7 +637,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000136,
+            "prevalence": 0.0000135,
             "cnames": [
                 {
                     "original": "static.sky.co.nz",
@@ -561,7 +658,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000476,
+    "cookies": 0.0000474,
     "topInitiators": [
         {
             "domain": "ajax.googleapis.com",
@@ -569,11 +666,11 @@
         }
     ],
     "types": {
-        "Document": 5,
+        "Script": 12,
         "Image": 6,
-        "Script": 8,
+        "XHR": 10,
+        "Document": 5,
         "Preflight": 6,
-        "XHR": 6,
         "Stylesheet": 2,
         "Font": 6
     },
