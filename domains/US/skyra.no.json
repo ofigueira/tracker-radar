@@ -4,37 +4,107 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000135,
-    "sites": 2,
+    "prevalence": 0.0000273,
+    "sites": 4,
     "subdomains": [
         "survey.staging",
         "ingest.staging"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "skyra\\.no\\/skyra-survey\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "survey.staging"
             ],
             "apis": {
-                "window.localStorage": 2
+                "window.localStorage": 3,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000135,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "69986f160e5cd534a163d8cedfcbf554c37267c7aed4037547af88197a35a846"
+                "0409dbde88b215ad795a515a5c0d4b4efb1bc0b464926e339bb407e1d246cb5e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vinmonopolet.no",
+                "fjordnorway.com",
+                "www.fjordnorway.com",
                 "www.vinmonopolet.no"
+            ]
+        },
+        {
+            "rule": "skyra\\.no\\/survey\\/fjord-norway\\/top-tasks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest.staging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18727e11130e114fc3a8b660cd9f0ee16f3cf730effe3db3574abfd370b91164"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fjordnorway.com",
+                "www.fjordnorway.com"
+            ]
+        },
+        {
+            "rule": "skyra\\.no\\/response",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest.staging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fjordnorway.com",
+                "www.fjordnorway.com"
+            ]
+        },
+        {
+            "rule": "skyra\\.no\\/response",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest.staging"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fjordnorway.com",
+                "www.fjordnorway.com"
             ]
         },
         {
@@ -46,10 +116,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "11888d28897acad3aebe2861937160c558dedc92e3eb15139afe36763a66036b"
+                "e1cd881130b2d319b1a36b8df4d1311d01675cfe9ea6c18d1fc400e398316991"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -65,16 +135,21 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.6
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Script": 2,
-        "Fetch": 2
+        "Script": 3,
+        "Fetch": 6,
+        "Preflight": 2
     },
     "nameservers": [
-        "brady.ns.cloudflare.com",
-        "michelle.ns.cloudflare.com"
+        "michelle.ns.cloudflare.com",
+        "brady.ns.cloudflare.com"
     ]
 }

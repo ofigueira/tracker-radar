@@ -9,10 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000542,
+    "prevalence": 0.0000545,
     "sites": 8,
     "subdomains": [
         "graphdata.buienradar",
+        "wildcard.rtlnieuws",
         "api.buienradar",
         "data.buienradar"
     ],
@@ -28,20 +29,24 @@
         {
             "original": "graphdata.buienradar.nl",
             "resolved": "graphdata.buienradar.nl.akamaized.net"
+        },
+        {
+            "original": "redactie.rtl.nl",
+            "resolved": "wildcard.rtlnieuws.nl.akamaized.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/geo\\/Rain24Hour",
-            "cookies": 0.0000135,
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/geo\\/RainHistoryForecast",
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
                 "graphdata.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "graphdata.buienradar.nl",
@@ -49,14 +54,41 @@
                 }
             ],
             "responseHashes": [
-                "dc68f5e85dc77e6528d1332ea50607936dbde4554471c668af935bb20da577f2"
+                "6f4d113f368f6afe25657591c0e17e8684dea45e85cd54a3555b2f3db285bb3d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "buienradar.be",
+                "buienradar.nl",
                 "www.buienradar.nl"
+            ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/sites\\/default\\/files\\/content\\/video_file\\/2021\\/05\\/04\\/video%202\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wildcard.rtlnieuws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "redactie.rtl.nl",
+                    "resolved": "wildcard.rtlnieuws.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "cff0fdc3ebf0a425b26480d9b6f9737e64a6be5bad4768dc8a7826087f48acec"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtl.nl",
+                "www.rtl.nl"
             ]
         },
         {
@@ -68,7 +100,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.buienradar.nl",
@@ -76,7 +108,7 @@
                 }
             ],
             "responseHashes": [
-                "9cbe1338af3b1f2711a4316fda50882f3417d0c8d7ff71b2394422e8f41f116f"
+                "641a2fabb092d8a5141423d0865547f0d0fff18d35544dfa69e77221c05c0ffe"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -88,14 +120,14 @@
         },
         {
             "rule": "nl\\.akamaized\\.net\\/1\\.0\\/traffic\\/all",
-            "cookies": 0.0000135,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "data.buienradar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000135,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "data.buienradar.nl",
@@ -103,7 +135,7 @@
                 }
             ],
             "responseHashes": [
-                "69144620b49d3106bf781ae49ab994d6db2670dbb7b7f999bc1ecfcf34ed7aa0"
+                "25337c026db37fbbea1d852e99df1ae353d63ebe746d8ce74592e84ad86b2535"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -118,19 +150,20 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000406,
+    "cookies": 0.0000409,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8333333333333334
+            "prevalence": 0.5263157894736842
         },
         {
-            "domain": "rtl.nl",
-            "prevalence": 0.16666666666666666
+            "domain": "cookielaw.org",
+            "prevalence": 0.47368421052631576
         }
     ],
     "types": {
-        "XHR": 6
+        "XHR": 6,
+        "Media": 2
     },
     "nameservers": []
 }
