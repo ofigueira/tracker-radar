@@ -13,12 +13,17 @@
     "sites": 1,
     "subdomains": [
         "de-content",
+        "customer-api",
         "cn-content"
     ],
     "cnames": [
         {
             "original": "content.delta.com",
             "resolved": "cn-content.delta.com.edgekey.net"
+        },
+        {
+            "original": "customer-api.delta.com",
+            "resolved": "customer-api.delta.com.edgekey.net"
         },
         {
             "original": "de-content.delta.com",
@@ -192,7 +197,7 @@
         {
             "rule": "delta\\.com\\.edgekey\\.net\\/content\\/dam\\/delta-applications\\/homepage\\/23\\.7\\.40\\/main\\.js",
             "cookies": 0.000202,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "de-content"
             ],
@@ -236,6 +241,33 @@
                 "65aaee64a75e4a6cd8a4cc7442def8ff3329a8e945f07b2ea8dbd406c33d753c"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delta.com",
+                "de.delta.com"
+            ]
+        },
+        {
+            "rule": "delta\\.com\\.edgekey\\.net\\/datalayer\\/wQjkCwX7UJ",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customer-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "customer-api.delta.com",
+                    "resolved": "customer-api.delta.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -416,6 +448,7 @@
     "types": {
         "Script": 12,
         "Stylesheet": 4,
+        "XHR": 2,
         "Image": 10
     },
     "nameservers": []
