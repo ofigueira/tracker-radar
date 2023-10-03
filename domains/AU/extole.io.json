@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000402,
-    "sites": 4,
+    "prevalence": 0.000502,
+    "sites": 5,
     "subdomains": [
         "bose",
         "codecademy",
         "revzilla",
+        "simon-and-schuster",
         "skillshare"
     ],
     "cnames": [
@@ -25,6 +26,10 @@
             "resolved": "bose.extole.io"
         },
         {
+            "original": "share.simonandschuster.com",
+            "resolved": "simon-and-schuster.extole.io"
+        },
+        {
             "original": "share.skillshare.com",
             "resolved": "skillshare.extole.io"
         }
@@ -33,21 +38,25 @@
     "resources": [
         {
             "rule": "extole\\.io\\/core\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.000201,
+            "fingerprinting": 2,
             "subdomains": [
                 "bose",
                 "codecademy",
                 "revzilla",
+                "simon-and-schuster",
                 "skillshare"
             ],
             "apis": {
                 "Date.prototype.getTime": 1,
+                "Navigator.prototype.platform": 1,
                 "window.localStorage": 1,
-                "Document.cookie getter": 1
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "document.fonts.check": 1
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [
                 {
                     "original": "share.bose.com.au",
@@ -58,31 +67,45 @@
                     "resolved": "codecademy.extole.io"
                 },
                 {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                },
+                {
                     "original": "share.skillshare.com",
                     "resolved": "skillshare.extole.io"
                 }
             ],
             "responseHashes": [
-                "689e360cbdf09439364f9b5631b68adbcf15dfd142b19862983bcd46cfe186f4",
-                "0706a6d4a793a8a6437428fb7fee1f2c8799bad4099a7c506403954542b1b3c5",
-                "fb0d376d67ac57535697416e3aa909a27dd25b052c7d00a3f23014bbdbe36699"
+                "54bdf5dda096aea1adee78f234f2d821fc88d93eb3baa351a026cc4524a292d0",
+                "2c3bf634095ab156ec19216b41f7a5bc6c19400e4562547443aa3cea5e02f450",
+                "5915fa9614bdde7078c97b029dd066b475e9c728f9919871d8fc7e6fdf3cd1d9",
+                "519c5997eedaf2a8838a3abb975373ec6e49207b98c4348e0ec70d9df441d3c3"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "extole_access_token": {
+                    "ttl": 31536019,
+                    "length": 26,
+                    "prevalence": 0.00010049241282283188,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bose.com.au",
                 "www.codecademy.com",
                 "www.revzilla.com",
+                "www.simonandschuster.com",
                 "www.skillshare.com"
             ]
         },
         {
             "rule": "extole\\.io\\/zones\\/overlay",
-            "cookies": 0.000201,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
-                "codecademy"
+                "codecademy",
+                "simon-and-schuster"
             ],
             "apis": {},
             "sites": 2,
@@ -91,46 +114,165 @@
                 {
                     "original": "refer.codecademy.com",
                     "resolved": "codecademy.extole.io"
+                },
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "600d4459d47ebe9f7ffc739161f52fd5f572aa006dbb641b564c28e698f70bb0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "codecademy.com",
-                "www.codecademy.com"
+                "www.simonandschuster.com"
             ]
         },
         {
-            "rule": "extole\\.io\\/zones\\/global_footer",
-            "cookies": 0.000302,
+            "rule": "extole\\.io\\/api\\/v4\\/debug\\/logs",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "codecademy",
-                "revzilla"
+                "revzilla",
+                "skillshare"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "refer.codecademy.com",
                     "resolved": "codecademy.extole.io"
+                },
+                {
+                    "original": "share.skillshare.com",
+                    "resolved": "skillshare.extole.io"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "f701141e6f0c41752a26780cfd120935f5f1d9f42748c9f531ab85115e8e85b3",
+                "c1badf0bee1af8f8baf2d2092db6ec0e6c2296e7f58d959a94fe861d150e5ef3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "codecademy.com",
-                "www.codecademy.com",
-                "www.revzilla.com"
+                "www.revzilla.com",
+                "www.skillshare.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/zones\\/global_footer",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revzilla",
+                "simon-and-schuster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                }
+            ],
+            "responseHashes": [
+                "7f361abb8750136035ce7d1f782aa1a19c71b5560b60b3374369803e14016e4b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revzilla.com",
+                "www.simonandschuster.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/api\\/v4\\/me",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revzilla",
+                "simon-and-schuster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                }
+            ],
+            "responseHashes": [
+                "6b049e1e0389618202bddab7ada99f07eb24a73ebc81a800c7ddb13e0699169f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revzilla.com",
+                "www.simonandschuster.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/api\\/v4\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revzilla",
+                "simon-and-schuster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revzilla.com",
+                "www.simonandschuster.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/zones\\/category_dropdown",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "simon-and-schuster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "share.simonandschuster.com",
+                    "resolved": "simon-and-schuster.extole.io"
+                }
+            ],
+            "responseHashes": [
+                "0b358620a5b294923ee449232000a32e19255b7cad8232450d5ab8952d9c4d7d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "simonandschuster.com",
+                "www.simonandschuster.com"
             ]
         }
     ],
@@ -139,26 +281,30 @@
     "cookies": 0.000201,
     "topInitiators": [
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.6
+            "domain": "xtlo.net",
+            "prevalence": 0.5625
         },
         {
-            "domain": "adobedtm.com",
-            "prevalence": 0.2
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1875
         },
         {
             "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.2
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Script": 4,
-        "XHR": 5
+        "Script": 5,
+        "XHR": 11,
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-231.awsdns-28.com",
-        "ns-1867.awsdns-41.co.uk",
+        "ns-603.awsdns-11.net",
         "ns-1510.awsdns-60.org",
-        "ns-603.awsdns-11.net"
+        "ns-231.awsdns-28.com"
     ]
 }

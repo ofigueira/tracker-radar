@@ -4,15 +4,41 @@
     "source": [
         "DuckDuckGo-AU"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "protection-widget",
         "bigcommerce",
-        "protection-widget"
+        "shopify"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "route\\.com\\/protect\\.core\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "protection-widget"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "labyrinthos.co",
+                "www.minimax.com.au"
+            ]
+        },
         {
             "rule": "route\\.com\\/checkout\\/routeimg\\.js",
             "cookies": 0,
@@ -94,7 +120,7 @@
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "6a483e86a53e818753182c6289c77b9e7c7f6c2d381647e2e381d21d774b9692"
+                "c9da476147eae1be336134e8105d8fff1ea181af5154296d7126d8171049cd1a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -103,27 +129,48 @@
                 "megaofficesupplies.com.au",
                 "superpharmacyplus.com.au"
             ]
+        },
+        {
+            "rule": "route\\.com\\/v1\\/merchant-info\\/minimaxau\\.myshopify\\.com",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shopify"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "minimax.com.au",
+                "www.minimax.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.75
         },
         {
             "domain": "routeapp.io",
-            "prevalence": 0.2
+            "prevalence": 0.25
         }
     ],
     "types": {
-        "Script": 6,
-        "Stylesheet": 2
+        "Script": 8,
+        "Stylesheet": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "grace.ns.cloudflare.com",
-        "jim.ns.cloudflare.com"
+        "jim.ns.cloudflare.com",
+        "grace.ns.cloudflare.com"
     ]
 }

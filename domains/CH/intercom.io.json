@@ -14,6 +14,8 @@
     "subdomains": [
         "api-iam",
         "api-iam.eu",
+        "shopify",
+        "iis",
         "widget"
     ],
     "cnames": [],
@@ -28,66 +30,89 @@
                 "api-iam.eu"
             ],
             "apis": {},
-            "sites": 33,
-            "prevalence": 0.00332,
+            "sites": 32,
+            "prevalence": 0.00322,
             "cnames": [],
             "responseHashes": [
-                "49efdb14e752175a94b2e2b374dfa14eb2ecbbe98d05d112aac4c593d07b637a",
-                "b65087a19dba21264a1c6c3b34a257aa2b0c93bbfd31e608b6ac0eb6d6ae464d",
-                "35f3ba575fecad3f61e56c9bbb41aa8a752eb7d3abf60653ef61c51572f06494",
-                "a26812f6dae86f58cae5b77fcce5ac2421c4aa55f33fb5f26f64500e63781f84",
-                "d4a11e04cea4638d796426e93f8ab4921c51687dd77a33dcdfc755814517a3b0",
-                "4414e1a4bf01f4e5fe678118438de1a239a93c5482595e9741beb6693c401f83",
-                "2077b766bbb4c85febc4ef28aaa5d8e5ede6f9e798c120666e92b66dac3aa9d4",
-                "8741f07577f2020cf3f126bb11b7861efebbd4456ccf0fb342153ef7336fa5f6",
-                "51451468a9f2db6e4ac582f4795f36d99db984f43e8c5892ffb41c2856f483cd",
-                "8e90885e3910b800c4b765863ab9dfac133dfb34a26dd471826fbe841c63e53a",
-                "5a7ade4d791ac03a4801e33ed1baf76d8d0421449b4190ecd0a2bc6a215a36f9",
-                "ec9b759a538663ba804878fdcd1ff98fab45ce136e07385dc9a7e72eb835279e",
-                "3e01e5fafba9098458bdf3b56d40c4c81b4dcbac51f9ed8d55cd96a227c9e641",
-                "050f163002a78d832a344f32eaa0bb4b55689e37794f2b0d96ada853227191fb",
-                "f9190f97a4f3e3462d900212d8ba35399e3d1f7ce5d78cc793386d85b4d68086",
-                "a0a5aa699d04f55e5d247fb04540aa68cbed9e31810b4418e92fbae69d970af4",
-                "c2758332b188dfdb8a31be2aa99a25d1a2a0af58803bee09e79ed8d6c9021ee3",
-                "aac3ddb87f4dae33c427f3d23be2631e0c55439d1a4a0cd7b785c24ff39988c5",
-                "df627da259a2ccef74b2f8e4d4c33d4b948878cd2c55fe3f38e8981ab35359e4",
-                "85b2148570774f76a44938dec6c062f15d44eff9a752d07b1e38ff2fe7813783",
-                "bb4e8441bee6426aa31d26981146a488314ebd5fd2ec0a86c86a3fc91784393d",
-                "e698e872ce17031c1c0142dffb0a485f13cc0f62f29d0b8ee08a08c73b438945",
-                "995bf71cd76c80bbf004d7103980d357b235a8a5a25eefc636e701c077cc4ba3",
-                "cb6cc1da4d466a1e40d75bbf68d23baad9fa11266512729ed32359e7fb3c9d3d",
-                "734b09e6cff9d15aee411eca2e5d8e6c6623c82a8b000c898f1cb80fdbb75f9a",
-                "b026a76cb40f30a27b3aec72bbac5c60e2ef34d80450ad17b76b262004623522",
-                "bd1e0657e66175315860b2adfbae723dfa4e2f75315ed29ac67ac83f1d581f36",
-                "b9e94648a35aa32dea9b2c80636c72fe187285df2c383a3c3f8a657e2cf1b471",
-                "2d4b553a7181f08b01e477f8ced9516c11028e032e76d2072f2eb92db0eac19d",
-                "195ce29487ef0be98a83c314ca0a6e3973856fb2c5fe06df876acc25292fced2",
-                "ff71036131ad2d46f24b5a63a2bf17dbb0b70246c27db23888cec1e70c25e236"
+                "1e86819d0c38eb2d8a208de478acd75a69a14e4e19ac0e665eab4d011324594c",
+                "8510448628b34d145e1d08dd71750d39db19926e2534292b106758d56a365787",
+                "92b66f32bbf55d15df23ccaa1dc4d1f9be0f3a349f8de24b3b034e2affb69667",
+                "c62700ee27cd56699ca947e2d3c642fecd2ca9499ddf233b54a58ac39a97474b",
+                "de9e98647baa6004e6cd67460389c6438129922c58c785bc4fb31465d72f9755",
+                "3c0a0ada936c9b3c7c83ba3c028b55942516ffaa8aff849e3a52e40a885a383f",
+                "7258e05433d533f40612a1f62472641288a96405b61447d4641484e82371f38d",
+                "fbdf05ac84cd10ed3ccfba0153260e94093279d4204ddc5101f94563b1bf6409",
+                "5c25b0e36776b5c048b60bacdf5eea723ce31d8c5e533321b12e0aecb4ef5c60",
+                "d6747ac2e2e2f184a3c0e54bda8385f0043c7785b05c5b6ed964f5f846a77684",
+                "5a28cb8218710f349eecf7f20a29c386798263ada8b967b45f12bc697c88ad79",
+                "760617a826e317e920de964726db5520e4b895db4d1c667551f2a4136465aa00",
+                "a4b595d7b553716ec0be3c5592fcac58e4a2774409644a18e9d3cae903a19528",
+                "ecf5e0f0f85a6164ad336f103877b6a525a869dea500c9d39a00614bd5fd39fe",
+                "15a6770ee96f23bd804fd73287a564845d1cb65aaf22f851a959085b40e1022b",
+                "e508a71fe4939ca245f6d2372cbbc5f5910b12c87805e15f8dce98b7919727e3",
+                "2b283128b6e74cea396cf473c7ea6d514ac7f54fbdd1fbb9a77cee52e567ebc3",
+                "d74e32ea41d03b294372851680911b8f090db77384dea28a1bb9ad1c448fb437",
+                "f8bb51fe60796ce70837cbfc95a608779f641aeb41bedcf58b4087324e78bf9b",
+                "abe651c219418c9d994c445fa3955ca9c9583bfd794d9a9e129a844a13ef14a3",
+                "4ce7f2e49c5c6c0704e39acf3c412328a4bef826867a242ba2edc3203fa4081c",
+                "f3387b8f862c8457b3d24c9b1710810ceb254bb90bdf1451c05c462665ceebc4",
+                "ac81a7f654a8adb8ecf87ea063afe6fbed638ab42a688dc9b9f494da345567ea",
+                "b6a9de3feafb385d5f33d9180b98e232747b2b6b6a0c10c0f1b692b2050c6b79",
+                "5ba917a8044663e2b06daadebb8a391b34560956ff6dabc988f67045263ba42f",
+                "d33329e7b6cfaef3a69eccf9d9457bb6700ddb14d5a3077ee865b64431ed32d2",
+                "6e13a82b6991e999785ab6d93ec93f2c723143f9f10b77f436901630608e9233",
+                "c3a1df9e013b804fcacf358c83ebec53adb1cdbb3ffab11fd4207bf76a0b3e46",
+                "6302dae551217eb5a61938951dfe6c8536d7e95c3e34f68aa4dee7fb4af475be",
+                "9a2cba69fe3bfc97c884a1e5ad80dee9fa7cc22983f78de6456bd77f20ab2d4f",
+                "adbc0ea54cd6909d1f175b42ebdda25b9690a3b7e69bcd9664e036b03e657125"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.semrush.com",
-                "guide.michelin.com",
-                "speechify.com",
-                "www.mongodb.com",
-                "setapp.com",
-                "www.jobscout24.ch",
-                "www.scribbr.ch",
-                "stackify.com",
-                "www.hoststar.ch",
-                "www.scribbr.de",
+                "www.scribbr.com",
                 "www.mentimeter.com",
-                "viac.ch",
-                "www.myfonts.com",
-                "zapier.com",
-                "www.apollo.io",
-                "snyk.io",
-                "www.deine-tierwelt.de",
-                "www.elegantthemes.com",
+                "saturncloud.io",
                 "help.openai.com",
-                "stiftungschweiz.ch"
+                "www.elegantthemes.com",
+                "www.ofrex.ch",
+                "www.s-ge.com",
+                "muckrack.com",
+                "www.jobscout24.ch",
+                "www.scribbr.de",
+                "viac.ch",
+                "www.mongodb.com",
+                "www.qobuz.com",
+                "guide.michelin.com",
+                "www.scribbr.ch",
+                "www.getabstract.com",
+                "www.placeb.ch",
+                "zapier.com",
+                "wave.video",
+                "stiftungen.stiftungschweiz.ch"
+            ]
+        },
+        {
+            "rule": "intercom\\.io\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shopify",
+                "iis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "71d34d1d6e2b3fc1b8ead18dfdc3626289e351fb95fc9dc8a02fce6e54ddb478"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kkiosk.ch",
+                "tabak.kkiosk.ch"
             ]
         },
         {
@@ -102,18 +127,43 @@
                 "Navigator.prototype.vendor": 3
             },
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "4eab081980f3a9cee204d59c75a6bf4b95ac5ca1f2b08a3f7080f415a9c9ffcd"
+                "d377f4a458153efb2fa108f908dae80fc668240f0a307f67465310eead9340d3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jobs.ch",
-                "www.jobscout24.ch",
-                "www.jobup.ch"
+                "jobscout24.ch",
+                "www.jobup.ch",
+                "www.jobs.ch"
+            ]
+        },
+        {
+            "rule": "intercom\\.io\\/widget\\/li6o7lng",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d377f4a458153efb2fa108f908dae80fc668240f0a307f67465310eead9340d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kingnature.ch",
+                "www.kingnature.ch"
             ]
         },
         {
@@ -131,16 +181,16 @@
             "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "4eab081980f3a9cee204d59c75a6bf4b95ac5ca1f2b08a3f7080f415a9c9ffcd"
+                "d377f4a458153efb2fa108f908dae80fc668240f0a307f67465310eead9340d3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "scribbr.ch",
-                "www.scribbr.com",
+                "scribbr.com",
+                "www.scribbr.fr",
                 "www.scribbr.de",
-                "www.scribbr.fr"
+                "www.scribbr.ch"
             ]
         }
     ],
@@ -150,41 +200,49 @@
     "topInitiators": [
         {
             "domain": "intercomcdn.com",
-            "prevalence": 0.6607142857142857
+            "prevalence": 0.6434782608695652
         },
         {
             "domain": "first party",
-            "prevalence": 0.25
+            "prevalence": 0.24347826086956523
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.044642857142857144
+            "prevalence": 0.05217391304347826
         },
         {
             "domain": "segment.com",
-            "prevalence": 0.017857142857142856
+            "prevalence": 0.017391304347826087
         },
         {
             "domain": "intercomassets.com",
-            "prevalence": 0.008928571428571428
+            "prevalence": 0.008695652173913044
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.008695652173913044
+        },
+        {
+            "domain": "animatron.com",
+            "prevalence": 0.008695652173913044
         },
         {
             "domain": "zipchat.ai",
-            "prevalence": 0.008928571428571428
+            "prevalence": 0.008695652173913044
         },
         {
             "domain": "michiganrobotflower.com",
-            "prevalence": 0.008928571428571428
+            "prevalence": 0.008695652173913044
         }
     ],
     "types": {
-        "XHR": 33,
-        "Script": 7
+        "XHR": 32,
+        "Script": 11
     },
     "nameservers": [
+        "ns-97.awsdns-12.com",
         "ns-1867.awsdns-41.co.uk",
-        "ns-1478.awsdns-56.org",
         "ns-661.awsdns-18.net",
-        "ns-97.awsdns-12.com"
+        "ns-1478.awsdns-56.org"
     ]
 }

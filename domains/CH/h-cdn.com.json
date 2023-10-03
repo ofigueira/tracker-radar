@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
-        "player"
+        "player",
+        "zagent1912",
+        "zagent1543"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -18,27 +20,21 @@
         {
             "rule": "h-cdn\\.com\\/loader\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "player"
             ],
             "apis": {
                 "window.localStorage": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "window.sessionStorage": 1,
-                "Navigator.prototype.connection": 1,
-                "window.devicePixelRatio": 1
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 5,
+            "prevalence": 0.000502,
             "cnames": [],
             "responseHashes": [
-                "4b4cdc5f1d7ae74be74235c9ac6221431cab43b158318cd02995e33722e0d936",
-                "bfb93e88077d03154f529105535f957e12a965b08511e686ddb6983b6bc7ff76",
-                "e4639fa57af801b908b4fa23742a48a1d00159675958be1ce231dcea20c8e55c"
+                "688cbe458cc2005ef608c987b68e4df58b63738e903f774d502a2c01b54acc27",
+                "40e859281ad882d7861b8b0016416066602459f1c19f4e466396a502f902034f",
+                "0d7db7dded15acbda5bd32c734927ddadbd7c0479d6e0d4af704956cab78ab75"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -46,6 +42,7 @@
             "exampleSites": [
                 "foxnews.com",
                 "www.foxnews.com",
+                "www.ilsole24ore.com",
                 "www.sportschau.de",
                 "www.tagesschau.de"
             ]
@@ -58,21 +55,45 @@
                 "player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 1
             },
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [
-                "9c031bb28c4e1a9d9ab9356eb998e808b4cb87dfd5d7894a5679a8dd2ffb1a19"
+                "6cd1b2585b50736eff5bb4a902d8434407e446b65c6f76bade06b9f3d5ed3526"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "foxnews.com",
-                "www.foxnews.com",
+                "www.ilsole24ore.com",
+                "www.sportschau.de",
                 "www.tagesschau.de"
+            ]
+        },
+        {
+            "rule": "h-cdn\\.com\\/cmd\\/get_geoip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zagent1912",
+                "zagent1543"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "202d17d8bc4c785c21ab90d2c765f7c79d650c450f2382f07ada197b386bfc70"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ilsole24ore.com",
+                "www.ilsole24ore.com"
             ]
         }
     ],
@@ -82,19 +103,16 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.4
+            "prevalence": 0.6666666666666666
         },
         {
             "domain": "webcontentassessor.global.ssl.fastly.net",
-            "prevalence": 0.4
-        },
-        {
-            "domain": "knotch-cdn.com",
-            "prevalence": 0.2
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 7
+        "Script": 9,
+        "XHR": 2
     },
     "nameservers": [
         "ns-43.awsdns-05.com",

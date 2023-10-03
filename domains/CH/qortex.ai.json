@@ -4,14 +4,39 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000302,
-    "sites": 3,
+    "prevalence": 0.000402,
+    "sites": 4,
     "subdomains": [
+        "tags",
         "events"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "qortex\\.ai\\/bootstrapper",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6633378d2f992fb8f12a9dc3cfac24e10c4167ba5ffc7be5c63973fff3410209"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexerto.com",
+                "www.timeout.com"
+            ]
+        },
         {
             "rule": "qortex\\.ai\\/api\\/v1\\/player-event",
             "cookies": 0,
@@ -20,8 +45,8 @@
                 "events"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000402,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -30,7 +55,30 @@
             "exampleSites": [
                 "dexerto.com",
                 "www.sportingnews.com",
+                "www.timeout.com",
                 "www.timesofisrael.com"
+            ]
+        },
+        {
+            "rule": "qortex\\.ai\\/cxo\\/cx-bootstrapper-init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "574ff59092475ddafeabf69374a2d8dedeaed5242a1f2f9f2a33cb08bd490607"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dexerto.com",
+                "www.timeout.com"
             ]
         }
     ],
@@ -39,16 +87,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "catapultx.com",
-            "prevalence": 0.6666666666666666
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.3333333333333333
+            "domain": "catapultx.com",
+            "prevalence": 0.5
         }
     ],
     "types": {
-        "Fetch": 3
+        "Script": 4,
+        "Fetch": 4
     },
     "nameservers": [
         "olof.ns.cloudflare.com",

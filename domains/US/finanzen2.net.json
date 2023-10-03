@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000477,
-    "sites": 7,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
-        "geoip.user.public"
+        "geoip.user.public",
+        "pushserver.prod.markets.public"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,10 +22,10 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000273,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "8297fd915f6ec92593a923262cb50c62a20d1db25bbf72cca76b7606f515525b"
+                "43d2cb777ec968400ea2530cceeed2fd23aa6c64eaa1f3b293be438d8dc6ac10"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -37,24 +38,25 @@
             ]
         },
         {
-            "rule": "finanzen2\\.net\\/json\\/",
+            "rule": "finanzen2\\.net\\/socket\\.io\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "geoip.user.public"
+                "pushserver.prod.markets.public"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
-            "responseHashes": [
-                "8297fd915f6ec92593a923262cb50c62a20d1db25bbf72cca76b7606f515525b"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "finanzen.net",
+                "businessinsider.com",
+                "markets.businessinsider.com",
+                "www.finanzen.at",
+                "www.finanzen.ch",
                 "www.finanzen.net"
             ]
         }
@@ -65,17 +67,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7647058823529411
+        },
+        {
+            "domain": "gearwom.de",
+            "prevalence": 0.23529411764705882
         }
     ],
     "types": {
         "Fetch": 4,
-        "XHR": 2
+        "WebSocket": 5
     },
     "nameservers": [
         "ns1-05.azure-dns.com",
-        "ns2-05.azure-dns.net",
         "ns3-05.azure-dns.org",
-        "ns4-05.azure-dns.info"
+        "ns4-05.azure-dns.info",
+        "ns2-05.azure-dns.net"
     ]
 }

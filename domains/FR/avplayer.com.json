@@ -7,54 +7,192 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000101,
-    "sites": 1,
+    "prevalence": 0.000303,
+    "sites": 3,
     "subdomains": [
-        "track1"
+        "player",
+        "track1",
+        "feed",
+        "content1"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "avplayer\\.com\\/script\\/8\\.3\\/v\\/avcplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.orientation": 3,
+                "Navigator.prototype.vendor": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Navigator.prototype.onLine": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "ac6d745064a12deccd8622d1116b95fe023c54cf18623b3322c872472a2529b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bdocodex.com",
+                "fr.namemc.com",
+                "www.trueachievements.com"
+            ]
+        },
+        {
+            "rule": "avplayer\\.com\\/script\\/8\\.3\\/v\\/ui\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "window.matchMedia(\"prefers-color-scheme\")": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "e853a62d616234d773f6dbf597bf118e1f37f5d5ef412b41c9973d6aa1e66b66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bdocodex.com",
+                "fr.namemc.com",
+                "www.trueachievements.com"
+            ]
+        },
+        {
+            "rule": "avplayer\\.com\\/script\\/8\\.3\\/v\\/sprite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "3b9e90a5fbc13fff5ac8342cd2af0316342cf5070859cddb621b3ec1f94896b8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bdocodex.com",
+                "fr.namemc.com",
+                "www.trueachievements.com"
+            ]
+        },
+        {
             "rule": "avplayer\\.com\\/ctrack",
-            "cookies": 0.000202,
+            "cookies": 0.000303,
             "fingerprinting": 0,
             "subdomains": [
                 "track1"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
+            "sites": 3,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Ping",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00020216314565854644
+            },
+            "exampleSites": [
+                "bdocodex.com",
+                "fr.namemc.com",
+                "www.trueachievements.com"
+            ]
+        },
+        {
+            "rule": "avplayer\\.com\\/backend\\/api\\/playlist\\/6452193751d1076b9d024ac2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "feed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "bd785a1025ee92f6e469ff59f29a9b24e3ca97a86d3e809b7135baed749daf72"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trueachievements.com",
+                "namemc.com",
+                "www.trueachievements.com"
+            ]
+        },
+        {
+            "rule": "avplayer\\.com\\/641186cd15d2e834c809eb78\\/videos\\/6515803710d4ec3634067a13\\/large-9a3def28-0227-42f5-9a9e-53f57f1d7921\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8ab4eda876ebf9450a23a9e83f38f274698a488a9d7977435a89c1dda6bed389"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "namemc.com",
                 "www.trueachievements.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000303,
     "topInitiators": [
         {
             "domain": "aniview.com",
-            "prevalence": 1
+            "prevalence": 0.8260869565217391
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.17391304347826086
         }
     ],
     "types": {
-        "Ping": 2
+        "Script": 6,
+        "Fetch": 3,
+        "Ping": 3,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
-        "ns1.dnsmadeeasy.com",
         "ns4.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com",
         "ns0.dnsmadeeasy.com",
         "ns2.dnsmadeeasy.com",
-        "ns3.dnsmadeeasy.com"
+        "ns1.dnsmadeeasy.com"
     ]
 }

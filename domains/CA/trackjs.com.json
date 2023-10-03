@@ -8,6 +8,7 @@
     "sites": 12,
     "subdomains": [
         "usage",
+        "capture",
         "cdn"
     ],
     "cnames": [],
@@ -32,17 +33,37 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "alternativeto.net",
-                "motionarray.com",
                 "smallpdf.com",
-                "www.adulttime.com",
+                "spicychat.ai",
                 "www.betterhelp.com",
+                "www.chaosmen.com",
                 "www.delta.com",
                 "www.evilangel.com",
                 "www.flighthub.com",
-                "www.internations.org",
+                "www.halloweencostumes.ca",
                 "www.kijijiautos.ca",
                 "www.pelicanparts.com",
                 "www.secretbenefits.com"
+            ]
+        },
+        {
+            "rule": "trackjs\\.com\\/capture",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "capture"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delta.com",
+                "www.delta.com"
             ]
         },
         {
@@ -53,11 +74,13 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 5,
-                "Navigator.prototype.userAgent": 5
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Document.cookie getter": 1
             },
-            "sites": 5,
-            "prevalence": 0.000504,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [
                 "7b116ac42dfa848b8cbeff07cae0cc208a898111a7191ab266b4f0241683671a"
@@ -66,8 +89,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "motionarray.com",
-                "www.flighthub.com",
+                "flighthub.com",
                 "www.kijijiautos.ca",
                 "www.pelicanparts.com",
                 "www.secretbenefits.com"
@@ -80,16 +102,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8421052631578947
+            "prevalence": 0.9310344827586207
         },
         {
             "domain": "gammacdn.com",
-            "prevalence": 0.15789473684210525
+            "prevalence": 0.06896551724137931
         }
     ],
     "types": {
         "Image": 12,
-        "Script": 5
+        "XHR": 2,
+        "Script": 4
     },
     "nameservers": [
         "dns1.registrar-servers.com",

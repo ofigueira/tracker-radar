@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00111,
-    "sites": 11,
+    "prevalence": 0.00151,
+    "sites": 15,
     "subdomains": [
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
         "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
+        "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
         "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
-        "techsmith-prod-cd-hjvgzt04v9ctn54n.edge.tenants"
+        "cdn"
     ],
     "cnames": [
         {
@@ -29,8 +30,8 @@
             "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
         },
         {
-            "original": "login.techsmith.com",
-            "resolved": "techsmith-prod-cd-hjvgzt04v9ctn54n.edge.tenants.auth0.com"
+            "original": "login.finder.com",
+            "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
         }
     ],
     "fingerprinting": 1,
@@ -42,8 +43,8 @@
             "subdomains": [
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "naf-cd-qf7uhj9homrrm574.edge.tenants.eu",
-                "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
-                "techsmith-prod-cd-hjvgzt04v9ctn54n.edge.tenants"
+                "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
+                "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu"
             ],
             "apis": {},
             "sites": 5,
@@ -58,17 +59,17 @@
                     "resolved": "naf-cd-qf7uhj9homrrm574.edge.tenants.eu.auth0.com"
                 },
                 {
-                    "original": "auth.native-instruments.com",
-                    "resolved": "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu.auth0.com"
+                    "original": "login.finder.com",
+                    "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
                 },
                 {
-                    "original": "login.techsmith.com",
-                    "resolved": "techsmith-prod-cd-hjvgzt04v9ctn54n.edge.tenants.auth0.com"
+                    "original": "auth.native-instruments.com",
+                    "resolved": "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu.auth0.com"
                 }
             ],
             "responseHashes": [
-                "28fb0f7549de51607927d7144cd4b0ccf0b64b6cee27408a8e2aa0475bb438b1",
-                "7f1a3d7eed6bdb3d6df22ba65cdc6bbce1b0629b053944ed6273d4343afbdf39"
+                "74b83c98979b8bf64cace0613a79ea4f868f9becf8677b15a927beb35bb8282f",
+                "a92738ad0ba4ff0f159a86e3c9aa0b8a1385f6c518d0a74d40b5dfe6f1a1a477"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -76,9 +77,35 @@
             "exampleSites": [
                 "arduino.cc",
                 "nye.naf.no",
+                "www.finder.com",
                 "www.naf.no",
-                "www.native-instruments.com",
-                "www.techsmith.com"
+                "www.native-instruments.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vwr.com",
+                "us.vwr.com"
             ]
         }
     ],
@@ -88,23 +115,24 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5454545454545454
+            "prevalence": 0.6428571428571429
         },
         {
             "domain": "native-instruments.com",
-            "prevalence": 0.2727272727272727
+            "prevalence": 0.21428571428571427
+        },
+        {
+            "domain": "dvh1deh6tagwk.cloudfront.net",
+            "prevalence": 0.07142857142857142
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.09090909090909091
-        },
-        {
-            "domain": "auth0.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.07142857142857142
         }
     ],
     "types": {
-        "Document": 5
+        "Document": 5,
+        "Script": 2
     },
     "nameservers": [
         "monroe.ns.cloudflare.com",

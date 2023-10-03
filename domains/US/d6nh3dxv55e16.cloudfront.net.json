@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "d6nh3dxv55e16\\.cloudfront\\.net\\/stylesheets\\/govuk-frontend\\/v3\\.11\\.0\\/govuk-frontend-3\\.11\\.0\\.min\\.css",
@@ -81,7 +81,6 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.platform": 1,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -184,7 +183,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Element.prototype.getClientRects": 2
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -223,11 +223,9 @@
         {
             "rule": "d6nh3dxv55e16\\.cloudfront\\.net\\/javascripts\\/app\\/cookie-consent\\/cookie-consent-1\\.0\\.0\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [],
-            "apis": {
-                "Document.cookie getter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -388,7 +386,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 2
+                "Navigator.prototype.cookieEnabled": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -548,26 +546,6 @@
             ]
         },
         {
-            "rule": "d6nh3dxv55e16\\.cloudfront\\.net\\/javascripts\\/vendor\\/jquery-ui-i18n\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d11858db4b8ee8752af51cd291e4e835634efbd47b9b2d0de776f1d191af468b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "company-information.service.gov.uk",
-                "find-and-update.company-information.service.gov.uk"
-            ]
-        },
-        {
             "rule": "d6nh3dxv55e16\\.cloudfront\\.net\\/javascripts\\/vendor\\/jquery-mustache\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -578,6 +556,26 @@
             "cnames": [],
             "responseHashes": [
                 "1cc4c501a5a4d0e41c577424b20e0e65c524a7871867345169f2a784d95eb5ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "company-information.service.gov.uk",
+                "find-and-update.company-information.service.gov.uk"
+            ]
+        },
+        {
+            "rule": "d6nh3dxv55e16\\.cloudfront\\.net\\/javascripts\\/vendor\\/jquery-ui-i18n\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d11858db4b8ee8752af51cd291e4e835634efbd47b9b2d0de776f1d191af468b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -627,8 +625,8 @@
     },
     "nameservers": [
         "ns-1852.awsdns-39.co.uk",
-        "ns-370.awsdns-46.com",
         "ns-697.awsdns-23.net",
-        "ns-1338.awsdns-39.org"
+        "ns-1338.awsdns-39.org",
+        "ns-370.awsdns-46.com"
     ]
 }

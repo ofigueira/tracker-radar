@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000273,
-    "sites": 4,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
         "app",
         "rj"
@@ -13,6 +13,27 @@
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "api-push\\.com\\/get-keys",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smutty.com",
+                "m.smutty.com",
+                "onlytik.com"
+            ]
+        },
         {
             "rule": "api-push\\.com\\/get-keys",
             "cookies": 0,
@@ -38,18 +59,21 @@
             ]
         },
         {
-            "rule": "api-push\\.com\\/get-keys",
+            "rule": "api-push\\.com\\/reject",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "app"
+                "rj"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "85b4a67c5511fe8a8560a5504d92ad26329b6852eb1c6b06014df8f00abeac7c",
+                "9a13c91cdc3fcdd24cc3b03940679d025090f5a048303a358c4fcc14a2375bfd"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -66,30 +90,8 @@
                 "rj"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5da01f996c09ce537ff79663b9ea5385682ffcbca7bfdd82f3e1960970c11a66"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smutty.com",
-                "onlytik.com"
-            ]
-        },
-        {
-            "rule": "api-push\\.com\\/reject",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rj"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -97,6 +99,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "smutty.com",
+                "m.smutty.com",
                 "onlytik.com"
             ]
         }
@@ -106,17 +109,17 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "cdnjam.com",
-            "prevalence": 0.5714285714285714
+            "domain": "cdn-static3.com",
+            "prevalence": 0.6666666666666666
         },
         {
-            "domain": "cdn-static3.com",
-            "prevalence": 0.42857142857142855
+            "domain": "cdnjam.com",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "XHR": 5,
-        "Preflight": 5
+        "Preflight": 6,
+        "XHR": 6
     },
     "nameservers": [
         "diva.ns.cloudflare.com",

@@ -4,15 +4,42 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "cdn2",
-        "widgets"
+        "api",
+        "widgets",
+        "media-cache"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "woxo\\.tech\\/a\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn2"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ec07f3515281a99c38deb36e48305cf300b9b74ca3af0b9a24f7f869ca55b874"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "broadwayindetroit.com",
+                "www.therangerstation.com"
+            ]
+        },
         {
             "rule": "woxo\\.tech\\/b\\.js",
             "cookies": 0,
@@ -33,7 +60,29 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "therangerstation.com",
+                "broadwayindetroit.com",
+                "www.therangerstation.com"
+            ]
+        },
+        {
+            "rule": "woxo\\.tech\\/instagram",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c51936c9f9016f4cbbb748370c33151c8f0dbeb280ced6968b9d8e974a0351c5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "broadwayindetroit.com",
                 "www.therangerstation.com"
             ]
         },
@@ -55,8 +104,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "therangerstation.com",
+                "broadwayindetroit.com",
                 "www.therangerstation.com"
+            ]
+        },
+        {
+            "rule": "woxo\\.tech\\/cache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "355fdd0834ffa653546bc002687aa8f2ee397a7812faa4c438727eb3f4930b84"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "broadwayindetroit.com",
+                "www.broadwayindetroit.com"
             ]
         }
     ],
@@ -66,16 +137,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5
+            "prevalence": 0.75
         },
         {
             "domain": "cloudflareinsights.com",
-            "prevalence": 0.5
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "front10.net",
+            "prevalence": 0.0625
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 4,
+        "Fetch": 2,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
         "kim.ns.cloudflare.com",

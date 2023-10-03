@@ -11,23 +11,28 @@
     "sites": 2,
     "subdomains": [
         "www",
-        "api"
+        "api",
+        "static-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "ashleymadison\\.com\\/app\\/public\\/track\\.p",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "d16e15bc8000427f84463db904e4455d468ca748b75a5b785ad583cd81ccd8e4"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -47,8 +52,28 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ashley-madison.com",
+                "www.ashley-madison.com"
+            ]
+        },
+        {
+            "rule": "ashleymadison\\.com\\/v2\\/geoip\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
             "responseHashes": [
-                "f092dac12dc10a58b41a349fe5f52b3685ceb42629ed2d942141741a2794c77b"
+                "b6eb0f7ccc3b555ef18f42760379fa1b240699dd1996b042acbc8aa0bb265e1b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -60,7 +85,7 @@
         },
         {
             "rule": "ashleymadison\\.com\\/app\\/public\\/gotrack\\.p",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
@@ -69,11 +94,13 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "a61e309dd5165cd26a4e21666be4569e5144fb9321027f39ac3dbe2916c8ccc2"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "current_page": 0.000006814913757266402
+                "current_page": 0.0000068113395180296156
             },
             "exampleSites": [
                 "ashley-madison.com",
@@ -123,20 +150,64 @@
             ]
         },
         {
-            "rule": "ashleymadison\\.com\\/v2\\/geoip\\/",
-            "cookies": 0.0000136,
+            "rule": "ashleymadison\\.com\\/cdn-cgi\\/rum",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "www"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f092dac12dc10a58b41a349fe5f52b3685ceb42629ed2d942141741a2794c77b"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ashley-madison.com",
+                "www.ashley-madison.com"
+            ]
+        },
+        {
+            "rule": "ashleymadison\\.com\\/v4\\/build\\/vendor\\/jquery-1\\.11\\.3\\.min\\.f03e5a3b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "55f07a097f09cad0c0ae33fc6f0a8eb00270c31e84e534a8daab7e0f60f42d99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ashley-madison.com",
+                "www.ashley-madison.com"
+            ]
+        },
+        {
+            "rule": "ashleymadison\\.com\\/v4\\/build\\/bower_components\\/jquery\\.cookie\\.1e3faa7f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d4bc0026bf5623ce4af3bb9980e60d3941038e235b3e059559e4b5aefb0f0c1"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -151,13 +222,18 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.2222222222222222
         }
     ],
     "types": {
         "Document": 4,
-        "XHR": 6,
-        "Preflight": 2
+        "XHR": 8,
+        "Preflight": 2,
+        "Script": 4
     },
     "nameservers": [
         "joan.ns.cloudflare.com",

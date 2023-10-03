@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000302,
+    "prevalence": 0.000301,
     "sites": 3,
     "subdomains": [],
     "cnames": [],
@@ -12,22 +12,32 @@
     "resources": [
         {
             "rule": "lwadm\\.com\\/lw\\/pbjs",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "window.innerHeight": 2,
                 "window.innerWidth": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "ca04446d4710945686f67c5267c370642cabcd02d84f37f74714d1a644ebd2bd"
+                "b61f25063ffa0edf7321bab53df361dd6fa92bccf70240e6edf89864dbd7bd0f"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "lwuid": {
+                    "ttl": 1296009,
+                    "length": 40,
+                    "prevalence": 0.00010049241282283188,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eliteprospects.com",
@@ -40,22 +50,65 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "c66de358c7b8db0b44baa35963f12523ba51a4536ff024f9cc5a2f5ae3b5416a"
+                "2262e47ae602f800ada18216286a647b6480cb400fc52b973f98d9fc0cfb5997",
+                "045515e82c2c9e20324cebbb747f7383afbee2f79bcac9dda61fda32fd2e2c08"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eliteprospects.com",
+                "www.eliteprospects.com",
                 "www.hitta.se"
             ]
         },
         {
             "rule": "lwadm\\.com\\/analytics\\/astart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.eliteprospects.com",
+                "www.hitta.se"
+            ]
+        },
+        {
+            "rule": "lwadm\\.com\\/ad",
+            "cookies": 0.0001,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6c29cd0bdb98309bb2de42589d11433fb88e082785408d6506e4a6cd6712248c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.eliteprospects.com"
+            ]
+        },
+        {
+            "rule": "lwadm\\.com\\/analytics\\/10",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -66,12 +119,12 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Ping",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eliteprospects.com",
-                "www.hitta.se"
+                "www.eliteprospects.com"
             ]
         }
     ],
@@ -81,22 +134,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.75
         },
         {
             "domain": "stpd.cloud",
-            "prevalence": 0.2
+            "prevalence": 0.125
+        },
+        {
+            "domain": "usersnap.com",
+            "prevalence": 0.125
         }
     ],
     "types": {
         "Script": 2,
-        "XHR": 2,
-        "Ping": 2
+        "XHR": 3,
+        "Ping": 3,
+        "Fetch": 4
     },
     "nameservers": [
-        "ns-1657.awsdns-15.co.uk",
         "ns-1247.awsdns-27.org",
         "ns-214.awsdns-26.com",
+        "ns-1657.awsdns-15.co.uk",
         "ns-783.awsdns-33.net"
     ]
 }
