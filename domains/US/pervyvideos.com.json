@@ -10,16 +10,18 @@
         "player"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "pervyvideos\\.com\\/js\\/websocket_ip\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "player"
             ],
-            "apis": {},
+            "apis": {
+                "RTCPeerConnection.prototype.constructor": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -64,13 +66,15 @@
                 "player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2a750a5c4cd53d770d99cfd648aab9587e12c2fe9e2f6d0a52b699d2e88e5615"
+                "88e33d38aa577708d4cb0230edfddbbc348ed7dd6af3224797bee28eae0f2c7a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -81,7 +85,7 @@
             ]
         },
         {
-            "rule": "pervyvideos\\.com\\/js\\/embed\\.211\\.js",
+            "rule": "pervyvideos\\.com\\/js\\/embed\\.220\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -89,18 +93,24 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
                 "Navigator.prototype.mimeTypes": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "window.localStorage": 2
+                "window.sessionStorage": 2,
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1d85956e60f098d0e36bd9c3e3457ea595d083561c95edf8ddffb37a577dcb55"
+                "5b7d05ba86afd8d5e9eaed168ba2074174da962b53ea840dcb1bbe26f3999417"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -133,20 +143,74 @@
             ]
         },
         {
-            "rule": "pervyvideos\\.com\\/player\\/embed_player\\.php",
+            "rule": "pervyvideos\\.com\\/js\\/script_33\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 3,
             "subdomains": [
                 "player"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.screenLeft": 2,
+                "window.screenX": 2,
+                "window.screenTop": 2,
+                "window.screenY": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "43eac937762a47ccd2338ca67fd84f3bd0194028adc3c361e397014f07744ff0"
+                "b44c845738b1851038cf79cbdb979d80051adb022ddec2be9b2e10c45aea2d64"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xvidzone.com",
+                "www.xvidzone.com"
+            ]
+        },
+        {
+            "rule": "pervyvideos\\.com\\/cdn-cgi\\/trace",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6a5bbafd3cfcb48e0c22698207ffbf62ade741d2e6c16e1dc2d47d8044da402a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xvidzone.com",
+                "www.xvidzone.com"
+            ]
+        },
+        {
+            "rule": "pervyvideos\\.com\\/player\\/embed_player\\.php",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.outerWidth": 2,
+                "window.innerWidth": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1a62b858e43af20a7aafcb0e8c3a4d713de2d4b6f35d84c7dd8d5eaaa40cd99d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -162,17 +226,18 @@
     "cookies": 0,
     "topInitiators": [
         {
-            "domain": "first party",
-            "prevalence": 0.5
+            "domain": "unpkg.com",
+            "prevalence": 0.6666666666666666
         },
         {
-            "domain": "unpkg.com",
-            "prevalence": 0.5
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
         }
     ],
     "types": {
-        "Script": 8,
+        "Script": 10,
         "Stylesheet": 2,
+        "XHR": 2,
         "Document": 2
     },
     "nameservers": [

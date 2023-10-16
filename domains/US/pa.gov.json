@@ -13,7 +13,7 @@
         "assets.apps"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/CSS\\/foundation\\.min\\.css",
@@ -218,11 +218,13 @@
         {
             "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/foundation\\.min\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets.apps"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -245,6 +247,7 @@
                 "assets.apps"
             ],
             "apis": {
+                "Navigator.prototype.platform": 2,
                 "window.innerWidth": 2
             },
             "sites": 2,
@@ -264,11 +267,14 @@
         {
             "rule": "pa\\.gov\\/\\/SP2013v1\\/Enterprise\\/JS\\/jquery\\.cookie\\.js",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets.apps"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -276,7 +282,14 @@
                 "8de3c69167586aa5e95b77e613f84846384cbab1189183c1bd792451f482c66f"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "paGov": {
+                    "ttl": 1728007,
+                    "length": 1,
+                    "prevalence": 0.000013622679036059231,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fishandboat.com",
@@ -313,6 +326,7 @@
                 "assets.apps"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -359,7 +373,8 @@
                 "assets.apps"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -525,8 +540,8 @@
     },
     "nameservers": [
         "dns5.pa.gov",
-        "dns4.pa.gov",
         "dns3.pa.gov",
-        "dns2.pa.gov"
+        "dns2.pa.gov",
+        "dns4.pa.gov"
     ]
 }

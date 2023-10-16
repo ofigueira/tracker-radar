@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "site-images"
+        "site-images",
+        "static-us-east-1"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "similarcdn\\.com\\/image",
@@ -24,8 +25,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "277bdb26c1e193f92d66a5c798ee4a127b89b7043ce76e93e580e86c251045b0",
-                "033d8a64595eed206453b608d645f8ae012acfe637aad7776dde583c52b3ce16"
+                "0329acff3268cc79f1304b54ece641fc25c43765f61effe300068a6aa7620d0d",
+                "638fa3eef86769747b597a172c9d8b8adf0f2999e0541cb69e38c0e1c57e527f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -33,6 +34,53 @@
             "exampleSites": [
                 "similarsites.com",
                 "www.similarsites.com",
+                "www.similarweb.com"
+            ]
+        },
+        {
+            "rule": "similarcdn\\.com\\/build\\/20230929\\.master\\.bb34da5\\/dist\\/scripts\\/lite-app\\/client\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-us-east-1"
+            ],
+            "apis": {
+                "console.memory": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "849942a8c35274a78b633078fcc42892524b405141bd96b51465618b1efd854c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "similarweb.com",
+                "www.similarweb.com"
+            ]
+        },
+        {
+            "rule": "similarcdn\\.com\\/image",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "site-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9645e6503b64f87456e0830cd312c1f30ac70e7291bf2d68e7ef49916669a5ed"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "similarweb.com",
                 "www.similarweb.com"
             ]
         }
@@ -43,16 +91,22 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.84375
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.15625
         }
     ],
     "types": {
-        "Image": 3
+        "Image": 3,
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-2019.awsdns-60.co.uk",
         "ns-1330.awsdns-38.org",
         "ns-933.awsdns-52.net",
-        "ns-341.awsdns-42.com"
+        "ns-341.awsdns-42.com",
+        "ns-2019.awsdns-60.co.uk"
     ]
 }

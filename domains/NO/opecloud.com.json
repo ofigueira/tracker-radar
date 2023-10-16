@@ -9,17 +9,16 @@
     "source": [
         "DuckDuckGo-NO"
     ],
-    "prevalence": 0.00101,
-    "sites": 10,
+    "prevalence": 0.00111,
+    "sites": 11,
     "subdomains": [
-        "cdn",
-        "tagger",
-        "lefigaro.tagger",
-        "lefigaro.profiles.tagger",
         "adalliance.profiles.tagger",
         "pdmp.profiles.tagger",
+        "foxus.tagger",
+        "cdn",
         "fox.tagger",
-        "tagger-scmp"
+        "tagger-scmp",
+        "tagger"
     ],
     "cnames": [
         {
@@ -27,43 +26,45 @@
             "resolved": "tagger-scmp.opecloud.com"
         }
     ],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "opecloud\\.com\\/ope-lefigaro\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Date.prototype.getTimezoneOffset": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.colorDepth": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [
-                "ce7db5faae725317a92982462ee84174f02be3f86eb9197789a7bb4f818a7180"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr",
-                "www.lefigaro.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/uid",
+            "rule": "opecloud\\.com\\/v1\\/targeting",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tagger"
+                "adalliance.profiles.tagger",
+                "pdmp.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000504,
+            "cnames": [],
+            "responseHashes": [
+                "00f17752d5e73819c34a57bcb82d04123c89cf7349cce9bc36bdd9c719e8a1e4",
+                "ce723572830cae8897f241c95c3e11f42d7af79dc5c3466b93c788b225681b9a",
+                "c155996a3c5ce8d3525ebc298db716f0c572b9757cc06082c1b216a0f68bf39e",
+                "16ddea8184f2e07a4fbf8ef4bf15d8e66f7833ce5a66ce1d331322606de3f625"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.0001008471157724889
+            },
+            "exampleSites": [
+                "chefkoch.de",
+                "www.n-tv.de",
+                "www.rtl.de",
+                "www.salon.com",
+                "www.stern.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/foxus\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "foxus.tagger"
             ],
             "apis": {},
             "sites": 2,
@@ -72,86 +73,12 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
-            "cookies": 0.000202,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lefigaro.tagger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020161290322580645
-            },
-            "exampleSites": [
-                "journaldesfemmes.fr",
-                "cuisine.journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lefigaro.profiles.tagger",
-                "adalliance.profiles.tagger",
-                "pdmp.profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000403,
-            "cnames": [],
-            "responseHashes": [
-                "98c072767aa7ddd8da2125d8d7ecbfdfe9b54e4f1f57f9999ad1b9c45421fed4",
-                "474d15688fd665c690a61001bce6df4375548f7931098ffd5728c204bce0e1c9",
-                "b030914db5496b0590be12708bbc15ea6b3d5cfb8aebd13c78be601182121b1b"
-            ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00010080645161290323,
-                "_li_dcdm_c": 0.00010080645161290323
-            },
-            "exampleSites": [
-                "journaldesfemmes.fr",
-                "www.chefkoch.de",
-                "www.n-tv.de",
-                "www.salon.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/dbm\\/opecs\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "journaldesfemmes.fr",
-                "www.scmp.com"
+                "foxnews.com",
+                "www.tmz.com"
             ]
         },
         {
@@ -178,49 +105,29 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxsports.com",
-                "www.foxnews.com"
+                "foxnews.com",
+                "www.tmz.com"
             ]
         },
         {
             "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
-            "cookies": 0.000302,
+            "cookies": 0.000303,
             "fingerprinting": 0,
             "subdomains": [
                 "fox.tagger"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000303,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxsports.com",
-                "www.foxsports.com",
-                "www.foxnews.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/dbmhm\\/pbfs\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fox.tagger"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000202,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "foxsports.com",
-                "www.foxnews.com"
+                "foxnews.com",
+                "www.foxnews.com",
+                "www.tmz.com"
             ]
         },
         {
@@ -243,8 +150,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.0004032258064516129,
-                "lotame_domain_check": 0.00020161290322580645
+                "_ga": 0.0004033884630899556
             },
             "exampleSites": [
                 "scmp.com",
@@ -265,9 +171,7 @@
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.00020161290322580645
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "scmp.com",
                 "www.scmp.com"
@@ -276,51 +180,42 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000403,
+    "cookies": 0.000303,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.375
+            "prevalence": 0.42857142857142855
         },
         {
             "domain": "opecloud.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.19047619047619047
         },
         {
             "domain": "i-scmp.com",
-            "prevalence": 0.16666666666666666
+            "prevalence": 0.19047619047619047
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.125
+            "domain": "fox.com",
+            "prevalence": 0.09523809523809523
         },
         {
-            "domain": "ccmbg.com",
-            "prevalence": 0.041666666666666664
-        },
-        {
-            "domain": "doubleclick.net",
-            "prevalence": 0.041666666666666664
+            "domain": "iolam.it",
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "bildstatic.de",
-            "prevalence": 0.041666666666666664
-        },
-        {
-            "domain": "datadoghq-browser-agent.com",
-            "prevalence": 0.041666666666666664
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Script": 5,
-        "XHR": 2,
-        "Image": 14,
-        "Fetch": 4
+        "Fetch": 7,
+        "Script": 2,
+        "Image": 7
     },
     "nameservers": [
         "ns-353.awsdns-44.com",
         "ns-899.awsdns-48.net",
-        "ns-1611.awsdns-09.co.uk",
-        "ns-1454.awsdns-53.org"
+        "ns-1454.awsdns-53.org",
+        "ns-1611.awsdns-09.co.uk"
     ]
 }

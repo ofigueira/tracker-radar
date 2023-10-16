@@ -4,12 +4,12 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.00141,
-    "sites": 14,
+    "prevalence": 0.000904,
+    "sites": 9,
     "subdomains": [
         "usage",
-        "capture",
-        "cdn"
+        "cdn",
+        "capture"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,8 +22,8 @@
                 "usage"
             ],
             "apis": {},
-            "sites": 13,
-            "prevalence": 0.00131,
+            "sites": 9,
+            "prevalence": 0.000904,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
@@ -33,18 +33,59 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "alternativeto.net",
-                "giphy.com",
-                "kurier.at",
                 "smallpdf.com",
+                "www.aireuropa.com",
                 "www.betzold.ch",
                 "www.delta.com",
                 "www.e-domizil.ch",
                 "www.evilangel.com",
-                "www.fotmob.com",
-                "www.gnv.it",
-                "www.hometogo.ch",
-                "www.lehner-versand.ch",
-                "www.nahrin.ch"
+                "www.gruendl.com",
+                "www.lehner-versand.ch"
+            ]
+        },
+        {
+            "rule": "trackjs\\.com\\/usage\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aireuropa.com",
+                "www.betzold.ch"
+            ]
+        },
+        {
+            "rule": "trackjs\\.com\\/agent\\/v3\\/latest\\/t\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7b116ac42dfa848b8cbeff07cae0cc208a898111a7191ab266b4f0241683671a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "betzold.ch",
+                "www.lehner-versand.ch"
             ]
         },
         {
@@ -55,71 +96,16 @@
                 "capture"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kurier.at",
-                "www.delta.com",
-                "www.evilangel.com",
-                "www.fotmob.com"
-            ]
-        },
-        {
-            "rule": "trackjs\\.com\\/agent\\/v3\\/latest\\/t\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.userAgent": 1
-            },
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "betzold.ch",
-                "www.betzold.de"
-            ]
-        },
-        {
-            "rule": "trackjs\\.com\\/agent\\/v3\\/latest\\/t\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 5,
-            "prevalence": 0.000503,
-            "cnames": [],
-            "responseHashes": [
-                "7b116ac42dfa848b8cbeff07cae0cc208a898111a7191ab266b4f0241683671a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "betzold.ch",
-                "www.betzold.de",
-                "www.gnv.it",
-                "www.lehner-versand.ch",
-                "www.nahrin.ch"
+                "delta.com",
+                "www.delta.com"
             ]
         }
     ],
@@ -129,33 +115,29 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.7878787878787878
+            "prevalence": 0.8571428571428571
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.09090909090909091
+            "prevalence": 0.07142857142857142
         },
         {
             "domain": "gammacdn.com",
-            "prevalence": 0.06060606060606061
+            "prevalence": 0.03571428571428571
         },
         {
-            "domain": "googletagmanager.com",
-            "prevalence": 0.030303030303030304
-        },
-        {
-            "domain": "facebook.net",
-            "prevalence": 0.030303030303030304
+            "domain": "loopingo.com",
+            "prevalence": 0.03571428571428571
         }
     ],
     "types": {
-        "Image": 13,
-        "XHR": 4,
+        "Image": 9,
         "Fetch": 2,
-        "Script": 5
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "dns1.registrar-servers.com",
-        "dns2.registrar-servers.com"
+        "dns2.registrar-servers.com",
+        "dns1.registrar-servers.com"
     ]
 }

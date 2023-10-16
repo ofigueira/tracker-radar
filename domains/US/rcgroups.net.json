@@ -7,15 +7,59 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "static",
-        "decals"
+        "decals",
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "rcgroups\\.net\\/adx\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "decals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ead15d77ed4d2c23290d64364d4303fa028ddcb0b0a08f5d77aeb11116c11e40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "helifreak.com",
+                "www.rcgroups.com"
+            ]
+        },
+        {
+            "rule": "rcgroups\\.net\\/adjs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "decals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2de4e5ce160b51fd721ea8b05c078e6b40dae61947682f9996a4045d3daca537"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "helifreak.com",
+                "www.rcgroups.com"
+            ]
+        },
         {
             "rule": "rcgroups\\.net\\/forums\\/clientscript\\/vbulletin_global\\.10\\.css",
             "cookies": 0,
@@ -41,11 +85,13 @@
         {
             "rule": "rcgroups\\.net\\/forums\\/clientscript\\/yui\\/yahoo-dom-event\\.1\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -63,11 +109,13 @@
         {
             "rule": "rcgroups\\.net\\/forums\\/clientscript\\/vbulletin_global\\.3\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -314,7 +362,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c083e32158dee60d51f3d9875ebc688f84298ec42f72e537c9d24e129564ed09"
+                "07ac1eea7ab76c8222bd67c28359ca49a6ad2794bf951d62f80f04b1c384a93e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -331,17 +379,21 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.975
+        },
+        {
+            "domain": "rcgroups.com",
+            "prevalence": 0.025
         }
     ],
     "types": {
+        "Script": 16,
         "Stylesheet": 4,
-        "Script": 12,
         "Image": 12
     },
     "nameservers": [
-        "ns-cloud-b1.googledomains.com",
         "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b1.googledomains.com",
         "ns-cloud-b3.googledomains.com",
         "ns-cloud-b4.googledomains.com"
     ]

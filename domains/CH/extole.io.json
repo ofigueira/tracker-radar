@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-CH"
     ],
-    "prevalence": 0.000201,
-    "sites": 2,
+    "prevalence": 0.000301,
+    "sites": 3,
     "subdomains": [
         "codecademy",
+        "revzilla",
         "skillshare"
     ],
     "cnames": [
@@ -27,15 +28,23 @@
     "resources": [
         {
             "rule": "extole\\.io\\/core\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0001,
+            "fingerprinting": 2,
             "subdomains": [
                 "codecademy",
+                "revzilla",
                 "skillshare"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.platform": 1,
+                "window.localStorage": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "document.fonts.check": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "refer.codecademy.com",
@@ -47,13 +56,22 @@
                 }
             ],
             "responseHashes": [
-                "fb0d376d67ac57535697416e3aa909a27dd25b052c7d00a3f23014bbdbe36699"
+                "2c3bf634095ab156ec19216b41f7a5bc6c19400e4562547443aa3cea5e02f450",
+                "519c5997eedaf2a8838a3abb975373ec6e49207b98c4348e0ec70d9df441d3c3"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "extole_access_token": {
+                    "ttl": 31536012,
+                    "length": 26,
+                    "prevalence": 0.00010049241282283188,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "codecademy.com",
+                "www.revzilla.com",
                 "www.skillshare.com"
             ]
         },
@@ -86,14 +104,15 @@
         },
         {
             "rule": "extole\\.io\\/zones\\/global_footer",
-            "cookies": 0.000201,
+            "cookies": 0.000301,
             "fingerprinting": 0,
             "subdomains": [
-                "codecademy"
+                "codecademy",
+                "revzilla"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
+            "sites": 3,
+            "prevalence": 0.000301,
             "cnames": [
                 {
                     "original": "refer.codecademy.com",
@@ -101,34 +120,72 @@
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "4a953c6dba8045cdd800c0218343a02182d1f7979fe555f1da2fec6c295051f3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "codecademy.com",
-                "www.codecademy.com"
+                "www.codecademy.com",
+                "www.revzilla.com"
+            ]
+        },
+        {
+            "rule": "extole\\.io\\/api\\/v4\\/debug\\/logs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "revzilla",
+                "skillshare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "share.skillshare.com",
+                    "resolved": "skillshare.extole.io"
+                }
+            ],
+            "responseHashes": [
+                "5233d15b2197ccd6085f5f16cabcaf4dc1d52c104c9680543d6bfeb45f367ebb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revzilla.com",
+                "www.skillshare.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000101,
+    "cookies": 0.000201,
     "topInitiators": [
         {
+            "domain": "xtlo.net",
+            "prevalence": 0.45454545454545453
+        },
+        {
             "domain": "googletagmanager.com",
-            "prevalence": 1
+            "prevalence": 0.2727272727272727
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.2727272727272727
         }
     ],
     "types": {
-        "Script": 2,
-        "XHR": 4
+        "Script": 3,
+        "XHR": 7
     },
     "nameservers": [
-        "ns-231.awsdns-28.com",
-        "ns-603.awsdns-11.net",
         "ns-1510.awsdns-60.org",
-        "ns-1867.awsdns-41.co.uk"
+        "ns-1867.awsdns-41.co.uk",
+        "ns-231.awsdns-28.com",
+        "ns-603.awsdns-11.net"
     ]
 }

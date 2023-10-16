@@ -7,10 +7,11 @@
     "prevalence": 0.000302,
     "sites": 3,
     "subdomains": [
-        "api"
+        "api",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "tagdeliver\\.com\\/v1\\/sy\\/tag\\/log",
@@ -20,16 +21,17 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000302,
+            "sites": 4,
+            "prevalence": 0.000403,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "the-race.com",
+                "expertreviews.co.uk",
                 "www.expertreviews.co.uk",
+                "www.nationalrail.co.uk",
                 "www.trustedreviews.com"
             ]
         },
@@ -49,10 +51,12 @@
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00010065425264217414
+            },
             "exampleSites": [
-                "the-race.com",
-                "www.expertreviews.co.uk",
+                "expertreviews.co.uk",
+                "www.nationalrail.co.uk",
                 "www.trustedreviews.com"
             ]
         },
@@ -72,9 +76,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "the-race.com",
-                "www.expertreviews.co.uk",
+                "expertreviews.co.uk",
+                "www.nationalrail.co.uk",
                 "www.trustedreviews.com"
+            ]
+        },
+        {
+            "rule": "tagdeliver\\.com\\/cipt\\/17235\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.outerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0806eeecc4e207179cf03cf3800eb96fdcccc2d48558d2918ede1c3528997664"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalrail.co.uk",
+                "www.nationalrail.co.uk"
             ]
         }
     ],
@@ -83,13 +111,18 @@
     "cookies": 0,
     "topInitiators": [
         {
+            "domain": "doubleclick.net",
+            "prevalence": 0.6
+        },
+        {
             "domain": "first party",
-            "prevalence": 1
+            "prevalence": 0.4
         }
     ],
     "types": {
-        "Fetch": 6,
-        "Preflight": 3
+        "Fetch": 7,
+        "Preflight": 3,
+        "Script": 2
     },
     "nameservers": [
         "ns1.digitalocean.com",

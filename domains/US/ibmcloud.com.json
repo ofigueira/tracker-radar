@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000818,
-    "sites": 12,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
-        "fcis.ice"
+        "fcis.ice",
+        "milogin.ice"
     ],
     "cnames": [
+        {
+            "original": "miloginci.michigan.gov",
+            "resolved": "milogin.ice.ibmcloud.com"
+        },
         {
             "original": "sso.ci.ford.ca",
             "resolved": "fcis.ice.ibmcloud.com"
@@ -24,11 +29,11 @@
             "resolved": "fcis.ice.ibmcloud.com"
         },
         {
-            "original": "sso.ci.ford.com.au",
+            "original": "sso.ci.ford.de",
             "resolved": "fcis.ice.ibmcloud.com"
         },
         {
-            "original": "sso.ci.ford.de",
+            "original": "sso.ci.ford.it",
             "resolved": "fcis.ice.ibmcloud.com"
         },
         {
@@ -40,25 +45,29 @@
     "resources": [
         {
             "rule": "ibmcloud\\.com\\/oidc\\/endpoint\\/default\\/authorize",
-            "cookies": 0.0000409,
+            "cookies": 0.0000613,
             "fingerprinting": 0,
             "subdomains": [
                 "fcis.ice"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [
                 {
                     "original": "sso.ci.ford.com",
                     "resolved": "fcis.ice.ibmcloud.com"
                 },
                 {
-                    "original": "sso.ci.ford.ca",
+                    "original": "sso.ci.ford.it",
                     "resolved": "fcis.ice.ibmcloud.com"
                 },
                 {
                     "original": "sso.ci.ford.de",
+                    "resolved": "fcis.ice.ibmcloud.com"
+                },
+                {
+                    "original": "sso.ci.ford.ca",
                     "resolved": "fcis.ice.ibmcloud.com"
                 },
                 {
@@ -74,27 +83,30 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ford.com",
+                "accountmanager.ford.com",
                 "shop.ford.com",
-                "www.ford.ca",
                 "www.ford.com",
+                "www.ford.it",
                 "www.ford.de",
-                "www.lincoln.com"
+                "www.ford.ca",
+                "www.lincoln.com",
+                "www.myplan.ford.com"
             ]
         },
         {
-            "rule": "ibmcloud\\.com\\/\\/oidc\\/endpoint\\/default\\/authorize",
+            "rule": "ibmcloud\\.com\\/idaas\\/mtfim\\/sps\\/idaas\\/login",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "fcis.ice"
+                "milogin.ice"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "sso.ci.ford.com.au",
-                    "resolved": "fcis.ice.ibmcloud.com"
+                    "original": "miloginci.michigan.gov",
+                    "resolved": "milogin.ice.ibmcloud.com"
                 }
             ],
             "responseHashes": [],
@@ -102,14 +114,39 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.com.au",
-                "www.ford.com.au"
+                "michigan.gov",
+                "milogin.michigan.gov"
+            ]
+        },
+        {
+            "rule": "ibmcloud\\.com\\/VfyAZRfyCf\\/fa\\/Uj2yLlbt\\/z7aQNGcrGJEt\\/Elk8RmwD\\/Ai1R\\/MGwRSVEB",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "milogin.ice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "miloginci.michigan.gov",
+                    "resolved": "milogin.ice.ibmcloud.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michigan.gov",
+                "milogin.michigan.gov"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000818,
+    "cookies": 0.000102,
     "topInitiators": [
         {
             "domain": "ford.com",
@@ -117,16 +154,17 @@
         }
     ],
     "types": {
-        "Document": 8
+        "Document": 11,
+        "Script": 2
     },
     "nameservers": [
-        "usw2.akam.net",
-        "usc2.akam.net",
-        "eur2.akam.net",
-        "ns1-99.akam.net",
-        "ns1-206.akam.net",
-        "asia3.akam.net",
         "usc3.akam.net",
-        "eur5.akam.net"
+        "eur5.akam.net",
+        "asia3.akam.net",
+        "usc2.akam.net",
+        "usw2.akam.net",
+        "ns1-99.akam.net",
+        "eur2.akam.net",
+        "ns1-206.akam.net"
     ]
 }

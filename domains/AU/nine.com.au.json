@@ -11,19 +11,22 @@
     "sites": 12,
     "subdomains": [
         "adc-js",
+        "stag-adc-js",
         "pixel",
         "login",
-        "adc"
+        "adc",
+        "staging-adc"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "nine\\.com\\.au\\/adc\\.js",
-            "cookies": 0.00101,
+            "cookies": 0.001,
             "fingerprinting": 1,
             "subdomains": [
-                "adc-js"
+                "adc-js",
+                "stag-adc-js"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 10,
@@ -33,17 +36,24 @@
                 "Document.cookie setter": 10
             },
             "sites": 10,
-            "prevalence": 0.00101,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
-                "aabe06853ff07106051526bf5f763aa0ec84dab11c57ed5a69a8c98469e42e6b"
+                "9818a857627f6d7edd433bed71814155b78019dfad67db10bd2e10d14f7a41af",
+                "ce129e43e2f182cc557c759718b0481c01eea53f10e2647d6a762978697f05c8"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "NUID": {
-                    "ttl": 31536025,
+                    "ttl": 31536023,
                     "length": 32,
-                    "prevalence": 0.0010054293183189222,
+                    "prevalence": 0.0009044317154054868,
+                    "uniqueness": 1
+                },
+                "staging-NUID": {
+                    "ttl": 31536024,
+                    "length": 32,
+                    "prevalence": 0.00010049241282283188,
                     "uniqueness": 1
                 }
             },
@@ -70,7 +80,7 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.00101,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
                 "642b784babb37ec345296687b092226e7acfe393538869681e312ef7bda56477"
@@ -79,8 +89,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "3aw.com.au",
-                "www.2gb.com",
+                "2gb.com",
+                "www.3aw.com.au",
                 "www.6pr.com.au",
                 "www.afr.com",
                 "www.beaumont-tiles.com.au",
@@ -100,42 +110,43 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.000302,
+            "prevalence": 0.000301,
             "cnames": [],
             "responseHashes": [
-                "667555c65b163a1c2830fb9de7f5e5928aafb6c8355dc7536bd2a09a92755460",
-                "b21e3b9ff37cfcc18aef51d35bebf849bd09fac69f16822c5744d3ae0434148b"
+                "54fa2a6a7980440c94eb9557acc3194cabfab5e16ef46f20e24c346a18efdf58",
+                "c5a354ff2ab915c7177b572b5c2fc9e487c5c4e64fe97074dbdc02253a01d33d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "3aw.com.au",
-                "www.2gb.com",
+                "2gb.com",
+                "www.3aw.com.au",
                 "www.6pr.com.au"
             ]
         },
         {
             "rule": "nine\\.com\\.au\\/",
-            "cookies": 0.00101,
+            "cookies": 0.001,
             "fingerprinting": 0,
             "subdomains": [
-                "adc"
+                "adc",
+                "staging-adc"
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.00101,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
-                "8f7eae773530347adb14cbc1f4c510e1f890ffa07474711e2705685093deef71",
-                "7c2a160c2bb8f5e16f0ce190fc2280892639c47b610d60dae25c2cc87cee38ec",
-                "3a6131d07165ad0e6886008810e15daaeabef5e88cfb52ecf2221f262d4b2d53",
-                "5265994c27c3d87d877711cc918c6f69379a842841d55f29e2efcc36b0e8a8f4",
-                "578e79577fd4972c3317a88cc6c9ac1fe2cf9f4452daa94041b536ada7be2592",
-                "7c0f7600dc951be12590d384183110a0f72f197fe708dcf35b7be2a10f7a741c",
-                "b7c8751c5ba41e43f0929f5545d04af2c4c33de0f8ae949fff820553557a60d4",
-                "d94b300c1977ee042fdbe7a86929f9891e58cf359e69e153349e546a1a92801c",
-                "5ca580a3b756462995c18ec1f75f143f61e095f9cf34a81f5e91c8f07fee3d5b"
+                "4d23ba595756892f45ceddead006c490548741a76eb846e4ca390318dd625ca6",
+                "cf936f3042a72cf7a3db0fd464bed4e6154c1b225ae7ab103a45c95c66c32ad4",
+                "f3df54b94e697c5dd3b94984abb8be429af0fd9d058dc2e55cf72206e0fa7bb4",
+                "1f8dc8e144533ff3148f804decdb3c65a11b42fdef35f81329e101a2af3525d5",
+                "558f831ef9d4b270a190bbebf32d1860d6fb466f827f22d15516f2b27b105e0d",
+                "e32a00c7bab721efed70cdbea4fae3c46ecfe9a27eb7aff9d550246cd3f2944b",
+                "df2eb2ed23bb897e3bda027bbcac5d9c317f93dadc61f3ac3013e774463bc690",
+                "abafd04469fbcf4468a3a28dd017d9c6943736b1d3de9bb700679d879519ae24",
+                "846b209a5da2a1bf2b887ca24a6ddb675ab895760aae36190c031c25b9989828"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -155,21 +166,21 @@
         },
         {
             "rule": "nine\\.com\\.au\\/",
-            "cookies": 0.00101,
+            "cookies": 0.001,
             "fingerprinting": 0,
             "subdomains": [
-                "adc"
+                "adc",
+                "staging-adc"
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.00101,
+            "prevalence": 0.001,
             "cnames": [],
             "responseHashes": [
-                "8f7eae773530347adb14cbc1f4c510e1f890ffa07474711e2705685093deef71",
-                "7c2a160c2bb8f5e16f0ce190fc2280892639c47b610d60dae25c2cc87cee38ec",
-                "3a6131d07165ad0e6886008810e15daaeabef5e88cfb52ecf2221f262d4b2d53",
-                "578e79577fd4972c3317a88cc6c9ac1fe2cf9f4452daa94041b536ada7be2592",
-                "7c0f7600dc951be12590d384183110a0f72f197fe708dcf35b7be2a10f7a741c"
+                "4d23ba595756892f45ceddead006c490548741a76eb846e4ca390318dd625ca6",
+                "cf936f3042a72cf7a3db0fd464bed4e6154c1b225ae7ab103a45c95c66c32ad4",
+                "558f831ef9d4b270a190bbebf32d1860d6fb466f827f22d15516f2b27b105e0d",
+                "e32a00c7bab721efed70cdbea4fae3c46ecfe9a27eb7aff9d550246cd3f2944b"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -190,23 +201,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00101,
+    "cookies": 0.001,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.48484848484848486
+            "prevalence": 0.5333333333333333
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.36363636363636365
-        },
-        {
-            "domain": "9cdn.net",
-            "prevalence": 0.12121212121212122
+            "prevalence": 0.43333333333333335
         },
         {
             "domain": "raygun.io",
-            "prevalence": 0.030303030303030304
+            "prevalence": 0.03333333333333333
         }
     ],
     "types": {
@@ -216,9 +223,9 @@
         "Document": 10
     },
     "nameservers": [
-        "ns-424.awsdns-53.com",
-        "ns-821.awsdns-38.net",
         "ns-1268.awsdns-30.org",
-        "ns-1590.awsdns-06.co.uk"
+        "ns-1590.awsdns-06.co.uk",
+        "ns-424.awsdns-53.com",
+        "ns-821.awsdns-38.net"
     ]
 }

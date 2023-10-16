@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-FR"
     ],
-    "prevalence": 0.000303,
-    "sites": 3,
+    "prevalence": 0.000404,
+    "sites": 4,
     "subdomains": [
         "cdn"
     ],
@@ -40,12 +40,12 @@
             "prevalence": 0.000202,
             "cnames": [],
             "responseHashes": [
-                "af646a9ae672483610ea05bc5de69e863e6bb0fa5bd73fbab48c6def455546d5"
+                "4337d0b547125e106fc3394204f7a9fbaab29b5a89faf522d6a05de43d0bd43d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "chsn_cnsnt": {
-                    "ttl": 63072004,
+                    "ttl": 63072007,
                     "length": 37,
                     "prevalence": 0.00020216314565854644,
                     "uniqueness": 1
@@ -81,7 +81,7 @@
                     "uniqueness": 1
                 },
                 "cohsn_xs_id": {
-                    "ttl": 63072013,
+                    "ttl": 63072006,
                     "length": 36,
                     "prevalence": 0.00010108157282927322,
                     "uniqueness": 1
@@ -95,13 +95,15 @@
         },
         {
             "rule": "cohesionapps\\.com\\/cohesion\\/xs1\\.html",
-            "cookies": 0,
+            "cookies": 0.000101,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.000202,
@@ -120,13 +122,11 @@
         {
             "rule": "cohesionapps\\.com\\/cohesion\\/xs2\\.html",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.000202,
             "cnames": [],
@@ -140,6 +140,50 @@
                 "cnet.com",
                 "thepointsguy.com"
             ]
+        },
+        {
+            "rule": "cohesionapps\\.com\\/preamp\\/api\\/v1\\/decisions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "b5fa1c5a0e58f2b256f1a6e177d765fb1321ef38c18518f4b693f1c38157c16c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepointsguy.com",
+                "www.cnet.com"
+            ]
+        },
+        {
+            "rule": "cohesionapps\\.com\\/preamp\\/api\\/v1\\/confirmation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepointsguy.com",
+                "www.cnet.com"
+            ]
         }
     ],
     "categories": [],
@@ -148,16 +192,17 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.8
+            "prevalence": 0.8571428571428571
         },
         {
             "domain": "cookielaw.org",
-            "prevalence": 0.2
+            "prevalence": 0.14285714285714285
         }
     ],
     "types": {
         "Script": 2,
-        "Document": 4
+        "Document": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns-105.awsdns-13.com",

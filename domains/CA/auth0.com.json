@@ -7,14 +7,17 @@
     "source": [
         "DuckDuckGo-CA"
     ],
-    "prevalence": 0.00151,
-    "sites": 15,
+    "prevalence": 0.00181,
+    "sites": 18,
     "subdomains": [
-        "cdn",
+        "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+        "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants",
         "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2",
+        "automationdirect-cd-bwjrpkrumxhdgr0a.edge.tenants",
         "indigoca-commerce-prod-cd-emmpy9zgs9bfcuon.edge.tenants.us",
         "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
-        "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu"
+        "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu",
+        "cdn"
     ],
     "cnames": [
         {
@@ -26,8 +29,20 @@
             "resolved": "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu.auth0.com"
         },
         {
+            "original": "login.arduino.cc",
+            "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.automationdirect.com",
+            "resolved": "automationdirect-cd-bwjrpkrumxhdgr0a.edge.tenants.auth0.com"
+        },
+        {
             "original": "login.finder.com",
             "resolved": "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants.auth0.com"
+        },
+        {
+            "original": "login.make.co",
+            "resolved": "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants.auth0.com"
         },
         {
             "original": "oauth.airmiles.ca",
@@ -37,48 +52,37 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vwr.com",
-                "www.honeywellhome.com"
-            ]
-        },
-        {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000504,
+            "cookies": 0.000806,
             "fingerprinting": 0,
             "subdomains": [
+                "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
+                "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants",
                 "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2",
+                "automationdirect-cd-bwjrpkrumxhdgr0a.edge.tenants",
                 "indigoca-commerce-prod-cd-emmpy9zgs9bfcuon.edge.tenants.us",
                 "finder-us-prod-cd-ewaqufuvygc5rgwq.edge.tenants",
                 "native-prod-cd-q79eqtebyokcrldh.edge.tenants.eu"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.000504,
+            "sites": 8,
+            "prevalence": 0.000806,
             "cnames": [
+                {
+                    "original": "login.arduino.cc",
+                    "resolved": "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "login.make.co",
+                    "resolved": "makermedia-cd-mz8mmiokurx5ls4h.edge.tenants.auth0.com"
+                },
                 {
                     "original": "oauth.airmiles.ca",
                     "resolved": "airmiles-v2-cd-7ftve03wdwpxmvac.edge.airmiles-v2.auth0.com"
+                },
+                {
+                    "original": "login.automationdirect.com",
+                    "resolved": "automationdirect-cd-bwjrpkrumxhdgr0a.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.indigo.ca",
@@ -94,16 +98,20 @@
                 }
             ],
             "responseHashes": [
-                "8b614464772ef0c0cc98e94998b146fa8f48b1f78e6d9530b4c184fe043b2dca",
-                "a70e12fa38a2c1e147f496e441a39c640195c13524d42ac2d6591777f2515bb6",
-                "42650308715dc5a163bb3c3ed9cff0eca02f28307785d29d58a18d373804fc05",
-                "1f15c25a4e020f0a498f123286e906d76c2537f8394c2d10d0d108a21c6174b2"
+                "aee56dea62114af3f29ed39572db38f364355d7d3c285cd37a9d58eae8a6e730",
+                "7e786ca439fe23d684be091e33e2b2959340d970dfb66f749eb6d3ed1562f34e",
+                "c441dcb1f2a94709c2733fd853a53283f48ca899088323dd2d7e88236f60c471",
+                "c009ab8f7aad3db59a2de8f45a951200c186080024961d133b0b2484f78baaa8",
+                "9fb61b4d01c6b75f820a83c4521fc204405f10d0a4d59b7555ef1b0361a13166"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "airmiles.ca",
+                "arduino.cc",
+                "makezine.com",
+                "www.airmiles.ca",
+                "www.automationdirect.com",
                 "www.chapters.indigo.ca",
                 "www.finder.com",
                 "www.indigo.ca",
@@ -159,45 +167,41 @@
             "exampleSites": [
                 "denverpost.com",
                 "www.mercurynews.com",
-                "www.sun-sentinel.com"
+                "www.nydailynews.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000504,
+    "cookies": 0.000806,
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.5263157894736842
-        },
-        {
-            "domain": "native-instruments.com",
-            "prevalence": 0.15789473684210525
-        },
-        {
-            "domain": "ddrrprxi1bder.cloudfront.net",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.6190476190476191
         },
         {
             "domain": "auth0.com",
-            "prevalence": 0.10526315789473684
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "native-instruments.com",
+            "prevalence": 0.14285714285714285
         },
         {
             "domain": "dvh1deh6tagwk.cloudfront.net",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.047619047619047616
         },
         {
             "domain": "storage.googleapis.com",
-            "prevalence": 0.05263157894736842
+            "prevalence": 0.047619047619047616
         }
     ],
     "types": {
-        "Script": 7,
-        "Document": 5
+        "Document": 8,
+        "Script": 5
     },
     "nameservers": [
-        "kolton.ns.cloudflare.com",
-        "monroe.ns.cloudflare.com"
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
     ]
 }

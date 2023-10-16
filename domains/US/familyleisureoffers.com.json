@@ -12,7 +12,7 @@
     "resources": [
         {
             "rule": "familyleisureoffers\\.com\\/mtc\\.js",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
@@ -23,7 +23,8 @@
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -32,7 +33,26 @@
                 "10883589ae648b90c591d7534aa599a41ce0e29905613abc76407ee0af30bebb"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "mtc_id": {
+                    "ttl": null,
+                    "length": 6,
+                    "prevalence": 0.000013622679036059231,
+                    "uniqueness": 1
+                },
+                "mtc_sid": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000013622679036059231,
+                    "uniqueness": 1
+                },
+                "mautic_device_id": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000013622679036059231,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "familyleisure.com",
@@ -41,14 +61,16 @@
         },
         {
             "rule": "familyleisureoffers\\.com\\/mtc\\/event",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "98d64bffedada0000fa5178fdcf8f4f0255a7dac6ed00d5a43e7c766fe6626f4"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -74,26 +96,6 @@
                 "familyleisure.com",
                 "www.familyleisure.com"
             ]
-        },
-        {
-            "rule": "familyleisureoffers\\.com\\/mtracking\\.gif",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familyleisure.com",
-                "www.familyleisure.com"
-            ]
         }
     ],
     "categories": [],
@@ -108,13 +110,12 @@
     "types": {
         "Script": 2,
         "XHR": 2,
-        "Preflight": 2,
-        "Image": 2
+        "Preflight": 2
     },
     "nameservers": [
-        "ns-cloud-c4.googledomains.com",
-        "ns-cloud-c2.googledomains.com",
         "ns-cloud-c3.googledomains.com",
-        "ns-cloud-c1.googledomains.com"
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c4.googledomains.com"
     ]
 }

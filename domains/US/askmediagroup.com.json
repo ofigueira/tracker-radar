@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000477,
+    "sites": 7,
     "subdomains": [
-        "parallax"
+        "parallax",
+        "dabu"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,8 +21,8 @@
                 "parallax"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [
                 "81b2bd4ea98c8db66554fbc8d7637a1a69a130f331feb732b75caab4c4868fd5"
@@ -31,7 +32,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ask.com",
-                "www.reference.com"
+                "www.askmoney.com",
+                "www.consumersearch.com",
+                "www.reference.com",
+                "www.smarter.com"
             ]
         },
         {
@@ -42,8 +46,8 @@
                 "parallax"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.0000341,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -51,6 +55,58 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ask.com",
+                "www.askmoney.com",
+                "www.consumersearch.com",
+                "www.reference.com",
+                "www.smarter.com"
+            ]
+        },
+        {
+            "rule": "askmediagroup\\.com\\/s\\/v2\\.3\\.30\\/initiator\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dabu"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e92f5f654e129847891dc6b1d29d02c2b2b02542c0b35f0efd07678c79eaa4e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "consumersearch.com",
+                "www.reference.com"
+            ]
+        },
+        {
+            "rule": "askmediagroup\\.com\\/api\\/v2\\/ta\\/google",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dabu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e59a4b83e24742faa14456b2c20b2a57c1ade00b4cc4fefcb011c9ba996141c1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "consumersearch.com",
                 "www.reference.com"
             ]
         }
@@ -61,21 +117,27 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.6
+            "prevalence": 0.6363636363636364
+        },
+        {
+            "domain": "dvjjnjm3y651p.cloudfront.net",
+            "prevalence": 0.18181818181818182
         },
         {
             "domain": "d214j3hoglojvd.cloudfront.net",
-            "prevalence": 0.4
+            "prevalence": 0.18181818181818182
         }
     ],
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "XHR": 5,
+        "Preflight": 5,
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
+        "dns1.p08.nsone.net",
         "dns2.p08.nsone.net",
         "dns3.p08.nsone.net",
-        "dns1.p08.nsone.net",
         "dns4.p08.nsone.net"
     ]
 }

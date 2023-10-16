@@ -4,15 +4,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "openam-beamsuntory-use1.id"
+        "openam-beamsuntory-use1.id",
+        "openam-thrivent-usc.id"
     ],
     "cnames": [
         {
             "original": "auth.makersmark.com",
             "resolved": "openam-beamsuntory-use1.id.forgerock.io"
+        },
+        {
+            "original": "iam.thrivent.com",
+            "resolved": "openam-thrivent-usc.id.forgerock.io"
         }
     ],
     "fingerprinting": 0,
@@ -33,21 +38,50 @@
                     "resolved": "openam-beamsuntory-use1.id.forgerock.io"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "8530ae741279efcca43dcd6b7d0a5c4ccbf3c2354278e80344faa027b0af27e2"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "redirectUrl": 0.000006814913757266402
+                "redirectUrl": 0.000013622679036059231
             },
             "exampleSites": [
                 "makersmark.com",
                 "www.makersmark.com"
             ]
+        },
+        {
+            "rule": "forgerock\\.io\\/am\\/json\\/realms\\/root\\/realms\\/alpha\\/authenticate",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "openam-thrivent-usc.id"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "iam.thrivent.com",
+                    "resolved": "openam-thrivent-usc.id.forgerock.io"
+                }
+            ],
+            "responseHashes": [
+                "8db6a4bd5286891eab54565409a429a10e3064d1087803fb4fe4b065404b6f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thrivent.com",
+                "myservice.thrivent.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000681,
     "topInitiators": [
         {
             "domain": "beamsuntory.com",
@@ -55,11 +89,12 @@
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Fetch": 2
     },
     "nameservers": [
-        "ns-cloud-a4.googledomains.com",
         "ns-cloud-a1.googledomains.com",
+        "ns-cloud-a4.googledomains.com",
         "ns-cloud-a3.googledomains.com",
         "ns-cloud-a2.googledomains.com"
     ]

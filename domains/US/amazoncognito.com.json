@@ -4,19 +4,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000341,
+    "sites": 5,
     "subdomains": [
-        "penbaypilot-prod.auth.us-east-1"
+        "boothbayregister-prod.auth.us-east-1",
+        "penbaypilot-prod.auth.us-east-1",
+        "tt-prod-blog.auth.ap-south-1"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "amazoncognito\\.com\\/logout",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "boothbayregister-prod.auth.us-east-1",
                 "penbaypilot-prod.auth.us-east-1"
             ],
             "apis": {},
@@ -28,8 +31,28 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "penbaypilot.com",
+                "boothbayregister.com",
                 "www.penbaypilot.com"
+            ]
+        },
+        {
+            "rule": "amazoncognito\\.com\\/oauth2\\/authorize",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tt-prod-blog.auth.ap-south-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tickertape.in",
+                "www.tickertape.in"
             ]
         }
     ],
@@ -43,11 +66,12 @@
         }
     ],
     "types": {
-        "Document": 2
+        "Document": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-972.awsdns-57.net",
         "ns-1118.awsdns-11.org",
+        "ns-972.awsdns-57.net",
         "ns-349.awsdns-43.com",
         "ns-1854.awsdns-39.co.uk"
     ]
